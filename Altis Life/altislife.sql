@@ -94,6 +94,7 @@ CREATE TABLE IF NOT EXISTS `players` (
   `playtime` varchar(32) NOT NULL DEFAULT '"[0,0,0]"',
   `insert_time` timestamp DEFAULT CURRENT_TIMESTAMP,
   `last_seen` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  `jail_time` int(11) NOT NULL DEFAULT '0',
   PRIMARY KEY (`uid`),
   UNIQUE KEY `playerid` (`playerid`),
   KEY `name` (`name`),

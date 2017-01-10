@@ -131,6 +131,8 @@ class Life_Client_Core {
         class ticketPrompt {};
         class vehInvSearch {};
         class wantedGrab {};
+		class showArrestDialog {}; //Jail Timer
+		class arrestDialog_Arrest {}; //Jail Timer
     };
 
     class Dialog_Controls {
