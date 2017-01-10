@@ -1,6 +1,6 @@
 /*
 	File: IntroCam
-	Author: Dexter, edited by Genetic.
+	Author: Dexter
 	( script might already be known, havent seen it yet though )
 */
 private ["_camera", "_camDistance","_randCamX","_randCamY","_camTime"];

@@ -9,7 +9,7 @@ class life_admin_menu {
 
         class tablet: Life_RscPicture {
             idc = 9090909;
-            text = "textures\Strayamenu2.paa";
+            text = "textures\newMenu1";
             x = 0;
             y = -0.12;
             w = 1.05;

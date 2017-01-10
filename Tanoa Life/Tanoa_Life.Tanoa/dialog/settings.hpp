@@ -9,7 +9,7 @@ class SettingsMenu
 	{
 		class tablet: Life_RscPicture {
             idc = 9090909;
-            text = "textures\Strayamenu2.paa";
+            text = "textures\newMenu1.paa";
             x = 0;
             y = -0.12;
             w = 1.05;

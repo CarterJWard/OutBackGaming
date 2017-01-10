@@ -13,7 +13,7 @@ class life_spawn_selection
 		class laptop: life_RscPicture
 		{
 			idc = 1200;
-			text = "textures\SpawnMenu3.paa";
+			text = "textures\newSpawnMenu1.paa";
 			x = 0.193594 * safezoneW + safezoneX;
 			y = 0.01 * safezoneH + safezoneY;
 			w = .556 * safezoneW;

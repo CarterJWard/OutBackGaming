@@ -67,12 +67,12 @@ class playerHUD {
         //x = 0.534723 * safezoneW + safezoneX;
         x = 0.5057873 * safezoneW + safezoneX;
     };
-    
+
     class Life_RscProgress_HUDXP: LIFE_RscProgress_HUDCommon {
         idc = 2203;
         colorBar[] = {0.85,0.85,0,0.65};
-        x = 0.5636583 * safezoneW + safezoneX;    
-    	
+        x = 0.5636583 * safezoneW + safezoneX;
+
     };
 
     /* Texts */
@@ -104,13 +104,13 @@ class playerHUD {
         //x = 0.534723 * safezoneW + safezoneX;
         x = 0.5057873 * safezoneW + safezoneX;
     };
-    
+
     class Life_RscText_HUDXP: Life_RscText_HUDCommon {
         idc = 1203;
         text = "$STR_HUD_XP";
-        x = 0.5636583 * safezoneW + safezoneX; 
+        x = 0.5636583 * safezoneW + safezoneX;
     };
-    
+
     class Life_StatusBar {
         idc = 55554;
 	x = safezoneX;
@@ -131,10 +131,10 @@ class playerHUD {
 	    font = "PuristaMedium";
 	};
     };
-	
+
      class Life_Picture_Watermark: Life_RscPicture {
                 idc = 9999;
-                text = "textures\StrayaIcon.paa";
+                text = "textures\newWatermark.paa";
                 x = 0.90 * safezoneW + safezoneX;
                 y = 0.85 * safezoneH + safezoneY;
                 w = 0.10 * safezoneW;

@@ -39,7 +39,7 @@ class RscTitles {
         sizeEx = 0.05;
 	colorBackground[] = {1,1,1,1};
         colorText[] = {1,1,1,1};
-        text = "textures\stray.paa";   
+        text = "textures\newLogo.paa";   
         lineSpacing = 1;
         }; 
      }; 
