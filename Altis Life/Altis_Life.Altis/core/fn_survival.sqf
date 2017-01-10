@@ -106,3 +106,23 @@ for "_i" from 0 to 1 step 0 do {
     };
     uiSleep 1;
 };
+
+[] spawn
+{
+	private["_bp","_load","_cfg"];
+	while{true} do
+	{
+		waitUntil {backpack player != ""};
+		_bp = backpack player;
+		_cfg = getNumber(configFile >> "CfgVehicles" >> (backpack player) >> "maximumload");
+		_load = round(_cfg / 8);
+		life_maxWeight = life_maxWeight + _load;
+		if(playerSide == west) then {(unitBackpack player) setObjectTextureGlobal [1,""];};
+		if(playerSide == independent) then {(unitBackpack player) setObjectTextureGlobal [1,""];}
+		waitUntil {backpack player != _bp};
+		if(backpack player == "") then 
+		{
+			life_maxWeight = life_maxWeight;
+		};
+	};
+};
