@@ -83,6 +83,8 @@ CASH = 0;
 life_istazed = false;
 life_isknocked = false;
 life_vehicles = [];
+life_nlrtimer_running = false;
+life_nlrtimer_stop = false;
 
 /*
     Master Array of items?

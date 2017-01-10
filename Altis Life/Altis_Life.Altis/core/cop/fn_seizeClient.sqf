@@ -1,50 +1,80 @@
-#include "..\..\script_macros.hpp"
 /*
-    File: fn_seizeClient.sqf
-    Author: Daniel "Skalicon" Larusso
-
-    Description:
-    Removes the players weapons client side
+	Author: !TS JORDAN
+	For: AltisLifeRPG Community
+	Description: Takes a players weapons and mags, then drops them on the ground.
 */
-private ["_exempt","_uniform","_vest","_headgear"];
-_exempt = LIFE_SETTINGS(getArray,"seize_exempt");
-_headgear = LIFE_SETTINGS(getArray,"seize_headgear");
-_vest = LIFE_SETTINGS(getArray,"seize_vest");
-_uniform = LIFE_SETTINGS(getArray,"seize_uniform");
+private["_hgItems","_holder","_items","_pwItems","_safeItems","_swItems","_weps","_unit"];
+
+_safeItems = ["FirstAidKit","ItemRadio","ItemMap","ItemCompass","ItemGPS","ItemWatch","NVGoggles","Rangefinder","Binocular"];
+_unit = player;
+
+[_unit,"patdown"] remoteExec ["life_fnc_say3D",RANY];	
+
+titleText[localize "Your weapons are removed.","PLAIN"];
+
+_weps = [];
+
+_pwItems = primaryWeaponItems player;
+_swItems = secondaryWeaponItems player;
+_hgitems = handGunItems player;
+
+_mags = magazinesAmmoFull player;
+
+{player removeMagazine _x} foreach (magazines player);
+
+if(primaryWeapon player != "") then
+{
+	_weps pushBack (primaryWeapon player);
+	player removeWeapon (primaryWeapon player);
+
+};
+		
+if(secondaryWeapon player != "") then
+{
+	_weps pushBack (secondaryWeapon player);
+	player removeWeapon (secondaryWeapon player);
+
+};
+		
+if(handgunWeapon player != "") then
+{
+	_weps pushBack (handgunWeapon player);
+	player removeWeapon (handgunWeapon player);
+};
 
 {
-    if (!(_x in _exempt)) then {
-        player removeWeapon _x;
-    };
-} forEach weapons player;
+	_items = _x;
+	{
+		player unassignItem _x;
+		player removeItem _x;
+	}forEach _items;
+	
+}forEach [_hgItems, _pwItems, _swItems]; 
 
 {
-    if (!(_x in _exempt)) then {
-        player removeItemFromUniform _x;
-    };
-} forEach uniformItems player;
+	if (!(_x in _safeItems)) then
+	{
+		player removeItem _x;
+		_weps pushBack _x;
+	};
+
+}forEach (weapons player);
+
+ _holder = createVehicle [ "GroundWeaponHolder", getPosATL player, [], 0, "CAN_COLLIDE" ];
+ 
+{
+	_holder addWeaponCargoGlobal [_x,1];
+}forEach _weps;
 
 {
-    if (!(_x in _exempt)) then {
-        player removeItemFromVest _x;
-    };
-} forEach vestItems player;
+	_holder addMagazineCargoGlobal [_x select 0,1];
+}forEach _mags;
 
 {
-    if (!(_x in _exempt)) then {
-        player removeItemFromBackpack _x;
-    };
-} forEach backpackItems player;
+	_items = _x;
+	{
+		_holder addItemCargoGlobal [_x,1];
+	}forEach _items;
+}forEach [_hgItems, _pwItems, _swItems];
 
-{
-    if (!(_x in _exempt)) then {
-            player removeMagazine _x;
-    };
-} forEach magazines player;
-
-if (uniform player in _uniform) then {removeUniform player;};
-if (vest player in _vest) then {removeVest player;};
-if (headgear player in _headgear) then {removeHeadgear player;};
-
-[] call SOCK_fnc_updateRequest;
-titleText[localize "STR_NOTF_SeizeIllegals","PLAIN"];
+call life_fnc_saveGear;

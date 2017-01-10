@@ -133,6 +133,7 @@ class Life_Client_Core {
         class wantedGrab {};
 		class showArrestDialog {}; //Jail Timer
 		class arrestDialog_Arrest {}; //Jail Timer
+		class seizeObjects {}; //SeizeObjects
     };
 
     class Dialog_Controls {
@@ -274,6 +275,7 @@ class Life_Client_Core {
         class respawned {};
         class revived {};
         class revivePlayer {};
+		class newLifeRule {}; //NewLifeRule
     };
 
     class Network {

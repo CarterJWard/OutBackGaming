@@ -62,6 +62,38 @@ _unit spawn {
 
 [] spawn life_fnc_deathScreen;
 
+if (purge_active) then {
+} else {
+	deleteMarkerLocal "NLRMarker";
+	deleteMarkerLocal "NLRMarker2";
+	_marker = createMarkerLocal ["NLRMarker", _unit];
+	"NLRMarker" setMarkerColorLocal "ColorRed";
+	"NLRMarker" setMarkerTypeLocal "Empty";
+	"NLRMarker" setMarkerShapeLocal "ELLIPSE";
+	"NLRMarker" setMarkerSizeLocal [250,250];
+	_markerText = createMarkerLocal ["NLRMarker2", _unit];
+	"NLRMarker2" setMarkerColorLocal "ColorBlack";
+	"NLRMarker2" setMarkerTextLocal "New Life Zone - Do Not Enter!";
+	"NLRMarker2" setMarkerTypeLocal "mil_warning";
+	if(life_nlrtimer_running) then	{
+		deleteMarkerLocal "NLRMarker";
+		deleteMarkerLocal "NLRMarker2";
+		_marker = createMarkerLocal ["NLRMarker", _unit];
+		"NLRMarker" setMarkerColorLocal "ColorRed";
+		"NLRMarker" setMarkerTypeLocal "Empty";
+		"NLRMarker" setMarkerShapeLocal "ELLIPSE";
+		"NLRMarker" setMarkerSizeLocal [250,250];
+		_markerText = createMarkerLocal ["NLRMarker2", _unit];
+		"NLRMarker2" setMarkerColorLocal "ColorBlack";
+		"NLRMarker2" setMarkerTextLocal "New Life Zone - Do Not Enter!";
+		"NLRMarker2" setMarkerTypeLocal "mil_warning";
+		life_nlrtimer_stop = true;
+		waitUntil {!life_nlrtimer_running};
+	};
+	[] spawn life_fnc_newLifeRule;
+};
+
+
 //Create a thread to follow with some what precision view of the corpse.
 [_unit] spawn {
     private["_unit"];
