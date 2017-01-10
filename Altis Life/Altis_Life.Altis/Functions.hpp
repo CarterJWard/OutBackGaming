@@ -311,6 +311,9 @@ class Life_Client_Core {
         class wantedInfo {};
         class wantedList {};
         class wantedMenu {};
+		class smartphone {};
+		class newMsg {};
+		class showMsg {};
     };
 
     class Shops    {

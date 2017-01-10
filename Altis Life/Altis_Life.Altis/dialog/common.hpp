@@ -143,13 +143,17 @@ class Life_RscListNBox
     colorSelectBackground2[] = {1,1,1,0.5};
     colorPicture[] = {1,1,1,1};
     colorPictureSelected[] = {1,1,1,1};
-        colorPictureDisabled[] = {1,1,1,1};
+    colorPictureDisabled[] = {1,1,1,1};
     soundSelect[] = {"",0.1,1};
     soundExpand[] = {"",0.1,1};
     soundCollapse[] = {"",0.1,1};
     period = 1.2;
     maxHistoryDelay = 0.5;
     autoScrollSpeed = -1;
+	rowHeight = 0.04;
+	drawSideArrows = 0;
+	idcLeft = -1;
+	idcRight = -1;
     autoScrollDelay = 5;
     autoScrollRewind = 0;
     class ListScrollBar: Life_RscScrollBar{};
