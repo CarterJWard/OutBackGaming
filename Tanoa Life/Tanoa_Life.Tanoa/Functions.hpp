@@ -178,7 +178,6 @@ class Life_Client_Core {
         class clearVehicleAmmo {};
         class dropItems {};
         class escInterupt {};
-        class MarshalLaw {};
         class fetchCfgDetails {};
         class fetchDeadGear {};
         class fetchVehInfo {};

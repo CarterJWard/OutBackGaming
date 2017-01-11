@@ -108,16 +108,6 @@ class life_wanted_menu {
 			h = 0.03;
 		};
 		
-	class MarshalButton : life_RscButtonMenu {
-            idc = 5638;
-            text = "Marshal Law";
-            onButtonClick = "[] call life_fnc_MarshalLaw";
-            x = 0.75;
-            y = 0.76;
-            w = (5.75 / 40);
-            h = (1 / 25);
-        };
-		
 		class CloseButtonKey : Life_RscButtonMenu {
 			idc = -1;
 			text = "$STR_Global_Close";
