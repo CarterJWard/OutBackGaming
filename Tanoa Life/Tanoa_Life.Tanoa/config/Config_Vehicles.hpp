@@ -758,8 +758,8 @@ will modify the virtual space and the price of the vehicle, but other informatio
                 "#(argb,8,8,3)color(0.05,0.05,0.05,1)"
             } },
             { "Camo", "cop", {
-                "textures\militaryhunter2.paa",
-                "textures\militaryhunter.paa"
+                "textures\cop\militaryhunter2.paa",
+                "textures\cop\ilitaryhunter.paa"
             } }
         };
     };
