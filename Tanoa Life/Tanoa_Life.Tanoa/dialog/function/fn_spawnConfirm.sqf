@@ -62,6 +62,7 @@ if (life_spawn_point isEqualTo []) then {
 if (life_firstSpawn) then {
     life_firstSpawn = false;
     [] call life_fnc_welcomeNotification;
+    [] execVM "core\scripts\fn_introText.sqf";
 };
 [] call life_fnc_playerSkins;
 [] call life_fnc_hudSetup;
