@@ -1,0 +1,1 @@
+ALTER TABLE `altislife`.`players` ADD COLUMN `cop_prof` TEXT NULL DEFAULT NULL AFTER `blacklist`,ADD COLUMN `civ_prof` TEXT NULL DEFAULT NULL AFTER `cop_prof`,ADD COLUMN `med_prof` TEXT NULL DEFAULT NULL AFTER `civ_prof`;
