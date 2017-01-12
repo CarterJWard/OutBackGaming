@@ -7,7 +7,7 @@ disableChannels[]={{0,true,true},{1,true,true},{2,true,true}};    // Disabled te
 #include "infiSTAR_AdminMenu.hpp"
 
 class CfgServer {
-    DatabaseName = "tanoalife"; //Config name that'll be grep in the extdb-conf.ini. Default: [altislife]
+    DatabaseName = "altislife"; //Config name that'll be grep in the extdb-conf.ini. Default: [altislife] (To be changed on dedi:Larry)
     DebugMode = 0; //Enable many server/hc debugging logs. Default: 0 (1 = Enabled / 0 = Disabled)
     HeadlessSupport = 0; //Enable/Disable Headless client support. Default: 1 (1 = Enabled / 0 = Disabled)
     /*
@@ -39,11 +39,11 @@ class RscTitles {
         sizeEx = 0.05;
 	colorBackground[] = {1,1,1,1};
         colorText[] = {1,1,1,1};
-        text = "textures\newLogo.paa";   
+        text = "textures\newLogo.paa";
         lineSpacing = 1;
-        }; 
-     }; 
-  }; 
+        };
+     };
+  };
 };
 
 class CfgFunctions {
@@ -69,7 +69,7 @@ class CfgSounds {
         sound[] = {"\sounds\tazer.ogg", 0.25, 1};
         titles[] = {};
     };
-    
+
     class Intro {
 		name = "Intro";
 		sound[] = {"\sounds\intro.ogg", .40, 1};
@@ -111,7 +111,7 @@ class CfgSounds {
         sound[] = {"\sounds\carUnlock.ogg", 0.25, 1};
         titles[] = {};
     };
-    
+
     class chainsaw {
         name = "chainsaw";
         sound[] = {"\sounds\chainsaw.ogg", 1.0, 1};
