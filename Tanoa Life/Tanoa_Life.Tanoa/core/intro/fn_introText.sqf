@@ -8,7 +8,7 @@ _onScreenTime = 5;
 sleep 2; //Wait in seconds before the credits start after player is in-game
 
 _role1 = "Welcome to Tanoa Life";
-_role1names = ["By the ExileGaming Development Team"];
+_role1names = ["By the Outback Gaming Development Team"];
 _role2 = "Improved upon";
 _role2names = ["By The ArmA RPG Life Team"];
 _role3 = "Visit Our Website at";
