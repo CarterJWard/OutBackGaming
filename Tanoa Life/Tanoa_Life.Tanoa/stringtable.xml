@@ -1062,7 +1062,7 @@
             <Original>You don't have that much money!</Original>
         </Key>
         <Key ID="STR_NOTF_NotACop">
-            <Original>You are not a cop.</Original>
+            <Original>You are not a officer.</Original>
         </Key>
         <Key ID="STR_NOTF_NoRoom">
             <Original>You don't have enough room for that item.</Original>
@@ -1230,7 +1230,7 @@
             <Original>Couldn't remove the items from your inventory to put in the vehicle.</Original>
         </Key>
         <Key ID="STR_NOTF_illegalItemCannotDispose">
-            <Original>This is an illegal item and cops are near by. You cannot dispose of the evidence.</Original>
+            <Original>This is an illegal item and military operatives are near by. You cannot dispose of the evidence.</Original>
         </Key>
         <Key ID="STR_NOTF_cannotRemoveInVeh">
             <Original>You cannot remove an item when you are in a vehicle.</Original>
@@ -1335,7 +1335,7 @@
             <Original>Someone is already accessing the safe..</Original>
         </Key>
         <Key ID="STR_Civ_NotEnoughCops">
-            <Original>There needs to be %1 or more cops online to continue.</Original>
+            <Original>There needs to be %1 or more officers online to continue.</Original>
         </Key>
         <Key ID="STR_Civ_SafeInv">
             <Original>Safe Inventory</Original>
@@ -2020,7 +2020,7 @@
             <Original>A blasting charge has been placed on the federal reserves vault, You have till the clock runs out to disarm the charge!</Original>
         </Key>
         <Key ID="STR_ISTR_Blast_KeepOff">
-            <Original>The timer is ticking! Keep the cops away from the vault!</Original>
+            <Original>The timer is ticking! Keep the military away from the vault!</Original>
         </Key>
         <Key ID="STR_ISTR_Blast_Disarmed">
             <Original>The charge has been disarmed!</Original>
@@ -2459,7 +2459,7 @@
             <Original>You need to be a civilian to use this store!</Original>
         </Key>
         <Key ID="STR_Shop_NotaCop">
-            <Original>You need to be a cop to use this store!</Original>
+            <Original>You need to be a officer to use this store!</Original>
         </Key>
         <Key ID="STR_Shop_NotaReb">
             <Original>You don't have Guerilla training yet!</Original>
@@ -2890,13 +2890,13 @@
             <Original>Store vehicle in Garage</Original>
         </Key>
         <Key ID="STR_MAR_Cop_Item_Shop">
-            <Original>Cop Item Shop</Original>
+            <Original>Military Item Shop</Original>
         </Key>
         <Key ID="STR_MAR_Cop_Clothing_Shop">
-            <Original>Cop Clothing Shop</Original>
+            <Original>Military Clothing Shop</Original>
         </Key>
         <Key ID="STR_MAR_Cop_Weapon_Shop">
-            <Original>Cop Weapon Shop</Original>
+            <Original>Military Weapon Shop</Original>
         </Key>
         <Key ID="STR_MAR_Patrol_Officer_Weapon_Shop">
             <Original>Patrol Officer Weapon Shop</Original>
@@ -3151,10 +3151,10 @@
             <Original>Mission Failed</Original>
         </Key>
         <Key ID="STR_Blacklisted_SubTitle">
-            <Original>You are blacklisted from cops.</Original>
+            <Original>You are blacklisted from military.</Original>
         </Key>
         <Key ID="STR_Blacklisted_Descript">
-            <Original>You are not allowed to be a cop due to previous actions and the admins have removed you from being a cop.</Original>
+            <Original>You are not allowed to be a officer due to previous actions and the admins have removed you from being a officer. If you feel this is incorrect please contact our ta</Original>
         </Key>
     </Package>
     <Package name="SpyGlass">
