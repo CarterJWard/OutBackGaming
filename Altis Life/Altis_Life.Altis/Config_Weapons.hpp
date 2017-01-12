@@ -132,7 +132,7 @@ class WeaponShops {
 
     //Cop Shops
     class cop_basic {
-        name = "Military Shop";
+        name = "Altis Cop Shop";
         side = "cop";
         license = "";
         level[] = { "", "", -1, "" };
@@ -156,7 +156,7 @@ class WeaponShops {
     };
 
     class cop_patrol {
-        name = "Military Patrol Shop";
+        name = "Altis Patrol Officer Shop";
         side = "cop";
         license = "";
         level[] = { "life_coplevel", "SCALAR", 2, "You must be a Patrol Officer Rank!" };
@@ -182,7 +182,7 @@ class WeaponShops {
     };
 
     class cop_sergeant {
-        name = "Military Shop";
+        name = "Altis Sergeant Officer Shop";
         side = "cop";
         license = "";
         level[] = { "life_coplevel", "SCALAR", 3, "You must be a Sergeant Rank!" };
