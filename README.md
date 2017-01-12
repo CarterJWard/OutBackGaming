@@ -1,2 +1,2 @@
-# ExileGaming
-Repo for the Exile Gaming Tanoa Life Server & Altis Life servers
+# Outback Gaming
+Repo for the Outback Gaming Tanoa Life Server & Altis Life servers
