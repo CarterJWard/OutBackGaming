@@ -141,6 +141,7 @@ class CarShops {
             { "B_T_VTOL_01_vehicle_F", { "life_coplevel", "SCALAR", 4} },
             { "B_Heli_Attack_01_F", { "life_coplevel", "SCALAR", 11} },
             { "O_T_UAV_04_CAS_F", { "life_coplevel", "SCALAR", 11} }
+            { "B_T_VTOL_01_armed_F", {"life_copleve;", "SCALAR", 6}}
             /*
             { "", { "", "", } },
             { "", { "", "", } }
@@ -351,7 +352,13 @@ class LifeCfgVehicles {
         price = 50000;
         textures[] = {};
     };
-    
+
+    //Apex DLC
+    class B_T_VTOL_01_armed_F
+        v_ItemSpace = 0;
+        licenses[] = { {""}, {""}, {""},{""} };
+        price = 200000;
+        textures[] = {};
     class B_APC_Wheeled_01_cannon_F {
         vItemSpace = 50;
         licenses[] = { {""}, {""}, {""}, {""} };

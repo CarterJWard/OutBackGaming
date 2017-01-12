@@ -13,15 +13,7 @@
             <German>Bruce Outback Outfits</German>
         </Key>
         <Key ID="STR_Shops_C_Police">
-            <Original>Altis Police Department Shop</Original>
-            <Czech>Altis policejní oddělení Shop</Czech>
-            <French>Boutique de la police</French>
-            <Spanish>Tienda del Departamento de Policía</Spanish>
-            <Russian></Russian>
-            <Portuguese>Loja de Roupas Policiais</Portuguese>
-            <Polish>Sklep Policyjny</Polish>
-            <Italian>Dipartimento della Polizia di Altis</Italian>
-            <German>Altis Police Department-Shop</German>
+            <Original>Military Shop</Original>
         </Key>
         <Key ID="STR_Shops_C_Rebel">
             <Original>Mohammed's Jihadi Shop</Original>
@@ -200,15 +192,7 @@
             <Polish>Skup materiałów przemysłowych</Polish>
         </Key>
         <Key ID="STR_Shops_Cop">
-            <Original>APD Item Shop</Original>
-            <Czech>APD Item Shop</Czech>
-            <Spanish>Equipamiento Policial</Spanish>
-            <Russian></Russian>
-            <German>APD Gegenstände</German>
-            <Italian>Negozio Polizia</Italian>
-            <French>Equipement de Police</French>
-            <Portuguese>Equipamentos da Polícia</Portuguese>
-            <Polish>Zbrojownia Policji</Polish>
+            <Original>Military Item Shop</Original>
         </Key>
         <Key ID="STR_Shops_Cement">
             <Original>Juan's Cement Laying</Original>
@@ -1156,15 +1140,7 @@
             <Polish>Do: Gracz</Polish>
         </Key>
         <Key ID="STR_CELL_TextPolice">
-            <Original>Text Police</Original>
-            <Czech>Text Police</Czech>
-            <Spanish>Msg Policía</Spanish>
-            <Russian></Russian>
-            <German>An die Polizei</German>
-            <French>Texte Police</French>
-            <Italian>Msg Polizia</Italian>
-            <Portuguese>Polícia</Portuguese>
-            <Polish>Do: Policja</Polish>
+            <Original>Text Military</Original>
         </Key>
         <Key ID="STR_CELL_TextAdmins">
             <Original>Text Admins</Original>
@@ -3087,15 +3063,7 @@
             <Polish>Zostałeś wyleczony</Polish>
         </Key>
         <Key ID="STR_NOTF_BeingImpounded">
-            <Original>%1 your %2 is being impounded by the police.</Original>
-            <Czech>%1 Váš%2 je zabaveno policií.</Czech>
-            <Spanish>%1 tu %2 esta siendo embargado por la policía.</Spanish>
-            <Russian></Russian>
-            <German>%1 dein %2 wird von der Polizei beschlagnahmt.</German>
-            <French>%1 votre %2 est envoyé a la fourrière par la police.</French>
-            <Italian>%1 il tuo %2 sta per essere sequestrato dalla Polizia.</Italian>
-            <Portuguese>%1 seu %2 está sendo apreendido pela Polícia</Portuguese>
-            <Polish>%1 twój %2 jest usuwany przez Policję</Polish>
+            <Original>%1 your %2 is being impounded by the Military.</Original>
         </Key>
         <Key ID="STR_NOTF_Impounding">
             <Original>Impounding Vehicle</Original>
@@ -3549,7 +3517,7 @@
             <Polish>Nie masz tyle pieniędzy!</Polish>
         </Key>
         <Key ID="STR_NOTF_NotACop">
-            <Original>You are not a cop.</Original>
+            <Original>You are not a Military Operative.</Original>
             <Czech>Ty nejsi polda.</Czech>
             <Spanish>No eres policía.</Spanish>
             <Russian></Russian>
@@ -4154,15 +4122,7 @@
             <German>Das Fahrzeug ist entweder voll oder kann nicht so viel halten.</German>
         </Key>
         <Key ID="STR_NOTF_illegalItemCannotDispose">
-            <Original>This is an illegal item and cops are near by. You cannot dispose of the evidence.</Original>
-            <Czech>To je ilegální položky a policajti jsou v blízkosti. Nemůžete zbavit důkazů.</Czech>
-            <French>Ceci est un élément illégal et les flics sont à proximité. Vous ne pouvez pas jeter la preuve.</French>
-            <Spanish>Este es un artículo ilegal y policías están cerca. No se puede disponer de las pruebas.</Spanish>
-            <Italian>Non puoi liberarti di questo oggetto dato che è una prova evidente.</Italian>
-            <Polish>Jest to nielegalne element i policjanci są w pobliżu. Nie można pozbyć się dowodów.</Polish>
-            <Portuguese>Este é um item ilegal e policiais estão nas proximidades. Você não pode dispor das provas.</Portuguese>
-            <Russian>Это незаконный пункт и полицейские находятся поблизости. Вы не можете избавиться от доказательств.</Russian>
-            <German>Dies ist eine illegale Artikel und Polizisten sind in der Nähe. Sie können nicht von den Beweisen zu entsorgen.</German>
+            <Original>This is an illegal item and military operatives are near by. You cannot dispose of the evidence.</Original>
         </Key>
         <Key ID="STR_NOTF_cannotRemoveInVeh">
             <Original>You cannot remove an item when you are in a vehicle.</Original>
@@ -4356,15 +4316,7 @@
             <Polish>Ktoś właśnie włamuje się do sejfu!</Polish>
         </Key>
         <Key ID="STR_Civ_NotEnoughCops">
-            <Original>There needs to be %1 or more cops online to continue.</Original>
-            <Czech>Musí existovat%1 nebo více policajtů on-line pokračovat.</Czech>
-            <Spanish>Necesita haber %1 o mas policías para continuar.</Spanish>
-            <Russian></Russian>
-            <German>Es müssen %1 oder mehr Polizisten online sein, um fortfahren zu können.</German>
-            <French>Il faut au minimum %1 flic pour continuer</French>
-            <Italian>Servono almeno %1 poliziotti online per continuare.</Italian>
-            <Portuguese>É necessário ter %1 ou mais policiais online para continuar.</Portuguese>
-            <Polish>Potrzeba conajmniej %1 policjantów aby kontynuować</Polish>
+            <Original>There needs to be %1 or more military operatives online to continue.</Original>
         </Key>
         <Key ID="STR_Civ_SafeInv">
             <Original>Safe Inventory</Original>
@@ -4389,28 +4341,12 @@
             <Polish>Musisz coś wybrać</Polish>
         </Key>
         <Key ID="STR_Civ_IsntEnoughGold">
-            <Original>There isn't %1 gold bar(s) in the safe!</Original>
-            <Czech>Není%1 zlatá bar (y) v bezpečí!</Czech>
-            <Spanish>No hay %1 barra(s) de oro en la caja!</Spanish>
-            <Russian></Russian>
-            <German>Es sind keine %1 Goldbarren im Tresor!</German>
-            <French>Il n'y a pas %1 lingot(s) d'or dans le coffre</French>
-            <Italian>Nella cassaforte non ci sono %1 lingotti d'oro</Italian>
-            <Portuguese>Não existe %1 barra(s) de ouro no cofre!</Portuguese>
-            <Polish>W sejfie nie ma % sztab złota!</Polish>
+            <Original>There isn't %1 gold bar(s) in the safe!</Original>>
         </Key>
     </Package>
     <Package name="Cop_Strings">
         <Key ID="STR_Cop_TicketError">
             <Original>Couldn't open the ticketing interface</Original>
-            <Czech>Nemohl otevřít jízdenek rozhraní</Czech>
-            <Spanish>No se pudo abrir el menu de tiquetes!</Spanish>
-            <Russian></Russian>
-            <German>Der Bußgeldkatalog konnte nicht geöffnet werden</German>
-            <French>Impossible d'ouvrir l'interface d'amende</French>
-            <Italian>Impossibile aprire l'interfaccia per le multe</Italian>
-            <Portuguese>Não foi possível abrir o bloco de multa</Portuguese>
-            <Polish>Nie potrafię otworzyć interfejsu mandatów</Polish>
         </Key>
         <Key ID="STR_Cop_Ticket">
             <Original>Ticketing %1</Original>
@@ -6759,7 +6695,7 @@
             <Polish>Ładunek wybuchowy został założony na skarbcu rezerw federalnych, musisz rozbroić ładunek nim wybuchnie!</Polish>
         </Key>
         <Key ID="STR_ISTR_Blast_KeepOff">
-            <Original>The timer is ticking! Keep the cops away from the vault!</Original>
+            <Original>The timer is ticking! Keep the military away from the vault!</Original>
             <Czech>Časovač je tikání! Udržujte policajty od trezoru!</Czech>
             <Spanish>El tiempo esta corriendo, manten alejados a los policías!</Spanish>
             <Russian></Russian>
@@ -8950,15 +8886,7 @@
             <Italian>Ospedale</Italian>
         </Key>
         <Key ID="STR_MAR_Police_Station">
-            <Original>Police Station</Original>
-            <Czech>Policejní stanice</Czech>
-            <French>Poste de police</French>
-            <Spanish>Estación de Policia</Spanish>
-            <Russian></Russian>
-            <German>Polizei Revier</German>
-            <Portuguese>Estação Policial</Portuguese>
-            <Polish>Posterunek policji</Polish>
-            <Italian>Questura</Italian>
+            <Original>Military Station</Original>
         </Key>
         <Key ID="STR_MAR_Police_Air_HQ">
             <Original>Police Air HQ</Original>
@@ -9016,15 +8944,7 @@
             <Italian>Penitenziario di Altis</Italian>
         </Key>
         <Key ID="STR_MAR_Police_HQ">
-            <Original>Police HQ</Original>
-            <Czech>Police HQ</Czech>
-            <French>QG de la police</French>
-            <Spanish>Comisaria de Policía</Spanish>
-            <Italian>QG Polizia</Italian>
-            <Russian></Russian>
-            <German>Polizei HauptQuartier</German>
-            <Portuguese>QG Policial</Portuguese>
-            <Polish>KG Policji Altis</Polish>
+            <Original>Military HQ</Original>
         </Key>
         <Key ID="STR_MAR_Coast_Guard">
             <Original>Coast Guard</Original>
@@ -9554,17 +9474,6 @@
             <Polish>Bank Rezerw Federalnych</Polish>
             <Italian>Banca Federale</Italian>
         </Key>
-        <Key ID="STR_MAR_Highway_Patrol">
-            <Original>Highway Patrol Outpost</Original>
-            <Czech>Dálniční hlídka Outpost</Czech>
-            <French>Poste de Police</French>
-            <Spanish>Puesto de Patrulla de Carretera</Spanish>
-            <Russian></Russian>
-            <German>Mautstation</German>
-            <Portuguese>Base da Polícia Rodoviária</Portuguese>
-            <Polish>Posterunek policji drogowej</Polish>
-            <Italian>Checkpoint di polizia</Italian>
-        </Key>
         <Key ID="STR_MAR_Rock_Quarry">
             <Original>Rock Quarry</Original>
             <Czech>kamenolomu</Czech>
@@ -9797,7 +9706,7 @@
             <Italian>Deposita veicolo in garage</Italian>
         </Key>
         <Key ID="STR_MAR_Cop_Item_Shop">
-            <Original>Cop Item Shop</Original>
+            <Original>Military Item Shop</Original>
             <Czech>Cop Item Shop</Czech>
             <French>Marché flic</French>
             <Spanish>Tienda de Objetos de Policía</Spanish>
@@ -9808,7 +9717,7 @@
             <Polish>Zaopatrzenie</Polish>
         </Key>
         <Key ID="STR_MAR_Cop_Clothing_Shop">
-            <Original>Cop Clothing Shop</Original>
+            <Original>Military Clothing Shop</Original>
             <Czech>Cop Oblečení Shop</Czech>
             <French>Friperie Flic</French>
             <Spanish>Tienda de Ropa de Policía</Spanish>
@@ -9819,7 +9728,7 @@
             <Polish>Umundurowanie</Polish>
         </Key>
         <Key ID="STR_MAR_Cop_Weapon_Shop">
-            <Original>Cop Weapon Shop</Original>
+            <Original>Military Weapon Shop</Original>
             <Czech>Cop obchodu se zbraněmi</Czech>
             <French>Vendeur d'armes flic</French>
             <Spanish>Tienda de Armas de Policía</Spanish>
@@ -10741,15 +10650,7 @@
             <German>Sie sind von Polizisten die schwarze Liste gesetzt.</German>
         </Key>
         <Key ID="STR_Blacklisted_Descript">
-            <Original>You are not allowed to be a cop due to previous actions and the admins have removed you from being a cop.</Original>
-            <Czech>Ty jsou nesmí být policajt vzhledem k předcházejícími akcemi a administrátoři vám odstraní z bytí policista.</Czech>
-            <French>Vous n'êtes pas autorisé à être un flic en raison des actions précédentes et les admins vous avez supprimé d'être un flic.</French>
-            <Spanish>No se le permite ser un policía debido a las acciones anteriores y los administradores de haber quitado de ser un policía.</Spanish>
-            <Italian>Non è consentito fare il poliziotto a causa di azioni precedenti e gli amministratori di aver rimosso da essere un poliziotto.</Italian>
-            <Polish>Nie mogą być policjantem z powodu wcześniejszych działań oraz administratorzy usunęli cię od bycia policjantem.</Polish>
-            <Portuguese>Você não tem permissão para ser um policial devido a ações anteriores e os admins ter removido-lo de ser um policial.</Portuguese>
-            <Russian>Вы не можете быть полицейским в связи с предыдущими действиями и админы удалили вас от того, чтобы быть полицейским.</Russian>
-            <German>Sie sind nicht Polizist werden auf Grund früherer Aktionen und die Admins haben sich von einem Cop entfernt es erlaubt.</German>
+            <Original>You are not allowed to be a military operative due to previous actions and the admins have removed you from being a member of the military.</Original>
         </Key>
     </Package>
     <Package name="SpyGlass">
