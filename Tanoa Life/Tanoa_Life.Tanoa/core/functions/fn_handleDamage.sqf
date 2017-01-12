@@ -43,11 +43,13 @@ if (!isNull _source) then {
                 _damage = 0;
             };
         };
-        
-        //ANTI VDM..
-        //if ((vehicle _source) isKindOf "Car" || (vehicle _source) iskindOf "Air" || (vehicle _source) isKindOf "Armored" && (vehicle player) isEqualTo player && (driver (vehicle _source) isEqualTo _source)) then {_damage = 0};
-    };
 };
 
+  //ANTI VDM..
+       if(vehicle _source isKindOf "LandVehicle") then {
+        if(_source != _unit AND {alive _unit} AND {isPlayer _source}) then {
+        _damage = 0.001;
+        };
+    };
 [] spawn life_fnc_hudUpdate;
 _damage;
