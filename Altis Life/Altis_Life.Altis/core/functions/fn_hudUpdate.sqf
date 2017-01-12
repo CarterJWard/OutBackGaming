@@ -13,3 +13,5 @@ LIFEctrl(2200) progressSetPosition (life_hunger / 100);
 LIFEctrl(2201) progressSetPosition (1 - (damage player));
 LIFEctrl(2202) progressSetPosition (life_thirst / 100);
 */
+
+[] execVM "scripts\custHud.sqf";

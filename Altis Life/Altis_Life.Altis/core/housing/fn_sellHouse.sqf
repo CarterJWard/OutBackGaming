@@ -40,6 +40,7 @@ if (_action) then {
 
     BANK = BANK + (round((_houseCfg select 0)/2));
     [1] call SOCK_fnc_updatePartial;
+	[] call life_fnc_hudUpdate;
     _index = life_vehicles find _house;
 
     if (LIFE_SETTINGS(getNumber,"player_advancedLog") isEqualTo 1) then {

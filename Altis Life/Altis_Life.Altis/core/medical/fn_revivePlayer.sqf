@@ -67,6 +67,7 @@ if (!isNil "_badDistance") exitWith {titleText[localize "STR_Medic_TooFar","PLAI
 if (life_interrupted) exitWith {life_interrupted = false; titleText[localize "STR_NOTF_ActionCancel","PLAIN"]; life_action_inUse = false;};
 
 BANK = BANK + _reviveCost;
+[] call life_fnc_hudUpdate;
 
 life_action_inUse = false;
 _target setVariable ["Revive",TRUE,TRUE];

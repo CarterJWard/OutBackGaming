@@ -30,7 +30,7 @@ _action = [
 if (_action) then {
     if (BANK < (_houseCfg select 0)) exitWith {hint format [localize "STR_House_NotEnough"]};
     BANK = BANK - (_houseCfg select 0);
-
+	[] call life_fnc_hudUpdate;
     if (life_HC_isActive) then {
         [_uid,_house] remoteExec ["HC_fnc_addHouse",HC_Life];
     } else {

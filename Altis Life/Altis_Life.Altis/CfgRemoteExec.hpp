@@ -68,6 +68,7 @@ class CfgRemoteExec {
         F(TON_fnc_clientMessage,CLIENT)
         F(TON_fnc_player_query,CLIENT)
 		F(life_fnc_seizeObjects,CLIENT) 
+		F(life_fnc_wantedUpdate,CLIENT) 
 
         /* Server only functions */
         F(BIS_fnc_execVM,SERVER)
@@ -108,6 +109,7 @@ class CfgRemoteExec {
         F(TON_fnc_vehicleDelete,SERVER)
         F(TON_fnc_vehicleStore,SERVER)
         F(TON_fnc_vehicleUpdate,SERVER)
+		F(life_fnc_wantedCheck,SERVER)
 
         /* HeadlessClient only functions */
         F(HC_fnc_addContainer,HC)

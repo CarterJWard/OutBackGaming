@@ -118,7 +118,7 @@ for "_i" from 0 to 1 step 0 do {
 		_load = round(_cfg / 8);
 		life_maxWeight = life_maxWeight + _load;
 		if(playerSide == west) then {(unitBackpack player) setObjectTextureGlobal [1,""];};
-		if(playerSide == independent) then {(unitBackpack player) setObjectTextureGlobal [1,""];}
+		if(playerSide == independent) then {(unitBackpack player) setObjectTextureGlobal [1,""]};
 		waitUntil {backpack player != _bp};
 		if(backpack player == "") then 
 		{

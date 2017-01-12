@@ -98,6 +98,16 @@
                         underline = false;
                     }; 
                 };
+				class wantedtitle: Life_RscStructuredText
+                {
+                    idc = 1007;
+                    text = "Wanted Amount"; //--- ToDo: Localize;
+                    x = 0.891875 * safezoneW + safezoneX;
+                    y = 0.764 * safezoneH + safezoneY;
+                    w = 0.0928125 * safezoneW;
+                    h = 0.011 * safezoneH;
+                    colorBackground[] = {1,0,0,1};
+                };
                 class banktitle: Life_RscStructuredText
                 {
                     idc = 1001;
@@ -118,6 +128,15 @@
                     h = 0.011 * safezoneH;
                     colorBackground[] = {1,0,0,1};
                 };
+				class wantedbg: Life_RscText
+                {
+                    idc = 1008;
+                    x = 0.891875 * safezoneW + safezoneX;
+                    y = 0.775 * safezoneH + safezoneY;
+                    w = 0.0928125 * safezoneW;
+                    h = 0.044 * safezoneH;
+                    colorBackground[] = {0,0,0,0.3};
+                };
                 class bankbg: Life_RscText
                 {
                     idc = 1004;
@@ -135,6 +154,16 @@
                     w = 0.0928125 * safezoneW;
                     h = 0.044 * safezoneH;
                     colorBackground[] = {0,0,0,0.3};
+                };
+				class wantedcount: Life_RscStructuredText
+                {
+                    idc = 1106;
+                    text = "";
+                    x = 0.897031 * safezoneW + safezoneX;
+                    y = 0.786 * safezoneH + safezoneY;
+                    w = 0.0825 * safezoneW;
+                    h = 0.022 * safezoneH;
+                    colorBackground[] = {-1,-1,-1,0};
                 };
                 class bankcount: Life_RscStructuredText
                 {
@@ -186,15 +215,5 @@
                     colorBackground[] = {1,0,0,1};
                     //sizeEx = 0.9 * GUI_GRID_H;
                 };
-                class watermark: Life_RscPicture
-                {
-                    idc = 1203;
-                    text = "textures\logo.paa";
-                    x = 0.0101562 * safezoneW + safezoneX;
-                    y = 0.885 * safezoneH + safezoneY;
-                    w = 0.0721875 * safezoneW;
-                    h = 0.099 * safezoneH;
-                };
-
             };
 		};

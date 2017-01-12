@@ -5,6 +5,7 @@
     Description:
     
 */
+
 StartProgress = false;
 
 [] execVM "briefing.sqf"; //Load Briefing
@@ -12,3 +13,4 @@ StartProgress = false;
 [] execVM "scripts\hudUpdater.sqf";
 
 StartProgress = true;
+

@@ -55,7 +55,6 @@ Example 2:
     25(±1)% to copper_unrefined;
     70(±1)% to iron_unrefined;
     5%(±1)% to diamond_uncut;
-
                                                          ! Watch Out !
  If percents are used,you MUST put more than 1 resource in the mined parameter
  mined[] = { {"copper_unrefined",0,25} }; NOT OK (But the script will work)

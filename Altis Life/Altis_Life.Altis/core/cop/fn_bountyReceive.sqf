@@ -17,3 +17,4 @@ if (_val == _total) then {
 };
 
 BANK = BANK + _val;
+[] call life_fnc_hudUpdate;

@@ -37,3 +37,5 @@ if (_action) then {
     closeDialog 0;
     life_action_inUse = false;
 };
+
+[] call life_fnc_hudUpdate;

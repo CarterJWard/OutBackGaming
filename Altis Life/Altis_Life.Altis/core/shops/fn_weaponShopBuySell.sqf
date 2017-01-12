@@ -69,3 +69,4 @@ if ((uiNamespace getVariable["Weapon_Shop_Filter",0]) isEqualTo 1) then {
     };
 };
 [] call life_fnc_saveGear;
+[] call life_fnc_hudUpdate;
