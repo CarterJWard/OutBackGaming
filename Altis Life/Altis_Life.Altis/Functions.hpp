@@ -60,6 +60,7 @@ class Life_Client_Core {
         class surrender {};
         class ticketAction {};
         class unrestrain {};
+		class craftAction {}; //CraftingAction
     };
 
     class Admin {
@@ -101,6 +102,7 @@ class Life_Client_Core {
         class itemWeight {};
         class vehicleAnimate {};
         class vehicleWeightCfg {};
+		class craftCfg {}; //CraftingAction
     };
 
     class Cop {
@@ -208,6 +210,7 @@ class Life_Client_Core {
         class tazeSound {};
         class teleport {};
         class whereAmI {};
+		class notification_system {}; //New Notfication HUD
     };
 
     class Gangs    {
@@ -315,6 +318,9 @@ class Life_Client_Core {
 		class newMsg {};
 		class showMsg {};
 		class wantedUpdate {};
+		class craft {}; //CraftingAction
+		class craft_update {}; //CraftingAction
+		class craft_updateFilter {}; //CraftingAction
     };
 
     class Shops    {

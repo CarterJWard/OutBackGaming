@@ -271,6 +271,35 @@ class playerSettings {
 		 colorDisabled[] = {1,0,0,0.1};
 		 };
 		 
+		class ButtonCrafting_ICON: life_RscPicture
+		 {
+		 idc = 2102;
+		 text = "icons\tablet\crafting.paa";
+		 x = 0.541998 * safezoneW + safezoneX;
+		 y = 0.6988 * safezoneH + safezoneY;
+		 w = 0.0315 * safezoneW;
+		 h = 0.056 * safezoneH;
+		 };
+		
+		class ButtonCrafting: life_RscButtonMenu
+		 {
+		 idc = 2101;
+		 x = 0.543338 * safezoneW + safezoneX;
+		 y = 0.7016 * safezoneH + safezoneY;
+		 w = 0.028875 * safezoneW;
+		 h = 0.0504 * safezoneH;
+		 onButtonClick = "closeDialog 0; createDialog ""Life_craft"";";
+		 tooltip = $STR_PM_Craft;
+		 colorBackground[] = {-1,-1,-1,-1};
+		 colorBackgroundFocused[] = {1,1,1,0.12};
+		 colorBackground2[] = {0.75,0.75,0.75,0.2};
+		 color[] = {1,1,1,1};
+		 colorFocused[] = {0,0,0,0};
+		 color2[] = {0,0,0,0};
+		 colorText[] = {1,1,1,1};
+		 colorDisabled[] = {1,0,0,0.1};
+		 };
+		 
 		 class ButtonCell_ICON: life_RscPicture
 		 {
 		 idc = 1204;

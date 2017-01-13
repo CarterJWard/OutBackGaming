@@ -56,3 +56,4 @@ if (LIFE_SETTINGS(getNumber,"player_advancedLog") isEqualTo 1) then {
     };
     publicVariableServer "advanced_log";
 };
+[] call life_fnc_hudUpdate;

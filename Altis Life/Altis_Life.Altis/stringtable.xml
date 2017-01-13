@@ -2135,6 +2135,9 @@
             <Portuguese>Menu Jogador</Portuguese>
             <Polish>Menu gracza</Polish>
         </Key>
+		<Key ID="STR_PM_Craft">
+			<Original>Crafting</Original>
+		</Key>
         <Key ID="STR_PM_cItems">
             <Original>Current Items</Original>
             <Czech>Aktuální položky</Czech>
@@ -7423,7 +7426,7 @@
             <Polish>%1 prosi o pomoc medyczną.</Polish>
         </Key>
         <Key ID="STR_Medic_Respawn">
-            <Original>Respawn Available in: %1</Original>
+            <Original> Life expectancy: %1</Original>
             <Czech>Respawn K dispozici v:%1</Czech>
             <Spanish>Puedes reaparecer en: %1</Spanish>
             <Russian></Russian>
@@ -10907,6 +10910,44 @@
 		</Key>
 		<Key ID="STR_SMARTPHONE_Notruftitle">
 			<Original>CALLS EMERGENCY | Abuse leads to BAN!</Original>
+		</Key>
+	</Package>
+	<Package name="Craft">
+		<Key ID="STR_CRAFT_Title">
+			<Original>Crafting Menu</Original>
+		</Key>
+		<Key ID="STR_PM_CraftStats">
+			<Original>Avilable Craftables</Original>
+		</Key>
+		<Key ID="STR_PM_CraftMaterials">
+			<Original>Crafting Materials</Original>
+		</Key>
+		<Key ID="STR_CRAFT_Button">
+			<Original>Craft!</Original>
+		</Key>
+		<Key ID="STR_PM_NoMaterial">
+			<Original>You do not have all the building materials!</Original>
+		</Key>
+		<Key ID="STR_CRAFT_Process">
+			<Original>You have made the following: %1</Original>
+		</Key>
+		<Key ID="STR_CRAFT_FILTER_Weapon">
+			<Original>Weapons</Original>
+		</Key>
+		<Key ID="STR_CRAFT_FILTER_Uniform">
+			<Original>Uniforms</Original>
+		</Key>
+		<Key ID="STR_CRAFT_FILTER_Backpack">
+			<Original>Backpacks</Original>
+		</Key>
+		<Key ID="STR_CRAFT_FILTER_Item">
+			<Original>Items</Original>
+		</Key>
+		<Key ID="STR_CRAFT_AR_Backpack">
+			<Original>You're ready for a backpack! Pack the old first.</Original> 
+		</Key>
+		<Key ID="STR_CRAFT_AR_Uniform">
+			<Original>You already have something on! Make yourself naked and try again.</Original>
 		</Key>
 	</Package>
 </Project>

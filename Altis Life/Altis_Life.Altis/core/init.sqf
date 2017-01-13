@@ -2,7 +2,6 @@
 /*
     File: init.sqf
     Author:
-
     Description:
     Master client initialization file
 */

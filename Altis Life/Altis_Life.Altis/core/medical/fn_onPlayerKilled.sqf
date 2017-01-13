@@ -38,6 +38,7 @@ life_deathCamera camSetRelPos [0,3.5,4.5];
 life_deathCamera camSetFOV .5;
 life_deathCamera camSetFocus [50,0];
 life_deathCamera camCommit 0;
+ShowCinemaBorder FALSE;
 
 (findDisplay 7300) displaySetEventHandler ["KeyDown","if ((_this select 1) isEqualTo 1) then {true}"]; //Block the ESC menu
 

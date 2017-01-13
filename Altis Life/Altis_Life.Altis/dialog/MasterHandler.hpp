@@ -30,3 +30,4 @@
 #include "AltisPhone.hpp"
 #include "jail_time.hpp" //Jail Timer
 #include "smartphone.hpp" //SQL Smartphone
+#include "craft.hpp" //CraftingAction
