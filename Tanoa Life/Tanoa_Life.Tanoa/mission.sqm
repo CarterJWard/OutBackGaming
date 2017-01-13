@@ -5,7 +5,7 @@ class EditorData
 	angleGridStep=0.017453292;
 	scaleGridStep=0.1;
 	autoGroupingDist=10;
-	toggles=522;
+	toggles=650;
 	class ItemIDProvider
 	{
 		nextID=8233;
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=232;
+		nextID=244;
 	};
 	class Camera
 	{
-		pos[]={1358.2245,151.69702,7155.0625};
-		dir[]={0.30609602,-0.80334932,0.51085275};
-		up[]={0.41291261,0.59549457,0.68912512};
-		aside[]={0.85781711,1.6247213e-007,-0.51399243};
+		pos[]={10477.06,358.99484,4725.8975};
+		dir[]={0.075228319,-0.55740404,-0.82683218};
+		up[]={0.050506048,0.83023858,-0.55511332};
+		aside[]={-0.99588972,6.4668711e-008,-0.090609252};
 	};
 };
 binarizationWanted=0;
@@ -936,7 +936,7 @@ class Mission
 			text="@STR_MAR_Drug_Dealer";
 			type="mil_dot";
 			colorName="ColorOrange";
-			angle=302.06693;
+			angle=302.06686;
 			id=88;
 			atlOffset=-211.58;
 		};
@@ -977,13 +977,13 @@ class Mission
 		class Item53
 		{
 			dataType="Marker";
-			position[]={10196.946,2.7153359e+027,4904.9419};
+			position[]={10196.1,0,4906.3818};
 			name="weed_1";
-			text="Weed Field";
+			text="@STR_MAR_Weed_Field";
 			type="mil_dot";
-			colorName="Color1_FD_F";
+			colorName="ColorRed";
 			id=94;
-			atlOffset=2.7153359e+027;
+			atlOffset=-23.320126;
 		};
 		class Item54
 		{
@@ -1119,7 +1119,6 @@ class Mission
 			type="c_unknown";
 			colorName="ColorCIV";
 			id=114;
-			atlOffset=0.24455857;
 		};
 		class Item67
 		{
@@ -1235,13 +1234,13 @@ class Mission
 		class Item77
 		{
 			dataType="Marker";
-			position[]={1396.9076,10.331139,8198.3574};
+			position[]={1396.3003,0,8196.7773};
 			name="cocaine_1";
-			text="Cociane Field";
+			text="@STR_MAR_Cocaine_Field";
 			type="mil_dot";
-			colorName="Color1_FD_F";
+			colorName="ColorRed";
 			id=125;
-			atlOffset=-7.181776;
+			atlOffset=-17.373266;
 		};
 		class Item78
 		{
@@ -1407,12 +1406,13 @@ class Mission
 		class Item92
 		{
 			dataType="Marker";
-			position[]={2585.2522,141.38484,2420.8486};
+			position[]={2585.252,-1.056245e-011,2420.8491};
 			name="heroin_1";
-			text="Heroin Field";
+			text="@STR_MAR_Heroin_Field";
 			type="hd_dot";
 			colorName="ColorRed";
 			id=140;
+			atlOffset=-141.38486;
 		};
 		class Item93
 		{
@@ -1500,7 +1500,6 @@ class Mission
 			type="c_car";
 			colorName="ColorCIV";
 			id=148;
-			atlOffset=0.16078234;
 		};
 		class Item101
 		{
@@ -2043,7 +2042,7 @@ class Mission
 			name="kart_shop_1";
 			type="Empty";
 			alpha=0.00016664373;
-			angle=229.15627;
+			angle=229.15623;
 			id=203;
 			atlOffset=55.910896;
 		};
@@ -3721,19 +3720,19 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={2478.5269,5.8664732,4071.9834};
+				position[]={2478.5273,5.8659768,4071.9829};
 				angles[]={0,0.68120199,0};
 			};
 			side="Empty";
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this allowDamage false; this enableSimulation false; this addAction[localize""STR_Process_Cocaine"",life_fnc_processAction,""cocaine"",0,false,false,"""",' _b = (nearestObjects[getPosATL player,[""Land_School_01_F"",""Land_Warehouse_03_F"",""Land_House_Small_03_F""],25]) select 0; life_inv_cocaineUnprocessed > 0 && !life_is_processing && !life_action_inUse && !isNil {_b getVariable ""gangOwner""} && {(_b getVariable ""gangOwner"") == (group player)} && playerSide isEqualTo civilian ']; this setVariable [""realname"",""Cocaine Processing""];";
+				init="this allowDamage false; this enableSimulation false; this addAction[localize""STR_Process_Cocaine"",life_fnc_processAction,""cocaine"",0,false,false,"""",' _b = nearestBuilding (getPosATL player); life_inv_cocaineUnprocessed > 0 && !life_is_processing && !life_action_inUse && !isNil {_b getVariable ""gangOwner""} && {(_b getVariable ""gangOwner"") == (group player)} && playerSide isEqualTo civilian ']; this setVariable [""realname"",""Cocaine Processing""];";
 				name="coke_processor";
 			};
 			id=669;
 			type="Land_Sink_F";
-			atlOffset=0.5364995;
+			atlOffset=0.53600073;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -3806,8 +3805,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={2485.2117,5.9391069,4066.9399};
-				angles[]={0,1.3917788,0};
+				position[]={2485.2112,5.9394879,4066.9399};
+				angles[]={0,1.3917779,0};
 			};
 			side="Empty";
 			class Attributes
@@ -3817,7 +3816,7 @@ class Mission
 			};
 			id=695;
 			type="Land_InfoStand_V1_F";
-			atlOffset=0.65363312;
+			atlOffset=0.65399933;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -9947,6 +9946,7 @@ class Mission
 						angles[]={0,2.8260896,0.063913956};
 					};
 					side="Civilian";
+					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
@@ -9956,7 +9956,7 @@ class Mission
 					};
 					id=950;
 					type="C_man_polo_3_F";
-					atlOffset=0.27899933;
+					atlOffset=0.0021541119;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -10382,7 +10382,7 @@ class Mission
 					};
 					id=960;
 					type="C_man_polo_3_F";
-					atlOffset=0.2451334;
+					atlOffset=9.5367432e-007;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -11499,7 +11499,6 @@ class Mission
 					};
 					id=987;
 					type="C_man_1";
-					atlOffset=0.23152924;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -12124,6 +12123,7 @@ class Mission
 						angles[]={0,3.8111181,0};
 					};
 					side="Civilian";
+					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
@@ -12133,7 +12133,7 @@ class Mission
 					};
 					id=998;
 					type="C_man_polo_3_F";
-					atlOffset=0.25483131;
+					atlOffset=0.028494835;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -12397,6 +12397,7 @@ class Mission
 						angles[]={0,6.1348743,0};
 					};
 					side="Civilian";
+					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
@@ -12406,7 +12407,6 @@ class Mission
 					};
 					id=1004;
 					type="C_man_1";
-					atlOffset=0.53821421;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -13766,7 +13766,7 @@ class Mission
 					};
 					id=1026;
 					type="C_man_1";
-					atlOffset=0.1606884;
+					atlOffset=0.16068792;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -15150,6 +15150,7 @@ class Mission
 						angles[]={0,1.4493629,6.2820935};
 					};
 					side="Civilian";
+					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
@@ -15159,7 +15160,6 @@ class Mission
 					};
 					id=1051;
 					type="C_man_p_fugitive_F";
-					atlOffset=0.5279088;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -15442,6 +15442,7 @@ class Mission
 						angles[]={0,0.66995203,0};
 					};
 					side="Civilian";
+					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
@@ -15451,7 +15452,6 @@ class Mission
 					};
 					id=1056;
 					type="C_man_1";
-					atlOffset=0.35506105;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -15504,6 +15504,7 @@ class Mission
 						angles[]={0,2.0767498,0};
 					};
 					side="Civilian";
+					flags=4;
 					class Attributes
 					{
 						init="this enableSimulation false; this allowDamage false; this addAction[localize""STR_MAR_Station_Shop"",life_fnc_weaponShopMenu,""f_station_store""]; this addAction[localize""STR_Shop_Station_Coffee"",life_fnc_virt_menu,""f_station_coffee""];  this addAction[localize ""STR_ROB_Shop"",life_fnc_robShops,[""Rob Shop"",20000,0.85,[""lockpick"",""banana""],1,40,10],0,false,false,"""",'vehicle player == player && player distance _target < 2 && playerSide == civilian']";
@@ -15512,7 +15513,7 @@ class Mission
 					};
 					id=1063;
 					type="C_Nikos_aged";
-					atlOffset=0.59700012;
+					atlOffset=0.0053529739;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -18122,7 +18123,7 @@ class Mission
 					};
 					id=6570;
 					type="C_Man_casual_6_F";
-					atlOffset=0.19034505;
+					atlOffset=0.00060772896;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -19840,7 +19841,6 @@ class Mission
 			type="loc_Tourism";
 			colorName="ColorGreen";
 			id=1397;
-			atlOffset=0.15218401;
 		};
 		class Item332
 		{
@@ -19851,7 +19851,7 @@ class Mission
 			colorName="ColorGreen";
 			angle=285.12354;
 			id=1399;
-			atlOffset=0.20368099;
+			atlOffset=0.091002464;
 		};
 		class Item333
 		{
@@ -19870,7 +19870,6 @@ class Mission
 			};
 			id=1400;
 			type="Land_Atm_02_F";
-			atlOffset=0.11285257;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -20211,7 +20210,7 @@ class Mission
 			type="loc_Tourism";
 			colorName="ColorGreen";
 			id=1419;
-			atlOffset=174.46495;
+			atlOffset=169.18269;
 		};
 		class Item347
 		{
@@ -31435,7 +31434,6 @@ class Mission
 			type="mil_box";
 			colorName="ColorYellow";
 			id=84;
-			atlOffset=0.23324347;
 		};
 		class Item649
 		{
@@ -31673,7 +31671,6 @@ class Mission
 			};
 			id=5765;
 			type="Land_Atm_01_F";
-			atlOffset=0.15218401;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -31729,7 +31726,6 @@ class Mission
 			};
 			id=5768;
 			type="Land_TableDesk_F";
-			atlOffset=4.9591064e-005;
 		};
 		class Item672
 		{
@@ -33101,7 +33097,7 @@ class Mission
 			position[]={6948.0908,0,7395.6899};
 			name="civ_air_2";
 			type="Empty";
-			angle=99.370399;
+			angle=99.370392;
 			id=5983;
 			atlOffset=-2.6600001;
 		};
@@ -33111,7 +33107,7 @@ class Mission
 			position[]={6945.1777,2.6600001,7421.9756};
 			name="civ_air_2_2";
 			type="Empty";
-			angle=81.962372;
+			angle=81.962364;
 			id=5984;
 		};
 		class Item760
@@ -65496,19 +65492,19 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={2302.1741,13.821342,6333.5244};
-				angles[]={0,0.46523619,0};
+				position[]={2302.1741,13.821458,6333.5239};
+				angles[]={0,0.46523497,0};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this allowDamage false; this enableSimulation false; this addAction[localize""STR_MAR_Armament"",life_fnc_weaponShopMenu,""gang"",0,false,false,"""",' _b = (nearestObjects[getPosATL player,[""Land_School_01_F"",""Land_Warehouse_03_F"",""Land_House_Small_03_F""],25]) select 0; !isNil {_b getVariable ""gangOwner""} && {(_b getVariable ""gangOwner"") == (group player)} && playerSide isEqualTo civilian ']; this addAction[localize""STR_Shops_C_Gang"",life_fnc_clothingMenu,""gang_clothing"",0,false,false,"""",' _b = (nearestObjects[getPosATL player,[""Land_School_01_F"",""Land_Warehouse_03_F"",""Land_House_Small_02_F""],25]) select 0; !isNil {_b getVariable ""gangOwner""} && {(_b getVariable ""gangOwner"") == (group player)} && playerSide isEqualTo civilian ']; this setVariable [""realname"",""Gang Armament""];";
+				init="this allowDamage false; this enableSimulation false; this addAction[localize""STR_MAR_Armament"",life_fnc_weaponShopMenu,""gang"",0,false,false,"""",' _b = nearestBuilding (getPosATL player); !isNil {_b getVariable ""gangOwner""} && {(_b getVariable ""gangOwner"") == (group player)} && playerSide isEqualTo civilian ']; this addAction[localize""STR_Shops_C_Gang"",life_fnc_clothingMenu,""gang_clothing"",0,false,false,"""",' _b = nearestBuilding (getPosATL player); !isNil {_b getVariable ""gangOwner""} && {(_b getVariable ""gangOwner"") == (group player)} && playerSide isEqualTo civilian ']; this setVariable [""realname"",""Gang Armament""];";
 			};
 			id=8188;
 			type="Land_Pallet_MilBoxes_F";
-			atlOffset=0.2358923;
+			atlOffset=0.23600101;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -65538,19 +65534,19 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={2301.0742,14.040208,6336.4976};
-				angles[]={0,2.0004086,0};
+				position[]={2301.074,14.040071,6336.498};
+				angles[]={0,2.0004091,0};
 			};
 			side="Empty";
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this allowDamage false; this enableSimulation false; this addAction[localize""STR_Process_Heroin"",life_fnc_processAction,""heroin"",0,false,false,"""",' _b = (nearestObjects[getPosATL player,[""Land_School_01_F"",""Land_Warehouse_03_F"",""Land_House_Small_03_F""],25]) select 0; life_inv_heroinUnprocessed > 0 && !life_is_processing && !life_action_inUse && !isNil {_b getVariable ""gangOwner""} && {(_b getVariable ""gangOwner"") == (group player)} && playerSide isEqualTo civilian ']; this setVariable [""realname"",""Heroin Processing""];";
+				init="this allowDamage false; this enableSimulation false; this addAction[localize""STR_Process_Heroin"",life_fnc_processAction,""heroin"",0,false,false,"""",' _b = nearestBuilding (getPosATL player); life_inv_heroinUnprocessed > 0 && !life_is_processing && !life_action_inUse && !isNil {_b getVariable ""gangOwner""} && {(_b getVariable ""gangOwner"") == (group player)} && playerSide isEqualTo civilian ']; this setVariable [""realname"",""Heroin Processing""];";
 				name="heroin_processor";
 			};
 			id=8189;
 			type="Land_Sink_F";
-			atlOffset=0.32512951;
+			atlOffset=0.3249979;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -65834,7 +65830,7 @@ class Mission
 		class Item1655
 		{
 			dataType="Marker";
-			position[]={2298.7314,8.3098878e+037,6319.6592};
+			position[]={2299.447,8.3098878e+037,6322.8799};
 			name="GC_heroin";
 			text="Guerilla Camp - Heroin Processing";
 			type="mil_warning";

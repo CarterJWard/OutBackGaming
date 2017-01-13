@@ -23,7 +23,7 @@ class CfgGather {
 
         class cocaine_unprocessed {
             amount = 1;
-            zones[] = { "cocaine_1", "cocaince_2" };
+            zones[] = { "cocaine_1", "cocaine_2" };
             item = "";
             zoneSize = 50;
         };

@@ -10,6 +10,7 @@ private ["_spCfg","_sp","_spawnPos"];
 if(life_firstSpawn) then {
 	life_firstSpawn = false;
 	[] spawn life_fnc_IntroCam;
+    [] spawn life_fnc_introText;
 };
 closeDialog 0;
 cutText ["","BLACK IN"];
@@ -62,9 +63,7 @@ if (life_spawn_point isEqualTo []) then {
 if (life_firstSpawn) then {
     life_firstSpawn = false;
     [] call life_fnc_welcomeNotification;
-    [] execVM "core\intro\fn_introText.sqf";
     
 };
 [] call life_fnc_playerSkins;
 [] call life_fnc_hudSetup;
-[] execVM "core\intro\fn_introText.sqf";

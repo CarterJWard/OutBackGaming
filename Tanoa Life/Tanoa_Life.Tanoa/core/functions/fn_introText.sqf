@@ -10,18 +10,18 @@ sleep 2; //Wait in seconds before the credits start after player is in-game
 _role1 = "Welcome to Tanoa Life";
 _role1names = ["By the Outback Gaming Development Team"];
 _role2 = "Improved upon";
-_role2names = ["By The ArmA RPG Life Team"];
+_role2names = ["By The Arma RPG Life Team And Outback Gaming "];
 _role3 = "Visit Our Website at";
-_role3names = ["www.yourwebsite.com"];
+_role3names = ["www.OutbackGaming.com.au"];
 _role4 = "Join Our Teamspeak at";
-_role4names = ["ts.yourwebsite.com"];
+_role4names = ["ts.OutbackGaming.com.au];
 _role5 = "Please enjoy your stay";
 _role5names = [profileName];
 {
 sleep 2;
 _memberFunction = _x select 0;
 _memberNames = _x select 1;
-_finalText = format ["<t size='0.55' color='#c500ff' align='right'>%1<br /></t>", _memberFunction];
+_finalText = format ["<t size='0.55' color='#42a7f4' align='right'>%1<br /></t>", _memberFunction];
 _finalText = _finalText + "<t size='0.70' color='#ffffff' align='right'>";
 {_finalText = _finalText + format ["%1<br />", _x]} forEach _memberNames;
 _finalText = _finalText + "</t>";

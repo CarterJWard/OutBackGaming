@@ -221,9 +221,10 @@ class Life_Client_Core {
         class cropDusting {};
         class cropDustingDone {};
         class missionStats {};
-	class profSetUp {};
-	class addExp {};
-	class grabSkills {};
+	    class profSetUp {};
+	    class addExp {};
+	    class grabSkills {};
+        class introText {};
     };
 
     class Gangs {
