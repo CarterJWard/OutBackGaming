@@ -16,23 +16,23 @@ class CfgGather {
 
         class heroin_unprocessed {
             amount = 1;
-            zones[] = { "heroin_1" };
+            zones[] = { "heroin_1", "heroin_2" };
             item = "";
-            zoneSize = 30;
+            zoneSize = 50;
         };
 
         class cocaine_unprocessed {
             amount = 1;
-            zones[] = { "cocaine_1" };
+            zones[] = { "cocaine_1", "cocaince_2" };
             item = "";
-            zoneSize = 30;
+            zoneSize = 50;
         };
 
         class cannabis {
             amount = 1;
-            zones[] = { "weed_1" };
+            zones[] = { "weed_1", "weed_2" };
             item = "";
-            zoneSize = 30;
+            zoneSize = 50;
         };
 
         class logs {
