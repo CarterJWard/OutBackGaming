@@ -45,7 +45,7 @@ class playerSettings {
             h = (1 / 25);
         };
 
-     
+
         class moneyStatusInfo: Life_RscStructuredText {
             idc = 2015;
             sizeEx = 0.020;
@@ -291,7 +291,7 @@ class playerSettings {
             w = (6.25 / 40);
             h = (1 / 25);
         };
-        
+
 	class ButtonCraft : Life_RscButtonMenu {
 	    idc = 2025;
 	    text = "$STR_PM_Craft";
@@ -301,8 +301,8 @@ class playerSettings {
 	    w = (6.25 / 40);
 	    h = (1 / 25);
 	};
-	
-	class ProfButton : life_RscButtonMenu { 
+
+	class ProfButton : life_RscButtonMenu {
 	    idc = -1;
 	    text = "$STR_PM_Proficiency";
 	    onButtonClick = "[] call life_fnc_profSetUp;";
@@ -311,14 +311,14 @@ class playerSettings {
 	    w = (6.25 / 40);
 	    h = (1 / 25);
 	};
-    class ButtonMarket : Life_RscButtonMenu { 
-        idc = 3025; 
-        text = "Market"; 
-        onButtonClick = "createDialog ""life_dynmarket_prices"";"; 
-        x = 0.285 + (6.25 / 19.8) + (1 / 250 / (safezoneW / safezoneH)); 
-        y = 0.8; 
-        w = (6.25 / 40); 
-        h = (1 / 25); 
+    class ButtonMarket : Life_RscButtonMenu {
+        idc = 3025;
+        text = "Market";
+        onButtonClick = "createDialog ""life_dynmarket_prices"";";
+        x = 0.605 + (6.25 / 19.8) + (1 / 250 / (safezoneW / safezoneH));
+        y = 0.8;
+        w = (6.25 / 40);
+        h = (1 / 25);
     };
     };
 };

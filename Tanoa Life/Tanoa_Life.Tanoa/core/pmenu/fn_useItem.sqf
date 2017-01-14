@@ -84,7 +84,7 @@ switch (true) do {
 		};
     };
 
-    case (_item isEqualTo "cocaine_processed")
+    case (_item isEqualTo "cocaine_processed"): {
     if(([false,_item,1] call life_fnc_handleInv)) then
     {
         []spawn life_fnc_cocaine;

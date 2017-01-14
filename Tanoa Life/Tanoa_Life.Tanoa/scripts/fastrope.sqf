@@ -31,7 +31,7 @@ zlt_rope_helidata =
 		["B_Heli_Transport_01_F", "B_Heli_Transport_01_camo_F"],
 		[-1.11,2.5,-24.7],
 		[1.11,2.5,-24.7]
-	],
+	]
 	/*[
 		["O_Heli_Attack_02_F", "O_Heli_Attack_02_black_F"],
 		[1.3,1.3,-25],
