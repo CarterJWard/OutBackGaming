@@ -279,6 +279,8 @@ class Life_Client_Core {
         class spikeStrip {};
         class storageBox {};
         class campFire {};
+        class weed {};
+        class cociane {};
     };
 
     class Medical_System {
