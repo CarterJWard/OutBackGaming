@@ -1,0 +1,1 @@
+128x64 this is the watermark - need to change newWatermark.paa in dialog\hud_stats.hpp
