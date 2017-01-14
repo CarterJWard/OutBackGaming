@@ -68,7 +68,7 @@ class Life_Client_Core {
     };
 
     class DynMarket {
-        file = "core/DynMarket"
+        file = "core\DynMarket";
         class bought {};
         class update {};
         class DisplayPrices {};
@@ -290,7 +290,7 @@ class Life_Client_Core {
         class storageBox {};
         class campFire {};
         class weed {};
-        class cociane {};
+        class cocaine {};
     };
 
     class Medical_System {
@@ -396,7 +396,7 @@ class Life_Client_Core {
         class vehTakeItem {};
         class vInteractionMenu {};
     };
-    
+
 	class vAH
 	{
 		file = "core\vAH";

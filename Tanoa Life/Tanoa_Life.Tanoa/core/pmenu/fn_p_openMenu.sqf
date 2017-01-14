@@ -13,6 +13,8 @@ disableSerialization;
 switch (playerSide) do {
     case west: {
         ctrlShow[2011,false];
+        ctrlShow[3025,false];
+        ctrlShow[2025,false];
     };
 
     case civilian: {
@@ -22,6 +24,8 @@ switch (playerSide) do {
     case independent: {
         ctrlShow[2012,false];
         ctrlShow[2011,false];
+        ctrlShow[3025,false];
+        ctrlShow[2025,false];
     };
 };
 
