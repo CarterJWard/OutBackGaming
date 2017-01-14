@@ -61,6 +61,7 @@ class Life_Client_Core {
         class ticketAction {};
         class unrestrain {};
 		class craftAction {}; //CraftingAction
+        class barrier {};
     };
 
     class Admin {
