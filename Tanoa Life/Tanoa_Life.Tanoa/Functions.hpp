@@ -225,6 +225,7 @@ class Life_Client_Core {
 	    class addExp {};
 	    class grabSkills {};
         class introText {};
+        class robBank {};
     };
 
     class Gangs {
@@ -329,9 +330,9 @@ class Life_Client_Core {
         class wantedInfo {};
         class wantedList {};
         class wantedMenu {};
-	class craft {};
-	class craft_update {};
-	class craft_updateFilter {};
+	    class craft {};
+	    class craft_update {};
+	    class craft_updateFilter {};
     };
 
     class Shops {

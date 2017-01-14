@@ -14,7 +14,7 @@ _role2names = ["By The Arma RPG Life Team And Outback Gaming "];
 _role3 = "Visit Our Website at";
 _role3names = ["www.OutbackGaming.com.au"];
 _role4 = "Join Our Teamspeak at";
-_role4names = ["ts.OutbackGaming.com.au];
+_role4names = ["ts.OutbackGaming.com.au"];
 _role5 = "Please enjoy your stay";
 _role5names = [profileName];
 {
