@@ -32,3 +32,5 @@
 #include "AH_vbuy.hpp"
 #include "craft.hpp"
 #include "prof.hpp"
+#include "dynmarket_changeprice.hpp"
+#include "dynmarket_prices.hpp"

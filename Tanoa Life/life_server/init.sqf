@@ -151,12 +151,12 @@ cleanup = [] spawn TON_fnc_cleanup;
 all_ah_items = [];
 publicVariable "all_ah_items";
 [] spawn TON_fnc_vAH_init;
-[] spawn 
+[] spawn
 {
 	while {true} do
 	{
 	sleep (20 * 60);
-	if (count all_ah_items > 0) then 
+	if (count all_ah_items > 0) then
 		{
 			[] spawn TON_fnc_vAH_update;
 		};
@@ -200,6 +200,8 @@ life_attachment_point setVectorDirAndUp [[0,1,0], [0,0,1]];
 
 // Sharing the point of attachment with all players.
 publicVariable "life_attachment_point";
+
+[] execVM "\life_server\Functions\DynMarket\fn_config.sqf";
 
 diag_log "----------------------------------------------------------------------------------------------------";
 diag_log format ["               End of Altis Life Server Init :: Total Execution Time %1 seconds ",(diag_tickTime) - _timeStamp];

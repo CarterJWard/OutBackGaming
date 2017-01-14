@@ -113,12 +113,20 @@ class CfgFunctions {
             class getPlayTime {};
         };
         
-		class vAH
-		{
+		class vAH {
 			file = "\life_server\Functions\vAH";
 			class vAH_init;
 			class vAH_update;
 		};
+        class DynMarket {
+            file = "\life_server\Functions\DynMarket";
+            class calculatePrices {};
+            class config {};
+            class getUpdate {};
+            class HandleDB {};
+            class playerLogged {};
+            class sleeper {}; 
+        };
     };
 };
 
