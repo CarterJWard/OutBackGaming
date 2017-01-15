@@ -90,3 +90,59 @@ _this select 0 setFlagTexture _flagTexture;
 [[0,1],"STR_GNOTF_CaptureSuccess",true,[name player,(group player) getVariable "gang_name"]] remoteExecCall ["life_fnc_broadcast",RCLIENT];
 _hideout setVariable ["inCapture",false,true];
 _hideout setVariable ["gangOwner",group player,true];
+
+/*
+if (_hideout isEqualTo "Land_House_Small_03_F") then {
+	deleteMarker _marker;
+	deleteMarker _markerText;
+	_marker = createMarker ["gangMarkerC", _hideout];
+	_marker setMarkerColor "ColorRed";
+	_marker setMarkerType "Empty";
+	_marker	setMarkerShape "ELLIPSE";
+	_marker setMarkerSize [40,40];
+	_markerText = createMarker ["gangMarkerCT", _hideout];
+	_markerText setMarkerColor "ColorBlack";
+	_markerText setMarkerText format ["%1 and his gang %2 now own this hideout", name player, (group player) getVariable "gang_name" ];
+	_markerText setMarkerType "mil_warning";
+};
+
+if (_hideout isEqualTo "Land_i_Shed_Ind_F") then {
+	deleteMarker _marker;
+	deleteMarker _markerText;
+	_marker = createMarker ["gangMarkerH", _hideout];
+	_marker setMarkerColor "ColorRed";
+	_marker setMarkerType "Empty";
+	_marker	setMarkerShape "ELLIPSE";
+	_marker setMarkerSize [40,40];
+	_markerText = createMarker ["gangMarkerHT", _hideout];
+	_markerText setMarkerColor "ColorBlack";
+	_markerText setMarkerText format ["%1 and his gang %2 now own this hideout", name player, (group player) getVariable "gang_name" ];
+	_markerText setMarkerType "mil_warning";
+};
+
+if (_hideout isEqualTo "Land_House_Small_01_F") then {
+	deleteMarker _marker;
+	deleteMarker _markerText;
+	_marker = createMarker ["gangMarkerW", _hideout];
+	_marker setMarkerColor "ColorRed";
+	_marker setMarkerType "Empty";
+	_marker	setMarkerShape "ELLIPSE";
+	_marker setMarkerSize [40,40];
+	_markerText = createMarker ["gangMarkerWT", _hideout];
+	_markerText setMarkerColor "ColorBlack";
+	_markerText setMarkerText format ["%1 and his gang %2 now own this hideout", name player, (group player) getVariable "gang_name" ];
+	_markerText setMarkerType "mil_warning";
+};
+*/
+
+deleteMarker "gangMarkerWT";
+deleteMarker "gangMarkerW";
+_marker = createMarker ["gangMarkerW", _hideout];
+_marker setMarkerColor "ColorRed";
+_marker setMarkerType "Empty";
+_marker	setMarkerShape "ELLIPSE";
+_marker setMarkerSize [75,75];
+_markerText = createMarker ["gangMarkerWT", _hideout];
+_markerText setMarkerColor "ColorBlack";
+_markerText setMarkerText format ["%1 and his gang %2 now own this hideout", name player, (group player) getVariable "gang_name" ];
+_markerText setMarkerType "mil_warning";

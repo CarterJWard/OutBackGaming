@@ -236,6 +236,7 @@ class Life_Client_Core {
 	    class grabSkills {};
         class introText {};
         class robBank {};
+		class markers {}; 
     };
 
     class Gangs {

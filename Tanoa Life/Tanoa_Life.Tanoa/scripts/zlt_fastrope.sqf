@@ -16,23 +16,22 @@ zlt_rope_ropes = [];
 
 zlt_mutexAction = false;
 
-zlt_rope_helis = ["B_Heli_Transport_01_F","B_Heli_Transport_01_camo_F"];
+zlt_rope_helis = ["O_Heli_Light_02_unarmed_F","O_Heli_Light_02_F","B_Heli_Transport_01_F","B_Heli_Transport_01_camo_F","O_Heli_Attack_02_F","O_Heli_Attack_02_black_F","I_Heli_Transport_02_F","B_Heli_Light_01_F"];
 
 zlt_rope_helidata = 
 
 [
-	//Leave commented out data for now as we made need it in the future:
-    /*[
+	[
 		["O_Heli_Light_02_unarmed_F", "O_Heli_Light_02_F"],
 		[1.35,1.35,-24.95],
 		[-1.45,1.35,-24.95]
-	]*/
+	],
 	[
 		["B_Heli_Transport_01_F", "B_Heli_Transport_01_camo_F"],
 		[-1.11,2.5,-24.7],
 		[1.11,2.5,-24.7]
-	]
-	/*[
+	],
+	[
 		["O_Heli_Attack_02_F", "O_Heli_Attack_02_black_F"],
 		[1.3,1.3,-25],
 		[-1.3,1.3,-25]
@@ -46,7 +45,7 @@ zlt_rope_helidata =
 		["B_Heli_Light_01_F"],
 		[0.6,0.5,-25.9],
 		[-0.8,0.5,-25.9]
-	]*/
+	]
 ];
 
 zlt_fnc_tossropes = {
@@ -144,7 +143,7 @@ zlt_fnc_fastropeUnit = {
 	if (count _ropes == 0) exitwith {};
 	_rope = _ropes call BIS_fnc_selectRandom;
 	_zmax = 22;
-	_zdelta = 7 / 10  ;
+	_zdelta = 0.5;
 	_zc = _zmax;
 	_unit action ["eject", _heli];
 	_unit switchmove "gunner_standup01";
