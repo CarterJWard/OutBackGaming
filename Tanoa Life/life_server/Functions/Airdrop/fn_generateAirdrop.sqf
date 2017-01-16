@@ -40,7 +40,7 @@ sleep 1;
 
 // AIRDROP STARTEN
 
-[3,"<t size='1.2'><t color='#FF0000'>Airdrop-Mission</t></t><br/><br/><t size='1'>A helicopter is going to drop a Supplycrate in 15 minutes! The drop-location will be transmitted soon!</t>"] remoteExec ["life_fnc_broadcast",0];
+[3,"<t size='1.2'><t color='#FF0000'>Airdrop-Mission</t></t><br/><br/><t size='1'>There will be an Airdrop of Supplies in 15 Minutes! The Location of this drop will be Transmitted to your GPS soon!</t>"] remoteExec ["life_fnc_broadcast",0];
 
 
 
@@ -68,7 +68,7 @@ _markerText = createMarker ["Airdropmarkertext", _dest];
 
 
 
-[3,"<t size='1.2'><t color='#FF0000'>Airdrop-Mission</t></t><br/><br/><t size='1'>10 minutes until the helicopter will drop the supplies! Check your map for the drop-location!</t>"] remoteExec ["life_fnc_broadcast",0];
+[3,"<t size='1.2'><t color='#FF0000'>Airdrop-Mission</t></t><br/><br/><t size='1'>There will be an Airdrop of Supplies in 10 Minutes, The Location Has been sent to your GPS!</t>"] remoteExec ["life_fnc_broadcast",0];
 
 
 
@@ -76,7 +76,7 @@ sleep 300;
 
 
 
-[3,"<t size='1.2'><t color='#FF0000'>Airdrop-Mission</t></t><br/><br/><t size='1'>5 minutes until the helicopter will drop the supplies!</t>"] remoteExec ["life_fnc_broadcast",0];
+[3,"<t size='1.2'><t color='#FF0000'>Airdrop-Mission</t></t><br/><br/><t size='1'>5 minutes until the aircraft will drop the supplies!</t>"] remoteExec ["life_fnc_broadcast",0];
 
 
 
@@ -84,7 +84,7 @@ sleep 60;
 
 
 
-[3,"<t size='1.2'><t color='#FF0000'>Airdrop-Mission</t></t><br/><br/><t size='1'>4 minutes until the helicopter will drop the supplies!</t>"] remoteExec ["life_fnc_broadcast",0];
+[3,"<t size='1.2'><t color='#FF0000'>Airdrop-Mission</t></t><br/><br/><t size='1'>4 minutes until the aircraft will drop the supplies!</t>"] remoteExec ["life_fnc_broadcast",0];
 
 
 
@@ -92,7 +92,7 @@ sleep 60;
 
 
 
-[3,"<t size='1.2'><t color='#FF0000'>Airdrop-Mission</t></t><br/><br/><t size='1'>3 minutes until the helicopter will drop the supplies!</t>"] remoteExec ["life_fnc_broadcast",0];
+[3,"<t size='1.2'><t color='#FF0000'>Airdrop-Mission</t></t><br/><br/><t size='1'>3 minutes until the aircraft will drop the supplies!</t>"] remoteExec ["life_fnc_broadcast",0];
 
 
 
@@ -100,7 +100,7 @@ sleep 60;
 
 
 
-[3,"<t size='1.2'><t color='#FF0000'>Airdrop-Mission</t></t><br/><br/><t size='1'>2 minutes until the helicopter will drop the supplies!</t>"] remoteExec ["life_fnc_broadcast",0];
+[3,"<t size='1.2'><t color='#FF0000'>Airdrop-Mission</t></t><br/><br/><t size='1'>2 minutes until the aircraft will drop the supplies!</t>"] remoteExec ["life_fnc_broadcast",0];
 
 
 
@@ -108,7 +108,7 @@ sleep 60;
 
 
 
-[3,"<t size='1.2'><t color='#FF0000'>Airdrop-Mission</t></t><br/><br/><t size='1'>1 minute until the helicopter will drop the supplies!</t>"] remoteExec ["life_fnc_broadcast",0];
+[3,"<t size='1.2'><t color='#FF0000'>Airdrop-Mission</t></t><br/><br/><t size='1'>1 minute until the aircraft will drop the supplies!</t>"] remoteExec ["life_fnc_broadcast",0];
 
 
 
