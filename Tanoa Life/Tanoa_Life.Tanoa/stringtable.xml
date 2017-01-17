@@ -33,6 +33,12 @@
         <Key ID="STR_Shops_W_Gun">
             <Original>Cameron's Firearms</Original>
         </Key>
+		<Key ID="STR_Item_ZipTies">
+			<Original>ZipTies</Original>
+		</Key>
+		<Key ID="STR_Item_Blindfold">
+			<Original>Blindfold</Original>
+		</Key>
         <Key ID="STR_Shops_C_Kart">
             <Original>Carter's Kart-Racing Outfits</Original>
         </Key>

@@ -71,6 +71,10 @@ class CfgRemoteExec {
         F(life_fnc_vAH_reciever,CLIENT)
         F(life_fnc_marks,CLIENT)
         F(life_fnc_buyLicense,CLIENT)
+		F(life_fnc_tieing,CLIENT)
+		F(life_fnc_tieingb,CLIENT)
+		F(life_fnc_gagged,CLIENT)
+		
 
         /* Server only functions */
         F(BIS_fnc_execVM,SERVER)
