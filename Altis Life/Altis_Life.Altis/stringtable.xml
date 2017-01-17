@@ -45,6 +45,12 @@
             <Portuguese>Loja de equipamentos para Mergulho</Portuguese>
             <Polish>Sklep dla nurków</Polish>
         </Key>
+		<Key ID="STR_Item_ZipTies">
+			<Original>ZipTies</Original>
+		</Key>
+		<Key ID="STR_Item_Blindfold">
+			<Original>Blindfold</Original>
+		</Key>
         <Key ID="STR_Shops_C_Gun">
             <Original>Billy Joe's Clothing</Original>
             <Czech>Billy Joe oblečení</Czech>
