@@ -295,7 +295,7 @@ class playerSettings {
 	class ButtonCraft : Life_RscButtonMenu {
 	    idc = 2025;
 	    text = "$STR_PM_Craft";
-	    onButtonClick = "crea teDialog ""Life_craft"";";
+	    onButtonClick = "createDialog ""Life_craft"";";
 	    x = 0.605; 
 	    y = 0.8;
 	    w = (6.25 / 40);
