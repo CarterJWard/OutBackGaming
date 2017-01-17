@@ -69,7 +69,7 @@ life_use_atm = false;
 sleep (30 + random(180));
 life_use_atm = true;
 if!(alive _robber) exitWith {};
-[getPlayerUID _robber,name _robber,"211"] remoteExec ["life_fnc_wantedAdd",2];
+[getPlayerUID _robber,name _robber,"26"] remoteExec ["life_fnc_wantedAdd",2];
 };
 sleep 300;
 _action = _shop addAction["Rob the Teller",life_fnc_robstore];

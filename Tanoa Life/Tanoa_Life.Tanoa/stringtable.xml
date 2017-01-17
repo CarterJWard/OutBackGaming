@@ -3046,7 +3046,6 @@
         </Key>
         <Key ID="STR_Crime_9">
             <Original>Grand Theft (Civilian Vehicle)</Original>
-
         </Key>
         <Key ID="STR_Crime_10">
             <Original>Grand Theft (Military Vehicle)</Original>
@@ -3095,6 +3094,9 @@
         </Key>
         <Key ID="STR_Crime_25">
             <Original>Killing of a soldier</Original>
+        </Key>
+        <Key ID="STR_Crime_26">
+            <Original>Bank Robbery</Original>
         </Key>
     </Package>
     <Package name="FuelTank_Mission">
