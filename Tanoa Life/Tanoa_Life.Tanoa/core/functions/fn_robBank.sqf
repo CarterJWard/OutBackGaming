@@ -8,7 +8,7 @@ private["_robber","_shop","_kassa","_ui","_progress","_pgText","_cP","_rip","_po
 _shop = [_this,0,ObjNull,[ObjNull]] call BIS_fnc_param; //The object that has the action attached to it is _this. ,0, is the index of object, ObjNull is the default should there be nothing in the parameter or it's broken
 _robber = [_this,1,ObjNull,[ObjNull]] call BIS_fnc_param; //Can you guess? Alright, it's the player, or the "caller". The object is 0, the person activating the object is 1
 _action = [_this,2] call BIS_fnc_param;//Action name
-_rip = false;
+_rip = false; //Sets robbery in progress
 
 if(side _robber != civilian) exitWith { hint "You can not rob this Gas Station!" };
 if(_robber distance _shop > 5) exitWith { hint "You need to be within 5m of the cashier to rob him!" };
@@ -18,12 +18,12 @@ if !(alive _robber) exitWith {};
 if (currentWeapon _robber == "") exitWith { hint "HaHa, you do not threaten me! Get out of here you hobo!" };
 if (_rip) exitWith { hint "Robbery already in progress!" };
 
-_rip = true;
-_kassa = 1200 + round(random 600);
+_rip = true; //Makes it so the teller can no-longer be robbed
+_kassa = 1100000 + round(random 950000);
 _shop removeAction _action;
 _shop switchMove "AmovPercMstpSsurWnonDnon";
 _chance = random(100);
-if(_chance >= 1) then {[1,parseText format["<t size='1.5'><t align='center'><t color='#c10313'>Alert</t></t></t><br><t align='center' Hey someone is robbing the bank might wanna do somehting about that>", _shop]] remoteExec ["life_fnc_broadcast",civilian]; };
+if(_chance >= 1) then {[1,format parseText["<t size='1.5' color='#c10313'>Alert</t><br/>Hey someone is robbing the bank might wanna do somehting about that>"] remoteExec ["life_fnc_broadcast",civilian]] };
 
 
 _cops = (west countSide playableUnits);
