@@ -22,10 +22,20 @@ _rip = true; //Makes it so the teller can no-longer be robbed
 _kassa = 1100000 + round(random 950000);
 _shop removeAction _action;
 _shop switchMove "AmovPercMstpSsurWnonDnon";
-//Notify Civilians and cops when the bank is being robbed.
-_chance = random(100);
-_notif = parseText format ["<t size='1.5' color='#c10313'>Alert</t><br/>Hey someone is robbing the bank might wanna do somehting about that>"];
-[1,[_notif]] remoteExec ["life_fnc_broadcast",civilian];
+
+//Notify All sides when a robbery had commenced
+_notifCiv = parseText format ["<t size='1.5' color='#c10313'>Alert</t><br/>Authorities have confirmed that armed personal have taken over the kavala bank. These people are considerd dangerours and people are urged to stay away. Anyone seen in and around the area is considered dangerous and lethal force will be used to deal with these attackers<br/><br/>Thankyou and stay safe"];
+_notifMil = parseText format ["<t size='1.5' t color='#c10313'>Alert</t><br/>Armed persosns have been spotted entering the Tanoa bank. All avaiable operatives must respond to this urgent call. Lethal force is authorised on all armed persons in the area but their capture should be top priority!"]
+{
+	if (playerSide isEqualTo civilian) then {
+ 		hint _notifCiv
+ 	};
+	 if (playerSide isEqualTo west) then {
+		 hint _notifMil
+	 };
+} forEach playableUnits;
+
+
 
 
 _cops = (west countSide playableUnits);
