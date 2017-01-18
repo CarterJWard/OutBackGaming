@@ -22,8 +22,10 @@ _rip = true; //Makes it so the teller can no-longer be robbed
 _kassa = 1100000 + round(random 950000);
 _shop removeAction _action;
 _shop switchMove "AmovPercMstpSsurWnonDnon";
+//Notify Civilians and cops when the bank is being robbed.
 _chance = random(100);
-if(_chance >= 1) then {[1,format parseText["<t size='1.5' color='#c10313'>Alert</t><br/>Hey someone is robbing the bank might wanna do somehting about that>"] remoteExec ["life_fnc_broadcast",civilian]] };
+_notif = parseText format ["<t size='1.5' color='#c10313'>Alert</t><br/>Hey someone is robbing the bank might wanna do somehting about that>"];
+[1,[_notif]] remoteExec ["life_fnc_broadcast",civilian];
 
 
 _cops = (west countSide playableUnits);
