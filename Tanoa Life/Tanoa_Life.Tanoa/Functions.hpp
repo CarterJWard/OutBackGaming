@@ -305,6 +305,7 @@ class Life_Client_Core {
         class campFire {};
         class weed {};
         class cocaine {};
+        class heroin {};
     };
 
     class Medical_System {

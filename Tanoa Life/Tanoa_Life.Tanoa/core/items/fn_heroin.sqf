@@ -1,14 +1,14 @@
 /*
-	fn_cocaine.sqf
-    Authors:AlaskaVet Modified by Larry Lancelot for cocaine effects
-    Adds a effects for the cociane Item
+	fn_heroin.sqf
+    Authors:AlaskaVet Modified by 
+    Adds a effect for the heroin Item
 */
 
 //Close inventory
 closeDialog 0;
 
 //Little hint then wait a litle before starting drugs effects
-hint "Snort it up";
+hint "shoot em up boys";
 sleep 3;
 
 //Activate ppEffects we need

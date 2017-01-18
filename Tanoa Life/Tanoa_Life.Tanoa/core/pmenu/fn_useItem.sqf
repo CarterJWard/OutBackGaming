@@ -91,6 +91,13 @@ switch (true) do {
         };
     };
 
+    case (_item isEqualTo "heroin_processed"): {
+    if (([false,_item,1] call life_fnc_handleInv)) then
+    {
+        []spawn life_fnc_heroin;
+        };
+    };
+
     case (_item in ["banana","rabbit","salema","ornate","mackerel","tuna","mullet","catshark","turtle_soup","hen","rooster","sheep","goat","donuts","tbacon","pawpaw"]): {
         if (!(M_CONFIG(getNumber,"VirtualItems",_item,"edible") isEqualTo -1)) then {
             if ([false,_item,1] call life_fnc_handleInv) then {

@@ -8,7 +8,7 @@
 closeDialog 0;
 
 //Little hint then wait a litle before starting drugs effects
-hint "Winners don't use drugs. guess that makes you a loser !";
+hint "Just relax man!";
 sleep 3;
 
 //Activate ppEffects we need
