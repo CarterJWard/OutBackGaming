@@ -2,7 +2,6 @@
 /*
     File: fn_menuCheck.sqf
     Author: Bryan "Tonic" Boardwine
-
     Description:
     Checks for known cheat menus and closes them then reports them to the server.
 */
@@ -132,7 +131,6 @@ for "_i" from 0 to 1 step 0 do {
     /*
         Display Validator
         Loops through and makes sure none of the displays were modified..
-
         Checks every 5 minutes.
     */
     if ((time - _timeStamp) > 300) then {
@@ -160,7 +158,7 @@ for "_i" from 0 to 1 step 0 do {
             ["RscDisplayConfigureControllers","[""onLoad"",_this,""RscDisplayConfigureControllers"",'GUI'] call 	(uiNamespace getVariable 'BIS_fnc_initDisplay')","[""onUnload"",_this,""RscDisplayConfigureControllers"",'GUI'] call 	(uiNamespace getVariable 'BIS_fnc_initDisplay')"],
             ["RscDisplayControlSchemes","[""onLoad"",_this,""RscDisplayControlSchemes"",'GUI'] call 	(uiNamespace getVariable 'BIS_fnc_initDisplay')","[""onUnload"",_this,""RscDisplayControlSchemes"",'GUI'] call 	(uiNamespace getVariable 'BIS_fnc_initDisplay')"],
             ["RscDisplayCustomizeController","[""onLoad"",_this,""RscDisplayCustomizeController"",'GUI'] call 	(uiNamespace getVariable 'BIS_fnc_initDisplay')","[""onUnload"",_this,""RscDisplayCustomizeController"",'GUI'] call 	(uiNamespace getVariable 'BIS_fnc_initDisplay')"],
-            ["RscDisplayDebriefing","[""onLoad"",_this,""RscDisplayDebriefing"",'ExpDisplays'] call 	(uiNamespace getVariable 'BIS_fnc_initDisplay')","[""onUnload"",_this,""RscDisplayDebriefing"",'ExpDisplays'] call 	(uiNamespace getVariable 'BIS_fnc_initDisplay')"],
+            ["RscDisplayDebriefing","[""onLoad"",_this,""RscDisplayDebriefing"",'GUI'] call 	(uiNamespace getVariable 'BIS_fnc_initDisplay')","[""onUnload"",_this,""RscDisplayDebriefing"",'GUI'] call 	(uiNamespace getVariable 'BIS_fnc_initDisplay')"],
             ["RscDisplayDiary","[""onLoad"",_this,""RscDiary"",'GUI'] call 	(uiNamespace getVariable 'BIS_fnc_initDisplay')","[""onUnload"",_this,""RscDiary"",'GUI'] call 	(uiNamespace getVariable 'BIS_fnc_initDisplay')"],
             ["RscDisplayGameOptions","[""onLoad"",_this,""RscDisplayGameOptions"",'GUI'] call 	(uiNamespace getVariable 'BIS_fnc_initDisplay')","[""onUnload"",_this,""RscDisplayGameOptions"",'GUI'] call 	(uiNamespace getVariable 'BIS_fnc_initDisplay')"],
             ["RscDisplayJoystickSchemes","[""onLoad"",_this,""RscDisplayJoystickSchemes"",'GUI'] call 	(uiNamespace getVariable 'BIS_fnc_initDisplay')","[""onUnload"",_this,""RscDisplayJoystickSchemes"",'GUI'] call 	(uiNamespace getVariable 'BIS_fnc_initDisplay')"],
