@@ -221,17 +221,11 @@ switch (_code) do {
         };
     };
 
-    //O Key
-    case 24: {
-        if (_shift) then {
-            if (soundVolume != 1) then {
-                1 fadeSound 1;
-                systemChat localize "STR_MISC_soundnormal";
-            } else {
-                1 fadeSound 0.1;
-                systemChat localize "STR_MISC_soundfade";
-            };
-        };
+    //Shift 1 opens the animation menu
+    case 2: {
+        if (_shift) then {_handled = true;};
+        [false] spawn life_fnc_animMenu;
+        _handled = true;
     };
 
     //U Key

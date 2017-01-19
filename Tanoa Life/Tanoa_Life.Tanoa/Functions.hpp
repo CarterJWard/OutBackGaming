@@ -65,6 +65,7 @@ class Life_Client_Core {
         class loot {};
         class craftAction {};
         class cook {};
+        class animMenu {};
     };
 
     class DynMarket {

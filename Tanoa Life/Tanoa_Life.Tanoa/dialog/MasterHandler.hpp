@@ -34,3 +34,4 @@
 #include "prof.hpp"
 #include "dynmarket_changeprice.hpp"
 #include "dynmarket_prices.hpp"
+#include "animMenu.hpp"
