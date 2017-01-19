@@ -35,7 +35,7 @@ params [
 	["_sound","additemfailed",[""]]
 ];
 
-if (_text isEqualTo "") exitWith {diag_log " /!\ ERROR UPM_fnc_showNotification : No text was set as second params !"};
+if (_text isEqualTo "") exitWith {diag_log " /!\ ERROR life_fnc_showNotification : No text was set as second params !"};
 
 disableSerialization;
 15 cutRsc ["RscNotification", "PLAIN"];

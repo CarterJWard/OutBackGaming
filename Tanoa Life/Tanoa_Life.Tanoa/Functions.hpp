@@ -334,6 +334,7 @@ class Life_Client_Core {
         class say3D {};
         class setFuel {};
         class soundDevice {};
+        class showNotification {};
     };
 
     class Player_Menu {
@@ -425,12 +426,4 @@ class Life_Client_Core {
 		class vAH_takeBack;
 		class vAH_select;
 	};
-};
-
-class UPM {
-    tag = "UPM";
-    class UPM_system {
-        file = "UPM";
-        class showNotification {};
-    };
 };
