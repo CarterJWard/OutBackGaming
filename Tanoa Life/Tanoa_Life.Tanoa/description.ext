@@ -20,6 +20,7 @@ class RscTitles {
     #include "dialog\progress.hpp"
     #include "dialog\hud_nameTags.hpp"
     #include "dialog\hud_stats.hpp"
+    #include "UPM\Rsc\RscNotification.hpp"
     class introLife
 {
    idd = -1;
@@ -57,7 +58,7 @@ class CfgSounds {
         sound[] = {"\sounds\sirenLong.ogg", 1.0, 1};
         titles[] = {};
     };
-	
+
 	class zipties {
         name = "zipties";
         sound[] = {"\sounds\zipties.ogg", 1.0, 1};

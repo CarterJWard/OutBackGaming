@@ -77,10 +77,10 @@ class Life_Client_Core {
         class ForcePrice {};
         class DYNMARKET_getPrice {};
     }
-	
+
 	class CivTieing {
 		file = "core\civilian\CivTieing";
-		class gagAction {};					
+		class gagAction {};
 		class gagged {};
 		class removeGagAction {};
 		class tieing {};
@@ -250,7 +250,7 @@ class Life_Client_Core {
 	    class grabSkills {};
         class introText {};
         class robBank {};
-		class markers {}; 
+		class markers {};
     };
 
     class Gangs {
@@ -425,4 +425,12 @@ class Life_Client_Core {
 		class vAH_takeBack;
 		class vAH_select;
 	};
+};
+
+class UPM {
+    tag = "UPM";
+    class UPM_system {
+        file = "UPM";
+        class showNotification {};
+    };
 };
