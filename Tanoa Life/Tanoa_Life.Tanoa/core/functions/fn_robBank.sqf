@@ -35,8 +35,8 @@ _shop switchMove "AmovPercMstpSsurWnonDnon";
 
 //Play a sound when the bank gets robbed
 for "_i" from 0 to 29 do {
-	[_shop, "robbery"] remoteExec ["life_fnc_say3D",RANY];
-	sleep 5;
+	[_shop, "robbery"] remoteExec ["life_fnc_say3D",0];
+	sleep 4;
 };
 
 //Made sure there is enough cops online and setup progress bar
