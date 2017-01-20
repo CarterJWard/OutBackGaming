@@ -28,10 +28,10 @@ _shop switchMove "AmovPercMstpSsurWnonDnon";
 //_notifMil = parseText format ["<t size='1.5' t color='#c10313'>Alert</t><br/>Armed persosns have been spotted entering the Tanoa bank. All avaiable operatives must respond to this urgent call. Lethal force is authorised on all armed persons in the area but their capture should be top priority!"];
 {
 	if (playerSide isEqualTo civilian) then {
- 		hint parseText format ["<t size='1.5' color='#c10313'>Alert</t><br/>Authorities have confirmed that armed personal have taken over the kavala bank. These people are considerd dangerours and people are urged to stay away. Anyone seen in and around the area is considered dangerous and lethal force will be used to deal with these attackers<br/><br/>Thankyou and stay safe"];
+		 ["BANK ROBBERY","Authorities Have confirmed that armed persons have entered the bank of tanoa. Military Officials urge people to stay away as these people are considered hostile. Any armed persons in the areas will be met with lethal force! Thankyou for your attention!",[204,0,0,1],""] call life_fnc_showNotification;
 	};
 	 if (playerSide isEqualTo west) then {
-		 hint parseText format ["<t size='1.5' t color='#c10313'>Alert</t><br/>Armed persosns have been spotted entering the Tanoa bank. All avaiable operatives must respond to this urgent call. Lethal force is authorised on all armed persons in the area but their capture should be top priority!"];
+		  ["BANK ROBBERY","CCTV Has spotted armed persons entering the bank of tanoa and have began robbing the bank. All units need to respond urgently. Lethal force may be used to subdue anyone with weapons in the area!",[204,0,0,1],""] call life_fnc_showNotification;
 	};
 } forEach playableUnits;
 
