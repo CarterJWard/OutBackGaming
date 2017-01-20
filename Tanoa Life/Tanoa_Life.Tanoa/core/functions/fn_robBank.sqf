@@ -24,8 +24,6 @@ _shop removeAction _action;
 _shop switchMove "AmovPercMstpSsurWnonDnon";
 
 //Notify All sides when a robbery had commenced
-//_notifCiv = parseText format ["<t size='1.5' color='#c10313'>Alert</t><br/>Authorities have confirmed that armed personal have taken over the kavala bank. These people are considerd dangerours and people are urged to stay away. Anyone seen in and around the area is considered dangerous and lethal //force will be used to deal with these attackers<br/><br/>Thankyou and stay safe"];
-//_notifMil = parseText format ["<t size='1.5' t color='#c10313'>Alert</t><br/>Armed persosns have been spotted entering the Tanoa bank. All avaiable operatives must respond to this urgent call. Lethal force is authorised on all armed persons in the area but their capture should be top priority!"];
 {
 	if (playerSide isEqualTo civilian) then {
 		 ["BANK ROBBERY","Authorities Have confirmed that armed persons have entered the bank of tanoa. Military Officials urge people to stay away as these people are considered hostile. Any armed persons in the areas will be met with lethal force! Thankyou for your attention!",[204,0,0,1],""] call life_fnc_showNotification;
@@ -35,11 +33,15 @@ _shop switchMove "AmovPercMstpSsurWnonDnon";
 	};
 } forEach playableUnits;
 
+//Play a sound when the bank gets robbed
+for "_i" from 0 to 29 do {
+	[_shop, "robbery"] remoteExec ["life_fnc_say3D",RANY];
+	sleep 5;
+};
 
-
-
+//Made sure there is enough cops online and setup progress bar
 _cops = (west countSide playableUnits);
-if(_cops < 0) exitWith{hint "There isnt enough Police to rob Gas Station!";};
+if(_cops < 0) exitWith{hint "The bank is currently close as there is a low amount of military personal around!";};
 disableSerialization;
 5 cutRsc ["life_progress","PLAIN"];
 _ui = uiNameSpace getVariable "life_progress";
@@ -54,7 +56,7 @@ if(_rip) then
 while{true} do
 {
 sleep 1;
-_cP = _cP + 0.01;
+_cP = _cP + 0.005;
 _progress progressSetPosition _cP;
 _pgText ctrlSetText format["Robbery in Progress, stay close (10m) (%1%2)...",round(_cP * 100),"%"];
 _Pos = position player; // by ehno: get player pos
@@ -70,7 +72,7 @@ if!(alive _robber) exitWith { _rip = false; };
 if(_robber distance _shop > 10.5) exitWith { deleteMarker "MarkerBank"; _shop switchMove ""; hint "You have gone too far away from the teller and he has managed to flee"; 5 cutText ["","PLAIN"]; _rip = false; };
 5 cutText ["","PLAIN"];
 
-titleText[format["You have stolen $%1, You were seen on CCTV and the military know who you are get away whilst you can",[_kassa] call life_fnc_numberText],"PLAIN"];
+titleText[format["You have stolen $%1, You were seen on CCTV and the military know who you are get away whilst you still can!",[_kassa] call life_fnc_numberText],"PLAIN"];
 deleteMarker "MarkerBank"; // by ehno delete maker
 life_cash = life_cash + _kassa;
 
@@ -82,5 +84,5 @@ if!(alive _robber) exitWith {};
 [getPlayerUID _robber,name _robber,"211"] remoteExec ["life_fnc_wantedAdd",2];
 };
 sleep 1800;
-_action = _shop addAction["Rob the Gas Station",life_fnc_robBank];
+_action = _shop addAction["Rob the teller",life_fnc_robBank];
 _shop switchMove "";
