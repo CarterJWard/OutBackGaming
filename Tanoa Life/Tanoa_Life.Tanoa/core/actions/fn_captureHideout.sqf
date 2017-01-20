@@ -88,7 +88,7 @@ _flagTexture = [
     ] call BIS_fnc_selectRandom;
 _this select 0 setFlagTexture _flagTexture;
 [[0,1],"STR_GNOTF_CaptureSuccess",true,[name player,(group player) getVariable "gang_name"]] remoteExecCall ["life_fnc_broadcast",RCLIENT];
-["Alert",format [localize "STR_GNOTF_CaptureSucces",true,localize [name player,(group player) getVariable "gang_name"]] ,[204,0,0,1],""] remoteExecCall ["life_fnc_showNotification",RCLIENT];
+["Alert",format ["A local hideout has been captured by %1",localize [(group player) getVariable "gang_game"]],[204,0,0,1],""] remoteExecCall ["life_fnc_showNotification",RCLIENT];
 _hideout setVariable ["inCapture",false,true];
 _hideout setVariable ["gangOwner",group player,true];
 

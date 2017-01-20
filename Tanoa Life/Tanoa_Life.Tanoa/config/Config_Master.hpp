@@ -7,7 +7,7 @@
 class Life_Settings {
 /* Logging and Security Settings*/
     /* Security Settings */
-    spyGlass_toggle = true; //Spyglass On/Off Toggle --> True = On & False = Off
+    spyGlass_toggle = false; //Spyglass On/Off Toggle --> True = On & False = Off
 
     /* Data Logging Settings */
     battlEye_friendlyLogging = false; //False [default] - Read the logs from the server.rpt. True - Read the logs from the publicVariable.log. NOTE: Due to how diag_log works it will log to both files either way and the setting is merely for beautification purposes.
@@ -43,14 +43,14 @@ class Life_Settings {
 
     /* Auction House Settings */
     ah_listing_limit = 2; //Amount of listings per player
-    
+
     /* Cops Needed Settings */
     copsHouseRaid = 8;
     copsCrateRaid = 8;
-    
+
     /* Mission Settings */
     crop_bonus = 150000;
-        
+
     /* Basic System Configurations */
     donor_level = false; //Enable the donor level set in database (var = life_donorlevel; levels = 0,1,2,3,4,5). ATTENTION! Before enabling, read: https://www.bistudio.com/community/game-content-usage-rules & https://www.bistudio.com/monetization
     enable_fatigue = false; //Set to false to disable the ARMA 3 fatigue system.
