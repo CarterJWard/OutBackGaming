@@ -44,7 +44,7 @@ airdrop_goingon=true;
 
 // AIRDROP STARTEN
 
-[3,"<t size='1.2'><t color='#FF0000'>Airdrop-Mission</t></t><br/><br/><t size='1'>There will be an Airdrop of Supplies in 15 Minutes! The Location of this drop will be Transmitted to your GPS soon!</t>"] remoteExec ["life_fnc_broadcast",0];
+["Supply Drop","There Will be a air drop in 15 minutes. you will be alerted of the location soon",nil,""] remoteExec ["life_fnc_showNotification",RCLIENT];
 
 _poses = count airdrop_positions;
 
@@ -76,7 +76,7 @@ _markerText = createMarker ["Airdropmarkertext", _dest];
 
 "Airdropmarkertext" setMarkerType "mil_warning";
 
-[3,"<t size='1.2'><t color='#FF0000'>Airdrop-Mission</t></t><br/><br/><t size='1'>10 minutes until the aircraft will drop the supplies! Check your map for the drop-location!</t>"] remoteExec ["life_fnc_broadcast",0];
+["Supply Drop"," There will be a supply drop in 10 minutes. Please check you map for location!",nil,""] remoteExec ["life_fnc_showNotification",RCLIENT];
 
 
 
@@ -84,39 +84,23 @@ sleep 300;
 
 
 
-[3,"<t size='1.2'><t color='#FF0000'>Airdrop-Mission</t></t><br/><br/><t size='1'>5 minutes until the aircraft will drop the supplies!</t>"] remoteExec ["life_fnc_broadcast",0];
+["Supply Drop","There will be a supply drop in 5 minutes. check for the marked location on your GPS. Good luck",[204,0,0,1],""] remoteExec ["life_fnc_showNotification",RCLIENT];
 
 
 
-sleep 60;
+sleep 120;
 
 
 
-[3,"<t size='1.2'><t color='#FF0000'>Airdrop-Mission</t></t><br/><br/><t size='1'>4 minutes until the aircraft will drop the supplies!</t>"] remoteExec ["life_fnc_broadcast",0];
+["Supply Drop","The supplies aircraft will drop the supplies in 3 Minutes, Good Luck!",nil,""] remoteExec ["life_fnc_showNotification",RCLIENT];
 
 
 
-sleep 60;
+sleep 120;
 
 
 
-[3,"<t size='1.2'><t color='#FF0000'>Airdrop-Mission</t></t><br/><br/><t size='1'>3 minutes until the aircraft will drop the supplies!</t>"] remoteExec ["life_fnc_broadcast",0];
-
-
-
-sleep 60;
-
-
-
-[3,"<t size='1.2'><t color='#FF0000'>Airdrop-Mission</t></t><br/><br/><t size='1'>2 minutes until the aircraft will drop the supplies!</t>"] remoteExec ["life_fnc_broadcast",0];
-
-
-
-sleep 60;
-
-
-
-[3,"<t size='1.2'><t color='#FF0000'>Airdrop-Mission</t></t><br/><br/><t size='1'>1 minute until the aircraft will drop the supplies!</t>"] remoteExec ["life_fnc_broadcast",0];
+["Supply Mission","The Aircraft will drop the supplies in 1 minute. Get them before someone else does! Good Luck",nil,""] remoteExec ["life_fnc_showNotification",RCLIENT];
 
 
 
@@ -188,7 +172,7 @@ _containerdummy setDir 90;
 
 while { _dest distance heli1 > 250 } do { "airbox_marker" setMarkerPos getPos heli1; sleep 1; };
 
-[3,"<t size='1.2'><t color='#FF0000'>Airdrop-Mission</t></t><br/><br/><t size='1'>The supplies have been dropped! 20 minutes until self destruction!</t>"] remoteExec ["life_fnc_broadcast",0];
+["Supply Mission","The Supplies have been dropped. you have 20 minutes before the box is set to self destruct",nil, remoteExec ["life_fnc_showNotification",RCLIENT];
 
 
 
@@ -379,19 +363,19 @@ deleteVehicle heli3;
 
 sleep 600;
 
-[3,"<t size='1.2'><t color='#FF0000'>Airdrop-Mission</t></t><br/><br/><t size='1'>5 minutes until self destruction</t>"] remoteExec ["life_fnc_broadcast",0];
+["Supply Mission","The supplies will self destruct in 5 Minutes!",nil,""]] remoteExec ["life_fnc_showNotification",RCLIENT];
 
 sleep 240;
 
-[3,"<t size='1.2'><t color='#FF0000'>Airdrop-Mission</t></t><br/><br/><t size='1'>1 minute until self destruction</t>"] remoteExec ["life_fnc_broadcast",0];
+["Supply Mission","The supplies will self destruct in 1 minute!",nil,""] remoteExec ["life_fnc_showNotification",RCLIENT];
 
 sleep 50;
 
-[3,"<t size='1.2'><t color='#FF0000'>Airdrop-Mission</t></t><br/><br/><t size='1'>10 seconds until self destruction</t>"] remoteExec ["life_fnc_broadcast",0];
+["Supply Mission","The supplied will self destruct in 1o secconds",nil,""] remoteExec ["life_fnc_showNotification",RCLIENT];
 
 sleep 10;
 
-[3,"<t size='1.2'><t color='#FF0000'>Airdrop-Mission beendet!</t></t><br/><br/><t size='1'>The AirDrop-Mission has ended!</t>"] remoteExec ["life_fnc_broadcast",0];
+["Supply Mission","The remaining supplies have been destroyed.",nil,""] remoteExec ["life_fnc_showNotification",RCLIENT];
 
 deleteVehicle _box; 
 

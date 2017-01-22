@@ -87,8 +87,10 @@ _flagTexture = [
         "\A3\Data_F\Flags\flag_fd_orange_CO.paa"
     ] call BIS_fnc_selectRandom;
 _this select 0 setFlagTexture _flagTexture;
-[[0,1],"STR_GNOTF_CaptureSuccess",true,[name player,(group player) getVariable "gang_name"]] remoteExecCall ["life_fnc_broadcast",RCLIENT];
-["Alert",format ["A local hideout has been captured by %1",localize [(group player) getVariable "gang_game"]],[204,0,0,1],""] remoteExecCall ["life_fnc_showNotification",RCLIENT];
+
+//Alert others of the capture
+// place holder_notif = format["STR_GNOTF_CaptureSuccess",true,[name player,(group player) getVariable "gang_name"]];
+["Alert","A group has taken over a guerilla camp. find them and take em down!",[204,0,0,1],""] remoteExecCall ["life_fnc_showNotification",RCLIENT];
 _hideout setVariable ["inCapture",false,true];
 _hideout setVariable ["gangOwner",group player,true];
 

@@ -25,7 +25,7 @@ _queryResult = [_query,2] call HC_fnc_asyncCall;
 
 //Check to see if the gang name already exists.
 if (!(count _queryResult isEqualTo 0)) exitWith {
-    [1,"There is already a gang created with that name please pick another name."] remoteExecCall ["life_fnc_broadcast",_ownerID];
+   ["Error","There is already a group with the name. Please pick a different name.",[204,0,0,1],""] remoteExecCall ["life_fnc_showNotification",_ownerID];
     life_action_gangInUse = nil;
     _ownerID publicVariableClient "life_action_gangInUse";
 };
@@ -36,7 +36,7 @@ _queryResult = [_query,2] call HC_fnc_asyncCall;
 
 //Check to see if this person already owns or belongs to a gang.
 if (!(count _queryResult isEqualTo 0)) exitWith {
-    [1,"You are currently already active in a gang, please leave the gang first."] remoteExecCall ["life_fnc_broadcast",_ownerID];
+    ["Error","You are currently already active in a gang, please leave the gang first.",[204,0,0,1],""]] remoteExecCall ["life_fnc_showNotification",_ownerID];
     life_action_gangInUse = nil;
     _ownerID publicVariableClient "life_action_gangInUse";
 };

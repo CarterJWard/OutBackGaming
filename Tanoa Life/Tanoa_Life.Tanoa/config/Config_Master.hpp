@@ -59,7 +59,7 @@ class Life_Settings {
 
     /* Channel 7 News Station Configurations */
     news_broadcast_cost = 150000; //Cost for a player to send a news station broadcast.
-    news_broadcast_cooldown = 20; //Time in minutes that is required between news station broadcasts. (Default = 20 minutes)
+    news_broadcast_cooldown = 30; //Time in minutes that is required between news station broadcasts. (Default = 20 minutes)
     news_broadcast_header_length = 60; //Number of characters that a header can consist of. Anything over this may clip. This depends on the font size and various other factors. Adjust with caution.
 
     /* Clothing System Configurations */
