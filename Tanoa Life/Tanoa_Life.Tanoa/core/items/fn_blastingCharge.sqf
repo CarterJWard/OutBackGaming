@@ -26,7 +26,7 @@ if ((nearestObject [_pos,_vaultHouse]) getVariable ["locked",true]) exitWith {hi
 if (!([false,"blastingcharge",1] call life_fnc_handleInv)) exitWith {}; //Error?
 
 _vault setVariable ["chargeplaced",true,true];
-[0,"STR_ISTR_Blast_Placed"] remoteExecCall ["life_fnc_broadcast",west];
+["Federal Reserve","A blasting charge has been placed on the federal reserves vault, You have time till the clock runs out to disarm the charge!",[0.898,0.016,0.118,1],""] remoteExecCall ["life_fnc_showNotification",west];
 hint localize "STR_ISTR_Blast_KeepOff";
 
 [] remoteExec ["life_fnc_demoChargeTimer",[west,player]];

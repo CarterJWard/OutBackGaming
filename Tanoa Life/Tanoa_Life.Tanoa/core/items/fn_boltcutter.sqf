@@ -48,14 +48,15 @@ if ((_building getVariable [format ["bis_disabled_Door_%1",_door],0]) isEqualTo 
 if (_ex) exitWith {};
 
 if ((nearestObject [_pos,"Land_Dome_Big_F"]) == _building || (nearestObject [_pos,_vaultHouse]) == _building) then {
-    [[1,2],"STR_ISTR_Bolt_AlertFed",true,[]] remoteExecCall ["life_fnc_broadcast",RCLIENT];
+    //[[1,2],"STR_ISTR_Bolt_AlertFed",true,[]] remoteExecCall ["life_fnc_broadcast",RCLIENT];
+    ["FEDERAL RESERVE","Armed persons have been spotted attempting to break into the federal reserve. Authorities urge all citizens to keep away as anyone with in the area with a weapon will be killed",nil,""] remoteExecCall ["life_fnc_showNotification", civilian];
 } else {
         if (typeOf EQUAL(_building,"I_CargoNet_01_ammo_F")) then 
 		    {
-			    [0,"STR_ISTR_Bolt_Copcrate",true,[]] remoteExecCall ["life_fnc_broadcast",west];
+                ["Military Crate","Someone is trying to break into the military supply cache. get there before the gueriall's take their weapons back",[0.898,0.016,0.118,1],""] remoteExecCall ["life_fnc_showNotification",west];
 			} else 
 		        {
-                    [0,"STR_ISTR_Bolt_AlertHouse",true,[profileName]] remoteExecCall ["life_fnc_broadcast",RCLIENT];
+                    ["Break and enter",format ["%1 Was seen breaking into a house",profileName],nil,""] remoteExecCall ["life_fnc_showNotification",RCLIENT];
                 };
 };
 

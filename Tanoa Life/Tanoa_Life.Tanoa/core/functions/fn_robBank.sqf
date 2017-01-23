@@ -24,19 +24,14 @@ _shop removeAction _action;
 _shop switchMove "AmovPercMstpSsurWnonDnon";
 
 //Notify All sides when a robbery had commenced
-{
-	if (playerSide isEqualTo civilian) then {
-		 ["BANK ROBBERY","Authorities Have confirmed that armed persons have entered the bank of tanoa. Military Officials urge people to stay away as these people are considered hostile. Any armed persons in the areas will be met with lethal force! Thankyou for your attention!",[204,0,0,1],""] call life_fnc_showNotification;
-	};
-	 if (playerSide isEqualTo west) then {
-		  ["BANK ROBBERY","CCTV Has spotted armed persons entering the bank of tanoa and have began robbing the bank. All units need to respond urgently. Lethal force may be used to subdue anyone with weapons in the area!",[204,0,0,1],""] call life_fnc_showNotification;
-	};
-} forEach playableUnits;
+["BANK ROBBERY","Authorities Have confirmed that armed persons have entered the bank of tanoa. Military Officials urge people to stay away as these people are considered hostile. Any armed persons in the areas will be met with lethal force! Thankyou for your attention!",[204,0,0,1],""] remoteExecCall ["life_fnc_showNotification",civilian];
+
+["BANK ROBBERY","CCTV Has spotted armed persons entering the bank of tanoa and have began robbing the bank. All units need to respond urgently. Lethal force may be used to subdue anyone with weapons in the area!",[204,0,0,1],""] remoteExecCall ["life_fnc_showNotification",west];
 
 //Play a sound when the bank gets robbed
 for "_i" from 0 to 29 do {
 	[_shop, "robbery"] remoteExec ["life_fnc_say3D",0];
-	sleep 4;
+	sleep 3.5;
 };
 
 //Made sure there is enough cops online and setup progress bar
