@@ -280,6 +280,17 @@ class playerSettings {
             w = 0.18;
             h = (1 / 25);
         };
+		
+		class ButtonAdminMarket: Life_RscButtonMenu {
+            idc = 2021;
+            text = "Admin Market";
+            colorBackground[] = {"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.3843])", "(profilenamespace getvariable ['GUI_BCG_RGB_G',0.7019])", "(profilenamespace getvariable ['GUI_BCG_RGB_B',0.8862])", 0.5};
+            onButtonClick = "createDialog ""life_dynmarket_changeprice"";";
+            x = 0.67;
+            y = 0.56 - (1 / 25);
+            w = 0.18;
+            h = (1 / 25);
+        };
 
         class ButtonSyncData: Life_RscButtonMenu {
             idc = -1;
