@@ -440,7 +440,7 @@
             <Original>Only one person shall capture at once!</Original>
         </Key>
         <Key ID="STR_GNOTF_AlreadyControlled">
-            <Original>This hideout is controlled by %1.&lt;br/&gt;&lt;br/&gt;Are you sure you want to take over their gang area?</Original>
+            <Original>This hideout is controlled by %1.&lt;br/&gt;&lt;br/&gt;Are you sure you want to take over their area?</Original>
         </Key>
         <Key ID="STR_GNOTF_CurrentCapture">
             <Original>Hideout is currently under control...</Original>
@@ -455,7 +455,7 @@
             <Original>Hideout has been captured.</Original>
         </Key>
         <Key ID="STR_GNOTF_CaptureSuccess">
-            <Original>%1 and his gang: %2 - have taken control of a local hideout!</Original>
+            <Original>%1 and his gang: %2 - have taken control of a local camp!</Original>
         </Key>
         <Key ID="STR_GNOTF_Over32">
             <Original>You can't have a gang name longer then 32 characters.</Original>
