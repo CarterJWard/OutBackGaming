@@ -103,10 +103,9 @@ player setVariable ["Escorting",false,true];
 player setVariable ["transporting",false,true];
 player setVariable ["playerSurrender",false,true];
 
-diag_log "Past Settings Init";
-[] execFSM "core\fsm\client.fsm";
-
-diag_log "Executing client.fsm";
+//diag_log "Past Settings Init";
+//[] execFSM "core\fsm\client.fsm";
+//diag_log "Executing client.fsm";
 waitUntil {!(isNull (findDisplay 46))};
 
 diag_log "Display 46 Found";
@@ -144,7 +143,7 @@ publicVariableServer "life_fnc_RequestClientId"; //Variable OwnerID for Headless
     };
 };
 
-CONSTVAR(life_paycheck); //Make the paycheck static.
+//CONSTVAR(life_paycheck); //Make the paycheck static.
 if (LIFE_SETTINGS(getNumber,"enable_fatigue") isEqualTo 0) then {player enableFatigue false;};
 
 if (LIFE_SETTINGS(getNumber,"pump_service") isEqualTo 1) then{
