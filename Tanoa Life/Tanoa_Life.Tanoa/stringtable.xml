@@ -42,9 +42,6 @@
         <Key ID="STR_Shops_C_Kart">
             <Original>Carter's Kart-Racing Outfits</Original>
         </Key>
-		<Key ID="STR_MIS_Paycheck">
-			<Original>You received a paycheck of $%1</Original>
-		</Key>
         <Key ID="STR_Shops_Market">
             <Original>Tanoa Market</Original>
         </Key>
