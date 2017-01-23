@@ -73,34 +73,6 @@ _fnc_water = {
     };
 };
 
-//NEW TAX SYSTEM BY FRESQO
-[] spawn
-{
-	private["_worked","_uid","_taxable","_tax","_htax","_taxAmount","_houses","_taxTime"];
-	while {true} do
-	{
-		sleep 30;
-		if !(alive player) then {_taxable = false;};
-		_flag = PROF_SIDE(playerSide);
-		_prof = switch (playerSide) do {
-                    case civilian: {"pCiv"};
-                    case west: {"pCop"};
-                    case independent: {"pMed"};
-                    default {};
-                };
-                _data = PROF_VALUE(_prof,_flag);
-                private _level = _data select 0;
-                private _pay = round (life_paycheck + (life_paycheck * (0.25 * _level)));
-		if !(alive player) then {
-			systemChat localize "STR_MIS_Missed";
-		} else {
-			ADD(BANK,_pay); 
-			systemChat format[localize "STR_MIS_Paycheck",[_pay] call life_fnc_numberText];
-		};
-	};
-};
-
-
 //Sort Teargas
 [] spawn {
 While{true} do {
