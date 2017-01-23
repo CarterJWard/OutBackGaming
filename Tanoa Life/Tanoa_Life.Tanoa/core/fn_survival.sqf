@@ -73,7 +73,7 @@ _fnc_water = {
     };
 };
 
-//NEW TAX SYSTEM BY FRESQO
+//Dynamic Paychecks
 [] spawn
 {
 	private["_worked","_uid","_taxable","_tax","_htax","_taxAmount","_houses","_taxTime"];
