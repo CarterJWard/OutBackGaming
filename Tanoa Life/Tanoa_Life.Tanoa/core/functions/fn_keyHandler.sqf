@@ -224,6 +224,7 @@ switch (_code) do {
         if (_shift) then {
         [false] spawn life_fnc_animMenu;
         _handled = true;
+        };
     };
 
     //U Key
