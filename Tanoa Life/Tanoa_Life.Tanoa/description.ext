@@ -19,7 +19,6 @@ class CfgServer {
 class RscTitles {
     #include "dialog\progress.hpp"
     #include "dialog\hud_nameTags.hpp"
-    #include "dialog\hud_stats.hpp"
     #include "dialog\RscNotification.hpp"
     class introLife
 {

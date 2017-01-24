@@ -25,5 +25,6 @@ if (life_blacklisted) exitWith {
 
 player setVariable ["rank",(FETCH_CONST(life_coplevel)),true];
 [] call life_fnc_spawnMenu;
+[] execVM "core\scripts\custHud.sqf";
 waitUntil{!isNull (findDisplay 38500)}; //Wait for the spawn selection to be open.
 waitUntil{isNull (findDisplay 38500)}; //Wait for the spawn selection to be done.

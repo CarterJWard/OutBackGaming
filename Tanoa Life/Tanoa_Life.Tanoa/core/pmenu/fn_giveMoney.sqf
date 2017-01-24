@@ -32,3 +32,4 @@ CASH = CASH - (parseNumber(_amount));
 [] call life_fnc_p_updateMenu;
 
 ctrlShow[2001,true];
+[] call life_fnc_hudUpdate;
