@@ -146,5 +146,5 @@ _marker	setMarkerShape "ELLIPSE";
 _marker setMarkerSize [75,75];
 _markerText = createMarker ["gangMarkerWT", _hideout];
 _markerText setMarkerColor "ColorBlack";
-_markerText setMarkerText format ["%1 and his gang %2 now own this hideout", name player, (group player) getVariable "gang_name" ];
+_markerText setMarkerText format ["Owned by %1", (group player) getVariable "gang_name" ];
 _markerText setMarkerType "mil_warning";
