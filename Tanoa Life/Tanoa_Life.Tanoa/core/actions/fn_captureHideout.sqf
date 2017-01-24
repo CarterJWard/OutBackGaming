@@ -89,7 +89,7 @@ _flagTexture = [
 _this select 0 setFlagTexture _flagTexture;
 
 //Alert others of the capture
-["Alert",format["%1 and his crew %2 have taken over a local guerilla camp!",name player,(group player) getVariable "gang_name"],nil,""] remoteExecCall ["life_fnc_showNotification",RCLIENT];
+["Alert",format[localize "STR_GNOTF_CaptureSuccess",name player,(group player) getVariable "gang_name"],nil,""] remoteExecCall ["life_fnc_showNotification",RCLIENT];
 _hideout setVariable ["inCapture",false,true];
 _hideout setVariable ["gangOwner",group player,true];
 
