@@ -69,16 +69,14 @@ switch (_code) do {
     if((_code in (actionKeys "PushToTalk") || _code in (actionKeys "PushToTalkSide") || _code in (actionKeys "PushToTalkAll") || _code in (actionKeys "PushToTalkDirect") || _code in (actionKeys "VoiceOverNet"))) exitWith {   if (currentChannel in [life_radio_civ,7,    	0,    	1,    	2]) then    { titleText ["Please no voice in SIDE, GLOBAL OR COMMAND channel.","PLAIN", 0];       setCurrentChannel 5;    }; };
 
 
-    //Surrender (Shift + F1)
-    case 59: {
-        if (_shift) then {
-            if (player getVariable ["playerSurrender",false]) then {
-                player setVariable ["playerSurrender",false,true];
-            } else {
-                [] spawn life_fnc_surrender;
-            };
-            _handled = true;
+    //Surrender (Tab)
+    case 15: {
+        if (player getVariable ["playerSurrender",false]) then {
+            player setVariable ["playerSurrender",false,true];
+        } else {
+            [] spawn life_fnc_surrender;
         };
+        _handled = true;
     };
     
      //end = Faded Sound
@@ -223,7 +221,7 @@ switch (_code) do {
 
     //Shift 1 opens the animation menu
     case 2: {
-        if (_shift) then {_handled = true;};
+        if (_shift) then {
         [false] spawn life_fnc_animMenu;
         _handled = true;
     };
