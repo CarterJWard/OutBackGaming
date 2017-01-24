@@ -20,6 +20,7 @@ class RscTitles {
     #include "dialog\progress.hpp"
     #include "dialog\hud_nameTags.hpp"
     #include "dialog\RscNotification.hpp"
+    #include "dialog\custHud.hpp"        
     class introLife
 {
    idd = -1;
