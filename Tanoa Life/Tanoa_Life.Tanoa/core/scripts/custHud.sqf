@@ -206,11 +206,11 @@ if (_thirst > 80) then {
 
 
 
-		//_healthidc ctrlSetStructuredText (parseText format ["<t font='TahomaB' size='0.7' color='%3'>%2%1</t>","%",_damage,_colourDamage]);
+		_healthidc ctrlSetStructuredText (parseText format ["<t font='TahomaB' size='0.7' color='%3'>%2%1</t>","%",_damage,_colourDamage]);
 
-		//_foodidc ctrlSetStructuredText (parseText format ["<t font='TahomaB' size='0.7' color='%3'>%2%1</t>","%",_hunger,_colourHunger]);
+		_foodidc ctrlSetStructuredText (parseText format ["<t font='TahomaB' size='0.7' color='%3'>%2%1</t>","%",_hunger,_colourHunger]);
 
-		//_thirstidc ctrlSetStructuredText (parseText format ["<t font='TahomaB' size='0.7' color='%3'>%2%1</t>","%",_thirst,_colourThirst]);
+		_thirstidc ctrlSetStructuredText (parseText format ["<t font='TahomaB' size='0.7' color='%3'>%2%1</t>","%",_thirst,_colourThirst]);
 
 		////^^^^^^^^^^^ HAS EXACT VALUES E.G. HUNGER 100% | THIRST 100% | HEALTH 100%
 		////
@@ -218,12 +218,12 @@ if (_thirst > 80) then {
 		////
 		//// THIS ONE BELOW HAS TEXT E.G. HEALTH: SERIOUSLY INJURED | THIRST: NOT THIRSTY | HUNGER: NOT HUNGRY
 
-		_healthidc ctrlSetStructuredText (parseText format ["<t font='TahomaB' size='0.7' color='%2'>%1</t>",_healthtext,_colourDamage]);
+		/*_healthidc ctrlSetStructuredText (parseText format ["<t font='TahomaB' size='0.7' color='%2'>%1</t>",_healthtext,_colourDamage]);
 
 		_foodidc ctrlSetStructuredText (parseText format ["<t font='TahomaB' size='0.7' color='%2'>%1</t>",_hungertext,_colourHunger]);
 
 		_thirstidc ctrlSetStructuredText (parseText format ["<t font='TahomaB' size='0.7' color='%2'>%1</t>",_thirsttext,_colourThirst]);
-
+		*/
 
 		//DONT COMMENT THE BELLOW OUT
 		_cashidc ctrlSetStructuredText (parseText format ["$%1",_cash]);
