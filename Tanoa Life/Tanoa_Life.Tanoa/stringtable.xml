@@ -3107,6 +3107,9 @@
         <Key ID="STR_Crime_26">
             <Original>Bank Robbery</Original>
         </Key>
+        <Key ID="STR_Crime_27">
+            <Original>Armed Robbery</Original>
+        </Key>
     </Package>
     <Package name="FuelTank_Mission">
         <Key ID="STR_MAR_FuelTank_Storage">

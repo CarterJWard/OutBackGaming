@@ -48,7 +48,8 @@ if(_chance <= _alarmChance) then
 { 
 	hint localize "STR_ROB_Alarm";
 	[1,[_shop,30]] remoteExec ["life_fnc_marks",west];
-	[1,format[(localize "STR_ROB_MilAlert"), _name,name _robber]] remoteExec ["life_fnc_broadcast",west];
+	//[1,format[(localize "STR_ROB_MilAlert"), _name,name _robber]] remoteExec ["life_fnc_broadcast",west];
+	["Station Holdup","A gas station is being help up . Please respond",{0.91,0.063,0.106,1},""] remoteExec ["life_fnc_showNotification", west];
 };
  
 //Setup our progress bar.
@@ -89,8 +90,9 @@ if(life_rip) then
 	[1,[_shop]] remoteExec ["TON_fnc_timers",RSERV];
 
 	CASH = CASH + _kassa;
-	[1,format[(localize "STR_ROB_MilNotify"), _name,name _robber, [_kassa] call life_fnc_numberText]] remoteExec ["life_fnc_broadcast",west];
-	[getPlayerUID _robber,name _robber,"211",_robber] remoteExec ["life_fnc_wantedAdd",RSERV];
+	//[1,format[(localize "STR_ROB_MilNotify"), _name,name _robber, [_kassa] call life_fnc_numberText]] remoteExec ["life_fnc_broadcast",west];
+	["Station Holdup",format["%1 Was jut robber by %2 for %3", _name,name _robber, [_kassa] call life_fnc_numberText],{0.91,0.063,0.106,1},""] remoteExec ["life_fnc_showNotification",west];
+	[getPlayerUID _robber,name _robber,"27",_robber] remoteExec ["life_fnc_wantedAdd",RSERV];
 		
 	if (count _items > 0) then 
 	{
