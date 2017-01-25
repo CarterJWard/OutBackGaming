@@ -191,11 +191,11 @@ class Life_Settings {
     };
 };
 
-#include "Config_Clothing.hpp"
-#include "Config_Licenses.hpp"
-#include "Config_Vehicles.hpp"
-#include "Config_vItems.hpp"
-#include "Config_Weapons.hpp"
-#include "Config_Gather.hpp"
-#include "Config_SpawnPoints.hpp"
-#include "Config_Process.hpp"
+#include "config\Config_Clothing.hpp"
+#include "config\Config_Licenses.hpp"
+#include "config\Config_Vehicles.hpp"
+#include "config\Config_vItems.hpp"
+#include "config\Config_Weapons.hpp"
+#include "config\Config_Gather.hpp"
+#include "config\Config_SpawnPoints.hpp"
+#include "config\Config_Process.hpp"
