@@ -179,7 +179,7 @@ class WeaponShops {
             { "Chemlight_blue", "", 150, 50, { "", "", -1 } },
             { "SmokeShellBlue", "", 100, -1, { "life_coplevel", "SCALAR", 1 } },
             { "SmokeShellOrange", "", 100, -1, { "life_coplevel", "SCALAR", 1 } },
-            //{ "hgun_P07_snds_F", "Stun Pistol", 2000, 650, { "", "", -1 } },
+            { "hgun_P07_snds_F", "Stun Pistol", 2000, 650, { "", "", -1 } },
             //{ "arifle_sdar_F", "Taser Rifle", 20000, 7500, { "", "", -1 } },
             //{ "hgun_P07_F", "", 7500, 1500, { "", "", -1 } },
             { "hgun_ACPC2_F", "", 1500, -1, { "", "", -1 } },
