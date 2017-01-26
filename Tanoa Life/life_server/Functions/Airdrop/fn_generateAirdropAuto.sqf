@@ -172,7 +172,7 @@ _containerdummy setDir 90;
 
 while { _dest distance heli1 > 250 } do { "airbox_marker" setMarkerPos getPos heli1; sleep 1; };
 
-["Supply Mission","The Supplies have been dropped. you have 20 minutes before the box is set to self destruct",nil, remoteExec ["life_fnc_showNotification",RCLIENT];
+["Supply Mission","The Supplies have been dropped. you have 20 minutes before the box is set to self destruct",nil,""] remoteExec ["life_fnc_showNotification",RCLIENT];
 
 
 
@@ -363,7 +363,7 @@ deleteVehicle heli3;
 
 sleep 600;
 
-["Supply Mission","The supplies will self destruct in 5 Minutes!",nil,""]] remoteExec ["life_fnc_showNotification",RCLIENT];
+["Supply Mission","The supplies will self destruct in 5 Minutes!",nil,""] remoteExec ["life_fnc_showNotification",RCLIENT];
 
 sleep 240;
 
