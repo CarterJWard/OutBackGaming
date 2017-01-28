@@ -98,6 +98,7 @@
                         underline = false;
                     }; 
                 };
+				/*
 				class wantedtitle: Life_RscStructuredText
                 {
                     idc = 1007;
@@ -108,6 +109,7 @@
                     h = 0.011 * safezoneH;
                     colorBackground[] = {1,0,0,1};
                 };
+				*/
                 class banktitle: Life_RscStructuredText
                 {
                     idc = 1001;
@@ -128,6 +130,7 @@
                     h = 0.011 * safezoneH;
                     colorBackground[] = {1,0,0,1};
                 };
+				/*
 				class wantedbg: Life_RscText
                 {
                     idc = 1008;
@@ -137,6 +140,7 @@
                     h = 0.044 * safezoneH;
                     colorBackground[] = {0,0,0,0.3};
                 };
+				*/
                 class bankbg: Life_RscText
                 {
                     idc = 1004;
@@ -153,8 +157,9 @@
                     y = 0.885 * safezoneH + safezoneY;
                     w = 0.0928125 * safezoneW;
                     h = 0.044 * safezoneH;
-                    colorBackground[] = {0,0,0,0.3};
+					colorBackground[] = {0,0,0,0.3};
                 };
+				/*
 				class wantedcount: Life_RscStructuredText
                 {
                     idc = 1106;
@@ -165,6 +170,7 @@
                     h = 0.022 * safezoneH;
                     colorBackground[] = {-1,-1,-1,0};
                 };
+				*/
                 class bankcount: Life_RscStructuredText
                 {
                     idc = 1103;

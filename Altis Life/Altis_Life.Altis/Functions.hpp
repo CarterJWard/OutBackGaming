@@ -24,6 +24,28 @@ class Life_Client_Core {
         class survival {};
         class welcomeNotification {};
     };
+	
+	class copMenuExtended {
+        file = "core\cop\copMenuExtended";
+        class copMenu {};
+		class copRankToString {};
+		class copPromote {};
+		class copDemote {};
+		class copBlacklist {};
+		class copFailMission {};
+		
+    };
+	
+	class DynMarket
+    {
+        file = "core\DynMarket";
+        class bought {};
+        class update {};
+        class DisplayPrices {};
+        class LoadIntoListbox {};
+        class ForcePrice {};
+        class DYNMARKET_getPrice {};
+    };
 
     class Actions {
         file = "core\actions";
@@ -224,7 +246,6 @@ class Life_Client_Core {
         class tazeSound {};
         class teleport {};
         class whereAmI {};
-		class notification_system {}; //New Notfication HUD
     };
 
     class Gangs    {
@@ -303,6 +324,7 @@ class Life_Client_Core {
         class say3D {};
         class setFuel {};
         class soundDevice {};
+		class showNotification {};
     };
 
     class Player_Menu {

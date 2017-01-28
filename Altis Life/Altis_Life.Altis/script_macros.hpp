@@ -4,6 +4,8 @@
 #define CASH life_cash
 #define BANK life_atmbank
 #define GANG_FUNDS group player getVariable ["gang_bank",0];
+#define SUB(var1,var2) var1 = var1 - var2
+#define ADD(var1,var2) var1 = var1 + var2
 
 //RemoteExec Macros
 #define RSERV 2 //Only server

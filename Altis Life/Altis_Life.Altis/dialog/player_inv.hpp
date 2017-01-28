@@ -317,7 +317,7 @@ class playerSettings {
 		 y = 0.7016 * safezoneH + safezoneY;
 		 w = 0.028875 * safezoneW;
 		 h = 0.0504 * safezoneH;
-		 onButtonClick = "createDialog ""Life_cell_phone"";";
+		 onButtonClick = "createDialog ""Life_smartphone"";";
 		 tooltip = $STR_PM_CellPhone;
 		 colorBackground[] = {-1,-1,-1,-1};
 		 colorBackgroundFocused[] = {1,1,1,0.12};
@@ -370,7 +370,7 @@ class playerSettings {
 		 
 		 class Markt_Knopf: life_RscButtonMenu
 		 {
-		 idc = -1;
+		 idc = 123456;
 		 x = 0.544623 * safezoneW + safezoneX;
 		 y = 0.7016 * safezoneH + safezoneY;
 		 w = 0.028875 * safezoneW;
@@ -387,9 +387,38 @@ class playerSettings {
 		 colorDisabled[] = {1,0,0,0.1};
 		 };
 		 
+		class CopMenu_ICON: life_RscPicture
+		 {
+		 idc = 980021;
+		 text = "icons\tablet\police.paa";
+		 x = 0.543311 * safezoneW + safezoneX;
+		 y = 0.6988 * safezoneH + safezoneY;
+		 w = 0.0315 * safezoneW;
+		 h = 0.056 * safezoneH;
+		 };
+		 
+		 class CopMenu_Knopf: life_RscButtonMenu
+		 {
+		 idc = 654321;
+		 x = 0.544623 * safezoneW + safezoneX;
+		 y = 0.7016 * safezoneH + safezoneY;
+		 w = 0.028875 * safezoneW;
+		 h = 0.0504 * safezoneH;
+		 onButtonClick = "createDialog ""life_cop_menu"";";
+		 tooltip = "Cop Menu Extended"; //--- ToDo: Localize;
+		 colorBackground[] = {-1,-1,-1,-1};
+		 colorBackgroundFocused[] = {1,1,1,0.12};
+		 colorBackground2[] = {0.75,0.75,0.75,0.2};
+		 color[] = {1,1,1,1};
+		 colorFocused[] = {0,0,0,0};
+		 color2[] = {0,0,0,0};
+		 colorText[] = {1,1,1,1};
+		 colorDisabled[] = {1,0,0,0.1};
+		 };
+		 
 		 class ButtonGang_ICON: life_RscPicture
 		 {
-		 idc = 1207;
+		 idc = 54321;
 		 text = "icons\tablet\gang.paa";
 		 x = 0.34775 * safezoneW + safezoneX;
 		 y = 0.6988 * safezoneH + safezoneY;

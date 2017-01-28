@@ -10761,6 +10761,17 @@
             <German>Sie sind nicht Polizist werden auf Grund früherer Aktionen und die Admins haben sich von einem Cop entfernt es erlaubt.</German>
         </Key>
     </Package>
+	    <Package name="CopKick">
+        <Key ID="STR_CopKick_Title">
+            <Original>Blacklist Message</Original>
+        </Key>
+        <Key ID="STR_CopKick_SubTitle">
+            <Original>You just got blacklisted from the cop force!</Original>
+        </Key>
+        <Key ID="STR_CopKick_Descript">
+            <Original>You just got blacklisted from the police force by a higher ranking officer, this means that your part of the police force is now over. You are no longer avaliable to use the cop slots.</Original>
+        </Key>
+    </Package>
     <Package name="SpyGlass">
         <Key ID="STR_SpyDetect_Title">
             <Original>The SpyGlass sees you!</Original>

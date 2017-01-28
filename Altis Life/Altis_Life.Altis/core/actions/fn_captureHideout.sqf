@@ -12,7 +12,10 @@ _group = _hideout getVariable ["gangOwner",grpNull];
 
 if (isNil {group player getVariable "gang_name"}) exitWith {titleText[localize "STR_GNOTF_CreateGang","PLAIN"];};
 if (_group == group player) exitWith {titleText[localize "STR_GNOTF_Controlled","PLAIN"]};
-if ((_hideout getVariable ["inCapture",FALSE])) exitWith {["STR_GNOTF_onePersonAtATime",true,"slow"] call life_fnc_notification_system;}; 
+if ((_hideout getVariable ["inCapture",FALSE])) exitWith {
+	["Error", format [localize "STR_GNOTF_onePersonAtATime"],[1,0,0,1],""] call life_fnc_showNotification;
+}; 
+
 if (!isNull _group) then {
     _gangName = _group getVariable ["gang_name",""];
     _action = [

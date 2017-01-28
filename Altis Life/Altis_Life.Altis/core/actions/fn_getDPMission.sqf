@@ -29,7 +29,7 @@ life_cur_task setSimpleTaskDescription [format[localize "STR_NOTF_DPStart",toUpp
 life_cur_task setTaskState "Assigned";
 player setCurrentTask life_cur_task;
 
-["DeliveryAssigned",[format[localize "STR_NOTF_DPTask",toUpper _dp]]] call bis_fnc_showNotification;
+["Delivery Assigned",[format[localize "STR_NOTF_DPTask",toUpper _dp]]] call bis_fnc_showNotification;
 
 [] spawn {
     waitUntil {!life_delivery_in_progress || !alive player};

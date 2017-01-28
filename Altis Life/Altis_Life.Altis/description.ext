@@ -20,6 +20,7 @@ class RscTitles {
     #include "dialog\hud_nameTags.hpp"
     //#include "dialog\hud_stats.hpp"
 	#include "dialog\custHud.hpp"
+	#include "dialog\RscNotification.hpp"
 };
 
 class CfgFunctions {
@@ -97,6 +98,15 @@ class CfgDebriefing {
         title = "$STR_Blacklisted_Title";
         subtitle = "$STR_Blacklisted_SubTitle";
         description = "$STR_Blacklisted_Descript";
+        pictureBackground = "";
+        picture = "";
+        pictureColor[] = {0,0.3,0.6,1};
+    };
+	
+	class CopKick {
+        title = "$STR_CopKick_Title";
+        subtitle = "$STR_CopKick_SubTitle";
+        description = "$STR_CopKick_Descript";
         pictureBackground = "";
         picture = "";
         pictureColor[] = {0,0.3,0.6,1};

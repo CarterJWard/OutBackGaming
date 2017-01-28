@@ -33,7 +33,7 @@ if (_action) then {
     CASH = CASH - _healCost;
     life_action_inUse = false;
 } else {
-    ["STR_NOTF_ActionCancel",true,"slow"] call life_fnc_notification_system;
+	["Error", format [localize "STR_NOTF_ActionCancel"],[1,0,0,1],""] call life_fnc_showNotification;
     closeDialog 0;
     life_action_inUse = false;
 };

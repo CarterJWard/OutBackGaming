@@ -16,7 +16,10 @@ _price = M_CONFIG(getNumber,"Licenses",_type,"price");
 _sideFlag = M_CONFIG(getText,"Licenses",_type,"side");
 _varName = LICENSE_VARNAME(_varName,_sideFlag);
 
-if (CASH < _price) exitWith {[["STR_NOTF_NE_1",[_price] call life_fnc_numberText,localize _displayName],false,"fast"] call life_fnc_notification_system;}; 
+if (CASH < _price) exitWith {
+	["Error", format [localize "STR_NOTF_NE_1",[_price] call life_fnc_numberText,localize _displayName],[1,0,0,1],""] call life_fnc_showNotification;
+}; 
+
 CASH = CASH - _price;
 
 titleText[format[localize "STR_NOTF_B_1", localize _displayName,[_price] call life_fnc_numberText],"PLAIN"];

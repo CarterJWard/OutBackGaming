@@ -11,8 +11,12 @@ private["_unit"];
 _unit = param [1,objNull,[objNull]];
 if (life_bail_paid) exitWith {};
 if (isNil "life_bail_amount") then {life_bail_amount = 3500;};
-if (!isNil "life_canpay_bail") exitWith { ["STR_NOTF_Bail_Post",true,"fast"] call life_fnc_notification_syste};
-if (BANK < life_bail_amount) exitWith {[["STR_NOTF_Bail_NotEnough",life_bail_amount],true,"fast"] call life_fnc_notification_system;}; 
+if (!isNil "life_canpay_bail") exitWith {
+	["Error", format [localize "STR_NOTF_Bail_Post"],[1,0,0,1],""] call life_fnc_showNotification;
+};
+if (BANK < life_bail_amount) exitWith {
+	["Error", format [localize "STR_NOTF_Bail_NotEnough", life_bail_amount],[1,0,0,1],""] call life_fnc_showNotification;
+}; 
 
 BANK = BANK - life_bail_amount;
 life_bail_paid = true;

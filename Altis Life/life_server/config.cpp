@@ -42,6 +42,12 @@ class CfgFunctions {
             class wantedProfUpdate {};
 			class wantedCheck {};
         };
+		
+		class cop_Menu { 
+			file = "\life_server\Functions\copMenuExtended";
+			class copLevelChange {}; 
+			class copBlacklistServer {};
+		};
 
         class Jail_Sys {
             file = "\life_server\Functions\Jail";
@@ -81,6 +87,16 @@ class CfgFunctions {
             class vehicleUpdate {};
             class recupkeyforHC {};
         };
+		
+		class DynMarket	{
+			file = "\life_server\Functions\DynMarket";
+			class calculatePrices {};
+			class config {};
+			class getUpdate {};
+			class HandleDB {};
+			class playerLogged {};
+			class sleeper {}; 
+		};
 
         class Housing {
             file = "\life_server\Functions\Housing";

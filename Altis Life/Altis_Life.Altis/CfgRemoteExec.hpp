@@ -72,6 +72,9 @@ class CfgRemoteExec {
 		F(life_fnc_tieing,CLIENT)
 		F(life_fnc_tieingb,CLIENT)
 		F(life_fnc_gagged,CLIENT)
+		F(life_fnc_update,CLIENT) //DynMarket
+		F(life_fnc_copFailMission, CLIENT) //CopMenuExtended
+		
 
         /* Server only functions */
         F(BIS_fnc_execVM,SERVER)
@@ -113,6 +116,12 @@ class CfgRemoteExec {
         F(TON_fnc_vehicleStore,SERVER)
         F(TON_fnc_vehicleUpdate,SERVER)
 		F(life_fnc_wantedCheck,SERVER)
+		F(TON_fnc_playerLogged,SERVER) //DynMarket
+		F(TON_fnc_getUpdate,SERVER) //DynMarket
+		F(TON_fnc_changePrice, SERVER) //DynMarket
+		F(life_fnc_copLevelChange, SERVER) //CopMenuExtended
+		F(life_fnc_copBlacklistServer, SERVER) //CopMenuExtended
+		
 
         /* HeadlessClient only functions */
         F(HC_fnc_addContainer,HC)

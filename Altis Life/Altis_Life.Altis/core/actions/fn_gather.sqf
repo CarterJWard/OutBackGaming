@@ -9,8 +9,12 @@
 private["_maxGather","_resource","_amount","_maxGather","_requiredItem"];
 if (life_action_inUse) exitWith {};
 if ((vehicle player) != player) exitWith {};
-if (player getVariable "restrained") exitWith {["STR_NOTF_isrestrained",true,"slow"] call life_fnc_notification_system; }; 
-if (player getVariable "playerSurrender") exitWith { ["STR_NOTF_surrender",true,"slow"] call life_fnc_notification_system;};
+if (player getVariable "restrained") exitWith {
+	["Error", format [localize "STR_NOTF_isrestrained"],[1,0,0,1],""] call life_fnc_showNotification; 
+}; 
+if (player getVariable "playerSurrender") exitWith {
+	["Error", format [localize "STR_NOTF_surrender"],[1,0,0,1],""] call life_fnc_showNotification;
+};  
 
 life_action_inUse = true;
 _zone = "";
@@ -52,7 +56,8 @@ if (_exit) exitWith {life_action_inUse = false;};
 _amount = round(random(_maxGather)) + 1;
 _diff = [_resource,_amount,life_carryWeight,life_maxWeight] call life_fnc_calWeightDiff;
 if (_diff isEqualTo 0) exitWith {
-    ["STR_NOTF_InvFull",true,"slow"] call life_fnc_notification_system;
+	["Error", format [localize "STR_NOTF_InvFull"],[1,0,0,1],""] call life_fnc_showNotification; 
+	
     life_action_inUse = false;
 };
 

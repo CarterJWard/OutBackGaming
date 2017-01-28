@@ -19,6 +19,7 @@ _bankidc = _display displayCtrl 1103;
 _cashidc = _display displayCtrl 1104;
 _playeridc = _display displayCtrl 1105;
 _wantedidc = _display displayCtrl 1106;
+private ["_damage"];
 
 [getPlayerUID player,player] remoteExecCall ["life_fnc_wantedCheck",RSERV];
 
@@ -30,7 +31,7 @@ _playertitle = _display displayCtrl 1006;
 _wantedtitle = _display displayCtrl 1007; 
 		
 //Stats
-_damage = round ((1 - (damage player)) * 100);
+_damageR = round ((1 - (damage player)) * 100);
 //
 //PLEASE COMMENT OUT >>ONE<< OF THE TWO SETS OF VARIABLES BELOW
 //
@@ -50,6 +51,23 @@ _slotsI = playableSlotsNumber independent;
 _slotsB = playableSlotsNumber blufor;
 _slotsC = playableSlotsNumber civilian;
 _slots = _slotsB + _slotsC + _slotsI;
+
+if (_damageR > 99) then {
+	_damage = 100;	
+};
+if (_damageR > 97 && _damageR < 99) then {
+	_damage = 75;	
+};
+if (_damageR > 96 && _damageR < 97) then {
+	_damage = 50;	
+};
+if (_damageR < 96 && _damageR > 0) then {
+	_damage = 25;	
+};
+if (_damageR == 0) then {
+	_damage = 0;	
+};
+
 
 		
 //Colours

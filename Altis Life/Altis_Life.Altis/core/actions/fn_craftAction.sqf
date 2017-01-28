@@ -27,20 +27,25 @@ life_action_inUse = true;//Lock out other actions during processing.
 } foreach (_config);
 _newItem = _item;
 diag_log format ["%1",_allMaterial];
-if (!_allMaterial) exitWith {["STR_PM_NoMaterial",true,"slow"] call life_fnc_notification_system; life_action_inUse = false;}; 
+if (!_allMaterial) exitWith {
+	["Error", format [localize "STR_PM_NoMaterial"],[1,0,0,1],""] call life_fnc_showNotification;
+	life_action_inUse = false;
+};
+ 
 //Some checks
 if ((count _matsNeed) == 0) exitWith {life_action_inUse = false;};
 if (_itemFilter == "backpack" && backpack player != "") exitWith {
  ["STR_CRAFT_AR_Backpack",false,"fast"] call life_fnc_notification_system; 
+ ["User Actions", format [localize "STR_CRAFT_AR_Backpack"],nil,""] call life_fnc_showNotification;
  life_action_inUse = false;
 };
 if (_itemFilter == "uniform" && uniform player != "") exitWith {
- ["STR_CRAFT_AR_Uniform",false,"fast"] call life_fnc_notification_system; 
+ ["User Actions", format [localize "STR_CRAFT_AR_Uniform"],nil,""] call life_fnc_showNotification;
  life_action_inUse = false;
 };
 if (_itemFilter == "weapon") then {
  if (!(player canAdd _newItem) || currentWeapon player != "") exitWith {
- ["STR_NOTF_NoRoom",true,"fast"] call life_fnc_notification_system; 
+ ["Error", format [localize "STR_NOTF_NoRoom"],[1,0,0,1],""] call life_fnc_showNotification; 
  life_action_inUse = false;
  };
 };
@@ -53,7 +58,7 @@ if (_itemFilter == "item") then {
  diag_log format ["%1 - %2",(_matsNeed select _i),_weightUsedItems];
  };
  if ((life_carryWeight - _weightUsedItems + _weight) > life_maxWeight) exitWith {
- ["STR_NOTF_NoRoom",true,"fast"] call life_fnc_notification_system; 
+ ["Error", format [localize "STR_NOTF_NoRoom"],[1,0,0,1],""] call life_fnc_showNotification; 
  life_action_inUse = false;
  };
 };
@@ -94,7 +99,7 @@ if (_itemFilter == "backpack") then {
  if(backpack player == "") then {
  player addBackpack _newItem;
  } else {
- ["STR_CRAFT_AR_Backpack",false,"fast"] call life_fnc_notification_system; 
+ ["User Actions", format [localize "STR_CRAFT_AR_Backpack"],nil,""] call life_fnc_showNotification;
  life_is_processing = false;
  life_action_inUse = false;
  };
@@ -103,7 +108,7 @@ if (_itemFilter == "uniform") then{
  if(uniform player == "") then{
  player addUniform _newItem;
  } else {
- ["STR_CRAFT_AR_Uniform",false,"fast"] call life_fnc_notification_system; 
+ ["User Actions", format [localize "STR_CRAFT_AR_Uniform"],nil,""] call life_fnc_showNotification;
  life_is_processing = false;
  life_action_inUse = false;
  };

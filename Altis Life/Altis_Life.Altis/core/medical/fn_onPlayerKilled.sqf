@@ -63,8 +63,7 @@ _unit spawn {
 
 [] spawn life_fnc_deathScreen;
 
-if (purge_active) then {
-} else {
+
 	deleteMarkerLocal "NLRMarker";
 	deleteMarkerLocal "NLRMarker2";
 	_marker = createMarkerLocal ["NLRMarker", _unit];
@@ -92,7 +91,7 @@ if (purge_active) then {
 		waitUntil {!life_nlrtimer_running};
 	};
 	[] spawn life_fnc_newLifeRule;
-};
+
 
 
 //Create a thread to follow with some what precision view of the corpse.
