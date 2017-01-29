@@ -10,6 +10,12 @@ _endPos = "ADEnd"; //Where the helicoptor fly to when the box is dropped
 _box1 = "Land_Cargo10_grey_F"; //Type of box that will be used to store the weapons
 _notifDrop = ["Airdrop Mission", "The supplies have been dropped, Get what you can before someone gets you!",nil,""] remoteExec ["life_fnc_showNotification", RCLIENT];
 
+//Timer
+_min = 1800;
+_max = random(14400);
+_waitTime = (_min + _max);
+sleep _waitTime;
+
 //when timer runs out call the first alert
 ["Airdrop Mission","airdrop will be in 10 minutes",nil,""] remoteExec ["life_fnc_showNotification",RCLIENT];
 sleep 300;
