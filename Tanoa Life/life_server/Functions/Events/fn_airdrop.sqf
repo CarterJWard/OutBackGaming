@@ -37,6 +37,14 @@ _wp2 = _group1 addWaypoint [getMarkerPos _endPos, 0];
 //Create the first box and connect the box to the huron
 _container = createVehicle [_box1, getMarkerPos _spawnPos];
 _load = bHeli setSlingLoad _container;
+_container allowDamage false;
 
-//Fill the box with the goods (pull from the config file)
+//Item config
+[]
+[]
+[]
+//Fill the box
+_container addWeaponCargoGlobal [];
+
+
 

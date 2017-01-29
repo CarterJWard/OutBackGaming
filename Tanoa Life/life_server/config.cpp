@@ -127,7 +127,11 @@ class CfgFunctions {
             class playerLogged {};
             class sleeper {}; 
         };
-    };
+		class rEvents {
+			file = "\life_server\Functions\Events" 
+				class airdrop {};
+		};	
+	};
 };
 
 class CfgVehicles {
