@@ -8,7 +8,7 @@ private ["group1","_container","box1","_box1","_wp1","_wp2","_aRifle","_pistol",
 _spawnPos = "ADSpawn"; //Where the aidrop will spawn
 _endPos = "ADEnd"; //Where the helicoptor fly to when the box is dropped
 _box1 = "Land_Cargo10_grey_F"; //Type of box that will be used to store the weapons
-_notifDrop = ["Airdrop Mission", "The supplies have been dropped, Get what you can before someone gets you!",nil,""] remoteExec ["life_fnc_showNotification", RCLIENT];
+_notifDrop = ["Airdrop Mission", "The supplies have been dropped and will self destruct in 20 minutes, Get what you can before someone gets you!",nil,""] remoteExec ["life_fnc_showNotification", RCLIENT];
 
 //Timer
 _min = 1800;
@@ -19,6 +19,7 @@ sleep _waitTime;
 //when timer runs out call the first alert
 ["Airdrop Mission","airdrop will be in 10 minutes",nil,""] remoteExec ["life_fnc_showNotification",RCLIENT];
 sleep 300;
+diag_log "Airdrop initiated";
 
 //Select one of the markers which wil then become the airdrop location
 _dropLoc = ["drop_1","drop_2","drop_3","drop_4"] call BIS_fnc_selectRandom;
@@ -34,6 +35,8 @@ sleep 240;
 heli1 = "B_Heli_Transport_03_unarmed_F";
 bHeli = createVehicle [heli1, getMarkerPos _spawnPos, [], 0, "FLY"];
 bHeli allowDamage false;
+
+diag_log "Airdrop vehicles spawned";
 
 //one more alert
 ["Airdrop Misison","The Supply mission has been spotted approaching the marked area. check your map as it will be delieverd soon",nil,""] remoteExec ["life_fnc_showNotification", RCLIENT];
@@ -92,5 +95,13 @@ _container addWeaponCargoGlobal _mags;
 _container addWeaponCargoGlobal _mags2;
 _container addWeaponCargoGlobal _special;
 
-
-
+//Destroy the box after 20 minutes
+sleep 1300;
+["Airdrop Mission","The airdrp supply box will self destruct in 10 secconds",nil,""];
+sleep 10;
+_container allowDamage true;
+_container setDamage 1;
+deleteMarker "arMarker";
+["Airdrop Mission","The box has been destroyed and mission has ended. good work everyone",nil,""];
+bHeli allowDamage true;
+bHeli setDamage 1;
