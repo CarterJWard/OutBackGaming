@@ -35,3 +35,4 @@ life_is_alive = true;
 player addRating 9999999;
 
 [] execVM "scripts\custHud.sqf";
+[] execVM "scripts\custHudUpdate.sqf";

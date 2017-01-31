@@ -6,9 +6,10 @@
     Description:
     Opens the cop menu.
 */
+
 private["_display","_list","_rankText"];
 
-private _rank = FETCH_CONST(life_coplevel);
+private _rank = life_coplevel;
 if (_rank <= 2) exitWith {closeDialog 0;};
 
 disableSerialization;
@@ -32,14 +33,26 @@ switch (FETCH_CONST(life_adminlevel)) do
 lbClear _list;
 
 {
-    if (playerSide isEqualTo west) then {
+    if (side _x isEqualTo west) then {
 		private _rankP  = _x getVariable ["rank", 0]; 
 		_rankText = [_rankP] call life_fnc_copRankToString;
 		_list lbAdd format["%1 - %2", _x getVariable ["realname",name _x],_rankText];
 		_list lbSetdata [(lbSize _list)-1,str(_x)];
 	}; 
 } forEach playableUnits;
-if (_rank <= 2) exitWith {closeDialog 0;};
+
+if (GVAR_MNS ["mLaw", false]) then {
+	_mLaw = ((findDisplay 232920) displayCtrl 232923);
+	_mLaw ctrlSetBackgroundColor [0, 255, 0, 1]; 	// Green
+	_mLaw ctrlSetTooltip "Marshal Law is currently active!"; //Change ToolTip
+};
+
+if (player getVariable ["offDuty", false]) then {
+	_oD = ((findDisplay 232920) displayCtrl 232926);
+	_oD ctrlSetTooltip "You are already off duty, press on duty to return!"; //Change ToolTip
+	_oD ctrlEnable false; 
+};
+
 
 /*
 if (life_god) then {

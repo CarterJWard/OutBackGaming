@@ -73,8 +73,8 @@ class life_cop_menu {
         class RscButtonMenu_2405: Life_RscButtonMenu {
             idc = 232923;
             text = "Marshall Law";
-			tooltip = "This is currently a WIP.";
-            //onButtonClick = "[] call life_fnc_adminTeleport; hint 'Select where you would like to teleport';";
+			tooltip = "Call Marshall Law upon a city.";
+            onButtonClick = "[] call life_fnc_copMarshallLaw;";
             x = 0.613437 * safezoneW + safezoneX;
             y = 0.643 * safezoneH + safezoneY;
             w = 0.061875 * safezoneW;
@@ -83,9 +83,9 @@ class life_cop_menu {
 
         class RscButtonMenu_2401: Life_RscButtonMenu {
             idc = 232924;
-            text = "Checkpoint";
-			tooltip = "This is currently a WIP.";
-            //onButtonClick = "[] call life_fnc_adminTpHere;";
+            text = "Msg All";
+			tooltip = "Public Service Announcment.";
+            onButtonClick = "[] call life_fnc_copMsgAllAction;";
             x = 0.324687 * safezoneW + safezoneX;
             y = 0.676 * safezoneH + safezoneY;
             w = 0.061875 * safezoneW;
@@ -94,9 +94,9 @@ class life_cop_menu {
 
         class RscButtonMenu_2406: Life_RscButtonMenu {
             idc = 232925;
-            text = "Msg All";
-			tooltip = "This is currently a WIP.";
-            //onButtonClick = "[] call life_fnc_adminGodMode;";
+            text = "OnDuty";
+			tooltip = "Return to active Duty.";
+            onButtonClick = "[] spawn life_fnc_copOnDuty;";
             x = 0.396875 * safezoneW + safezoneX;
             y = 0.676 * safezoneH + safezoneY;
             w = 0.061875 * safezoneW;
@@ -107,35 +107,14 @@ class life_cop_menu {
         class RscButtonMenu_2407: Life_RscButtonMenu {
             idc = 232926;
             text = "OffDuty";
-            //onButtonClick = "[] call life_fnc_adminFreeze;";
-			tooltip = "This is currently a WIP.";
+            onButtonClick = "[] call life_fnc_copOffDuty;";
+			tooltip = "Let your coworkers know you are away.";
             x = 0.469062 * safezoneW + safezoneX;
             y = 0.676 * safezoneH + safezoneY;
             w = 0.061875 * safezoneW;
             h = 0.022 * safezoneH;
         };
 
-        class RscButtonMenu_2408: Life_RscButtonMenu {
-            idc = 232927;
-            text = "OnDuty";
-			tooltip = "This is currently a WIP.";
-            //onButtonClick = "[] spawn life_fnc_adminMarkers;closeDialog 0;";
-            x = 0.54125 * safezoneW + safezoneX;
-            y = 0.676 * safezoneH + safezoneY;
-            w = 0.061875 * safezoneW;
-            h = 0.022 * safezoneH;
-        };
-		/*
-        class RscButtonMenu_2409: Life_RscButtonMenu {
-            idc = 232928;
-            text = "$STR_Admin_Debug";
-            onButtonClick = "[] call life_fnc_adminDebugCon;";
-            x = 0.613437 * safezoneW + safezoneX;
-            y = 0.676 * safezoneH + safezoneY;
-            w = 0.061875 * safezoneW;
-            h = 0.022 * safezoneH;
-        };
-		*/
 
         class PlayerList_Admin: Life_RscListBox {
             idc = 232929;

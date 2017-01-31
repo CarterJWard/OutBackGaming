@@ -10,16 +10,15 @@ if(isNil "_copPlayer") exitwith {};
 if(isNull _copPlayer) exitWith {};
 _copPlayerRank = _copPlayer getVariable ["rank",0];
 
-if(FETCH_CONST(life_coplevel) < 5) exitWith {
+if((life_coplevel) < 5) exitWith {
 	hint "You are not high enough rank to use this feature!"; 
 	closeDialog 0;
 };
 
-/*
 if(_copPlayer isEqualTo player) exitWith {
 	hint "You cannot blacklist yourself!"; 
 };
-*/
+
 
 if(side _copPlayer != west) exitWith {
 	hint "You cannot demote somebody who is not currently playing as a cop";

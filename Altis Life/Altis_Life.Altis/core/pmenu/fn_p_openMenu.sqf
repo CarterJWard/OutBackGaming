@@ -12,7 +12,7 @@ disableSerialization;
 
 switch (playerSide) do {
     case west: {
-		private _rank = FETCH_CONST(life_coplevel);
+		private _rank = life_coplevel;
         ctrlShow[2011,false];
 		ctrlShow[980021,false];
 		ctrlShow[2101,false];
@@ -28,6 +28,8 @@ switch (playerSide) do {
         ctrlShow[2012,false];
 		ctrlShow[654321,false];
 		ctrlShow[54321,false];
+		ctrlShow[2008,false];
+		ctrlShow[1210,false];
     };
 
     case independent: {

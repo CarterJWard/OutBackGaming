@@ -33,7 +33,12 @@ class Life_Client_Core {
 		class copDemote {};
 		class copBlacklist {};
 		class copFailMission {};
-		
+		class copLevelChangeClient {};
+		class copMarshallLaw {};
+		class copMsgAllAction {};
+		class copMsgAll {};
+		class copOffDuty {};
+		class copOnduty {};
     };
 	
 	class DynMarket

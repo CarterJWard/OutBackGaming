@@ -49,7 +49,7 @@ player addheadgear "mgsr_headbag";
 			cutText ["You are no longer blind folded.!","PLAIN",2];	
 			player setVariable ["blindfolded", nil, true];
 		};
-		if(deadPlayer) exitWith
+		if (!alive player) exitWith
 		{
 			cutText ["You are no longer blind folded.!","PLAIN",2];	
 			player setVariable ["blindfolded", nil, true];
@@ -72,7 +72,7 @@ player addheadgear "mgsr_headbag";
 	"colorCorrections" ppEffectEnable false;	
 
 	removeHeadGear player;
-	if(!deadPlayer) then
+	if(alive player) then
 	{
 		player switchMove "AmovPercMstpSlowWrflDnon_SaluteIn";
 		player setVariable ["blindfolded", nil, true];

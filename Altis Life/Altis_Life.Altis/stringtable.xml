@@ -23,6 +23,12 @@
             <Italian>Dipartimento della Polizia di Altis</Italian>
             <German>Altis Police Department-Shop</German>
         </Key>
+		<Key ID="STR_ON_DUTY">
+			<Original>Officer %1 returned to duty!</Original>
+        </Key>
+		<Key ID="STR_OFF_DUTY">
+            <Original>Officer %1 has gone off duty, he has 15mins to return!</Original>
+        </Key>
         <Key ID="STR_Shops_C_Rebel">
             <Original>Mohammed's Jihadi Shop</Original>
             <Czech>Mohamedův džihád Shop</Czech>

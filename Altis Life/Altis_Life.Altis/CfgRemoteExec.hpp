@@ -74,6 +74,7 @@ class CfgRemoteExec {
 		F(life_fnc_gagged,CLIENT)
 		F(life_fnc_update,CLIENT) //DynMarket
 		F(life_fnc_copFailMission, CLIENT) //CopMenuExtended
+		F(life_fnc_copLevelChangeClient, CLIENT) //CopMenuExtended
 		
 
         /* Server only functions */
