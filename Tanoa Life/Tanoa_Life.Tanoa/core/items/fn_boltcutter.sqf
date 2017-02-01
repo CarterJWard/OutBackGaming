@@ -139,7 +139,7 @@ if (_crate) then {
 	private _crateItems = GVAR_MNS ["dweapons",[]];
 	if (count _crateItems > 0) then {{_building addWeaponCargoGlobal [_x,1];} forEach _crateItems};
 	SVAR_MNS ["dweapons",[],true];
-	[1,format["MILITARY ALERT - The military evidence crate has been robbed by %1",name player]] remoteExec ["life_fnc_broadcast",west];
+	["Alert",format["MILITARY ALERT - The military evidence crate has been robbed by %1",name player],nil,""] remoteExec ["life_fnc_showNotification",west];
 	//[getPlayerUID player,profileName,"459",player] remoteExecCall ["life_fnc_wantedAdd",RSERV];
 } else {
     _building setVariable [format ["bis_disabled_Door_%1",_door],0,true]; //Unlock the door.
