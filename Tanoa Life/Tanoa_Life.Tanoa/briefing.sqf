@@ -3,6 +3,8 @@ if (player diarySubjectExists "controls") exitWith {};
 
 player createDiarySubject ["rules","Rules"];
 player createDiarySubject ["controls","Controls"];
+player createDiarySubject ["general","General"];
+player createDiarySubject ["credits","Credits"]
 
 /*  Example
     player createDiaryRecord ["", //Container
@@ -46,6 +48,7 @@ Spacebar: Place storage container.<br/><br/>
                 "
         ]
     ];
+//Controls Info section
     player createDiaryRecord ["controls",
         [
             "General Controls",
@@ -65,7 +68,7 @@ End on the numpad: Put in and take out earplugs.<br/><br/>
 
 //General info section
 
-    player createDiaryRecord ["General",
+    player createDiaryRecord ["general",
     [
         "Legal Money making",
                 "
@@ -76,3 +79,18 @@ Crop Dusting: To dust crops you will need a small fixed wing aircraft (Ceaser BT
         "
         ]    
     ];
+
+//Credits
+    player createDiaryRecord ["credits",
+    [
+        "Credits",
+        "
+Thankyou to everyone has contributed to this mission file
+Fresqo - Large thankyou to fresqo for his large contribution's. 
+Jordan - Scritps
+Larry - Scripts
+Nolan - Mapping
+Itzwayz - Textures
+        "
+        ]
+    ]
