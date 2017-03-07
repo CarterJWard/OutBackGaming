@@ -74,6 +74,7 @@ class CfgRemoteExec {
 		F(life_fnc_tieing,CLIENT)
 		F(life_fnc_tieingb,CLIENT)
 		F(life_fnc_gagged,CLIENT)
+        F(life_fnc_showNotification,ANYONE)
 		
 
         /* Server only functions */
@@ -175,7 +176,6 @@ class CfgRemoteExec {
         F(life_fnc_setFuel,ANYONE)
         F(life_fnc_simDisable,ANYONE)
         F(SPY_fnc_notifyAdmins,ANYONE)
-        F(life_fnc_showNotification,ANYONE)
     };
 
     class Commands {

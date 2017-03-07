@@ -16,6 +16,9 @@ _max = random(14400);
 _waitTime = (_min + _max);
 sleep _waitTime;
 
+//Check for set amount of players if not enough people are online will exit 
+if({side _x == civilian} count playableUnits < 1)  exitWith  {diag_log "Not enough players on civ side for aidrop to intiate";}; 
+
 //when timer runs out call the first alert
 ["Airdrop Mission","airdrop will be in 10 minutes",nil,""] remoteExec ["life_fnc_showNotification",RCLIENT];
 sleep 300;
@@ -80,14 +83,14 @@ _container allowDamage false;
     _mg22 = ["20Rnd_762x51_Mag", 14];
     _mags2 = [_mg21,_mg22] call BIS_fnc_selectRandom;
     
-    //special
+    //Special
     _sp1 = ["srifle_DMR_01_F", 4];
     _sp2 = ["srifle_EBR_F", 2];
     _sp3 = ["LMG_Mk200_F", 1];
     _sp4 = ["200Rnd_65x39_cased_Box",2];
     _special = [_sp1,_sp2,_sp3,_sp4] call BIS_fnc_selectRandom;
 
-//Fill the box has a delay so it cannot be show down
+//Fill the box has a delay so it cannot be shot down
 sleep 30;
 _container addWeaponCargoGlobal _aRifle;
 _container addWeaponCargoGlobal _pistol;
@@ -97,11 +100,11 @@ _container addWeaponCargoGlobal _special;
 
 //Destroy the box after 20 minutes
 sleep 1300;
-["Airdrop Mission","The airdrp supply box will self destruct in 10 secconds",nil,""];
+["Airdrop Mission","The airdrp supply box will self destruct in 10 secconds",nil,""] remoteExec ["life_fnc_showNotification",RCLIENT];
 sleep 10;
 _container allowDamage true;
 _container setDamage 1;
 deleteMarker "arMarker";
-["Airdrop Mission","The box has been destroyed and mission has ended. good work everyone",nil,""];
+["Airdrop Mission","The box has been destroyed and mission has ended. good work everyone",nil,""] remoteExec ["life_fnc_showNotification",RCLIENT];
 bHeli allowDamage true;
 bHeli setDamage 1;
