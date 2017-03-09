@@ -16,6 +16,7 @@ SET time_zone = "+00:00";
 -- Default Schema
 -- CREATE DATABASE IF NOT EXISTS `altislife` DEFAULT CHARACTER SET utf8mb4;
 --
+CREATE DATABASE IF NOT EXISTS `altislife` DEFAULT CHARACTER SET utf8mb4;
 USE `altislife`;
 
 --
