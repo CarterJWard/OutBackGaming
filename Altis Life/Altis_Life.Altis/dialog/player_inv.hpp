@@ -275,7 +275,7 @@ class playerSettings {
 		 {
 		 idc = 2102;
 		 text = "icons\tablet\crafting.paa";
-		 x = 0.541998 * safezoneW + safezoneX;
+		 x = 0.505251 * safezoneW + safezoneX;
 		 y = 0.6988 * safezoneH + safezoneY;
 		 w = 0.0315 * safezoneW;
 		 h = 0.056 * safezoneH;
@@ -284,7 +284,7 @@ class playerSettings {
 		class ButtonCrafting: life_RscButtonMenu
 		 {
 		 idc = 2101;
-		 x = 0.543338 * safezoneW + safezoneX;
+		 x = 0.505251 * safezoneW + safezoneX;
 		 y = 0.7016 * safezoneH + safezoneY;
 		 w = 0.028875 * safezoneW;
 		 h = 0.0504 * safezoneH;
@@ -389,7 +389,7 @@ class playerSettings {
 		 
 		class CopMenu_ICON: life_RscPicture
 		 {
-		 idc = 980021;
+		 idc = 9821;
 		 text = "icons\tablet\police.paa";
 		 x = 0.543311 * safezoneW + safezoneX;
 		 y = 0.6988 * safezoneH + safezoneY;

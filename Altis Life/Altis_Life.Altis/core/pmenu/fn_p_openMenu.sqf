@@ -18,29 +18,36 @@ switch (playerSide) do {
 		ctrlShow[2101,false];
 		ctrlShow[2102,false];
 		ctrlShow[123456,false];
-		if(_rank < 2) then {
+		ctrlShow[1209,false];
+		ctrlShow[54321,false];
+		if(_rank <= 2) then {
 			ctrlShow[654321,false];
-			ctrlShow[54321,false];
+			ctrlShow[9821,false];
 		};
     };
 
     case civilian: {
         ctrlShow[2012,false];
 		ctrlShow[654321,false];
-		ctrlShow[54321,false];
 		ctrlShow[2008,false];
 		ctrlShow[1210,false];
+		ctrlShow[9821,false];
     };
 
     case independent: {
         ctrlShow[2012,false];
         ctrlShow[2011,false];
-		ctrlShow[980021,false];
+		ctrlShow[9821,false];
 		ctrlShow[123456,false];
+		ctrlShow[980021,false];
 		ctrlShow[654321,false];
 		ctrlShow[54321,false];
 		ctrlShow[2101,false];
 		ctrlShow[2102,false];
+		ctrlShow[9821,false];
+		ctrlShow[2008,false];
+		ctrlShow[1210,false];
+		ctrlShow[1209,false];
     };
 };
 
