@@ -49,6 +49,7 @@ life_civ_position = [];
 life_markers = false;
 life_smartphoneTarget = ObjNull;
 life_open_notifications = [];
+life_taxi_onDuty = true;
 
 //Settings
 life_settings_enableSidechannel = profileNamespace getVariable["life_enableSidechannel",true];

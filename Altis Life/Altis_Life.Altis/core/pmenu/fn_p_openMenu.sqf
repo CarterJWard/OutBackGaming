@@ -20,6 +20,8 @@ switch (playerSide) do {
 		ctrlShow[123456,false];
 		ctrlShow[1209,false];
 		ctrlShow[54321,false];
+		ctrlShow[8891,false];		
+		ctrlShow[8892,false];
 		if(_rank <= 2) then {
 			ctrlShow[654321,false];
 			ctrlShow[9821,false];
@@ -48,6 +50,8 @@ switch (playerSide) do {
 		ctrlShow[2008,false];
 		ctrlShow[1210,false];
 		ctrlShow[1209,false];
+		ctrlShow[8891,false];
+		ctrlShow[8892,false];
     };
 };
 

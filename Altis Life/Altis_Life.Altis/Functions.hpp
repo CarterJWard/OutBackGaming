@@ -104,6 +104,13 @@ class Life_Client_Core {
 		class untieb {};
 	};
 
+    class CivTaxi {
+        file = "core\civilian\taxi";
+        class taxiLoad {};
+        class offDuty {};
+        class onDuty {};
+    };
+
     class Admin {
         file = "core\admin";
         class adminCompensate {};

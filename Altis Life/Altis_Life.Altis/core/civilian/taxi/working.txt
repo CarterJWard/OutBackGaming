@@ -1,0 +1,6 @@
+Menu Items:
+on and off duty buttons
+List box of current jobs (player name and distance)
+call taxi when off duty
+when selected give option to select jobs
+
