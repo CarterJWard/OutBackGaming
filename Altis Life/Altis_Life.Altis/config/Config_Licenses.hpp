@@ -64,6 +64,14 @@ class Licenses {
         side = "civ";
     };
 
+    class taxi {
+        variable = "taxi";
+        displayName = "";
+        price = 40000;
+        illegal = false;
+        side = "civ";
+    };
+
     //Processing Licenses
     class oil {
         variable = "oil";
