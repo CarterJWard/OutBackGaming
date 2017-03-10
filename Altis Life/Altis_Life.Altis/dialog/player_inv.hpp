@@ -472,6 +472,35 @@ class playerSettings {
 		 colorText[] = {1,1,1,1};
 		 colorDisabled[] = {1,0,0,0.1};
 		 tooltip = $STR_PM_WantedList;
-		}; 
+		 }; 
+		
+		class ButtonTaxi_ICON: life_RscPicture
+		 {
+		 idc = 8892;
+		 text = "icons\tablet\taxi.paa";
+		 x = 0.426497 * safezoneW + safezoneX;
+		 y = 0.6988 * safezoneH + safezoneY;
+		 w = 0.0315 * safezoneW;
+		 h = 0.056 * safezoneH;
+		 };
+
+		 class ButtonTaxi: life_RscButtonMenu
+		 {
+		 idc = 8891;
+		 x = 0.427811 * safezoneW + safezoneX;
+		 y = 0.7016 * safezoneH + safezoneY;
+		 w = 0.028875 * safezoneW;
+		 h = 0.0504 * safezoneH;
+		 onButtonClick = "createDialog ""life_key_management"";";
+		 tooltip = "Taxi Menu";
+		 colorBackground[] = {-1,-1,-1,-1};
+		 colorBackgroundFocused[] = {1,1,1,0.12};
+		 colorBackground2[] = {0.75,0.75,0.75,0.2};
+		 color[] = {1,1,1,1};
+		 colorFocused[] = {0,0,0,0};
+		 color2[] = {0,0,0,0};
+		 colorText[] = {1,1,1,1};
+		 colorDisabled[] = {1,0,0,0.1};
+		 };
 	};
 };
