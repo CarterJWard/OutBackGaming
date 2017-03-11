@@ -49,11 +49,11 @@ life_civ_position = [];
 life_markers = false;
 life_smartphoneTarget = ObjNull;
 life_open_notifications = [];
-life_taxi_onDuty = true;
+life_taxi_onDuty = false;
 
 //Settings
-life_settings_enableSidechannel = profileNamespace getVariable["life_enableSidechannel",true];
-life_settings_tagson = profileNamespace getVariable["life_settings_tagson",true];
+life_settings_enableSidechannel = profileNamespace getVariable["life_enableSidechannel",false];
+life_settings_tagson = profileNamespace getVariable["life_settings_tagson",false];
 life_settings_revealObjects = profileNamespace getVariable["life_settings_revealObjects",true];
 life_settings_viewDistanceFoot = profileNamespace getVariable["life_viewDistanceFoot",1250];
 life_settings_viewDistanceCar = profileNamespace getVariable["life_viewDistanceCar",1250];

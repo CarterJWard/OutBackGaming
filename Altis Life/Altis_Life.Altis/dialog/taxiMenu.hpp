@@ -29,6 +29,7 @@ class life_taxiMenu {
             w = 0.0414061 * safezoneW;
             h = 0.055 * safezoneH;
             tooltip = "Go On Duty"; //--- ToDo: Localize;
+            onButtonClick = "[] call life_fnc_onDuty";
         };
         class RscButton_1601: Life_RscButton
         {
@@ -39,6 +40,7 @@ class life_taxiMenu {
             w = 0.0414061 * safezoneW;
             h = 0.055 * safezoneH;
             tooltip = "Go Off Duty"; //--- ToDo: Localize;
+            onButtonClick = "[] call life_fnc_offDuty";
         };
         class RscButton_1602: Life_RscButton
         {
@@ -49,6 +51,7 @@ class life_taxiMenu {
             w = 0.103515 * safezoneW;
             h = 0.044 * safezoneH;
             tooltip = "Accept This Job"; //--- ToDo: Localize;
+            onButtonClick = "[] call life_fnc_acceptJob";
         };
         class RscButton_1603: Life_RscButton
         {
@@ -59,6 +62,7 @@ class life_taxiMenu {
             w = 0.0828122 * safezoneW;
             h = 0.055 * safezoneH;
             tooltip = "Call for a taxi driver"; //--- ToDo: Localize;
+            onButtonClick = "[] call life_fnc_callTaxi";
         };
         class RscButton_1604: Life_RscButton
         {
