@@ -1,79 +1,100 @@
 class life_taxiMenu {
-    idd = 9347;
-    movingEnabled = false;
+    idd = 2901;
+    name= "life_taxiMenu";
+    movingEnable = 0;
+    enableSimulation = 1;
 
-    class controls {
+    class controlsBackground {
         class MainBackground: Life_RscText {
             idc = -1;
             colorBackground[] = {0,0,0,0.7};
             x = 0.314375 * safezoneW + safezoneX;
             y = 0.313 * safezoneH + safezoneY;
-            w = 0.315722 * safezoneW;
-            h = 0.352 * safezoneH;
+            w = 0.37125 * safezoneW;
+            h = 0.396 * safezoneH;
         };
-           
-        class RscListbox_1500: Life_RscListbox
-        {
-            idc = 98871;
-            x = 0.349903 * safezoneW + safezoneX;
-            y = 0.324 * safezoneH + safezoneY;
-            w = 0.155273 * safezoneW;
-            h = 0.143 * safezoneH;
+
+        class Life_RscTitleBackground: Life_RscText {
+            idc = -1;
+            colorBackground[] = {"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.3843])", "(profilenamespace getvariable ['GUI_BCG_RGB_G',0.7019])", "(profilenamespace getvariable ['GUI_BCG_RGB_B',0.8862])", "(profilenamespace getvariable ['GUI_BCG_RGB_A',0.7])"};
+            text = "$STR_Admin_Title";
+            x = 0.314375 * safezoneW + safezoneX;
+            y = 0.291 * safezoneH + safezoneY;
+            w = 0.37125 * safezoneW;
+            h = 0.022 * safezoneH;
         };
-        class RscButton_1600: Life_RscButton
-        {
-            idc = 98872;
-            text = "On Duty"; //--- ToDo: Localize;
-            x = 0.349903 * safezoneW + safezoneX;
-            y = 0.489 * safezoneH + safezoneY;
-            w = 0.0414061 * safezoneW;
-            h = 0.055 * safezoneH;
-            tooltip = "Go On Duty"; //--- ToDo: Localize;
-            onButtonClick = "[] call life_fnc_onDuty";
+    };
+
+    class controls {
+        class RscButtonMenu_2400: Life_RscButtonMenu {
+            idc = -1;
+            text = "$STR_Global_Close";
+            onButtonClick = "closeDialog 0;";
+            x = 0.324687 * safezoneW + safezoneX;
+            y = 0.643 * safezoneH + safezoneY;
+            w = 0.061875 * safezoneW;
+            h = 0.022 * safezoneH;
         };
-        class RscButton_1601: Life_RscButton
-        {
-            idc = 98873;
-            text = "Off Duty"; //--- ToDo: Localize;
-            x = 0.349903 * safezoneW + safezoneX;
-            y = 0.555 * safezoneH + safezoneY;
-            w = 0.0414061 * safezoneW;
-            h = 0.055 * safezoneH;
-            tooltip = "Go Off Duty"; //--- ToDo: Localize;
-            onButtonClick = "[] call life_fnc_offDuty";
+
+        class RscButtonMenu_2402: Life_RscButtonMenu {
+            idc = -1;
+            text = "$STR_Admin_GetID";
+            onButtonClick = "[] call life_fnc_callTaxi;";
+            x = 0.396875 * safezoneW + safezoneX;
+            y = 0.643 * safezoneH + safezoneY;
+            w = 0.061875 * safezoneW;
+            h = 0.022 * safezoneH;
         };
-        class RscButton_1602: Life_RscButton
-        {
-            idc = 98874;
-            text = "Accept Job"; //--- ToDo: Localize;
-            x = 0.525879 * safezoneW + safezoneX;
+
+        class RscButtonMenu_2403: Life_RscButtonMenu {
+            idc = 2904;
+            text = "On Duty";
+            onButtonClick = "[] call life_fnc_onDuty;";
+            x = 0.469062 * safezoneW + safezoneX;
+            y = 0.643 * safezoneH + safezoneY;
+            w = 0.061875 * safezoneW;
+            h = 0.022 * safezoneH;
+        };
+
+        class RscButtonMenu_2404: Life_RscButtonMenu {
+            idc = 2905;
+            text = "Off Duty";
+            onButtonClick = "[] call life_fnc_offDuty;";
+            x = 0.54125 * safezoneW + safezoneX;
+            y = 0.643 * safezoneH + safezoneY;
+            w = 0.061875 * safezoneW;
+            h = 0.022 * safezoneH;
+        };
+
+        class RscButtonMenu_2405: Life_RscButtonMenu {
+            idc = 2906;
+            text = "Accept Job";
+            onButtonClick = "[] call life_fnc_acceptJob;";
+            x = 0.613437 * safezoneW + safezoneX;
+            y = 0.643 * safezoneH + safezoneY;
+            w = 0.061875 * safezoneW;
+            h = 0.022 * safezoneH;
+        };
+
+        class PlayerList_Admin: Life_RscListBox {
+            idc = 2902;
+            text = "";
+            sizeEx = 0.035;
+            onLBSelChanged = "[_this] spawn life_fnc_listBox;";
+            x = 0.324687 * safezoneW + safezoneX;
             y = 0.335 * safezoneH + safezoneY;
-            w = 0.103515 * safezoneW;
-            h = 0.044 * safezoneH;
-            tooltip = "Accept This Job"; //--- ToDo: Localize;
-            onButtonClick = "[] call life_fnc_acceptJob";
+            w = 0.159844 * safezoneW;
+            h = 0.275 * safezoneH;
         };
-        class RscButton_1603: Life_RscButton
-        {
-            idc = 1603;
-            text = "Call Taxi"; //--- ToDo: Localize;
-            x = 0.432715 * safezoneW + safezoneX;
-            y = 0.489 * safezoneH + safezoneY;
-            w = 0.0828122 * safezoneW;
-            h = 0.055 * safezoneH;
-            tooltip = "Call for a taxi driver"; //--- ToDo: Localize;
-            onButtonClick = "[] call life_fnc_callTaxi";
-        };
-        class RscButton_1604: Life_RscButton
-        {
-            idc = 1604;
-            text = "Close"; //--- ToDo: Localize;
-            x = 0.448242 * safezoneW + safezoneX;
-            y = 0.566 * safezoneH + safezoneY;
-            w = 0.0414061 * safezoneW;
-            h = 0.055 * safezoneH;
-            tooltip = "Close The Menu"; //--- ToDo: Localize;
+
+        class PlayerBInfo: Life_RscStructuredText {
+            idc = 2903;
+            text = "";
+            x = 0.489687 * safezoneW + safezoneX;
+            y = 0.335 * safezoneH + safezoneY;
+            w = 0.185625 * safezoneW;
+            h = 0.275 * safezoneH;
+            colorBackground[] = {0,0,0,0.7};
         };
     };
 };
-
