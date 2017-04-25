@@ -1,4 +1,4 @@
 #This will be home to the modded life server
 To do:
-* Map
+* Map (Just going to do an island clip)
 * Basic Mods
