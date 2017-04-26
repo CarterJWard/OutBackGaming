@@ -38,7 +38,7 @@ class life_taxiMenu {
 
         class RscButtonMenu_2402: Life_RscButtonMenu {
             idc = -1;
-            text = "$STR_Admin_GetID";
+            text = "Call Taxi";
             onButtonClick = "[] call life_fnc_callTaxi;";
             x = 0.396875 * safezoneW + safezoneX;
             y = 0.643 * safezoneH + safezoneY;

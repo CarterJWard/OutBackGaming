@@ -15,3 +15,6 @@ if (!license_civ_taxi) then {
     ctrlShow[16003,true];
     ctrlShow[16004,true];
 };
+
+//Fill the listbox with all players that are looking for a Taxi and
+//Get players distance and add marker
