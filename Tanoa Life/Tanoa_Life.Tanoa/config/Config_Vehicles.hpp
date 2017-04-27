@@ -901,4 +901,11 @@ will modify the virtual space and the price of the vehicle, but other informatio
         price = 250000;
         textures[] = {};
     };
+    class C_Offroad_02_unarmed_F {
+        vItemSpace = 45;
+        vFuelSpace = 35000;
+        licenses[] = { {""}, {""}, {""}, {""} };
+        price = 65000;
+        textures[] = {};
+    };
 };
