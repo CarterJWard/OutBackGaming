@@ -14,7 +14,7 @@
 private ["_animalList","_dist","_radius","_zoneName","_unitsNear","_animalsActive"];
 params [
         ["_zoneName","",[""]],
-        ["_maxAnimals",10,[0]]
+        ["_maxAnimals",20,[0]]
 ];
 
 if (_zoneName isEqualTo "") exitWith {};
