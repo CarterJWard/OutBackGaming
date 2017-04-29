@@ -307,7 +307,7 @@ class AddonsMetaData
 randomSeed=2639488;
 class ScenarioData
 {
-	author="Tonic, Edited by the Outback Gaming Team.";
+	author="Tonic, Edited by the GIG Development Team.";
 	overViewPicture="textures\armalife.jpg";
 	overViewPictureLocked="textures\armalife.jpg";
 	loadScreen="textures\armalife.jpg";

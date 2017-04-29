@@ -25,13 +25,13 @@
             <Original>Guerilla Supply Shop</Original>
         </Key>
         <Key ID="STR_Shops_C_Diving">
-            <Original>Hayden's Diving Shop</Original>
+            <Original>Dre's' Diving Shop</Original>
         </Key>
         <Key ID="STR_Shops_C_Gun">
-            <Original>Cameron's Clothing</Original>
+            <Original>Corey's Clothing</Original>
         </Key>
         <Key ID="STR_Shops_W_Gun">
-            <Original>Cameron's Firearms</Original>
+            <Original>Corey's' Firearms</Original>
         </Key>
 		<Key ID="STR_Item_ZipTies">
 			<Original>ZipTies</Original>
@@ -40,7 +40,7 @@
 			<Original>Blindfold</Original>
 		</Key>
         <Key ID="STR_Shops_C_Kart">
-            <Original>Carter's Kart-Racing Outfits</Original>
+            <Original>Carter's Karting Clothes</Original>
         </Key>
 		<Key ID="STR_MIS_Paycheck">
 			<Original>You received a paycheck of $%1</Original>
@@ -64,7 +64,7 @@
             <Original>Col's Coffee</Original>
         </Key>
         <Key ID="STR_Shops_DrugDealer">
-            <Original>Hayden Narcotics</Original>
+            <Original>Tonics Narcotics</Original>
         </Key>
         <Key ID="STR_Shops_Oil">
             <Original>Oil Trader</Original>

@@ -8,13 +8,13 @@ _onScreenTime = 5;
 sleep 2; //Wait in seconds before the credits start after player is in-game
 
 _role1 = "Welcome to Tanoa Life";
-_role1names = ["By the Outback Gaming Development Team"];
+_role1names = ["By the GIG Development Team"];
 _role2 = "Improved upon";
-_role2names = ["By The Arma RPG Life Team And Outback Gaming "];
+_role2names = ["By The Arma RPG Life Team And GIG Development Team"];
 _role3 = "Visit Our Website at";
-_role3names = ["www.OutbackGaming.com.au"];
+_role3names = ["GlobalInterlinkedGaming.mistforums.com"];
 _role4 = "Join Our Teamspeak at";
-_role4names = ["ts.OutbackGaming.com.au"];
+_role4names = ["221.121.157.130:9991"];
 _role5 = "Please enjoy your stay";
 _role5names = [profileName];
 {

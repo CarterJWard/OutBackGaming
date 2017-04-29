@@ -29,7 +29,7 @@ _shop switchMove "AmovPercMstpSsurWnonDnon";
 ["BANK ROBBERY","CCTV Has spotted armed persons entering the bank of tanoa and have began robbing the bank. All units need to respond urgently. Lethal force may be used to subdue anyone with weapons in the area!",[204,0,0,1],""] remoteExecCall ["life_fnc_showNotification",west];
 
 //Play a sound when the bank gets robbed
-for "_i" from 0 to 29 do {
+for "_i" from 0 to 6 do {
 	[_shop, "robbery"] remoteExec ["life_fnc_say3D",0];
 	sleep 3.5;
 };
