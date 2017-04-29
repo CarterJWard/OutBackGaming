@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=328;
+		nextID=334;
 	};
 	class Camera
 	{
-		pos[]={5449.1689,101.22391,10164.78};
-		dir[]={0.14878771,-0.59389961,-0.79068089};
-		up[]={0.10983127,0.80453128,-0.58365774};
-		aside[]={-0.98276186,8.8737579e-008,-0.18493386};
+		pos[]={2148.9761,24.532064,3436.8271};
+		dir[]={0.85036623,-0.30508631,-0.42872179};
+		up[]={0.27242282,0.9523229,-0.13734518};
+		aside[]={-0.45018384,1.1501834e-007,-0.89293671};
 	};
 };
 binarizationWanted=0;
@@ -337,24 +337,6 @@ class CustomAttributes
 		name="Multiplayer";
 		class Attribute0
 		{
-			property="RespawnTemplates";
-			expression="true";
-			class Value
-			{
-				class data
-				{
-					class type
-					{
-						type[]=
-						{
-							"ARRAY"
-						};
-					};
-				};
-			};
-		};
-		class Attribute1
-		{
 			property="RespawnButton";
 			expression="true";
 			class Value
@@ -369,6 +351,24 @@ class CustomAttributes
 						};
 					};
 					value=1;
+				};
+			};
+		};
+		class Attribute1
+		{
+			property="RespawnTemplates";
+			expression="true";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"ARRAY"
+						};
+					};
 				};
 			};
 		};
@@ -1984,7 +1984,7 @@ class Mission
 			name="kart_shop_1";
 			type="Empty";
 			alpha=0.00016664373;
-			angle=229.15584;
+			angle=229.15582;
 			id=203;
 			atlOffset=55.910896;
 		};
@@ -9695,15 +9695,15 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={2167.0225,12.77144,3426.8325};
-						angles[]={0,5.6694875,0};
+						position[]={2167.022,12.77144,3426.832};
+						angles[]={0,5.6694927,0};
 					};
 					side="Civilian";
 					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
-						init="removeallWeapons this;  this enableSimulation false;  this allowDamage false;  this addAction[localize""STR_MAR_Rebel_Market"",life_fnc_virt_menu,""rebel""];  this addAction[localize ""STR_MAR_Rebel_Clothing_Shop"",life_fnc_clothingMenu,""reb"",0,false,false,"""",' license_civ_rebel && playerSide isEqualTo civilian'];  this addAction[localize ""STR_MAR_Rebel_Weapon_Shop"",life_fnc_weaponShopMenu,""rebel"",0,false,false,"""",' license_civ_rebel && playerSide isEqualTo civilian']; this addAction[localize""STR_NOTF_ATM"",life_fnc_atmMenu,"""",0,false,false,"""",' isNull objectParent player && player distance _target < 4 '];";
+						init="removeallWeapons this;  this enableSimulation false;  this allowDamage false;  this addAction[localize""STR_MAR_Rebel_Market"",life_fnc_virt_menu,""rebel"",0,false,false,"""",'license_civ_rebel && playerSide isEqualTo civilian'];  this addAction[localize ""STR_MAR_Rebel_Clothing_Shop"",life_fnc_clothingMenu,""rebel"",0,false,false,"""",' license_civ_rebel && playerSide isEqualTo civilian'];  this addAction[localize ""STR_MAR_Rebel_Weapon_Shop"",life_fnc_weaponShopMenu,""rebel"",0,false,false,"""",' license_civ_rebel && playerSide isEqualTo civilian']; this addAction[localize""STR_NOTF_ATM"",life_fnc_atmMenu,"""",0,false,false,"""",' isNull objectParent player && player distance _target < 4 ']; this addAction[format [""%1 ($%2)"",localize (getText(missionConfigFile >> ""Licenses"" >> ""rebel"" >> ""displayName"")), [(getNumber(missionConfigFile >> ""Licenses"" >> ""rebel"" >> ""price""))] call life_fnc_numberText],life_fnc_buyLicense,""rebel"",0,false,false,"""",' !license_civ_rebel && playerSide isEqualTo civilian '];";
 						name="reb_1";
 						disableSimulation=1;
 					};
@@ -9732,6 +9732,25 @@ class Mission
 						};
 						class Attribute1
 						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male03PER";
+								};
+							};
+						};
+						class Attribute2
+						{
 							property="pitch";
 							expression="_this setpitch _value;";
 							class Value
@@ -9749,7 +9768,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=2;
+						nAttributes=3;
 					};
 				};
 				class Item2
@@ -12035,7 +12054,7 @@ class Mission
 					};
 					id=998;
 					type="C_man_polo_3_F";
-					atlOffset=0.028494358;
+					atlOffset=0.028494835;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -12296,11 +12315,10 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={5809.3086,4.9796743,10581.308};
-						angles[]={0,6.1348743,0};
+						position[]={5809.3091,4.9794464,10581.308};
+						angles[]={0,6.1348672,0};
 					};
 					side="Civilian";
-					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
@@ -12310,6 +12328,7 @@ class Mission
 					};
 					id=1004;
 					type="C_man_1";
+					atlOffset=0.53800011;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -12331,7 +12350,45 @@ class Mission
 								};
 							};
 						};
-						nAttributes=1;
+						class Attribute1
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male02GRE";
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.99000001;
+								};
+							};
+						};
+						nAttributes=3;
 					};
 				};
 				class Item49
@@ -15405,7 +15462,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={5804.438,4.4860258,10852.174};
+						position[]={5804.438,4.4860253,10852.174};
 						angles[]={0,2.0767498,0};
 					};
 					side="Civilian";
@@ -15418,7 +15475,7 @@ class Mission
 					};
 					id=1063;
 					type="C_Nikos_aged";
-					atlOffset=0.0053529739;
+					atlOffset=0.0053524971;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -15459,7 +15516,26 @@ class Mission
 								};
 							};
 						};
-						nAttributes=2;
+						class Attribute2
+						{
+							property="face";
+							expression="_this setface _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="";
+								};
+							};
+						};
+						nAttributes=3;
 					};
 				};
 				class Item100
@@ -73126,7 +73202,7 @@ class Mission
 		{
 			dataType="Trigger";
 			position[]={5623.418,2.6600001,11021.421};
-			angle=1.9148341;
+			angle=1.914834;
 			class Attributes
 			{
 				onActivation="Gate2 animate ['Door_1_move', 1];";
