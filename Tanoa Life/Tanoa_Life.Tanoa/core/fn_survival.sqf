@@ -79,7 +79,7 @@ _fnc_water = {
 	private["_worked","_uid","_taxable","_tax","_htax","_taxAmount","_houses","_taxTime"];
 	while {true} do
 	{
-		sleep 30;
+		sleep 300;
 		if !(alive player) then {_taxable = false;};
 		_flag = PROF_SIDE(playerSide);
 		_prof = switch (playerSide) do {

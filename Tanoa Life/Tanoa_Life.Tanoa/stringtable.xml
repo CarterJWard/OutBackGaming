@@ -157,6 +157,9 @@
         <Key ID="STR_Admin_Title">
             <Original>Admin Menu</Original>
         </Key>
+        <Key ID="STR_Admin_Market">
+            <Original>Admin Market</Original>
+        </Key>
         <Key ID="STR_Admin_Amount">
             <Original>Put the amount you want to compensate:</Original>
         </Key>
