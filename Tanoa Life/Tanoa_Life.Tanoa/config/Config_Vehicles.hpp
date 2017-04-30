@@ -760,7 +760,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
             } },
             { "Camo", "cop", {
                 "textures\cop\militaryhunter2.paa",
-                "textures\cop\ilitaryhunter.paa"
+                "textures\cop\militaryhunter.paa"
             } }
         };
     };
