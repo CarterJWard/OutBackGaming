@@ -12,7 +12,7 @@ switch (playerSide) do {
     case civilian: {
         if (LIFE_SETTINGS(getNumber,"civ_skins") isEqualTo 1) then {
             if (uniform player isEqualTo "U_I_CombatUniform") then {
-                player setObjectTextureGlobal [0, "textures\outfits\mafiaboss.paa"];
+                player setObjectTextureGlobal [0, "textures\outfits\mafiaboss.png"];
             };
             if (uniform player isEqualTo "U_C_Poloshirt_stripped") then {
                 player setObjectTextureGlobal [0, "textures\outfits\cat.jpg"];
