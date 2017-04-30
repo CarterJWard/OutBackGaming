@@ -36,7 +36,7 @@ for "_i" from 0 to 6 do {
 
 //Made sure there is enough cops online and setup progress bar
 _cops = (west countSide playableUnits);
-if(_cops < 0) exitWith{hint "The bank is currently close as there is a low amount of military personal around!";};
+if(_cops < 6) exitWith{hint "The bank is currently close as there is a low amount of military personal around!";};
 disableSerialization;
 5 cutRsc ["life_progress","PLAIN"];
 _ui = uiNameSpace getVariable "life_progress";
