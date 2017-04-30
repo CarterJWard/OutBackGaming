@@ -18,6 +18,10 @@ if !(alive _robber) exitWith {};
 if (currentWeapon _robber == "") exitWith { hint "HaHa, you do not threaten me! Get out of here you hobo!" };
 if (_rip) exitWith { hint "Robbery already in progress!" };
 
+//Check for amount of cops online
+_cops = (west countSide playableUnits);
+if(_cops < 6) exitWith{hint "The bank is currently close as there is a low amount of military personal around!";};
+
 _rip = true; //Makes it so the teller can no-longer be robbed
 _kassa = 1100000 + round(random 950000);
 _shop removeAction _action;
@@ -29,14 +33,11 @@ _shop switchMove "AmovPercMstpSsurWnonDnon";
 ["BANK ROBBERY","CCTV Has spotted armed persons entering the bank of tanoa and have began robbing the bank. All units need to respond urgently. Lethal force may be used to subdue anyone with weapons in the area!",[204,0,0,1],""] remoteExecCall ["life_fnc_showNotification",west];
 
 //Play a sound when the bank gets robbed
-for "_i" from 0 to 6 do {
-	[_shop, "robbery"] remoteExec ["life_fnc_say3D",0];
-	sleep 3.5;
-};
 
-//Made sure there is enough cops online and setup progress bar
-_cops = (west countSide playableUnits);
-if(_cops < 6) exitWith{hint "The bank is currently close as there is a low amount of military personal around!";};
+[_shop, "robbery"] remoteExec ["life_fnc_say3D",0];
+
+//Setup progress bar
+
 disableSerialization;
 5 cutRsc ["life_progress","PLAIN"];
 _ui = uiNameSpace getVariable "life_progress";
