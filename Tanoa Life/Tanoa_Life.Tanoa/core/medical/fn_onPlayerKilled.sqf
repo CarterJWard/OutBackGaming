@@ -89,7 +89,7 @@ if (!isNull _killer && {_killer != _unit} && {side _killer != west} && {alive _k
             [getPlayerUID _killer,_killer getVariable ["realname",name _killer],"187V"] remoteExecCall ["life_fnc_wantedAdd",RSERV];
         };
 
-        //Get rid of this if you don't want automatic vehicle license removal.
+/*        //Get rid of this if you don't want automatic vehicle license removal.
         if (!local _killer) then {
             [2] remoteExecCall ["life_fnc_removeLicenses",_killer];
         };
@@ -106,7 +106,7 @@ if (!isNull _killer && {_killer != _unit} && {side _killer != west} && {alive _k
         };
     };
 };
-
+*/
 life_save_gear = [player] call life_fnc_fetchDeadGear;
 
 _containers = nearestObjects[getPosATL player,["WeaponHolderSimulated"],5];
