@@ -19,7 +19,7 @@ class CfgPatches
 		website[]= {"https://infiSTAR.de"};
 		contact[]= {"admin@infiSTAR.de","infiSTAR23@gmail.com"};
 		version = v0240;
-		licensed = "rjdesigner@hotmail.com";
+		licensed = "";
 	};
 };
 class CfgFunctions
