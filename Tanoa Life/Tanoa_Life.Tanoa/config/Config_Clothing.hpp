@@ -24,7 +24,6 @@ class Clothing {
             { "U_C_Poloshirt_stripped", "Feline", 125, { "", "", -1 } },
             { "U_C_Poloshirt_redwhite", "Hando", 150, { "", "", -1 } },
             { "U_C_Poloshirt_salmon", "Wolf", 175, { "", "", -1 } },
-            { "U_I_CombatUniform", "Mafia Boss", 500, { "", "", -1 } },
             //NORMAL
             { "U_C_Poloshirt_blue", "Poloshirt Blue", 250, { "", "", -1 } },
             { "U_C_Poor_2", "Rag tagged clothes", 250, { "", "", -1 } },
