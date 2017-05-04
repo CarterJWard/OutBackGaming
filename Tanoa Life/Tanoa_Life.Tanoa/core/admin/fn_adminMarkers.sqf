@@ -9,22 +9,18 @@ if (_result) then
         if (life_admin_playerMarkers) then 
         {
             life_admin_playerMarkers = false;
-            [0,format["Admin %1 has turned off player markers",profileName]] remoteExec ["life_fnc_broadcast",RCLIENT];
             hint "player markers off";
         } else {
             life_admin_playerMarkers = true;
-            [0,format["Admin %1 has turned on player markers",profileName]] remoteExec ["life_fnc_broadcast",RCLIENT];
             hint "player markers on";
         };
     } else {
         if (life_admin_vehicleMarkers) then 
         {
             life_admin_vehicleMarkers = false;
-            [0,format["Admin %1 has turned off vehicle markers",profileName]] remoteExec ["life_fnc_broadcast",RCLIENT];
             hint "vehicle markers off";
         } else {
             life_admin_vehicleMarkers = true;
-            [0,format["Admin %1 has turned on vehicle markers",profileName]] remoteExec ["life_fnc_broadcast",RCLIENT];
             hint "vehicle markers on";
         };    
     };
