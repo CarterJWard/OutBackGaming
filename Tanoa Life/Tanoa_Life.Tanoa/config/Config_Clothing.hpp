@@ -139,7 +139,7 @@ class Clothing {
             { "U_B_T_Soldier_F", "", 25, { "", "", -1 } }, //Apex DLC
             { "U_B_T_Soldier_AR_F", "", 25, { "", "", -1 } }, //Apex DLC
             { "U_B_T_Soldier_SL_F", "", 25, { "", "", -1 } }, //Apex DLC
-            { "U_B_FullGhillie_lsh", "", 25, { "", "", -1 } } //Apex DLC
+            { "U_B_T_FullGhillie_tna_F", "", 300, { "", "", -1 } } //Apex DLC
             
         };
         headgear[] = {
