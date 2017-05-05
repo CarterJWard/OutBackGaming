@@ -139,9 +139,9 @@ class CarShops {
             { "B_T_VTOL_01_infantry_F", { "life_coplevel", "SCALAR", 6} },
             { "I_Heli_light_03_F", { "life_coplevel", "SCALAR", 7} },
             { "B_T_VTOL_01_vehicle_F", { "life_coplevel", "SCALAR", 4} },
-            { "B_Heli_Attack_01_F", { "life_coplevel", "SCALAR", 11} },
-            { "O_T_UAV_04_CAS_F", { "life_coplevel", "SCALAR", 11} },
-            { "B_T_VTOL_01_armed_F", {"life_copleve;", "SCALAR", 6}}
+            { "B_Heli_Attack_01_F", { "life_coplevel", "SCALAR", 7} },
+            //{ "O_T_UAV_04_CAS_F", { "life_coplevel", "SCALAR", 7} },
+            { "B_T_VTOL_01_armed_F", {"life_coplevel", "SCALAR", 7} }
             /*
             { "", { "", "", } },
             { "", { "", "", } }
