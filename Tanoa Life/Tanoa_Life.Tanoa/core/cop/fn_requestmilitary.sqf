@@ -1,6 +1,6 @@
 #include "..\..\script_macros.hpp"
 /*
-    File: fn_requestMedic.sqf
+    File: fn_requestMilitary.sqf
     Author: Bryan "Tonic" Boardwine
 
     Description:

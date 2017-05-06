@@ -492,7 +492,7 @@ class LifeCfgVehicles {
     class B_Truck_01_transport_F {
         vItemSpace = 325;
         licenses[] = { {"trucking"}, {""}, {""}, {""} };
-        price = 25000;
+        price = 225000;
         textures[] = { };
     };
 
