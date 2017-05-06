@@ -17,8 +17,8 @@
                 {
                     idc = 1200;
                     text = "icons\health.paa";
-                    x = 0.345312 * safezoneW + safezoneX;
-                    y = 0.94 * safezoneH + safezoneY;
+                    x = 0.898534 * safezoneW + safezoneX;
+                    y = 0.709 * safezoneH + safezoneY;
                     w = 0.020625 * safezoneW;
                     h = 0.033 * safezoneH;
                 };
@@ -26,8 +26,8 @@
                 {
                     idc = 1201;
                     text = "icons\drink.paa";
-                    x = 0.448438 * safezoneW + safezoneX;
-                    y = 0.94 * safezoneH + safezoneY;
+                    x = 0.898534 * safezoneW + safezoneX;
+                    y = 0.809 * safezoneH + safezoneY;
                     w = 0.020625 * safezoneW;
                     h = 0.033 * safezoneH;
                 };
@@ -35,8 +35,8 @@
                 {
                     idc = 1202;
                     text = "icons\food.paa";
-                    x = 0.551562 * safezoneW + safezoneX;
-                    y = 0.94 * safezoneH + safezoneY;
+                    x = 0.898534 * safezoneW + safezoneX;
+                    y = 0.909 * safezoneH + safezoneY;
                     w = 0.020625 * safezoneW;
                     h = 0.033 * safezoneH;
                 };
@@ -44,8 +44,8 @@
                 {
                     idc = 1100;
                     text = "";
-                    x = 0.371094 * safezoneW + safezoneX;
-                    y = 0.94 * safezoneH + safezoneY;
+                    x = 0.924316 * safezoneW + safezoneX;
+                    y = 0.709 * safezoneH + safezoneY;
                     w = 0.0721875 * safezoneW;
                     h = 0.033 * safezoneH;
                     colorText[] = {1,1,1,1};
@@ -61,7 +61,7 @@
                 {
                     idc = 1101;
                     text = "";
-                    x = 0.474219 * safezoneW + safezoneX;
+                    x = 0.809 * safezoneW + safezoneX;
                     y = 0.94 * safezoneH + safezoneY;
                     w = 0.0721875 * safezoneW;
                     h = 0.033 * safezoneH;
@@ -77,8 +77,8 @@
                 {
                     idc = 1102;
                     text = "";
-                    x = 0.577344 * safezoneW + safezoneX;
-                    y = 0.94 * safezoneH + safezoneY;
+                    x = 0.924316 * safezoneW + safezoneX;
+                    y = 0.909 * safezoneH + safezoneY;
                     w = 0.0721875 * safezoneW;
                     h = 0.033 * safezoneH;
                         class Attributes
