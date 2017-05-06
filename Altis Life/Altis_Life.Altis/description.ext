@@ -21,10 +21,12 @@ class RscTitles {
     //#include "dialog\hud_stats.hpp"
 	#include "dialog\custHud.hpp"
 	#include "dialog\RscNotification.hpp"
+    #include "maverick\introcam\dialogs\title_status.hpp"
 };
 
 class CfgFunctions {
     #include "Functions.hpp"
+    #include "maverick\maverick_functions_master.cpp"
 };
 
 class CfgSounds {
@@ -40,7 +42,7 @@ class CfgSounds {
         sound[] = {"\sounds\medic_siren.ogg", 1.0, 1};
         titles[] = {};
     };
-	
+
 	class zipties {
         name = "zipties";
         sound[] = {"\sounds\zipties.ogg", 1.0, 1};
@@ -102,7 +104,7 @@ class CfgDebriefing {
         picture = "";
         pictureColor[] = {0,0.3,0.6,1};
     };
-	
+
 	class CopKick {
         title = "$STR_CopKick_Title";
         subtitle = "$STR_CopKick_SubTitle";
@@ -187,3 +189,5 @@ class CfgNotifications {
         priority = 5;
     };
 };
+
+#include "maverick\maverick_master.cpp"
