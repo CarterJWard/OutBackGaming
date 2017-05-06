@@ -61,8 +61,8 @@
                 {
                     idc = 1101;
                     text = "";
-                    x = 0.809 * safezoneW + safezoneX;
-                    y = 0.94 * safezoneH + safezoneY;
+                    x = 0.898534 * safezoneW + safezoneX;
+                    y = 0.809 * safezoneH + safezoneY;
                     w = 0.0721875 * safezoneW;
                     h = 0.033 * safezoneH;
                         class Attributes
