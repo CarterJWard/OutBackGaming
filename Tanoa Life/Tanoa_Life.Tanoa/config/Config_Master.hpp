@@ -40,6 +40,9 @@ class Life_Settings {
     global_ATM = true; //Allow users to access any ATM on the map (Marked & Unmarked).
     noatm_timer = 10; //Time in minutes that players cannot deposit money after selling stolen gold.
     minimum_cops = 12; //Minimum cops required online to rob the Federal Reserve
+    
+    /*Weapon drops*/
+    drop_weapons_onDeath = true; //Should weapons be dropped when a player dies
 
     /* Auction House Settings */
     ah_listing_limit = 2; //Amount of listings per player
