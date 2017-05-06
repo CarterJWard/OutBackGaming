@@ -1,0 +1,31 @@
+@import url(https://fonts.googleapis.com/css?family=Ubuntu);
+body {
+    background-color: #383c3f;
+    font-family: 'Ubuntu', sans-serif;
+}
+.top {
+    height: 300px;
+    color: white;
+    font-size: 50px;
+    transition-duration: 0.5s
+}
+.middle {
+    height: 500px;
+} 
+.buttons {
+    background-color: white;
+    padding: 15px 32px;
+    border: black;
+    border-radius: 7px;
+    transition-duration: 0.5s;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 45px;
+    cursor: pointer;
+}
+.buttons:hover {
+    background-color: gray;
+    padding: 20px 37px;
+}
+.bottom {
+    font-size: 15px;
+}
