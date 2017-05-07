@@ -20,8 +20,8 @@ class RscTitles {
     #include "dialog\progress.hpp"
     #include "dialog\hud_nameTags.hpp"
     #include "dialog\RscNotification.hpp"
-    #include "dialog\custHud.hpp"        
-    class introLife
+    #include "dialog\custHud.hpp"
+    #include "maverick\introcam\dialogs\title_status.hpp"
 {
    idd = -1;
    duration = 6;
@@ -49,6 +49,7 @@ class RscTitles {
 
 class CfgFunctions {
     #include "Functions.hpp"
+    #include "maverick\maverick_functions_master.cpp"
 };
 
 class CfgSounds {
@@ -226,3 +227,4 @@ class CfgNotifications {
         priority = 5;
     };
 };
+#include "maverick\maverick_master.cpp"

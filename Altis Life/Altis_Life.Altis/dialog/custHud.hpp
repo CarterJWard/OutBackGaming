@@ -61,7 +61,7 @@
                 {
                     idc = 1101;
                     text = "";
-                    x = 0.898534 * safezoneW + safezoneX;
+                    x = 0.924316 * safezoneW + safezoneX;
                     y = 0.809 * safezoneH + safezoneY;
                     w = 0.0721875 * safezoneW;
                     h = 0.033 * safezoneH;
