@@ -113,11 +113,12 @@ class CarShops {
         vehicles[] = {
             /*
             { "C_Offroad_01_F", { "", "", -1 } },
-            { "C_SUV_01_F", { "", "", -1 } },
+            
             { "C_Hatchback_01_sport_F", { "life_coplevel", "SCALAR", 1 } },
             { "B_MRAP_01_F", { "life_coplevel", "SCALAR", 2 } },
             { "B_MRAP_01_hmg_F", { "life_coplevel", "SCALAR", 3 } }
             */
+            { "C_SUV_01_F", { "life_coplevel", "SCALAR", 1 } },
             { "B_T_LSV_01_unarmed_F", {  "life_coplevel", "SCALAR", 1 } },
             { "B_T_LSV_01_armed_F", {  "life_coplevel", "SCALAR", 4 } },
             { "B_MRAP_01_F", { "life_coplevel", "SCALAR", 1 } },
@@ -211,8 +212,12 @@ class LifeCfgVehicles {
     class I_MRAP_03_F {
         vItemSpace = 50;
         licenses[] = { {""}, {""}, {""}, {""} };
-        price = 30000;
-        textures[] = {};          
+        price = 50000;
+        textures[] = {
+            { "Camo", "cop", {
+                "textures\cop\strider.jpg"
+            } }
+        };          
     };
     
     class I_Heli_light_03_F {
@@ -233,7 +238,16 @@ class LifeCfgVehicles {
         vItemSpace = 50;
         licenses[] = { {""}, {""}, {""}, {""} };
         price = 45000;
-        textures[] = {};          
+        textures[] = { 
+            { "Camo", "cop", {
+                "textures\cop\militaryhunter2.jpg",
+                "textures\cop\militaryhunter.jpg"
+            } },
+            { "Camo 2", "cop" {
+                "textures\cop\hunterb1.jpg",
+                "textures\cop\militaryf1.jpg"
+            } }
+        };          
     };
     
     class B_T_LSV_01_unarmed_F {
@@ -299,7 +313,12 @@ class LifeCfgVehicles {
         vItemSpace = 400;
         licenses[] = { {""}, {""}, {""}, {""} };
         price = 750000;
-        textures[] = {};
+        textures[] = {
+            { "Camo", "cop", {
+                "textures\cop\huronf1.jpg",
+                "textures\cop\huronb2.jpg"
+            } }
+        };
     };
     
     // Apex DLC
@@ -352,7 +371,13 @@ class LifeCfgVehicles {
         vItemSpace = 50;
         licenses[] = { {""}, {""}, {""}, {""} };
         price = 380000;
-        textures[] = {};
+        textures[] = {
+            { "Camo", "cop", {
+                "textures\cop\marshalltest.jpg",
+                "textures\cop\marshalltest1.jpg",
+                "textures\cop\marshalltest2.jpg"
+            } }
+        };
     };
 
 
@@ -712,6 +737,9 @@ will modify the virtual space and the price of the vehicle, but other informatio
             } },
             { "Sunset", "civ", {
                 "textures\sunset.paa"    
+            } },
+            { "Military Police", "cop", {
+                "textures\cop\suvmilitary.jpg"
             } }
         };
     };
@@ -749,13 +777,13 @@ will modify the virtual space and the price of the vehicle, but other informatio
         licenses[] = { {""}, {""}, {""}, {""} };
         price = 25000;
         textures[] = {
-            { "Black", "cop", {
-                "#(argb,8,8,3)color(0.05,0.05,0.05,1)",
-                "#(argb,8,8,3)color(0.05,0.05,0.05,1)"
-            } },
             { "Camo", "cop", {
                 "textures\cop\militaryhunter2.jpg",
                 "textures\cop\militaryhunter.jpg"
+            } },
+            { "Camo 2", "cop" {
+                "textures\cop\hunterb1.jpg",
+                "textures\cop\militaryf1.jpg"
             } }
         };
     };
