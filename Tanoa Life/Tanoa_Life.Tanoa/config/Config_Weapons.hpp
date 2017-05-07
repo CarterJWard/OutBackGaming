@@ -197,7 +197,8 @@ class WeaponShops {
             { "srifle_DMR_02_camo_F", "", 80000, 0, {"life_coplevel", "SCALAR", 7 } },
             { "SMG_05_F", "", 1000, 0, {"", "", -1 } },
             { "launch_O_Titan_F","", 150000, 20000, {"life_coplevel", "SCALAR", 5 } },
-            { "launch_NLAW_F", "", 250000, 0, {"life_coplevel", "SCALAR", 4 } }
+            { "launch_NLAW_F", "", 250000, 0, {"life_coplevel", "SCALAR", 4 } },
+            { "DemoCharge_Remote_Mag", "", 20000, 2000, {"life_coplevel", "SCALAR", 2 } }
             //{ "SMG_02_ACO_F", "", 30000, -1, {"life_coplevel", "SCALAR", 2 } },
             //{ "hgun_ACPC2_F", "", 17500, -1, {"life_coplevel", "SCALAR", 3 } },
             // Snipers
