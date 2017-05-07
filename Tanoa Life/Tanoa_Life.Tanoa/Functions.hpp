@@ -258,6 +258,7 @@ class Life_Client_Core {
 	    class grabSkills {};
         class robBank {};
 		class markers {};
+        class profType {};
     };
 
     class Gangs {

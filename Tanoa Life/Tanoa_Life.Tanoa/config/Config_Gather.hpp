@@ -100,7 +100,7 @@ Example 2:
             mined[] = { "iron_unrefined" };
             zoneSize = 30;
         };
-
+/*
         class salt_unrefined {
             amount = 2;
             zones[] = { "salt_mine" };
@@ -108,7 +108,7 @@ Example 2:
             mined[] = { "salt_unrefined" };
             zoneSize = 30;
         };
-
+*/
         class diamond_uncut {
             amount = 2;
             zones[] = { "diamond_mine","diamond_mine1" };
