@@ -196,6 +196,7 @@ class WeaponShops {
             { "srifle_LRR_tna_F", "", 150000, 0, {"life_coplevel", "SCALAR", 7 } },
             { "srifle_DMR_02_camo_F", "", 80000, 0, {"life_coplevel", "SCALAR", 7 } },
             { "SMG_05_F", "", 1000, 0, {"", "", -1 } },
+            { "launch_O_Titan_F","", 150000, 20000, {"life_coplevel", "SCALAR", 5 } },
             { "launch_NLAW_F", "", 250000, 0, {"life_coplevel", "SCALAR", 4 } }
             //{ "SMG_02_ACO_F", "", 30000, -1, {"life_coplevel", "SCALAR", 2 } },
             //{ "hgun_ACPC2_F", "", 17500, -1, {"life_coplevel", "SCALAR", 3 } },
@@ -206,17 +207,18 @@ class WeaponShops {
         mags[] = {
             { "16Rnd_9x21_Mag", "", 0, 0, { "", "", -1 } },
             { "20Rnd_556x45_UW_mag", "Taser Rifle Magazine", 45, 100, { "", "", -1 } },
-            { "30Rnd_556x45_Stanag", "", 0, 0, { "", "", -1 } },
-            { "30Rnd_65x39_caseless_mag", "", 0, 0, { "", "", -1 } },
-            { "20Rnd_762x51_Mag", "", 0, 0, { "", "", -1 } },
-            { "10Rnd_338_Mag", "", 0, 0, { "", "", -1 } },
-            { "30Rnd_9x21_Mag_SMG_02", "", 0, 0, { "", "", -1 } },
-            { "150Rnd_556x45_Drum_Mag_F", "", 0, 0, { "", "", -1 } },
+            { "30Rnd_556x45_Stanag", "", 100, 0, { "", "", -1 } },
+            { "30Rnd_65x39_caseless_mag", "", 100, 0, { "", "", -1 } },
+            { "20Rnd_762x51_Mag", "", 50, 0, { "", "", -1 } },
+            { "10Rnd_338_Mag", "", 50, 0, { "", "", -1 } },
+            { "30Rnd_9x21_Mag_SMG_02", "", 50, 0, { "", "", -1 } },
+            { "150Rnd_556x45_Drum_Mag_F", "", 50, 0, { "", "", -1 } },
             { "7Rnd_408_Mag", "", 0, 0, { "", "", -1 } },
             { "30Rnd_9x21_Mag", "", 0, 0, {"life_coplevel", "SCALAR", 2 } },
             { "9Rnd_45ACP_Mag", "", 0, 0, {"life_coplevel", "SCALAR", 3 } },
             { "20Rnd_650x39_Cased_Mag_F", "", 0, 0, {"life_coplevel", "SCALAR", 3 } }, //Apex DLC
-            { "NLAW_F", "", 0, 0, {"life_coplevel", "SCALAR", 4 } }
+            { "NLAW_F", "", 0, 0, {"life_coplevel", "SCALAR", 4 } },
+            { "Titan_AA", "", 20000, {"life_coplevel", "SCALAR", 5} }
         };
         accs[] = {
             { "optic_Nightstalker", "", 500000, 100, { "", "", -1 } },
