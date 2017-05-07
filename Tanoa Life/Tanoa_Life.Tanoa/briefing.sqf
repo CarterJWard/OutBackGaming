@@ -23,7 +23,7 @@ TEXT HERE<br/><br/>
                 "
 All Rules can be found at http://globalinterlinkedgaming.mistforums.com
                 "
-        ]
+        ];
     ];
     
     // Controls Section

@@ -243,7 +243,7 @@ class LifeCfgVehicles {
                 "textures\cop\militaryhunter2.jpg",
                 "textures\cop\militaryhunter.jpg"
             } },
-            { "Camo 2", "cop" {
+            { "Camo 2", "cop", {
                 "textures\cop\hunterb1.jpg",
                 "textures\cop\militaryf1.jpg"
             } }
@@ -781,7 +781,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
                 "textures\cop\militaryhunter2.jpg",
                 "textures\cop\militaryhunter.jpg"
             } },
-            { "Camo 2", "cop" {
+            { "Camo 2", "cop", {
                 "textures\cop\hunterb1.jpg",
                 "textures\cop\militaryf1.jpg"
             } }

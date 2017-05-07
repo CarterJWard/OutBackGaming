@@ -128,7 +128,7 @@ class CfgFunctions {
             class sleeper {}; 
         };
 		class rEvents {
-			file = "\life_server\Functions\Events" 
+			file = "\life_server\Functions\Events";
 				class airdrop {};
                 class genAirdrop {};
 		};	

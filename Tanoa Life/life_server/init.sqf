@@ -202,7 +202,7 @@ life_attachment_point setVectorDirAndUp [[0,1,0], [0,0,1]];
 publicVariable "life_attachment_point";
 
 [] execVM "\life_server\Functions\DynMarket\fn_config.sqf";
-[] execVM "\life_server\Functions\Events\fn_config.sqf";
+//[] execVM "\life_server\Functions\Events\fn_config.sqf";
 
 diag_log "----------------------------------------------------------------------------------------------------";
 diag_log format ["               End of Altis Life Server Init :: Total Execution Time %1 seconds ",(diag_tickTime) - _timeStamp];
