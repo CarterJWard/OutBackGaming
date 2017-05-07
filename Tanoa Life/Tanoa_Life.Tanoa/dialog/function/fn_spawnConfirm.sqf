@@ -9,8 +9,6 @@ private ["_spCfg","_sp","_spawnPos"];
 
 if(life_firstSpawn) then {
 	life_firstSpawn = false;
-	[] spawn life_fnc_IntroCam;
-    [] spawn life_fnc_introText;
 };
 closeDialog 0;
 cutText ["","BLACK IN"];

@@ -222,7 +222,6 @@ class Life_Client_Core {
         class hideObj {};
         class hudSetup {};
         class hudUpdate {};
-        class IntroCam {};
         class inventoryClosed {};
         class inventoryOpened {};
         class isUIDActive {};
@@ -257,7 +256,6 @@ class Life_Client_Core {
 	    class profSetUp {};
 	    class addExp {};
 	    class grabSkills {};
-        class introText {};
         class robBank {};
 		class markers {};
     };

@@ -78,18 +78,6 @@ class CfgSounds {
         titles[] = {};
     };
 
-    class Intro {
-		name = "Intro";
-		sound[] = {"\sounds\intro.ogg", .40, 1};
-		titles[] = {};
-	};
-
-	class CopIntro {
-		name = "CopIntro";
-		sound[] = {"\sounds\CopIntro.ogg", .90, 1};
-		titles[] = {};
-	};
-
     class flashbang {
         name = "flashbang";
         sound[] = {"\sounds\flashbang.ogg", 1.0, 1};
