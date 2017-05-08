@@ -317,6 +317,10 @@ class LifeCfgVehicles {
             { "Camo", "cop", {
                 "textures\cop\huronf1.jpg",
                 "textures\cop\huronb2.jpg"
+            } },
+            { "Black", "civ", {
+                "#(argb,8,8,3)color(0.05,0.05,0.05,1)",
+                "#(argb,8,8,3)color(0.05,0.05,0.05,1)",
             } }
         };
     };
@@ -780,10 +784,6 @@ will modify the virtual space and the price of the vehicle, but other informatio
             { "Camo", "cop", {
                 "textures\cop\militaryhunter2.jpg",
                 "textures\cop\militaryhunter.jpg"
-            } },
-            { "Camo 2", "cop", {
-                "textures\cop\hunterb1.jpg",
-                "textures\cop\militaryf1.jpg"
             } }
         };
     };
