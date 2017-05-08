@@ -5,6 +5,7 @@ file: fn_profType.sqf
 private ["_type"];
 _type = [_this,0,"",[""]] call BIS_fnc_param;
 
+
 switch (_type) do {
     case "banana": {"Fruit_Prof"};
     case "pawpaw": {"Fruit_Prof"};

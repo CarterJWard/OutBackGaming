@@ -8,7 +8,7 @@
     Master handling for processing an item.
     NiiRoZz : Added multiprocess
 */
-private ["_vendor","_type","_itemInfo","_oldItem","_newItemWeight","_newItem","_oldItemWeight","_cost","_upp","_hasLicense","_itemName","_oldVal","_ui","_progress","_pgText","_cP","_materialsRequired","_materialsGiven","_noLicenseCost","_text","_filter","_totalConversions","_minimumConversions"];
+private ["_level","_profType","_vendor","_type","_itemInfo","_oldItem","_newItemWeight","_newItem","_oldItemWeight","_cost","_upp","_hasLicense","_itemName","_oldVal","_ui","_progress","_pgText","_cP","_materialsRequired","_materialsGiven","_noLicenseCost","_text","_filter","_totalConversions","_minimumConversions"];
 _vendor = [_this,0,objNull,[objNull]] call BIS_fnc_param;
 _type = [_this,3,"",[""]] call BIS_fnc_param;
 //Error check
@@ -80,6 +80,11 @@ if (_newItemWeight > _oldItemWeight) then {
 };
 
 if (_exit) exitWith {hint localize "STR_Process_Weight"; life_is_processing = false; life_action_inUse = false;};
+//Get prof type and find level
+_profType = [_materialsRequired] call life_fnc_profType;
+_flag = PROF_SIDE(playerside);
+_data = PROF_VALUE(_profType,_flag);
+_level = _data select 0;
 
 //Setup our progress bar.
 disableSerialization;
@@ -89,7 +94,7 @@ _progress = _ui displayCtrl 38201;
 _pgText = _ui displayCtrl 38202;
 _pgText ctrlSetText format ["%2 (1%1)...","%",_upp];
 _progress progressSetPosition 0.01;
-_cP = 0.01;
+_cP = 0.01 / _level;
 
 life_is_processing = true;
 
@@ -144,4 +149,6 @@ if (_hasLicense) then {
     [0] call SOCK_fnc_updatePartial;
     life_is_processing = false;
     life_action_inUse = false;
+    
 };
+[_profType,round(_level) * 2] call life_fnc_addExp;

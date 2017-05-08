@@ -57,7 +57,7 @@ if (_exit) exitWith {life_action_inUse = false;};
 //Find prof type and get level
 _profType = [_resource] call life_fnc_profType;
 _flag = PROF_SIDE(playerside);
-_data = PROF_VALUE(_profType, _flag);
+_data = PROF_VALUE(_profType,_flag);
 _level = _data select 0;
 
 //Setup amount
