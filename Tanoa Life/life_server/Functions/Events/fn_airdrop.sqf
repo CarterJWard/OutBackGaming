@@ -7,8 +7,7 @@ Description: Runs the aidrop mission the the markers on the map
 private ["_group1","_box1","_wp1","_wp2","_aRifle","_pistol","_mags","_mags2","_special","_notif"];
 _spawnPos = "ADSpawn"; //Where the aidrop will spawn
 _endPos = "ADEnd"; //Where the helicoptor fly to when the box is dropped
-_box1 = "Land_Cargo10_grey_F"; //Type of box that will be used to store the weapons
-_notifDrop = 
+_box1 = "  Land_CargoBox_V1_F"; //Type of box that will be used to store the weapons
 
 //Check for set amount of players if not enough people are online will exit 
 if({side _x == civilian} count playableUnits < 1) exitWith  {}; 
