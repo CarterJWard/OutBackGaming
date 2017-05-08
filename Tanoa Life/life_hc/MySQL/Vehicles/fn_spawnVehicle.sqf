@@ -79,7 +79,7 @@ _wasIllegal = (_vInfo select 13);
 _wasIllegal = if (_wasIllegal isEqualTo 1) then { true } else { false };
 
 [_query,1] call HC_fnc_asyncCall;
-if (_sp isEqualType "") then {
+if (_sp isEqualType "1") then {
     _vehicle = createVehicle[(_vInfo select 2),[0,0,999],[],0,"NONE"];
     waitUntil {!isNil "_vehicle" && {!isNull _vehicle}};
     _vehicle allowDamage false;
