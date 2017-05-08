@@ -3471,45 +3471,42 @@
      	<Key ID="STR_Prof_Med">
      	    <Original>Medic Proficiency</Original>
      	</Key>
+         <Key ID="STR_Prof_Fruit">
+            <Original>Fruit Proficiency</Original>
+        </Key>
+        <Key ID="STR_Prof_Logs">
+            <Original>Logging Proficiency<Original>
+        </Key>
+        <Key ID="STR_Prof_Cocaine">
+            <Original>Cocaine Proficiency<Original>
+        </Key>
+        <Key ID="STR_Prof_Heroin">
+            <Original>Heroin Proficiency<Original>
+        </Key>
+        <Key ID="STR_Prof_Weed">
+            <Original>Cannabis Proficiency<Original>
+        </Key>
+        <Key ID="STR_Prof_Sugar">
+            <Original>Sugar Proficiency<Original>
+        </Key>
+         <Key ID="STR_Prof_Metal">
+            <Original>Metal Proficiency<Original>
+        </Key>
+         <Key ID="STR_Prof_Diamond">
+            <Original>Diamond Proficiency<Original>
+        </Key>
+         <Key ID="STR_Prof_Rock">
+            <Original>Rock Proficiency<Original>
+        </Key>
+         <Key ID="STR_Prof_Oil">
+            <Original>Oil Proficiency<Original>
+        </Key>
  	    <Key ID="STR_Prof_lvlUp">
  	        <Original>CONGRATULATIONS! YOU ARE NOW LVL: %1 IN %2</Original>
  	    </Key>
  	    <Key ID="STR_Prof_lvlUp2">
  	        <Original>CONGRATULATIONS! %1 IS NOW AT LVL: %2</Original>
  	    </Key>
-        <Key ID="STR_Prof_Oil">
-            <Original>Oil Skill</Original>
-        </Key>
-        <Key ID="STR_Prof_Sand">
-            <Original>Sand Skill</Original>
-        </Key>
-        <Key ID="STR_Prof_Rock">
-            <Original>Rock Skill</Original>
-        </Key>
-        <Key ID="STR_Prof_Salt">
-            <Original>Salt =Skill</Original>
-        </Key>
-        <Key ID="STR_Prof_Canabis">
-            <Original>Cannabis Skill</Original>
-        </Key>
-        <Key ID="STR_Prof_Heroin">
-            <Original>Heroin Skill</Original>
-        </Key>
-        <Key ID="STR_Prof_Cocaine">
-            <Original>Cocaine Skill</Original>
-        </Key>
-        <Key ID="STR_Prof_Diamond">
-            <Original>Diamond Skill</Original>
-        </Key>
-        <Key ID="STR_Prof_Iron">
-            <Original>Iron Skill</Original>
-        </Key>
-        <Key ID="STR_Prof_Copper">
-            <Original>Copper Skill</Original>
-        </Key>
-        <Key ID="STR_Prof_Fruit">
-            <Original>Fruit Skill</Original>
-        </Key>
     </Package>
     <Package name="Cook">
         <Key ID="STR_Cook_Closer">
