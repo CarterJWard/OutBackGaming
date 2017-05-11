@@ -19,7 +19,7 @@ class CraftingCfg
     {
         title = "Weapons";
         list[] = {
-            { "launch_B_Titan_F", { "goldbar", 5 } }
+            { "launch_B_Titan_F", { "goldbar", 10 } }
         };
     };
     
@@ -27,7 +27,7 @@ class CraftingCfg
     {
         title = "Ammunition";
         list[] = {
-            { "Titan_AA", { "goldbar", 1} }
+            { "Titan_AA", { "goldbar", 3} }
         };
     };
   //CLOTHING
@@ -76,7 +76,8 @@ class CraftingCfg
         list[] = {
             { "boltcutter", { "iron_refined", 10, "copper_refined", 10 } },
             { "blastingcharge", { "iron_refined", 10, "copper_refined", 10 } },
-            { "firewood", { "logs",3 } }
+            { "firewood", { "logs",3 } },
+            { "spikeStrip", {"iron_refined", 35} }
         };
     };
     
