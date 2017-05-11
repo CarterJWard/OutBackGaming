@@ -88,7 +88,7 @@ switch (playerSide) do {
 		if (FETCH_CONST(life_coplevel) < _seizeRank) then {_Btn8 ctrlEnable false;};
 
 		{
-			if ((player distance (getMarkerPos _x) <30)) exitWith { _Btn6 ctrlEnable true;};
+			if ((player distance (getMarkerPos _x) <150)) exitWith { _Btn6 ctrlEnable true;};
 		} forEach LIFE_SETTINGS(getArray,"sendtoJail_locations");
 	};
 	

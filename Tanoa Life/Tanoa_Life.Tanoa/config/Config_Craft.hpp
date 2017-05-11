@@ -19,17 +19,23 @@ class CraftingCfg
     {
         title = "Weapons";
         list[] = {
-            { "hgun_Pistol_heavy_01_snds_F", { "iron_refined", 1 } },
-            { "hgun_Pistol_heavy_02_Yorris_F", { "iron_refined", 1 } }
+            { "launch_B_Titan_F", { "goldbar", 5 } }
         };
     };
     
+    class magazine
+    {
+        title = "Ammunition";
+        list[] = {
+            { "Titan_AA", { "goldbar", 1} }
+        };
+    };
   //CLOTHING
     class uniform
     {
         title = "Uniforms";
         list[] = {
-            { "U_O_V_Soldier_Viper_F", { "goldbar", 3 } },
+            { "U_O_V_Soldier_Viper_F", { "goldbar", 3 , "marijuana", 10 } },
             { "U_I_FullGhillie_sard", { "marijuana", 10 } }
         };
     };
@@ -47,7 +53,7 @@ class CraftingCfg
     class vest {
         title = "Vests";
         list[] = {
-            { "V_PlateCarrier1_tna_F", { "marijuana", 5 } }
+            { "V_PlateCarrier1_tna_F", { "marijuana", 5, "iron_refined", 4 } }
         };
     };
     
@@ -55,13 +61,11 @@ class CraftingCfg
     class misc {
         title = "Misc Items";
         list[] = {
-            { "6Rnd_45ACP_Cylinder", { "copper_refined", 1} },
-            { "11Rnd_45ACP_Mag", { "copper_refined", 1} },
-            { "muzzle_snds_338_sand", { "goldbar", 10 } },
-            { "muzzle_snds_93mmg", { "goldbar", 10 } },
-            { "muzzle_snds_H", { "goldbar", 5 } },
-            { "muzzle_snds_B", { "goldbar", 8 } },
-            { "NVGoggles", { "iron_refined", 10, "lockpick", 10 } },
+            { "muzzle_snds_338_sand", { "goldbar", 5, "iron_refined", 10 } },
+            { "muzzle_snds_93mmg", { "goldbar", 5 , "iron_refined", 15} },
+            { "muzzle_snds_H", { "goldbar", 2 , "copper_unrefined", 15 } },
+            { "muzzle_snds_B", { "goldbar", 3 , "iron_refined", 10 } },
+            { "NVGoggles", { "iron_refined", 10, "copper_unrefined", 10 } },
             { "H_HelmetO_ViperSP_hex_F", { "goldbar", 10, "iron_refined", 10 } }
         };
     };
