@@ -26,9 +26,6 @@ switch (playerSide) do {
             if (uniform player isEqualTo "U_C_WorkerCoveralls") then {
                 player setObjectTextureGlobal [0, "textures\outfits\prisonsuit.jpg"];
             };
-            if (uniform player isEqualTo "U_I_CombatUniform") then { 
-                player setObjectTexture [0, "textures\outfits\mafiaboss.jpg"];
-            };
         };
     };
 

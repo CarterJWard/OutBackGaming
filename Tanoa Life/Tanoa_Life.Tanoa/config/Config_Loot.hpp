@@ -35,7 +35,6 @@ class LootCfg {
             { "pawpaw", "ymenu" },
             { "lockpick", "ymenu" },
             { "waterBottle", "ymenu" },
-            { "H_Cap_red", "imenu" },
             { "pesticide", "ymenu" }
         };    
     };
