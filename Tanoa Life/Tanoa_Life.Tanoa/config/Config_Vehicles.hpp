@@ -592,7 +592,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
     class C_Hatchback_01_sport_F {
         vItemSpace = 45;
         licenses[] = { {"driver"}, {""}, {""}, {""} };
-        price = 40000;
+        price = 35000;
         textures[] = {
             { "Red", "civ", {
                 "\a3\soft_f_gamma\Hatchback_01\data\hatchback_01_ext_sport01_co.paa"
@@ -926,7 +926,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
     };
     class C_Offroad_02_unarmed_F {
         vItemSpace = 45;
-        vFuelSpace = 35000;
+        vFuelSpace = 40000;
         licenses[] = { {""}, {""}, {""}, {""} };
         price = 65000;
         textures[] = {};

@@ -222,7 +222,7 @@ class WeaponShops {
             { "Titan_AA", "", 20000, {"life_coplevel", "SCALAR", 5} }
         };
         accs[] = {
-            { "optic_Nightstalker", "", 500000, 100, { "", "", -1 } },
+            { "optic_NVS", "", 50000, 100, { "", "", -1 } },
             { "optic_ACO_grn", "", 3500, 100, { "", "", -1 } },
             { "optic_Holosight", "", 3600, 100, { "", "", -1 } },
             { "optic_Hamr", "", 7500, 100, { "", "", -1 } },

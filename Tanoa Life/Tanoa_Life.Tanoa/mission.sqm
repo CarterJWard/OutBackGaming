@@ -8,22 +8,22 @@ class EditorData
 	toggles=66;
 	class ItemIDProvider
 	{
-		nextID=9189;
+		nextID=9190;
 	};
 	class MarkerIDProvider
 	{
-		nextID=364;
+		nextID=365;
 	};
 	class LayerIndexProvider
 	{
-		nextID=424;
+		nextID=430;
 	};
 	class Camera
 	{
-		pos[]={5578.04,19.430874,10787.259};
-		dir[]={0.28596404,-0.35022426,0.89196038};
-		up[]={0.10693871,0.93664825,0.33355671};
-		aside[]={0.95227259,-1.6172999e-007,-0.30529934};
+		pos[]={5535.0801,58.365368,10488.498};
+		dir[]={0.4616456,-0.42413494,-0.77911627};
+		up[]={0.21623389,0.90557659,-0.3649365};
+		aside[]={-0.86033106,-1.2254168e-007,-0.50976813};
 	};
 };
 binarizationWanted=0;
@@ -347,24 +347,6 @@ class CustomAttributes
 		name="Multiplayer";
 		class Attribute0
 		{
-			property="RespawnTemplates";
-			expression="true";
-			class Value
-			{
-				class data
-				{
-					class type
-					{
-						type[]=
-						{
-							"ARRAY"
-						};
-					};
-				};
-			};
-		};
-		class Attribute1
-		{
 			property="RespawnButton";
 			expression="true";
 			class Value
@@ -379,6 +361,24 @@ class CustomAttributes
 						};
 					};
 					value=1;
+				};
+			};
+		};
+		class Attribute1
+		{
+			property="RespawnTemplates";
+			expression="true";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"ARRAY"
+						};
+					};
 				};
 			};
 		};
@@ -437,7 +437,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=2220;
+		items=2221;
 		class Item0
 		{
 			dataType="Marker";
@@ -1146,6 +1146,7 @@ class Mission
 			type="c_unknown";
 			colorName="ColorCIV";
 			id=114;
+			atlOffset=0.24455857;
 		};
 		class Item66
 		{
@@ -1983,7 +1984,7 @@ class Mission
 			name="kart_shop_1";
 			type="Empty";
 			alpha=0.00016664373;
-			angle=229.15547;
+			angle=229.15546;
 			id=203;
 			atlOffset=55.910896;
 		};
@@ -10300,7 +10301,7 @@ class Mission
 					};
 					id=960;
 					type="C_man_polo_3_F";
-					atlOffset=9.5367432e-007;
+					atlOffset=4.7683716e-007;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -11418,6 +11419,7 @@ class Mission
 					};
 					id=987;
 					type="C_man_1";
+					atlOffset=0.23152924;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -12344,7 +12346,7 @@ class Mission
 					};
 					id=1004;
 					type="C_man_1";
-					atlOffset=0.53800011;
+					atlOffset=0.53800058;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -13760,7 +13762,7 @@ class Mission
 					};
 					id=1026;
 					type="C_man_1";
-					atlOffset=0.00031089783;
+					atlOffset=0.00031137466;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -15395,7 +15397,6 @@ class Mission
 						angles[]={0,0.66995203,0};
 					};
 					side="Civilian";
-					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
@@ -15405,6 +15406,7 @@ class Mission
 					};
 					id=1056;
 					type="C_man_1";
+					atlOffset=0.35506105;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -15466,7 +15468,7 @@ class Mission
 					};
 					id=1063;
 					type="C_Nikos_aged";
-					atlOffset=0.0053529739;
+					atlOffset=0.0053524971;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -18033,7 +18035,7 @@ class Mission
 					};
 					id=6570;
 					type="C_Man_casual_6_F";
-					atlOffset=0.00060772896;
+					atlOffset=0.19034505;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -32491,6 +32493,7 @@ class Mission
 			};
 			id=5768;
 			type="Land_TableDesk_F";
+			atlOffset=4.9591064e-005;
 		};
 		class Item660
 		{
@@ -86328,7 +86331,7 @@ class Mission
 		{
 			dataType="Trigger";
 			position[]={13260.994,2.55,12110.307};
-			angle=1.9621499;
+			angle=1.9621497;
 			class Attributes
 			{
 				text="Everything checks out your good to go!!";
@@ -86348,7 +86351,7 @@ class Mission
 		{
 			dataType="Trigger";
 			position[]={13269.81,2.55,12101.226};
-			angle=1.9621499;
+			angle=1.9621497;
 			class Attributes
 			{
 				text="Everything checks out your good to go!!";
@@ -87596,7 +87599,7 @@ class Mission
 			position[]={3866.4763,0,13407.889};
 			name="cop_car_7";
 			type="Empty";
-			angle=55.478382;
+			angle=55.478378;
 			id=9179;
 			atlOffset=-10.525023;
 		};
@@ -87632,6 +87635,17 @@ class Mission
 			colorName="ColorCIV";
 			id=9186;
 			atlOffset=-3.4392676;
+		};
+		class Item2220
+		{
+			dataType="Marker";
+			position[]={5630.0474,0,10192.95};
+			name="marker_364";
+			text="Heli Port";
+			type="c_air";
+			colorName="ColorCIV";
+			id=9189;
+			atlOffset=-2.2826416;
 		};
 	};
 };
