@@ -281,7 +281,8 @@ class Clothing {
             { "U_I_C_Soldier_Bandit_3_F", "", 500, { "", "", -1 } }, //Apex DLC
             { "U_I_C_Soldier_Bandit_4_F", "", 500, { "", "", -1 } }, //Apex DLC
             { "U_I_C_Soldier_Bandit_5_F", "", 500, { "", "", -1 } }, //Apex DLC
-            { "U_I_C_Soldier_Camo_F", "", 500, { "", "", -1 } } //Apex DLC
+            { "U_I_C_Soldier_Camo_F", "", 500, { "", "", -1 } }, //Apex DLC
+            { "U_O_GhillieSuit", "", 2000, { "", "",-1} } //Ghille
         };
         headgear[] = {
             { "NONE", "Remove Hat", 0, { "", "", -1 } },

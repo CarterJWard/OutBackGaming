@@ -182,7 +182,7 @@ class WeaponShops {
             { "SmokeShellOrange", "", 100, -1, { "life_coplevel", "SCALAR", 1 } },
             { "hgun_P07_snds_F", "Stun Pistol", 2000, 650, { "", "", -1 } },
             //{ "arifle_sdar_F", "Taser Rifle", 20000, 7500, { "", "", -1 } },
-            //{ "hgun_P07_F", "", 7500, 1500, { "", "", -1 } },
+            { "hgun_P07_F", "Taser Pistol", 7500, 1500, { "", "", -1 } },
             { "hgun_ACPC2_F", "", 1500, -1, { "", "", -1 } },
             { "arifle_MX_khk_F", "", 35000, 0, { "", "", -1} },
             { "arifle_MX_F", "", 35000, 7500, {"", "", -1 } },
@@ -207,6 +207,7 @@ class WeaponShops {
         };
         mags[] = {
             { "16Rnd_9x21_Mag", "", 0, 0, { "", "", -1 } },
+            { "9Rnd_45ACP_Mag", "", 10, 0, { "", "", -1 } },
             { "20Rnd_556x45_UW_mag", "Taser Rifle Magazine", 45, 100, { "", "", -1 } },
             { "30Rnd_556x45_Stanag", "", 100, 0, { "", "", -1 } },
             { "30Rnd_65x39_caseless_mag", "", 100, 0, { "", "", -1 } },
