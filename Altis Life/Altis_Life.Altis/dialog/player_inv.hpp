@@ -474,7 +474,7 @@ class playerSettings {
 		 tooltip = $STR_PM_WantedList;
 		 }; 
 		
-		/*class ButtonTaxi_ICON: life_RscPicture
+		class ButtonTaxi_ICON: life_RscPicture
 		 {
 		 idc = 8892;
 		 text = "icons\tablet\taxi.paa";
@@ -501,6 +501,6 @@ class playerSettings {
 		 color2[] = {0,0,0,0};
 		 colorText[] = {1,1,1,1};
 		 colorDisabled[] = {1,0,0,0.1};
-		 }; */
+		 }; 
 	};
 };

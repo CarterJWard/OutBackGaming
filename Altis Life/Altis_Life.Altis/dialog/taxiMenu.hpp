@@ -47,7 +47,7 @@ class life_taxiMenu {
         };
 
         class RscButtonMenu_2403: Life_RscButtonMenu {
-            idc = 2904;
+            idc = 2909;
             text = "On Duty";
             onButtonClick = "[] call life_fnc_onDuty;";
             x = 0.469062 * safezoneW + safezoneX;
@@ -67,7 +67,7 @@ class life_taxiMenu {
         };
 
         class RscButtonMenu_2405: Life_RscButtonMenu {
-            idc = 30095;
+            idc = 2904;
             text = "Accept Job";
             onButtonClick = "[] call life_fnc_acceptJob;";
             x = 0.613437 * safezoneW + safezoneX;
@@ -77,7 +77,7 @@ class life_taxiMenu {
         };
 
         class JobList: Life_RscListBox {
-            idc = 30096;
+            idc = 2902;
             text = "";
             sizeEx = 0.035;
             onLBSelChanged = "[_this] spawn life_fnc_listBox;";

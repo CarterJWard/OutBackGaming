@@ -13,6 +13,5 @@ if (life_taxi_onDuty = true;) exitWith {hint "you cannot call a taxi whilst you'
 life_taxi_call = true;
 waitUntil {
     life_taxi_Accepted = true;
-}
-life_taxi_call = false;
+}; 
 //
