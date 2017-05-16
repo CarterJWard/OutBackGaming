@@ -17,14 +17,14 @@
 	
 	This is   VERY IMPORTANT   as it is needed to KICK & BAN people.
 */
-_serverCommandPassword = 'Dredd&M@rcw@nn@bec00l';
+_serverCommandPassword = 'gIgADMInTanoa';
 
 /*
 	"_passwordAdmin" is passwordAdmin - in your servers config.cfg, needed for servercommands from client
 	
 	This is used to be able to use the "login" function ingame. Will log you in as Arma "Admin".
 */
-_passwordAdmin = 'testdredd01';
+_passwordAdmin = '';
 /* _serverCommandPassword and _passwordAdmin should always be different passwords or it could cause problems! */
 
 
@@ -32,6 +32,8 @@ _passwordAdmin = 'testdredd01';
 /*
 	_MOD can be 'Epoch', 'AltisLife', 'KOTH', 'WASTELAND' or 'Other'.
 	You have to set the mod you run manually
+	e.g.
+	_MOD = 'KOTH';
 */
 _MOD = 'AltisLife';
 
@@ -41,13 +43,13 @@ _MOD = 'AltisLife';
 
 
 
-/* "_OPEN_ADMIN_MENU_KEY": Key to open the menu (google DIK_KeyCodes (0x3C is F2))   */
-_OPEN_ADMIN_MENU_KEY = 0x3C;
+/* "_OPEN_ADMIN_MENU_KEY": Key to open the menu (google DIK_KeyCodes (0x3B is F1))   */
+_OPEN_ADMIN_MENU_KEY = 0x3B;
 
 /* What ESCAPE Menu shows */
 _ESCMNUTOP = 'AntiHack & AdminTools';
 _ESCMNUBOT = 'by infiSTAR.de';
-_BRIEFING_MSG = true;	/* use mission briefing message: if   "_BRIEFING_MSG = false;"   then the message will be replaced by infiSTAR */
+_BRIEFING_MSG = false;	/* use mission briefing message: if   "_BRIEFING_MSG = false;"   then the message will be replaced by infiSTAR */
 
 /* shows RESTART IN X MINS */
 _USE_RESTART_TIMER = false;	/* true or false */
@@ -79,11 +81,11 @@ _use_html_load_on_adminmenu = true;		/* default and recommended is TRUE. infiSTA
 _adminUIDandAccess =
 [
 	[
-		['76561198039194966','76561198087393832','76561198027070314','76561198031452813','76561198111986051','76561198179819113'],	// Admins with UIDs in this Array have their Access defined in the array below.
+		['UID0','UID2','UID3','...'],	// Admins with UIDs in this Array have their Access defined in the array below.
 		[
 			'Teleport On Map Click','Teleport - Target To Me','Teleport - Me To Target','Teleport In Facing Direction (10m steps)',
 			'spectating','AdminConsole','Delete Vehicle','FlyUp','EjectTarget','ToggleVehLock','UpgradeBuilding','ShowGear',
-			'HealSelf','HealRepairNear','AddAmmoSelf','AdminStart','AdminLog','Freeze Target','UnFreeze Target',
+			'HealSelf','HealRepairNear','AdminStart','AdminLog','Freeze Target','UnFreeze Target',
 			'==== Loadouts ====','==== WeatherLord ====','==== Base Deleter ====','==== VirtualItems ====',
 			'==== Weapons ====','==== Magazines ====','==== Bags ====','==== Vehicles ====','==== Objects ====','==== AltisLife Money ====',
 			'Remove Gear','Revive','Heal','Restore','Move In My Vehicle','Move In Target Vehicle','Parachute Target',
@@ -107,7 +109,7 @@ _adminUIDandAccess =
 		[
 			'Teleport On Map Click','Teleport - Target To Me','Teleport - Me To Target','Teleport In Facing Direction (10m steps)',
 			'spectating','AdminConsole','Delete Vehicle','FlyUp','EjectTarget','ToggleVehLock','UpgradeBuilding','ShowGear',
-			'HealSelf','HealRepairNear','AddAmmoSelf','AdminStart','AdminLog','Freeze Target','UnFreeze Target',
+			'HealSelf','HealRepairNear','AdminStart','AdminLog','Freeze Target','UnFreeze Target',
 			'==== Loadouts ====','==== WeatherLord ====','==== Base Deleter ====','==== VirtualItems ====',
 			'==== Weapons ====','==== Magazines ====','==== Bags ====','==== Vehicles ====','==== Objects ====','==== AltisLife Money ====',
 			'Remove Gear','Revive','Heal','Restore','Move In My Vehicle','Move In Target Vehicle','Parachute Target',
@@ -127,11 +129,53 @@ _adminUIDandAccess =
 		]
 	],
 	[
-		['76561198039194966','76561198087393832','76561198027070314','76561198031452813','76561198111986051','76561198179819113'],	// Admins with UIDs in this Array have their Access defined in the array below.
+		['76561198111986051'],	// Admins with UIDs in this Array have their Access defined in the array below.
 		[
+			'Teleport On Map Click','Teleport - Target To Me','Teleport - Me To Target','Teleport In Facing Direction (10m steps)',
+			'spectating','AdminConsole','Delete Vehicle','FlyUp','EjectTarget','ToggleVehLock','UpgradeBuilding','ShowGear',
+			'HealSelf','HealRepairNear','AdminStart','AdminLog','Freeze Target','UnFreeze Target',
+			'==== Loadouts ====','==== WeatherLord ====','==== Base Deleter ====','==== VirtualItems ====',
+			'==== Weapons ====','==== Magazines ====','==== Bags ====','==== Vehicles ====','==== Objects ====','==== AltisLife Money ====',
+			'Remove Gear','Revive','Heal','Restore','Move In My Vehicle','Move In Target Vehicle','Parachute Target',
+			'Spawn UAV','Spawn Cloak','Spawn Sapper','Spawn SapperB','Eject','Eject Crew','Kill','Explode','MineField (around target)','Zeus','Force Disconnect',
+			'Kick (Silent)','Kick (Announce)','Ban (Silent)','Ban (Announce)',
+			'Default Epoch Player ESP','Default Epoch Vehicle ESP','infiSTAR Player ESP 1',
+			'infiSTAR Player ESP 2','infiSTAR Dead ESP','infiSTAR AI ESP',
+			'infiSTAR LockBox ESP','infiSTAR Shelf ESP','infiSTAR PlotPole ESP','Fake Epoch group to nearest PlotPole',
+			'infiSTAR MapIcons','PlotPole Marker','Vehicle Marker','Construction Marker','LockBox Marker','DeadPlayer Marker',
+			'God Mode','Vehicle God Mode','Lower Terrain','Vehboost','UnlimAmmo','noRecoil','FastFire','Stealth / Invisible',
+			'Disable Announces','Show FPS','Give All Licenses','Call EMP','Mass Message','DayTime','NightTime','Add / Remove Crypto',
+			'Spawn Epoch-Box','Spawn Support-Box1','Spawn Support-Box2','Spawn Support-Box3',
+			'Spawn Ammo','showinfo','Login as Arma Admin','BIS FreeRoam Cam (works with ESP)','FreeRoam Cam (does not work with ESP)',
+			'Request Steam Name','Dump unique client variables',
+			'Restrain','Unrestrain',
+			'Arsenal'	// Adds Arsenal to the mousewheel actions if you press "," on the Numpad!
 		]
 	]
 ];
+
+
+/*
+	What is this?
+	infiSTAR has a global ban system so hackers don't jump around servers and learn how to bypass infiSTAR.
+
+	There was a situation where a group of people asked why their friend could not join the server.
+	Well he was globally banned for hacking.. anyways - if you as a server admin want him to get in even tho he is globally banned,
+	just ask for his UID and add the UID in the array below.
+*/
+_UID_SKIP_GLOBAL_BAN_CHECK =
+[
+	"UID1","UID2","UID3","..."
+];
+
+
+/*
+	ARMA_LOG.dll SETTINGS
+	LOG_PATH = ""; is the Arma3Server directory
+	LOG_PATH = "infiSTAR_Logs/"; would be a folder called "infiSTAR_Logs" within your Arma3Server directory.
+	You need to create the defined folder if it doesn't exist. If you don't create it - the DLL won't be able to write any Log files ! ! !
+*/
+LOG_PATH = "";
 /* ********************************************************************************* */
 /*            many checks should be set to true instead of false.                    */
 /*     These are just diabled because the average user doesn't read this file..      */
@@ -143,13 +187,12 @@ _adminUIDandAccess =
 /*  Use MPInterrupt check*/ _UMP = false;	/* true or false */
 /*  Check BTTNs on D49   */ _B49 = false;	/* true or false */	/* will announce: BadButton on 49 */
 /*  whitelist for _B49   */ _excludedButtons = [];	/* Will Kick for BadButton XYZ if a customnized button is not white-listed here. Example: _excludedButtons = [1010]; */
-/*  Change MpFramework   */ _MPF = false;	/* true or false */	/* important to protect AltisLife */
 /*  Check Actions Plr    */ _CAP = false;	/* true or false */	/* "Actions: xxx/xxx possible scroll menu hack (or you added custom actions..)" */
 /*  Remove Actions Plr   */ _OAP = false;	/* true or false */	/* Remove ALL Actions on Player Object: (mousewheel actions) needs to be  false  for AltisLife for e.g. gathering */
 /*  Remove Actions Objs  */ _OAO = false;	/* true or false */	/* Remove ALL Actions on Objects near Player: (mousewheel actions) needs to be  false  when using e.g. IgiLoad */
 /*  Check Attached Objs  */ _CAO = false;	/* true or false */	/* needs to be  false  when using e.g. IgiLoad */
 /*  Use Anti Teleport    */ _UAT = false;	/* true or false */	/* might need to be set to false on other mods than Epoch! */
-/*  Chat-Vote Day/Night  */ _VDN = false;	/* true or false */
+/*  Chat-Vote Day/Night  */ _VDN = true;	/* true or false */
 /*  Check Vision Mode    */ _CVM = false;	/* true or false */
 /*  check view distance  */ _CVD = false;	/* true or false */	/* if the viewdistance is not 1600 - ban. */
 /*  check cameraOn       */ _CCO = false;	/* true or false */	/* needs to be false for UAV drones and such things.. */
@@ -164,15 +207,14 @@ _adminUIDandAccess =
 /*  EH_Draw3D check      */ _C3D = false;	/* true or false */	/* announces: "EH_Draw3D x should be y" */
 /*  MouseMoving EH check */ _MOH = false;	/* true or false */	/* announces: "MouseMoving EventHandler added" - needs to be disabled for UAV scripts and such.. */
 /*  MouseButton EH check */ _MBC = false;	/* true or false */	/* announces: "MouseButton EventHandler added" */
-/*  Revert MouseButton   */ _RMB = true;	/* true or false */	/* false with Task Force Radio ? */
-/*  Revert KeyUp         */ _RUK = true;	/* true or false */	/* recommended:  true  Removes custom KeyUps and sets back the default ones (false with Task Force Radio ?) */
-/*  Revert KeyDown       */ _RDK = true;	/* true or false */	/* recommended:  true  Removes custom KeyDowns and sets back the default ones (false with Task Force Radio ?) */
-/*  Check Keybinds       */ _CKB = true;	/* true or false */	/* recommended:  true  _RKB needs to be true! Checks Keybinds, if it finds added ones it shows: "KeyBinds added   %1 should be %2" */
+/*  Revert MouseButton   */ _RMB = false;	/* true or false */	/* false with Task Force Radio ? */
+/*  Revert KeyUp         */ _RUK = false;	/* true or false */	/* recommended:  true  Removes custom KeyUps and sets back the default ones (false with Task Force Radio ?) */
+/*  Revert KeyDown       */ _RDK = false;	/* true or false */	/* recommended:  true  Removes custom KeyDowns and sets back the default ones (false with Task Force Radio ?) */
+/*  Check Keybinds       */ _CKB = false;	/* true or false */	/* recommended:  true  _RKB needs to be true! Checks Keybinds, if it finds added ones it shows: "KeyBinds added   %1 should be %2" */
 /*  check MapSingleClick */ _OMC = false;	/* true or false */	/* announces: "MapSingleClick modified", if modification is found - NEEDS _MBC to be true! */
 /*  Remove Hit Handler   */ _REH = false;	/* true or false */	/* Needs to be  false  for Paintball script */
 /*  Revert InventoryOpen */ _RIO = false;	/* true or false */	/* AltisLife only: Sets the custom InventoryOpened Handler */
 /*  Revert Killed EH     */ _RKH = false;	/* true or false */
-/*  "" Respawn Handler   */ _RRH = false;	/* true or false */	/* Needs to be  false  for some custom loadout scripts */
 /*  Revert Map EH        */ _RMEH = ['MouseButtonDblClick','MouseButtonClick','MouseButtonDown','MouseButtonUp','MouseZChanged','MouseHolding','KeyDown','KeyUp'];
 /*  Do not change EH_Fired at all! */ _NO_EHF = false;	/*true or false */	/* obviously needs to be false if settings below are supposed to be used! */
 /*  Use EH_Fired check   */ _EHF = false;	/* true or false */	/* Some mods revert the EventHandlers by default and can cause problems with this check. Tested on Epoch and AltisLife. */
@@ -199,7 +241,6 @@ _customOnPlayerConnected = {};
 /*  Use Anti Glitch      */ _UAG = true;	/* true or false */	/* a try to stop glitching through walls on Doors/Walls */
 /*  Use Anti Wall Look   */ _AWL = false;	/* true or false */	/* *experimental* a try to stop people from watching through Epoch Doors/Walls */
 /*  MPHit Log            */ _MPH = false;	/* true or false */	/* will create a A3_MPHIT.txt file where logs hits on players */
-/*  Token Check          */ _TOC = false;	/* true or false */	/* checks if a player got a token after a certain amount of time (trigger message: PlayerConnected %1 seconds ago but did not Request a Token!) */
 /* ------- SOME EPOCH ONLY FUNCTIONS - ABOVE ------- */
 
 
@@ -238,14 +279,27 @@ _cMenu =
 
 
 /*  Check Global Markers */ _CGM = false;	/* true or false */	/* you may need to disable this check for A.I. Missions - or whitelist the used Markers in the _aLocalM Array beneath */
-/*  Check Local Markers  */ _CLM = true;	/* true or false */	/* false if you do not want LocalMarker to be checked. */
-/*  Use _aLocalM array   */ _UMW = true;	/* true or false */	/* use allowed marker array from below (for example AltisLife uses house_ and others in there) or A.I. Missions */
+/*  Check Local Markers  */ _CLM = false;	/* true or false */	/* false if you do not want LocalMarker to be checked. */
+/*  Use _aLocalM array   */ _UMW = false;	/* true or false */	/* use allowed marker array from below (for example AltisLife uses house_ and others in there) or A.I. Missions */
 /* _aLocalM: if '_CLM' && _UMW - this array of names will be allowed */
 _aLocalM =
 [
 	'sek_','_marker','marker_','house_','_dead_marker','_gpstracker','cop','Marker200',
 	'SEM_','Plane','Bandit','Strange'
 ];
+
+
+/*
+	if somebody talks on one of the following channels, his channel will be switched to "direct" channel
+	0 = Global
+	1 = Side
+	2 = Command
+	3 = Group
+	4 = Vehicle
+	5 = Direct <-- this is where people get switched too if they talk in one of the blacklisted channels!
+	6-15 = Custom Radio (see radioChannelCreate)
+*/
+_disAllowVon = [0,1,2];
 
 
 
@@ -259,7 +313,8 @@ _badIDDsToClose =
 [
 	2,3,7,17,19,25,26,27,28,29,30,31,32,37,40,41,43,44,45,51,52,53,56,74,85,
 	106,126,127,132,146,147,150,151,152,153,154,155,159,162,164,262,
-	314,632,1320,2121,148,163,129,169,157,69
+	314,632,1320,2121,148,163,129,169,157,131,69,
+	312 // Zeus Menu
 ];
 
 /* Use IDD White-List ? */ _UDW = false;	/* true or false */
@@ -278,14 +333,13 @@ _allowedIDDs =
 	-1,-2,-3,-4,-5,-9,-10,-11,-12,-14,-15,-666,300,301,302,303,304,13377,
 	2620,2629,2621,2622,2624,2625,2630,2631,2632,601,2520,2523,2522,
 	2001,2002,2003,2004,2005,2006,2007,2008,2009,2010,2300,2400,2600,
-	2650,2700,2800,2900,3000,3100,3500,7300,38200,38300,38400,38500,39400,
-	15100,15600,666,999999,7730
+	2650,2700,2800,2900,3000,3100,3500,7300,38200,38300,38400,38500,39400
 ];
 
 
 
 
-/*  Use Memoryhack check */ _UMH = true;	/* true or false */
+/*  Use Memoryhack check */ _UMH = false;	/* true or false */
 /*  Use on(Un)Load check */ _UOL = false;	/* true or false */
 /* _onLoadUnload1: The AntiHack will test if the client has the same entry as the server. (only if _UOL = true;) */
 _onLoadUnload1 = [
@@ -326,7 +380,7 @@ _blacklistedVariables =
 [
 	'arsenalOpened','BIS_fnc_arsenal_fullArsenal','n912','TBMKnlist','PLAY','ALTISLIFENEXT3','SOMEONE_dsfnsjf',
 	'FND_fnc_subs','setcash','Dummy_Ghost','entf','check_loaded','LY_Menu','AndysClosed','GOLDENS_GLOBAL_SHIT_YEAH','Fanatic_Main_Bereich',
-	'imgoingnukeyou','fnc_usec_damageHandler',
+	'imgoingnukeyou','fnc_usec_damageHandler','CheatCurator','andy_loopz','InitFileOne',
 	'Status_BB','TZ_BB_A3','TZ_BB_KB_Hint','TZ_BB_BindHandler','AH_BRAZZERS_TZ_BB','kamakazi_lystic','fuckfest','LYSTIC_MENU_LOADED','D_AMEZ_COA',
 	'Intro','Repair','Heal','T3le','TNK','I_like_turtles','BIGM','GMod','E3p','Does_Tonic_Like_to_take_Turtle_penis_in_the_ass_LODESTARS',
 	'lel','vars','PSwap','toLower_new','BCast','thfile','tlmadminrq','infiSTARBLACK','carepkg','scrollAim','BlurExec','sbpc','CALLRE',
@@ -354,7 +408,7 @@ _blacklistedVariables =
 	'selecteditem','moptions','delaymenu','gluemenu','g0dmode','cargod','infiSTAR_fillHax','itemmenu','gmadmin','fapEsp','mapclick','VAGINA_secret',
 	'spawnweapons1','abcd','skinmenu','playericons','changebackpack','keymenu','godall','theKeyControl','infiSTAR_FILLPLAYER','whitelist','pfEpochTele',
 	'custom_clothing','img','surrmenu','footSpeedIndex','ctrl_onKeyDown','plrshldblcklst','DEV_ConsoleOpen','executeglobal','cursoresp','Asdf','planeGroup',
-	'teepee','spwnwpn','musekeys','dontAddToTheArray','morphtoanimals','aesp','LOKI_GUI_Key_Color','Monky_initMenu','tMenu','recon',
+	'teepee','spwnwpn','musekeys','dontAddToTheArray','morphtoanimals','aesp','LOKI_GUI_Key_Color','Monky_initMenu','tMenu','recon','curPos',
 	'playerDistanceScreen','ihatelife','debugConsoleIndex','MY_KEYDOWN_FNC','pathtoscrdir','Bowen_RANDSTR','ProDayz','idonteven','walrein820','RandomEx',
 	'TAG_onKeyDown','changestats','derp123','heel','rangelol','unitsmenu','xZombieBait','plrshldblckls','ARGT_JUMP_s','ARGT_JUMP_d','globalplaya','ALL_MAGS_TO_SEARCH',
 	'shnmenu','xtags','pm','lmzsjgnas','vm','bowonkys','glueallnigga','hotkeymenu','Monky_hax_toggled','espfnc','playeresp','zany','dfgjafafsafccccasd',
@@ -583,23 +637,22 @@ infiSTAR_IS_RUN_ON_THIS_SERVER = time;
 EPOCH_server_isPAdmin=compileFinal 'true';
 diag_log format['<infiSTAR.de> %1 - run.sqf - finaled EPOCH_server_isPAdmin: %2',time,EPOCH_server_isPAdmin];
 /* ********************************************************************************* */
-/* #2011 */
+/* #e8dbd04db812 */
 /* ********************************************************************************* */
-_testserver = (((toLower servername) find 'mgt exile' isEqualTo -1)||((toLower servername) find 'test' isEqualTo -1));
 try {
 	_cfgPatches = configFile >> 'CfgPatches';
 	for '_i' from 0 to (count _cfgPatches - 1) do
 	{
 		_patchClass = _cfgPatches select _i;
-		if(configName _patchClass == 'A3_epoch_code')then
+		if(configName _patchClass == 'A3_epoch_code')exitWith
 		{
 			_MOD = 'Epoch';
 		};
-		if(configName _patchClass == 'life_server')then
+		if(configName _patchClass == 'life_server')exitWith
 		{
 			_MOD = 'AltisLife';
 		};
-		if(configName _patchClass == 'exile_server')then
+		if(configName _patchClass == 'exile_server')exitWith
 		{
 			throw '<infiSTAR.de> This is not the Exile version and it would need many changes to run with Exile. Please go to www.infiSTAR.de and get the Exile version.';
 		};
@@ -622,5 +675,5 @@ catch
 /* ********************************************************************************* */
 /* *********************************www.infiSTAR.de********************************* */
 /* *******************Developed by infiSTAR (infiSTAR23@gmail.com)****************** */
-/* **************infiSTAR Copyright®© 2011 - 2016 All rights reserved.************** */
+/* **************infiSTAR Copyright�� 2011 - 2016 All rights reserved.************** */
 /* ****DayZAntiHack.com***DayZAntiHack.de***ArmaAntiHack.com***Arma3AntiHack.com**** */

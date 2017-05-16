@@ -12,19 +12,6 @@ if (isServer && !hasInterface) exitWith {}; //Server doesn't need to know.
 #define CONST(var1,var2) var1 = compileFinal (if (var2 isEqualType "") then {var2} else {str(var2)})
 #define RCLIENT -2
 
-CONST(W_O_O_K_I_E_ANTI_ANTI_HAX,"false");
-CONST(W_O_O_K_I_E_FUD_ANTI_ANTI_HAX,"false");
-CONST(E_X_T_A_S_Y_ANTI_ANTI_HAX,"false");
-CONST(E_X_T_A_S_Y_Pro_RE,"false");
-CONST(E_X_T_A_S_Y_Car_RE,"false");
-CONST(DO_NUKE,"false");
-CONST(JxMxE_spunkveh,"false");
-CONST(JxMxE_spunkveh2,"false");
-CONST(JxMxE_spunkair,"false");
-CONST(JJJJ_MMMM___EEEEEEE_LLYYSSTTIICCC_SHIT_RE,"false");
-CONST(JJJJ_MMMM___EEEEEEE_LLYYSSTTIICCC_SHIT_RE_OLD,"false");
-CONST(JJJJ_MMMM___EEEEEEE_SPAWN_VEH,"false");
-CONST(JJJJ_MMMM___EEEEEEE_SPAWN_WEAPON,"false");
 
 /*
     Compile our list of allowed addon patches, by default this DOES NOT ALLOW ANY ADDONS.
@@ -280,7 +267,3 @@ if (getText(configFile >> "CfgFunctions" >> "init") != "A3\functions_f\initFunct
     sleep 2.5;
     failMission "SpyGlass";
 };
-
-[] execVM "SpyGlass\fn_cmdMenuCheck.sqf";
-[] execVM "SpyGlass\fn_variableCheck.sqf";
-[] execVM "SpyGlass\fn_menuCheck.sqf";

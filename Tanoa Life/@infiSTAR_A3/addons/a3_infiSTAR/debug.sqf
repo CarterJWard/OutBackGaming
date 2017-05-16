@@ -1,15 +1,12 @@
 fnc_admin_c = compileFinal 'compile _this';
 fnc_admin_cc = compileFinal 'call compile _this';
+fnc_admin_ccc = compileFinal 'if(!isNil {call compile _this})then{call compile _this}else{''ANY''}';
 fnc_createctrl = {
 	params['_display','_type','_idc'];
 	ctrlDelete (_display displayCtrl _idc);
 	_ctrl = _display ctrlCreate[_type, _idc];
 	_ctrl
 };
-
-
-
-
 fnc_setPNS = compileFinal '
 	profileNameSpace setVariable _this;saveProfileNamespace;
 ';
@@ -55,8 +52,6 @@ fnc_debug_loadbtn = {
 	}
 	else
 	{
-		_index = _var find _varname;
-		
 		_varvalue = [format['infiSTAR_SAVED_FUNCTION_%1',_varname],''] call fnc_getPNS;
 		((findDisplay -1341) displayCtrl 1339) ctrlSetText _varvalue;
 		
@@ -131,7 +126,7 @@ wf1T = [0,_wfposY+0.045,1,_buttonheight] spawn {
 		};
 		if!(_oldText isEqualTo '')then
 		{
-			_wf1t ctrlSetText str(_oldText call fnc_admin_cc);
+			_wf1t ctrlSetText str(_oldText call fnc_admin_ccc);
 		};
 		uiSleep 0.1;
 	};
@@ -195,7 +190,7 @@ wf2T = [0,_wfposY+0.045,1,_buttonheight] spawn {
 		};
 		if!(_oldText isEqualTo '')then
 		{
-			_wf2t ctrlSetText str(_oldText call fnc_admin_cc);
+			_wf2t ctrlSetText str(_oldText call fnc_admin_ccc);
 		};
 		uiSleep 0.1;
 	};
@@ -260,7 +255,7 @@ wf3T = [0,_wfposY+0.045,1,_buttonheight] spawn {
 		};
 		if!(_oldText isEqualTo '')then
 		{
-			_wf3t ctrlSetText str(_oldText call fnc_admin_cc);
+			_wf3t ctrlSetText str(_oldText call fnc_admin_ccc);
 		};
 		uiSleep 0.1;
 	};
@@ -325,7 +320,7 @@ wf4T = [0,_wfposY+0.045,1,_buttonheight] spawn {
 		};
 		if!(_oldText isEqualTo '')then
 		{
-			_wf4t ctrlSetText str(_oldText call fnc_admin_cc);
+			_wf4t ctrlSetText str(_oldText call fnc_admin_ccc);
 		};
 		uiSleep 0.1;
 	};
@@ -662,9 +657,7 @@ _ctrl ctrlSetEventHandler['ButtonClick','
 		{
 			if(last_delete_call isEqualTo _varname)then
 			{
-				_index = _var find _varname;
-				
-				_var deleteAt _index;
+				_var deleteAt (_var find _varname);
 				[''infiSTAR_SAVED_FUNCTIONS'',_var] call fnc_setPNS;
 				[format[''infiSTAR_SAVED_FUNCTION_%1'',_varname],nil] call fnc_setPNS;
 				

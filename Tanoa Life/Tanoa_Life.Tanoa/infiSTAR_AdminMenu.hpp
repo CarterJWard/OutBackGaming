@@ -1,6 +1,6 @@
 /*
 Antihack & AdminTools - Christian Lorenzen - www.infiSTAR.de
-#2011
+#e8dbd04db812
 */
 class RscListBox_infiSTAR {
 access=0;
@@ -15,7 +15,7 @@ colorSelect[]={0,0,0,1};
 colorSelect2[]={1,0.5,0,1};
 colorSelectBackground[]={0.6,0.6,0.6,1};
 colorSelectBackground2[]={0.2,0.2,0.2,1};
-colorBackground[]={0,0,0,0.6};
+colorBackground[]={0,0,0,0.8};
 maxHistoryDelay=1.0;
 soundSelect[]={"",0.1,1};
 period=1;

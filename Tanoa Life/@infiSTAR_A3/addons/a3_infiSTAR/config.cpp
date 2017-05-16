@@ -2,14 +2,14 @@
 	Author: Chris(tian) "infiSTAR" Lorenzen
 	Contact: infiSTAR23@gmail.com // www.infiSTAR.de
 	
-	Copyright infiSTAR - 2011 - 2016. All rights reserved.
+	Copyright infiSTAR - 2011 - 2017. All rights reserved.
 	Christian (Chris) L. (infiSTAR23@gmail.com) Developer of infiSTAR
 */
 class CfgPatches
 {
 	class a3_infiSTAR
 	{
-		requiredVersion = 0.2011;
+		requiredVersion = 0.12166;
 		requiredAddons[] = {};
 		units[] = {};
 		weapons[] = {};
@@ -18,8 +18,8 @@ class CfgPatches
 		author[]= {"Chris(tian) 'infiSTAR' Lorenzen"};
 		website[]= {"https://infiSTAR.de"};
 		contact[]= {"admin@infiSTAR.de","infiSTAR23@gmail.com"};
-		version = v0240;
-		licensed = "";
+		version = 'v0249';
+		licensed = "colishere@gmail.com";
 	};
 };
 class CfgFunctions
