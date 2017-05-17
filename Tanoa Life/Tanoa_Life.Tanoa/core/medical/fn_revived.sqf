@@ -10,7 +10,7 @@ private ["_medic","_dir","_reviveCost","_free"];
 _medic = param [0,"Unknown Medic",[""]];
 _free = param [1,0,[0]];
 _reviveCost = LIFE_SETTINGS(getNumber,"revive_fee");
-
+life_save_gear = [life_corpse] call life_fnc_fetchDeadGear;
 [life_save_gear] spawn life_fnc_loadDeadGear;
 life_corpse setVariable ["realname",nil,true]; //Should correct the double name sinking into the ground.
 [life_corpse] remoteExecCall ["life_fnc_corpse",RANY];
