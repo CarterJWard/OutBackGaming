@@ -81,7 +81,7 @@ if (!_isVehicle) then {
     _curTarget setVariable ["transporting",false,true];
 } else {
     _dice = random(100);
-    if (_dice < 30) then {
+    if (_dice < 20) then {
         titleText[localize "STR_ISTR_Lock_Success","PLAIN"];
         life_vehicles pushBack _curTarget;
 
