@@ -1,5 +1,5 @@
 # Outback Gaming # 
-https://travis-ci.com/LarryLancelot/OutBackGaming.svg?token=b46QbXcpYrbpx16HRXpZ&branch=master
+[![Build Status](https://travis-ci.com/LarryLancelot/OutBackGaming.svg?token=b46QbXcpYrbpx16HRXpZ&branch=master)](https://travis-ci.com/LarryLancelot/OutBackGaming)
 Repo for the Outback Gaming Tanoa Life Server & Altis Life servers
 ======
 # Resources
