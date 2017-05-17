@@ -8,7 +8,7 @@
 */
 private ["_allowedItems","_loadout","_primary","_launcher","_handgun","_magazines","_uniform","_vest","_backpack","_items","_primitems","_secitems","_handgunitems","_uitems","_vitems","_bitems","_handle"];
 _loadout = [_this,0,[],[[]]] call BIS_fnc_param;
-
+if (count _loadout isEqualTo 0) exitWith {diag_log "life_save_gear still not giving a value on death! tell fresqo"};
 _primary = _loadout select 0;
 _launcher = _loadout select 1;
 _handgun = _loadout select 2;
