@@ -107,7 +107,6 @@ if (!isNull _killer && {_killer != _unit} && {side _killer != west} && {alive _k
     };
 };
 */
-//life_save_gear = [player] call life_fnc_fetchDeadGear;
 
 if (LIFE_SETTINGS(getNumber,"drop_weapons_onDeath") isEqualTo true) then {
     _unit removeWeapon (primaryWeapon _unit);
