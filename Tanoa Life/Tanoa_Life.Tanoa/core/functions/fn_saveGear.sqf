@@ -134,14 +134,17 @@ if (count (secondaryWeaponMagazine player) > 0 && alive player) then {
         _handled = false;
 
         if (_ves) then {
+            _vMags pushBack _hMag;
             _handled = true;
         };
 
         if (_uni && !_handled) then {
+            _uMags pushBack _hMag;
             _handled = true;
         };
 
         if (_bag && !_handled) then {
+            _bMags pushBack _hMag;
             _handled = true;
         };
     };
