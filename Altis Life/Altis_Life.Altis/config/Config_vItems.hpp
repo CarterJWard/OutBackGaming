@@ -13,7 +13,7 @@ class VirtualShops {
         side = "civ";
         license = "";
         level[] = { "", "", -1, "" };
-        items[] = { "waterBottle", "rabbit", "apple", "redgull", "tbacon", "pickaxe", "toolkit", "fuelFull", "peach", "storagesmall", "storagebig", "rabbit_raw", "hen_raw", "rooster_raw", "sheep_raw", "goat_raw" };
+        items[] = { "waterBottle", "rabbit", "apple", "redgull", "tbacon", "pickaxe", "toolkit", "fuelFull", "peach", "storagesmall", "storagebig", "rabbit_raw", "hen_raw", "rooster_raw", "sheep_raw", "goat_raw", "pesticide" };
     };
 
     class med_market {
@@ -324,6 +324,19 @@ class VirtualItems {
         illegal = false;
         edible = -1;
         icon = "icons\ico_storageBig.paa";
+    };
+
+    class pesticide {
+        variable = "pesticide";
+        displayName = "STR_Item_Pesticide";
+        weight = 2;
+        buyPrice = 500;
+        sellPrice = -1;
+        illegal = false;
+	    savable = true;
+        prof = "";
+        edible = -1;
+        icon = "icons\ico_pesticide.paa";
     };
 
     //Mined Items

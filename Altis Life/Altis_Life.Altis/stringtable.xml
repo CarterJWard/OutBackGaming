@@ -5764,6 +5764,9 @@
             <Portuguese>Maconha não Processada</Portuguese>
             <Polish>Konopie</Polish>
         </Key>
+        <Key ID="STR_Item_Pesticide">
+    	    <Original>Pesticide</Original>
+        </Key>
         <Key ID="STR_Item_Apple">
             <Original>Apple</Original>
             <Czech>Jablko</Czech>

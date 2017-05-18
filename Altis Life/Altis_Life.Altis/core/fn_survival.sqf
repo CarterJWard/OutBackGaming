@@ -107,6 +107,26 @@ for "_i" from 0 to 1 step 0 do {
     uiSleep 1;
 };
 
+//Cropdusting mission 
+[] spawn {
+    while {true} do {
+        if (playerSide isEqualTo civilian && !life_mission) then {
+            waitUntil {typeOf (vehicle player) in ["sab_piper2","sab_FAAllegro","sab_RobinDR400_2"]}; //ADJUST THESE TO BE THE PLANE CLASS NAMES YOU ARE USING
+            if (driver (vehicle player) isEqualTo player && life_inv_pesticide > 0 && speed (vehicle player) < 5) then 
+            {
+                private ["_startCD"];
+                _startCD = player addAction["Start Crop Dusting Mission",life_fnc_cropDusting,[(vehicle player)]];	
+	        waitUntil {(vehicle player isEqualTo player) || !alive player || speed (vehicle player) > 5};
+	    
+                if (!isNil "_startCD") then {
+                    player removeAction _startCD;
+                };
+            };
+        };
+        sleep 1;
+    };
+};
+
 [] spawn
 {
 	private["_bp","_load","_cfg"];

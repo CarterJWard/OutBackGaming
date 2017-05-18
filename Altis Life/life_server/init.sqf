@@ -212,7 +212,8 @@ TON_fnc_playtime_values_request = [];
 publicVariable "TON_fnc_playtime_values";
 publicVariable "TON_fnc_playtime_values_request";
 
-
+/*Start asylum seeker mission*/
+[] execVM "\life_server\Functions\Systems\fn_asylumSeekers.sqf";
 /* Setup the federal reserve building(s) */
 _dome = nearestObject [[16019.5,16952.9,0],"Land_Dome_Big_F"];
 _rsb = nearestObject [[16019.5,16952.9,0],"Land_Research_house_V1_F"];

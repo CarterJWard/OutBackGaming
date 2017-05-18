@@ -259,6 +259,10 @@ class Life_Client_Core {
         class tazeSound {};
         class teleport {};
         class whereAmI {};
+        class markers {};
+        class payCash {};
+        class cropDusting {};
+        class cropDustingDone {};
     };
 
     class Gangs    {
