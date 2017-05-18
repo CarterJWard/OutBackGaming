@@ -4190,6 +4190,24 @@
             <Russian>Вы не можете удалить элемент, когда вы находитесь в автомобиле.</Russian>
             <German>Sie können ein Element nicht entfernen, wenn Sie in einem Fahrzeug sind.</German>
         </Key>
+        <Key ID="STR_NOTF_LootAlready">
+            <Original>This has recently been looted</Original>
+        </Key>
+        <Key ID="STR_NOTF_CantLoot">
+            <Original>You can't loot this!</Original>
+        </Key>
+        <Key ID="STR_NOTF_AlreadyLoot">
+            <Original>Already looting!</Original>
+        </Key>
+        <Key ID="STR_NOTF_DistLoot">
+            <Original>You must stay close to loot!</Original>
+        </Key>
+        <Key ID="STR_NOTF_SLooted">
+            <Original>Someone already just looted this!</Original>
+        </Key>
+        <Key ID="STR_NOTF_LootNone">
+            <Original>You found nothing of any value!</Original>
+        </Key>
     </Package>
     <Package name="Jail_Strings">
         <Key ID="STR_Jail_Warn">

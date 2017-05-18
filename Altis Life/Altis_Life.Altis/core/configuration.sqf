@@ -83,6 +83,7 @@ life_delivery_in_progress = false;
 life_thirst = 100;
 life_hunger = 100;
 CASH = 0;
+life_looting = false;
 
 life_istazed = false;
 life_isknocked = false;

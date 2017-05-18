@@ -86,6 +86,7 @@ class CfgFunctions {
             class keyManagement {};
             class vehicleUpdate {};
             class recupkeyforHC {};
+            class timers{};
         };
 		
 		class DynMarket	{

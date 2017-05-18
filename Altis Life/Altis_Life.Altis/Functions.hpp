@@ -89,6 +89,7 @@ class Life_Client_Core {
         class unrestrain {};
 		class craftAction {}; //CraftingAction
         class barrier {};
+        class loot {};
     };
 	
 	class CivTieing {
