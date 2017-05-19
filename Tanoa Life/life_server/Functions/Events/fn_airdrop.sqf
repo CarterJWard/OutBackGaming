@@ -11,10 +11,10 @@ _box1 = "Land_CargoBox_V1_F"; //Type of box that will be used to store the weapo
 
 //Check for set amount of players if not enough people are online will exit 
 waitUntil({side _x == civilian} count playableUnits < 1);
-sleep 200;
+uiSleep 200;
 //when timer runs out call the first alert
 ["Airdrop Mission","airdrop will be in 10 minutes",nil,""] remoteExec ["life_fnc_showNotification",civilian];
-sleep 300;
+uiSleep 300;
 
 //Select one of the markers which wil then become the airdrop location
 _dropLoc = ["drop_1","drop_2","drop_3","drop_4"] call BIS_fnc_selectRandom;
@@ -25,7 +25,7 @@ _marker = createMarker ["arMarker",getMarkerPos _dropLoc];
     "arMarker" setMarkerText "Airdrop";
 
 ["Airdrop Mission","Airdrop in 5 minutes",nil,""] remoteExec ["life_fnc_showNotification",civilian];
-sleep 240;
+uiSleep 240;
 //Create The vehicles 
 heli1 = "B_Heli_Transport_03_unarmed_F";
 bHeli = createVehicle [heli1, getMarkerPos _spawnPos, [], 0, "FLY"];
@@ -82,7 +82,7 @@ _container allowDamage false;
     _special = [_sp1,_sp2,_sp3,_sp4] call BIS_fnc_selectRandom;
 
 //Fill the box has a delay so it cannot be shot down
-sleep 30;
+uiSleep 30;
 _container addWeaponCargoGlobal _aRifle;
 _container addWeaponCargoGlobal _pistol;
 _container addWeaponCargoGlobal _mags;
@@ -90,9 +90,9 @@ _container addWeaponCargoGlobal _mags2;
 _container addWeaponCargoGlobal _special;
 
 //Destroy the box after 20 minutes
-sleep 1300;
+uiSleep 1300;
 ["Airdrop Mission","The airdrp supply box will self destruct in 10 secconds",nil,""] remoteExec ["life_fnc_showNotification",civilian];
-sleep 10;
+uiSleep 10;
 _container allowDamage true;
 _container setDamage 1;
 deleteMarker "arMarker";
