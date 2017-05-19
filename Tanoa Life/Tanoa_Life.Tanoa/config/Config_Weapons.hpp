@@ -200,12 +200,8 @@ class WeaponShops {
             { "launch_NLAW_F", "", 250000, 0, {"life_coplevel", "SCALAR", 4 } },
             { "DemoCharge_Remote_Mag", "", 20000, 2000, {"life_coplevel", "SCALAR", 2 } },
             { "srifle_EBR_F", "", 50000, 5000, {"life_coplevel", "SCALAR", 4} },
-            { "srifle_DMR_03_F", "", 50000, 5000, {"life_coplevel", "SCALAR", 4} }
-            //{ "SMG_02_ACO_F", "", 30000, -1, {"life_coplevel", "SCALAR", 2 } },
-            //{ "hgun_ACPC2_F", "", 17500, -1, {"life_coplevel", "SCALAR", 3 } },
-            // Snipers
-            //{ "srifle_DMR_07_blk_F", "", 32000, 5000, {"life_coplevel", "SCALAR", 3 } } //Apex DLC
-
+            { "srifle_DMR_03_F", "", 50000, 5000, {"life_coplevel", "SCALAR", 4 } },
+            { "MMG_01_hex_F", "", 40000, 2000, {"life_coplevel", "SCALAR", 4 } }
         };
         mags[] = {
             { "16Rnd_9x21_Mag", "", 0, 0, { "", "", -1 } },
@@ -222,6 +218,7 @@ class WeaponShops {
             { "9Rnd_45ACP_Mag", "", 0, 0, {"life_coplevel", "SCALAR", 3 } },
             { "20Rnd_650x39_Cased_Mag_F", "", 0, 0, {"life_coplevel", "SCALAR", 3 } }, //Apex DLC
             { "NLAW_F", "", 0, 0, {"life_coplevel", "SCALAR", 4 } },
+            { "150Rnd_93x64_Mag", "",300, 10, {"life_coplevel", "SCALAR", 4 } },
             { "Titan_AA", "", 20000, {"life_coplevel", "SCALAR", 5} }
         };
         accs[] = {

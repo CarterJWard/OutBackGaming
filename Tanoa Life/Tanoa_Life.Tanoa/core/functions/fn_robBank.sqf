@@ -52,7 +52,7 @@ if(_rip) then
 while{true} do
 {
 sleep 1;
-_cP = _cP + 0.005;
+_cP = _cP + 0.0008;
 _progress progressSetPosition _cP;
 _pgText ctrlSetText format["Robbery in Progress, stay close (10m) (%1%2)...",round(_cP * 100),"%"];
 _Pos = position player; // by ehno: get player pos
