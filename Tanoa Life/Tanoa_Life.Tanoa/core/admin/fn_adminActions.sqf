@@ -5,12 +5,14 @@ _type = [_this,0,false,[false]] call BIS_fnc_param;
 if (_type) then {life_adminAction = false};
 
 if(life_adminAction) then {
+		[0,format["Admin %1 has disabled admin quick actions ",profileName]] remoteExec ["life_fnc_broadcast",RCLIENT];
 		//[4,[profileName]] remoteExec ["TON_fnc_logs",RSERV];
 
 		hint "admin actions off";
 		{player removeAction _x} forEach admin_actions;
 		life_adminAction = false;
 } else {
+		if (!_type) then {[0,format["Admin %1 has enabled admin quick actions ",profileName]] remoteExec ["life_fnc_broadcast",RCLIENT];};
 		//[4,[profileName,true]] remoteExec ["TON_fnc_logs",RSERV];
 		hint "admin actions on";
 		admin_actions = [player addAction["<t color='#FF0000'>Heal/Repair Target</t>",{cursorTarget setDamage 0;}]];
