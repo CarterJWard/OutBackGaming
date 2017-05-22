@@ -1,13 +1,28 @@
 #include "..\..\script_macros.hpp"
 /*
-    File: fn_adminDebugCon.sqf
-    Author: ColinM9991
+    File: fn_adminGodMode.sqf
+    Author: Tobias 'Xetoxyc' Sittenauer
 
-    Description:
-    Opens the Debug Console.
+    Description: Enables God mode for Admin
 */
-if (FETCH_CONST(life_adminlevel) < 5) exitWith {closeDialog 0; hint localize "STR_NOTF_adminDebugCon";};
-life_admin_debug = true;
 
-createDialog "RscDisplayDebugPublic";
-[0,format [localize "STR_NOTF_adminHasOpenedDebug",profileName]] remoteExecCall ["life_fnc_broadcast",RCLIENT];
+if (FETCH_CONST(life_adminlevel) < 4) exitWith {closeDialog 0; hint localize "STR_ANOTF_ErrorLevel";};
+
+[] spawn {
+  while {dialog} do {
+   closeDialog 0;
+   sleep 0.01;
+  };
+};
+
+if (life_god) then {
+    life_god = false;
+    titleText [localize "STR_ANOTF_godModeOff","PLAIN"]; titleFadeOut 2;
+    [0,format["Admin %1 has turned off GodMode",profileName]] remoteExec ["life_fnc_broadcast",RCLIENT];
+    player allowDamage true;
+} else {
+    life_god = true;
+    titleText [localize "STR_ANOTF_godModeOn","PLAIN"]; titleFadeOut 2;
+    [0,format["Admin %1 has turned on GodMode",profileName]] remoteExec ["life_fnc_broadcast",RCLIENT];
+    player allowDamage false;
+};
