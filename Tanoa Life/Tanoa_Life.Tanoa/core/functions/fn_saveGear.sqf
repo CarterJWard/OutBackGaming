@@ -8,7 +8,7 @@
     Description:
     Saves the players gear for syncing to the database for persistence..
 */
-private ["_return","_uItems","_bItems","_vItems","_pItems","_hItems","_yItems","_uMags","_vMags","_bMags","_pMag","_hMag","_uni","_ves","_bag","_handled","_savedVirtualItems","_launch","_litems"];
+private ["_return","_uItems","_bItems","_vItems","_pItems","_hItems","_yItems","_uMags","_vMags","_bMags","_pMag","_hMag","_uni","_ves","_bag","_handled","_savedVirtualItems"];
 _return = [];
 _savedVirtualItems = LIFE_SETTINGS(getArray,"saved_virtualItems");
 
@@ -21,7 +21,6 @@ _return pushBack assignedITems player;
 if (playerSide isEqualTo west || playerSide isEqualTo civilian && {LIFE_SETTINGS(getNumber,"save_civilian_weapons") isEqualTo 1}) then {
     _return pushBack primaryWeapon player;
     _return pushBack handgunWeapon player;
-    _return pushBack secondaryWeapon player;
 } else {
     _return pushBack [];
     _return pushBack [];
@@ -36,7 +35,6 @@ _vItems = [];
 _vMags  = [];
 _pItems = [];
 _hItems = [];
-_litems = [];
 _yItems = [];
 _uni = [];
 _ves = [];
@@ -136,12 +134,6 @@ if (count (handgunItems player) > 0) then {
     } forEach (handGunItems player);
 };
 
-if (count (secondaryWeaponItems player) > 0) then {
-    {
-        _litems pushback _x;
-    } forEach (secondaryWeaponItems player);
-};
-
 {
     _val = ITEM_VALUE(_x);
     if (_val > 0) then {
@@ -157,7 +149,6 @@ _return pushBack _vItems;
 _return pushBack _vMags;
 _return pushBack _pItems;
 _return pushBack _hItems;
-_return pushback _litems;
 if (LIFE_SETTINGS(getNumber,"save_virtualItems") isEqualTo 1) then {
     _return pushBack _yItems;
 } else {
