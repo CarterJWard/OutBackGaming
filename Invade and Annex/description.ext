@@ -2,7 +2,7 @@
 
 author = Rarek, AhoyWorld, Quiksilver;					// Visible when loading mission
 onLoadName = "Invade & Annex";						// Visible when loading mission
-OnLoadMission = "Welcome to Borderline Servers, join us at ts.borderlineservers.com";
+OnLoadMission = "Welcome to GIG Invade and Annex. Hop on our teamspeak at 221.121.157.130:9991";
 loadScreen = "media\images\loading.jpg";				// Visible when loading mission
 overviewPicture = "media\images\loading.jpg";			// Visible when selecting mission	
 
