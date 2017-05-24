@@ -2,7 +2,6 @@
 /*
     File: fn_loadGear.sqf
     Author: Bryan "Tonic" Boardwine
-
     Description:
     Loads saved civilian gear, this is limited for a reason and that's balance.
 */
