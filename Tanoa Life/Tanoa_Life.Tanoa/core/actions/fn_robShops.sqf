@@ -24,7 +24,7 @@ _mod params [
 	["_value",3000,[3000]],
 	["_time",0.85,[0.85]],
 	["_items",[],[[]]],
-	["_cops",0,[0]],
+	["_cops",2,[2]],
 	["_alarmChance",1,[1]],
 	["_itemChance",1,[1]]
 ];
