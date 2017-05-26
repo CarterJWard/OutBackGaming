@@ -132,11 +132,10 @@ class CarShops {
     class cop_air {
         side = "cop";
         vehicles[] = {
-            { "B_Heli_Light_01_F", { "life_coplevel", "SCALAR", 3 } },
+            { "B_Heli_Light_01_F", { "life_coplevel", "SCALAR", 2 } },
             { "B_Heli_Transport_01_F", { "life_coplevel", "SCALAR", 4 } },
             { "I_Heli_light_03_unarmed_F", { "life_coplevel", "SCALAR", 5 } },
             { "B_Heli_Transport_03_unarmed_F", { "life_coplevel", "SCALAR", 6 } },
-            { "B_T_VTOL_01_armed_F", { "life_coplevel", "SCALAR", 11} },
             { "B_T_VTOL_01_infantry_F", { "life_coplevel", "SCALAR", 6} },
             { "I_Heli_light_03_F", { "life_coplevel", "SCALAR", 7} },
             { "B_T_VTOL_01_vehicle_F", { "life_coplevel", "SCALAR", 4} },

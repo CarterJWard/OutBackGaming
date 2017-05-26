@@ -72,9 +72,9 @@ DYNMARKET_Items_ToTrack        =
 	["glass",1900],
 	["diamond_cut",2530],
 	["cement",2350],
-	["heroin_processed",5500],
-	["marijuana",5250],
-	["cocaine_processed",6300]
+	["heroin_processed",5700],
+	["marijuana",5000],
+	["cocaine_processed",6400]
 ];
 
 //███████████████████████████████████████████████████████████████████████
