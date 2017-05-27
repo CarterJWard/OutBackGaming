@@ -55,6 +55,7 @@ life_cooking = false;
 life_fire = false;
 life_mission = false;
 arrived = false;
+life_gang_bank_time = 0;
 
 //Settings
 life_settings_enableNewsBroadcast = profileNamespace getVariable ["life_enableNewsBroadcast",true];

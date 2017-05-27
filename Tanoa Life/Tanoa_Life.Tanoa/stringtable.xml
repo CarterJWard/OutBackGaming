@@ -339,7 +339,7 @@
             <Original>You have withdrawn $%1 from your gang.</Original>
         </Key>
         <Key ID="STR_ATM_WithdrawInUseG">
-            <Original>Someone is already trying to withdraw from your gang.</Original>
+            <Original>Reconnecting to bank server. Please wait 10 seconds to withdraw from your gang's bank account.</Original>
         </Key>
         <Key ID="STR_ATM_NotEnoughCash">
             <Original>You do not have that much cash on you.</Original>
@@ -351,7 +351,7 @@
             <Original>You have deposited $%1 into your gang's bank account</Original>
         </Key>
         <Key ID="STR_ATM_DepositInUseG">
-            <Original>Someone is already trying to deposit into your gang's bank account.</Original>
+            <Original>Reconnecting to bank server. Please wait 10 seconds to deposit into your gang's bank account</Original>
         </Key>
     </Package>
      <Package name="Cell_Phone">
