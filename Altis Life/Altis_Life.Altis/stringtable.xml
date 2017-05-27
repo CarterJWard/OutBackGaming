@@ -5753,6 +5753,12 @@
         </Key>
     </Package>
     <Package name="Life_Items">
+        <Key ID="STR_Item_Handcuffs">
+            <Original>Handcuffs</Original>
+        </Key>
+        <Key ID="STR_Item_Keys">
+            <Original>Keys</Original>
+        </Key>
         <Key ID="STR_Item_Cannabis">
             <Original>Marijuana leaf</Original>
             <Czech>marihuana list</Czech>

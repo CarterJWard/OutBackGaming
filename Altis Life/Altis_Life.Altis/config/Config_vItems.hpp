@@ -193,6 +193,28 @@ class VirtualItems {
         edible = -1;
         icon = "icons\blindfold.paa";
     };
+    
+    class handcuffs {
+        variable = "handcuffs";
+        displayName = "STR_Item_handcuffs";
+        weight = 1;
+        buyPrice = 25;
+        sellPrice = -1;
+        illegal = false;
+        edible = -1;
+        icon = "icons\ico_cuffs.paa";
+    };	
+	
+    class keys {
+        variable = "keys";
+        displayName = "STR_Item_Keys";
+        weight = 1;
+        buyPrice = 25;
+        sellPrice = -1;
+        illegal = false;
+        edible = -1;
+        icon = "icons\ico_keys.paa";
+    };
 
     class defibrillator {
         variable = "defibrillator";

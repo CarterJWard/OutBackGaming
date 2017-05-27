@@ -8,6 +8,8 @@
 */
 private["_unit"];
 _unit = param [0,ObjNull,[ObjNull]];
+if(!([false,"keys",1] call life_fnc_handleInv)) exitWith { hint "You dont have Handcuff key's"; };
+[true,"keys",1] call life_fnc_handleInv; // Remove if you want the keys a one time use. 
 if (isNull _unit || !(_unit getVariable ["restrained",FALSE])) exitWith {}; //Error check?
 
 _unit setVariable ["restrained",FALSE,TRUE];
