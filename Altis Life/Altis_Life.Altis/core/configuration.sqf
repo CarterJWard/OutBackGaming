@@ -93,7 +93,7 @@ life_isknocked = false;
 life_vehicles = [];
 life_nlrtimer_running = false;
 life_nlrtimer_stop = false;
-
+life_seatbelt = false;
 /*
     Master Array of items?
 */
