@@ -1078,7 +1078,7 @@
             <German>Du hast $%1 vom Gang-Konto abgehoben.</German>
         </Key>
         <Key ID="STR_ATM_WithdrawInUseG">
-            <Original>Someone is already trying to withdraw from your gang.</Original>
+            <Original>Reconnecting to bank server. Please wait 10 seconds to withdraw from your gang's bank account.</Original>
             <Czech>Někdo se již snaží ustoupit od svého gangu.</Czech>
             <French>Quelqu'un essaie déjà de retirer de l'argent de votre gang.</French>
             <Spanish>Alguien ya esta tratando de retirar dinero de tu pandilla.</Spanish>
@@ -1122,7 +1122,7 @@
             <Polish>Zdeponowałeś na koncie gangu kwotę $%1 </Polish>
         </Key>
         <Key ID="STR_ATM_DepositInUseG">
-            <Original>Someone is already trying to deposit into your gang's bank account.</Original>
+            <Original>Reconnecting to bank server. Please wait 10 seconds to deposit into your gang's bank account.</Original>
             <Czech>Někdo se již snaží vložit na bankovní účet svého gangu.</Czech>
             <French>Quelqu'un essaie déjà de déposer dans le compte bancaire de votre gang.</French>
             <Spanish>Alguien ya esta tratando de depositar en la cuenta de banco de tu pandilla.</Spanish>

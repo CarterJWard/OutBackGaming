@@ -53,6 +53,7 @@ life_taxi_onDuty = false;
 life_taxi_call = false;
 life_mission = false; 
 arrived = false;
+life_gang_bank_time = 0;
 
 //Settings
 life_settings_enableSidechannel = profileNamespace getVariable["life_enableSidechannel",false];
