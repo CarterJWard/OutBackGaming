@@ -7,3 +7,5 @@
 */
 if (!(_this select 0)) exitWith {}; //Not server
 [] call compile preprocessFileLineNumbers "\life_server\init.sqf";
+diag_log "Attempting to initialize Towing";
+[] execVM "scripts\initTowing.sqf";
