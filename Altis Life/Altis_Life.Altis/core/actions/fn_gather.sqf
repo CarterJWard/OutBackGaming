@@ -6,7 +6,7 @@
     Description:
     Main functionality for gathering.
 */
-private["_maxGather","_resource","_amount","_maxGather","_requiredItem"];
+private["_maxGather","_resource","_amount","_maxGather","_requiredItem","_profType"];
 if (life_action_inUse) exitWith {};
 if ((vehicle player) != player) exitWith {};
 if (player getVariable "restrained") exitWith {
@@ -53,7 +53,13 @@ if (_requiredItem != "") then {
 
 if (_exit) exitWith {life_action_inUse = false;};
 
-_amount = round(random(_maxGather)) + 1;
+//Find prof type and get level
+_profType = [_resource] call life_fnc_profType;
+_flag = PROF_SIDE(playerside);
+_data = PROF_VALUE(_profType,_flag);
+_level = _data select 0;
+
+_amount = _maxGather + _level
 _diff = [_resource,_amount,life_carryWeight,life_maxWeight] call life_fnc_calWeightDiff;
 if (_diff isEqualTo 0) exitWith {
 	["Error", format [localize "STR_NOTF_InvFull"],[1,0,0,1],""] call life_fnc_showNotification; 
@@ -76,6 +82,9 @@ if ([true,_resource,_diff] call life_fnc_handleInv) then {
     _itemName = M_CONFIG(getText,"VirtualItems",_resource,"displayName");
     titleText[format[localize "STR_NOTF_Gather_Success",(localize _itemName),_diff],"PLAIN"];
 };
+
+//Add XP
+[_profType,round(_level) * 5] call life_fnc_addExp;
 
 sleep 1;
 life_action_inUse = false;

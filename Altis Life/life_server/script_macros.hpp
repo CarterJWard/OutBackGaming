@@ -46,6 +46,9 @@
 #define ITEM_BUYPRICE(varName) M_CONFIG(getNumber,"VirtualItems",ITEM_VARNAME(varName),"buyPrice")
 #define ITEM_NAME(varName) M_CONFIG(getText,"VirtualItems",varName,"displayName")
 #define ITEM_WEIGHT(varName) M_CONFIG(getNumber,"VirtualItems",varName,"weight")
+#define PROF_VARNAME(varName,flag) format["Prof_%1_%2",flag,M_CONFIG(getText,"Profs",varName,"variable")]
+#define PROF_VALUE(varName,flag) GVAR_MNS [PROF_VARNAME(varName,flag),[1,0]]
+#define PROF_SIDE(flag) switch(flag) do {case civilian: {"civ"}; case west: {"cop"}; case independent: {"med"};};
 
 //Condition Macros
 #define KINDOF_ARRAY(a,b) [##a,##b] call {_veh = _this select 0;_types = _this select 1;_res = false; {if (_veh isKindOf _x) exitWith { _res = true };} forEach _types;_res}

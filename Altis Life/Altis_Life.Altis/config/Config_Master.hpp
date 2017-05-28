@@ -204,3 +204,4 @@ class Life_Settings {
 #include "Config_Process.hpp"
 #include "Config_Craft.hpp"
 #include "Config_Loot.hpp"
+#include "Config_Prof.hpp"

@@ -110,3 +110,10 @@ life_seatbelt = false;
 
     missionNamespace setVariable [LICENSE_VARNAME(_varName,_sideFlag),false];
 } forEach ("true" configClasses (missionConfigFile >> "Licenses"));
+//Setup profs
+{
+	_varName = getText(_x >> "variable");
+	_sideFlag = getText(_x >> "side");
+
+	SVAR_MNS [PROF_VARNAME(_varName,_sideFlag),[1,0]];
+} foreach ("true" configClasses (missionConfigFile >> "Profs"));

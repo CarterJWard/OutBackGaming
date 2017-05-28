@@ -268,6 +268,9 @@ class Life_Client_Core {
         class seatBelt {};
         class robStore {};
         class robBank {};
+        class addExp {};
+        class profType {};
+        class profSetUp {};
     };
 
     class Gangs    {
