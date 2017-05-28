@@ -158,7 +158,7 @@ if (life_HC_isActive) then {
     [getPlayerUID player,player getVariable["realname",name player]] remoteExec ["life_fnc_wantedProfUpdate",RSERV];
 };
 
-[] execVM "scripts\safezone.sqf";
+[] execVM "scripts\fn_safezone.sqf";
 DYNAMICMARKET_boughtItems = [];
 [player] remoteExec ["TON_fnc_playerLogged",RSERV];
 
