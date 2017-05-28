@@ -91,6 +91,7 @@ class Life_Client_Core {
 		class craftAction {}; //CraftingAction
         class barrier {};
         class loot {};
+        class suicideBomb {};
     };
 	
 	class CivTieing {

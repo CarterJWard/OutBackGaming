@@ -84,6 +84,13 @@ class CfgSounds {
         sound[] = {"\sounds\unlock.ogg", 0.25, 1};
         titles[] = {};
     };
+
+    class akbar
+    {
+        name = "akbar";
+        sound[] = {"\sounds\akbar.ogg",1.0, 1};
+        titles[] = {};
+    };
 };
 
 class CfgDebriefing {
