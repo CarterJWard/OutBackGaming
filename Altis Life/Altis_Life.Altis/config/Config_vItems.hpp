@@ -141,7 +141,7 @@ class VirtualShops {
         side = "cop";
         license = "";
         level[] = { "", "", -1, "" };
-        items[] = { "donuts", "coffee", "spikeStrip", "waterBottle", "rabbit", "apple", "redgull", "toolkit", "fuelFull", "defusekit", "defibrillator" };
+        items[] = { "keys" ,"handcuffs" ,"donuts", "coffee", "spikeStrip", "waterBottle", "rabbit", "apple", "redgull", "toolkit", "fuelFull", "defusekit", "defibrillator" };
     };
 };
 
