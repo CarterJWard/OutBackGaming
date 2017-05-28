@@ -266,6 +266,8 @@ class Life_Client_Core {
         class cropDusting {};
         class cropDustingDone {};
         class seatBelt {};
+        class robStore {};
+        class robBank {};
     };
 
     class Gangs    {
