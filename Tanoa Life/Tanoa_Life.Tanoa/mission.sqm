@@ -421,7 +421,7 @@ class Mission
 {
 	class Intel
 	{
-		briefingName="Tanoa Life | GIG | Military vs Guerilla";
+		briefingName="Tanoa Life | GIG | Military vs Guerrilla";
 		overviewText="@STR_MISC_overviewText";
 		startWeather=0.099999994;
 		startWind=0.29999998;
