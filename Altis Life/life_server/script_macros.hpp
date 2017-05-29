@@ -3,6 +3,7 @@
 #define CASH life_cash
 #define BANK life_atmbank
 #define GANG_FUNDS group player getVariable ["gang_bank",0];
+#define SEL(ARRAY,INDEX) (ARRAY select INDEX)
 
 /*
     remoteExec Section

@@ -43,7 +43,7 @@ class Profs {
         variable = "Sugar_Prof";
         name = "STR_Prof_Sugar";
         tag = "Sugar";
-        side = "civ";
+        side = "civ"; 
     };
     
     class Diamond_Prof{

@@ -46,7 +46,7 @@ if (count (_this select 6) > 0) then {
     {missionNamespace setVariable [(_x select 0),(_x select 1)];} forEach (_this select 6);
 };
 
-life_gear = _this select 8;
+life_gear = _this select 8; 
 [true] call life_fnc_loadGear;
 
 //Parse side specific information.
@@ -60,6 +60,9 @@ switch (playerSide) do {
             life_thirst = ((_this select 10) select 1);
             player setDamage ((_this select 10) select 2);
         };
+        if(count (SEL(_this,11)) > 0) then {
+		{SVAR_MNS [SEL(_x,0),[SEL(SEL(_x,1),0),SEL(SEL(_x,1),1)]]} forEach (SEL(_this,11));
+		};
     };
 
     case civilian: {
@@ -93,6 +96,11 @@ switch (playerSide) do {
             [] spawn life_fnc_initGang;
         };
         [] spawn life_fnc_initHouses;
+        
+        if(count (SEL(_this,15)) > 0) then {
+		    {SVAR_MNS [SEL(_x,0),[SEL(SEL(_x,1),0),SEL(SEL(_x,1),1)]]} forEach (SEL(_this,15));
+		};
+
     };
 
     case independent: {
@@ -103,11 +111,14 @@ switch (playerSide) do {
             life_thirst = ((_this select 9) select 1);
             player setDamage ((_this select 9) select 2);
         };
+        if(count (SEL(_this,10)) > 0) then {
+		{SVAR_MNS [SEL(_x,0),[SEL(SEL(_x,1),0),SEL(SEL(_x,1),1)]]} forEach (SEL(_this,10));
+		};
     };
 };
 
-if (count (_this select 15) > 0) then {
-    {life_vehicles pushBack _x;} forEach (_this select 15);
+if (count (_this select 16) > 0) then {
+    {life_vehicles pushBack _x;} forEach (_this select 16);
 };
 
 life_session_completed = true;

@@ -59,10 +59,10 @@ for "_i" from 1 to (_cnt + _amount) do
 FNC_seeker = 
 {
     params [
-        "_seeker",
+    "_seeker",
 	"_dropLoc",
 	"_value",
-	"_timer".
+	"_timer",
 	"_mark"
     ];
     private _cnt = 0;

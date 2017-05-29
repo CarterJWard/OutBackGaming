@@ -98,7 +98,7 @@ class VirtualShops {
 
     class iron  {
         name = "STR_Shops_Minerals";
-        side = "civ";
+        side = "civ";  
         license = "";
         level[] = { "", "", -1, "" };
         items[] = { "iron_refined", "copper_refined" };

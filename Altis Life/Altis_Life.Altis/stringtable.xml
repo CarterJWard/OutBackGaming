@@ -2249,6 +2249,9 @@
             <Portuguese>Sincronizar Dados</Portuguese>
             <Polish>Synchronizuj</Polish>
         </Key>
+		<Key ID="STR_PM_Skills">
+			<Original>Skills</Original>
+		</Key>
     </Package>
     <Package name="Settings_Menu">
         <Key ID="STR_SM_Title">
@@ -10995,4 +10998,6 @@
 			<Original>You already have something on! Make yourself naked and try again.</Original>
 		</Key>
 	</Package>
+    <Package Name="Skills">
+    </Package>
 </Project>

@@ -6,7 +6,7 @@
     Description:
     Main functionality for gathering.
 */
-private["_maxGather","_resource","_amount","_maxGather","_requiredItem","_profType"];
+private["_maxGather","_resource","_amount","_maxGather","_requiredItem","_profType"]; 
 if (life_action_inUse) exitWith {};
 if ((vehicle player) != player) exitWith {};
 if (player getVariable "restrained") exitWith {
@@ -59,7 +59,7 @@ _flag = PROF_SIDE(playerside);
 _data = PROF_VALUE(_profType,_flag);
 _level = _data select 0;
 
-_amount = _maxGather + _level
+_amount = _maxGather + _level;
 _diff = [_resource,_amount,life_carryWeight,life_maxWeight] call life_fnc_calWeightDiff;
 if (_diff isEqualTo 0) exitWith {
 	["Error", format [localize "STR_NOTF_InvFull"],[1,0,0,1],""] call life_fnc_showNotification; 
