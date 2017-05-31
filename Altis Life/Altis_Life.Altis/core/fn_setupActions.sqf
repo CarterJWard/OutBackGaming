@@ -19,6 +19,7 @@ switch (playerSide) do {
 		life_actions = life_actions + [player addAction["<t color='#fdff01'>Loot</t>",life_fnc_loot,"1",0,false,false,"",'(str cursorObject find ": paper" > 0 && cursorObject animationPhase ((animationNames cursorObject) select 0) > 0) && (vehicle player) distance cursorObject < 3 && playerSide isEqualTo civilian && !((cursorObject in (missionNamespace getVariable["looted",[]]))) ']];
         //Suicide alahsnackbar
 		life_actions = life_actions + [player addAction["<t color='#FF0000'>Activate Suicide Vest</t>",life_fnc_suicideBomb,"",0,false,false,"",' vest player == "V_HarnessOGL_gry" && alive player && playerSide == civilian && !life_istazed && !(player getVariable "restrained") && !(player getVariable "Escorting") && !(player getVariable "transporting")']];
+        life_actions = life_actions + [player addAction["<t color='#FF0000'>Activate Deadman Switch</t>",life_fnc_deadMan,"",0,false,false,"",' vest player == "V_HarnessOGL_gry" && alive player && playerSide == civilian && !life_istazed && !(player getVariable "restrained") && !(player getVariable "Escorting") && !(player getVariable "transporting") && !life_deadMan']];
     };
 	
 	case west: {
