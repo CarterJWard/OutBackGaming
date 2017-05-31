@@ -541,6 +541,9 @@ SA_Can_Take_Tow_Ropes = {
 	} else {
 		false;
 	};
+	if (!license_civ_Towing) then {
+		false;
+	};
 };
 
 SA_Put_Away_Tow_Ropes_Action = {

@@ -72,6 +72,14 @@ class Licenses {
         side = "civ";
     };
 
+    class towing {
+        variable = "towing";
+        displayName = "Towing License"; //Localize
+        price = 50000;
+        illegal = false;
+        side = "civ";
+    };
+
     //Processing Licenses
     class oil {
         variable = "oil";
