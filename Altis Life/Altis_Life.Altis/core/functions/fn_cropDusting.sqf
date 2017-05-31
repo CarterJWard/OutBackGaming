@@ -25,8 +25,8 @@ _arr params [
 ];
 
 /* EDIT THESE TO YOUR LIKING */
-cropDist = 400; //The distance you must stay within while dusting to get bonus at end
-private _planes = [["sab_piper2",140],["sab_FAAllegro",150],["sab_RobinDR400_2",190]]; //planes and their average speeds
+cropDist = 500; //The distance you must stay within while dusting to get bonus at end
+private _planes = [["C_Plane_Civil_01_F",140],["  C_Plane_Civil_01_racing_F",150]]; //planes and their average speeds
 /* THE FOLLOWING IS AS FOLLOWS ["MARKER START INITIALISE",["MARKER1","MARKER2"...ETC]] */
 private _routes = [["air_g_1",["cropdust_1","cropdust_2","cropdust_3","cropdust_4","cropdust_5","cropdust_6","cropdust_7","cropdust_8"]],["air_g_2",["cropdust_1","cropdust_2","cropdust_3","cropdust_4","cropdust_5","cropdust_6","cropdust_7","cropdust_8"]]]; 
 
@@ -60,7 +60,8 @@ if !([false,"pesticide",1] call life_fnc_handleInv) exitWith {hint "You need pes
 _actionOwner removeAction _action;
 _togoPoints = _routeFound;
 life_mission = true;
-titleText ["Crop dusting mission started! Get to the first location before the timer runs out!", "PLAIN", 3];
+//titleText ["Crop dusting mission started! Get to the first location before the timer runs out!", "PLAIN", 3];
+["Crop Dusting","Crop dusting mission started! Get to the first location before the timer runs out!",nil,""] call life_fnc_showNotification;
 
 {
     private _dist = _unit distance getMarkerPos _x;

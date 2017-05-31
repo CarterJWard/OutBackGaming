@@ -13,31 +13,27 @@ class LootCfg {
     
     class LootRare {
     loot_rare[] = 
-        { 
-		/* ENTRY EXAMPLES
-            { "engine","ymenu" }, 
-            { "A3L_SuicideVest", "imenu" }
-		*/
+        {
+            { "Goldbar","ymenu" },
+            { "spikestrip", "ymenu" }
         };
     };
     
     class LootNorm {
     loot_norm[] = 
         { 
-		/* ENTRY EXAMPLES
-            { "engine","ymenu" }, 
-            { "A3L_SuicideVest", "imenu" }
-		*/
+            {"diamond_cut", "ymenu" },
+            { "lockpick" , "ymenu" }
         };
     };
     
     class LootEasy {
     loot_easy[] = 
         {  
-		/* ENTRY EXAMPLES
-            { "engine","ymenu" }, 
-            { "A3L_SuicideVest", "imenu" }
-		*/
+            { "copper", "ymenu" },
+            { "apple", "ymenu" },
+            { "waterbottle", "ymenu" },
+            { "peach", "ymenu" }
         };    
     };
 };

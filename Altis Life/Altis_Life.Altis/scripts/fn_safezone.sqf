@@ -8,8 +8,6 @@
     Edit the #defines below. The numeric value after the variable name of the marker will define how big the radius is. (Measured in metres)
 */
 
-#define CIV_MSG "You are entering a SafeZone. Do not commit crimes, rob people, or kill!"
-
 #define SAFETY_ZONES    [["Rebel_North_Marker", 300], ["Rebel_South_Marker", 150], ["Marker-Variable-Name", 250], ["Marker-Variable-Name", 250]]
 
      if (isDedicated) exitWith {};
@@ -27,7 +25,7 @@ switch (playerSide) do
             {
              deleteVehicle (_this select 6);
               
-             titleText [CIV_MSG, "PLAIN", 3];
+             ["Safezone","You are entering a safezone. There is to be no robbing / killing ",nil,""] call life_fnc_showNotification;
             };
         }];
 	};
