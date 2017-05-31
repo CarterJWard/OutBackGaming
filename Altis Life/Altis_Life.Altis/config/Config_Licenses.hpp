@@ -66,7 +66,7 @@ class Licenses {
 
     class taxi {
         variable = "taxi";
-        displayName = "";
+        displayName = "STR_License_Taxi";
         price = 40000;
         illegal = false;
         side = "civ";
@@ -74,7 +74,7 @@ class Licenses {
 
     class towing {
         variable = "towing";
-        displayName = "Towing License"; //Localize
+        displayName = "STR_License_Towing"; 
         price = 50000;
         illegal = false;
         side = "civ";

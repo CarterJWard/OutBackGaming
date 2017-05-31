@@ -6752,6 +6752,12 @@
             <Portuguese>Licença de Casas</Portuguese>
             <Polish>Zarządca nieruchomości</Polish>
         </Key>
+        <Key ID="STR_License_Taxi">
+            <Original>Taxi License</Original>
+        </Key>
+        <Key ID="STR_License_Towing">
+            <Original>Towing License</Original>
+        </Key>
     </Package>
     <Package name="More_Item_Strings">
         <Key ID="STR_ISTR_Blast_VaultOnly">
