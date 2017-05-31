@@ -11,6 +11,7 @@ _type = [_this,0,"",[""]] call BIS_fnc_param;
 _amount = [_this,1,0,[0]] call BIS_fnc_param; 
 _profData = PROF_VALUE(_type,_flag);
 
+hint _type;
 _level = (SEL(_profData,0));
 _exp = (SEL(_profData,1));
 _nextLevel = 0;
