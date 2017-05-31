@@ -71,7 +71,7 @@ class Profs {
     class pCop {
         variable = "pCop";
         name = "STR_Prof_Cop";
-        tag = "Military";
+        tag = "Cop";
         side = "cop";
     };
     

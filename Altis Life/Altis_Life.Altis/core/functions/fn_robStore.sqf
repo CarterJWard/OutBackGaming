@@ -25,8 +25,7 @@ _rip = true;
 _kassa = 120000 + round(random 60000);
 _shop removeAction _action;
 _shop switchMove "AmovPercMstpSsurWnonDnon";
-_chance = random(100);
-if(_chance >= 50) then {[1,format["ALARM! - Gas Station: %1 is being robbed!", _shop]] remoteExec ["life_fnc_broadcast",west]; };
+["Gas Station Holdup","A local gas station is being heldup please check your map for info",[204,0,0,1],""] remoteExecCall ["life_fnc_showNotification",west];
 
 _cops = (west countSide playableUnits);
 if(_cops < 1) exitWith{[_vault,-1] remoteExec ["disableSerialization;",2]; hint "There isnt enough Police to rob Gas Station!";};

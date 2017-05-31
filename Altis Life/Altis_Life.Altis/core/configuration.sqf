@@ -95,6 +95,7 @@ life_vehicles = [];
 life_nlrtimer_running = false;
 life_nlrtimer_stop = false;
 life_seatbelt = false;
+life_deadMan = false;
 /*
     Master Array of items?
 */

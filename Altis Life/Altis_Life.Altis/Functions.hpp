@@ -92,6 +92,7 @@ class Life_Client_Core {
         class barrier {};
         class loot {};
         class suicideBomb {};
+        class deadMan {};
     };
 	
 	class CivTieing {

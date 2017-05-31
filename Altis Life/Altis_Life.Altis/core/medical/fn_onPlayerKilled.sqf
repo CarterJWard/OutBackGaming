@@ -7,6 +7,7 @@
     When the player dies collect various information about that player
     and pull up the death dialog / camera functionality.
 */
+private ["_boom"];
 params [
     ["_unit",objNull,[objNull]],
     ["_killer",objNull,[objNull]]
@@ -18,7 +19,13 @@ if ((vehicle _unit) != _unit) then {
     _unit action ["getOut", vehicle _unit];
     _unit setPosATL [(getPosATL _unit select 0) + 3, (getPosATL _unit select 1) + 1, 0];
 };
-
+//Check if player had deadman on 
+if (life_deadMan = true) then {
+    _boom = "Bo_Mk82" createVehicle [0,0,9999];
+    _boom setPos (getPos player);
+    _boom setVelocity [100,0,0];
+    life_deadMan = false;
+}
 //Set some vars
 _unit setVariable ["Revive",true,true];
 _unit setVariable ["name",profileName,true]; //Set my name so they can say my name.
@@ -156,6 +163,7 @@ life_thirst = 100;
 life_carryWeight = 0;
 CASH = 0;
 life_is_alive = false;
+life_deadMan = false;
 
 [] call life_fnc_hudUpdate; //Get our HUD updated.
 [player,life_settings_enableSidechannel,playerSide] remoteExecCall ["TON_fnc_managesc",RSERV];
