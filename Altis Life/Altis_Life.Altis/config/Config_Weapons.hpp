@@ -44,22 +44,55 @@ class WeaponShops {
         license = "rebel";
         level[] = { "", "", -1, "" };
         items[] = {
+            { "hgun_Pistol_heavy_01_F", "", 15000, 2000 },
             { "arifle_TRG20_F", "", 25000, 2500 },
             { "arifle_Katiba_F", "", 30000, 5000 },
-            { "srifle_DMR_01_F", "", 50000, -1 },
-            { "arifle_SDAR_F", "", 20000, 7500 }
+            { "arifle_Mk20_F", "", 35000, 5000 },
+            { "srifle_DMR_01_F", "", 50000, 6000 },
+            { "arifle_SDAR_F", "", 20000, 7500 },
+            { "arifle_AK12_F", "", 90000, 10000 },
+            { "srifle_EBR_F", "", 100000, 10000 },
+            { "MMG_01_hex_F", "", 900000, 50000 },
+            { "LMG_Mk200_F", "", 600000, 45000 },
+            { "MMG_02_camo_F", "", 700000, 100000 },
+            { "LMG_Zafir_F", "", 750000, 49000 },
+            { "srifle_DMR_06_olive_F", "", 150000, 20000 },
+            { "srifle_DMR_02_sniper_F", "", 650000, 60000 },
+            { "srifle_DMR_03_khaki_F", "", 70000, 10000 },
+            { "srifle_DMR_04_Tan_F", "", 550000, 70000 },
+            { "srifle_DMR_05_hex_F", "", 600000, 100000 },
+            { "srifle_LRR_F", "", 1100000, 100000 },
+            { "srifle_GM6_F", "", 1300000, 120000 },
+            { "SatchelCharge_Remote_Mag", "", 150000, -1 }
         };
         mags[] = {
+            { "11Rnd_45ACP_Mag", "", 150 },
             { "30Rnd_556x45_Stanag", "", 300 },
             { "30Rnd_65x39_caseless_green", "", 275 },
             { "10Rnd_762x54_Mag", "", 500 },
-            { "20Rnd_556x45_UW_mag", "", 125 }
+            { "20Rnd_556x45_UW_mag", "", 125 },
+            { "30Rnd_762x39_Mag_F", "", 650},
+            { "150Rnd_93x64_Mag", "", 4500 },
+            { "200Rnd_65x39_cased_Box", "", 1500 },
+            { "150Rnd_762x54_Box", "", 3000 },
+            { "7Rnd_408_Mag", "", 4500 },
+            { "20Rnd_762x51_Mag", "", 4600 },
+            { "5Rnd_127x108_Mag", "", 5000 },
+            { "5Rnd_127x108_APDS_Mag", "GM6 Headpoppers", 10000 },
+            { "10Rnd_338_Mag", "", 7000 },
+            { "10Rnd_127x54_Mag", "", 5000 },
+            { "10Rnd_93x64_DMR_05_Mag", "", 5000 },
+            { "130Rnd_338_Mag", "", 6000 }
         };
         accs[] = {
             { "optic_ACO_grn", "", 3500 },
             { "optic_Holosight", "", 3600 },
             { "optic_Hamr", "", 7500 },
-            { "acc_flashlight", "", 1000 }
+            { "acc_flashlight", "", 1000 },
+            { "muzzle_snds_M", "", 20000 },
+            { "optic_DMS", "", 30000 },
+            { "optic_LRPS", "", 200000 },
+            { "optic_AMS", "", 70000 }
         };
     };
 
@@ -132,15 +165,13 @@ class WeaponShops {
 
     //Cop Shops
     class cop_basic {
-        name = "Altis Cop Shop";
+        name = "Recruit Police Shop";
         side = "cop";
         license = "";
         level[] = { "", "", -1, "" };
         items[] = {
             { "arifle_sdar_F", "Taser Rifle", 20000, 7500 },
-            { "hgun_P07_snds_F", "Stun Pistol", 2000, 650 },
-            { "hgun_P07_F", "", 7500, 1500 },
-            { "HandGrenade_Stone", "Flashbang", 1700, -1 },
+            { "hgun_P07_snds_F", "Stun Pistol", 2000, 650 },,
             { "Binocular", "", 150, -1 },
             { "ItemGPS", "", 100, 45 },
             { "FirstAidKit", "", 150, 65 },
@@ -155,8 +186,8 @@ class WeaponShops {
         };
     };
 
-    class cop_patrol {
-        name = "Altis Patrol Officer Shop";
+    class cop_cadet {
+        name = "Cadet Police Shop";
         side = "cop";
         license = "";
         level[] = { "", "", -1, "" };
@@ -181,8 +212,8 @@ class WeaponShops {
         };
     };
 
-    class cop_sergeant {
-        name = "Altis Sergeant Officer Shop";
+    class cop_constable {
+        name = "Constable Shop";
         side = "cop";
         license = "";
         level[] = { "", "", -1, "" };
@@ -204,7 +235,16 @@ class WeaponShops {
             { "muzzle_snds_H", "", 2750 }
         };
     };
-
+    class cop_snrConstable {};
+    class cop_lsnrConstable {};
+    class cop_sergeant {};
+    class cop_incSergeant {};
+    class cop_snrSergeant {};
+    class cop_inspector
+    class cop_cheifInspector {};
+    class cop_superintendent {};
+    class cop_csuperintendent {};
+    class cop_commissioner {};
     //Medic Shops
     class med_basic {
         name = "store";
