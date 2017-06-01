@@ -235,7 +235,7 @@ class WeaponShops {
             { "muzzle_snds_H", "", 2750 }
         };
     };
-    class cop_snrConstable {};
+   /* class cop_snrConstable {};
     class cop_lsnrConstable {};
     class cop_sergeant {};
     class cop_incSergeant {};
@@ -244,7 +244,7 @@ class WeaponShops {
     class cop_cheifInspector {};
     class cop_superintendent {};
     class cop_csuperintendent {};
-    class cop_commissioner {};
+    class cop_commissioner {};*/
     //Medic Shops
     class med_basic {
         name = "store";
