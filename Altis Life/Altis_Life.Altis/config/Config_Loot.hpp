@@ -23,7 +23,8 @@ class LootCfg {
     loot_norm[] = 
         { 
             {"diamond_cut", "ymenu" },
-            { "lockpick" , "ymenu" }
+            { "lockpick" , "ymenu" },
+            { "pesticide", "ymenu" }
         };
     };
     

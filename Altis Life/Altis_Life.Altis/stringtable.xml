@@ -3,25 +3,12 @@
     <Package name="Shop_Names">
         <Key ID="STR_Shops_C_Bruce">
             <Original>Bruce's Outback Outfits</Original>
-            <Czech>Bruceovy Outback Oblečení</Czech>
-            <French>Friperie de Bruce</French>
-            <Spanish>Tienda de Ropa</Spanish>
-            <Russian></Russian>
-            <Portuguese>Loja de Roupas</Portuguese>
-            <Polish>Sklep odzieżowy</Polish>
-            <Italian>Emporio di Bruce</Italian>
-            <German>Bruce Outback Outfits</German>
         </Key>
+        <Key ID="STR_MIS_Paycheck">
+			<Original>You received a paycheck of $%1</Original>
+		</Key>
         <Key ID="STR_Shops_C_Police">
             <Original>Altis Police Department Shop</Original>
-            <Czech>Altis policejní oddělení Shop</Czech>
-            <French>Boutique de la police</French>
-            <Spanish>Tienda del Departamento de Policía</Spanish>
-            <Russian></Russian>
-            <Portuguese>Loja de Roupas Policiais</Portuguese>
-            <Polish>Sklep Policyjny</Polish>
-            <Italian>Dipartimento della Polizia di Altis</Italian>
-            <German>Altis Police Department-Shop</German>
         </Key>
 		<Key ID="STR_ON_DUTY">
 			<Original>Officer %1 returned to duty!</Original>
@@ -11019,5 +11006,41 @@
 		</Key>
 	</Package>
     <Package Name="Skills">
+        <Key ID="STR_Prof_Scav">
+            <Original>Scavenger</Original>
+        </Key>
+        <Key ID="STR_Prof_Civ">
+            <Original>Civilian Level</Original>
+        </Key>
+        <Key ID="STR_Prof_Fruit">
+            <Original>Fruit Skills</Original>
+        </Key>
+        <Key ID="STR_Prof_Cocaine">
+            <Original>Cocaine Skills</Original>
+        </Key>
+        <Key ID="STR_Prof_Heroin">
+            <Original>Heroin Skill</Original>
+        </Key>
+        <Key ID="STR_Prof_Weed">
+            <Original>Weed Skill</Original>
+        </Key>
+        <Key ID="STR_Prof_Diamond">
+            <Original>Diamond Skill</Original>
+        </Key>
+        <Key ID="STR_Prof_Rock">
+            <Original>Rock Skill</Original>
+        </Key>
+        <Key ID="STR_Prof_Oil">
+            <Original>Oil Skill</Original>
+        </Key>
+        <Key ID="STR_Prof_Salt">
+            <Original>Salt Skill</Original>
+        </Key>
+        <Key ID="STR_Prof_Cop">
+            <Original>Police Skill</Original>
+        </Key>
+        <Key ID="STR_Prof_Med">
+            <Original>Medic Skill</Original>
+        </Key>
     </Package>
 </Project>

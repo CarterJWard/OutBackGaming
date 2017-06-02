@@ -10,6 +10,13 @@ class Profs {
         tag = "Civilian";
         side = "civ";
     };
+
+    class pScavenge {
+        variable = "pScavenge";
+        name = "STR_Prof_Scav";
+        tag = "Scavenger";
+        side = "civ";
+    };
     
     class Fruit_Prof {
         variable = "Fruit_Prof";
@@ -38,13 +45,6 @@ class Profs {
         tag = "Weed";
         side = "civ";
     };
-
-    class Sugar_Prof {
-        variable = "Sugar_Prof";
-        name = "STR_Prof_Sugar";
-        tag = "Sugar";
-        side = "civ"; 
-    };
     
     class Diamond_Prof{
         variable = "Diamond_Prof";
@@ -64,6 +64,13 @@ class Profs {
         variable = "Oil_Prof";
         name = "STR_Prof_Oil";
         tag = "Oil";
+        side = "civ";
+    };
+
+    class Salt_Prof {
+        variable = "Salt_Prof";
+        name = "STR_Prof_Salt";
+        tag = "Salt";
         side = "civ";
     };
     

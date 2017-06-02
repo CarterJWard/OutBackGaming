@@ -17,5 +17,6 @@ switch (_type) do {
     case "diamond_uncut": {"Diamond_Prof"};
     case "rock": {"Rock_Prof"};
     case "oil_unprocessed": {"Oil_Prof"};
+    case "salt_unrefined": {"Salt_Prof"};
     default {""};
 };
