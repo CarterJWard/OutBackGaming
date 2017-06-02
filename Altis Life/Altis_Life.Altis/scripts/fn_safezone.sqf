@@ -8,7 +8,7 @@
     Edit the #defines below. The numeric value after the variable name of the marker will define how big the radius is. (Measured in metres)
 */
 
-#define SAFETY_ZONES    [["Rebel_North_Marker", 300], ["Rebel_South_Marker", 150], ["Marker-Variable-Name", 250], ["Marker-Variable-Name", 250]]
+#define SAFETY_ZONES  [["safezone_Kstation", 100], ["safezone_Kmarket", 60], ["safezone_kGar", 40], ["safezone_rebel1", 150], ["safezone_athira", 80],["safezone_rebel2", 100]]
 
      if (isDedicated) exitWith {};
      waitUntil {!isNull player};

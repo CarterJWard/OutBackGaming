@@ -117,18 +117,17 @@ class Clothing {
         side = "cop";
         uniforms[] = {
             { "NONE", "Remove Uniform", 0, { "", "", -1 } },
-            { "U_Rangemaster", "Cop Uniform", 25, { "", "", -1 } },
-            { "U_B_CombatUniform_mcam_tshirt", "", 350, { "life_coplevel", "SCALAR", 1 } },
-            { "U_B_CombatUniform_mcam_worn", "", 550, { "life_coplevel", "SCALAR", 2 } },
-            { "U_B_survival_uniform", "", 1250, { "life_coplevel", "SCALAR", 1 } }
+            { "U_Rangemaster", "Cop Uniform", 25, { "", "", -1 } }
         };
         headgear[] = {
             { "NONE", "Remove Hat", 0, { "", "", -1 } },
             { "H_Cap_police", "", 25, { "", "", -1 } },
-            { "H_Beret_blk_POLICE", "", 50, { "life_coplevel", "SCALAR", 2 } },
             { "H_HelmetB_plain_mcamo", "", 75, { "life_coplevel", "SCALAR", 1 } },
             { "H_MilCap_mcamo", "", 100, { "life_coplevel", "SCALAR", 2 } },
-            { "H_Booniehat_mcamo", "", 120, { "life_coplevel", "SCALAR", 1 } }
+            { "H_Booniehat_mcamo", "", 120, { "life_coplevel", "SCALAR", 1 } },
+            { "H_Beret_blk_POLICE", "", 50, { "life_coplevel", "SCALAR", 4 } },
+            { "H_Beret_02", "", 200, {"life_coplevel", "SCALAR", 5} },
+            { "H_Watchcap_blk", "Tacticool Beanie", 300, { "life_coplevel", "SCALAR", 7 } }
         };
         goggles[] = {
             { "NONE", "Remove Glasses", 0, { "", "", -1 } },
@@ -149,8 +148,8 @@ class Clothing {
         vests[] = {
             { "NONE", "Remove Vest", 0, { "", "", -1 } },
             { "V_Rangemaster_belt", "", 800, { "", "", -1 } },
-            { "V_TacVest_blk_POLICE", "", 1000, { "life_coplevel", "SCALAR", 1 } },
-            { "V_PlateCarrier2_rgr", "", 1500, { "life_coplevel", "SCALAR", 2 } }
+            { "V_TacVest_blk_POLICE", "", 1000, { "life_coplevel", "SCALAR", 2 } },
+            { "V_PlateCarrier1_blk", "", 2000, { "life_coplevel", "SCALAR", 5 } }
         };
         backpacks[] = {
             { "NONE", "Remove Backpack", 0, { "", "", -1 } },
