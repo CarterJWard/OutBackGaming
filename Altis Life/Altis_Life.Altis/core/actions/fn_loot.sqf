@@ -27,9 +27,9 @@ switch (_type) do {
 	default {_bad = true};
 };
 
-//_data = PROF_VALUE("pThief","civ");
-//_time = ( 0.13 - (0.002 * (SEL(_data,0))));
-//_r = (_r - (5 * (_data select 0)));
+_data = PROF_VALUE("pScavenger","civ");
+_time = ( 0.13 - (0.002 * (SEL(_data,0))));
+_r = (_r - (5 * (_data select 0)));
 _lchance = round(random _r);						
 _vrlootArr = M_CONFIG(getArray,"LootCfg","LootRare","loot_rare");
 _lootArr = M_CONFIG(getArray,"LootCfg","LootNorm","loot_norm");		
