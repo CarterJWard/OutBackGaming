@@ -235,16 +235,106 @@ class WeaponShops {
             { "muzzle_snds_H", "", 2750 }
         };
     };
-   /* class cop_snrConstable {};
-    class cop_lsnrConstable {};
-    class cop_sergeant {};
-    class cop_incSergeant {};
-    class cop_snrSergeant {};
-    class cop_inspector
-    class cop_cheifInspector {};
-    class cop_superintendent {};
-    class cop_csuperintendent {};
-    class cop_commissioner {};*/
+    
+    class cop_snrConstable {
+        name = "Senior Constable Shop";
+        side = "cop";
+        license = "";
+        level[] = { "","",-1,"" };
+        items[] = {};
+        mags[]= {};
+        accs[] = {};
+    };
+    
+    class cop_lsnrConstable {
+        name = "Senior Constable Shop";
+        side = "cop";
+        license = "";
+        level[] = { "","",-1,"" };
+        items[] = {};
+        mags[]= {};
+        accs[] = {};
+    };
+    
+    class cop_sergeant {
+        name = "Senior Constable Shop";
+        side = "cop";
+        license = "";
+        level[] = { "","",-1,"" };
+        items[] = {};
+        mags[]= {};
+        accs[] = {};
+    };
+    
+    class cop_incSergeant {
+        name = "Senior Constable Shop";
+        side = "cop";
+        license = "";
+        level[] = { "","",-1,"" };
+        items[] = {};
+        mags[]= {};
+        accs[] = {};
+    };
+    
+    class cop_snrSergeant {
+        name = "Senior Constable Shop";
+        side = "cop";
+        license = "";
+        level[] = { "","",-1,"" };
+        items[] = {};
+        mags[]= {};
+        accs[] = {};
+    };
+    
+    class cop_inspector {
+        name = "Inspector Shop";
+        side = "cop";
+        license = "";
+        level[] = { "","",-1,"" };
+        items[] = {};
+        mags[]= {};
+        accs[] = {};
+    };
+    
+    class cop_cheifInspector {
+        name = "Chief Inspector Shop";
+        side = "cop";
+        license = "";
+        level[] = { "","",-1,"" };
+        items[] = {};
+        mags[]= {};
+        accs[] = {};
+    };
+    
+    class cop_superintendent {
+        name = "Superintendent Shop";
+        side = "cop";
+        license = "";
+        level[] = { "","",-1,"" };
+        items[] = {};
+        mags[]= {};
+        accs[] = {};
+    };
+    
+    class cop_csuperintendent {
+        name = "Cheif Superintendent Shop";
+        side = "cop";
+        license = "";
+        level[] = { "","",-1,"" };
+        items[] = {};
+        mags[]= {};
+        accs[] = {};
+    };
+    
+    class cop_commissioner {
+        name = "Commissioner Shop";
+        side = "cop";
+        license = "";
+        level[] = { "","",-1,"" };
+        items[] = {};
+        mags[]= {};
+        accs[] = {};
+    };
     //Medic Shops
     class med_basic {
         name = "store";

@@ -9875,27 +9875,41 @@
             <Portuguese>Loja de Armas da Polícia</Portuguese>
             <Polish>Broń policji</Polish>
         </Key>
-        <Key ID="STR_MAR_Patrol_Officer_Weapon_Shop">
-            <Original>Patrol Officer Weapon Shop</Original>
-            <Czech>Policistou obchodu se zbraněmi</Czech>
-            <French>Vendeur d'armes flic (Officier)</French>
-            <Spanish>Tienda de Armas de Oficial de Patrulla</Spanish>
-            <Italian>Armeria da Pattuglia</Italian>
-            <Russian></Russian>
-            <Portuguese>Loja de Armas de Patrulha</Portuguese>
-            <Polish>Broń patrolowa</Polish>
-            <German>Streifenpolizist Waffenladen</German>
+        <Key ID="STR_MAR_Cadet_Shop">
+            <Original>Cadet Weapon Shop</Original>
         </Key>
-        <Key ID="STR_MAR_Sergeant_Weapon_Shop">
+        <Key ID="STR_MAR_Constable_Shop">
+            <Original>Constable Weapon Shop</Original>
+        </Key>
+        <Key ID="STR_MAR_snrConstable">
+            <Original>Senior Constable Weapon Shop</Original>
+        </Key>
+        <Key ID="STR_MAR_lsnrConstable">
+            <Original>Leading Snr Constable Shop</Original>
+        </Key>
+        <Key ID="STR_MAR_Sergeant">
             <Original>Sergeant Weapon Shop</Original>
-            <Czech>Seržant obchodu se zbraněmi</Czech>
-            <French>Vendeur d'armes flic (Sergent)</French>
-            <Spanish>Tienda de Armas de Oficial de Sargento</Spanish>
-            <Italian>Armeria dei Sergenti</Italian>
-            <Russian></Russian>
-            <Portuguese>Lojas de Armas de Sargento</Portuguese>
-            <Polish>Broń sierżanta</Polish>
-            <German>Sergeant Waffenladen</German>
+        </Key>
+        <Key ID="STR_MAR_incSergeant">
+            <Original>Inc.Sergeant Weapon Shop</Original>
+        </Key>
+        <Key ID="STR_MAR_snrSergeant">
+            <Original>Snr. Sergeant Weapon Shop</Original>
+        </Key>
+        <Key ID="STR_MAR_Inspector">
+            <Original>Inspector Weapon Shop</Original>
+        </Key>
+        <Key ID="STR_MAR_cInspector">
+            <Original>Cheif Inspector Shop</Original>
+        </Key>
+        <Key ID="STR_MAR_superintendent">
+            <Original>Superintendent Weapon Shop</Original>
+        </Key>
+        <Key ID="STR_MAR_csuperintendent">
+            <Original>C. Superintendent Shop</Original>
+        </Key>
+        <Key ID="STR_MAR_commissioner">
+            <Original>Commissioner Weapon Shop</Original>
         </Key>
         <Key ID="STR_MAR_W_E_Vehicle Shop">
             <Original>Vehicle Shop</Original>
