@@ -10,7 +10,7 @@ if(isNil "_copPlayer") exitwith {};
 if(isNull _copPlayer) exitWith {};
 _copPlayerRank = _copPlayer getVariable ["rank",0];
 
-if((life_coplevel) < 5) exitWith {
+if((life_coplevel) < 10) exitWith {
 	hint "You are not high enough rank to use this feature!"; 
 	closeDialog 0;
 };
@@ -27,6 +27,10 @@ if(side _copPlayer != west) exitWith {
 
 if (_copPlayerRank < 1) exitWith {
 	hint "This player can not be demoted any further";
+};
+
+if (_copPlayerRank > 8) exitwith {
+	hint "You Must use an admin to demote this player";
 };
 
 _copPlayerRank = _copPlayerRank - 1;

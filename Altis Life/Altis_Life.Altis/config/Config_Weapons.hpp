@@ -236,6 +236,16 @@ class WeaponShops {
         };
     };
     
+    class cop_incSnrConstable {
+        name = "Leading Snr Constable Shop";
+        side = "cop";
+        license = "";
+        level[] = { "","",-1,"" };
+        items[] = {};
+        mags[]= {};
+        accs[] = {};
+    };
+
     class cop_snrConstable {
         name = "Senior Constable Shop";
         side = "cop";
