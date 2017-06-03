@@ -12,6 +12,7 @@ params [
     ["_unit",objNull,[objNull]],
     ["_killer",objNull,[objNull]]
 ];
+
 disableSerialization;
 
 if ((vehicle _unit) != _unit) then {
@@ -21,12 +22,6 @@ if ((vehicle _unit) != _unit) then {
 };
 
 //Check if player had deadman on 
-if (life_deadMan = true) then {
-    _boom = "Bo_Mk82" createVehicle [0,0,9999];
-    _boom setPos (getPos player);
-    _boom setVelocity [100,0,0];
-    life_deadMan = false;
-};
 
 //Set some vars
 _unit setVariable ["Revive",true,true];
