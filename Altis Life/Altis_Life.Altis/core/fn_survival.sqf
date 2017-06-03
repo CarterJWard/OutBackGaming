@@ -195,7 +195,7 @@ While{true} do {
 [] spawn {
     while {true} do {
         if (playerSide isEqualTo civilian && !life_mission) then {
-            waitUntil {typeOf (vehicle player) in ["sab_piper2","sab_FAAllegro","sab_RobinDR400_2"]}; //ADJUST THESE TO BE THE PLANE CLASS NAMES YOU ARE USING
+            waitUntil {typeOf (vehicle player) in ["C_Plane_Civil_01_racing_F","C_Plane_Civil_01_F"]}; //ADJUST THESE TO BE THE PLANE CLASS NAMES YOU ARE USING
             if (driver (vehicle player) isEqualTo player && life_inv_pesticide > 0 && speed (vehicle player) < 5) then 
             {
                 private ["_startCD"];
@@ -211,44 +211,4 @@ While{true} do {
     };
 };
 
-[] spawn
-{
-	private["_bp","_load","_cfg"];
-	while{true} do
-	{
-		waitUntil {backpack player != ""};
-		_bp = backpack player;
-		_cfg = getNumber(configFile >> "CfgVehicles" >> (backpack player) >> "maximumload");
-		_load = round(_cfg / 8);
-		life_maxWeight = life_maxWeight + _load;
-		if(playerSide == west) then {(unitBackpack player) setObjectTextureGlobal [1,""];};
-		if(playerSide == independent) then {(unitBackpack player) setObjectTextureGlobal [1,""]};
-		waitUntil {backpack player != _bp};
-		if(backpack player == "") then 
-		{
-			life_maxWeight = life_maxWeight;
-		};
-	};
-};
-
-//Invisible backpack
-[] spawn
-{
-	private["_bp","_load","_cfg"];
-	while{true} do
-	{
-		waitUntil {backpack player != ""};
-		_bp = backpack player;
-		_cfg = getNumber(configFile >> "CfgVehicles" >> (backpack player) >> "maximumload");
-		_load = round(_cfg / 8);
-		life_maxWeight = life_maxWeight + _load;
-		if(playerSide == west) then {(unitBackpack player) setObjectTextureGlobal [0,""];}; //Police
-		if(playerSide == independent) then {(unitBackpack player) setObjectTextureGlobal [0,""];}; //Medics
-		waitUntil {backpack player != _bp};
-		if(backpack player == "") then 
-		{
-			life_maxWeight = life_maxWeight;
-		};
-	};
-};
 

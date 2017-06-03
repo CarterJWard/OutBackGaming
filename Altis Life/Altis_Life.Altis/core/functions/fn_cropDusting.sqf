@@ -26,7 +26,7 @@ _arr params [
 
 /* EDIT THESE TO YOUR LIKING */
 cropDist = 500; //The distance you must stay within while dusting to get bonus at end
-private _planes = [["C_Plane_Civil_01_F",140],["  C_Plane_Civil_01_racing_F",150]]; //planes and their average speeds
+private _planes = [["C_Plane_Civil_01_F",140],["C_Plane_Civil_01_racing_F",150]]; //planes and their average speeds
 /* THE FOLLOWING IS AS FOLLOWS ["MARKER START INITIALISE",["MARKER1","MARKER2"...ETC]] */
 private _routes = [["air_g_1",["dusting1_1","dusting1_2","dusting1_3","dusting1_4","dusting1_5"]],["reb_v_1",["dusting2_1","dusting2_2","dusting1_4","dusting1_5"]]]; 
 
