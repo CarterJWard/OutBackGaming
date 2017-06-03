@@ -127,6 +127,7 @@ class Clothing {
             { "H_Booniehat_mcamo", "", 120, { "life_coplevel", "SCALAR", 1 } },
             { "H_Beret_blk_POLICE", "", 50, { "life_coplevel", "SCALAR", 4 } },
             { "H_Beret_02", "", 200, {"life_coplevel", "SCALAR", 5} },
+            { "H_PilotHelmetFighter_B", "Gas Mask",1000, {"life_coplevel", "SCALAR", 5} },
             { "H_Watchcap_blk", "Tacticool Beanie", 300, { "life_coplevel", "SCALAR", 7 } }
         };
         goggles[] = {
