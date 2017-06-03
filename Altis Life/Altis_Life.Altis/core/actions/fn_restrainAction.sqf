@@ -13,8 +13,8 @@ if (player distance _unit > 3) exitWith {};
 if (_unit getVariable "restrained") exitWith {};
 if (side _unit isEqualTo west) exitWith {};
 if (player isEqualTo _unit) exitWith {};
-if(!([false,"handcuff",1] call life_fnc_handleInv)) exitWith { hint "You dont have Handcuffs"; };
-[true,"handcuff",1] call life_fnc_handleInv;
+if(!([false,"handcuffs",1] call life_fnc_handleInv)) exitWith { hint "You dont have Handcuffs"; };
+[true,"handcuffs",1] call life_fnc_handleInv;
 if (!isPlayer _unit) exitWith {};
 //Broadcast!
 
