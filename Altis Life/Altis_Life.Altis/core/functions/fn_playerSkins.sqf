@@ -45,6 +45,8 @@ switch (playerSide) do {
             };
             player setObjectTextureGlobal [0, _skinName];
         };
+        
+        (unitBackpack player) setObjectTextureGlobal [0,""];
     };
 
     case independent: {
@@ -52,4 +54,5 @@ switch (playerSide) do {
             player setObjectTextureGlobal [0, "textures\medic_uniform.jpg"];
         };
     };
+    (unitBackpack player) setObjectTextureGlobal [0,""];
 };
