@@ -46,10 +46,8 @@ switch (playerSide) do {
             player setObjectTextureGlobal [0, _skinName];
         };
         
-<<<<<<< HEAD
-=======
         (unitBackpack player) setObjectTextureGlobal [0,""];
->>>>>>> origin/master
+
     };
 
     case independent: {
