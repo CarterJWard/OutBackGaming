@@ -415,6 +415,7 @@ class Life_Client_Core {
         class weaponShopMags {};
         class weaponShopMenu {};
         class weaponShopSelection {};
+        class openCopWeap {};
     };
 
     class Vehicle {

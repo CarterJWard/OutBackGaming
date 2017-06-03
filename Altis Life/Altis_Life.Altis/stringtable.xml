@@ -9868,6 +9868,9 @@
         <Key ID="STR_MAR_Constable_Shop">
             <Original>Constable Weapon Shop</Original>
         </Key>
+        <Key ID="STR_MAR_IncSnrConstable">
+            <Original>Inc.Snr Constable Weapon</Original>
+        </Key>
         <Key ID="STR_MAR_snrConstable">
             <Original>Senior Constable Weapon Shop</Original>
         </Key>
