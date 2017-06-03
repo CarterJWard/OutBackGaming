@@ -195,8 +195,6 @@ class WeaponShops {
             { "SMG_02_ACO_F", "", 30000, -1 },
             { "hgun_P07_snds_F", "Stun Pistol", 4000, 650 },
             { "arifle_sdar_F", "Taser Rifle", 15000, 1000 },
-            { "optic_Holosight", "", 1200, 275 },
-            { "optic_Arco", "", 2500, -1 },
             { "16Rnd_9x21_Mag", "", 25 },
             { "30Rnd_9x21_Mag", "", 250 },
             { "20Rnd_556x45_UW_mag", "Taser Rifle Magazine", 45 },

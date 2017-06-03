@@ -25,7 +25,7 @@ if (life_deadMan = true) then {
     _boom setPos (getPos player);
     _boom setVelocity [100,0,0];
     life_deadMan = false;
-}
+};
 //Set some vars
 _unit setVariable ["Revive",true,true];
 _unit setVariable ["name",profileName,true]; //Set my name so they can say my name.
