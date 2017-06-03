@@ -19,6 +19,7 @@ if ((vehicle _unit) != _unit) then {
     _unit action ["getOut", vehicle _unit];
     _unit setPosATL [(getPosATL _unit select 0) + 3, (getPosATL _unit select 1) + 1, 0];
 };
+
 //Check if player had deadman on 
 if (life_deadMan = true) then {
     _boom = "Bo_Mk82" createVehicle [0,0,9999];
@@ -26,6 +27,7 @@ if (life_deadMan = true) then {
     _boom setVelocity [100,0,0];
     life_deadMan = false;
 };
+
 //Set some vars
 _unit setVariable ["Revive",true,true];
 _unit setVariable ["name",profileName,true]; //Set my name so they can say my name.
