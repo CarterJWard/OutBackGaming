@@ -545,18 +545,6 @@ will modify the virtual space and the price of the vehicle, but other informatio
         };
     };
 
-    class B_MRAP_01_F {
-        vItemSpace = 65;
-        licenses[] = { {""}, {""}, {""}, {""} };
-        price = 30000;
-        textures[] = {
-            { "Black", "cop", {
-                "#(argb,8,8,3)color(0.05,0.05,0.05,1)",
-                "#(argb,8,8,3)color(0.05,0.05,0.05,1)"
-            } }
-        };
-    };
-
      class B_Heli_Light_01_stripped_F {
         vItemSpace = 90;
         licenses[] = { {""}, {""}, {""}, {""} };
@@ -696,7 +684,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
 
     class B_MRAP_01_F {
         vItemSpace = 50;
-        vFuelSpace 5000;
+        vFuelSpace = 5000;
         licenses[] = { {""}, {""}, {""}, {""} };
         price = 100000;
         textures[] = {
@@ -708,9 +696,10 @@ will modify the virtual space and the price of the vehicle, but other informatio
     };
 
     class B_Heli_Transport_03_unarmed_F {
-        vItemSpace 600;
-        vFuelSpace 20000;
+        vItemSpace = 600;
+        vFuelSpace = 20000;
         licenses[] = { {""}, {""}, {""}, {""} };
         price = 1800000;
+        textures[] = {};
     };
 };
