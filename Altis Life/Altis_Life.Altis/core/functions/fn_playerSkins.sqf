@@ -52,7 +52,7 @@ switch (playerSide) do {
 
     case independent: {
         if (uniform player isEqualTo "U_Rangemaster") then {
-            _skinName = "textures\medic\medic_uniform";
+            _skinName = "textures\medic\medic_uniform.jpg";
             if (LIFE_SETTINGS(getNumber,"medic_skins") isEqualTo 1) then {
                 if ((life_medicLevel) >= 1) then {
                     _skinName = ["textures\medic\medic_uniform",(life_medicLevel),".jpg"] joinString "";
