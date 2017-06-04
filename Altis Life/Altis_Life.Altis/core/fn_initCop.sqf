@@ -32,4 +32,3 @@ waitUntil{isNull (findDisplay 38500)}; //Wait for the spawn selection to be done
 
 [] execVM "scripts\custHud.sqf";
 [] execVM "scripts\custHudUpdate.sqf";
-[] execVM "core\shops\fn_openCopWeap.sqf";

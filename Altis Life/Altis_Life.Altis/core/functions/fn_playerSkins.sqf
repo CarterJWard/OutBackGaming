@@ -55,7 +55,7 @@ switch (playerSide) do {
             _skinName = "textures\medic\medic_uniform";
             if (LIFE_SETTINGS(getNumber,"medic_skins") isEqualTo 1) then {
                 if ((life_medicLevel) >= 1) then {
-                    _skinName = ["textures\medic\medic_uniform",(life_medicLevel,)".jpg"] joinString "";
+                    _skinName = ["textures\medic\medic_uniform",(life_medicLevel),".jpg"] joinString "";
                 };
             };
             player setObjectTextureGlobal [0,_skinName];
