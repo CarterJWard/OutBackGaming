@@ -86,7 +86,8 @@ class CarShops {
             { "C_Offroad_01_F", { "", "", -1 } },
             { "I_Truck_02_medical_F", { "", "", -1 } },
             { "O_Truck_03_medical_F", { "", "", -1 } },
-            { "B_Truck_01_medical_F", { "", "", -1 } }
+            { "B_Truck_01_medical_F", { "", "", -1 } },
+            { "C_Hatchback_01_sport_F". { "", "", -1} }
         };
     };
 
@@ -389,6 +390,9 @@ will modify the virtual space and the price of the vehicle, but other informatio
             } },
             { "Police", "cop", {
                 "#(ai,64,64,1)Fresnel(1.3,7)"
+            } },
+            { "EMS", "med", {
+                "textures\medic\medHatch.jpg"
             } }
         };
     };
@@ -562,7 +566,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
         price = 245000;
         textures[] = {
             { "Police", "cop", {
-                "\a3\air_f\Heli_Light_01\Data\heli_light_01_ext_ion_co.paa"
+                "textures\cop\copHum.jpg"
             } },
             { "Sheriff", "civ", {
                 "\a3\air_f\Heli_Light_01\Data\Skins\heli_light_01_ext_sheriff_co.paa"
@@ -631,8 +635,8 @@ will modify the virtual space and the price of the vehicle, but other informatio
             { "Desert Digi", "reb", {
                 "\a3\air_f\Heli_Light_02\Data\heli_light_02_ext_opfor_co.paa"
             } },
-            { "EMS White", "med", {
-                "#(argb,8,8,3)color(1,1,1,0.8)"
+            { "EMS", "med", {
+                "textures\medic\medOrca.jpg"
             } }
         };
     };
