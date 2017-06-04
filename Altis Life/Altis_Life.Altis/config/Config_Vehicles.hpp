@@ -87,7 +87,7 @@ class CarShops {
             { "I_Truck_02_medical_F", { "", "", -1 } },
             { "O_Truck_03_medical_F", { "", "", -1 } },
             { "B_Truck_01_medical_F", { "", "", -1 } },
-            { "C_Hatchback_01_sport_F". { "", "", -1} }
+            { "C_Hatchback_01_sport_F", { "", "", -1} }
         };
     };
 
