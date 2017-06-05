@@ -24,9 +24,9 @@ if ((_this select 0) isEqualTo "Error") exitWith {[] call SOCK_fnc_insertPlayerI
 if (!(getPlayerUID player isEqualTo (_this select 0))) exitWith {[] call SOCK_fnc_dataQuery;};
 
 //Lets make sure some vars are not set before hand.. If they are get rid of them, hopefully the engine purges past variables but meh who cares.
-if (!isServer && (!isNil "life_adminlevel" || !isNil "life_coplevel" || !isNil "life_donorlevel")) exitWith {
+if (!isServer && (!isNil "life_adminlevel" || !isNil "life_gigcoplevel25" || !isNil "life_donorlevel")) exitWith {
     [profileName,getPlayerUID player,"VariablesAlreadySet"] remoteExecCall ["SPY_fnc_cookieJar",RSERV];
-    [profileName,format["Variables set before client initialization...\nlife_adminlevel: %1\nlife_coplevel: %2\nlife_donorlevel: %3",life_adminlevel,life_coplevel,life_donorlevel]] remoteExecCall ["SPY_fnc_notifyAdmins",RCLIENT];
+    [profileName,format["Variables set before client initialization...\nlife_adminlevel: %1\nlife_gigcoplevel25: %2\nlife_donorlevel: %3",life_adminlevel,life_gigcoplevel25,life_donorlevel]] remoteExecCall ["SPY_fnc_notifyAdmins",RCLIENT];
     sleep 0.9;
     failMission "SpyGlass";
 };
@@ -49,7 +49,7 @@ if (count (_this select 6) > 0) then {
 //Parse side specific information.
 switch (playerSide) do {
     case west: {
-        life_coplevel =  parseNumber(_this select 7);
+        life_gigcoplevel25 =  parseNumber(_this select 7);
         CONST(life_medicLevel,0);
         life_blacklisted = _this select 9;
         if (LIFE_SETTINGS(getNumber,"save_playerStats") isEqualTo 1) then {
@@ -64,7 +64,7 @@ switch (playerSide) do {
 
     case civilian: {
         life_is_arrested = _this select 7;
-        CONST(life_coplevel, 0);
+        CONST(life_gigcoplevel25, 0);
         CONST(life_medicLevel, 0);
         life_houses = _this select 13;
         if (LIFE_SETTINGS(getNumber,"save_playerStats") isEqualTo 1) then {
@@ -102,7 +102,7 @@ switch (playerSide) do {
 
     case independent: {
         CONST(life_medicLevel, parseNumber(_this select 7));
-        CONST(life_coplevel,0);
+        CONST(life_gigcoplevel25,0);
         if (LIFE_SETTINGS(getNumber,"save_playerStats") isEqualTo 1) then {
             life_hunger = ((_this select 9) select 0);
             life_thirst = ((_this select 9) select 1);

@@ -85,7 +85,7 @@ switch (playerSide) do {
 		_Btn8 ctrlSetText localize "STR_pInAct_Seize";
 		_Btn8 buttonSetAction "[life_pInact_curTarget] spawn life_fnc_seizePlayerAction; closeDialog 0;";
 
-		if ((life_coplevel) < _seizeRank) then {_Btn8 ctrlEnable false;};
+		if ((life_gigcoplevel25) < _seizeRank) then {_Btn8 ctrlEnable false;};
 
 		{
 			if ((player distance (getMarkerPos _x) <30)) exitWith { _Btn6 ctrlEnable true;};

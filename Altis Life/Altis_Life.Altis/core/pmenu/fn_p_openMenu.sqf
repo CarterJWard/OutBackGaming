@@ -12,7 +12,7 @@ disableSerialization;
 
 switch (playerSide) do {
     case west: {
-		private _rank = life_coplevel;
+		private _rank = life_gigcoplevel25;
         ctrlShow[2011,false];
 		ctrlShow[980021,false];
 		ctrlShow[2101,false];

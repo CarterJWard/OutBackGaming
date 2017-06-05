@@ -9,7 +9,7 @@
 
 private["_display","_list","_rankText"];
 
-private _rank = life_coplevel;
+private _rank = life_gigcoplevel25;
 if (_rank <= 2) exitWith {closeDialog 0;};
 
 disableSerialization;
