@@ -50,7 +50,7 @@ if (count (_this select 6) > 0) then {
 switch (playerSide) do {
     case west: {
         life_gigcoplevel25 =  parseNumber(_this select 7);
-        CONST(life_medicLevel,0);
+        CONST(life_gigmed61,0);
         life_blacklisted = _this select 9;
         if (LIFE_SETTINGS(getNumber,"save_playerStats") isEqualTo 1) then {
             life_hunger = ((_this select 10) select 0);
@@ -65,7 +65,7 @@ switch (playerSide) do {
     case civilian: {
         life_is_arrested = _this select 7;
         CONST(life_gigcoplevel25, 0);
-        CONST(life_medicLevel, 0);
+        CONST(life_gigmed61, 0);
         life_houses = _this select 13;
         if (LIFE_SETTINGS(getNumber,"save_playerStats") isEqualTo 1) then {
             life_hunger = ((_this select 9) select 0);
@@ -101,7 +101,7 @@ switch (playerSide) do {
     };
 
     case independent: {
-        CONST(life_medicLevel, parseNumber(_this select 7));
+        CONST(life_gigmed61, parseNumber(_this select 7));
         CONST(life_gigcoplevel25,0);
         if (LIFE_SETTINGS(getNumber,"save_playerStats") isEqualTo 1) then {
             life_hunger = ((_this select 9) select 0);

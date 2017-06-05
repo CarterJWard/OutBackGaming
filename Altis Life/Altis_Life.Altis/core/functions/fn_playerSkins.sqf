@@ -53,8 +53,8 @@ switch (playerSide) do {
     case independent: {
         if (uniform player isEqualTo "U_Rangemaster") then {
             _skinName = "textures\medic\medic_uniform.jpg";
-            if (call(life_medicLevel) >= 1) then {
-                _skinName = ["textures\medic\medic_uniform",(life_medicLevel),".jpg"] joinString "";
+            if (call(life_gigmed61) >= 1) then {
+                _skinName = ["textures\medic\medic_uniform",(life_gigmed61),".jpg"] joinString "";
             };
             player setObjectTextureGlobal [0,_skinName];
         };

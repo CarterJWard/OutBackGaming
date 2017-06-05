@@ -160,7 +160,7 @@ master_group attachTo[bank_obj,[0,0,0]];
 [8,true,12] execFSM "\life_server\FSM\timeModule.fsm";
 
 life_gigadmin863 = 0;
-life_mediclevel = 0;
+life_gigmed61 = 0;
 life_gigcoplevel25 = 0;
 CONST(JxMxE_PublishVehicle,"false");
 
