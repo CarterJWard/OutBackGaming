@@ -6,7 +6,7 @@
     Description:
     Spectate the chosen player.
 */
-if (FETCH_CONST(life_adminlevel) < 3) exitWith {closeDialog 0;};
+if (FETCH_CONST(life_gigadmin863) < 3) exitWith {closeDialog 0;};
 
 private["_unit"];
 _unit = lbData[2902,lbCurSel (2902)];

@@ -19,7 +19,7 @@ switch(_type) do
 	case 0: { 
 		life_smartphoneTarget = call compile format["%1",_playerData];
 		ctrlSetText[88886, format["message: %1",name life_smartphoneTarget]];
-		if((FETCH_CONST(life_adminlevel) < 1)) then {
+		if((FETCH_CONST(life_gigadmin863) < 1)) then {
 			ctrlShow[888897,false];
 		};
 	};
@@ -66,7 +66,7 @@ switch(_type) do
 	};
 	//adminToPerson 
 	case 5: { 
-		if((call life_adminlevel) < 1) exitWith {hint "You are not an admin!";};
+		if((call life_gigadmin863) < 1) exitWith {hint "You are not an admin!";};
 		if(isNULL life_smartphoneTarget) exitWith {hint format["No person selected!"];};
 		if(_msg == "") exitWith {hint "You must enter a message to be sent!";};
 		[life_smartphoneTarget,_msg,player,4] remoteExec ["TON_fnc_handleMessages",2];
@@ -75,7 +75,7 @@ switch(_type) do
 	};
 	//emergencyloading 
 	case 6: { 
-		if((FETCH_CONST(life_adminlevel) < 1)) then {
+		if((FETCH_CONST(life_gigadmin863) < 1)) then {
 			ctrlShow[888898,false];
 			ctrlShow[888896,true];
 		} else { 
@@ -85,7 +85,7 @@ switch(_type) do
 	};
 	//adminMsgAll 
 	case 7: { 
-		if((FETCH_CONST(life_adminlevel) < 1)) exitWith {hint "You are not an admin!";};
+		if((FETCH_CONST(life_gigadmin863) < 1)) exitWith {hint "You are not an admin!";};
 		if(_msg == "") exitWith {hint "You must enter a message to be sent!";};
 		[ObjNull,_msg,player,5] remoteExec ["TON_fnc_handleMessages",2];
 		hint format["A message sent to all admins: %1",_msg];

@@ -20,7 +20,7 @@ if (_rank <= 2) exitWith {closeDialog 0;};
 
 
 /*
-switch (FETCH_CONST(life_adminlevel)) do
+switch (FETCH_CONST(life_gigadmin863)) do
 {
     case 1: {ctrlShow [2904,false];ctrlShow [2905,false];ctrlShow [2906,false];ctrlShow [2907,false];ctrlShow [2908,false];ctrlShow [2909,false];ctrlShow [2910,false];ctrlShow [2911,false];};
     case 2: {ctrlShow [2905,false];ctrlShow [2906,false];ctrlShow [2907,false];ctrlShow [2908,false];ctrlShow [2909,false];ctrlShow [2910,false];ctrlShow [2911,false];};

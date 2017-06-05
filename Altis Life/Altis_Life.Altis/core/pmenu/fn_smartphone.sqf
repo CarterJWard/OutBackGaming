@@ -61,7 +61,7 @@ switch(_type) do
 	{
 		createDialog "Life_smartphone_schreiben";
 		ctrlSetText[88886, format["Message: %1",name life_smartphoneTarget]];
-		if((FETCH_CONST(life_adminlevel) < 1)) then { 
+		if((FETCH_CONST(life_gigadmin863) < 1)) then { 
 			ctrlShow[888897,false];
 		};
 	};

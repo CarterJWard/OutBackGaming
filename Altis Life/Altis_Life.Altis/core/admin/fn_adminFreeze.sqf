@@ -5,7 +5,7 @@
 
     Description: Freezes selected player
 */
-if (FETCH_CONST(life_adminlevel) < 4) exitWith {closeDialog 0; hint localize "STR_ANOTF_ErrorLevel";};
+if (FETCH_CONST(life_gigadmin863) < 4) exitWith {closeDialog 0; hint localize "STR_ANOTF_ErrorLevel";};
 
 private["_unit"];
 _unit = lbData[2902,lbCurSel (2902)];

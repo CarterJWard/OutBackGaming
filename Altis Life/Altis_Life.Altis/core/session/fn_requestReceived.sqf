@@ -24,9 +24,9 @@ if ((_this select 0) isEqualTo "Error") exitWith {[] call SOCK_fnc_insertPlayerI
 if (!(getPlayerUID player isEqualTo (_this select 0))) exitWith {[] call SOCK_fnc_dataQuery;};
 
 //Lets make sure some vars are not set before hand.. If they are get rid of them, hopefully the engine purges past variables but meh who cares.
-if (!isServer && (!isNil "life_adminlevel" || !isNil "life_gigcoplevel25" || !isNil "life_donorlevel")) exitWith {
+if (!isServer && (!isNil "life_gigadmin863" || !isNil "life_gigcoplevel25" || !isNil "life_donorlevel")) exitWith {
     [profileName,getPlayerUID player,"VariablesAlreadySet"] remoteExecCall ["SPY_fnc_cookieJar",RSERV];
-    [profileName,format["Variables set before client initialization...\nlife_adminlevel: %1\nlife_gigcoplevel25: %2\nlife_donorlevel: %3",life_adminlevel,life_gigcoplevel25,life_donorlevel]] remoteExecCall ["SPY_fnc_notifyAdmins",RCLIENT];
+    [profileName,format["Variables set before client initialization...\nlife_gigadmin863: %1\nlife_gigcoplevel25: %2\nlife_donorlevel: %3",life_gigadmin863,life_gigcoplevel25,life_donorlevel]] remoteExecCall ["SPY_fnc_notifyAdmins",RCLIENT];
     sleep 0.9;
     failMission "SpyGlass";
 };
@@ -34,7 +34,7 @@ if (!isServer && (!isNil "life_adminlevel" || !isNil "life_gigcoplevel25" || !is
 //Parse basic player information.
 CASH = parseNumber (_this select 2);
 BANK = parseNumber (_this select 3);
-CONST(life_adminlevel,parseNumber (_this select 4));
+CONST(life_gigadmin863,parseNumber (_this select 4));
 if (LIFE_SETTINGS(getNumber,"donor_level") isEqualTo 1) then {
     CONST(life_donorlevel,parseNumber (_this select 5));
 } else {

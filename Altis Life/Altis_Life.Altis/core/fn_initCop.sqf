@@ -17,7 +17,7 @@ if (life_blacklisted) exitWith {
 };
 
 if (!(str(player) in ["cop_1","cop_2","cop_3","cop_4"])) then {
-    if (((life_gigcoplevel25) isEqualTo 0) && (FETCH_CONST(life_adminlevel) isEqualTo 0)) then {
+    if (((life_gigcoplevel25) isEqualTo 0) && (FETCH_CONST(life_gigadmin863) isEqualTo 0)) then {
         ["NotWhitelisted",false,true] call BIS_fnc_endMission;
         sleep 35;
     };

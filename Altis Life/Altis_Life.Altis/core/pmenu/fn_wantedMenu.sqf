@@ -42,7 +42,7 @@ _crimes = LIFE_SETTINGS(getArray,"crimes");
 
 ctrlSetText[2404,"Establishing connection..."];
 
-if ((life_gigcoplevel25) < 3 && FETCH_CONST(life_adminlevel) isEqualTo 0) then {
+if ((life_gigcoplevel25) < 3 && FETCH_CONST(life_gigadmin863) isEqualTo 0) then {
     ctrlShow[2405,false];
 };
 

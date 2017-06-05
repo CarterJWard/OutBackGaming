@@ -14,7 +14,7 @@ switch(_craft) do {
  //[Object classname, [item #1,quantity item #1,item #2,quantity item #2]],]
  ["hgun_P07_F", ["diamond_cut",2,"copper_refined",1]]
  ];
- if(FETCH_CONST(life_adminlevel) > 0) then {
+ if(FETCH_CONST(life_gigadmin863) > 0) then {
  _return pushBack
  ["SMG_01_F", ["copper_refined",3,"iron_refined",3,"diamond_cut",1]];
  };
