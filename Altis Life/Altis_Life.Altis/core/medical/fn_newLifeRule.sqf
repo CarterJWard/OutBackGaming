@@ -3,7 +3,7 @@ New Life Rule Timer
 Released to AltisLifeRPG.com
 -----Repentz-----
 */
-private["_uiDisp","_time","_timer","_msg","_from"];
+private["_uiDisp","_time","_timer","_msg","_from", "_name"];
 if(playerSide isEqualTo west) exitWith {};
 if(playerSide isEqualTo independent) exitWith {};
 disableSerialization;
@@ -16,6 +16,7 @@ life_nlrtimer_running = true;
 nlr_check = true;
 _msg = format["ATTENTION STAFF: %1 is breaking his NLR. Please investigate.",player getVariable["realname",name player]];
 _from = "The Server NLR Department";
+_name = player getVariable["realname",name player];
 
 
 while {true} do {
@@ -36,8 +37,9 @@ while {true} do {
 	if ((playerSide == civilian) && (nlr_check)) then { 
 		if (player distance (getMarkerPos "NLRMarker") < 250) then 
 		{
-			[ObjNull,_msg, _from,6] remoteExec ["TON_fnc_handleMessages",2];
+			[ObjNull,_msg, _name] remoteExec ["TON_fnc_handleMessages", 6];
 			hint parseText format["<t color='#FA4F4F'><t size='1.2'>You entered your NLR marker, Staff members have been notified."];
+			[player get] call TON_fnc_NLRAdmin;
 			nlr_check = false;
 		};
 	};

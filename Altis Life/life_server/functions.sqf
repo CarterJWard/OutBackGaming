@@ -304,6 +304,15 @@ compileFinal "
 
             [""TextMessage"",[format[""EMS Request from %1"",_from]]] call bis_fnc_showNotification;
         };
+        
+        case 6: {
+            if ((call life_gigadmin863) < 1) exitWith {};
+            private[""_message"",""_from""];
+            _message = _this select 1;
+            _from = _this select 2;
+            hint parseText format [""<t color='#ffcefe'><t size='2'><t align='center'>NLR Break<br/><br/><t color='#33CC33'><t align='left'><t size='1'>%1"",_message];
+            systemChat _message;
+        };
     };
 ";
 publicVariable "TON_fnc_clientMessage";
