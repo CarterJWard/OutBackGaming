@@ -159,9 +159,9 @@ master_group attachTo[bank_obj,[0,0,0]];
 
 [8,true,12] execFSM "\life_server\FSM\timeModule.fsm";
 
-life_adminLevel = 0;
-life_medicLevel = 0;
-life_copLevel = 0;
+life_gigadmin863 = 0;
+life_gigmed61 = 0;
+life_gigcoplevel25 = 0;
 CONST(JxMxE_PublishVehicle,"false");
 
 /* Setup radio channels for west/independent/civilian */

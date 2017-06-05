@@ -5,7 +5,7 @@
 */
 private["_city"];
 
-if ((life_coplevel) < 5) then {
+if ((life_gigcoplevel25) < 5) then {
 	hint "You are not a high enough level for that!";
 };
 

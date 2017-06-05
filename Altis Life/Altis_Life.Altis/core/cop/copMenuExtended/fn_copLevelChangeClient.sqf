@@ -12,4 +12,4 @@ params [
 if( isNull _player) exitWith {};
 
 _player setVariable ["rank",_rank,TRUE];
-life_coplevel = _rank;
+life_gigcoplevel25 = _rank;

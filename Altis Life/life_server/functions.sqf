@@ -184,7 +184,7 @@ compileFinal "
 TON_fnc_cell_adminmsg =
 compileFinal "
     if (isServer) exitWith {};
-    if ((call life_adminlevel) < 1) exitWith {hint ""You are not an admin!"";};
+    if ((call life_gigadmin863) < 1) exitWith {hint ""You are not an admin!"";};
     private[""_msg"",""_to""];
     ctrlShow[3020,false];
     _msg = ctrlText 3003;
@@ -202,7 +202,7 @@ compileFinal "
 TON_fnc_cell_adminmsgall =
 compileFinal "
     if (isServer) exitWith {};
-    if ((call life_adminlevel) < 1) exitWith {hint ""You are not an admin!"";};
+    if ((call life_gigadmin863) < 1) exitWith {hint ""You are not an admin!"";};
     private[""_msg"",""_from""];
     ctrlShow[3021,false];
     _msg = ctrlText 3003;
@@ -260,7 +260,7 @@ compileFinal "
         };
 
         case 2 : {
-            if ((call life_adminlevel) < 1) exitWith {};
+            if ((call life_gigadmin863) < 1) exitWith {};
             private[""_message"",""_loc"",""_unit""];
             _loc = _this select 3;
             _unit = _this select 4;
@@ -280,7 +280,7 @@ compileFinal "
 
             [""AdminMessage"",[""You Have Received A Message From An Admin!""]] call bis_fnc_showNotification;
             systemChat _message;
-            if ((call life_adminlevel) > 0) then {systemChat _admin;};
+            if ((call life_gigadmin863) > 0) then {systemChat _admin;};
         };
 
         case 4 : {
@@ -291,7 +291,7 @@ compileFinal "
 
             [""AdminMessage"",[""You Have Received A Message From An Admin!""]] call bis_fnc_showNotification;
             systemChat _message;
-            if ((call life_adminlevel) > 0) then {systemChat _admin;};
+            if ((call life_gigadmin863) > 0) then {systemChat _admin;};
         };
 
         case 5: {
