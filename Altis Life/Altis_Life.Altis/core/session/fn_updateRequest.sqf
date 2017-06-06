@@ -34,6 +34,8 @@ _array = [];
     _varName = PROF_VARNAME(configName _x,_flag);
     _array pushBack [_varName,PROF_VALUE(configName _x,_flag)]; 
 } forEach (format["getText(_x >> 'side') isEqualTo '%1'",_flag] configClasses (missionConfigFile >> "Profs"));
+
+_packet pushBack _array;
 switch (playerSide) do {
     case civilian: {
         _packet pushBack life_is_arrested;
