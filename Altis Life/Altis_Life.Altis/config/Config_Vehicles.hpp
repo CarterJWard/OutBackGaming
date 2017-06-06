@@ -87,10 +87,11 @@ class CarShops {
         side = "med";
         vehicles[] = {
             { "C_Offroad_01_F", { "", "", -1 } },
-            { "I_Truck_02_medical_F", { "", "", -1 } },
-            { "O_Truck_03_medical_F", { "", "", -1 } },
-            { "B_Truck_01_medical_F", { "", "", -1 } },
-            { "C_Hatchback_01_sport_F", { "", "", -1} }
+            { "C_SUV_01_F", {"life_gigmed61", "SCALAR", 1} },
+            { "C_Hatchback_01_sport_F", { "life_gigmed61", "SCALAR", 3} },
+            { "O_Truck_03_medical_F", { "life_gigmed61", "SCALAR", 3 } },
+            { "B_Truck_01_medical_F", { "life_gigmed61", "SCALAR", 3 } },
+            { "I_Truck_02_medical_F", { "life_gigmed61", "SCALAR", 4 } }
         };
     };
 
@@ -521,6 +522,9 @@ will modify the virtual space and the price of the vehicle, but other informatio
             { "Police", "cop", {
                 "textures\cop\cop_suv1.jpg"
             } },
+            { "EMS", "med", {
+                "textures\medic\medicSuv.jpg"
+            } }
         };
     };
 
