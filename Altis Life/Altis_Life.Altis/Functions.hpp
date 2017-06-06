@@ -437,4 +437,9 @@ class Life_Client_Core {
         class vehTakeAllItem {};
         class vehStoreAllItem {};
     };
+    
+    class Scripts {
+        file = "scripts";
+        class custHudUpdate {};
+    };
 };

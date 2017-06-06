@@ -14,11 +14,11 @@
 if(!isNil "life_seatbelt") then {
     if ( vehicle player != player ) then {
         if(life_seatbelt) then {
-            LIFEctrl(IDC_LIFE_BAR_SeatBelt) ctrlSetText "icons\seatlocked.paa";
+            LIFEctrl(1105) ctrlSetText "icons\ico_seatlocked.paa";
         } else {
-            LIFEctrl(IDC_LIFE_BAR_SeatBelt) ctrlSetText "icons\seatunlocked.paa";
+            LIFEctrl(1105) ctrlSetText "icons\ico_seatunlocked.paa";
         };
     } else {
-        LIFEctrl(IDC_LIFE_BAR_SeatBelt) ctrlSetText "";
+        LIFEctrl(1105) ctrlSetText "";
     };
 };
