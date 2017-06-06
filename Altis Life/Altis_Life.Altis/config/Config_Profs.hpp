@@ -81,6 +81,13 @@ class Profs {
         tag = "Cop";
         side = "cop";
     };
+
+    class pImpound {
+        variable = "pImpound";
+        name = "STR_Prof_Impound";
+        tag = "Impound";
+        side = "cop";
+    };
     
     //Medic
     class pMed {

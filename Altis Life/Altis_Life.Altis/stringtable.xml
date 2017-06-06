@@ -11045,5 +11045,8 @@
         <Key ID="STR_Prof_Med">
             <Original>Medic Skill</Original>
         </Key>
+        <Key ID="STR_Prof_Impound">
+            <Original>Impound Skill</Original>
+        </Key>
     </Package>
 </Project>
