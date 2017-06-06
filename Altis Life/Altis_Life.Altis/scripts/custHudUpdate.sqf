@@ -10,3 +10,15 @@
         [] execVM "scripts\custHud.sqf";
     };
 };
+
+if(!isNil "life_seatbelt") then {
+    if ( vehicle player != player ) then {
+        if(life_seatbelt) then {
+            LIFEctrl(IDC_LIFE_BAR_SeatBelt) ctrlSetText "icons\seatlocked.paa";
+        } else {
+            LIFEctrl(IDC_LIFE_BAR_SeatBelt) ctrlSetText "icons\seatunlocked.paa";
+        };
+    } else {
+        LIFEctrl(IDC_LIFE_BAR_SeatBelt) ctrlSetText "";
+    };
+};

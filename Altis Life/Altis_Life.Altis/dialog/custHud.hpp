@@ -1,4 +1,5 @@
 #include "common.hpp"
+#define IDC_LIFE_BAR_SeatBelt 4203
 
     class custHUD
     {
@@ -89,6 +90,15 @@
                         underline = false;
                     }; 
                 };
+                class LIFE_BAR_SeatBelt: Life_RscPicture
+                {
+                idc = IDC_LIFE_BAR_SeatBelt;
+                text = "";
+                x = 0.952292 * safezoneW + safezoneX;
+                y = 0.664333 * safezoneH + safezoneY;
+                w = 0.0331042 * safezoneW;
+                h = 0.0589743 * safezoneH;
+};
             };
     };
 				
