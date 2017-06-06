@@ -86,25 +86,25 @@ switch (true) do {
 			_lootamount = 1;
 			_give = _vrloot select 0;
 			_type2 = _vrloot select 1;
-			//_addExpAmount = 50;
+			_addExpAmount = 50;
 		};
 	case (_lchance <= M_CONFIG(getNumber,"LootCfg","LootSettings","loot_norm_chance")): 
 		{
 			_give = _loot select 0;
 			_type2 = _loot select 1;
-			//_addExpAmount = 20;
+			_addExpAmount = 20;
 		};
 	case (_lchance <= M_CONFIG(getNumber,"LootCfg","LootSettings","loot_easy_chance")): 
 		{
 			_give = _regloot select 0;
 			_type2 = _regloot select 1;
-			//_addExpAmount = 10;			
+			_addExpAmount = 10;			
 		};
 	default { 
 		_bad = true;
-		//_name = M_CONFIG(getText,"Profs","pThief","name");
-		//_addExpAmount = 5;
-		//["pThief",_addExpAmount] call life_fnc_addExp;
+		_name = M_CONFIG(getText,"Profs","pScavenger","name");
+		_addExpAmount = 5;
+		["pScavenger",_addExpAmount] call life_fnc_addExp;
 		//hint parseText format[localize "STR_ISTR_Found_XPSuccess2",_addExpAmount,(localize _name)];
 		hint "You found nothing!";
 	};
@@ -126,8 +126,8 @@ if(_diff isEqualTo 0 && _type2 isEqualTo "ymenu") exitWith
 
 if (_type2 isEqualTo "imenu" && !(player canAdd _give)) exitWith {hint "Your i inventory is full"}; 
 
-//private _name = M_CONFIG(getText,"Profs","pThief","name");
-//_addExpAmount = _addExpAmount + (5 * (_data select 0));
+private _name = M_CONFIG(getText,"Profs","pScavenger","name");
+_addExpAmount = _addExpAmount + (5 * (_data select 0));
 
 switch (_type2) do 
 {
@@ -136,7 +136,7 @@ switch (_type2) do
 	if(([true,_give,_diff] call life_fnc_handleInv)) then
 	{
 	    _itemName = M_CONFIG(getText,"VirtualItems",_give,"displayName");
-	    //["pThief",_addExpAmount] call life_fnc_addExp;
+	    ["pScavenger",_addExpAmount] call life_fnc_addExp;
 	    //hint parseText format[localize "STR_ISTR_Found_XPSuccess",_diff,(localize _itemName),_addExpAmount,(localize _name)];
 		hint format ["You found %1 lots of %2",_diff,(localize _itemName)];
 	};
@@ -154,7 +154,7 @@ switch (_type2) do
 	if (_addVal) then 
 	{
 	    private _itemInfo = [_give] call life_fnc_fetchCfgDetails;
-	    //["pThief",_addExpAmount] call life_fnc_addExp;
+	    ["pScavenger",_addExpAmount] call life_fnc_addExp;
 	    //hint parseText format[localize "STR_ISTR_Found_XPSuccess",1,(_itemInfo select 1),_addExpAmount,(localize _name)];
 		hint format ["You found 1 lots of %1",(_itemInfo select 1)];
 	};
