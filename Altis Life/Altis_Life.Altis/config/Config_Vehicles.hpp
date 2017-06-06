@@ -56,7 +56,10 @@ class CarShops {
         vehicles[] = {
             { "C_Heli_Light_01_civil_F", { "", "", -1 } },
             { "B_Heli_Light_01_F", { "", "", -1 } },
-            { "O_Heli_Light_02_unarmed_F", { "", "", -1 } }
+            { "I_Heli_Transport_02_F", { "", "", -1} },
+            { "C_Plane_Civil_01_F", { "", "", -1} },
+            { "C_Plane_Civil_01_racing_F", { "", "", -1 } }
+
         };
     };
 
@@ -623,18 +626,6 @@ will modify the virtual space and the price of the vehicle, but other informatio
         licenses[] = { {"pilot" }, {""}, {"mAir"}, {""} };
         price = 750000;
         textures[] = {
-            { "Black", "cop", {
-                "\a3\air_f\Heli_Light_02\Data\heli_light_02_ext_co.paa"
-            } },
-            { "White / Blue", "civ", {
-                "\a3\air_f\Heli_Light_02\Data\heli_light_02_ext_civilian_co.paa"
-            } },
-            { "Digi Green", "civ", {
-                "\a3\air_f\Heli_Light_02\Data\heli_light_02_ext_indp_co.paa"
-            } },
-            { "Desert Digi", "reb", {
-                "\a3\air_f\Heli_Light_02\Data\heli_light_02_ext_opfor_co.paa"
-            } },
             { "EMS", "med", {
                 "textures\medic\medOrca.jpg"
             } }
@@ -700,10 +691,45 @@ will modify the virtual space and the price of the vehicle, but other informatio
     };
 
     class B_Heli_Transport_03_unarmed_F {
-        vItemSpace = 600;
+        vItemSpace = 800;
         vFuelSpace = 20000;
         licenses[] = { {""}, {""}, {""}, {""} };
         price = 1800000;
         textures[] = {};
+    };
+
+    class I_Heli_Transport_02_F {
+        vItemSpace = 450;
+        vFuelSpace 15000;
+        licenses[] = {{""}, {""}, {""}, {""} };
+        price = 650000;
+        textures[] = {
+            { "Dahoman,", "civ", {
+                "\A3\air_f_beta\heli_transport_02\data\skins\heli_transport_02_1_dahoman_co",
+                "\A3\air_f_beta\heli_transport_02\data\skins\heli_transport_02_2_dahoman_co",
+                "\A3\air_f_beta\heli_transport_02\data\skins\heli_transport_02_3_dahoman_co"
+            } },
+            { "Ion", "civ", {
+                "\A3\air_f_beta\heli_transport_02\data\skins\heli_transport_02_1_ion_co",
+                "\A3\air_f_beta\heli_transport_02\data\skins\heli_transport_02_2_ion_co",
+                "\A3\air_f_beta\heli_transport_02\data\skins\heli_transport_02_3_ion_co"
+            } }
+        };
+    };
+
+    class C_Plane_Civil_01_racing_F {
+        vItemSpace = 50;
+        vFuelSpace = 2000;
+        licenses[] = {{""},{""},{""},{""} };
+        price = 500000;
+        texures[] = {};
+    };
+
+    class C_Plane_Civil_01_F {
+        vItemSpace = 50;
+        vFuelSpace = 2000;
+        licenses[] = {{""},{""},{""},{""} };
+        price = 500000;
+        texures[] = {};
     };
 };

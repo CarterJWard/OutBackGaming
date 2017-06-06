@@ -29,4 +29,4 @@ waitUntil{!isNull (findDisplay 38500)}; //Wait for the spawn selection to be ope
 waitUntil{isNull (findDisplay 38500)}; //Wait for the spawn selection to be done.
 
 [] execVM "scripts\custHud.sqf";
-[] execVM "scripts\custHudUpdate.sqf";
+[] execVM "scripts\fn_custHudUpdate.sqf";

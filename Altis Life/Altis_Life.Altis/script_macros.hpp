@@ -59,8 +59,8 @@
 
 
 //UI Macros
-#define LIFEdisplay (uiNamespace getVariable ["playerHUD",displayNull])
-#define LIFEctrl(ctrl) ((uiNamespace getVariable ["playerHUD",displayNull]) displayCtrl ctrl)
+#define LIFEdisplay (uiNamespace getVariable ["custHUD",displayNull])
+#define LIFEctrl(ctrl) ((uiNamespace getVariable ["custhud",displayNull]) displayCtrl ctrl)
 
 //SpyGlass Macros
 #define SPYGLASS_END \

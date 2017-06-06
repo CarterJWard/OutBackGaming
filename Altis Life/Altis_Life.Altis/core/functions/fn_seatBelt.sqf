@@ -13,4 +13,4 @@ if(!life_seatbelt) then {
 	life_seatbelt = false;
 };
 
-//[] call life_fnc_hudUpdate; //--Enable this if you are putting a hud option to display when your seatbelt is on.
+[] call life_fnc_custHudUpdate; //--Enable this if you are putting a hud option to display when your seatbelt is on.
