@@ -96,4 +96,11 @@ class Profs {
         tag = "Medic";
         side = "med";
     };
+
+    class pReveive {
+        variable = "pRevive";
+        name = "STR_Prof_Revive";
+        tag = "Revive";
+        side = "med";
+    };
 };

@@ -6,7 +6,7 @@
     Description:
     Impounds the vehicle
 */
-private["_vehicle","_type","_time","_value","_vehicleData","_upp","_ui","_progress","_pgText","_cP","_filters","_impoundValue","_price","_impoundMultiplier","_level"];
+private["_vehicle","_type","_time","_value","_vehicleData","_upp","_ui","_progress","_pgText","_cP","_filters","_impoundValue","_price","_impoundMultiplier","_level","_prof"];
 _vehicle = param [0,ObjNull,[ObjNull]];
 _filters = ["Car","Air","Ship"];
 if (!((KINDOF_ARRAY(_vehicle,_filters)))) exitWith {};

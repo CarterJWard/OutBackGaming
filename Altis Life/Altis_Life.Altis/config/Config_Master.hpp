@@ -95,8 +95,8 @@ class Life_Settings {
     bank_civ = 350000; //Amount of cash in bank for new civillians
     bank_med = 350000; //Amount of cash in bank for new medics
 
-    paycheck_cop = 3000; //Payment for cops
-    paycheck_civ = 5000; //Payment for civillians
+    paycheck_cop = 5000; //Payment for cops
+    paycheck_civ = 3000; //Payment for civillians
     paycheck_med = 6500; //Payment for medics
 
     paycheck_period = 5; //Scaled in minutes

@@ -6,7 +6,7 @@
     Description:
     Starts the revive process on the player.
 */
-private["_target","_revivable","_targetName","_ui","_progressBar","_titleText","_cP","_title","_reviveCost"];
+private["_target","_revivable","_targetName","_ui","_progressBar","_titleText","_cP","_title","_reviveCost","_prof","_level"];
 _target = param [0,ObjNull,[ObjNull]];
 if (isNull _target) exitWith {};
 _reviveCost = LIFE_SETTINGS(getNumber,"revive_fee");
@@ -22,6 +22,13 @@ _title = format[localize "STR_Medic_Progress",_targetName];
 life_action_inUse = true; //Lockout the controls.
 
 _target setVariable ["Reviving",player,TRUE];
+
+//Prof setup
+_flag = PROF_SIDE(playerSide);
+_prof = "pReveive";
+_data = PROF_VALUE(_prof,_flag);
+_level = _data select 0;
+
 //Setup our progress bar
 disableSerialization;
 5 cutRsc ["life_progress","PLAIN"];
@@ -40,7 +47,7 @@ for "_i" from 0 to 1 step 0 do {
     };
 
     sleep .15;
-    _cP = _cP + .01;
+    _cP = _cP + (0.01 * _level);
     _progressBar progressSetPosition _cP;
     _titleText ctrlSetText format["%3 (%1%2)...",round(_cP * 100),"%",_title];
     if (_cP >= 1 || !alive player) exitWith {};
@@ -68,6 +75,7 @@ if (life_interrupted) exitWith {life_interrupted = false; titleText[localize "ST
 
 BANK = BANK + _reviveCost;
 [] call life_fnc_hudUpdate;
+[_prof, 10] call life_fnc_addExp;
 
 life_action_inUse = false;
 _target setVariable ["Revive",TRUE,TRUE];
