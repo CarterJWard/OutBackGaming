@@ -87,6 +87,7 @@ class CfgFunctions {
             class vehicleUpdate {};
             class recupkeyforHC {};
             class timers{};
+            class hideBuildings{};
         };
 		
 		class DynMarket	{
