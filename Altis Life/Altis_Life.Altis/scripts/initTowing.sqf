@@ -38,8 +38,9 @@ if( count (ropeAttachedObjects _vehicle) == 0 ) then { \
 };
 
 SA_Advanced_Towing_Install = {
-
-// Prevent advanced towing from installing twice
+//Make sure only medics can tow
+if(!(playerSide isEqualTo independent)) exitWith {}; 
+//Prevent advanced towing from installing twice
 if(!isNil "SA_TOW_INIT") exitWith {};
 SA_TOW_INIT = true;
 
@@ -721,8 +722,7 @@ SA_Set_Owner = {
 };
 
 SA_Add_Player_Tow_Actions = {
-	if (!(playerSide isEqualTo east)) exitWith {};
-	if (!license_civ_towing) exitWith {};
+
 	player addAction ["Deploy Tow Ropes", {
 		[] call SA_Take_Tow_Ropes_Action;
 	}, nil, 0, false, true, "", "call SA_Take_Tow_Ropes_Action_Check"];

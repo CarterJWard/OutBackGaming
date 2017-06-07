@@ -39,7 +39,7 @@ while {true} do {
 		{
 			[ObjNull,_msg, _name] remoteExec ["TON_fnc_handleMessages", 6];
 			hint parseText format["<t color='#FA4F4F'><t size='1.2'>You entered your NLR marker, Staff members have been notified."];
-			[player get] call TON_fnc_NLRAdmin;
+			[player] call TON_fnc_NLRAdmin;
 			nlr_check = false;
 		};
 	};
