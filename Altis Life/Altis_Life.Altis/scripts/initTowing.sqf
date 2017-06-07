@@ -541,9 +541,6 @@ SA_Can_Take_Tow_Ropes = {
 	} else {
 		false;
 	};
-	if (!license_civ_Towing) then {
-		false;
-	};
 };
 
 SA_Put_Away_Tow_Ropes_Action = {
@@ -724,7 +721,8 @@ SA_Set_Owner = {
 };
 
 SA_Add_Player_Tow_Actions = {
-
+	if (!(playerSide isEqualTo east)) exitWith {};
+	if (!license_civ_towing) exitWith {};
 	player addAction ["Deploy Tow Ropes", {
 		[] call SA_Take_Tow_Ropes_Action;
 	}, nil, 0, false, true, "", "call SA_Take_Tow_Ropes_Action_Check"];
