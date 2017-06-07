@@ -393,7 +393,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
                 "\a3\soft_f_gamma\Hatchback_01\data\hatchback_01_ext_sport06_co.paa"
             } },
             { "Police", "cop", {
-                "#(ai,64,64,1)Fresnel(1.3,7)"
+                "textures\cop\copHatch.jpg"
             } },
             { "EMS", "med", {
                 "textures\medic\medHatch.jpg"
