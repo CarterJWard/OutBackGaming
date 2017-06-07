@@ -49,12 +49,12 @@ _OPEN_ADMIN_MENU_KEY = 0x3B;
 /* What ESCAPE Menu shows */
 _ESCMNUTOP = 'Thankyou for Playing';
 _ESCMNUBOT = 'See you soon!';
-_BRIEFING_MSG = false;	/* use mission briefing message: if   "_BRIEFING_MSG = false;"   then the message will be replaced by infiSTAR */
+_BRIEFING_MSG = true;	/* use mission briefing message: if   "_BRIEFING_MSG = false;"   then the message will be replaced by infiSTAR */
 
 /* shows RESTART IN X MINS */
 _USE_RESTART_TIMER = true;	/* true or false */
 _RESTART_TIME_IN_M = 720;		/* restart time in minutes */
-_SHOW_TIMER_IN_MIN = [1,2,3,5,10];	/* minutes before restart, when message is shown */
+_SHOW_TIMER_IN_MIN = [1,2,5,10,15];	/* minutes before restart, when message is shown */
 
 /* The following 3 options can be disabled by putting the value to -1. For example "_TGV = -1;" */
 /* Terrain Grid Value   */ _TGV = -1;		/* 50, 25, 12.5  */	/* if set to 50 grass will be very low for better client FPS.. default is 25 ~35 is good performance and grass :) */
@@ -75,7 +75,7 @@ _startAsNormal =
 ];
 /* if one of the admins with the UIDs in "_startAsNormal" uses the !admin command to login as admin, it will be announced to ANYONE on the server if "_announce_adminstate_changed" is true. */
 _announce_adminstate_changed = false;	/* true or false */
-_use_html_load_on_adminmenu = true;		/* default and recommended is TRUE. infiSTAR updates and news are announced in the top right corner when you open the AdminMenu if this is true! */
+_use_html_load_on_adminmenu = false;		/* default and recommended is TRUE. infiSTAR updates and news are announced in the top right corner when you open the AdminMenu if this is true! */
 
 
 _adminUIDandAccess =
@@ -151,12 +151,6 @@ _adminUIDandAccess =
 			'Restrain','Unrestrain',
 			'Arsenal'	// Adds Arsenal to the mousewheel actions if you press "," on the Numpad!
 	]
-	],
-	[
-		['76561198031452813','76561198009848914'],
-		[
-		'Teleport On Map Click','Teleport - Me To Target'
-		]
 	]
 ];
 
@@ -186,7 +180,7 @@ LOG_PATH = "infilogs/";
 /*            many checks should be set to true instead of false.                    */
 /*     These are just diabled because the average user doesn't read this file..      */
 /* ********************************************************************************* */
-/*  Items Added Check    */ _IAC = false;	/* true or false */	/* checks if Items are being added unrightful! */
+/*  Items Added Check    */ _IAC = true;	/* true or false */	/* checks if Items are being added unrightful! */
 /*  Local Vehicle Check  */ _LVC = true;	/* true or false */
 /*  unitRecoil checks    */ _URC = true;	/* true or false */	/* checks unitRecoilCoefficient and resets default unitRecoilCoefficient */
 /*  Notification check   */ _UNC = false;	/* true or false */	/* _UNC = false; on AltisLife! - showNotification check */
@@ -213,7 +207,7 @@ LOG_PATH = "infilogs/";
 /*  EH_Draw3D check      */ _C3D = false;	/* true or false */	/* announces: "EH_Draw3D x should be y" */
 /*  MouseMoving EH check */ _MOH = false;	/* true or false */	/* announces: "MouseMoving EventHandler added" - needs to be disabled for UAV scripts and such.. */
 /*  MouseButton EH check */ _MBC = false;	/* true or false */	/* announces: "MouseButton EventHandler added" */
-/*  Revert MouseButton   */ _RMB = false;	/* true or false */	/* false with Task Force Radio ? */
+/*  Revert MouseButton   */ _RMB = true;	/* true or false */	/* false with Task Force Radio ? */
 /*  Revert KeyUp         */ _RUK = false;	/* true or false */	/* recommended:  true  Removes custom KeyUps and sets back the default ones (false with Task Force Radio ?) */
 /*  Revert KeyDown       */ _RDK = false;	/* true or false */	/* recommended:  true  Removes custom KeyDowns and sets back the default ones (false with Task Force Radio ?) */
 /*  Check Keybinds       */ _CKB = false;	/* true or false */	/* recommended:  true  _RKB needs to be true! Checks Keybinds, if it finds added ones it shows: "KeyBinds added   %1 should be %2" */
@@ -484,23 +478,11 @@ _UVC = true;	/* Use Vehicle Check(s) */
 _UVW = false;	/* if "_UVW = true;" then it checks all vehicles on the map. If their type is not in "_VehicleWhiteList", they are flagged as hacked in and destroyed. */
 _VehicleWhiteList =
 [
-	'B_Heli_Transport_01_camo_F','C_Plane_Civil_01_F','C_Offroad_02_unarmed_F','B_T_LSV_01_unarmed_F','B_Boat_Armed_01_minigun_F',
-	'O_T_LSV_02_unarmed_F','I_C_Boat_Transport_02_F','C_Scooter_Transport_01_F',
-	'O_T_VTOL_02_vehicle_F','B_CTRG_Heli_Transport_01_tropic_F','C_Plane_Civil_01_racing_F','O_LSV_02_armed_F',
-	'I_C_Plane_Civil_01_F','B_Boat_Armed_01_minigun_F','B_LSV_01_armed_F','O_LSV_02_unarmed_F','C_Boat_Transport_02_F',
-	'B_T_VTOL_01_vehicle_F','B_CTRG_LSV_01_light_F','B_LSV_01_unarmed_F','B_T_VTOL_01_infantry_F','I_C_Offroad_02_unarmed_F'  
+	 'B_Quadbike_01_F','C_Hatchback_01_F','C_Offroad_01_F','C_SUV_01_F','C_Hatchback_01_sport_F','C_Van_01_transport_F','C_Kart_01_Blu_F','C_Kart_01_Fuel_F','C_Kart_01_Red_F','C_Kart_01_Vrana_F','C_Van_01_box_F','I_Truck_02_transport_F','I_Truck_02_covered_F','B_Truck_01_transport_F','O_Truck_03_transport_F','O_Truck_03_covered_F','B_Truck_01_box_F','O_Truck_03_device_F','C_Van_01_fuel_F','I_Truck_02_fuel_F','B_Truck_01_fuel_F','C_Heli_Light_01_civil_F','B_Heli_Light_01_F','I_Heli_Transport_02_F','C_Plane_Civil_01_F','C_Plane_Civil_01_racing_F','C_Rubberboat','C_Boat_Civil_01_F','B_SDV_01_F','B_G_Offroad_01_F','O_MRAP_02_F','B_Heli_Light_01_stripped_F','B_G_Offroad_01_armed_F','O_Truck_03_medical_F','B_Truck_01_medical_F','I_Truck_02_medical_F','O_Heli_Light_02_unarmed_F','B_MRAP_01_F','B_Heli_Transport_01_F','B_Boat_Transport_01_F','C_Boat_Civil_01_police_F','B_Boat_Armed_01_minigun_F'
 ];
 _ForbiddenVehicles =
 [
-	'B_Plane_CAS_01_F','B_APC_Tracked_01_rcws_F','B_APC_Tracked_01_CRV_F','B_APC_Tracked_01_AA_F','B_MBT_01_cannon_F',
-	'B_MBT_01_arty_F','B_MBT_01_mlrs_F','B_UAV_02_F','B_UAV_02_CAS_F','B_MRAP_01_gmg_F',
-	'B_MBT_01_TUSK_F','O_Heli_Light_02_F','O_Heli_Attack_02_F','O_Heli_Attack_02_black_F','O_Plane_CAS_02_F','O_APC_Tracked_02_cannon_F',
-	'O_APC_Tracked_02_AA_F','O_MBT_02_cannon_F','O_MBT_02_arty_F','O_Boat_Armed_01_hmg_F','O_UAV_02_CAS_F','O_UAV_02_F','O_MRAP_02_hmg_F','O_MRAP_02_gmg_F','O_G_Offroad_01_armed_F',
-	'O_APC_Wheeled_02_rcws_F','O_UGV_01_rcws_F','B_UGV_01_rcws_F','I_UGV_01_rcws_F','I_APC_Wheeled_03_cannon_F','I_MRAP_03_gmg_F','I_G_Offroad_01_armed_F',
-	'I_UAV_02_CAS_F','I_UAV_02_F','I_Boat_Armed_01_minigun_F','I_MBT_03_cannon_F','I_APC_tracked_03_cannon_F','I_Plane_Fighter_03_AA_F','I_Plane_Fighter_03_CAS_F',
-	'B_HMG_01_F','O_HMG_01_F','I_HMG_01_F','B_HMG_01_high_F','O_HMG_01_high_F','I_HMG_01_high_F','B_HMG_01_A_F','O_HMG_01_A_F','I_HMG_01_A_F','B_Mortar_01_F','O_Mortar_01_F',
-	'I_Mortar_01_F','I_G_Mortar_01_F','B_G_Mortar_01_F','O_G_Mortar_01_F','B_GMG_01_F','O_GMG_01_F','I_GMG_01_F','B_GMG_01_high_F','O_GMG_01_high_F','I_GMG_01_high_F','B_GMG_01_A_F',
-	'O_GMG_01_A_F','I_GMG_01_A_F','B_static_AA_F','O_static_AA_F','I_static_AA_F','B_static_AT_F','O_static_AT_F','I_static_AT_F'
+	'B_Plane_CAS_01_F'
 ];
 
 

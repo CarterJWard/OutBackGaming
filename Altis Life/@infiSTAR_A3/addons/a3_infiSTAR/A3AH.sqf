@@ -7,7 +7,7 @@
 	Arma AntiHack & AdminTools - infiSTAR.de
 */
 /* *******************Developer : infiSTAR (infiSTAR23@gmail.com)******************* */
-/* **************infiSTAR Copyright®© 2011 - 2016 All rights reserved.************** */
+/* **************infiSTAR Copyrightï¿½ï¿½ 2011 - 2016 All rights reserved.************** */
 /* *********************************www.infiSTAR.de********************************* */
 diag_log '<infiSTAR.de> VERSION: 16-05-2017 06-11-07 infiSTAR.de AHAT (v0249)';
 comment 'Antihack & AdminTools - Christian Lorenzen - www.infiSTAR.de - License: (CC)';
@@ -318,7 +318,7 @@ _verybadStrings =
 	'gggg_eeee_ffff','mord all','teleport all','__byass','_altislifeh4x','antifrezze','ownscripts','ownscripted','mesnu',
 	'mystic_','init re','init life re','spoody','gef_','throx_','_adasaasasa','_dsfnsjf','cheatmenu','in54nity','markad','fuck_me_','_v4fin',
 	'a3randvar','infinite ammo','player markers','+ _code +',
-	'i can break these cuffs','give 100k','kill all','grimbae','pony menu','35sp','lyštîc mêñu',
+	'i can break these cuffs','give 100k','kill all','grimbae','pony menu','35sp','lyï¿½tï¿½c mï¿½ï¿½u',
 	'insert script','3x3cutor','c4sh'
 ];
 _blacklistedVariables append [
@@ -4466,8 +4466,8 @@ _chatKeyUp_id = (finddisplay 24) displayAddEventHandler ['KeyUp',_chatKeyUp];
 				_EPOCH_pushCustomVar = compile preprocessFileLineNumbers 'epoch_code\compile\functions\EPOCH_pushCustomVar.sqf';
 				_EPOCH_fnc_playerFired = compileFinal preprocessFileLineNumbers 'epoch_code\compile\functions\EPOCH_fnc_playerFired.sqf';
 				_rnd1 = round(random 99999);life_cash = _rnd1;
-				_rnd2 = round(random 99999);life_adminlevel = _rnd2;
-				_rnd3 = round(random 99999);life_coplevel = _rnd3;
+				_rnd2 = round(random 99999);life_gigadmin863 = _rnd2;
+				_rnd3 = round(random 99999);life_gigcoplevel25 = _rnd3;
 				_rnd4 = round(random 99999);life_fnc_MPexec = _rnd4;
 				_rnd5 = round(random 99999);life_atmbank = _rnd5;
 			"; }; _A3AHstring = _A3AHstring + "
@@ -4868,7 +4868,7 @@ _chatKeyUp_id = (finddisplay 24) displayAddEventHandler ['KeyUp',_chatKeyUp];
 							};
 						};
 					} forEach [
-						'life_cash','life_adminlevel','life_coplevel','life_fnc_MPexec','life_atmbank',
+						'life_cash','life_gigadmin863','life_gigcoplevel25','life_fnc_MPexec','life_atmbank',
 						'EPOCH_playerEnergy','EPOCH_playerHunger','EPOCH_playerThirst','EPOCH_playerStamina',
 						'EPOCH_playerCrypto','EPOCH_antiWallCount','EPOCH_taxRate'
 					];
@@ -4927,13 +4927,13 @@ _chatKeyUp_id = (finddisplay 24) displayAddEventHandler ['KeyUp',_chatKeyUp];
 					{
 						[_name,_puid,'BAN',toArray(format['Altis Life Money Hack: [%1] should be [%2]',life_cash,_rnd1])] call "+_AHe8dbd04db812KICKLOG+";[] call "+_AHKickOFF+";
 					};
-					if!(_rnd2 isEqualTo life_adminlevel)then
+					if!(_rnd2 isEqualTo life_gigadmin863)then
 					{
-						[_name,_puid,'BAN',toArray(format['Altis Life Adminlevel Hack: [%1] should be [%2]',life_adminlevel,_rnd2])] call "+_AHe8dbd04db812KICKLOG+";[] call "+_AHKickOFF+";
+						[_name,_puid,'BAN',toArray(format['Altis Life Adminlevel Hack: [%1] should be [%2]',life_gigadmin863,_rnd2])] call "+_AHe8dbd04db812KICKLOG+";[] call "+_AHKickOFF+";
 					};
-					if!(_rnd3 isEqualTo life_coplevel)then
+					if!(_rnd3 isEqualTo life_gigcoplevel25)then
 					{
-						[_name,_puid,'BAN',toArray(format['Altis Life Coplevel Hack: [%1] should be [%2]',life_coplevel,_rnd3])] call "+_AHe8dbd04db812KICKLOG+";[] call "+_AHKickOFF+";
+						[_name,_puid,'BAN',toArray(format['Altis Life Coplevel Hack: [%1] should be [%2]',life_gigcoplevel25,_rnd3])] call "+_AHe8dbd04db812KICKLOG+";[] call "+_AHKickOFF+";
 					};
 					if!(_rnd4 isEqualTo life_fnc_MPexec)then
 					{
@@ -5634,5 +5634,5 @@ diag_log format['<infiSTAR.de> %1 - AntiHack loaded!',time];
 /* ********************************************************************************* */
 /* *********************************www.infiSTAR.de********************************* */
 /* *******************Developed by infiSTAR (infiSTAR23@gmail.com)****************** */
-/* **************infiSTAR Copyright®© 2011 - 2016 All rights reserved.************** */
+/* **************infiSTAR Copyrightï¿½ï¿½ 2011 - 2016 All rights reserved.************** */
 /* ****DayZAntiHack.com***DayZAntiHack.de***ArmaAntiHack.com***Arma3AntiHack.com**** */
