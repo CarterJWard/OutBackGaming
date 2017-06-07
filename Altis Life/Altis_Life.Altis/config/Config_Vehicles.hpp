@@ -704,7 +704,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
 
     class I_Heli_Transport_02_F {
         vItemSpace = 450;
-        vFuelSpace 15000;
+        vFuelSpace = 15000;
         licenses[] = {{""}, {""}, {""}, {""} };
         price = 650000;
         textures[] = {

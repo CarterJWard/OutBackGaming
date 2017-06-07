@@ -46,7 +46,7 @@ for "_i" from 0 to 1 step 0 do {
         player playMoveNow "AinvPknlMstpSnonWnonDnon_medic_1";
     };
 
-    sleep .15;
+    sleep 1;
     _cP = _cP + (0.01 * _level);
     _progressBar progressSetPosition _cP;
     _titleText ctrlSetText format["%3 (%1%2)...",round(_cP * 100),"%",_title];
