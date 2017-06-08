@@ -65,7 +65,106 @@ if ((_veh isKindOf "Car") || (_veh isKindOf "Ship") || (_veh isKindOf "Air")) th
             [false,"toolkit",1] call life_fnc_handleInv;
         };
 
-        _veh setDamage 0;
-        titleText[localize "STR_NOTF_RepairedVehicle","PLAIN"];
-    };
+
+    private ["_onLadder", "_random", "_check"];
+	_car = _veh;
+	
+	//Check for errors
+	_onLadder =	(getNumber (configFile >> "CfgMovesMaleSdr" >> "States" >> (animationState player) >> "onLadder")) == 1;
+	if (!(vehicle player == player)) exitWith {};
+	if (_onLadder) exitWith {};
+	
+	//Did my wife bought a mac?
+	if (_car isKindOf "Truck_F") then {
+	
+		//YES!!!
+		//Check if truck is in good condition
+		if ((_car getHitPointDamage "HitLFWheel") == 0 &&
+			(_car getHitPointDamage "HitLF2Wheel") == 0 &&
+			(_car getHitPointDamage "HitLMWheel") == 0 &&
+			(_car getHitPointDamage "HitLBWheel") == 0 &&
+			(_car getHitPointDamage "HitRFWheel") == 0 &&
+			(_car getHitPointDamage "HitRF2Wheel") == 0 &&
+			(_car getHitPointDamage "HitRMWheel") == 0 &&
+			(_car getHitPointDamage "HitRBWheel") == 0)
+		
+        _HitPointT = [
+			"HitLFWheel",
+			"HitLF2Wheel",
+			"HitLMWheel",
+			"HitLBWheel",
+			"HitRFWheel",
+			"HitRF2Wheel",
+			"HitRMWheel",
+			"HitRBWheel"
+		];
+		
+		//Not that wheel, the other one
+		dss_fnc_repair_wheel_check_truck = {
+			_random = _HitPointT call BIS_fnc_SelectRandom;
+			_check = _car getHitPointDamage _random;
+			if (_check == 0) then
+			{
+				call dss_fnc_repair_wheel_check_truck;
+			} else {
+				_car sethitPointDamage [_random, 0];
+			};
+		};
+		
+		//Lets see how it works
+		_random = _HitPointT call BIS_fnc_SelectRandom;
+		_check = _car getHitPointDamage _random;
+		player switchMove "AinvPknlMstpSlayWrflDnon_medic";
+		sleep 6;
+		if (_check == 0) then
+		{
+			call dss_fnc_repair_wheel_check_truck;
+		} else {
+			_car setHitPointDamage [_random, 0];
+		};
+		titleCut ["You have succesfully repaired a tyre!", "PLAIN DOWN"];
+	}
+	//Ok, if we didn't buy a mac, then show me a jeep
+	Else
+	{
+		//Check if car is in good condition
+		if ((_car getHitPointDamage "HitLFWheel") == 0 &&
+			(_car getHitPointDamage "HitLF2Wheel") == 0 &&
+			(_car getHitPointDamage "HitRFWheel") == 0 &&
+			(_car getHitPointDamage "HitRF2Wheel") == 0)
+		
+		_HitPointC = [
+			"HitLFWheel",
+			"HitLF2Wheel",
+			"HitRFWheel",
+			"HitRF2Wheel"
+		];
+		
+		//Great, wrong wheel again..		
+		dss_fnc_repair_wheel_check_car = {
+			_random = _HitPointC call BIS_fnc_SelectRandom;
+			_check = _car getHitPointDamage _random;
+			if (_check == 0) then
+			{
+				call dss_fnc_repair_wheel_check_car;
+			} else {
+				_car sethitPointDamage [_random, 0];
+			};
+		};
+		
+		//Lets see how it handles in the city
+		_random = _HitPointC call BIS_fnc_SelectRandom;
+		_check = _car getHitPointDamage _random;
+		player switchMove "AinvPknlMstpSlayWrflDnon_medic";
+		sleep 6;
+		if (_check == 0) then
+		{
+			call dss_fnc_repair_wheel_check_car;
+		} else {
+			_car setHitPointDamage [_random, 0];
+		};
+	};
 };
+        titleText[localize "STR_NOTF_RepairedVehicle","PLAIN"];
+};
+

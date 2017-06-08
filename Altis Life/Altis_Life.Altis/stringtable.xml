@@ -5741,6 +5741,9 @@
             <Portuguese>Sua aeronave está reparada e com o tanque cheio!</Portuguese>
             <Polish>Helikopter został naprawiony i natankowany</Polish>
         </Key>
+        <Key ID="STR_Vehicle_Service">
+            <Original>Service</Original>
+        </Key>
     </Package>
     <Package name="Life_Items">
         <Key ID="STR_Item_Handcuffs">

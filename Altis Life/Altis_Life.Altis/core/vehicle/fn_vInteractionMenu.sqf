@@ -19,6 +19,7 @@ if (!dialog) then {
 };
 disableSerialization;
 
+_servMarkers = ["hospital_marker","car_serv1","car_serv2","car_serv3","hospital_2","hopital_3"];
 _curTarget = param [0,ObjNull,[ObjNull]];
 if (isNull _curTarget) exitWith {closeDialog 0;}; //Bad target
 _isVehicle = if ((_curTarget isKindOf "landVehicle") || (_curTarget isKindOf "Ship") || (_curTarget isKindOf "Air")) then {true} else {false};
@@ -122,6 +123,15 @@ if (playerSide isEqualTo west) then {
                         };
                     } forEach ["fuel_storage_1","fuel_storage_2"];
                 };
+            };
+        };
+    } else {
+        _Btn3 ctrlShow false;
+        if (!(playerside isEqualTo independent)) then {
+            if (player distance (getMarkerPos _servMarkers) < 40) then {
+                _Btn3 ctrlSetText localize "STR_Vehicle_Service";
+                _Btn3 buttonSetAction "[life_vInact_curTarget] spawn life_fnc_repairWhole; closeDialog 0;"
+                _Btn3 ctrlShow true;
             };
         };
     };
