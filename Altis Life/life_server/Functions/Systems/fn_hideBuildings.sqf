@@ -11,7 +11,20 @@ _toHide = [
     [hide4, ["HIDE"], 5],
     [hide5, ["HIDE"], 5],
     [hide6, ["HOUSE"], 10],
-    [hide7, ["HOUSE"], 10]
+    [hide7, ["HOUSE"], 10],
+    [hide8, ["HOUSE"], 15],
+    [hide9, ["HIDE"], 3],
+    [hide10, ["HIDE"], 2],
+    [hide11, ["HIDE"], 2],
+    [hide12, ["HIDE"], 2],
+    [hide13, ["HIDE"], 2],
+    [hide14, ["HIDE"], 2],
+    [hide15, ["HIDE"], 2],
+    [hide16, ["HIDE"], 2],
+    [hide17, ["HIDE"], 5],
+    [hide18, ["HIDE"], 5],
+    [hide19, ["HIDE"], 5],
+    [hide20, ["HIDE"], 5]
 ];
 
 { 
