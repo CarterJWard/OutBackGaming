@@ -31,7 +31,7 @@ _playertitle = _display displayCtrl 1006;
 _wantedtitle = _display displayCtrl 1007; 
 		
 //Stats
-_damageR = round ((1 - (damage player)) * 100);
+_damage = round ((1 - (damage player)) * 100);
 //
 //PLEASE COMMENT OUT >>ONE<< OF THE TWO SETS OF VARIABLES BELOW
 //
@@ -52,6 +52,7 @@ _slotsB = playableSlotsNumber blufor;
 _slotsC = playableSlotsNumber civilian;
 _slots = _slotsB + _slotsC + _slotsI;
 
+/*
 if (_damageR > 99) then {
 	_damage = 100;	
 };
@@ -67,7 +68,7 @@ if (_damageR < 96 && _damageR > 0) then {
 if (_damageR == 0) then {
 	_damage = 0;	
 };
-
+*/
 
 		
 //Colours
@@ -77,7 +78,7 @@ _colour107		= parseText "#FF9000";
 _colour106		= parseText "#FFBB00";
 _colour105		= parseText "#FFCC00";
 _colour104		= parseText "#81CCDD";
-_colour103		= parseText	"#33AACC";
+_colour103		= parseText "#33AACC";
 _colour102		= parseText "#3388CC";
 _colour101		= parseText "#3366CC";
 _colour100 		= parseText "#336600";
