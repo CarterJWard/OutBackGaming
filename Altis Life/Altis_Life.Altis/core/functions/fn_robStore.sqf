@@ -28,7 +28,7 @@ _shop switchMove "AmovPercMstpSsurWnonDnon";
 ["Gas Station Holdup","A local gas station is being heldup please check your map for info",[204,0,0,1],""] remoteExecCall ["life_fnc_showNotification",west];
 
 _cops = (west countSide playableUnits);
-if(_cops < 1) exitWith{[_vault,-1] remoteExec ["disableSerialization;",2]; hint "There isnt enough Police to rob Gas Station!";};
+if(_cops < 3) exitWith{[_vault,-1] remoteExec ["disableSerialization;",2]; hint "There isnt enough Police to rob Gas Station!";};
 disableSerialization;
 5 cutRsc ["life_progress","PLAIN"];
 _ui = uiNameSpace getVariable "life_progress";
