@@ -44,25 +44,39 @@ _masks = LIFE_SETTINGS(getArray,"clothing_masks");
                     case (side _x isEqualTo west && {!isNil {_x getVariable "rank"}}): {
 						if(_x getVariable ["offDuty", false]) then {
 							format["<img image='%1' size='1'></img> %2 <br/> Off Duty!",switch ((_x getVariable "rank")) do {
-								case 2: {"\a3\ui_f\data\gui\cfg\Ranks\corporal_gs.paa"};
-								case 3: {"\a3\ui_f\data\gui\cfg\Ranks\sergeant_gs.paa"};
-								case 4: {"\a3\ui_f\data\gui\cfg\Ranks\lieutenant_gs.paa"};
-								case 5: {"\a3\ui_f\data\gui\cfg\Ranks\captain_gs.paa"};
-								case 6: {"\a3\ui_f\data\gui\cfg\Ranks\major_gs.paa"};
-								case 7: {"\a3\ui_f\data\gui\cfg\Ranks\colonel_gs.paa"};
-								case 8: {"\a3\ui_f\data\gui\cfg\Ranks\general_gs.paa"};
-								default {"\a3\ui_f\data\gui\cfg\Ranks\private_gs.paa"};
+								case 0: {"icons\cop\ico_pub.paa"};
+                                case 1: {"icons\cop\ico_1.paa"}:
+                                case 2: {"icons\cop\ico_2.paa"};
+								case 3: {"icons\cop\ico_3.paa"};
+								case 4: {"icons\cop\ico_4.paa"};
+								case 5: {"icons\cop\ico_5.paa"};
+								case 6: {"icons\cop\ico_6.paa"};
+								case 7: {"icons\cop\ico_7.paa"};
+								case 8: {"icons\cop\ico_8.paa"};
+								case 9: {"icons\cop\ico_9.paa"};
+                                case 10: {"icons\cop\ico_10.paa"};
+                                case 11: {"icons\cop\ico_11.paa"};
+                                case 12: {"icons\cop\ico_12.paa"};
+                                case 13: {"icons\cop\ico_13.paa"};
+                                default {"icons\cop\ico_pub.paa"};
 							},_x getVariable ["realname",name _x]];
 						} else {
 							format["<img image='%1' size='1'></img> %2",switch ((_x getVariable "rank")) do {
-								case 2: {"\a3\ui_f\data\gui\cfg\Ranks\corporal_gs.paa"};
-								case 3: {"\a3\ui_f\data\gui\cfg\Ranks\sergeant_gs.paa"};
-								case 4: {"\a3\ui_f\data\gui\cfg\Ranks\lieutenant_gs.paa"};
-								case 5: {"\a3\ui_f\data\gui\cfg\Ranks\captain_gs.paa"};
-								case 6: {"\a3\ui_f\data\gui\cfg\Ranks\major_gs.paa"};
-								case 7: {"\a3\ui_f\data\gui\cfg\Ranks\colonel_gs.paa"};
-								case 8: {"\a3\ui_f\data\gui\cfg\Ranks\general_gs.paa"};
-								default {"\a3\ui_f\data\gui\cfg\Ranks\private_gs.paa"};
+								case 0: {"icons\cop\ico_pub.paa"};
+                                case 1: {"icons\cop\ico_1.paa"}:
+                                case 2: {"icons\cop\ico_2.paa"};
+								case 3: {"icons\cop\ico_3.paa"};
+								case 4: {"icons\cop\ico_4.paa"};
+								case 5: {"icons\cop\ico_5.paa"};
+								case 6: {"icons\cop\ico_6.paa"};
+								case 7: {"icons\cop\ico_7.paa"};
+								case 8: {"icons\cop\ico_8.paa"};
+								case 9: {"icons\cop\ico_9.paa"};
+                                case 10: {"icons\cop\ico_10.paa"};
+                                case 11: {"icons\cop\ico_11.paa"};
+                                case 12: {"icons\cop\ico_12.paa"};
+                                case 13: {"icons\cop\ico_13.paa"};
+                                default {"icons\cop\ico_pub.paa"};
 							},_x getVariable ["realname",name _x]];
 						};
 					};
