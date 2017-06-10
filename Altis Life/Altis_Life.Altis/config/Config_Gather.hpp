@@ -2,31 +2,31 @@ class CfgGather {
     zoneSize = 30;
     class Resources {
         class apple {
-            amount = 5;
+            amount = 3;
             zones[] = { "apple_1", "apple_2", "apple_3", "apple_4" };
             item = "";
         };
 
         class peach {
-            amount = 5;
+            amount = 3;
             zones[] = { "peaches_1", "peaches_2", "peaches_3", "peaches_4" };
             item = "";
         };
 
         class heroin_unprocessed {
-            amount = 3;
+            amount = 1;
             zones[] = { "heroin_1" };
             item = "";
         };
 
         class cocaine_unprocessed {
-            amount = 3;
+            amount = 1;
             zones[] = { "cocaine_1" };
             item = "";
         };
 
         class cannabis {
-            amount = 3;
+            amount = 1;
             zones[] = { "weed_1" };
             item = "";
         };
@@ -94,7 +94,7 @@ Example 2:
         };
 
         class diamond_uncut {
-            amount = 2;
+            amount = 1;
             zones[] = { "diamond_mine" };
             item = "pickaxe";
             mined[] = { "diamond_uncut" };

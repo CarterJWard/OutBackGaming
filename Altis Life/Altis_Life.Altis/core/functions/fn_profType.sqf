@@ -7,11 +7,12 @@ _type = [_this,0,"",[""]] call BIS_fnc_param;
 
 
 switch (_type) do {
-    case "logs": {"Logs_prof"};
-    case "cociane_unprocessed": {"Cocaine_prof"};
+    case "apple": {"Fruit_Prof"};
+    case "peach": {"Fruit_Prof"};
+    case "cocaine_unprocessed": {"Cocaine_prof"};
     case "heroin_unprocessed": {"Heroin_Prof"};
     case "cannabis": {"Weed_Prof"} ;
-    case "sugar": {"Sugar_Prof"};
+    case "sand": {"Sand_Prof"};
     case "copper_unrefined": {"Metal_Prof"};
     case "iron_unrefined": {"Metal_Prof"};
     case "diamond_uncut": {"Diamond_Prof"};

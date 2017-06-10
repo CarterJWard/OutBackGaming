@@ -73,6 +73,13 @@ class Profs {
         tag = "Salt";
         side = "civ";
     };
+
+    class Sand_Prof {
+        variable = "Sand_Prof";
+        name = "STR_Prof_Sand";
+        tag = "Sand";
+        side = "civ";
+    };
     
     //Cop
     class pCop {

@@ -55,5 +55,5 @@ if ((vehicle _unit) isKindOf "Car" && (isNull _source || _source isEqualTo _unit
 {
 	_damage = if (life_seatbelt) then { _damage / 2 } else { _damage};
 };
-[] spawn life_fnc_hudUpdate;
+[] spawn life_fnc_custHudUpdate;
 _damage;

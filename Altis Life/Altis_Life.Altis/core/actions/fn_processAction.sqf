@@ -8,7 +8,7 @@
     Master handling for processing an item.
     NiiRoZz : Added multiprocess
 */
-private["_vendor","_type","_itemInfo","_oldItem","_newItemWeight","_newItem","_oldItemWeight","_cost","_upp","_hasLicense","_itemName","_oldVal","_ui","_progress","_pgText","_cP","_materialsRequired","_materialsGiven","_noLicenseCost","_text","_filter","_totalConversions","_minimumConversions"];
+private["_vendor","_type","_itemInfo","_oldItem","_newItemWeight","_newItem","_oldItemWeight","_cost","_upp","_hasLicense","_itemName","_oldVal","_ui","_progress","_pgText","_cP","_materialsRequired","_materialsGiven","_noLicenseCost","_text","_filter","_totalConversions","_minimumConversions","_prof"];
 _vendor = [_this,0,ObjNull,[ObjNull]] call BIS_fnc_param;
 _type = [_this,3,"",[""]] call BIS_fnc_param;
 //Error check
@@ -28,6 +28,7 @@ if (_filter) exitWith {life_action_inUse = false;};
 _itemInfo = [_materialsRequired,_materialsGiven,_noLicenseCost,(localize format["%1",_text])];
 if (count _itemInfo isEqualTo 0) exitWith {life_action_inUse = false;};
 
+_prof = [_materialsRequired] call life_fnc_profType;
 //Setup vars.
 _oldItem = _itemInfo select 0;
 _newItem = _itemInfo select 1;
@@ -112,6 +113,7 @@ if (_hasLicense) then {
     5 cutText ["","PLAIN"];
     if (_minimumConversions isEqualTo (_totalConversions call BIS_fnc_lowestNum)) then {hint localize "STR_NOTF_ItemProcess";} else {hint localize "STR_Process_Partial";};
     life_is_processing = false; life_action_inUse = false;
+    [_prof, 10] call life_fnc_profType;
 } else {
     if (CASH < _cost) exitWith {hint format[localize "STR_Process_License",[_cost] call life_fnc_numberText]; 5 cutText ["","PLAIN"]; life_is_processing = false; life_action_inUse = false;};
 
@@ -139,4 +141,6 @@ if (_hasLicense) then {
     if (_minimumConversions isEqualTo (_totalConversions call BIS_fnc_lowestNum)) then {hint localize "STR_NOTF_ItemProcess";} else {hint localize "STR_Process_Partial";};
     CASH = CASH - _cost;
     life_is_processing = false; life_action_inUse = false;
+    [_prof, 5] call life_fnc_addExp;
+
 };
