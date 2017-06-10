@@ -146,6 +146,7 @@ class Life_Client_Core {
         class robPerson {};
         class robReceive {};
         class tazed {};
+        class jailBreakTimer {};
     };
 
     class Config {

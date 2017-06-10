@@ -33,16 +33,23 @@ DYNMARKET_Items_Groups =
 [
 	["Legal",
 		[
-			["apple",-1,10,50],
-			["peach",-1,30,100]
+		["apple",25],
+		["peach",50],
+		["oil_processed",1200],
+		["copper_refined",1700],
+		["iron_refined",1650],
+		["salt_refined",1850],
+		["glass",1450],
+		["diamond_cut",2530],
+		["cement",2350],
 		],
 		0.5
 	],
 	["Illegal", 
 		[
-			["marijuana",-1,5000,8000],
-			["cocaine_processed",-1,5500,8900],
-			["heroin_processed",-1,5300,8800]
+	["heroin_processed",5000],
+	["marijuana",5250],
+	["cocaine_processed",5300]
 		],
 		0.5
 	]
