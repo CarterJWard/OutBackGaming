@@ -60,8 +60,8 @@ if !([false,"pesticide",1] call life_fnc_handleInv) exitWith {hint "You need pes
 _actionOwner removeAction _action;
 _togoPoints = _routeFound;
 life_mission = true;
-//titleText ["Crop dusting mission started! Get to the first location before the timer runs out!", "PLAIN", 3];
-["Crop Dusting","Crop dusting mission started! Get to the first location before the timer runs out!",nil,""] call life_fnc_showNotification;
+titleText ["Crop dusting mission started! Get to the first location before the timer runs out!", "PLAIN", 3];
+//["Crop Dusting","Crop dusting mission started! Get to the first location before the timer runs out!",nil,""] call life_fnc_showNotification;
 
 {
     private _dist = _unit distance getMarkerPos _x;

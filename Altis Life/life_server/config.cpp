@@ -86,8 +86,9 @@ class CfgFunctions {
             class keyManagement {};
             class vehicleUpdate {};
             class recupkeyforHC {};
-            class timers{};
-            class hideBuildings{};
+            class timers {};
+            class hideBuildings {};
+            class jailGate {};
         };
 		
 		class DynMarket	{

@@ -45,7 +45,7 @@ _masks = LIFE_SETTINGS(getArray,"clothing_masks");
 						if(_x getVariable ["offDuty", false]) then {
 							format["<img image='%1' size='1'></img> %2 <br/> Off Duty!",switch ((_x getVariable "rank")) do {
 								case 0: {"icons\cop\ico_pub.paa"};
-                                case 1: {"icons\cop\ico_1.paa"}:
+                                case 1: {"icons\cop\ico_1.paa"};
                                 case 2: {"icons\cop\ico_2.paa"};
 								case 3: {"icons\cop\ico_3.paa"};
 								case 4: {"icons\cop\ico_4.paa"};

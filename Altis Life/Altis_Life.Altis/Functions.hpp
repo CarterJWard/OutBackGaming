@@ -93,7 +93,7 @@ class Life_Client_Core {
         class loot {};
         class suicideBomb {};
         class deadMan {};
-        class fn_jailBreak {};
+        class jailBreak {};
     };
 	
 	class CivTieing {

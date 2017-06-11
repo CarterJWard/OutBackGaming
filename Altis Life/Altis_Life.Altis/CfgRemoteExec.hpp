@@ -166,6 +166,7 @@ class CfgRemoteExec {
         F(life_fnc_colorVehicle,ANYONE)
         F(life_fnc_corpse,ANYONE)
         F(life_fnc_demoChargeTimer,ANYONE)
+        F(life_fnc_jailbreaktimer,ANYONE)
         F(life_fnc_flashbang,ANYONE)
         F(life_fnc_jumpFnc,ANYONE)
         F(life_fnc_lockVehicle,ANYONE)
@@ -174,6 +175,7 @@ class CfgRemoteExec {
         F(life_fnc_setFuel,ANYONE)
         F(life_fnc_simDisable,ANYONE)
         F(SPY_fnc_notifyAdmins,ANYONE)
+        F(TON_fnc_jailGate, ANYONE)
     };
 
     class Commands {

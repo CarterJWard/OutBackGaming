@@ -100,6 +100,26 @@ _fnc_water = {
 	};
 };
 
+//Cropdusting mission 
+[] spawn { 
+    while {true} do {
+        if (playerSide isEqualTo civilian && !life_mission) then {
+            waitUntil {typeOf (vehicle player) in ["C_Plane_Civil_01_racing_F","C_Plane_Civil_01_F"]}; //ADJUST THESE TO BE THE PLANE CLASS NAMES YOU ARE USING
+            if (driver (vehicle player) isEqualTo player && life_inv_pesticide > 0 && speed (vehicle player) < 5) then 
+            {
+                private ["_startCD"];
+                _startCD = player addAction["Start Crop Dusting Mission",life_fnc_cropDusting,[(vehicle player)]];	
+	        waitUntil {(vehicle player isEqualTo player) || !alive player || speed (vehicle player) > 5};
+	    
+                if (!isNil "_startCD") then {
+                    player removeAction _startCD;
+                };
+            };
+        };
+        sleep 1;
+    };
+};
+
 //Setup the time-based variables.
 _foodTime = time;
 _waterTime = time;
@@ -189,26 +209,6 @@ While{true} do {
 	};
 	sleep 5;
  }; 
-};
-
-//Cropdusting mission 
-[] spawn {
-    while {true} do {
-        if (playerSide isEqualTo civilian && !life_mission) then {
-            waitUntil {typeOf (vehicle player) in ["C_Plane_Civil_01_racing_F","C_Plane_Civil_01_F"]}; //ADJUST THESE TO BE THE PLANE CLASS NAMES YOU ARE USING
-            if (driver (vehicle player) isEqualTo player && life_inv_pesticide > 0 && speed (vehicle player) < 5) then 
-            {
-                private ["_startCD"];
-                _startCD = player addAction["Start Crop Dusting Mission",life_fnc_cropDusting,[(vehicle player)]];	
-	        waitUntil {(vehicle player isEqualTo player) || !alive player || speed (vehicle player) > 5};
-	    
-                if (!isNil "_startCD") then {
-                    player removeAction _startCD;
-                };
-            };
-        };
-        sleep 1;
-    };
 };
 
 
