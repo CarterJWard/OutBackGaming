@@ -31,8 +31,6 @@ DYNMARKET_UserNotification_Text =
 
 DYNMARKET_Items_Groups =
 [
-	["Legal",
-		[
 		["apple",25],
 		["peach",50],
 		["oil_processed",1200],
@@ -41,18 +39,10 @@ DYNMARKET_Items_Groups =
 		["salt_refined",1850],
 		["glass",1450],
 		["diamond_cut",2530],
-		["cement",2350],
-		],
-		0.5
-	],
-	["Illegal", 
-		[
-	["heroin_processed",5000],
-	["marijuana",5250],
-	["cocaine_processed",5300]
-		],
-		0.5
-	]
+		["cement",2350], 
+		["heroin_processed",5000],
+		["marijuana",5250],
+		["cocaine_processed",5300]
 ];
 
 // █████████████████    ALL SELLABLE ITEMS    █████████████████
@@ -62,41 +52,6 @@ DYNMARKET_Items_ToTrack        =
 
 	["apple",25],
 	["peach",50],
-	["tbacon",125],
-	["donuts",130],
-	["rabbit_raw",150],
-	["rabbit",170],
-	["ornate_raw",190],
-	["ornate",190],
-	["mackerel_raw",190],
-	["mackerel",190],
-	["tuna_raw",190],
-	["tuna",190],
-	["mullet_raw",190],
-	["mullet",200],
-	["catshark_raw",200],
-	["catshark",200],
-	["turtle_soup",200],
-	["hen_raw",200],
-	["hen",200],
-	["rooster_raw",210],
-	["sheep_raw",210],
-	["sheep",155],
-	["goat_raw",155],
-	["goat",300],
-	["redgull",1500],
-	["coffee",10],
-	["waterBottle",10],
-	["pickaxe",350],
-	["fuelFull",500],
-	["spikeStrip",1200],
-	["lockpick",75],
-	["goldbar",95000],
-	["blastingcharge",35000],
-	["boltcutter",7500],
-	["defusekit",2500],
-	["storagesmall",75000],
-	["storagebig",15000],
 	["oil_processed",1200],
 	["copper_refined",1700],
 	["iron_refined",1650],
