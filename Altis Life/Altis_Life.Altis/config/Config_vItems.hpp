@@ -520,7 +520,7 @@ class VirtualItems {
     class heroin_unprocessed {
         variable = "heroinUnprocessed";
         displayName = "STR_Item_HeroinU";
-        weight = 6;
+        weight = 5;
         buyPrice = -1;
         sellPrice = -1;
         illegal = true;
@@ -532,7 +532,7 @@ class VirtualItems {
     class heroin_processed {
         variable = "heroinProcessed";
         displayName = "STR_Item_HeroinP";
-        weight = 4;
+        weight = 3;
         buyPrice = 3500;
         sellPrice = 2560;
         illegal = true;

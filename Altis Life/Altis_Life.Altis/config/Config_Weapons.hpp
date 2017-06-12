@@ -63,7 +63,7 @@ class WeaponShops {
             { "srifle_DMR_05_hex_F", "", 600000, 100000 },
             { "srifle_LRR_F", "", 1100000, 100000 },
             { "srifle_GM6_F", "", 1300000, 120000 },
-            { "SatchelCharge_Remote_Mag", "", 150000, -1 }
+            { "SatchelCharge_Remote_Mag", "Explosive Device", 150000, -1 }
         };
         mags[] = {
             { "11Rnd_45ACP_Mag", "", 150 },
@@ -410,6 +410,7 @@ class WeaponShops {
             { "bipod_01_F_blk", "", 5000, 200 },
             { "16Rnd_9x21_Mag", "", 25 },
             { "30Rnd_9x21_Mag", "", 250 },
+            { "SatchelCharge_Remote_Mag", "Vehicle Destruction Device", 75000},
             { "20Rnd_556x45_UW_mag", "Taser Rifle Magazine", 45 },
             { "30Rnd_65x39_caseless_mag", "", 300, 100 },
             { "30Rnd_580x42_Mag_F", "", 1500, 100 },
@@ -447,6 +448,7 @@ class WeaponShops {
             { "bipod_01_F_blk", "", 5000, 200 },
             { "16Rnd_9x21_Mag", "", 25 },
             { "30Rnd_9x21_Mag", "", 250 },
+            { "SatchelCharge_Remote_Mag", "Vehicle Destruction Device", 75000},
             { "20Rnd_556x45_UW_mag", "Taser Rifle Magazine", 45 },
             { "30Rnd_65x39_caseless_mag", "", 300, 100 },
             { "30Rnd_580x42_Mag_F", "", 1500, 100 },
@@ -482,6 +484,7 @@ class WeaponShops {
             { "optic_AMS", "", 30000, 2000 },
             { "optic_LRPS", "", 100000, 5000 },
             { "optic_Holosight", "", 5000, 100 },
+            { "SatchelCharge_Remote_Mag", "Vehicle Destruction Device", 50000},
             { "muzzle_snds_H", "", 5000, 1000},
             { "muzzle_snds_B", "", 20000, 1000 },
             { "bipod_01_F_blk", "", 5000, 200 },
@@ -532,6 +535,7 @@ class WeaponShops {
             { "bipod_01_F_blk", "", 5000, 200 },
             { "16Rnd_9x21_Mag", "", 25 },
             { "30Rnd_9x21_Mag", "", 250 },
+            { "SatchelCharge_Remote_Mag", "Vehicle Destruction Device", 40000},
             { "20Rnd_556x45_UW_mag", "Taser Rifle Magazine", 45 },
             { "30Rnd_65x39_caseless_mag", "", 300, 100 },
             { "30Rnd_580x42_Mag_F", "", 1500, 100 },
@@ -579,6 +583,7 @@ class WeaponShops {
             { "muzzle_snds_H", "", 5000, 1000},
             { "muzzle_snds_B", "", 10000, 1000 },
             { "muzzle_snds_93mmg", "", 100000, 10000 },
+            { "SatchelCharge_Remote_Mag", "Vehicle Destruction Device", 30000},
             { "bipod_01_F_blk", "", 5000, 200 },
             { "16Rnd_9x21_Mag", "", 25 },
             { "30Rnd_9x21_Mag", "", 250 },
@@ -628,6 +633,7 @@ class WeaponShops {
             { "optic_AMS", "", 30000, 2000 },
             { "optic_LRPS", "", 100000, 5000 },
             { "optic_Holosight", "", 5000, 100 },
+            { "SatchelCharge_Remote_Mag", "Vehicle Destruction Device", 10000},
             { "muzzle_snds_H", "", 5000, 1000},
             { "muzzle_snds_B", "", 10000, 1000 },
             { "muzzle_snds_93mmg", "", 100000, 10000 },

@@ -90,7 +90,7 @@ _fnc_water = {
                 };
                 _data = PROF_VALUE(_prof,_flag);
                 private _level = _data select 0;
-                private _pay = round (life_paycheck + (life_paycheck * (0.25 * _level)));
+                private _pay = round (life_paycheck + (life_paycheck + (500 * _level)));
 		if !(alive player) then {
 			systemChat localize "STR_MIS_Missed";
 		} else {

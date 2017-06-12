@@ -96,9 +96,9 @@ class Life_Settings {
     bank_civ = 350000; //Amount of cash in bank for new civillians
     bank_med = 350000; //Amount of cash in bank for new medics
 
-    paycheck_cop = 5000; //Payment for cops
-    paycheck_civ = 3000; //Payment for civillians
-    paycheck_med = 6500; //Payment for medics
+    paycheck_cop = 4500; //Payment for cops
+    paycheck_civ = 2500; //Payment for civillians
+    paycheck_med = 5500; //Payment for medics
 
     paycheck_period = 5; //Scaled in minutes
     bank_transferTax = .05; //Tax that player pays when transferring money from ATM. Tax = Amount * multiplier
@@ -143,7 +143,7 @@ class Life_Settings {
 
     /* "Other" Vehicle Prices */
     vehicle_chopShop_multiplier = .25; //Chop Shop price for vehicles. TO AVOID EXPLOITS NEVER SET HIGHER THAN A PURCHASE/RENTAL multipler!   Payout = Config_vehicle Price * multiplier
-    vehicle_storage_fee_multiplier = .2; //Pull from garage cost --> Cost takes the playersides Buy Price * multiplier
+    vehicle_storage_fee_multiplier = .08; //Pull from garage cost --> Cost takes the playersides Buy Price * multiplier
     vehicle_cop_impound_multiplier = .1; //TO AVOID EXPLOITS NEVER SET HIGHER THAN A PURCHASE/RENTAL multipler!   Payout = Config_vehicle Price * multiplier
 
     /* Wanted System Settings *
