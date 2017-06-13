@@ -65,6 +65,9 @@ class CarShops {
         vehicles[] = {
             { "C_Rubberboat", { "", "", -1 } },
             { "C_Boat_Civil_01_F", { "", "", -1 } },
+            { "C_Boat_Civil_01_rescue_F", {"", "", -1} },
+            { "B_Lifeboat", { "", "", -1} },
+            { "C_Boat_Transport_02_F", { "", "", -1} },
             { "B_SDV_01_F", { "", "", -1 } }
         };
     };
@@ -284,6 +287,13 @@ class LifeCfgVehicles {
     };
 
     class C_Boat_Civil_01_F {
+        vItemSpace = 85;
+        licenses[] = { {"boat"}, {""}, {""}, {""} };
+        price = 22000;
+        textures[] = { };
+    };
+    
+    class C_Boat_Civil_01_rescue_F {
         vItemSpace = 85;
         licenses[] = { {"boat"}, {""}, {""}, {""} };
         price = 22000;
@@ -704,4 +714,20 @@ will modify the virtual space and the price of the vehicle, but other informatio
         price = 500000;
         texures[] = {};
     };
+
+    class B_Lifeboat {
+        vItemSpace = 20;
+        vFuelSpace = 5000;
+        licenses[] = {{"boat"},{""},{""},{""} };
+        price = 45000;
+        textures[] = {};
+    };
+
+    class C_Boat_Transport_02_F {
+        vItemSpace = 50;
+        vFuelSpace = 8000;
+        licenses[] = {{"boat"},{""},{""},{""} };
+        price = 100000;
+        textures[] = {};
+    }
 };
