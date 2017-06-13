@@ -28,6 +28,15 @@ if (LIFE_SETTINGS(getNumber,"global_ATM") isEqualTo 1) then{
     };
 };
 
+//Crop dusting handler
+if (life_mission && arrived && alive player && vehicle player != player) exitWith {
+    if (life_action_inUse) exitWith {};
+    life_action_inUse = true;
+    _handle = [] spawn life_fnc_cropDustingDone;
+    waitUntil {scriptDone _handle};
+    life_action_inUse = false;
+};
+
 if (isNull _curObject) exitWith {
     if (_isWater) then {
         _fish = (nearestObjects[player,(LIFE_SETTINGS(getArray,"animaltypes_fish")),3]) select 0;

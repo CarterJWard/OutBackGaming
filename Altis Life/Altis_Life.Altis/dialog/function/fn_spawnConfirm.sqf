@@ -56,7 +56,7 @@ if (life_spawn_point isEqualTo []) then {
 
 if (life_firstSpawn) then {
     life_firstSpawn = false;
-    [] execVM "core\intro\fn_introtext.sqf ";
+    [] spawn life_fnc_introText;
 };
 [] call life_fnc_playerSkins;
 [] call life_fnc_hudSetup;

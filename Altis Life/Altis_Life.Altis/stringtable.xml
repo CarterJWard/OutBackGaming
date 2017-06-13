@@ -5100,7 +5100,7 @@
         <Key ID="STR_MISC_VehUnlock">
             <Original>You have unlocked your vehicle.</Original>
             <Czech>Jste odemkli své vozidlo.</Czech>
-            <Spanish>Has abierto tu vehículo </Spanish>
+            <Spanish>Has abierto tu vehículo </Spanish> 
             <Russian></Russian>
             <German>Du hast dein Fahrzeug aufgeschlossen.</German>
             <French>Vous avez débloqué votre véhicule.</French>

@@ -42,14 +42,14 @@ if (_type isEqualType []) then {
     for "_i" from 0 to (count _type)-1 do {
         switch (_type select _i) do {
             case 0: {systemChat _message};
-            case 1: {hint format["%1", _message]};
+            case 1: {hint parseText format["%1", _message]};
             case 2: {titleText[format["%1",_message],"PLAIN"];};
         };
     };
 } else {
     switch (_type) do {
         case 0: {systemChat _message};
-        case 1: {hint format["%1", _message]};
+        case 1: {hint parseText format["%1", _message]};
         case 2: {titleText[format["%1",_message],"PLAIN"];};
     };
 };

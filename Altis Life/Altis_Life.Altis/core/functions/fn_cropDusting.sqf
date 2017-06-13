@@ -12,6 +12,7 @@
         - PLACE THIS FILE IN core/functions/fn_cropDusting.sqf	
 		- Adjust the parts below indicated
 */
+diag_log "Cdusting called";
 private ["_marker"];
 params [
     ["_actionOwner",objNull,[objNull]],
@@ -44,9 +45,10 @@ private _routeFound = [];
 private _initTime = time;
 private _dust = -1;
 private _first = true; //ADD SOME TIME TO TAKE OFF
-
+_pl1 = _planes select 0;
+_pl2 = _planes select 1;
 /* Error Checks */
-if (!(typeOf veh1 in _planes)) exitWith {};
+if (!(typeOf veh1 in _pl1 or typeOf veh1 in _pl2)) exitWith {};
 {if (player distance (getMarkerPos (_x select 0)) < 1000) exitWith {_routeFound = (_x select 1)};} forEach _routes;
 if (count _routeFound isEqualTo 0) exitWith {hint "You must start the crop dusting mission from the proper place!"};
 //if (player distance (getMarkerPos "air_g_1") > 1000 && player distance (getMarkerPos "air_g_2") > 1000) exitWith {hint "You must start the crop dusting mission from Melbourne or Sydney!"};
@@ -82,8 +84,8 @@ titleText ["Crop dusting mission started! Get to the first location before the t
     };
 	*/
     
-    _timeLimit = ((_dist / _avgSpeed) / 1000);
-    times = ((_timeLimit * 60) * 60);
+    _timeLimit = ((_dist / _avgSpeed) / 800);
+    times = ((_timeLimit * 60) * 60); 
     times = times - _multi;
     if (_first) then {times = times + 40; _first = false;};
     

@@ -18,15 +18,15 @@
 /* ::: SETTINGS ::: */
 uiSleep (60 * 30); //time before shit starts
 uiSleep random(1200); //another timer but random before mission starts
-private _pos = [[29858.3,30034.314,0.2]]; //spawn locations for asylum seekers
-private _dropLocs = [[15266.766,23540.727,0.00144958],[22599.79,15100.189,0.00144005],[2700.53,18064.25,-0.25851]]; //drop off locations for asylum seekers
-private _value = 250000; //payout when seeker sorted
+private _pos = [[789.47,17010.953,0.2]]; //spawn locations for asylum seekers
+private _dropLocs = [[3744.357,10152.765,0.00144958],[2891.673,21459.525,0.00144005],[9422.462,22647.887,-0.25851]]; //drop off locations for asylum seekers
+private _value = 200000; //payout when seeker sorted
 private _headGears = []; //if you want the asylum seekers to have custom headgear put the classnames here
-private _amount = 4; //amount of asylum seekers (definite)
-private _random = 5; //amount of extra chance asylum seekers
-private _timer = (60 * 60); //timer for the whole mission
+private _amount = 3; //amount of asylum seekers (definite)
+private _random = 2; //amount of extra chance asylum seekers
+private _timer = (5 * 60); //timer for the whole mission
 private _cMarker = "cop_ship_1"; //cop marker name where cops can take seekers and get money
-private _copsNeeded = 3;
+private _copsNeeded = 0;
 
 /* ::: DO NOT TOUCH BELOW ::: */
 private _spawnPos = _pos select floor random count _pos;
@@ -52,7 +52,7 @@ for "_i" from 1 to (_cnt + _amount) do
 };
 
 /* CREATE MARKERS AND MESSAGES */
-[5,"<t size='1.2'><t color='#FF0000'>Asylum Seeker Mission</t></t><br/><br/><t size='1'>An asylum seeker boat has capsized. The rebels are paying top price for their clear entrance into Australia, go pick them up in a boat and take them to the drop point!</t>"] remoteExec ["life_fnc_broadcast",civilian];
+[1,"<t size='1.2'><t color='#FF0000'>Asylum Seeker Mission</t></t><br/><br/><t size='1'>An asylum seeker boat has capsized. The rebels are paying top price for their clear entrance into Australia, go pick them up in a boat and take them to the drop point!</t>"] remoteExec ["life_fnc_broadcast",civilian];
 [0,[_spawnPos,_timer,"Mil_dot","Asylum Seekers"]] remoteExec ["life_fnc_markers",civilian];
 [0,[_dropLoc,_timer,"Mil_dot","Asylum Seeker Drop Zone"]] remoteExec ["life_fnc_markers",civilian];
 
@@ -129,10 +129,10 @@ FNC_seeker =
     uiSleep random(300);
     _nuTime = (_this select 2) - (time - (_this select 1));
     [0,[(_this select 0),_nuTime,"Mil_dot","Asylum Seekers"]] remoteExec ["life_fnc_markers",west];
-    [5,"<t size='1.2'><t color='#FF0000'>Asylum Seeker Mission</t></t><br/><br/><t size='1'>An asylum seeker boat has capsized. Word on the streets is they are getting help from Australian civilians to gain access to the country. Go get them by boat and bring them back to the boat yard!</t>"] remoteExec ["life_fnc_broadcast",west];
-    [5,"<t size='1.2'><t color='#FF0000'>Asylum Seeker Mission</t></t><br/><br/><t size='1'>The police have been notified about the asylum seekers attempting to enter Australia!</t>"] remoteExec ["life_fnc_broadcast",civilian];
+    [1,"<t size='1.2'><t color='#FF0000'>Asylum Seeker Mission</t></t><br/><br/><t size='1'>An asylum seeker boat has capsized. Word on the streets is they are getting help from Australian civilians to gain access to the country. Go get them by boat and bring them back to the boat yard!</t>"] remoteExec ["life_fnc_broadcast",west];
+    [1,"<t size='1.2'><t color='#FF0000'>Asylum Seeker Mission</t></t><br/><br/><t size='1'>The police have been notified about the asylum seekers attempting to enter Australia!</t>"] remoteExec ["life_fnc_broadcast",civilian];
     _marker = createMarker ["AsylumSeekerKOS", (_this select 0)];
-    "AsylumSeekerKOS" setMarkerColor "ColorBlue";
+    "AsylumSeekerKOS" setMarkerColor "ColorRed";
     "AsylumSeekerKOS" setMarkerType "Empty";
     "AsylumSeekerKOS" setMarkerShape "ELLIPSE";
     "AsylumSeekerKOS" setMarkerSize [1500,1500];
@@ -140,15 +140,16 @@ FNC_seeker =
 };
 
 uiSleep (_timer / 2);
-[5,"<t size='1.2'><t color='#FF0000'>Asylum Seeker Mission</t></t><br/><br/><t size='1'>Half way through the Asylum Seeker mission!</t>"] remoteExec ["life_fnc_broadcast",-2];
+[1,"<t size='1.2'><t color='#FF0000'>Asylum Seeker Mission</t></t><br/><br/><t size='1'>Half way through the Asylum Seeker mission!</t>"] remoteExec ["life_fnc_broadcast",-2];
 uiSleep ((_timer / 2) - 60);
-[5,"<t size='1.2'><t color='#FF0000'>Asylum Seeker Mission</t></t><br/><br/><t size='1'>One more minute until the Asylum Seeker mission is finished!</t>"] remoteExec ["life_fnc_broadcast",-2];
+[1,"<t size='1.2'><t color='#FF0000'>Asylum Seeker Mission</t></t><br/><br/><t size='1'>One more minute until the Asylum Seeker mission is finished!</t>"] remoteExec ["life_fnc_broadcast",-2];
 uiSleep 60;
-[5,"<t size='1.2'><t color='#FF0000'>Asylum Seeker Mission</t></t><br/><br/><t size='1'>The Asylum Seeker mission has finished!</t>"] remoteExec ["life_fnc_broadcast",-2];
+[1,"<t size='1.2'><t color='#FF0000'>Asylum Seeker Mission</t></t><br/><br/><t size='1'>The Asylum Seeker mission has finished!</t>"] remoteExec ["life_fnc_broadcast",-2];
 
 if !(getMarkerColor "AsylumSeekerKOS" isEqualTo "") then 
 {
     "AsylumSeekerKOS" setMarkerAlpha 0;
     deleteMarker "AsylumSeekerKOS";
 };
+uiSleep (60*20);
 [] execVM "\life_server\Functions\Systems\fn_asylumSeekers.sqf";

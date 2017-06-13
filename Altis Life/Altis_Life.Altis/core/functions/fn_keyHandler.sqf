@@ -314,7 +314,7 @@ switch (_code) do {
                             _veh animateDoor ['DoorL_Back_Open',1];
                             _veh animateDoor ['DoorR_Back_Open ',1];
                         };
-						["User Actions", format [localize "STR_MISC_VehUnlock"],nil,""] call life_fnc_showNotification;
+                        systemChat localize "STR_MISC_VehUnlock";
                         [_veh,"UnlockCarSound"] remoteExec ["life_fnc_say3D",RANY];
                     } else {
                         if (local _veh) then {
@@ -364,7 +364,7 @@ switch (_code) do {
                             _veh animateDoor ['DoorL_Back_Open',0];
                             _veh animateDoor ['DoorR_Back_Open ',0];
                         };
-						["User Actions", format [localize "STR_MISC_VehLock"],nil,""] call life_fnc_showNotification;
+                        systemChat localize "STR_MISC_VehLock";
                         [_veh,"LockCarSound"] remoteExec ["life_fnc_say3D",RANY];
                     };
                 };
