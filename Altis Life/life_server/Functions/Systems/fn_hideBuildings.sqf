@@ -19,7 +19,8 @@ _toHide = [
     [hide29, ["HOUSE"], 5],
     [hide30, [], 10],
     [hide31, [], 10],
-    [hide32, [], 8]
+    [hide32, [], 8],
+    [hide33, ["HIDE"], 10]
 ];
 
 { 
