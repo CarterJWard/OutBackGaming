@@ -8,7 +8,7 @@ class EditorData
 	toggles=10;
 	class ItemIDProvider
 	{
-		nextID=2325;
+		nextID=2328;
 	};
 	class MarkerIDProvider
 	{
@@ -20,10 +20,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={3345.033,18.528568,13219.75};
-		dir[]={-0.58159471,-0.4391256,-0.68482178};
-		up[]={-0.28427854,0.8984077,-0.33473682};
-		aside[]={-0.76224345,7.6426659e-007,0.64734173};
+		pos[]={3322.9246,15.367538,13201.839};
+		dir[]={0.4986037,-0.46608898,-0.73091596};
+		up[]={0.26267958,0.88471764,-0.38506734};
+		aside[]={-0.82612956,4.0493615e-007,-0.56355774};
 	};
 };
 binarizationWanted=0;
@@ -270,24 +270,6 @@ class CustomAttributes
 		name="Multiplayer";
 		class Attribute0
 		{
-			property="RespawnTemplates";
-			expression="true";
-			class Value
-			{
-				class data
-				{
-					class type
-					{
-						type[]=
-						{
-							"ARRAY"
-						};
-					};
-				};
-			};
-		};
-		class Attribute1
-		{
 			property="RespawnButton";
 			expression="true";
 			class Value
@@ -302,6 +284,24 @@ class CustomAttributes
 						};
 					};
 					value=1;
+				};
+			};
+		};
+		class Attribute1
+		{
+			property="RespawnTemplates";
+			expression="true";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"ARRAY"
+						};
+					};
 				};
 			};
 		};
@@ -363,7 +363,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=1286;
+		items=1288;
 		class Item0
 		{
 			dataType="Marker";
@@ -23260,7 +23260,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={3335.7678,3.391885,13182.554};
+						position[]={3335.7678,3.3113015,13182.554};
 						angles[]={0,5.5965919,0};
 					};
 					side="Civilian";
@@ -23273,7 +23273,7 @@ class Mission
 					};
 					id=939;
 					type="C_man_1";
-					atlOffset=0.14489317;
+					atlOffset=0.064309597;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -50264,7 +50264,7 @@ class Mission
 			};
 			id=2321;
 			type="SignAd_Sponsor_F";
-			atlOffset=0.83400023;
+			atlOffset=0.83400047;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -50403,6 +50403,85 @@ class Mission
 								};
 							};
 							value="textures\signs\parking.paa";
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item1286
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={3331.5002,3.7299118,13186.058};
+				angles[]={0,2.6015179,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=2326;
+			type="Land_Noticeboard_F";
+			atlOffset=0.22686863;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ObjectTextureCustom0";
+					expression="_this setObjectTextureGlobal [0,_value]";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="textures\signs\market.paa";
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item1287
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={3333.3159,3.7689564,13187.312};
+				angles[]={0,2.6015179,0};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=2327;
+			type="Land_Noticeboard_F";
+			atlOffset=0.27031898;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ObjectTextureCustom0";
+					expression="_this setObjectTextureGlobal [0,_value]";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="textures\signs\market.paa";
 						};
 					};
 				};
