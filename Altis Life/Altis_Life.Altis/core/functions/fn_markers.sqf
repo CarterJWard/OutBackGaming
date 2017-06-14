@@ -18,13 +18,6 @@
         TODO
         - marker style and size etc
         - stringtable this shit
-		
-	INSTALLATION (client side):
-	    - put file in core/functions/
-		PASTE 
-		    class markers {};
-		INTO
-		    Functions.hpp
 */
 
 params [

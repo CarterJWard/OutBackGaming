@@ -2,17 +2,7 @@
     file: fn_asylumSeekers.sqf
 	Author: Fresqo
 	Description: spawns asylum seekers at some locations with a civ location to take seekers to and a cop location to take seekers to and get paid. kos marker and side dependant on drop markers
-    Future Release: i will put some flares in and some more dynamics
-	
-	INSTALLATION INSTRUCTIONS (server side):
-	FILE LOCATION: \life_server\Functions\Systems\
-	ADJUST: adjust life_server/init.sqf
-	    BETWEEN LINES
-            publicVariable "TON_fnc_playtime_values";
-        AND
-            life_server_isReady = true;
-        ADD
-            [] execVM "\life_server\Functions\Systems\fn_asylumSeekers.sqf";		
+    Future Release: i will put some flares in and some more dynamics.		
 */
 
 /* ::: SETTINGS ::: */
@@ -26,7 +16,7 @@ private _amount = 3; //amount of asylum seekers (definite)
 private _random = 2; //amount of extra chance asylum seekers
 private _timer = (5 * 60); //timer for the whole mission
 private _cMarker = "cop_ship_1"; //cop marker name where cops can take seekers and get money
-private _copsNeeded = 0;
+private _copsNeeded = 4;
 
 /* ::: DO NOT TOUCH BELOW ::: */
 private _spawnPos = _pos select floor random count _pos;
@@ -129,8 +119,8 @@ FNC_seeker =
     uiSleep random(300);
     _nuTime = (_this select 2) - (time - (_this select 1));
     [0,[(_this select 0),_nuTime,"Mil_dot","Asylum Seekers"]] remoteExec ["life_fnc_markers",west];
-    [1,"<t size='1.2'><t color='#FF0000'>Asylum Seeker Mission</t></t><br/><br/><t size='1'>An asylum seeker boat has capsized. Word on the streets is they are getting help from Australian civilians to gain access to the country. Go get them by boat and bring them back to the boat yard!</t>"] remoteExec ["life_fnc_broadcast",west];
-    [1,"<t size='1.2'><t color='#FF0000'>Asylum Seeker Mission</t></t><br/><br/><t size='1'>The police have been notified about the asylum seekers attempting to enter Australia!</t>"] remoteExec ["life_fnc_broadcast",civilian];
+    [3,"<t size='1.2'><t color='#FF0000'>Asylum Seeker Mission</t></t><br/><br/><t size='1'>An asylum seeker boat has capsized. Word on the streets is they are getting help from Australian civilians to gain access to the country. Go get them by boat and bring them back to the boat yard!</t>"] remoteExec ["life_fnc_broadcast",west];
+    [3,"<t size='1.2'><t color='#FF0000'>Asylum Seeker Mission</t></t><br/><br/><t size='1'>The police have been notified about the asylum seekers attempting to enter Australia!</t>"] remoteExec ["life_fnc_broadcast",civilian];
     _marker = createMarker ["AsylumSeekerKOS", (_this select 0)];
     "AsylumSeekerKOS" setMarkerColor "ColorRed";
     "AsylumSeekerKOS" setMarkerType "Empty";
@@ -140,11 +130,11 @@ FNC_seeker =
 };
 
 uiSleep (_timer / 2);
-[1,"<t size='1.2'><t color='#FF0000'>Asylum Seeker Mission</t></t><br/><br/><t size='1'>Half way through the Asylum Seeker mission!</t>"] remoteExec ["life_fnc_broadcast",-2];
+[3,"<t size='1.2'><t color='#FF0000'>Asylum Seeker Mission</t></t><br/><br/><t size='1'>Half way through the Asylum Seeker mission!</t>"] remoteExec ["life_fnc_broadcast",-2];
 uiSleep ((_timer / 2) - 60);
-[1,"<t size='1.2'><t color='#FF0000'>Asylum Seeker Mission</t></t><br/><br/><t size='1'>One more minute until the Asylum Seeker mission is finished!</t>"] remoteExec ["life_fnc_broadcast",-2];
+[3,"<t size='1.2'><t color='#FF0000'>Asylum Seeker Mission</t></t><br/><br/><t size='1'>One more minute until the Asylum Seeker mission is finished!</t>"] remoteExec ["life_fnc_broadcast",-2];
 uiSleep 60;
-[1,"<t size='1.2'><t color='#FF0000'>Asylum Seeker Mission</t></t><br/><br/><t size='1'>The Asylum Seeker mission has finished!</t>"] remoteExec ["life_fnc_broadcast",-2];
+[3,"<t size='1.2'><t color='#FF0000'>Asylum Seeker Mission</t></t><br/><br/><t size='1'>The Asylum Seeker mission has finished!</t>"] remoteExec ["life_fnc_broadcast",-2];
 
 if !(getMarkerColor "AsylumSeekerKOS" isEqualTo "") then 
 {
