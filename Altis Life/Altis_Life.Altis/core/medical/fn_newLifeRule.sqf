@@ -37,9 +37,9 @@ while {true} do {
 	if ((playerSide == civilian) && (nlr_check)) then { 
 		if (player distance (getMarkerPos "NLRMarker") < 250) then 
 		{
-			[ObjNull,_msg, _name] remoteExec ["TON_fnc_handleMessages", 6];
+			//[ObjNull,_msg, _name] remoteExec ["TON_fnc_handleMessages", 6];
 			hint parseText format["<t color='#FA4F4F'><t size='1.2'>You entered your NLR marker, Staff members have been notified."];
-			[player] call TON_fnc_NLRAdmin;
+			[] call TON_fnc_nlrBreak;
 			nlr_check = false;
 		};
 	};
@@ -76,7 +76,7 @@ while {true} do {
 	};
 	*/
 	  
-    if(round(_time - time) < 1) exitWith 
+    if(round(_time - time) < 1) exitWith  
 	{
 		deleteMarkerLocal "NLRMarker";
 		deleteMarkerLocal "NLRMarker2";

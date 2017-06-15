@@ -180,6 +180,7 @@ compileFinal "
     hint format[""You sent %1 a message: %2"",_to,_msg];
     ctrlShow[3017,true];
 ";
+
 //Admin To One Person
 TON_fnc_cell_adminmsg =
 compileFinal "
@@ -307,10 +308,8 @@ compileFinal "
         
         case 6: {
             if ((call life_gigadmin863) < 1) exitWith {};
-            private[""_message"",""_from""];
-            _message = _this select 1;
-            _from = _this select 2;
-            hint parseText format [""<t color='#ffcefe'><t size='2'><t align='center'>NLR Break<br/><br/><t color='#33CC33'><t align='left'><t size='1'>%1"",_message];
+            _message = format[""%1 is breaking their NLR, please investigate"",_from];
+            hint parseText format [""<t color='#ffcefe'><t size='2'><t align='center'>NLR Break<br/><br/><t color='#33CC33'><t align='left'><t size='1'>%1 is breaking their NLR. Please investigate"",_from];
             systemChat _message;
         };
     };
@@ -422,3 +421,13 @@ TON_fnc_MapMarkersAdmin = compileFinal "
 ";
 
 publicVariable "TON_fnc_MapMarkersAdmin";
+
+//NLR Break
+TON_fnc_nlrBreak =
+compileFinal "
+    private[""_from""];
+    _msg = ""placeholder"";
+    [_msg,name player,6] remoteExecCall [""TON_fnc_clientMessage"",-2];
+";
+
+publicVariable "Ton_fnc_nlrBreak";
