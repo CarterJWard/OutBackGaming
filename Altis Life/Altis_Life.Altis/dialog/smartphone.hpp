@@ -87,7 +87,7 @@ class Life_my_smartphone {
 			h = 0.5;
 		};
 		
-		class MessageList : Life_RscListNBox
+		class MessageList : Life_RscListBox
 		{
 			idc = 88882;
 			onLBSelChanged = "[(lbCurSel 88882)] call life_fnc_showMsg;";
