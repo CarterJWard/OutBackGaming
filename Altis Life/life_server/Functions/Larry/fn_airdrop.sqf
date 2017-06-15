@@ -5,28 +5,26 @@ Author: Larry Lancelot
 */
 
 //Setup our variables
-diag_log "started the airdrops";
-uiSleep (30);
-uiSleep random(60);
+diag_log "Started the airdrop";
+uiSleep (60*45);
+uiSleep random(1200);
 private ["_spawnPos","_mainVehicle","_wp","_masterBox","_drop"];
-_spawnPos = [26347.924,21428.254, 150];
+_spawnPos = [6304.292,9650.939,99.1];
 _mainVehicle = "B_Heli_Transport_03_unarmed_F";
-_dropPoints = [[26387.695,21696.16, 80]];
+_dropPoints = [[5233.613,18424.145,2],[6651.447,12605.252,2],[12795.358,19671.498,2.115]];
 _dummyBox = "Land_Cargo20_blue_F";
 _masterBox = "CargoNet_01_box_F";
 _endPos = [1082.097,1910.592, 0];
-_copsNeeded = 0;
-_civsNeeded = 0;
+_copsNeeded = 3;
+_civsNeeded = 7;
 //Declare Vars
 _dropZone = _dropPoints call BIS_fnc_selectRandom;
-diag_log "variables declared";
 //Checks
 if ({side _x isEqualTo west} count playableUnits < _copsNeeded) exitWith {[] execVM "\life_server\Functions\Larry\fn_airdrop.sqf";};
 if ({side _x isEqualTo civilian} count playableUnits < _civsNeeded) exitWith {[] execVM "\life_server\Functions\Larry\fn_airdrop.sqf";};
-diag_log "passed checks";
 //Alert the peeps
 [3,"<t size='1.3'><t color='#FF0000'>Supply Drop</t></t><br/><br/><t size='1'>A supply drop is inbound in 20 minutes. You will be notified of the location soon</t>"] remoteexec ["life_fnc_broadcast",RANY];
-uiSleep (30);
+uiSleep (60*5);
 [3,"<t size='1.3'><t color='#FF0000'>Supply Drop</t></t><br/><br/><t size='1'>A supply drop is inbound in 15 minutes. Your map has been updated of the location</t>"] remoteexec ["life_fnc_broadcast",RANY];
 createMarker ["Airdrop",_dropZone];
 "Airdrop" setMarkerType "Mil_Dot";
@@ -38,13 +36,13 @@ createMarker ["AirdropKos",_dropZone];
 "AirdropKos" setMarkerType "Empty";
 "AirdropKos" setMarkerShape "ELLIPSE";
 "AirdropKos" setMarkerSize [500,500];
-"AirdropKos" setMarkerBrush "Cross";
-diag_log "first round";
-uiSleep (30);
+"AirdropKos" setMarkerBrush "DiagGrid";
+
+uiSleep (60*5);
 [3,"<t size='1.3'><t color='#FF0000'>Supply Drop</t></t><br/><br/><t size='1'>A supply drop is inbound in 10 minutes. Check your map for the location</t>"] remoteexec ["life_fnc_broadcast",RANY];	
-uiSleep (30);
+uiSleep (60*5);
 [3,"<t size='1.3'><t color='#FF0000'>Supply Drop</t></t><br/><br/><t size='1'>A supply drop is inbound in 5 minutes. Check your map for the location</t>"] remoteexec ["life_fnc_broadcast",RANY];
-uiSleep (30);
+uiSleep (60*4);
 [3,"<t size='1.3'><t color='#FF0000'>Supply Drop</t></t><br/><br/><t size='1'>A supply drop is inbound in 1 minutes. Check your map for the location</t>"] remoteexec ["life_fnc_broadcast",RANY];
 uiSleep(30);
 [3,"<t size='1.3'><t color='#FF0000'>Supply Drop</t></t><br/><br/><t size='1'>Supply Drop is on it's way. Remember the marker on the map is KOS so be ready for a fight</t>"] remoteexec ["life_fnc_broadcast",RANY];
@@ -109,30 +107,33 @@ _flare attachTo [_box,[0,0,0]];
 
 
 //Fill Box
-_weaponSelect = random(2);
-switch (_weaponSelect) do {
-    case 0: {_rifle = ["arifle_MX_SW_F",5];
-            _rifleMag = ["100Rnd_65x39_caseless_mag", 10];};
-    case 1: {_rifle = ["LMG_Mk200_F", 3];
-            _rifleMag = ["200Rnd_65x39_cased_Box", 15];};
-    case 2: {_rifle = ["srifle_EBR_F",5];
-            _rifleMag = ["20Rnd_762x51_Mag",20];};
-    
-};
-_magA = [["30Rnd_65x39_caseless_mag", 50],["20Rnd_762x51_Mag", 20]];
-_mag = _magA call BIS_fnc_selectRandom;
+_num = random (2);
+_special = [["muzzle_snds_93mmg", 1],["muzzle_snds_B", 2]];
+_specialArr = [["arifle_MX_SW_F",5],["LMG_Mk200_F", 3],["srifle_EBR_F",5]];
+_magArr = [["100Rnd_65x39_caseless_mag", 10],["200Rnd_65x39_cased_Box", 15],["20Rnd_762x51_Mag",20]];
+_rifleArr1 = [["arifle_MX_F", 15],["arifle_Katiba_F", 15]];
+_magArr1 = [["30Rnd_65x39_caseless_mag", 50],["30Rnd_65x39_caseless_green", 30]];
 
-_box addWeaponCargoGlobal _rifle;
-_box addWeaponCargoGlobal _rifleMag;
-_box addWeaponCargoGlobal _mag;
-_box addWeaponCargoGlobal ["20Rnd_762x51_Mag", 50];
+//Select
+_specialItem = _special call BIS_fnc_selectRandom;
+_specialRifle = _specialArr select _num;
+_sMag = _magARR select _num;
+_rifle = _rifleArr1 call BIS_fnc_selectRandom;
+_mags = _magArr1 call BIS_fnc_selectRandom;
+
+//Add cargo
+_box addItemCargoGlobal _specialItem;
+_box addItemCargoGlobal _specialRifle;
+_box addItemCargoGlobal _sMag;
+_box addItemCargoGlobal _rifle;
+_box addItemCargoGlobal _mags;
 
 //Time until the box is destroyed
 uiSleep (60*2);
-[3,"<t size='1.3'><t color='#FF0000'>Supply Drop</t></t><br/><br/><t size='1'>Supply Drop will self destruct in 10 minutes</t>"] remoteexec ["life_fnc_broadcast",RANY];
-uiSleep (60*1);
+[3,"<t size='1.3'><t color='#FF0000'>Supply Drop</t></t><br/><br/><t size='1'>Supply Drop will self destruct in 20 minutes</t>"] remoteexec ["life_fnc_broadcast",RANY];
+uiSleep (60*15);
 [3,"<t size='1.3'><t color='#FF0000'>Supply Drop</t></t><br/><br/><t size='1'>Supply Drop will self destruct in 5 minutes</t>"] remoteexec ["life_fnc_broadcast",RANY];
-uiSleep (60*1);
+uiSleep (60*4);
 [3,"<t size='1.3'><t color='#FF0000'>Supply Drop</t></t><br/><br/><t size='1'>Supply Drop will self destruct in 1 minute</t>"] remoteexec ["life_fnc_broadcast",RANY];
 uiSleep (30);
 [3,"<t size='1.3'><t color='#FF0000'>Supply Drop</t></t><br/><br/><t size='1'>Supply Drop will self destruct in 30 secconds</t>"] remoteexec ["life_fnc_broadcast",RANY];
@@ -143,4 +144,5 @@ deleteVehicle _vehMain;
 deleteVehicle _box; 
 [3,"<t size='1.3'><t color='#FF0000'>Supply Drop</t></t><br/><br/><t size='1'>Supply Drop has been destroyed. Supply Drop mission has ended. Good work everyone</t>"] remoteexec ["life_fnc_broadcast",RANY];
 
+uiSleep (60*120);
 [] execVM "\life_server\Functions\Larry\fn_airdrop.sqf";
