@@ -14,7 +14,7 @@ private _value = 200000; //payout when seeker sorted
 private _headGears = []; //if you want the asylum seekers to have custom headgear put the classnames here
 private _amount = 3; //amount of asylum seekers (definite)
 private _random = 2; //amount of extra chance asylum seekers
-private _timer = (5 * 60); //timer for the whole mission
+private _timer = (30 * 60); //timer for the whole mission
 private _cMarker = "cop_ship_1"; //cop marker name where cops can take seekers and get money
 private _copsNeeded = 4;
 
@@ -42,7 +42,7 @@ for "_i" from 1 to (_cnt + _amount) do
 };
 
 /* CREATE MARKERS AND MESSAGES */
-[1,"<t size='1.2'><t color='#FF0000'>Asylum Seeker Mission</t></t><br/><br/><t size='1'>An asylum seeker boat has capsized. The rebels are paying top price for their clear entrance into Australia, go pick them up in a boat and take them to the drop point!</t>"] remoteExec ["life_fnc_broadcast",civilian];
+[3,"<t size='1.2'><t color='#FF0000'>Asylum Seeker Mission</t></t><br/><br/><t size='1'>An asylum seeker boat has capsized. The rebels are paying top price for their clear entrance into Australia, go pick them up in a boat and take them to the drop point!</t>"] remoteExec ["life_fnc_broadcast",civilian];
 [0,[_spawnPos,_timer,"Mil_dot","Asylum Seekers"]] remoteExec ["life_fnc_markers",civilian];
 [0,[_dropLoc,_timer,"Mil_dot","Asylum Seeker Drop Zone"]] remoteExec ["life_fnc_markers",civilian];
 
@@ -141,5 +141,5 @@ if !(getMarkerColor "AsylumSeekerKOS" isEqualTo "") then
     "AsylumSeekerKOS" setMarkerAlpha 0;
     deleteMarker "AsylumSeekerKOS";
 };
-uiSleep (60*20);
+uiSleep (60*45);
 [] execVM "\life_server\Functions\Systems\fn_asylumSeekers.sqf";

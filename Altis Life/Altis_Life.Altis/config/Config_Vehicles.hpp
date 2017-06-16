@@ -221,11 +221,11 @@ class LifeCfgVehicles {
         licenses[] = { {""}, {""}, {""}, {""} };
         price = 500000;
         textures[] = {
-            { "Cop", "cop",{
-                "textures\cop\copstrider.jpg"
-            } },
             { "Reb Black", "civ", {
                 "textures\vehicles\rebStrider.jpg"
+            } },
+            { "Cop", "cop", {
+                "textures\cop\copstrider.jpg"
             } }
         };
     };
@@ -673,7 +673,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
     };
 
     class B_Heli_Transport_03_unarmed_F {
-        vItemSpace = 700;
+        vItemSpace = 600;
         vFuelSpace = 20000;
         licenses[] = { {""}, {""}, {""}, {""} };
         price = 1800000;

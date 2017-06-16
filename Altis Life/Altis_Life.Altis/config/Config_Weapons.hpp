@@ -231,33 +231,6 @@ class WeaponShops {
         mags[] = {};
         accs[] = {};
     };
-    
-    class cop_incSnrConstable {
-        name = "Inc. Snr Constable";
-        side = "cop";
-        license = "";
-        level[] = { "","",-1,"" };
-        items[] = {
-            { "SMG_02_ACO_F", "", 20000, -1 },
-            { "hgun_P07_snds_F", "Stun Pistol", 2800, 650 },
-            { "arifle_sdar_F", "Taser Rifle", 10000, 1000 },
-            { "arifle_MX_Black_F", "", 35000, 1000},
-            { "arifle_CTAR_blk_F", "", 40000, 3000 },
-            { "optic_Arco_blk_F", "", 2500, 200 },
-            { "muzzle_snds_H", "", 15000, 1000},
-            { "16Rnd_9x21_Mag", "", 25 },
-            { "30Rnd_9x21_Mag", "", 250 },
-            { "20Rnd_556x45_UW_mag", "Taser Rifle Magazine", 45 },
-            { "30Rnd_65x39_caseless_mag", "", 500},
-            { "30Rnd_580x42_Mag_F", "", 2000},
-            { "Binocular", "", 150, -1 },
-            { "ItemGPS", "", 100, 45 },
-            { "FirstAidKit", "", 150, 65 },
-            { "NVGoggles", "", 2000, 980 }
-        };
-        mags[]= {};
-        accs[] = {};
-    };
 
     class cop_snrConstable {
         name = "Senior Constable Shop";
@@ -271,6 +244,8 @@ class WeaponShops {
             { "arifle_MX_Black_F", "", 25000, 1000},
             { "arifle_CTAR_blk_F", "", 35000, 3000 },
             { "arifle_MXM_Black_F", "", 40000, 5000 },
+            { "srifle_EBR_F", "", 80000, 2000},
+            { "srifle_DMR_02_F", "",150000, 10000 },
             { "optic_Arco_blk_F", "", 2500, 200 },
             { "optic_ERCO_blk_F", "", 5000, 200},
             { "muzzle_snds_H", "", 10000, 1000},
@@ -279,39 +254,12 @@ class WeaponShops {
             { "20Rnd_556x45_UW_mag", "Taser Rifle Magazine", 45 },
             { "30Rnd_65x39_caseless_mag", "", 500, 100 },
             { "30Rnd_580x42_Mag_F", "", 2000, 100 },
+            { "20Rnd_762x51_Mag", "", 3000, 100 },
+            { "10Rnd_338_Mag", "", 5000, 500 },
             { "Binocular", "", 150, -1 },
             { "ItemGPS", "", 100, 45 },
             { "FirstAidKit", "", 150, 65 },
             { "NVGoggles", "", 2000, 980 }
-        };
-        mags[]= {};
-        accs[] = {};
-    };
-    
-    class cop_lsnrConstable {
-        name = "Lead Snr Constable Shop";
-        side = "cop";
-        license = "";
-        level[] = { "","",-1,"" };
-        items[] = {
-            { "SMG_02_ACO_F", "", 20000, -1 },
-            { "hgun_P07_snds_F", "Stun Pistol", 2800, 650 },
-            { "arifle_sdar_F", "Taser Rifle", 10000, 1000 },
-            { "arifle_MX_Black_F", "", 15000, 1000},
-            { "arifle_CTAR_blk_F", "", 30000, 3000 },
-            { "arifle_MXM_Black_F", "", 35000, 5000 },
-            { "optic_Arco_blk_F", "", 2500, 200 },
-            { "optic_ERCO_blk_F", "", 5000, 200},
-            { "muzzle_snds_H", "", 7000, 1000},
-            { "16Rnd_9x21_Mag", "", 25 },
-            { "30Rnd_9x21_Mag", "", 250 },
-            { "20Rnd_556x45_UW_mag", "Taser Rifle Magazine", 45 },
-            { "30Rnd_65x39_caseless_mag", "", 300, 100 },
-            { "30Rnd_580x42_Mag_F", "", 1500, 100 },
-            { "Binocular", "", 150, -1 },
-            { "ItemGPS", "", 100, 45 },
-            { "FirstAidKit", "", 150, 65 },
-            { "NVGoggles", "", 1500, 980 }
         };
         mags[]= {};
         accs[] = {};

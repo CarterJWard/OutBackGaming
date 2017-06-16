@@ -556,7 +556,7 @@ class VirtualItems {
         variable = "marijuana";
         displayName = "STR_Item_Marijuana";
         weight = 3;
-        buyPrice = 2800;
+        buyPrice = 8000;
         sellPrice = 2350;
         illegal = true;
         edible = -1;
