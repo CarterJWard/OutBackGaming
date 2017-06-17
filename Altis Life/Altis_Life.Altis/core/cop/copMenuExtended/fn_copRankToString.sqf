@@ -11,17 +11,12 @@ params [
 _return = switch (_rank) do {
 	case 1: {"Prob. Constable"};
 	case 2: {"Constable"};
-	case 3: {"Snr Constable"};
-	case 4: {"Inc. Snr Constable"};
-	case 5: {"Lead Snr Constable"};		
-	case 6: {"Sergeant"};
-	case 7: {"Inc. Sergeant"};
-	case 8: {"Snr Sergeant"};
-	case 9: {"Inspector"};
-	case 10: {"Cheif Inspector"};
-	case 11: {"Superintendent"};
-	case 12: {"Cheif Superintendent"};
-	case 13: {"Commissioner"};
+	case 3: {"Snr Constable"};	
+	case 4: {"Sergeant"};
+	case 5: {"Snr Sergeant"};
+	case 6: {"Inspector"};
+	case 7: {"Superintendent"};
+	case 8: {"Commissioner"};
 	default {""};
 };
 

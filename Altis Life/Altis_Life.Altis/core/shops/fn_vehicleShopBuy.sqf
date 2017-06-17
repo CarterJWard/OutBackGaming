@@ -150,3 +150,11 @@ if (LIFE_SETTINGS(getNumber,"player_advancedLog") isEqualTo 1) then {
 [0] call SOCK_fnc_updatePartial;
 closeDialog 0; //Exit the menu.
 true;
+
+//Helpers
+_pos = getPos _vehicle;
+_marker = "Sign_Arrow_Large_Pink_F" createVehicle _pos;
+_marker setPos (_marker modelToWorld [3,-3,4]);
+
+sleep 10;
+deleteVehicle _marker

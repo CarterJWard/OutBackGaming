@@ -10,7 +10,7 @@ if(isNil "_copPlayer") exitwith {};
 if(isNull _copPlayer) exitWith {};
 _copPlayerRank = _copPlayer getVariable ["rank",0];
 
-if((life_gigcoplevel25) < 10) exitWith {
+if((life_gigcoplevel25) < 6) exitWith {
 	hint "You are not high enough rank to use this feature!"; 
 	closeDialog 0;
 };

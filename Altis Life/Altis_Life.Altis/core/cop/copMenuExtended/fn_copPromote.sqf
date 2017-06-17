@@ -10,7 +10,7 @@ if(isNil "_copPlayer") exitwith {};
 if(isNull _copPlayer) exitWith {};
 _copPlayerRank = _copPlayer getVariable ["rank",0];
 
-if((life_gigcoplevel25) < 10) exitWith {
+if((life_gigcoplevel25) < 6) exitWith {
 	hint "You are not high enough rank to use this feature!"; 
 	closeDialog 0;
 };
@@ -25,7 +25,7 @@ if(side _copPlayer != west) exitWith {
 	hint "You cannot promote somebody who is not currently playing as a cop";
 }; 
 
-if (_copPlayerRank isEqualTo 8) exitWith {
+if (_copPlayerRank isEqualTo 5) exitWith {
 	hint "This player is already the highest avaliable rank!";
 };
 

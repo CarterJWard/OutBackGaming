@@ -12,7 +12,7 @@ class Profs {
     };
 
     class pScavenge {
-        variable = "pScavenge";
+        variable = "pScavenger";
         name = "STR_Prof_Scav";
         tag = "Scavenger";
         side = "civ";

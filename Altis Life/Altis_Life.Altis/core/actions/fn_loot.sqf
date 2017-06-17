@@ -106,7 +106,7 @@ switch (true) do {
 		_addExpAmount = 5;
 		["pScavenger",_addExpAmount] call life_fnc_addExp;
 		//hint parseText format[localize "STR_ISTR_Found_XPSuccess2",_addExpAmount,(localize _name)];
-		hint "You found nothing!";
+		hint "You found nothing!"; 
 	};
 };
 
