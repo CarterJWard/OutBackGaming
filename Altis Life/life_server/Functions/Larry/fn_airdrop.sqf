@@ -69,7 +69,7 @@ createMarker ["airbox_marker", _dropZone];
 "airDrop_marker" setMarkerType "Mil_Destroy";
 "airDrop_marker" setMarkerColor "ColorBlue";
 "airDrop_marker" setMarkerText "Airdrop Box";
-_loop = true
+_loop = true;
 while {_loop = true} do { "airDrop_marker" setMarkerPos getPos _drop;sleep 1; };
 
 //When the helo gets close to the marker start the box dropping

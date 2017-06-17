@@ -176,6 +176,7 @@ class CfgRemoteExec {
         F(life_fnc_simDisable,ANYONE)
         F(SPY_fnc_notifyAdmins,ANYONE)
         F(TON_fnc_jailGate, ANYONE)
+        F(TON_fnc_timers, ANYONE)
     };
 
     class Commands {
