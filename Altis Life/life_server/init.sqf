@@ -243,6 +243,7 @@ publicVariable "life_attachment_point";
 
 [] execVM "\life_server\Functions\DynMarket\fn_config.sqf";
 [] spawn TON_fnc_hideBuildings;
+[0] spawn Larry_fnc_grafCfg;
 
 diag_log "----------------------------------------------------------------------------------------------------";
 diag_log format["               End of Altis Life Server Init :: Total Execution Time %1 seconds ",(diag_tickTime) - _timeStamp];

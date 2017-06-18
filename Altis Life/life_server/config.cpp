@@ -141,6 +141,15 @@ class CfgFunctions {
 			class cleanupMessages {};
 		};
     };
+    
+    class Larry {
+        tag = "Larry";
+        class Main {
+            file = "\life_server\Functions\Larry";
+            class hideGraf {};
+            class grafCfg {};
+        };        
+    };
 };
 
 class CfgVehicles {

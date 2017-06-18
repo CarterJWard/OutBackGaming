@@ -41,6 +41,9 @@
 		<Key ID="STR_Item_ZipTies">
 			<Original>ZipTies</Original>
 		</Key>
+        <Key ID="STR_Item_spraycan">
+            <Original>Spray Can</Original>
+        </Key>
 		<Key ID="STR_Item_Blindfold">
 			<Original>Blindfold</Original>
 		</Key>

@@ -161,6 +161,17 @@ class VirtualItems {
     //Virtual Items
 
     //Misc
+    class spraycan {
+        variable "spraycan";
+        displayName = "STR_Item_spraycan";
+        weight = 2;
+        buyPrice = 600;
+        sellPrice = 300;
+        illegal = false;
+        edible = -1;
+        icon = "icons\ico_spraycan.paa";
+    };
+    
     class pickaxe {
         variable = "pickaxe";
         displayName = "STR_Item_Pickaxe";
