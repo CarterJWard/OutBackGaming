@@ -1,6 +1,10 @@
+/*
+Author: Larry Lancelot
+Sorts grafiti stuff
+*/
 _type = [_this,0,0,[[],0]] call BIS_fnc_param;
 _wall = [_this,1,wall,[[],0]] call BIS_fnc_param;
-_grafiti = [[]];
+_grafiti = [[gwall1,graf1],[gwall2,graf2],[gwall3,graf3]];
 switch (_type) do {
 case 0: { [_grafiti] spawn Larry_fnc_hideGraf};
 case 1: {
@@ -11,4 +15,5 @@ case 1: {
             };
     } forEach _grafiti; 
     _graf hideObjectGlobal false;};
+case 2: {_grafiti};
 };

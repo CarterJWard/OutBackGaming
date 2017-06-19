@@ -8,7 +8,7 @@ class EditorData
 	toggles=10;
 	class ItemIDProvider
 	{
-		nextID=2376;
+		nextID=2380;
 	};
 	class MarkerIDProvider
 	{
@@ -20,10 +20,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={3444.5093,55.048683,13392.95};
-		dir[]={-0.45478874,-0.44007045,-0.77442628};
-		up[]={-0.22290601,0.8979075,-0.37956482};
-		aside[]={-0.86239821,-6.8911322e-007,0.50645238};
+		pos[]={3366.0459,18.948471,12987.871};
+		dir[]={-0.5880273,-0.39580247,-0.70555252};
+		up[]={-0.25348464,0.91828227,-0.30414289};
+		aside[]={-0.76827461,-6.9802627e-007,0.64030129};
 	};
 };
 binarizationWanted=0;
@@ -96,7 +96,8 @@ addons[]=
 	"A3_Structures_F_Civ_Offices",
 	"A3_Structures_F_Households_House_Shop02",
 	"A3_Structures_F_EPC_Civ_Tourism",
-	"A3_Signs_F_Signs_Ad"
+	"A3_Signs_F_Signs_Ad",
+	"A3_Structures_F_EPB_Civ_Graffiti"
 };
 class AddonsMetaData
 {
@@ -270,6 +271,24 @@ class CustomAttributes
 		name="Multiplayer";
 		class Attribute0
 		{
+			property="RespawnTemplates";
+			expression="true";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"ARRAY"
+						};
+					};
+				};
+			};
+		};
+		class Attribute1
+		{
 			property="RespawnButton";
 			expression="true";
 			class Value
@@ -284,24 +303,6 @@ class CustomAttributes
 						};
 					};
 					value=1;
-				};
-			};
-		};
-		class Attribute1
-		{
-			property="RespawnTemplates";
-			expression="true";
-			class Value
-			{
-				class data
-				{
-					class type
-					{
-						type[]=
-						{
-							"ARRAY"
-						};
-					};
 				};
 			};
 		};
@@ -363,7 +364,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=1300;
+		items=1303;
 		class Item0
 		{
 			dataType="Marker";
@@ -7449,8 +7450,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={3359.9778,3.8426456,12964.135};
-				angles[]={6.2698579,3.7265573,0};
+				position[]={3359.978,3.8426628,12964.135};
+				angles[]={6.2698507,3.7265573,0};
 			};
 			side="Empty";
 			flags=4;
@@ -7458,10 +7459,11 @@ class Mission
 			{
 				skill=0.60000002;
 				init="this allowDamage false; this enableSimulation false;";
+				name="gwall3";
 			};
 			id=617;
 			type="Land_CncWall4_F";
-			atlOffset=0.0029816628;
+			atlOffset=0.0030002594;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -7491,8 +7493,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={3343.479,4.3869476,12975.146};
-				angles[]={6.1663861,3.6755934,6.249866};
+				position[]={3343.479,4.3873997,12975.146};
+				angles[]={6.166388,3.6755934,6.249867};
 			};
 			side="Empty";
 			flags=4;
@@ -7500,10 +7502,11 @@ class Mission
 			{
 				skill=0.60000002;
 				init="this allowDamage false; this enableSimulation false;";
+				name="gwall2";
 			};
 			id=618;
 			type="Land_CncWall4_F";
-			atlOffset=0.064547777;
+			atlOffset=0.065000057;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -7533,8 +7536,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={3347.771,4.1488991,12972.608};
-				angles[]={6.2578578,3.6838839,6.2645216};
+				position[]={3347.771,4.1490998,12972.608};
+				angles[]={6.2578607,3.6838839,6.2645278};
 			};
 			side="Empty";
 			flags=4;
@@ -7542,10 +7545,11 @@ class Mission
 			{
 				skill=0.60000002;
 				init="this allowDamage false; this enableSimulation false;";
+				name="gwall1";
 			};
 			id=619;
 			type="Land_CncWall4_F";
-			atlOffset=0.006799221;
+			atlOffset=0.0069999695;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -49730,7 +49734,7 @@ class Mission
 			};
 			id=2323;
 			type="SignAd_Sponsor_F";
-			atlOffset=2.789263;
+			atlOffset=2.7894278;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -50493,7 +50497,7 @@ class Mission
 			};
 			id=2363;
 			type="PlasticBarrier_03_blue_F";
-			atlOffset=1.8484136;
+			atlOffset=1.8826728;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -51012,6 +51016,59 @@ class Mission
 				};
 				nAttributes=1;
 			};
+		};
+		class Item1300
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={3348.0239,4.4958854,12973.075};
+				angles[]={0,3.6907256,0};
+			};
+			side="Empty";
+			class Attributes
+			{
+				name="graf1";
+				aiRadarUsage=1645407521;
+			};
+			id=2377;
+			type="Land_Graffiti_03_F";
+			atlOffset=2.1110001;
+		};
+		class Item1301
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={3344.2009,4.5375857,12975.315};
+				angles[]={6.171833,3.6810391,0.0023561947};
+			};
+			side="Empty";
+			class Attributes
+			{
+				name="graf2";
+			};
+			id=2378;
+			type="Land_Graffiti_02_F";
+			atlOffset=1.9850001;
+		};
+		class Item1302
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={3360.3999,3.9540555,12964.496};
+				angles[]={0,3.7408688,0};
+			};
+			side="Empty";
+			class Attributes
+			{
+				name="graf3";
+				aiRadarUsage=35959;
+			};
+			id=2379;
+			type="Land_Graffiti_01_F";
+			atlOffset=1.8740001;
 		};
 	};
 };
