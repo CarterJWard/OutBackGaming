@@ -13,7 +13,7 @@ class VirtualShops {
         side = "civ";
         license = "";
         level[] = { "", "", -1, "" };
-        items[] = { "waterBottle", "rabbit", "apple", "redgull", "tbacon", "pickaxe", "toolkit", "fuelFull", "peach", "storagesmall", "storagebig", "rabbit_raw", "hen_raw", "rooster_raw", "sheep_raw", "goat_raw", "pesticide" };
+        items[] = { "waterBottle", "rabbit", "apple", "redgull", "tbacon", "pickaxe", "toolkit", "pesticide", "fuelFull", "peach", "storagesmall", "storagebig", "rabbit_raw", "hen_raw", "rooster_raw", "sheep_raw", "goat_raw","spraycan" };
     };
 
     class med_market {
@@ -162,7 +162,7 @@ class VirtualItems {
 
     //Misc
     class spraycan {
-        variable "spraycan";
+        variable = "spraycan";
         displayName = "STR_Item_spraycan";
         weight = 2;
         buyPrice = 600;

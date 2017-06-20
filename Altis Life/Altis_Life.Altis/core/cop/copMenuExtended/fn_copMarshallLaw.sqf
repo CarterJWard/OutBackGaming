@@ -3,7 +3,6 @@
     File: fn_copMarshallLaw.sqf
     Author: !TS JORDAN
 */
-private["_city"];
 
 if ((life_gigcoplevel25) < 5) then {
 	hint "You are not a high enough level for that!";
@@ -11,7 +10,7 @@ if ((life_gigcoplevel25) < 5) then {
 
 if (GVAR_MNS ["mLaw", false]) then {
 	{
-		hint parseText format["<t color='#FA4F4F'><t align='center'><t size='1.75'>Marshall Law.</t></t></t><br/><br/><t size='1.2'>Marshall Law has now been revoked, all activity may resume to normal, enjoy your day!</t>";
+		hint parseText "<t color='#FA4F4F'><t align='center'><t size='1.75'>Marshall Law.</t></t></t><br/><br/><t size='1.2'>Marshall Law has now been revoked, all activity may resume to normal, enjoy your day!</t>";
 		//playSound3D ""
 	}forEach playableUnits;
 	SVAR_MNS ["mlaw", false, true]; 

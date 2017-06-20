@@ -134,21 +134,19 @@ class CfgFunctions {
             class getPlayTime {};
         };
 		
-		class Smartphone {
+        class Smartphone {
 			file = "\life_server\Functions\Smartphone";
 			class handleMessages {};
 			class msgRequest {};
 			class cleanupMessages {};
 		};
-    };
-    
-    class Larry {
-        tag = "Larry";
-        class Main {
-            file = "\life_server\Functions\Larry";
-            class hideGraf {};
-            class grafCfg {};
-        };        
+        
+        class Larry {
+			file = "\life_server\Functions\Larry";
+			class airdrop {};
+			class hideGraf {};
+			class grafCfg {};
+		};
     };
 };
 
