@@ -276,6 +276,7 @@ class Life_Client_Core {
         class profType {};
         class profSetUp {};
         class grabSkills {};
+        class exClothes {};
     };
 
     class Gangs    {

@@ -45,7 +45,7 @@ lbClear _filter;
 lbClear _list;
 
 _array = switch (_selection) do {
-    case 0: {M_CONFIG(getArray,"Clothing",life_clothing_store,"uniforms");};
+    case 0: {M_CONFIG(getArray,"Clothing",life_clothing_store,"uniforms");}; 
     case 1: {M_CONFIG(getArray,"Clothing",life_clothing_store,"headgear");};
     case 2: {M_CONFIG(getArray,"Clothing",life_clothing_store,"goggles");};
     case 3: {M_CONFIG(getArray,"Clothing",life_clothing_store,"vests");};
@@ -106,3 +106,5 @@ _array = switch (_selection) do {
         };
     };
 } forEach _array;
+
+[0,_displayName] call life_fnc_exClothes;

@@ -27,7 +27,7 @@ if (_bool) then {
     switch (_details select 6) do {
         case "CfgGlasses": {
             if (_toUniform) exitWith {player addItemToUniform _item;};
-            if (_toVest) exitWith {player addItemToVest _item;};
+            if (_toVest) exitWith {player addItemToVest _item;}; 
 
             if (_ispack) then {
                 player addItemToBackpack _item;

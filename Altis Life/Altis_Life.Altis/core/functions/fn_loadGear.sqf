@@ -6,7 +6,8 @@
     Description:
     Loads saved civilian gear, this is limited for a reason and that's balance.
 */
-private["_itemArray","_handle"];
+private["_itemArray","_handle","_custom"];
+_custom = ["Swat1","Swat2"];
 _itemArray = life_gear;
 waitUntil {!(isNull (findDisplay 46))};
 
@@ -48,7 +49,7 @@ _itemArray params [
     ["_hItems",[]],
     ["_yItems",[]]
 ];
-
+if (_uniform in _custom) then {[1,_uniform] call life_fnc_exClothes;_uniform = "U_I_CombatUniform";};
 if (!(_goggles isEqualTo "")) then {_handle = [_goggles,true,false,false,false] spawn life_fnc_handleItem; waitUntil {scriptDone _handle};};
 if (!(_headgear isEqualTo "")) then {_handle = [_headgear,true,false,false,false] spawn life_fnc_handleItem; waitUntil {scriptDone _handle};};
 if (!(_uniform isEqualTo "")) then {_handle = [_uniform,true,false,false,false] spawn life_fnc_handleItem; waitUntil {scriptDone _handle};};

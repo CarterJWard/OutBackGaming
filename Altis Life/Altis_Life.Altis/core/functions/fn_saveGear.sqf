@@ -8,11 +8,22 @@
     Description:
     Saves the players gear for syncing to the database for persistence..
 */
-private["_return","_uItems","_bItems","_vItems","_pItems","_hItems","_yItems","_uMags","_vMags","_bMags","_pMag","_hMag","_uni","_ves","_bag","_handled","_savedVirtualItems"];
+private["_return","_uItems","_bItems","_vItems","_pItems","_hItems","_yItems","_uMags","_vMags","_bMags","_pMag","_hMag","_uni","_ves","_bag","_handled","_savedVirtualItems","_uniform"];
 _return = [];
 _savedVirtualItems = LIFE_SETTINGS(getArray,"saved_virtualItems");
-
-_return pushBack uniform player;
+if (playerSide = west) then {
+    if (uniform player isEqualTo "U_I_CombatUniform") then {
+        if (getVariable "uniType" isEqualTo "Swat1") then {
+            _uniform = "Swat1";
+        };
+        if (getVariable "uniType" isEqualTo "Swat2") then {
+            _uniform = "Swat2";
+        };
+    };
+} else {
+    _uniform = uniform player;
+};
+_return pushBack _uniform;
 _return pushBack vest player;
 _return pushBack backpack player;
 _return pushBack goggles player;

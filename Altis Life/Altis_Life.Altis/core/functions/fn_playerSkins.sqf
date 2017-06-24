@@ -45,8 +45,14 @@ switch (playerSide) do {
             };
             player setObjectTextureGlobal [0, _skinName];
         };
+        
         if (uniform player isEqualTo "U_I_CombatUniform") then {
+            if (getVariable "uniType" isEqualTo "Swat1") then {
             player setObjectTextureGlobal [0,"textures\cop\swat.paa"];
+            };
+            if (getVariable "uniType" isEqualTo "Swat2") then {
+            player setObjectTextureGlobal [0,"textures\cop\swat1.paa"];
+            };
         };
         
         (unitBackpack player) setObjectTextureGlobal [0,""];
