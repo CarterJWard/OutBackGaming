@@ -20,6 +20,21 @@ if (_price > CASH) exitWith {titleText[localize "STR_Shop_NotEnoughClothes","PLA
 CASH = CASH - _price;
 
 life_clothesPurchased = true;
+
+if (uniform player isEqualTo "U_I_CombatUniform") then {    
+    _action = [
+    "What color do you want you uniform",
+     "Uniform Options",
+     "Blue",
+     "Blue"
+] call BIS_fnc_guiMessage;
+
+if (_action) then {
+    _type = "Swat Blue"
+} else {
+    _type = "Swat Black";
+};};
+[0,_type] call life_fnc_exClothes;
 [] call life_fnc_playerSkins;
 closeDialog 0;
 [] call life_fnc_hudUpdate;

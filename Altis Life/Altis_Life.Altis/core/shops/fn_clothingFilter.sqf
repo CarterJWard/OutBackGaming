@@ -106,5 +106,3 @@ _array = switch (_selection) do {
         };
     };
 } forEach _array;
-
-[0,_displayName] call life_fnc_exClothes;
