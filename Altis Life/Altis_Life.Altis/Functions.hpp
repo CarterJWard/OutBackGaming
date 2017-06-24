@@ -195,6 +195,7 @@ class Life_Client_Core {
     class Dialog_Controls {
         file = "dialog\function";
         class bankDeposit {};
+        class bankDepositAll {};
         class bankTransfer {};
         class bankWithdraw {};
         class displayHandler {};
