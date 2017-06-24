@@ -298,6 +298,8 @@ class WeaponShops {
             { "10Rnd_338_Mag", "", 4000, 500 },
             { "10Rnd_93x64_DMR_05_Mag", "",5000, 200 },
             { "200Rnd_65x39_cased_Box", "",5000, 200 },
+            { "SmokeShell", "Tear Gas", 10000, 100 },
+            { "HandGrenade_Stone", "Flashbang", 15000, 200},
             { "Binocular", "", 150, -1 },
             { "ItemGPS", "", 100, 45 },
             { "FirstAidKit", "", 150, 65 },
@@ -350,6 +352,8 @@ class WeaponShops {
             { "150Rnd_93x64_Mag", "", 5000, 200},
             { "5Rnd_127x108_Mag", "", 5000, 500 },
             { "5Rnd_127x108_APDS_Mag", "HeadPoppers",10000, 200 },
+            { "SmokeShell", "Tear Gas", 10000, 100 },
+            { "HandGrenade_Stone", "Flashbang", 11000, 200},
             { "Binocular", "", 150, -1 },
             { "ItemGPS", "", 100, 45 },
             { "FirstAidKit", "", 150, 65 },
@@ -402,6 +406,8 @@ class WeaponShops {
             { "150Rnd_93x64_Mag", "", 2000, 200},
             { "5Rnd_127x108_Mag", "", 4000, 500 },
             { "5Rnd_127x108_APDS_Mag", "",8000, 200 },
+            { "SmokeShell", "Tear Gas", 5000, 100 },
+            { "HandGrenade_Stone", "Flashbang", 10000, 200},
             { "Binocular", "", 150, -1 },
             { "ItemGPS", "", 100, 45 },
             { "FirstAidKit", "", 150, 65 },
@@ -454,6 +460,8 @@ class WeaponShops {
             { "150Rnd_93x64_Mag", "", 1000, 200},
             { "5Rnd_127x108_Mag", "", 3000, 500 },
             { "5Rnd_127x108_APDS_Mag", "GM6 Headpoppers",6000, 200 },
+            { "SmokeShell", "Tear Gas", 2000, 100 },
+            { "HandGrenade_Stone", "Flashbang", 5000, 200},
             { "Binocular", "", 150, -1 },
             { "ItemGPS", "", 100, 45 },
             { "FirstAidKit", "", 150, 65 },
@@ -506,12 +514,24 @@ class WeaponShops {
             { "150Rnd_93x64_Mag", "", 500, 200},
             { "5Rnd_127x108_Mag", "", 1000, 500 },
             { "5Rnd_127x108_APDS_Mag", "",2000, 200 },
+            { "SmokeShell", "Tear Gas", 1000, 100 },
+            { "HandGrenade_Stone", "Flashbang", 1000, 200},            
             { "Binocular", "", 150, -1 },
             { "ItemGPS", "", 100, 45 },
             { "FirstAidKit", "", 150, 65 },
             { "NVGoggles_OPFOR", "", 2000, 980 }
         };
         mags[]= {};
+        accs[] = {};
+    };
+
+    class swat {
+        name = "Swat Shop";
+        side = "cop";
+        license = "swat";
+        level[] = { "", "", -1, "" };
+        items[] = {};
+        mags[] = {};
         accs[] = {};
     };
     //Medic Shops

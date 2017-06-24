@@ -473,7 +473,7 @@ class playerSettings {
 		 colorDisabled[] = {1,0,0,0.1};
 		 tooltip = $STR_PM_WantedList;
 		 }; 
-		
+		/*
 		class ButtonTaxi_ICON: life_RscPicture
 		 {
 		 idc = 8892;
@@ -502,7 +502,7 @@ class playerSettings {
 		 colorText[] = {1,1,1,1};
 		 colorDisabled[] = {1,0,0,0.1};
 		 }; 
-
+		 */
 		 class ButtonSkills_ICON: life_RscPicture
 		 {
 		 idc = -1;

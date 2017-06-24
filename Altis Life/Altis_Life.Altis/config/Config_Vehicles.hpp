@@ -109,17 +109,16 @@ class CarShops {
         vehicles[] = {
             { "C_Offroad_01_F", { "", "", -1 } },
             { "C_SUV_01_F", { "", "", -1 } },
-            { "B_MRAP_01_F", { "life_gigcoplevel25", "SCALAR", 4} },
-            { "C_Hatchback_01_sport_F", { "life_gigcoplevel25", "SCALAR", 5 } },
-            { "I_MRAP_03_F", { "life_gigcoplevel25", "SCALAR", 7} }
+            { "B_MRAP_01_F", { "life_coplevel25", "SCALAR", 4} },
+            { "C_Hatchback_01_sport_F", { "life_gigcoplevel25", "SCALAR", 5 } }
         };
     };
 
     class cop_air {
         side = "cop";
         vehicles[] = {
-            { "B_Heli_Light_01_F", { "life_gigcoplevel25", "SCALAR", 2 } },
-            { "B_Heli_Transport_01_F", { "life_gigcoplevel25", "SCALAR", 4 } }
+            { "B_Heli_Light_01_F", { "life_gigcoplevel25", "SCALAR", 4 } },
+            { "B_Heli_Transport_01_F", { "life_gigcoplevel25", "SCALAR", 5 } }
         };
     };
 
@@ -129,6 +128,12 @@ class CarShops {
             { "B_Boat_Transport_01_F", { "", "", -1 } },
             { "C_Boat_Civil_01_police_F", { "", "", -1 } },
             { "B_Boat_Armed_01_minigun_F", { "life_gigcoplevel25", "SCALAR", 3 } }
+        };
+    };
+    class cop_swat {
+        side = "cop";
+        vehicles[] = {
+            { "I_MRAP_03_F", { "", "", -1} }
         };
     };
 };
@@ -218,7 +223,7 @@ class LifeCfgVehicles {
     
     class I_MRAP_03_F {
         vItemSpace = 50;
-        licenses[] = { {""}, {""}, {""}, {""} };
+        licenses[] = { {""}, {"swat"}, {""}, {""} };
         price = 500000;
         textures[] = {
             { "Reb Black", "civ", {
@@ -662,7 +667,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
     class B_MRAP_01_F {
         vItemSpace = 50;
         vFuelSpace = 5000;
-        licenses[] = { {""}, {""}, {""}, {""} };
+        licenses[] = { {""}, {"swat"}, {""}, {""} };
         price = 100000;
         textures[] = {
             { "Police", "civ", {

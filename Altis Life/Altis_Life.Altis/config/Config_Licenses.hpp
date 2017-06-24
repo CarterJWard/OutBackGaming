@@ -195,6 +195,14 @@ class Licenses {
         side = "cop";
     };
 
+    class swat {
+        variable = "swat";
+        displayName = "STR_License_Swat";
+        price = 100000;
+        illegal = false;
+        side = "cop";
+    };
+
     //Medic Licenses
     class mAir {
         variable = "mAir";

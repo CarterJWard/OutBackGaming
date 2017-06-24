@@ -23,21 +23,21 @@ if (currentWeapon _robber == "") exitWith { hint "HaHa, you do not threaten me! 
 if (_kassa == 0) exitWith { hint "There is no cash in the register!" };
 
 _rip = true;
-_kassa = 1000000 + round(random 700000);
+_kassa = 1300000 + round(random 700000);
 _shop removeAction _action;
 _shop switchMove "AmovPercMstpSsurWnonDnon";
 
 _cops = (west countSide playableUnits);
 if(_cops < _copsNeeded) exitWith{[_vault,-1] remoteExec ["disableSerialization;",2]; hint "There isnt enough Police to rob the bank";};
 
-["BANK ROBBERY","Authorities Have confirmed that armed persons have entered the bank of Kavala. Officials urge people to stay away as these people are considered hostile. Any armed persons in the areas will be met with lethal force! Thankyou for your attention!",[204,0,0,1],""] remoteExecCall ["life_fnc_showNotification",civilian];
+[3,"<t size='1.5'><t color='#e02124'><t align='center'><t font='TahomaB'><t underline='true'>BANK ROBBERY<br /><br/></t></t></t></t></t><t size ='1.2'>CCTV has confirmed armed persons are attempting to rob then bank. All units must respond, These people are considered armed and dangerous and lethal force may be used to subdue them.</t>"] remoteExec ["life_fnc_broadcast", west]
 
-["BANK ROBBERY","CCTV Has spotted armed persons entering the bank and have began robbing the bank. All units need to respond urgently. Lethal force may be used to subdue anyone with weapons in the area!",[204,0,0,1],""] remoteExecCall ["life_fnc_showNotification",west];
+[3,"<t size='1.5'><t color='#e02124'><t align='center'><t font='TahomaB'><t underline='true'>BANK ROBBERY<br /><br/></t></t></t></t></t><t size ='1.2'>Authorities have confirmed armed rebels have begun robbing the bank of kavala. These persons are considered armed and dangers and authorities have urged civilians to keep away from the situation.</t>"] remoteExec ["life_fnc_broadcast", civilian]
 
 disableSerialization;
 5 cutRsc ["life_progress","PLAIN"];
 _ui = uiNameSpace getVariable "life_progress";
-_progress = _ui displayCtrl 38201;
+_progress = _ui displayCtrl 38201;			
 _pgText = _ui displayCtrl 38202;
 _pgText ctrlSetText format["Robbery in Progress, stay close (10m) (1%1)...","%"];
 _progress progressSetPosition 0.01;
@@ -47,7 +47,7 @@ if(_rip) then
 {
 while{true} do
 {
-sleep 3;
+sleep 1;
 _cP = _cP + 0.0017;
 _progress progressSetPosition _cP;
 _pgText ctrlSetText format["Robbery in Progress, stay close (10m) (%1%2)...",round(_cP * 100),"%"];
@@ -61,12 +61,13 @@ if(_robber distance _shop > 10.5) exitWith { };
 if!(alive _robber) exitWith {};
 };
 if!(alive _robber) exitWith { _rip = false; };
-if(_robber distance _shop > 10.5) exitWith { deleteMarker "Marker200"; _shop switchMove ""; hint "You need to stay within 10m to Rob registry! - Now the registry is locked."; 5 cutText ["","PLAIN"]; _rip = false; };
+if(_robber distance _shop > 10.5) exitWith { deleteMarker "Marker200"; _shop switchMove ""; hint "You need to stay within 10m to Rob registry! - Now the registry is locked."; 5 cutText ["","PLAIN"]; _rip = false; [3,"<t size='1.5'><t color='#e02124'><t align='center'><t font='TahomaB'><t underline='true'>BANK ROBBERY<br /><br/></t></t></t></t></t><t size ='1.2'>The bank robbery has ended. be aware that the robbers may still be in the area</t>"] remoteExec ["life_fnc_broadcast", civilian];};
 5 cutText ["","PLAIN"];
 
 titleText[format["You have stolen $%1, now get away before the cops arrive!",[_kassa] call life_fnc_numberText],"PLAIN"];
 deleteMarker "Marker200"; // by ehno delete maker
 life_cash = life_cash + _kassa;
+[3,"<t size='1.5'><t color='#e02124'><t align='center'><t font='TahomaB'><t underline='true'>BANK ROBBERY<br /><br/></t></t></t></t></t><t size ='1.2'>The bamk robbery has ended. be aware that the robbers may still be in the area</t>"] remoteExec ["life_fnc_broadcast", civilian];
 
 _rip = false;
 life_use_atm = false;

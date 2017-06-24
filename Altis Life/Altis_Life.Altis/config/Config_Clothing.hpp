@@ -117,7 +117,8 @@ class Clothing {
         side = "cop";
         uniforms[] = {
             { "NONE", "Remove Uniform", 0, { "", "", -1 } },
-            { "U_Rangemaster", "Cop Uniform", 25, { "", "", -1 } }
+            { "U_Rangemaster", "Cop Uniform", 25, { "", "", -1 } },
+            { "U_I_CombatUniform", "Swat Uniform", 100, {"", "", -1} }
         };
         headgear[] = {
             { "NONE", "Remove Hat", 0, { "", "", -1 } },
@@ -127,7 +128,7 @@ class Clothing {
             { "H_Booniehat_mcamo", "", 120, { "life_gigcoplevel25", "SCALAR", 1 } },
             { "H_Beret_blk_POLICE", "", 50, { "life_gigcoplevel25", "SCALAR", 4 } },
             { "H_Beret_02", "", 200, {"life_gigcoplevel25", "SCALAR", 5} },
-            { "H_PilotHelmetFighter_B", "Gas Mask",1000, {"life_gigcoplevel25", "SCALAR", 5} },
+            { "H_PilotHelmetFighter_B", "Gas Mask",1000, {"life_gigcoplevel25", "SCALAR", 3} },
             { "H_Watchcap_blk", "Tacticool Beanie", 300, { "life_gigcoplevel25", "SCALAR", 7 } }
         };
         goggles[] = {
