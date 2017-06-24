@@ -317,7 +317,7 @@ class playerSettings {
 		 y = 0.7016 * safezoneH + safezoneY;
 		 w = 0.028875 * safezoneW;
 		 h = 0.0504 * safezoneH;
-		 onButtonClick = "createDialog ""Life_my_smartphone"";";
+		 onButtonClick = "createDialog ""Life_cell_phone"";";
 		 tooltip = $STR_PM_CellPhone;
 		 colorBackground[] = {-1,-1,-1,-1};
 		 colorBackgroundFocused[] = {1,1,1,0.12};

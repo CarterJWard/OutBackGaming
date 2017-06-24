@@ -133,13 +133,6 @@ class CfgFunctions {
             class setPlayTime {};
             class getPlayTime {};
         };
-		
-        class Smartphone {
-			file = "\life_server\Functions\Smartphone";
-			class handleMessages {};
-			class msgRequest {};
-			class cleanupMessages {};
-		};
         
         class Larry {
 			file = "\life_server\Functions\Larry";

@@ -47,7 +47,6 @@ life_pos_exist = false;
 life_pos_attach = [];
 life_civ_position = [];
 life_markers = false;
-life_smartphoneTarget = ObjNull;
 life_open_notifications = [];
 life_taxi_onDuty = false;
 life_taxi_call = false;

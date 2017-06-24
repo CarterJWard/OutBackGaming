@@ -29,7 +29,6 @@
 #include "FuelStat.hpp"
 #include "AltisPhone.hpp"
 #include "jail_time.hpp" //Jail Timer
-#include "smartphone.hpp" //SQL Smartphone
 #include "craft.hpp" //CraftingAction
 #include "dynmarket_changeprice.hpp" //DynMarket
 #include "dynmarket_prices.hpp" //DynMarket
