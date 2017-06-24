@@ -160,6 +160,7 @@ if (life_HC_isActive) then {
 };
 
 [] execVM "scripts\fn_safezone.sqf";
+[] execVM "scripts\fn_autoSave.sqf";
 DYNAMICMARKET_boughtItems = [];
 [player] remoteExec ["TON_fnc_playerLogged",RSERV];
 
