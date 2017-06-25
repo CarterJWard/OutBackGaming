@@ -18,7 +18,7 @@ class Profs {
         side = "civ";
     };
     
-    class repair {
+    class crepair {
         variable = "Repair";
         name = "STR_Prof_Repair";
         tag = "Revive";
@@ -103,7 +103,7 @@ class Profs {
         side = "cop";
     };
         
-    class pRevive {
+    class cRevive {
         variable = "pRevive";
         name = "STR_Prof_Revive";
         tag = "Revive";
@@ -131,7 +131,7 @@ class Profs {
         side = "med";
     };
     
-    class repair {
+    class mrepair {
         variable = "Repair";
         name = "STR_Prof_Revive";
         tag = "Repair";
