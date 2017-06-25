@@ -30,9 +30,9 @@ _shop switchMove "AmovPercMstpSsurWnonDnon";
 _cops = (west countSide playableUnits);
 if(_cops < _copsNeeded) exitWith{[_vault,-1] remoteExec ["disableSerialization;",2]; hint "There isnt enough Police to rob the bank";};
 
-[3,"<t size='1.5'><t color='#e02124'><t align='center'><t font='TahomaB'><t underline='true'>BANK ROBBERY<br /><br/></t></t></t></t></t><t size ='1.2'>CCTV has confirmed armed persons are attempting to rob then bank. All units must respond, These people are considered armed and dangerous and lethal force may be used to subdue them.</t>"] remoteExec ["life_fnc_broadcast", west]
+[3,"<t size='1.5'><t color='#e02124'><t align='center'><t font='TahomaB'><t underline='true'>BANK ROBBERY<br /><br/></t></t></t></t></t><t size ='1.2'>CCTV has confirmed armed persons are attempting to rob then bank. All units must respond, These people are considered armed and dangerous and lethal force may be used to subdue them.</t>"] remoteExec ["life_fnc_broadcast", west];
 
-[3,"<t size='1.5'><t color='#e02124'><t align='center'><t font='TahomaB'><t underline='true'>BANK ROBBERY<br /><br/></t></t></t></t></t><t size ='1.2'>Authorities have confirmed armed rebels have begun robbing the bank of kavala. These persons are considered armed and dangers and authorities have urged civilians to keep away from the situation.</t>"] remoteExec ["life_fnc_broadcast", civilian]
+[3,"<t size='1.5'><t color='#e02124'><t align='center'><t font='TahomaB'><t underline='true'>BANK ROBBERY<br /><br/></t></t></t></t></t><t size ='1.2'>Authorities have confirmed armed rebels have begun robbing the bank of kavala. These persons are considered armed and dangers and authorities have urged civilians to keep away from the situation.</t>"] remoteExec ["life_fnc_broadcast", civilian];
 
 disableSerialization;
 5 cutRsc ["life_progress","PLAIN"];

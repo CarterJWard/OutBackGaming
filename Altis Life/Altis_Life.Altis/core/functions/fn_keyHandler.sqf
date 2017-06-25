@@ -225,12 +225,13 @@ switch (_code) do {
 
     //O Key
     case 24: {
-	if (!_shift && !_alt && !_ctrlKey && ((playerSide == west) && (vehicle player != player)) then {
+		if (!_shift && !_alt && !_ctrlKey && ((playerSide == west) || (playerSide == independent )) && (vehicle player != player)) then {
 		[] call life_fnc_openGate;
-	} else {
-	if (_shift && !_alt && !_ctrlKey && ((playerSide == west) || (playerSide == independent ))) then {
-		[] call life_fnc_atmMenu;
-		    };
+        diag_log "Gate called";
+		} else {
+			if (_shift && ((playerSide == west) || (playerSide == independent ))) then {
+			[] call life_fnc_atmMenu;
+			};
 		};
 	};
 
