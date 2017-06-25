@@ -69,6 +69,12 @@ deleteMarker "Marker200"; // by ehno delete maker
 life_cash = life_cash + _kassa;
 [3,"<t size='1.5'><t color='#e02124'><t align='center'><t font='TahomaB'><t underline='true'>BANK ROBBERY<br /><br/></t></t></t></t></t><t size ='1.2'>The bamk robbery has ended. be aware that the robbers may still be in the area</t>"] remoteExec ["life_fnc_broadcast", civilian];
 
+if (life_HC_isActive) then {
+    [getPlayerUID player,profileName,"25"] remoteExecCall ["HC_fnc_wantedAdd",HC_Life];
+} else {
+    [getPlayerUID player,profileName,"25"] remoteExecCall ["life_fnc_wantedAdd",RSERV];
+};
+
 _rip = false;
 life_use_atm = false;
 sleep (600 + random(180));

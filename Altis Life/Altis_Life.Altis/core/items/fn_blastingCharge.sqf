@@ -35,5 +35,11 @@ if (typeOf _vault isEqualTo "Land_CargoBox_V1_F") then {
     fed_bank setVariable ["safe_open",true,true];
 
     hint localize "STR_ISTR_Blast_Opened";
+    
+    if (life_HC_isActive) then {
+        [getPlayerUID player,profileName,"25"] remoteExecCall ["HC_fnc_wantedAdd",HC_Life];
+    } else {
+        [getPlayerUID player,profileName,"25"] remoteExecCall ["life_fnc_wantedAdd",RSERV];
+    };
 };
 
