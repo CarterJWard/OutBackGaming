@@ -37844,7 +37844,7 @@ class Mission
 			flags=5;
 			class Attributes
 			{
-				init="this addAction [""Unknown"", hint ""You have found the resting spot of Larry Lancelot"",0,true,true,"""","""",5];";
+				init="";
 				disableSimulation=1;
 				aiRadarUsage=-386447833;
 			};
