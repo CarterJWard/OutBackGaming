@@ -190,6 +190,7 @@ class Life_Client_Core {
 		class showArrestDialog {}; //Jail Timer
 		class arrestDialog_Arrest {}; //Jail Timer
 		class seizeObjects {}; //SeizeObjects
+        class openGate {}; //Open gate thing
     };
 
     class Dialog_Controls {
