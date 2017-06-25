@@ -938,6 +938,9 @@
             <Portuguese>Você não pode transferir mais de R$999.999 em uma transação</Portuguese>
             <Polish>Możesz jednorazowo zdeponować nie więcej niż $999,999 </Polish>
         </Key>
+        <Key ID="STR_ATM_GreaterThan1">
+            <Original>You can't deposit more then 3 Million at a time.</Original>
+        </Key>
         <Key ID="STR_ATM_notnumeric">
             <Original>The amount entered isn't a numeric value.</Original>
             <Czech>Uvedená částka není číselná hodnota.</Czech>
@@ -10657,6 +10660,9 @@
         </Key>
         <Key ID="STR_Prof_Civ">
             <Original>Civilian Level</Original>
+        </Key>
+        <Key ID="STR_Prof_Repair">
+            <Original>Reapir Skill</Original>
         </Key>
         <Key ID="STR_Prof_Fruit">
             <Original>Fruit Skills</Original>

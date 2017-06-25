@@ -10,13 +10,13 @@ Private ["_vehicle","_lightRed","_lightBlue","_lightleft","_lightright","_leftRe
 _vehicle = _this select 0;
 
 if (isNil "_vehicle" || isNull _vehicle || !(_vehicle getVariable "lights")) exitWith {};
-_lightRed = [0.1, 0.1, 20];
-_lightBlue = [0.1, 0.1, 20];
+_lightRed = [28, 196, 13];
+_lightBlue = [28, 196, 13];
 
 _lightleft = "#lightpoint" createVehicle getPos _vehicle;
 sleep 0.2;
 _lightleft setLightColor _lightRed;
-_lightleft setLightBrightness 0.2;
+_lightleft setLightBrightness 0.8;
 _lightleft setLightAmbient [0.1,0.1,1];
 
 switch (typeOf _vehicle) do
@@ -24,6 +24,22 @@ switch (typeOf _vehicle) do
     case "C_Offroad_01_F":
     {
         _lightleft lightAttachObject [_vehicle, [-0.37, 0.0, 0.56]];
+    };
+    case "C_SUV_01_F":
+    {
+        _lightleft lightAttachObject [_vehicle, [-0.37,-1.2,0.42]]; 
+    };
+    case "I_MRAP_03_F":
+    {
+        _lightleft lightAttachObject [_vehicle, [-0.50, 0.0, 0.47]];
+    };
+    case "C_Hatchback_01_sport_F":
+    {
+        _lightleft lightAttachObject [_vehicle, [-0.35,-0.2,0.25]];
+    };
+    case "B_Heli_Light_01_F":
+    {
+        _lightleft lightAttachObject [_vehicle,[-0.37, 0.0, -0.80]];
     };
 };
 
@@ -36,7 +52,7 @@ _lightleft setLightUseFlare true;
 _lightright = "#lightpoint" createVehicle getPos _vehicle;
 sleep 0.2;
 _lightright setLightColor _lightBlue;
-_lightright setLightBrightness 0.2;
+_lightright setLightBrightness 0.8;
 _lightright setLightAmbient [0.1,0.1,1];
 
 switch (typeOf _vehicle) do
@@ -44,6 +60,22 @@ switch (typeOf _vehicle) do
     case "C_Offroad_01_F":
     {
         _lightright lightAttachObject [_vehicle, [0.37, 0.0, 0.56]];
+    };
+    case "C_SUV_01_F":
+    {
+        _lightright lightAttachObject [_vehicle, [0.37,-1.2,0.42]];
+    };
+    case "I_MRAP_03_F":
+    {
+        _lightright lightAttachObject [_vehicle, [0.50, 0.0, 0.47]];
+    };
+    case "C_Hatchback_01_sport_F":
+    {
+        _lightright lightAttachObject [_vehicle, [0.35,-0.2,0.25]];
+    };
+    case "B_Heli_Light_01_F":
+    {
+        _lightright lightAttachObject [_vehicle,[0.37, 0.0, -0.80]];
     };
 };
 

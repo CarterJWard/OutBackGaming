@@ -15,6 +15,12 @@ if ((_veh isKindOf "Car") || (_veh isKindOf "Ship") || (_veh isKindOf "Air")) th
         life_action_inUse = true;
         _displayName = FETCH_CONFIG2(getText,"CfgVehicles",(typeOf _veh),"displayName");
         _upp = format[localize "STR_NOTF_Repairing",_displayName];
+        
+        //Prof Stuff
+        _flag = PROF_SIDE(playerSide);
+        _prof = "Repair";
+        _data = PROF_VALUE(_prof,_flag);
+        _level = _data select 0;
 
         //Setup our progress bar.
         disableSerialization;
@@ -67,5 +73,6 @@ if ((_veh isKindOf "Car") || (_veh isKindOf "Ship") || (_veh isKindOf "Air")) th
 
         _veh setDamage 0;
         titleText[localize "STR_NOTF_RepairedVehicle","PLAIN"];
+        [_prof, 15] call life_fnc_addExp;
     };
 };

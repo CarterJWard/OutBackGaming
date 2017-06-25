@@ -25,7 +25,7 @@ _target setVariable ["Reviving",player,TRUE];
 
 //Prof setup
 _flag = PROF_SIDE(playerSide);
-_prof = "pReveive";
+_prof = "pRevive";
 _data = PROF_VALUE(_prof,_flag);
 _level = _data select 0;
 

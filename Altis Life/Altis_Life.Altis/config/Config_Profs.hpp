@@ -18,6 +18,13 @@ class Profs {
         side = "civ";
     };
     
+    class repair {
+        variable = "Repair";
+        name = "STR_Prof_Repair";
+        tag = "Revive";
+        side = "civ";
+    };
+    
     class Fruit_Prof {
         variable = "Fruit_Prof";
         name = "STR_Prof_Fruit";
@@ -95,6 +102,19 @@ class Profs {
         tag = "Impound";
         side = "cop";
     };
+        
+    class pRevive {
+        variable = "pRevive";
+        name = "STR_Prof_Revive";
+        tag = "Revive";
+        side = "cop";
+    };
+    class repair {
+        variable = "Repair";
+        name = "STR_Prof_Revive";
+        tag = "Repair";
+        side = "cop";
+    };
     
     //Medic
     class pMed {
@@ -104,10 +124,17 @@ class Profs {
         side = "med";
     };
 
-    class pReveive {
+    class pRevive {
         variable = "pRevive";
         name = "STR_Prof_Revive";
         tag = "Revive";
+        side = "med";
+    };
+    
+    class repair {
+        variable = "Repair";
+        name = "STR_Prof_Revive";
+        tag = "Repair";
         side = "med";
     };
 };
