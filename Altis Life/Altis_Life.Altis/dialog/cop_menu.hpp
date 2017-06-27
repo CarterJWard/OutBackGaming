@@ -70,7 +70,7 @@ class life_cop_menu {
             h = 0.022 * safezoneH;
         };
 
-        class RscButtonMenu_2404: Life_RscButtonMenu {
+        class RscButtonMenu_2410: Life_RscButtonMenu {
             idc = 232931;
             text = "Train Swat";
 			tooltip = "Gives the officer access to swat gear"; 
@@ -81,7 +81,7 @@ class life_cop_menu {
             h = 0.022 * safezoneH;
         };
 
-        class RscButtonMenu_2404: Life_RscButtonMenu {
+        class RscButtonMenu_2411: Life_RscButtonMenu {
             idc = 232932;
             text = "Revoke Swat";
 			tooltip = "Takes away swat training"; 

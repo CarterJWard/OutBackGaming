@@ -91,6 +91,7 @@ class CfgSounds {
         sound[] = {"\sounds\akbar.ogg",1.0, 1};
         titles[] = {};
     };
+
     class wasted {
         name = "wasted";
         sound[] = {"\sounds\wasted.ogg",1.0, 1};
