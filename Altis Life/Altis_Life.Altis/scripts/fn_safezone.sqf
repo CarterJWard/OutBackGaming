@@ -8,7 +8,7 @@
     Edit the #defines below. The numeric value after the variable name of the marker will define how big the radius is. (Measured in metres)
 */
 
-#define SAFETY_ZONES  [["safezone_Kstation", 100], ["safezone_Kmarket", 60], ["safezone_kGar", 40], ["safezone_rebel1", 150], ["safezone_athira", 80],["safezone_rebel2", 100],["rebsafezone", 60],["kav_hospo", 100],["pygros_station", 100],["pyrgros_hospo", 100]]
+#define SAFETY_ZONES  [["safezone_Kstation", 100], ["safezone_Kmarket", 60], ["safezone_kavSqaure", 70],["safezone_kGar", 40], ["safezone_rebel1", 150], ["safezone_athira", 80],["safezone_rebel2", 100],["rebsafezone", 60],["kav_hospo", 100],["pygros_station", 100],["pyrgros_hospo", 100]]
 
      if (isDedicated) exitWith {};
      waitUntil {!isNull player};
