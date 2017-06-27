@@ -86,10 +86,14 @@ class CfgSounds {
         titles[] = {};
     };
 
-    class akbar
-    {
+    class akbar {
         name = "akbar";
         sound[] = {"\sounds\akbar.ogg",1.0, 1};
+        titles[] = {};
+    };
+    class wasted {
+        name = "wasted";
+        sound[] = {"\sounds\wasted.ogg",1.0, 1};
         titles[] = {};
     };
 };

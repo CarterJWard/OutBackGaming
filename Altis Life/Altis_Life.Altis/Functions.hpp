@@ -40,6 +40,8 @@ class Life_Client_Core {
 		class copMsgAll {};
 		class copOffDuty {};
 		class copOnduty {};
+        class copSwatG {};
+        class copSwatD {};
     };
 	
 	class DynMarket

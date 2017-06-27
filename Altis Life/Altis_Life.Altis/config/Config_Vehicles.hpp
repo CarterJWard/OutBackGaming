@@ -667,7 +667,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
     class B_MRAP_01_F {
         vItemSpace = 50;
         vFuelSpace = 5000;
-        licenses[] = { {""}, {"swat"}, {""}, {""} };
+        licenses[] = { {""}, {""}, {""}, {""} };
         price = 100000;
         textures[] = {
             { "Police", "civ", {

@@ -62,10 +62,32 @@ class life_cop_menu {
         class RscButtonMenu_2404: Life_RscButtonMenu {
             idc = 232922;
             text = "Blacklist Cop";
-			tooltip = "Blacklist the selected cop";
+			tooltip = "Blacklist the selected cop"; 
             onButtonClick = "[] call life_fnc_copBlacklist;";
             x = 0.54125 * safezoneW + safezoneX;
             y = 0.643 * safezoneH + safezoneY;
+            w = 0.061875 * safezoneW;
+            h = 0.022 * safezoneH;
+        };
+
+        class RscButtonMenu_2404: Life_RscButtonMenu {
+            idc = 232931;
+            text = "Train Swat";
+			tooltip = "Gives the officer access to swat gear"; 
+            onButtonClick = "[] call life_fnc_copSwatG;";
+            x = 0.54125 * safezoneW + safezoneX;
+            y = 0.676 * safezoneH + safezoneY;
+            w = 0.061875 * safezoneW;
+            h = 0.022 * safezoneH;
+        };
+
+        class RscButtonMenu_2404: Life_RscButtonMenu {
+            idc = 232932;
+            text = "Revoke Swat";
+			tooltip = "Takes away swat training"; 
+            onButtonClick = "[] call life_fnc_copSwatD;";
+            x = 0.613437 * safezoneW + safezoneX;
+            y = 0.676 * safezoneH + safezoneY;
             w = 0.061875 * safezoneW;
             h = 0.022 * safezoneH;
         };

@@ -52,6 +52,10 @@ if (player getVariable ["offDuty", false]) then {
 	_oD ctrlSetTooltip "You are already off duty, press on duty to return!"; //Change ToolTip
 	_oD ctrlEnable false; 
 };
+if (!license_cop_swatMaster) then {
+    ctrlShow [232931,false];
+    ctrlShow [232932,false];
+};
 
 
 /*

@@ -8,6 +8,7 @@
 */
 private["_medicsOnline","_medicsNear"];
 disableSerialization;
+playSound "wasted";
 
 _medicsOnline = ((findDisplay 7300) displayCtrl 7304);
 _medicsNear = ((findDisplay 7300) displayCtrl 7305);

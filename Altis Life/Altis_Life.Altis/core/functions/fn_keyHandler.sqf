@@ -227,7 +227,6 @@ switch (_code) do {
     case 24: {
 		if (!_shift && !_alt && !_ctrlKey && ((playerSide == west) || (playerSide == independent )) && (vehicle player != player)) then {
 		[] call life_fnc_openGate;
-        diag_log "Gate called";
 		} else {
 			if (_shift && ((playerSide == west) || (playerSide == independent ))) then {
 			[] call life_fnc_atmMenu;
