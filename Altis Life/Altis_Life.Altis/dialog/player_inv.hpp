@@ -270,7 +270,7 @@ class playerSettings {
 		 colorText[] = {1,1,1,1};
 		 colorDisabled[] = {1,0,0,0.1};
 		 };
-		 
+		/* 
 		class ButtonCrafting_ICON: life_RscPicture
 		 {
 		 idc = 2102;
@@ -299,7 +299,7 @@ class playerSettings {
 		 colorText[] = {1,1,1,1};
 		 colorDisabled[] = {1,0,0,0.1};
 		 };
-		 
+		 */
 		 class ButtonCell_ICON: life_RscPicture
 		 {
 		 idc = 1204;
