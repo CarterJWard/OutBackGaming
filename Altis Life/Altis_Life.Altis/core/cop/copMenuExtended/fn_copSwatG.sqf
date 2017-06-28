@@ -12,10 +12,8 @@ if(isNil "_copPlayer") exitwith {};
 if(isNull _copPlayer) exitWith {};
 if(side _copPlayer != west) exitWith {}; 
 if (!license_cop_swatMaster) exitWith {hint "You are not a Swat Commander"};
-if (_copPlayerRank < 2) exitWith {hint "The player needs to be a higher ran"};
+if (_copPlayerRank < 2) exitWith {hint "The player needs to be a officer rank"};
 
-_copPlayer missionNamespace setVariable ["swatT",true];
-
-_copPlayerRankText = [_copPlayerRank] call life_fnc_copRankToString;
+[_copPlayer, true] remoteExec ["life_fnc_copChangeSwat",_copPlayer];
 [1,format["Congratulations! You have been promoted to %1 by %2",_copPlayerRankText,name player]] remoteExec ["life_fnc_broadcast",_copPlayer];
-hint format ["You have promoted %1 to %2",name _copPlayer,_copPlayerRankText];
+hint format ["You have promoted %1 to SWAT",name _copPlayer];

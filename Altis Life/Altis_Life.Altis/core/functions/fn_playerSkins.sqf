@@ -33,6 +33,9 @@ switch (playerSide) do {
                 player setObjectTextureGlobal [0, "textures\civilian_uniform_7.jpg"];
             };
         };
+        if (uniform player isEqualTo "U_C_WorkerCoveralls") then {
+                player setObjectTextureGlobal [0, "textures\civ\prisonsuit.jpg"];
+            };
     };
 
     case west: {

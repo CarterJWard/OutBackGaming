@@ -48,4 +48,10 @@ if (life_HC_isActive) then {
 } else {
  [player,_bad,_time] remoteExecCall ["life_fnc_jailSys",RSERV]; //Hier wurde nur _time Hinzugefügt
 };
+
+removeUniform player;
+player addUniform "U_C_WorkerCoveralls";
+[] call life_fnc_playerSkins;
+player setDamage 0;
+
 [5] call SOCK_fnc_updatePartial;

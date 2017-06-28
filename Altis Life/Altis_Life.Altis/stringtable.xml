@@ -6522,12 +6522,6 @@
         </Key>
     </Package>
     <Package name="Life_License">
-        <Key ID="STR_License_Taxi">
-            <Original>Taxi License</Original>
-        </Key>
-        <Key ID="STR_License_Swat">
-            <Original>SWAT Training</Original>
-        </Key>
         <Key ID="STR_License_swatM">
             <Original>Swat Commander</Original>
         </Key>

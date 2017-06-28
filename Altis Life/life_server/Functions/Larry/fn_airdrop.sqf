@@ -64,6 +64,7 @@ _firstBox = createVehicle [_dummyBox ,_spawnPos, [], 0, "CAN_COLLIDE"];
 _firstBox attachTo [_vehMain,[0,0,-3.5]];
 _firstBox setDir 90;
 
+_time = time + (60*5);
 //Tracking Marker
 createMarker ["airbox_marker", _dropZone];
 "airDrop_marker" setMarkerType "Mil_Destroy";
@@ -73,7 +74,7 @@ _loop = true;
 while {_loop = true} do { "airDrop_marker" setMarkerPos getPos _drop;sleep 1; };
 
 //When the helo gets close to the marker start the box dropping
-waitUntil {_dropZone distance _vehMain < 90};
+waitUntil {_dropZone distance _vehMain < 120};
 [3,"<t size='1.3'><t color='#FF0000'>Supply Drop</t></t><br/><br/><t size='1'>Supplies have been dropped. You have 20 minutes before the box explodes</t>"] remoteexec ["life_fnc_broadcast",RANY];
 deleteVehicle _firstBox;
 _drop = createVehicle [_dummyBox , _spawnPos, [], 0, "CAN_COLLIDE"];
