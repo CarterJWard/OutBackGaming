@@ -12,11 +12,11 @@
 // █████████████████ DYNAMIC MARKET BASIC CONFIGURATION ██████████████████
 // ███████████████████████████████████████████████████████████████████████
 
-DYNMARKET_Serveruptime         = 06;   // Serveruptime after restart in hours
+DYNMARKET_Serveruptime         = 12;   // Serveruptime after restart in hours
 DYNMARKET_UseExternalDatabase  = true; // Should the script use the External Database?
-DYNMARKET_PriceUpdateInterval  = 05;   // After how many minutes should the price be updated?
+DYNMARKET_PriceUpdateInterval  = 01;   // After how many minutes should the price be updated?
 DYNMARKET_CreateBackups        = true; // Should the server save write the prices regulary into the Database? If false, it will save the prices before Server-restart?
-DYNMARKET_CreateBackupInterval = 03;   // After how many updates (PriceUpdateIntervals) should the prices be saved into the Database?
+DYNMARKET_CreateBackupInterval = 10;   // After how many updates (PriceUpdateIntervals) should the prices be saved into the Database?
 DYNMARKET_UserNotification     = false; // Should the user be informed with a hint whenever the prices got updated?
 
 // █████████████████ USER NOTIFICATION TEXTS  █████████████████
@@ -33,15 +33,15 @@ DYNMARKET_Items_Groups =
 [
 		["apple",25],
 		["peach",50],
-		["oil_processed",1200],
-		["copper_refined",1700],
-		["iron_refined",1650],
-		["salt_refined",1850],
-		["glass",1450],
-		["diamond_cut",2530],
-		["cement",2350], 
-		["heroin_processed",5000],
-		["marijuana",5250],
+		["oil_processed",2900],
+		["copper_refined",2100],
+		["iron_refined",2000],
+		["salt_refined",2050],
+		["glass",2800],
+		["diamond_cut",4130],
+		["cement",3350], 
+		["heroin_processed",5200],
+		["marijuana",5000],
 		["cocaine_processed",5300]
 ];
 
@@ -49,19 +49,18 @@ DYNMARKET_Items_Groups =
 
 DYNMARKET_Items_ToTrack        = 
 [
-
-	["apple",25],
-	["peach",50],
-	["oil_processed",1200],
-	["copper_refined",1700],
-	["iron_refined",1650],
-	["salt_refined",1850],
-	["glass",1450],
-	["diamond_cut",2530],
-	["cement",2350],
-	["heroin_processed",5000],
-	["marijuana",5250],
-	["cocaine_processed",5300]
+		["apple",25],
+		["peach",50],
+		["oil_processed",2900],
+		["copper_refined",2100],
+		["iron_refined",2000],
+		["salt_refined",2050],
+		["glass",2800],
+		["diamond_cut",4130],
+		["cement",3350], 
+		["heroin_processed",5200],
+		["marijuana",5000],
+		["cocaine_processed",5300]
 ];
 
 //███████████████████████████████████████████████████████████████████████

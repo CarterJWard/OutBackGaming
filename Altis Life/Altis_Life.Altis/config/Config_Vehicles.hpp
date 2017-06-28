@@ -109,6 +109,7 @@ class CarShops {
         vehicles[] = {
             { "C_Offroad_01_F", { "", "", -1 } },
             { "C_SUV_01_F", { "", "", -1 } },
+            { "I_MRAP_03_F", { "life_coplevel25", "SCALAR", 2} },
             { "B_MRAP_01_F", { "life_coplevel25", "SCALAR", 4} },
             { "C_Hatchback_01_sport_F", { "life_gigcoplevel25", "SCALAR", 5 } }
         };

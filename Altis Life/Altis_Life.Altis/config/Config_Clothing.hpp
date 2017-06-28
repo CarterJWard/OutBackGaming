@@ -31,7 +31,6 @@ class Clothing {
             { "U_OrestesBody", "Surfing On Land", 1100, { "", "", -1 } },
             { "U_IG_Guerilla2_3", "The Outback Rangler", 1200, { "", "", -1 } },
             { "U_C_HunterBody_grn", "The Hunters Look", 1500, { "", "", -1 } },
-            { "U_C_WorkerCoveralls", "Mechanic Coveralls", 2500, { "", "", -1 } },
             { "U_NikosAgedBody", "Casual Wears", 5000, { "", "", -1 } }
         };
         headgear[] = {
@@ -118,7 +117,6 @@ class Clothing {
         uniforms[] = {
             { "NONE", "Remove Uniform", 0, { "", "", -1 } },
             { "U_Rangemaster", "Cop Uniform", 25, { "", "", -1 } },
-            { "U_I_CombatUniform", "Swat Uniform", 100, {"", "", -1} }
         };
         headgear[] = {
             { "NONE", "Remove Hat", 0, { "", "", -1 } },
@@ -161,6 +159,16 @@ class Clothing {
             { "B_Bergen_sgg", "", 2500, { "", "", -1 } },
             { "B_Carryall_cbr", "", 3500, { "", "", -1 } }
         };
+    };
+
+    class swat {
+        title = "STR_Shops_Swat";
+        license = "swat";
+        side = "cop";
+        uniforms[] = {
+            { "V_PlateCarrierSpec_blk vest", "", 100 },
+            { "U_I_CombatUniform", "Swat Uniform", 100, {"", "", -1} }
+        }; 
     };
 
     class dive {

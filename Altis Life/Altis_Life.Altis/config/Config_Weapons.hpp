@@ -248,6 +248,7 @@ class WeaponShops {
             { "srifle_DMR_02_F", "",150000, 10000 },
             { "optic_Arco_blk_F", "", 2500, 200 },
             { "optic_ERCO_blk_F", "", 5000, 200},
+            { "bipod_01_F_blk", "", 100, 10 },
             { "muzzle_snds_H", "", 10000, 1000},
             { "16Rnd_9x21_Mag", "", 25 },
             { "30Rnd_9x21_Mag", "", 250 },
@@ -287,6 +288,7 @@ class WeaponShops {
             { "optic_Holosight_blk_F", "", 3000, 100 },
             { "LMG_Mk200_F", "", 400000, 40000 },
             { "optic_ERCO_blk_F", "", 5000, 200 },
+            { "bipod_01_F_blk", "", 100, 10 },
             { "muzzle_snds_H", "", 10000, 1000 },
             { "16Rnd_9x21_Mag", "", 25 },
             { "30Rnd_9x21_Mag", "", 250 },
@@ -337,6 +339,7 @@ class WeaponShops {
             { "optic_DMS", "", 10000, 500 },
             { "optic_AMS", "", 50000, 1000 },
             { "optic_LRPS", "", 100000, 1000 },
+            { "bipod_01_F_blk", "", 100, 10 },
             { "muzzle_snds_H", "", 10000, 1000},
             { "16Rnd_9x21_Mag", "", 25 },
             { "30Rnd_9x21_Mag", "", 250 },
@@ -391,6 +394,7 @@ class WeaponShops {
             { "optic_DMS", "", 8000, 500 },
             { "optic_AMS", "", 40000, 1000 },
             { "optic_LRPS", "", 80000, 1000 },
+            { "bipod_01_F_blk", "", 100, 10 },
             { "muzzle_snds_H", "", 10000, 1000},
             { "16Rnd_9x21_Mag", "", 25 },
             { "30Rnd_9x21_Mag", "", 250 },
@@ -445,6 +449,7 @@ class WeaponShops {
             { "optic_DMS", "", 6000, 500 },
             { "optic_AMS", "", 25000, 1000 },
             { "optic_LRPS", "", 50000, 1000 },
+            { "bipod_01_F_blk", "", 100, 10 },
             { "muzzle_snds_H", "", 8000, 1000},
             { "16Rnd_9x21_Mag", "", 25 },
             { "30Rnd_9x21_Mag", "", 250 },
@@ -500,6 +505,7 @@ class WeaponShops {
             { "optic_AMS", "", 5000, 1000 },
             { "optic_LRPS", "", 10000, 1000 },
             { "muzzle_snds_H", "", 3000, 1000},
+            { "bipod_01_F_blk", "", 100, 10 },
             { "16Rnd_9x21_Mag", "", 25 },
             { "30Rnd_9x21_Mag", "", 250 },
             { "20Rnd_556x45_UW_mag", "Taser Rifle Magazine", 45 },
@@ -525,12 +531,27 @@ class WeaponShops {
         accs[] = {};
     };
 
-    class swat {
+    class cop_swat {
         name = "Swat Shop";
         side = "cop";
         license = "swat";
         level[] = { "", "", -1, "" };
-        items[] = {};
+        items[] = {
+            { "srifle_LRR_F", "", 45000, 1000 },
+            { "7Rnd_408_Mag", "", 2000, 100 },
+            { "muzzle_snds_93mmg", "", 8000, 200 },
+            { "Rangefinder", "", 2000, 100 },
+            { "muzzle_snds_B", "", 2000}
+            { "optic_ERCO_blk_F", "", 200, 50 },
+            { "optic_Hamr", "", 500, 30 },
+            { "bipod_01_F_blk", "", 100, 10 },
+            { "arifle_SPAR_01_GL_blk_F", "", 10000, 200 },
+            { "30Rnd_556x45_Stanag", "", 100, 10 },
+            { "optic_LRPS", "", 10000, 100 },
+            { "muzzle_snds_338_black", "", 5000, 200 },
+            { "SmokeShell", "Tear Gas", 1000, 100 },
+            { "HandGrenade_Stone", "Flashbang", 1000, 200 }
+            };
         mags[] = {};
         accs[] = {};
     };

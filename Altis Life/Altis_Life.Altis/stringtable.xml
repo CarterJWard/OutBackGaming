@@ -38,6 +38,9 @@
             <Portuguese>Loja de equipamentos para Mergulho</Portuguese>
             <Polish>Sklep dla nurków</Polish>
         </Key>
+        <Key ID="STR_Shops_Swat">
+            <Original>Swat Shop</Original>
+        </Key>
 		<Key ID="STR_Item_ZipTies">
 			<Original>ZipTies</Original>
 		</Key>
