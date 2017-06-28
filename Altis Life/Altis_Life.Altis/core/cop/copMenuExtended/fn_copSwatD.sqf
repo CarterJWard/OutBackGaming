@@ -11,6 +11,6 @@ if(isNull _copPlayer) exitWith {};
 if(side _copPlayer != west) exitWith {}; 
 if (!license_cop_swatMaster) exitWith {hint "You are not a Swat Commander"};
 
-[_copPlayer, false] remoteExec ["life_fnc_copChangeSwat",_copPlayer];
+[5] remoteExecCall ["life_fnc_removeLicenses",_copPlayer];
 [1,format["You have been discharged from swat %1",name player]] remoteExec ["life_fnc_broadcast",_copPlayer];
 hint format ["You have discharged %1 to swat ",name _copPlayer];

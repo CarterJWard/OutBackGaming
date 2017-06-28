@@ -44,4 +44,6 @@ switch (_state) do {
             hint localize "STR_Civ_LicenseRemove_2";
         };
     };
+    case 4: {missionNamespace setVariable [LICENSE_VARNAME("swat","cop"),true];};
+    case 5: {missionNamespace setVariable [LICENSE_VARNAME("swat","cop"),false];};
 };

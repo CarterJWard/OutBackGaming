@@ -42,7 +42,6 @@ class Life_Client_Core {
 		class copOnduty {};
         class copSwatG {};
         class copSwatD {};
-        class copChangeSwat {};
     };
 	
 	class DynMarket
