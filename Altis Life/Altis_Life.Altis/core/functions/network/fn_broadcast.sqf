@@ -12,7 +12,7 @@ _localize = [_this,2,false,[false]] call BIS_fnc_param;
 if (_message isEqualTo "") exitWith {};
 
 if (_localize) exitWith {
-    _arr = _this select 3;
+    _arr = _this select 3; 
     _msg = switch (count _arr) do {
         case 0: {localize _message;};
         case 1: {format[localize _message,_arr select 0];};

@@ -19,7 +19,7 @@ _timer = (7*60);
     sleep (13*30);
      
     //Alert others near
-    { if (player distance _gate < 100) then {_near pushBack _x};} forEach playableUnits;
+    { if (_x distance _gate < 100) then {_near pushBack _x};} forEach playableUnits;
     [2,"GET BACK FROM THE GATE IT'S GONNA BLOW"] remoteExec ["life_fnc_broadcast",_near];
     sleep 30;
     

@@ -3,7 +3,7 @@ class life_admin_menu {
     name= "life_admin_menu";
     movingEnable = 0;
     enableSimulation = 1;
-    onLoad = "[] spawn life_fnc_adminMenu;";
+    onLoad = "[] spawn life_fnc_adminMenu;"; 
 
     class controlsBackground {
         class MainBackground: Life_RscText {

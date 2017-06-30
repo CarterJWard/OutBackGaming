@@ -41,6 +41,13 @@ _masks = LIFE_SETTINGS(getArray,"clothing_masks");
             if (count _sPos > 1 && {_distance < 15}) then {
                 _text = switch (true) do {
                     case (_x in (units group player) && playerSide isEqualTo civilian): {format["<t color='#00FF00'>%1</t>",(_x getVariable ["realname",name _x])];};
+                    case (_x getVariable "adminSuit"): {format["<t color='#00FF00'>%1 %2</t>",switch (FETCH_CONST(life_gigadmin863)) do {
+                        case 1: {"Moderator"};
+                        case 2: {"Moderator"};
+                        case 3: {"ADMIN"};
+                        case 4: {"ADMIN"};
+                        case 5: {"ADMIN"};
+                    },(_x getVariable ["realname",name _x])]};
                     case (side _x isEqualTo west && {!isNil {_x getVariable "rank"}}): {
 						if(_x getVariable ["offDuty", false]) then {
 							format["<img image='%1' size='1'></img> %2 <br/> Off Duty!",switch ((_x getVariable "rank")) do {

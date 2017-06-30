@@ -1,5 +1,5 @@
 class life_taxiMenu {
-    idd = 2901;
+    idd = 22901;
     name= "life_taxiMenu";
     movingEnable = 0;
     enableSimulation = 1;
@@ -66,21 +66,11 @@ class life_taxiMenu {
             h = 0.022 * safezoneH;
         };
 
-        class RscButtonMenu_2405: Life_RscButtonMenu {
-            idc = 30095;
-            text = "Accept Job";
-            onButtonClick = "[] call life_fnc_acceptJob;";
-            x = 0.613437 * safezoneW + safezoneX;
-            y = 0.643 * safezoneH + safezoneY;
-            w = 0.061875 * safezoneW;
-            h = 0.022 * safezoneH;
-        };
-
         class JobList: Life_RscListBox {
             idc = 30096;
             text = "";
             sizeEx = 0.035;
-            onLBSelChanged = "[_this] spawn life_fnc_listBox;";
+            onLBSelChanged = "[_this] call life_fnc_acceptJob;";
             x = 0.324687 * safezoneW + safezoneX;
             y = 0.335 * safezoneH + safezoneY;
             w = 0.159844 * safezoneW;

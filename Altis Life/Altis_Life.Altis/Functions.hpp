@@ -116,6 +116,9 @@ class Life_Client_Core {
         class taxiLoad {};
         class offDuty {};
         class onDuty {};
+        class taxiGetIn {};
+        class acceptJob {};
+        class callTaxi {};
     };
 
     class Admin {

@@ -6,13 +6,10 @@ Description allows job to be shown in the list box
 //Setup variables
 private[];
 
-//Check if player is on duty.
-if (life_taxi_onDuty = true;) exitWith {hint "you cannot call a taxi whilst you're on duty";}; //localize
+//Error Checks
+if (life_taxi_onDuty) exitWith {hint "you cannot call a taxi whilst you're on duty";}; //localize
+if (player getVariable ["TaxiCall",false]) exitWith {hint "You have already called a taxi"};
 
 //add player to on call list
-life_taxi_call = true;
-waitUntil {
-    life_taxi_Accepted = true;
-}
-life_taxi_call = false;
-//
+player setVariable ["TaxiCall", true, true];
+

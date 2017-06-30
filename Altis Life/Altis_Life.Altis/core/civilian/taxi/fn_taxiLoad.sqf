@@ -15,3 +15,14 @@ if (!license_civ_taxi) then {
     ctrlShow[16003,true];
     ctrlShow[16004,true];
 };
+
+waitUntil {!isNull (findDisplay 22901)};
+_list = CONTROL(22901,30096);
+lbClear _list;
+{
+    if (getVariable ["TaxiCall", false]) then {
+		_dist = 
+		_list lbAdd format["%1 - %2", _x getVariable ["realname",name _x],_dist];
+		_list lbSetdata [(lbSize _list)-1,str(_x)];
+	}; 
+} forEach playableUnits;

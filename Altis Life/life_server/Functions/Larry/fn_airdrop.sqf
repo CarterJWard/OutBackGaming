@@ -71,10 +71,11 @@ createMarker ["airbox_marker", _dropZone];
 "airDrop_marker" setMarkerColor "ColorBlue";
 "airDrop_marker" setMarkerText "Airdrop Box";
 _loop = true;
-while {_loop = true} do { "airDrop_marker" setMarkerPos getPos _drop;sleep 1; };
+while {_loop} do { "airDrop_marker" setMarkerPos getPos _drop;uiSleep 1; };
 
 //When the helo gets close to the marker start the box dropping
 waitUntil {_dropZone distance _vehMain < 120};
+_loop = false;
 [3,"<t size='1.3'><t color='#FF0000'>Supply Drop</t></t><br/><br/><t size='1'>Supplies have been dropped. You have 20 minutes before the box explodes</t>"] remoteexec ["life_fnc_broadcast",RANY];
 deleteVehicle _firstBox;
 _drop = createVehicle [_dummyBox , _spawnPos, [], 0, "CAN_COLLIDE"];
@@ -108,6 +109,7 @@ uiSleep 6;
 _pos_drop = getPos _drop;
 deleteVehicle _drop;
 uiSleep 0.5;
+"airDrop_marker" setMarkerPos getPos _box;uiSleep 1;
 _box = createVehicle [_main , _pos_drop, [], 0, "CAN_COLLIDE"];
 _box allowDamage false;
 _smoke="SmokeShellGreen" createVehicle [getpos _box select 0,getpos _box select 1,0];
@@ -145,8 +147,7 @@ uiSleep (60*15);
 [3,"<t size='1.3'><t color='#FF0000'>Supply Drop</t></t><br/><br/><t size='1'>Supply Drop will self destruct in 5 minutes</t>"] remoteexec ["life_fnc_broadcast",RANY];
 uiSleep (60*4);
 [3,"<t size='1.3'><t color='#FF0000'>Supply Drop</t></t><br/><br/><t size='1'>Supply Drop will self destruct in 1 minute</t>"] remoteexec ["life_fnc_broadcast",RANY];
-uiSleep (30);
-_loop = false;
+uiSleep 30;
 [3,"<t size='1.3'><t color='#FF0000'>Supply Drop</t></t><br/><br/><t size='1'>Supply Drop will self destruct in 30 secconds</t>"] remoteexec ["life_fnc_broadcast",RANY];
 
 //Cleanup
@@ -154,6 +155,9 @@ uiSleep (30);
 "M_NLAW_AT_F" createVehicle [getPos _box select 0, getPos _box select 1, 0]; //Because it looks nicer
 deleteVehicle _vehMain;
 deleteVehicle _box; 
+deleteMarker "Airdrop";
+deleteMarker "airDrop_marker";
+deleteMarker "AirdropKos";
 [3,"<t size='1.3'><t color='#FF0000'>Supply Drop</t></t><br/><br/><t size='1'>Supply Drop has been destroyed. Supply Drop mission has ended. Good work everyone</t>"] remoteexec ["life_fnc_broadcast",RANY];
 
 uiSleep (60*120); //Time before it's run again aka cooldown

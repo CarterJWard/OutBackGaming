@@ -12,7 +12,6 @@
         - PLACE THIS FILE IN core/functions/fn_cropDusting.sqf	
 		- Adjust the parts below indicated
 */
-diag_log "Cdusting called";
 private ["_marker"];
 params [
     ["_actionOwner",objNull,[objNull]],
