@@ -41,6 +41,14 @@ if (life_adminSuit) then {
         life_adminSuit = true;
         player allowDamage false;
 
+        //Add Items
+        player addItem "ItemMap";
+        player assignItem "ItemMap";
+        player addItem "ItemCompass";
+        player assignItem "ItemCompass";
+        player addItem "ItemWatch";
+        player assignItem "ItemWatch";
+
         //Actions
         admin_actions = [player addAction["<t color='#FF0000'>Heal/Repair Target</t>",{cursorTarget setDamage 0;}]];
         admin_actions = admin_actions + [player addAction["<t color='#FF0000'>Impound Target</t>",{_vehicle = cursorTarget; [_vehicle,true,player] remoteExec ["TON_fnc_vehicleStore",RSERV];}]];

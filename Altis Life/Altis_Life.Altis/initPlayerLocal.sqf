@@ -19,14 +19,14 @@ if (LIFE_SETTINGS(getNumber,"spyGlass_toggle") isEqualTo 1) then {[] execVM "Spy
 if (hasInterface) then {
     player addEventHandler ["GetOutMan", {
         life_seatbelt = false;
-        //[] call life_fnc_hudUpdate; //--Enable if you are putting a hud option to display when your seatbelt is on
+        [] call life_fnc_custHudUpdate; //--Enable if you are putting a hud option to display when your seatbelt is on
     }];
 };
 
 if (hasInterface) then {
     player addEventHandler ["GetInMan", {
         life_seatbelt = false;
-        //[] call life_fnc_hudUpdate; //--Enable if you are putting a hud option to display when your seatbelt is on
+        [] call life_fnc_custHudUpdate; //--Enable if you are putting a hud option to display when your seatbelt is on
     }];
 };
 
