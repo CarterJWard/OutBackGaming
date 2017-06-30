@@ -55,7 +55,7 @@ if(_cP >= 1) exitWith {};
 if(_robber distance _shop > 10.5) exitWith { };
 if!(alive _robber) exitWith {};
 };
-if!(alive _robber) exitWith { _rip = false; };
+if!(alive _robber) exitWith { _rip = false; deleteMarker "Marker200";};
 if(_robber distance _shop > 10.5) exitWith { deleteMarker "Marker200"; _shop switchMove ""; hint "You need to stay within 10m to Rob registry! - Now the registry is locked."; 5 cutText ["","PLAIN"]; _rip = false; };
 5 cutText ["","PLAIN"];
 

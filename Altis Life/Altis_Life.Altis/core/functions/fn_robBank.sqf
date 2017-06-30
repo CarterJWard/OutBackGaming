@@ -64,7 +64,7 @@ if(_cP >= 1) exitWith {};
 if(_robber distance _shop > 10.5) exitWith { };
 if!(alive _robber) exitWith {};
 };
-if!(alive _robber) exitWith { _rip = false; };
+if!(alive _robber) exitWith { _rip = false; deleteMarker "Marker200";};
 if(_robber distance _shop > 10.5) exitWith { deleteMarker "Marker200"; _shop switchMove ""; hint "You need to stay within 10m to Rob registry! - Now the registry is locked."; 5 cutText ["","PLAIN"]; _rip = false; [3,"<t size='1.5'><t color='#e02124'><t align='center'><t font='TahomaB'><t underline='true'>BANK ROBBERY<br /><br/></t></t></t></t></t><t size ='1.2'>The bank robbery has ended. be aware that the robbers may still be in the area</t>"] remoteExec ["life_fnc_broadcast", civilian];};
 5 cutText ["","PLAIN"];
 
