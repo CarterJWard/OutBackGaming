@@ -170,7 +170,7 @@ class Clothing {
             { "U_I_CombatUniform", "Swat Uniform", 100, {"", "", -1} }
         }; 
     };
-
+    
     class dive {
         title = "STR_Shops_C_Diving";
         license = "dive";

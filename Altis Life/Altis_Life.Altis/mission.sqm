@@ -8,11 +8,11 @@ class EditorData
 	toggles=2;
 	class ItemIDProvider
 	{
-		nextID=2677;
+		nextID=2678;
 	};
 	class MarkerIDProvider
 	{
-		nextID=274;
+		nextID=275;
 	};
 	class LayerIndexProvider
 	{
@@ -20,10 +20,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={3652.0051,35.406509,13125.768};
-		dir[]={-0.0083983727,-0.79362136,-0.60835999};
-		up[]={-0.0109551,0.60841078,-0.79354823};
-		aside[]={-0.99990863,-2.7654096e-008,0.01380345};
+		pos[]={3321.1094,62.537697,13234.896};
+		dir[]={0.59400672,-0.40186298,-0.69696712};
+		up[]={0.26069131,0.91568571,-0.30587667};
+		aside[]={-0.76112217,6.0093589e-007,-0.64869022};
 	};
 };
 binarizationWanted=0;
@@ -287,24 +287,6 @@ class CustomAttributes
 		name="Multiplayer";
 		class Attribute0
 		{
-			property="RespawnTemplates";
-			expression="true";
-			class Value
-			{
-				class data
-				{
-					class type
-					{
-						type[]=
-						{
-							"ARRAY"
-						};
-					};
-				};
-			};
-		};
-		class Attribute1
-		{
 			property="RespawnButton";
 			expression="true";
 			class Value
@@ -319,6 +301,24 @@ class CustomAttributes
 						};
 					};
 					value=1;
+				};
+			};
+		};
+		class Attribute1
+		{
+			property="RespawnTemplates";
+			expression="true";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"ARRAY"
+						};
+					};
 				};
 			};
 		};
@@ -380,7 +380,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=1317;
+		items=1318;
 		class Item0
 		{
 			dataType="Marker";
@@ -925,13 +925,13 @@ class Mission
 		class Item53
 		{
 			dataType="Marker";
-			position[]={18813.75,31.821898,16642.586};
+			position[]={18813.75,-9.0602203e-036,16642.586};
 			name="dp_1_8";
 			text="DP 13";
 			type="mil_box";
 			colorName="ColorYellow";
-			angle=43.241493;
 			id=70;
+			atlOffset=-31.821898;
 		};
 		class Item54
 		{
@@ -946,23 +946,24 @@ class Mission
 		class Item55
 		{
 			dataType="Marker";
-			position[]={20946.139,43.178474,16965.078};
+			position[]={20946.139,-8.9517412e-038,16965.078};
 			name="dp_1_10";
 			text="DP 14";
 			type="mil_box";
 			colorName="ColorYellow";
 			id=72;
+			atlOffset=-43.178474;
 		};
 		class Item56
 		{
 			dataType="Marker";
-			position[]={21382.348,21.960739,16411.709};
+			position[]={21382.348,-8.9517412e-038,16411.711};
 			name="dp_1_11";
 			text="DP 15";
 			type="mil_box";
 			colorName="ColorYellow";
-			angle=298.25641;
 			id=73;
+			atlOffset=-21.960817;
 		};
 		class Item57
 		{
@@ -1780,7 +1781,7 @@ class Mission
 			position[]={23656.973,12.94873,20007.654};
 			name="cop_car_5";
 			type="Empty";
-			angle=152.75021;
+			angle=152.7502;
 			id=160;
 			atlOffset=-0.96528339;
 		};
@@ -2015,12 +2016,12 @@ class Mission
 		class Item158
 		{
 			dataType="Marker";
-			position[]={27032.053,20.738028,23230.627};
+			position[]={27032.053,-2.9399578e-038,23230.627};
 			name="atm_marker_2_1";
 			type="loc_Tourism";
 			colorName="ColorGreen";
-			angle=315.66129;
 			id=185;
+			atlOffset=-20.738028;
 		};
 		class Item159
 		{
@@ -12781,13 +12782,13 @@ class Mission
 				angles[]={0,6.0063586,0};
 			};
 			side="Empty";
-			flags=4;
 			class Attributes
 			{
 				skill=0.60000002;
 			};
 			id=751;
 			type="Land_CashDesk_F";
+			atlOffset=0.3939209;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -12828,6 +12829,7 @@ class Mission
 			};
 			id=752;
 			type="Land_CashDesk_F";
+			atlOffset=0.18852997;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -13070,6 +13072,7 @@ class Mission
 			};
 			id=758;
 			type="Land_CashDesk_F";
+			atlOffset=0.19405365;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -21284,7 +21287,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						init="this enableSimulation false;  this addAction[localize""STR_MAR_Cop_Item_Shop"",life_fnc_virt_menu,""cop""];  this allowDamage false;  this addAction[localize""STR_MAR_Cop_Clothing_Shop"",life_fnc_clothingMenu,""cop""];  this addAction[localize""STR_MAR_Cop_Weapon_Shop"",life_fnc_weaponShopMenu,""cop_basic"",0,false,false, """", 'life_gigcoplevel25 isEqualTo 0'];  this addAction[localize""STR_MAR_Cadet_Shop"",life_fnc_weaponShopMenu,""cop_cadet"",0,false,false, """", 'life_gigcoplevel25 isEqualTo 1'];  this addAction[localize""STR_MAR_Constable_Shop"",life_fnc_weaponShopMenu,""cop_constable"",0,false,false, """", 'life_gigcoplevel25 isEqualTo 2']; this addAction[localize""STR_MAR_snrConstable"",life_fnc_weaponShopMenu,""cop_snrConstable"",0,false,false, """", 'life_gigcoplevel25 isEqualTo 3']; this addAction[localize""STR_MAR_Sergeant"",life_fnc_weaponShopMenu,""cop_sergeant"",0,false,false, """", 'life_gigcoplevel25 isEqualTo 4']; this addAction[localize""STR_MAR_snrSergeant"",life_fnc_weaponShopMenu,""cop_snrSergeant"",0,false,false, """", 'life_gigcoplevel25 isEqualTo 5']; this addAction[localize""STR_MAR_Inspector"",life_fnc_weaponShopMenu,""cop_inspector"",0,false,false, """", 'life_gigcoplevel25 isEqualTo 6']; this addAction[localize""STR_MAR_superintendent"",life_fnc_weaponShopMenu,""cop_superintendent"",0,false,false, """", 'life_gigcoplevel25 isEqualTo 7'];  this addAction[localize""STR_MAR_commissioner"",life_fnc_weaponShopMenu,""cop_commissioner"",0,false,false, """", 'life_gigcoplevel25 isEqualTo 8']; this addAction[format[""%1 ($%2)"",localize (getText(missionConfigFile >> ""Licenses"" >> ""cAir"" >> ""displayName"")), [(getNumber(missionConfigFile >> ""Licenses"" >> ""cAir"" >> ""price""))] call life_fnc_numberText],life_fnc_buyLicense,""cAir"",0,false,false,"""",' !license_cop_cAir && playerSide isEqualTo west ']; this addAction[format[""%1 ($%2)"",localize (getText(missionConfigFile >> ""Licenses"" >> ""cg"" >> ""displayName"")), [(getNumber(missionConfigFile >> ""Licenses"" >> ""cg"" >> ""price""))] call life_fnc_numberText],life_fnc_buyLicense,""cg"",0,false,false,"""",' !license_cop_cg && playerSide isEqualTo west ']; this setObjectTextureGlobal [0,""textures\cop_uniform.jpg""];";
+						init="this enableSimulation false;  this addAction[localize""STR_MAR_Cop_Item_Shop"",life_fnc_virt_menu,""cop""];  this allowDamage false;  this addAction[localize""STR_MAR_Cop_Clothing_Shop"",life_fnc_clothingMenu,""cop""];  this addAction[localize""STR_MAR_Cop_Weapon_Shop"",life_fnc_weaponShopMenu,""cop_basic"",0,false,false, """", 'life_gigcoplevel25 isEqualTo 0'];  this addAction[localize""STR_MAR_Cadet_Shop"",life_fnc_weaponShopMenu,""cop_cadet"",0,false,false, """", 'life_gigcoplevel25 isEqualTo 1'];  this addAction[localize""STR_MAR_Constable_Shop"",life_fnc_weaponShopMenu,""cop_constable"",0,false,false, """", 'life_gigcoplevel25 isEqualTo 2']; this addAction[localize""STR_MAR_snrConstable"",life_fnc_weaponShopMenu,""cop_snrConstable"",0,false,false, """", 'life_gigcoplevel25 isEqualTo 3']; this addAction[localize""STR_MAR_Sergeant"",life_fnc_weaponShopMenu,""cop_sergeant"",0,false,false, """", 'life_gigcoplevel25 isEqualTo 4']; this addAction[localize""STR_MAR_snrSergeant"",life_fnc_weaponShopMenu,""cop_snrSergeant"",0,false,false, """", 'life_gigcoplevel25 isEqualTo 5']; this addAction[localize""STR_MAR_Inspector"",life_fnc_weaponShopMenu,""cop_inspector"",0,false,false, """", 'life_gigcoplevel25 isEqualTo 6']; this addAction[localize""STR_MAR_superintendent"",life_fnc_weaponShopMenu,""cop_superintendent"",0,false,false, """", 'life_gigcoplevel25 isEqualTo 7'];  this addAction[localize""STR_MAR_commissioner"",life_fnc_weaponShopMenu,""cop_commissioner"",0,false,false, """", 'life_gigcoplevel25 isEqualTo 8']; this addAction[localize""STR_Shops_Swat"",life_fnc_weaponShopMenu,""cop_swat"",0,false,false, """", 'license_cop_swat']; this addAction[format[""%1 ($%2)"",localize (getText(missionConfigFile >> ""Licenses"" >> ""cAir"" >> ""displayName"")), [(getNumber(missionConfigFile >> ""Licenses"" >> ""cAir"" >> ""price""))] call life_fnc_numberText],life_fnc_buyLicense,""cAir"",0,false,false,"""",' !license_cop_cAir && playerSide isEqualTo west ']; this addAction[format[""%1 ($%2)"",localize (getText(missionConfigFile >> ""Licenses"" >> ""cg"" >> ""displayName"")), [(getNumber(missionConfigFile >> ""Licenses"" >> ""cg"" >> ""price""))] call life_fnc_numberText],life_fnc_buyLicense,""cg"",0,false,false,"""",' !license_cop_cg && playerSide isEqualTo west ']; this addAction[localize""STR_Shops_C_Swat"",life_fnc_clothingMenu,""swat""]; this setObjectTextureGlobal [0,""textures\cop_uniform.jpg""];";
 						name="h1_3_1";
 						disableSimulation=1;
 					};
@@ -21327,7 +21330,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						init="this enableSimulation false;  this addAction[localize""STR_MAR_Cop_Item_Shop"",life_fnc_virt_menu,""cop""];  this allowDamage false;  this addAction[localize""STR_MAR_Cop_Clothing_Shop"",life_fnc_clothingMenu,""cop""];  this addAction[localize""STR_MAR_Cop_Weapon_Shop"",life_fnc_weaponShopMenu,""cop_basic"",0,false,false, """", 'life_gigcoplevel25 isEqualTo 0'];  this addAction[localize""STR_MAR_Cadet_Shop"",life_fnc_weaponShopMenu,""cop_cadet"",0,false,false, """", 'life_gigcoplevel25 isEqualTo 1'];  this addAction[localize""STR_MAR_Constable_Shop"",life_fnc_weaponShopMenu,""cop_constable"",0,false,false, """", 'life_gigcoplevel25 isEqualTo 2']; this addAction[localize""STR_MAR_snrConstable"",life_fnc_weaponShopMenu,""cop_snrConstable"",0,false,false, """", 'life_gigcoplevel25 isEqualTo 3']; this addAction[localize""STR_MAR_Sergeant"",life_fnc_weaponShopMenu,""cop_sergeant"",0,false,false, """", 'life_gigcoplevel25 isEqualTo 4']; this addAction[localize""STR_MAR_snrSergeant"",life_fnc_weaponShopMenu,""cop_snrSergeant"",0,false,false, """", 'life_gigcoplevel25 isEqualTo 5']; this addAction[localize""STR_MAR_Inspector"",life_fnc_weaponShopMenu,""cop_inspector"",0,false,false, """", 'life_gigcoplevel25 isEqualTo 6']; this addAction[localize""STR_MAR_superintendent"",life_fnc_weaponShopMenu,""cop_superintendent"",0,false,false, """", 'life_gigcoplevel25 isEqualTo 7'];  this addAction[localize""STR_MAR_commissioner"",life_fnc_weaponShopMenu,""cop_commissioner"",0,false,false, """", 'life_gigcoplevel25 isEqualTo 8']; this addAction[format[""%1 ($%2)"",localize (getText(missionConfigFile >> ""Licenses"" >> ""cAir"" >> ""displayName"")), [(getNumber(missionConfigFile >> ""Licenses"" >> ""cAir"" >> ""price""))] call life_fnc_numberText],life_fnc_buyLicense,""cAir"",0,false,false,"""",' !license_cop_cAir && playerSide isEqualTo west ']; this addAction[format[""%1 ($%2)"",localize (getText(missionConfigFile >> ""Licenses"" >> ""cg"" >> ""displayName"")), [(getNumber(missionConfigFile >> ""Licenses"" >> ""cg"" >> ""price""))] call life_fnc_numberText],life_fnc_buyLicense,""cg"",0,false,false,"""",' !license_cop_cg && playerSide isEqualTo west ']; this setObjectTextureGlobal [0,""textures\cop_uniform.jpg""];";
+						init="this enableSimulation false;  this addAction[localize""STR_MAR_Cop_Item_Shop"",life_fnc_virt_menu,""cop""];  this allowDamage false;  this addAction[localize""STR_MAR_Cop_Clothing_Shop"",life_fnc_clothingMenu,""cop""];  this addAction[localize""STR_MAR_Cop_Weapon_Shop"",life_fnc_weaponShopMenu,""cop_basic"",0,false,false, """", 'life_gigcoplevel25 isEqualTo 0'];  this addAction[localize""STR_MAR_Cadet_Shop"",life_fnc_weaponShopMenu,""cop_cadet"",0,false,false, """", 'life_gigcoplevel25 isEqualTo 1'];  this addAction[localize""STR_MAR_Constable_Shop"",life_fnc_weaponShopMenu,""cop_constable"",0,false,false, """", 'life_gigcoplevel25 isEqualTo 2']; this addAction[localize""STR_MAR_snrConstable"",life_fnc_weaponShopMenu,""cop_snrConstable"",0,false,false, """", 'life_gigcoplevel25 isEqualTo 3']; this addAction[localize""STR_MAR_Sergeant"",life_fnc_weaponShopMenu,""cop_sergeant"",0,false,false, """", 'life_gigcoplevel25 isEqualTo 4']; this addAction[localize""STR_MAR_snrSergeant"",life_fnc_weaponShopMenu,""cop_snrSergeant"",0,false,false, """", 'life_gigcoplevel25 isEqualTo 5']; this addAction[localize""STR_MAR_Inspector"",life_fnc_weaponShopMenu,""cop_inspector"",0,false,false, """", 'life_gigcoplevel25 isEqualTo 6']; this addAction[localize""STR_MAR_superintendent"",life_fnc_weaponShopMenu,""cop_superintendent"",0,false,false, """", 'life_gigcoplevel25 isEqualTo 7'];  this addAction[localize""STR_MAR_commissioner"",life_fnc_weaponShopMenu,""cop_commissioner"",0,false,false, """", 'life_gigcoplevel25 isEqualTo 8']; this addAction[localize""STR_Shops_Swat"",life_fnc_weaponShopMenu,""cop_swat"",0,false,false, """", 'license_cop_swat']; this addAction[format[""%1 ($%2)"",localize (getText(missionConfigFile >> ""Licenses"" >> ""cAir"" >> ""displayName"")), [(getNumber(missionConfigFile >> ""Licenses"" >> ""cAir"" >> ""price""))] call life_fnc_numberText],life_fnc_buyLicense,""cAir"",0,false,false,"""",' !license_cop_cAir && playerSide isEqualTo west ']; this addAction[format[""%1 ($%2)"",localize (getText(missionConfigFile >> ""Licenses"" >> ""cg"" >> ""displayName"")), [(getNumber(missionConfigFile >> ""Licenses"" >> ""cg"" >> ""price""))] call life_fnc_numberText],life_fnc_buyLicense,""cg"",0,false,false,"""",' !license_cop_cg && playerSide isEqualTo west ']; this addAction[localize""STR_Shops_C_Swat"",life_fnc_clothingMenu,""swat""]; this setObjectTextureGlobal [0,""textures\cop_uniform.jpg""];";
 						name="h1_3_2";
 						disableSimulation=1;
 					};
@@ -21891,7 +21894,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						init="this enableSimulation false;  this addAction[localize""STR_MAR_Cop_Item_Shop"",life_fnc_virt_menu,""cop""];  this allowDamage false;  this addAction[localize""STR_MAR_Cop_Clothing_Shop"",life_fnc_clothingMenu,""cop""];  this addAction[localize""STR_MAR_Cop_Weapon_Shop"",life_fnc_weaponShopMenu,""cop_basic"",0,false,false, """", 'life_gigcoplevel25 isEqualTo 0'];  this addAction[localize""STR_MAR_Cadet_Shop"",life_fnc_weaponShopMenu,""cop_cadet"",0,false,false, """", 'life_gigcoplevel25 isEqualTo 1'];  this addAction[localize""STR_MAR_Constable_Shop"",life_fnc_weaponShopMenu,""cop_constable"",0,false,false, """", 'life_gigcoplevel25 isEqualTo 2']; this addAction[localize""STR_MAR_snrConstable"",life_fnc_weaponShopMenu,""cop_snrConstable"",0,false,false, """", 'life_gigcoplevel25 isEqualTo 3']; this addAction[localize""STR_MAR_Sergeant"",life_fnc_weaponShopMenu,""cop_sergeant"",0,false,false, """", 'life_gigcoplevel25 isEqualTo 4']; this addAction[localize""STR_MAR_snrSergeant"",life_fnc_weaponShopMenu,""cop_snrSergeant"",0,false,false, """", 'life_gigcoplevel25 isEqualTo 5']; this addAction[localize""STR_MAR_Inspector"",life_fnc_weaponShopMenu,""cop_inspector"",0,false,false, """", 'life_gigcoplevel25 isEqualTo 6']; this addAction[localize""STR_MAR_superintendent"",life_fnc_weaponShopMenu,""cop_superintendent"",0,false,false, """", 'life_gigcoplevel25 isEqualTo 7'];  this addAction[localize""STR_MAR_commissioner"",life_fnc_weaponShopMenu,""cop_commissioner"",0,false,false, """", 'life_gigcoplevel25 isEqualTo 8']; this addAction[format[""%1 ($%2)"",localize (getText(missionConfigFile >> ""Licenses"" >> ""cAir"" >> ""displayName"")), [(getNumber(missionConfigFile >> ""Licenses"" >> ""cAir"" >> ""price""))] call life_fnc_numberText],life_fnc_buyLicense,""cAir"",0,false,false,"""",' !license_cop_cAir && playerSide isEqualTo west ']; this addAction[format[""%1 ($%2)"",localize (getText(missionConfigFile >> ""Licenses"" >> ""cg"" >> ""displayName"")), [(getNumber(missionConfigFile >> ""Licenses"" >> ""cg"" >> ""price""))] call life_fnc_numberText],life_fnc_buyLicense,""cg"",0,false,false,"""",' !license_cop_cg && playerSide isEqualTo west ']; this setObjectTextureGlobal [0,""textures\cop_uniform.jpg""];";
+						init="this enableSimulation false;  this addAction[localize""STR_MAR_Cop_Item_Shop"",life_fnc_virt_menu,""cop""];  this allowDamage false;  this addAction[localize""STR_MAR_Cop_Clothing_Shop"",life_fnc_clothingMenu,""cop""];  this addAction[localize""STR_MAR_Cop_Weapon_Shop"",life_fnc_weaponShopMenu,""cop_basic"",0,false,false, """", 'life_gigcoplevel25 isEqualTo 0'];  this addAction[localize""STR_MAR_Cadet_Shop"",life_fnc_weaponShopMenu,""cop_cadet"",0,false,false, """", 'life_gigcoplevel25 isEqualTo 1'];  this addAction[localize""STR_MAR_Constable_Shop"",life_fnc_weaponShopMenu,""cop_constable"",0,false,false, """", 'life_gigcoplevel25 isEqualTo 2']; this addAction[localize""STR_MAR_snrConstable"",life_fnc_weaponShopMenu,""cop_snrConstable"",0,false,false, """", 'life_gigcoplevel25 isEqualTo 3']; this addAction[localize""STR_MAR_Sergeant"",life_fnc_weaponShopMenu,""cop_sergeant"",0,false,false, """", 'life_gigcoplevel25 isEqualTo 4']; this addAction[localize""STR_MAR_snrSergeant"",life_fnc_weaponShopMenu,""cop_snrSergeant"",0,false,false, """", 'life_gigcoplevel25 isEqualTo 5']; this addAction[localize""STR_MAR_Inspector"",life_fnc_weaponShopMenu,""cop_inspector"",0,false,false, """", 'life_gigcoplevel25 isEqualTo 6']; this addAction[localize""STR_MAR_superintendent"",life_fnc_weaponShopMenu,""cop_superintendent"",0,false,false, """", 'life_gigcoplevel25 isEqualTo 7'];  this addAction[localize""STR_MAR_commissioner"",life_fnc_weaponShopMenu,""cop_commissioner"",0,false,false, """", 'life_gigcoplevel25 isEqualTo 8']; this addAction[localize""STR_Shops_Swat"",life_fnc_weaponShopMenu,""cop_swat"",0,false,false, """", 'license_cop_swat']; this addAction[format[""%1 ($%2)"",localize (getText(missionConfigFile >> ""Licenses"" >> ""cAir"" >> ""displayName"")), [(getNumber(missionConfigFile >> ""Licenses"" >> ""cAir"" >> ""price""))] call life_fnc_numberText],life_fnc_buyLicense,""cAir"",0,false,false,"""",' !license_cop_cAir && playerSide isEqualTo west ']; this addAction[format[""%1 ($%2)"",localize (getText(missionConfigFile >> ""Licenses"" >> ""cg"" >> ""displayName"")), [(getNumber(missionConfigFile >> ""Licenses"" >> ""cg"" >> ""price""))] call life_fnc_numberText],life_fnc_buyLicense,""cg"",0,false,false,"""",' !license_cop_cg && playerSide isEqualTo west ']; this addAction[localize""STR_Shops_C_Swat"",life_fnc_clothingMenu,""swat""]; this setObjectTextureGlobal [0,""textures\cop_uniform.jpg""];";
 						name="h1_3_3";
 						disableSimulation=1;
 					};
@@ -23498,7 +23501,6 @@ class Mission
 						angles[]={0,2.8397205,0};
 					};
 					side="Civilian";
-					flags=4;
 					class Attributes
 					{
 						init="this enableSimulation false; this allowDamage false; this addAction[localize""STR_MAR_Station_Shop"",life_fnc_weaponShopMenu,""f_station_store""];this addAction[localize""STR_Shop_Station_Coffee"",life_fnc_virt_menu,""f_station_coffee""];";
@@ -23507,6 +23509,7 @@ class Mission
 					};
 					id=1075;
 					type="C_Nikos_aged";
+					atlOffset=0.42167664;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -23549,7 +23552,7 @@ class Mission
 					};
 					id=1077;
 					type="C_Nikos_aged";
-					atlOffset=9.9182129e-005;
+					atlOffset=0.19100189;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -23879,6 +23882,7 @@ class Mission
 					};
 					id=1089;
 					type="C_Nikos_aged";
+					atlOffset=0.20879364;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -24808,7 +24812,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						init="this enableSimulation false;  this addAction[localize""STR_MAR_Cop_Item_Shop"",life_fnc_virt_menu,""cop""];  this allowDamage false;  this addAction[localize""STR_MAR_Cop_Clothing_Shop"",life_fnc_clothingMenu,""cop""];  this addAction[localize""STR_MAR_Cop_Weapon_Shop"",life_fnc_weaponShopMenu,""cop_basic"",0,false,false, """", 'life_gigcoplevel25 isEqualTo 0'];  this addAction[localize""STR_MAR_Cadet_Shop"",life_fnc_weaponShopMenu,""cop_cadet"",0,false,false, """", 'life_gigcoplevel25 isEqualTo 1'];  this addAction[localize""STR_MAR_Constable_Shop"",life_fnc_weaponShopMenu,""cop_constable"",0,false,false, """", 'life_gigcoplevel25 isEqualTo 2']; this addAction[localize""STR_MAR_snrConstable"",life_fnc_weaponShopMenu,""cop_snrConstable"",0,false,false, """", 'life_gigcoplevel25 isEqualTo 3']; this addAction[localize""STR_MAR_Sergeant"",life_fnc_weaponShopMenu,""cop_sergeant"",0,false,false, """", 'life_gigcoplevel25 isEqualTo 4']; this addAction[localize""STR_MAR_snrSergeant"",life_fnc_weaponShopMenu,""cop_snrSergeant"",0,false,false, """", 'life_gigcoplevel25 isEqualTo 5']; this addAction[localize""STR_MAR_Inspector"",life_fnc_weaponShopMenu,""cop_inspector"",0,false,false, """", 'life_gigcoplevel25 isEqualTo 6']; this addAction[localize""STR_MAR_superintendent"",life_fnc_weaponShopMenu,""cop_superintendent"",0,false,false, """", 'life_gigcoplevel25 isEqualTo 7'];  this addAction[localize""STR_MAR_commissioner"",life_fnc_weaponShopMenu,""cop_commissioner"",0,false,false, """", 'life_gigcoplevel25 isEqualTo 8']; this addAction[format[""%1 ($%2)"",localize (getText(missionConfigFile >> ""Licenses"" >> ""cAir"" >> ""displayName"")), [(getNumber(missionConfigFile >> ""Licenses"" >> ""cAir"" >> ""price""))] call life_fnc_numberText],life_fnc_buyLicense,""cAir"",0,false,false,"""",' !license_cop_cAir && playerSide isEqualTo west ']; this addAction[format[""%1 ($%2)"",localize (getText(missionConfigFile >> ""Licenses"" >> ""cg"" >> ""displayName"")), [(getNumber(missionConfigFile >> ""Licenses"" >> ""cg"" >> ""price""))] call life_fnc_numberText],life_fnc_buyLicense,""cg"",0,false,false,"""",' !license_cop_cg && playerSide isEqualTo west ']; this setObjectTextureGlobal [0,""textures\cop_uniform.jpg""];";
+						init="this enableSimulation false;  this addAction[localize""STR_MAR_Cop_Item_Shop"",life_fnc_virt_menu,""cop""];  this allowDamage false;  this addAction[localize""STR_MAR_Cop_Clothing_Shop"",life_fnc_clothingMenu,""cop""];  this addAction[localize""STR_MAR_Cop_Weapon_Shop"",life_fnc_weaponShopMenu,""cop_basic"",0,false,false, """", 'life_gigcoplevel25 isEqualTo 0'];  this addAction[localize""STR_MAR_Cadet_Shop"",life_fnc_weaponShopMenu,""cop_cadet"",0,false,false, """", 'life_gigcoplevel25 isEqualTo 1'];  this addAction[localize""STR_MAR_Constable_Shop"",life_fnc_weaponShopMenu,""cop_constable"",0,false,false, """", 'life_gigcoplevel25 isEqualTo 2']; this addAction[localize""STR_MAR_snrConstable"",life_fnc_weaponShopMenu,""cop_snrConstable"",0,false,false, """", 'life_gigcoplevel25 isEqualTo 3']; this addAction[localize""STR_MAR_Sergeant"",life_fnc_weaponShopMenu,""cop_sergeant"",0,false,false, """", 'life_gigcoplevel25 isEqualTo 4']; this addAction[localize""STR_MAR_snrSergeant"",life_fnc_weaponShopMenu,""cop_snrSergeant"",0,false,false, """", 'life_gigcoplevel25 isEqualTo 5']; this addAction[localize""STR_MAR_Inspector"",life_fnc_weaponShopMenu,""cop_inspector"",0,false,false, """", 'life_gigcoplevel25 isEqualTo 6']; this addAction[localize""STR_MAR_superintendent"",life_fnc_weaponShopMenu,""cop_superintendent"",0,false,false, """", 'life_gigcoplevel25 isEqualTo 7'];  this addAction[localize""STR_MAR_commissioner"",life_fnc_weaponShopMenu,""cop_commissioner"",0,false,false, """", 'life_gigcoplevel25 isEqualTo 8']; this addAction[localize""STR_Shops_Swat"",life_fnc_weaponShopMenu,""cop_swat"",0,false,false, """", 'license_cop_swat']; this addAction[format[""%1 ($%2)"",localize (getText(missionConfigFile >> ""Licenses"" >> ""cAir"" >> ""displayName"")), [(getNumber(missionConfigFile >> ""Licenses"" >> ""cAir"" >> ""price""))] call life_fnc_numberText],life_fnc_buyLicense,""cAir"",0,false,false,"""",' !license_cop_cAir && playerSide isEqualTo west ']; this addAction[format[""%1 ($%2)"",localize (getText(missionConfigFile >> ""Licenses"" >> ""cg"" >> ""displayName"")), [(getNumber(missionConfigFile >> ""Licenses"" >> ""cg"" >> ""price""))] call life_fnc_numberText],life_fnc_buyLicense,""cg"",0,false,false,"""",' !license_cop_cg && playerSide isEqualTo west ']; this addAction[localize""STR_Shops_C_Swat"",life_fnc_clothingMenu,""swat""]; this setObjectTextureGlobal [0,""textures\cop_uniform.jpg""];"; 
 						name="h1_3";
 						disableSimulation=1;
 					};
@@ -29251,7 +29255,7 @@ class Mission
 			};
 			id=1413;
 			type="Land_PlasticBarrier_03_F";
-			atlOffset=0.11323357;
+			atlOffset=0.11148071;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -29458,7 +29462,7 @@ class Mission
 			};
 			id=1418;
 			type="Land_PlasticBarrier_03_F";
-			atlOffset=-0.0066947937;
+			atlOffset=-0.012145996;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -31891,7 +31895,7 @@ class Mission
 			};
 			id=1491;
 			type="Land_PlasticBarrier_03_F";
-			atlOffset=0.0009059906;
+			atlOffset=0.001033783;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -31933,7 +31937,7 @@ class Mission
 			};
 			id=1492;
 			type="Land_PlasticBarrier_03_F";
-			atlOffset=0.04050827;
+			atlOffset=0.040384293;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -47142,7 +47146,7 @@ class Mission
 		class Item1184
 		{
 			dataType="Marker";
-			position[]={1123.245,0,1541.642};
+			position[]={1123.245,-8.6188734e-038,1541.642};
 			name="marker_259";
 			text="Forums: globalinterlinkedgaming.mistforums.com";
 			type="mil_dot";
@@ -50894,6 +50898,20 @@ class Mission
 			angle=3.1507361;
 			id=2672;
 			atlOffset=-10.239659;
+		};
+		class Item1317
+		{
+			dataType="Marker";
+			position[]={26858.195,-2.9284425e-038,24576.656};
+			name="marker_274";
+			markerType="ELLIPSE";
+			type="ellipse";
+			colorName="ColorGreen";
+			fillName="DiagGrid";
+			a=50;
+			b=50;
+			id=2677;
+			atlOffset=-24.363663;
 		};
 	};
 };

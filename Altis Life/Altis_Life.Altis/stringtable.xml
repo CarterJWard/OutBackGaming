@@ -61,6 +61,9 @@
             <Portuguese>Roupa Billy Joe</Portuguese>
             <Polish>Billy Joe Odzież</Polish>
         </Key>
+        <Key ID="STR_Shops_C_Swat">
+            <Original>Swat Clothing</Original>
+        </Key>
         <Key ID="STR_Shops_W_Gun">
             <Original>Billy Joe's Firearms</Original>
             <Czech>Billy Joe Střelné zbraně</Czech>
