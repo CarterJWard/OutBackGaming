@@ -18,18 +18,70 @@ if (life_adminSuit) then {
     player setVariable ["adminSuit",false,true];
     life_adminSuit = false;
     player allowDamage true;
+    removeAllWeapons player;
+    {player removeMagazine _x;} forEach (magazines player);
+    removeVest player;
+    removeBackpack player;
+    removeGoggles player;
+    removeHeadGear player;
     //Give default loadout per side
         switch (playerSide) do {
             case west: {
-                [] call life_fnc_copLoadout;
+                player addUniform "U_Rangemaster";
+                player addVest "V_Rangemaster_belt";
+
+                player addMagazine "16Rnd_9x21_Mag";
+                player addWeapon "hgun_P07_snds_F";
+                player addMagazine "16Rnd_9x21_Mag";
+                player addMagazine "16Rnd_9x21_Mag";
+                player addMagazine "16Rnd_9x21_Mag";
+                player addMagazine "16Rnd_9x21_Mag";
+                player addMagazine "16Rnd_9x21_Mag";
+
+                /* ITEMS */
+                player addItem "ItemMap";
+                player assignItem "ItemMap";
+                player addItem "ItemCompass";
+                player assignItem "ItemCompass";
+                player addItem "ItemWatch";
+                player assignItem "ItemWatch";
+                player addItem "ItemGPS";
+                player assignItem "ItemGPS";
+
+                [] call life_fnc_playerSkins;
+                [] call life_fnc_saveGear;
             };
 
             case civilian: {
-                [] call life_fnc_civLoadout;
+                _clothings = ["U_C_Poloshirt_blue","U_C_Poloshirt_burgundy","U_C_Poloshirt_stripped","U_C_Poloshirt_tricolour","U_C_Poloshirt_salmon","U_C_Poloshirt_redwhite","U_C_Commoner1_1"];
+                player addUniform (selectRandom _clothings);
+
+                /* ITEMS */
+                player addItem "ItemMap";
+                player assignItem "ItemMap";
+                player addItem "ItemCompass";
+                player assignItem "ItemCompass";
+                player addItem "ItemWatch";
+                player assignItem "ItemWatch";
+
+                [] call life_fnc_playerSkins;
+                [] call life_fnc_saveGear;
             };
 
             case independent: {
                 [] call life_fnc_medicLoadout;
+                player addUniform "U_Rangemaster";
+                player addItem "FirstAidKit";
+                player addItem "FirstAidKit";
+                player addItem "ItemMap";
+                player assignItem "ItemMap";
+                player addItem "ItemCompass";
+                player assignItem "ItemCompass";
+                player addItem "ItemWatch";
+                player assignItem "ItemWatch";
+
+                [] call life_fnc_playerSkins;
+                [] call life_fnc_saveGear;
             };
         };
     hint "Admin suit is now gone";
@@ -48,6 +100,18 @@ if (life_adminSuit) then {
         player assignItem "ItemCompass";
         player addItem "ItemWatch";
         player assignItem "ItemWatch";
+        player addVest "V_TacVestIR_blkt";
+        player addBackpack "B_ViperHarness_blk_F";
+        player addMagazine "30Rnd_65x39_caseless_green";
+        player addWeapon "arifle_ARX_blk_F";
+        player addMagazine "30Rnd_65x39_caseless_green";
+        player addMagazine "30Rnd_65x39_caseless_green";
+        player addMagazine "30Rnd_65x39_caseless_green";
+        player addMagazine "30Rnd_65x39_caseless_green";
+        player addMagazine "10Rnd_50BW_Mag_F";
+        player addMagazine "10Rnd_50BW_Mag_F";
+        player addMagazine "10Rnd_50BW_Mag_F";
+        player addMagazine "10Rnd_50BW_Mag_F";
 
         //Actions
         admin_actions = [player addAction["<t color='#FF0000'>Heal/Repair Target</t>",{cursorTarget setDamage 0;}]];
