@@ -97,6 +97,11 @@ class CfgSounds {
         sound[] = {"\sounds\wasted.ogg",1.0, 1};
         titles[] = {};
     };
+
+    class robbery {
+        name = "robbery";
+        sound[] = {"\sounds\robbery.ogg", 2.0, 1, 150};
+    };
 };
 
 class CfgDebriefing {

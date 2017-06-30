@@ -31,18 +31,24 @@ DYNMARKET_UserNotification_Text =
 
 DYNMARKET_Items_Groups =
 [
+	["Fruits",[
 		["apple",25],
 		["peach",50],
+	]],
+	["Minerals",[
 		["oil_processed",2900],
 		["copper_refined",2100],
 		["iron_refined",2000],
 		["salt_refined",2050],
 		["glass",2800],
 		["diamond_cut",4130],
-		["cement",3350], 
+		["cement",3350],
+	]],
+	["Drugs",[ 
 		["heroin_processed",5200],
 		["marijuana",5000],
 		["cocaine_processed",5300]
+	]]
 ];
 
 // █████████████████    ALL SELLABLE ITEMS    █████████████████

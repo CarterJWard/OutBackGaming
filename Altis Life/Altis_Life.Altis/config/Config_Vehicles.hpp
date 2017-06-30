@@ -80,7 +80,8 @@ class CarShops {
             { "O_MRAP_02_F", { "", "", -1 } },
             { "I_MRAP_03_F", {"", "", -1 } }, 
             { "B_Heli_Light_01_stripped_F", { "", "", -1 } },
-            { "B_G_Offroad_01_armed_F", { "", "", -1 } }
+            { "B_G_Offroad_01_armed_F", { "", "", -1 } },
+            { "O_Heli_Transport_04_F", { "", "", -1} }
         };
     };
 
@@ -129,12 +130,6 @@ class CarShops {
             { "B_Boat_Transport_01_F", { "", "", -1 } },
             { "C_Boat_Civil_01_police_F", { "", "", -1 } },
             { "B_Boat_Armed_01_minigun_F", { "life_gigcoplevel25", "SCALAR", 3 } }
-        };
-    };
-    class cop_swat {
-        side = "cop";
-        vehicles[] = {
-            { "I_MRAP_03_F", { "", "", -1} }
         };
     };
 };
@@ -248,7 +243,7 @@ class LifeCfgVehicles {
         licenses[] = { {""}, {"cg"}, {""}, {""} };
         price = 3000;
         textures[] = { };
-    };
+    }; 
 
     class O_Truck_03_device_F {
         vItemSpace = 350;
@@ -735,5 +730,13 @@ will modify the virtual space and the price of the vehicle, but other informatio
         licenses[] = {{"boat"},{""},{""},{""} };
         price = 100000;
         textures[] = {};
-    }
+    };
+
+    class O_Heli_Transport_04_F {
+        vItemSpace = 200;
+        vFuelSpace = 10000;
+        licenses[] = {{"rebel"},{""},{""},{""}};
+        price = 550000;
+        textures[] = {};
+    };
 };

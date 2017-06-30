@@ -10,14 +10,14 @@ private["_unit"];
 _unit = cursorTarget;
 
 if(life_inv_zipties < 1) exitWith {
-	hintSilent "You need to buy zipties from the market to do this..";
+	hintSilent "You need to buy zipties from the market to do this.."; 
 };
 
 if((life_action_inUse) || (player getVariable ["tied", false]) || (player getVariable ["restrained", false])) exitWith {
 	hintSilent "You can not do that.";
 };
 
-if(!(_unit getVariable ["playerSurrender",false]) || life_isknocked) exitWith {
+if(!(_unit getVariable ["playerSurrender",false]) || life_isknocked || _unit getVariable ["knockedOut",false]) exitWith {
 	hintSilent "Your target has to surrender or be knocked outfirst!";
 };
 

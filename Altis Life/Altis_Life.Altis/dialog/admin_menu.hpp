@@ -119,8 +119,8 @@ class life_admin_menu {
 
         class RscButtonMenu_2409: Life_RscButtonMenu {
             idc = 2911;
-            text = "$STR_Admin_Debug";
-            onButtonClick = "[] call life_fnc_adminDebugCon;";
+            text = "$STR_Admin_Suit";
+            onButtonClick = "[] call life_fnc_adminSuit;";
             x = 0.613437 * safezoneW + safezoneX;
             y = 0.676 * safezoneH + safezoneY;
             w = 0.061875 * safezoneW;

@@ -585,6 +585,9 @@
             <Portuguese>Marcações</Portuguese>
             <Polish>Markery</Polish>
         </Key>
+        <Key ID="STR_Admin_Suit">
+            <Original>Admin Suit</Original>
+        </Key>
     </Package>
     <Package name="Admin_Notifications">
         <Key ID="STR_ANOTF_Query">

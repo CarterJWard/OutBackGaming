@@ -34,6 +34,10 @@ if(_cops < _copsNeeded) exitWith{[_vault,-1] remoteExec ["disableSerialization;"
 
 [3,"<t size='1.5'><t color='#e02124'><t align='center'><t font='TahomaB'><t underline='true'>BANK ROBBERY<br /><br/></t></t></t></t></t><t size ='1.2'>Authorities have confirmed armed rebels have begun robbing the bank of kavala. These persons are considered armed and dangers and authorities have urged civilians to keep away from the situation.</t>"] remoteExec ["life_fnc_broadcast", civilian];
 
+[3,"<t size='1.5'><t color='#e02124'><t align='center'><t font='TahomaB'><t underline='true'>BANK ROBBERY<br /><br/></t></t></t></t></t><t size ='1.2'>Authorities have confirmed armed rebels have begun robbing the bank of kavala. These persons are considered armed and dangers and authorities have urged medics to keep away from the situation until they are given the all clear.</t>"] remoteExec ["life_fnc_broadcast", independent];
+
+[_shop, "robbery"] remoteExec ["life_fnc_say3D",0];
+
 disableSerialization;
 5 cutRsc ["life_progress","PLAIN"];
 _ui = uiNameSpace getVariable "life_progress";

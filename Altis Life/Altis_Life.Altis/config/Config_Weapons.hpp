@@ -63,7 +63,8 @@ class WeaponShops {
             { "srifle_DMR_05_hex_F", "", 600000, 100000 },
             { "srifle_LRR_F", "", 1100000, 100000 },
             { "srifle_GM6_F", "", 1300000, 120000 },
-            { "SatchelCharge_Remote_Mag", "Explosive Device", 150000, -1 }
+            { "SatchelCharge_Remote_Mag", "Explosive Device", 150000, -1 },
+            { "NVGoggles", "", 5000, 100 }
         };
         mags[] = {
             { "11Rnd_45ACP_Mag", "", 150 },

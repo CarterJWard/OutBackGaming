@@ -22,6 +22,7 @@ player playMoveNow "Incapacitated";
 _obj = "Land_ClutterCutter_small_F" createVehicle ASLTOATL(visiblePositionASL player);
 _obj setPosATL ASLTOATL(visiblePositionASL player);
 
+player setVariable ["knockedOut",true,true];
 life_isknocked = true;
 player attachTo [_obj,[0,0,0]];
 sleep 15;
@@ -29,4 +30,5 @@ player playMoveNow "AmovPpneMstpSrasWrflDnon";
 detach player;
 deleteVehicle _obj;
 life_isknocked = false;
+player setVariable ["knockedOut",false,true];
 player setVariable ["robbed",FALSE,TRUE];

@@ -8,10 +8,10 @@
 */
 private["_end"];
 player addRating 99999999;
-waitUntil {!(isNull (findDisplay 46))};
+waitUntil {!(isNull (findDisplay 46))}; 
 
 if (!(str(player) in ["medic_1","medic_2"])) then {
-    if ((FETCH_CONST(life_gigmed61)) < 1 && (FETCH_CONST(life_gigadmin863) isEqualTo 0)) exitWith {
+    if (((life_gigmed61) isEqualTo 0) && (FETCH_CONST(life_gigadmin863) isEqualTo 0)) exitWith {
         ["Notwhitelisted",FALSE,TRUE] call BIS_fnc_endMission;
         sleep 35;
     };
