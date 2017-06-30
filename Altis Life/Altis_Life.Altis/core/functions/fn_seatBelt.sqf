@@ -1,12 +1,10 @@
 /*
 //--By Repentz for altisLifeRPG
+fn_seatBelt.sqf
 */
 
 #include "..\..\script_macros.hpp"
-/*
-	fn_seatBelt.sqf
-*/
-//playSound "seatbelt"; //--Enable this to play a sound when you put your seatbelt on
+playSound "seatbelt";
 if(!life_seatbelt) then {
 	life_seatbelt = true;
 } else {
