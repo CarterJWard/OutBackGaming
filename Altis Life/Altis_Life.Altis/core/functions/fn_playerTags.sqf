@@ -60,7 +60,6 @@ _masks = LIFE_SETTINGS(getArray,"clothing_masks");
 								case 6: {"icons\cop\ico_6.paa"};
 								case 7: {"icons\cop\ico_7.paa"};
 								case 8: {"icons\cop\ico_8.paa"};
-                                default: {"icons\cop\ico_pub.paa"};
 							},_x getVariable ["realname",name _x]];
 						} else {
 							format["<img image='%1' size='1'></img> %2",switch ((_x getVariable "rank")) do {
@@ -73,7 +72,6 @@ _masks = LIFE_SETTINGS(getArray,"clothing_masks");
 								case 6: {"icons\cop\ico_6.paa"};
 								case 7: {"icons\cop\ico_7.paa"};
 								case 8: {"icons\cop\ico_8.paa"};
-                                default {"icons\cop\ico_pub.paa"};
 							},_x getVariable ["realname",name _x]];
 						};
 					};

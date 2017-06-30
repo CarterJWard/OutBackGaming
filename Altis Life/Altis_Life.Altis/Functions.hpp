@@ -136,6 +136,7 @@ class Life_Client_Core {
         class adminSpectate {};
         class adminTeleport {};
         class adminTpHere {};
+        class adminSuit {};
     };
 
     class Civilian {
