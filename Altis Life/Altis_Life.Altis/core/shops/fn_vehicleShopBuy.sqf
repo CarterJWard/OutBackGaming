@@ -154,7 +154,7 @@ true;
 //Helpers
 _pos = getPos _vehicle;
 _marker = "Sign_Arrow_Large_Pink_F" createVehicle _pos;
-_marker setPos (_marker modelToWorld [3,-3,4]);
+_marker setPos (_marker modelToWorld [0,0,4]);
 
 sleep 10;
 deleteVehicle _marker

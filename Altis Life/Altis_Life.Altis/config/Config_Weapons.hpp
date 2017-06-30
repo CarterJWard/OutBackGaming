@@ -560,10 +560,10 @@ class WeaponShops {
             { "optic_LRPS", "", 10000, 100 },
             { "bipod_01_F_blk", "", 100, 10 },
             { "30Rnd_556x45_Stanag", "", 100, 10 },
-            { "3Rnd_Smoke_Grenade_shell", "Tear Gas Grenade", 2000, 100 },
-            { "Rangefinder", "", 2000, 100 },
+            { "1Rnd_Smoke_Grenade_shell", "Tear Gas Grenade", 2000, 100 },
             { "SmokeShell", "Tear Gas", 1000, 100 },
-            { "HandGrenade_Stone", "Flashbang", 1000, 200 }
+            { "HandGrenade_Stone", "Flashbang", 1000, 200 },
+            { "Rangefinder", "", 2000, 100 }
             };
         mags[] = {};
         accs[] = {};

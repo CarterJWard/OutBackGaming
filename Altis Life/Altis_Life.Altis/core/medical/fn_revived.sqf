@@ -41,6 +41,9 @@ life_is_alive = true;
 player setVariable ["Revive",nil,TRUE];
 player setVariable ["name",nil,TRUE];
 player setVariable ["Reviving",nil,TRUE];
-[] call life_fnc_playerSkins;
 [] call life_fnc_hudUpdate; //Request update of hud.
 [] call SOCK_fnc_updateRequest;
+
+//Delay for skins
+sleep 3; 
+[] call life_fnc_playerSkins;

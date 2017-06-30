@@ -166,9 +166,21 @@ class Clothing {
         license = "swat";
         side = "cop";
         uniforms[] = {
-            { "V_PlateCarrierSpec_blk vest", "", 100 },
             { "U_I_CombatUniform", "Swat Uniform", 100, {"", "", -1} }
         }; 
+        headgear[] = {
+            { "NONE", "Remove Hat", 0, { "", "", -1 } }
+        };
+        goggles[] = {
+            { "NONE", "Remove Glasses", 0, { "", "", -1 } }
+        };
+        vests[] = {
+            { "NONE", "Remove Vest", 0, { "", "", -1 } },
+            { "V_PlateCarrierSpec_blk vest", "", 100, {"","",-1} },
+        };
+        backpacks[] = {
+            { "NONE", "Remove Backpack", 0, { "", "", -1 } }
+        };
     };
     
     class dive {
