@@ -7,7 +7,7 @@
         Description:
         Same as fn_gather,but it allows use of probabilities for mining.
     */
-private["_maxGather", "_resource", "_amount", "_requiredItem", "_mined"];
+private["_maxGather", "_resource", "_amount", "_requiredItem", "_mined","_profType"];
 if (life_action_inUse) exitWith {};
 if ((vehicle player) != player) exitWith {};
 if (player getVariable "restrained") exitWith {
@@ -22,7 +22,7 @@ _zone = "";
 _requiredItem = "";
 _zoneSize = (getNumber(missionConfigFile >> "CfgGather" >> "zoneSize"));
 
-_resourceCfg = missionConfigFile >> "CfgGather" >> "Minerals";
+_resourceCfg = missionConfigFile >> "CfgGather" >> "Minerals"; 
 _percent = (floor random 100) + 1; //Make sure it's not 0
 
 for "_i" from 0 to count(_resourceCfg)-1 do {
@@ -80,6 +80,11 @@ if (_requiredItem != "") then {
 if (_exit) exitWith {
     life_action_inUse = false;
 };
+_profType = [_mined] call life_fnc_profType;
+_flag = PROF_SIDE(playerside);
+_data = PROF_VALUE(_profType,_flag);
+_level = _data select 0;
+_amount = _maxGather + _level;
 
 _amount = round(random(_maxGather)) + 1;
 _diff = [_mined, _amount, life_carryWeight, life_maxWeight] call life_fnc_calWeightDiff;
@@ -102,5 +107,6 @@ if (([true, _mined, _diff] call life_fnc_handleInv)) then {
     titleText[format[localize "STR_NOTF_Gather_Success", (localize _itemName), _diff], "PLAIN"];
 };
 
+[_profType,round(_level) * 5] call life_fnc_addExp;
 sleep 2.5;
 life_action_inUse = false;

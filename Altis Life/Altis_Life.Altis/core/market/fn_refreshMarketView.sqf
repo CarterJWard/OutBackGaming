@@ -5,7 +5,7 @@
 	Refreshes current dialog
 
 */
-
+ 
 private["_display", "_selectedindex", "_index", "_shortname","_itemDisplayName","_itemName"];
 
 disableSerialization;
