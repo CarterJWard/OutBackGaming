@@ -110,8 +110,8 @@ class CarShops {
         vehicles[] = {
             { "C_Offroad_01_F", { "", "", -1 } },
             { "C_SUV_01_F", { "", "", -1 } },
-            { "I_MRAP_03_F", { "life_coplevel25", "SCALAR", 2} },
-            { "B_MRAP_01_F", { "life_coplevel25", "SCALAR", 4} },
+            { "I_MRAP_03_F", { "life_gigcoplevel25", "SCALAR", 2} },
+            { "B_MRAP_01_F", { "life_gigcoplevel25", "SCALAR", 4} },
             { "C_Hatchback_01_sport_F", { "life_gigcoplevel25", "SCALAR", 5 } }
         };
     };
@@ -538,7 +538,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
             },"" },
             { "Undercover", "cop", {
                 "\a3\soft_f_gamma\SUV_01\Data\suv_01_ext_04_co.paa"
-            },"swat" },
+            },"life_gigcoplevel25 >= 4" },
             { "Police", "cop", {
                 "textures\cop\cop_suv1.jpg"
             },"" }, 

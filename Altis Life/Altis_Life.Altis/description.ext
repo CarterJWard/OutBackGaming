@@ -101,11 +101,13 @@ class CfgSounds {
     class robbery {
         name = "robbery";
         sound[] = {"\sounds\robbery.ogg", 2.0, 1, 150};
+        titles[] = {};
     };
 
     class seatbelt {
         name = "seatbelt";
         sound[] = {"\sounds\seatbelt.ogg",1.0, 1};
+        titles[] = {};
     };
 };
 

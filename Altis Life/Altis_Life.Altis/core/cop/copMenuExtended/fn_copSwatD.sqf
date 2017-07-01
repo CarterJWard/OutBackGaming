@@ -1,7 +1,7 @@
 /*
 Author: Larry Lancelot
 */
-private = ["_copPlayer","_curlevel"];
+private ["_copPlayer","_curlevel"];
 _copPlayer = lbData[232929,lbCurSel (232929)];
 _copPlayer = call compile format["%1", _copPlayer];
 //Error Checks

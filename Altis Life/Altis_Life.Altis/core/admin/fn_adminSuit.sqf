@@ -5,7 +5,7 @@ Author: Larry Lancelot
 diag_log "Admin actions called";
 private ["_suit","_action"];
 if (FETCH_CONST(life_gigadmin863) < 1) exitWith {closeDialog 0};
-switch (FETCH_CONST(life_gigadmin863)) do {
+switch (life_gigadmin863) do {
     case 1: {_suit = "U_B_Soldier_VR"};
     case 2: {_suit = "U_O_Soldier_VR"};
     case 3: {_suit = "U_I_Soldier_VR"};
@@ -24,7 +24,7 @@ if (life_adminSuit) then {
     removeBackpack player;
     removeGoggles player;
     removeHeadGear player;
-    [] spawn TON_fnc_MapMarkersAdmin
+    [] spawn TON_fnc_MapMarkersAdmin;
     //Give default loadout per side
         switch (playerSide) do {
             case west: {
@@ -93,7 +93,7 @@ if (life_adminSuit) then {
         player setVariable ["adminSuit",true,true];
         life_adminSuit = true;
         player allowDamage false;
-        [] spawn TON_fnc_MapMarkersAdmin
+        [] spawn TON_fnc_MapMarkersAdmin;
 
         //Add Items
         player addItem "ItemMap";

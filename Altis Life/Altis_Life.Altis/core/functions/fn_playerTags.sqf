@@ -39,7 +39,7 @@ _masks = LIFE_SETTINGS(getArray,"clothing_masks");
         _distance = _pos distance player;
         if (!((headgear _x) in _masks || (goggles _x) in _masks || (uniform _x) in _masks)) then {
             if (count _sPos > 1 && {_distance < 15}) then {
-                _text = switch (true) do {
+                _text = switch (life_gigadmin863) do {
                     case (_x in (units group player) && playerSide isEqualTo civilian): {format["<t color='#00FF00'>%1</t>",(_x getVariable ["realname",name _x])];};
                     case (_x getVariable "adminSuit"): {format["<t color='#00FF00'>%1 %2</t>",switch (FETCH_CONST(life_gigadmin863)) do {
                         case 1: {"Moderator"};
