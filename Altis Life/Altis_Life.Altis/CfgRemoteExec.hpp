@@ -118,9 +118,6 @@ class CfgRemoteExec {
         F(TON_fnc_vehicleStore,SERVER)
         F(TON_fnc_vehicleUpdate,SERVER)
 		F(life_fnc_wantedCheck,SERVER)
-		F(TON_fnc_playerLogged,SERVER) //DynMarket
-		F(TON_fnc_getUpdate,SERVER) //DynMarket
-		F(TON_fnc_changePrice, SERVER) //DynMarket
 		F(life_fnc_copLevelChange, SERVER) //CopMenuExtended
 		F(life_fnc_copBlacklistServer, SERVER) //CopMenuExtended
 		
