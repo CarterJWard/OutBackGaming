@@ -85,6 +85,8 @@ class Life_Client_Core {
         class suicideBomb {};
         class deadMan {};
         class jailBreak {};
+        class takeKidney {};
+        class robKidney {};
     };
 	
 	class CivTieing {
@@ -143,6 +145,7 @@ class Life_Client_Core {
         class robReceive {};
         class tazed {};
         class jailBreakTimer {};
+        class recieveKidney {};
     };
 
     class Config {

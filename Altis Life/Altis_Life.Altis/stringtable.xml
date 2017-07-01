@@ -8974,6 +8974,9 @@
             <Portuguese>Roubar Jogador</Portuguese>
             <Polish>Obrabuj osobę</Polish>
         </Key>
+        <Key ID="STR_pAct_RobKidney">
+            <Original>Harvest Organs</Original>
+        </Key>
     </Package>
     <Package name="Markers_names">
         <Key ID="STR_MAR_Fish_Market">
