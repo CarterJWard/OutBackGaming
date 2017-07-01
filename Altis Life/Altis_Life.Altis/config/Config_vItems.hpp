@@ -158,15 +158,25 @@ class VirtualShops {
 *        processedItem = Processed Item
 */
 class VirtualItems {
-    //Virtual Items
 
     //Misc
+    class kidney {
+        variable = "kidney";
+        displayName = "STR_Item_spraycan";
+        weight = 5;
+        buyPrice = 600;
+        sellPrice = 50000;
+        illegal = true;
+        edible = 1;
+        icon = "icons\ico_kidney.paa";
+    };
+
     class spraycan {
         variable = "spraycan";
-        displayName = "STR_Item_spraycan";
+        displayName = "STR_Item_Kidney";
         weight = 2;
         buyPrice = 600;
-        sellPrice = 300;
+        sellPrice = 50000;
         illegal = false;
         edible = -1;
         icon = "icons\ico_spraycan.paa";

@@ -17,7 +17,7 @@ if((life_action_inUse) || (player getVariable ["tied", false]) || (player getVar
 	hintSilent "You can not do that.";
 };
 
-if(!(_unit getVariable ["playerSurrender",false]) || life_isknocked || (_unit getVariable ["knockedOut",false])) exitWith {
+if(!(_unit getVariable ["playerSurrender",false]) || life_isknocked || (animationState _unit = "Incapacitated")) exitWith {
 	hintSilent "Your target has to surrender or be knocked outfirst!";
 };
 

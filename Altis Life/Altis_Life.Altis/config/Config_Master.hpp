@@ -18,7 +18,7 @@ class Life_Settings {
 /* Database Related Settings */
     /* Player Data Saving */
     save_virtualItems = true; //Save Virtual items (all sides)?
-    saved_virtualItems[] = { "pickaxe","fuelEmpty","fuelFull", "spikeStrip", "lockpick", "defuseKit","storageSmall","storageBig","redgull","coffee","waterBottle","apple","peach","tbacon","donuts","rabbit","salema","ornate","mackerel","tuna","mullet","catshark","turtle_soup","hen","rooster","sheep","goat","defibrillator","toolkit","zipties","blindfold","handcuffs","keys","goldbar","blastingcharge","boltcutter","pesticide","oil_unprocessed","oil_unprocessed","copper_unrefined","copper_refined","iron_unrefined","iron_refined","salt_refined","salt_refined","sand","glass","diamond_uncut","diamond_cut","rock","cement","heroin_unprocessed","heroin_processed","cannabis","marijuana","cocaine_unprocessed","cocaine_processed","turtle_raw" }; //Array of virtual items that can be saved on your player.
+    saved_virtualItems[] = { "pickaxe","fuelEmpty","fuelFull", "spikeStrip", "lockpick", "defuseKit","storageSmall","storageBig","redgull","coffee","waterBottle","apple","peach","tbacon","donuts","rabbit","salema","ornate","mackerel","tuna","mullet","catshark","turtle_soup","hen","rooster","sheep","goat","defibrillator","toolkit","zipties","blindfold","handcuffs","keys","goldbar","blastingcharge","boltcutter","pesticide","oil_unprocessed","oil_unprocessed","copper_unrefined","copper_refined","iron_unrefined","iron_refined","salt_refined","salt_refined","sand","glass","diamond_uncut","diamond_cut","rock","cement","heroin_unprocessed","heroin_processed","cannabis","marijuana","cocaine_unprocessed","cocaine_processed","turtle_raw","spraycan","kidney" }; //Array of virtual items that can be saved on your player.
     save_playerStats = true; //Save food, water and damage (all sides)?
     save_civilian_weapons = true; //Allow civilians to save weapons on them?
     save_civilian_position = false; //Save civilian location?
@@ -188,6 +188,7 @@ class Life_Settings {
         {"STR_Crime_32","100000","32"},
         {"STR_Crime_33","50000","33"},
         {"STR_Crime_187V","75000","187V"},
+        {"STR_Crime_48", "50000", "48"},
         {"STR_Crime_34","50000","34"},
         {"STR_Crime_187","75000","187"},
         {"STR_Crime_35","100000","35"},
@@ -206,7 +207,7 @@ class Life_Settings {
         {"STR_Crime_44","75000","44"},
         {"STR_Crime_45","800000","39"},
         {"STR_Crime_46","900000","46"},
-        {"STR_Crime_47","1200000","47"}
+        {"STR_Crime_47","1200000","47"},
     };
 };
 

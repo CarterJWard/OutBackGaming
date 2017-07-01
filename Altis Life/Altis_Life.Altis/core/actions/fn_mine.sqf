@@ -27,7 +27,7 @@ _percent = (floor random 100) + 1; //Make sure it's not 0
 
 for "_i" from 0 to count(_resourceCfg)-1 do {
     _curConfig = _resourceCfg select _i;
-    _resources = getArray(_curConfig >> "mined");
+    _resources = getArray(_curConfig >> "mined"); 
     _maxGather = getNumber(_curConfig >> "amount");
     _resourceZones = getArray(_curConfig >> "zones");
     _requiredItem = getText(_curConfig >> "item");

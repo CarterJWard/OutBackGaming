@@ -47,6 +47,9 @@
         <Key ID="STR_Item_spraycan">
             <Original>Spray Can</Original>
         </Key>
+        <Key ID="STR_Item_Kidney">
+            <Original>Kidney</Original>
+        </Key>
 		<Key ID="STR_Item_Blindfold">
 			<Original>Blindfold</Original>
 		</Key>
@@ -10276,6 +10279,9 @@
         </Key>
         <Key ID="STR_Crime_47">
             <Original>Lynx</Original>
+        </Key>
+        <Key ID="STR_Crime_48">
+            <Original>Organ Theft</Original>
         </Key>
     </Package>
     <Package name="FuelTank_Mission">

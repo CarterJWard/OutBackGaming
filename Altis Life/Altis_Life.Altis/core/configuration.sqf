@@ -55,6 +55,7 @@ arrived = false;
 life_gang_bank_time = 0;
 life_isSuiciding = false;
 life_adminSuit = false;
+life_hasKidney = true;
 
 //Settings
 life_settings_enableSidechannel = profileNamespace getVariable["life_enableSidechannel",false];

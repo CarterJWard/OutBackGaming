@@ -156,6 +156,7 @@ class marketView
 			y = 2.5 * GUI_GRID_H + GUI_GRID_Y;
 			w = 10.5 * GUI_GRID_W;
 			h = 19.5 * GUI_GRID_H;
+			sizeEx = 1.2 * GUI_GRID_H;
 			onLBSelChanged = "[] spawn life_fnc_refreshMarketView";
 		};
 	};

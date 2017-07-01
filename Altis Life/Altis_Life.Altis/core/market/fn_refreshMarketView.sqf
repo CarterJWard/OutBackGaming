@@ -14,7 +14,7 @@ if(!dialog) exitWith {hint "Could not find dialog.";}; //cancel if no dlg
 _display = findDisplay 39500;
 
 if(isNull _display) exitWith {hint "Dialog not open!"; };
-
+ 
 //Selected index
 _selectedindex = lbCurSel 1500;
 
