@@ -162,7 +162,7 @@ class VirtualItems {
     //Misc
     class kidney {
         variable = "kidney";
-        displayName = "STR_Item_spraycan";
+        displayName = "STR_Item_Kidney";
         weight = 5;
         buyPrice = 600;
         sellPrice = 50000;
@@ -173,7 +173,7 @@ class VirtualItems {
 
     class spraycan {
         variable = "spraycan";
-        displayName = "STR_Item_Kidney";
+        displayName = "STR_Item_spraycan";
         weight = 2;
         buyPrice = 600;
         sellPrice = 50000;
