@@ -88,7 +88,7 @@ if (life_adminSuit) then {
     hint "Admin suit is now gone";
 } else {
         removeUniform player;
-        player addUniform _suit;
+        player addUniform "U_C_Soldier_VR";
         [0,format ["%1 has entered admin mode",profileName]] remoteExecCall ["life_fnc_broadcast",RCLIENT];
         player setVariable ["adminSuit",true,true];
         life_adminSuit = true;

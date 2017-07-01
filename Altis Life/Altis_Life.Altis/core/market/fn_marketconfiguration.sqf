@@ -14,62 +14,58 @@ life_market_resources = [
 	
 	// Default İsler
 	
-	["oil_processed", 5500, 0, 6250, 3, 1, 
+	["oil_processed", 3800, 0, 5100, 3, 1, 
 		[ 
 			["diamond_cut",1], 
 			["iron_refined",1],
 			["copper_refined",1],
-			["gold_refined",1],
 			["cement",1],
 			["glass",1] 
 		] 
 	],
 	
-	["diamond_cut", 4530, 0, 5250, 5, 2, 
+	["diamond_cut", 3250, 0, 4950, 5, 2, 
 		[ 
 			["oil_processed",1],
 			["iron_refined",1],
 			["copper_refined",1],
-			["gold_refined",1],
 			["salt_refined",1],
 			["cement",1],
 			["glass",1] 
 		] 
 	],
 	
-	["copper_refined", 2500, 0, 3500, 2, 1, 
+	["copper_refined", 1700, 0, 3500, 2, 1, 
 		[ 
 			["diamond_cut",1], 
 			["oil_processed",1],
 			["iron_refined",1],
-			["gold_refined",1],
 			["cement",1],
 			["glass",1] 
 		] 
 	],
 	
-	["iron_refined", 3500, 0, 4250, 3, 1,  
+	["iron_refined", 2000, 0, 4250, 3, 1,  
 		[ 
 			["diamond_cut",1], 
 			["oil_processed",1],
 			["copper_refined",1],
-			["gold_refined",1],
 			["salt_refined",1],
 			["cement",1],
 			["glass",1] 
-		] 
+		]  
 	],
 	
-	["salt_refined", 4850, 0, 5750, 2, 1, 
+	["salt_refined", 2900, 0, 4300, 3, 1, 
 		[ 
 
 			["copper_refined",1],
-			["gold_refined",1],
-			["glass",1] 
+			["glass",1],
+			["oil_processed",1] 
 		] 
 	],
 	
-	["glass", 3450, 0, 4550, 2, 1, 
+	["glass", 3000, 0, 4900, 2, 1, 
 		[ 
 			["diamond_cut",1], 
 			["oil_processed",1],
@@ -78,7 +74,7 @@ life_market_resources = [
 		] 
 	],
 	
-	["cement", 3350, 0, 4100, 2, 1, 
+	["cement", 3750, 0, 5000, 2, 1, 
 		[ 
 
 			["oil_processed",1],
@@ -88,31 +84,21 @@ life_market_resources = [
 		] 
 	],
 	
-	["goldbar", 55000, 0, 75000, 2, 1, 
-		[ 
-			["diamond_cut",1], 
-			["oil_processed",1],
-			["iron_refined",1],
-			["copper_refined",1],
-			["glass",1]
-		] 
-	],
-	
-	["marijuana", 5750, 0, 7500, 10, 7,   
+	["marijuana", 4500, 0, 7500, 10, 7,   
 		[ 
 			["cocaine_processed",1],
 			["heroin_processed",1]
 		] 
 	],
 
-	["cocaine_processed", 6300, 0, 7850, 15, 10,   
+	["cocaine_processed", 6000, 0, 7850, 15, 10,   
 		[ 
 			["marijuana",1], 
 			["heroin_processed",1]
 		] 
 	],
 		
-	["heroin_processed", 6500, 0, 8700, 15, 10,   
+	["heroin_processed", 5200, 0, 7500, 15, 10,   
 		[ 
 			["marijuana",1], 
 			["cocaine_processed",1]

@@ -49,7 +49,6 @@ switch(true) do
 	};
 	case (_rand <= 36): //6% Drogenpreis erhöhen
 	{
-		[0,format["News: drugs prices increased."]] remoteExecCall ["life_fnc_broadcast",RCLIENT];
 		
 		//Erhöhe Marktpreis mit marketSell
 		["marijuana", [15,30] call life_fnc_randomRound, true] call life_fnc_marketBuy; 
@@ -62,7 +61,6 @@ switch(true) do
 	};
 	case (_rand <= 44): //8% Ölpreis erhöhen
 	{
-		[0,format["News: oil processed price increased."]] remoteExecCall ["life_fnc_broadcast",RCLIENT];
 		
 		["oil_processed", [20,40] call life_fnc_randomRound, true] call life_fnc_marketBuy; 
 		
@@ -70,7 +68,6 @@ switch(true) do
 	};
 	case (_rand <= 54): //10% Eisenpreis + zementpreis + glaspreis erhöhen
 	{
-		[0,format["News: cement-ironrefined-glass prices increased."]] remoteExecCall ["life_fnc_broadcast",RCLIENT];
 		
 		["cement", [20,40] call life_fnc_randomRound, true] call life_fnc_marketBuy; 
 		["iron_refined", [20,30] call life_fnc_randomRound, true] call life_fnc_marketBuy; 
@@ -80,7 +77,6 @@ switch(true) do
 	};
 	case (_rand <= 60): //4% Goldpreis sinkt
 	{
-		[0,format["News: goldbar price decreased."]] remoteExecCall ["life_fnc_broadcast",RCLIENT];
 		
 		["goldbar", [15,30] call life_fnc_randomRound, true] call life_fnc_marketSell; 
 		
@@ -88,7 +84,6 @@ switch(true) do
 	};
 	case (_rand <= 68): //8% Kupfer/Silber erhöht sich
 	{
-		[0,format["News: goldbar - copper refined prices increased."]] remoteExecCall ["life_fnc_broadcast",RCLIENT];
 		
 		["goldbar", [15,30] call life_fnc_randomRound, true] call life_fnc_marketBuy; 
 		["copper_refined", [15,30] call life_fnc_randomRound, true] call life_fnc_marketBuy; 
@@ -96,16 +91,12 @@ switch(true) do
 	};
 	case (_rand <= 74): //6% Goldpreis erhöht sich
 	{
-		[0,format["News: goldbar price increased."]] remoteExecCall ["life_fnc_broadcast",RCLIENT];
-		
 		["goldbar", [15,30] call life_fnc_randomRound, true] call life_fnc_marketBuy; 
 		
 		diag_log "+Market+ Event goldp";
 	};
 	case (_rand <= 80): //6% Drogenpreis niedriger
 	{
-		[0,format["News: drugs prices decreased"]] remoteExecCall ["life_fnc_broadcast",RCLIENT];
-		
 		//Erhöhe Marktpreis mit marketSell
 		["marijuana", [15,30] call life_fnc_randomRound, true] call life_fnc_marketSell; 
 		["cocaine_unprocessed", [15,30] call life_fnc_randomRound, true] call life_fnc_marketSell; 
@@ -116,9 +107,7 @@ switch(true) do
 		diag_log "+Market+ Event drugm";
 	};
 	case (_rand <= 90): //10% Schildkröten höher
-	{
-		[0,format["News: example items prices increased"]] remoteExecCall ["life_fnc_broadcast",RCLIENT];
-		
+	{	
 		//Erhöhe Marktpreis mit marketSell
 		["exampleitem", [15,30] call life_fnc_randomRound, true] call life_fnc_marketBuy; 	
 		["exampleitem", [15,30] call life_fnc_randomRound, true] call life_fnc_marketBuy; 	

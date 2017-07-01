@@ -14,7 +14,7 @@ class marketView
 	
 	class controlsBackground
 	{
-		class RscStructuredText_1100: RscStructuredText
+		class RscStructuredText_1100: Life_RscStructuredText
 		{
 			idc = 1100;
 			text = "<t size='1.2' align='center'>MARKET</t>"; //--- ToDo: Localize;
@@ -24,7 +24,7 @@ class marketView
 			h = 1 * GUI_GRID_H;
 			colorBackground[] = {0,0,0,0.8};
 		};
-		class IGUIBack_2200: IGUIBack
+		class Life_IGUIBack_2200: Life_IGUIBack
 		{
 			idc = 2200;
 			x = 5 * GUI_GRID_W + GUI_GRID_X;
@@ -32,7 +32,7 @@ class marketView
 			w = 30 * GUI_GRID_W;
 			h = 21 * GUI_GRID_H;
 		};
-		class lblResourceName: RscText
+		class lblResourceName: Life_RscText
 		{
 			idc = 1000;
 			text = "Resource"; //--- ToDo: Localize;
@@ -42,7 +42,7 @@ class marketView
 			h = 2.5 * GUI_GRID_H;
 			sizeEx = 2 * GUI_GRID_H;
 		};
-		class IGUIBack_2201: IGUIBack
+		class IGUIBack_2201: Life_IGUIBack
 		{
 			idc = 2201;
 			x = 17 * GUI_GRID_W + GUI_GRID_X;
@@ -50,7 +50,7 @@ class marketView
 			w = 17 * GUI_GRID_W;
 			h = 2.5 * GUI_GRID_H;
 		};
-		class lblResourcePrice: RscText
+		class lblResourcePrice: Life_RscText
 		{
 			idc = 1001;
 			text = "XXXXXXXXXXXXX$"; //--- ToDo: Localize;
@@ -61,7 +61,7 @@ class marketView
 			colorText[] = {0,1,0,1};
 			sizeEx = 1.3 * GUI_GRID_H;
 		};
-		class IGUIBack_2202: IGUIBack
+		class IGUIBack_2202: Life_IGUIBack
 		{
 			idc = 2202;
 			x = 17 * GUI_GRID_W + GUI_GRID_X;
@@ -69,7 +69,7 @@ class marketView
 			w = 17 * GUI_GRID_W;
 			h = 12 * GUI_GRID_H;
 		};
-		class RscStructuredText_1101: RscStructuredText
+		class RscStructuredText_1101: Life_RscStructuredText
 		{
 			idc = 1101;
 			text = "<t align='center'>Exchange</t>"; //--- ToDo: Localize;
@@ -79,7 +79,7 @@ class marketView
 			h = 1 * GUI_GRID_H;
 			colorBackground[] = {0,0,0,0.8};
 		};
-		class picTrendGlobal: RscPicture
+		class picTrendGlobal: Life_RscPicture
 		{
 			idc = 1200;
 			text = "#(argb,8,8,3)color(1,1,1,1)";
@@ -88,7 +88,7 @@ class marketView
 			w = 3 * GUI_GRID_W;
 			h = 2.5 * GUI_GRID_H;
 		};
-		class picTrendLocal: RscPicture
+		class picTrendLocal: Life_RscPicture
 		{
 			idc = 1201;
 			text = "#(argb,8,8,3)color(1,1,1,1)";
@@ -97,7 +97,7 @@ class marketView
 			w = 3 * GUI_GRID_W;
 			h = 2.5 * GUI_GRID_H;
 		};
-		class RscText_1002: RscText
+		class RscText_1002: Life_RscText
 		{
 			idc = 1002;
 			text = "In the long time"; //--- ToDo: Localize;
@@ -107,7 +107,7 @@ class marketView
 			h = 1 * GUI_GRID_H;
 			sizeEx = 1.2 * GUI_GRID_H;
 		};
-		class RscText_1003: RscText
+		class RscText_1003: Life_RscText
 		{
 			idc = 1003;
 			text = "In the short time"; //--- ToDo: Localize;
@@ -117,7 +117,7 @@ class marketView
 			h = 1 * GUI_GRID_H;
 			sizeEx = 1.2 * GUI_GRID_H;
 		};
-		class lblTrendGlobal: RscText
+		class lblTrendGlobal: Life_RscText
 		{
 			idc = 1004;
 			text = "xxxxxxxx$"; //--- ToDo: Localize;
@@ -126,7 +126,7 @@ class marketView
 			w = 13 * GUI_GRID_W;
 			h = 1 * GUI_GRID_H;
 		};
-		class lblTrendLocal: RscText
+		class lblTrendLocal: Life_RscText
 		{
 			idc = 1005;
 			text = "xxxxxxxx$"; //--- ToDo: Localize;
@@ -139,7 +139,7 @@ class marketView
 	
 	class controls
 	{
-		class bClose: RscButtonMenu
+		class bClose: Life_RscButtonMenu
 		{
 			idc = 2400;
 			text = "Close"; //--- ToDo: Localize;
@@ -149,7 +149,7 @@ class marketView
 			h = 1 * GUI_GRID_H;
 			onButtonClick="closeDialog 0;";
 		};
-		class listResources: RscListbox
+		class listResources: Life_RscListbox
 		{
 			idc = 1500;
 			x = 5.5 * GUI_GRID_W + GUI_GRID_X;
