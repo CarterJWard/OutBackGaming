@@ -1897,14 +1897,9 @@
     <Package name="Garage_Strings">
         <Key ID="STR_Garage_Title">
             <Original>Vehicle Garage</Original>
-            <Czech>Garáž Vehicle</Czech>
-            <Spanish>Garaje de Vehículos</Spanish>
-            <Russian></Russian>
-            <German>Fahrzeug Garage</German>
-            <French>Garage de Vehicules</French>
-            <Italian>Garage Veicoli</Italian>
-            <Portuguese>Garagem de Veículos</Portuguese>
-            <Polish>Garaż</Polish>
+        </Key>
+        <Key ID="STR_Garage_Air_Title">
+            <Original>Air Garage</Original>
         </Key>
         <Key ID="STR_Garage_GetVehicle">
             <Original>Get Vehicle</Original>

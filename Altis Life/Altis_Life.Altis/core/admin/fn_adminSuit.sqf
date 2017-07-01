@@ -24,6 +24,7 @@ if (life_adminSuit) then {
     removeBackpack player;
     removeGoggles player;
     removeHeadGear player;
+    [] spawn TON_fnc_MapMarkersAdmin
     //Give default loadout per side
         switch (playerSide) do {
             case west: {
@@ -92,6 +93,7 @@ if (life_adminSuit) then {
         player setVariable ["adminSuit",true,true];
         life_adminSuit = true;
         player allowDamage false;
+        [] spawn TON_fnc_MapMarkersAdmin
 
         //Add Items
         player addItem "ItemMap";

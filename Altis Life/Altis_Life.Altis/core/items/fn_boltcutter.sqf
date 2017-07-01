@@ -28,8 +28,12 @@ for "_i" from 1 to _doors do {
 if (_door isEqualTo 0) exitWith {hint localize "STR_Cop_NotaDoor"}; //Not near a door to be broken into.
 if ((_building getVariable [format["bis_disabled_Door_%1",_door],0]) isEqualTo 0) exitWith {hint localize "STR_House_Raid_DoorUnlocked"};
 
-if ((nearestObject [[16019.5,16952.9,0],"Land_Dome_Big_F"]) == _building || (nearestObject [[16019.5,16952.9,0],"Land_Research_house_V1_F"]) == _building) then {
-    [[1,2],"STR_ISTR_Bolt_AlertFed",true,[]] remoteExecCall ["life_fnc_broadcast",RCLIENT];
+if ((nearestObject [[16019.5,16952.9,0],"Land_Dome_Big_F"]) == _building || (nearestObject [[16019.5,16952.9,0],"Land_Research_house_V1_F"]) == _building) then { 
+    [3,"<t size='1.5'><t color='#e02124'><t align='center'><t font='TahomaB'><t underline='true'>FEDERAL RESERVE<br /><br/></t></t></t></t></t><t size ='1.2'>The alarm at the federal reserve alarm has been tripped. All units need to respond NOW. The attackers are considered armed and dangerous and lethal force is authorised on all armed persons in and around the area. The government has authorised full escaltion as large amount of goverment funds is stored there.</t>"] remoteExec ["life_fnc_broadcast", west];
+    
+    [3,"<t size='1.5'><t color='#e02124'><t align='center'><t font='TahomaB'><t underline='true'>FEDERAL RESERVE<br /><br/></t></t></t></t></t><t size ='1.2'>Authorities have confirmed that armed rebels have begun breaking into the federal reserve. All citizens are ordered to keep away from the situation as these robbery may be heavily armed and extremely dangerous, Stay safe everyone.</t>"] remoteExec ["life_fnc_broadcast", civilian];
+
+    [3,"<t size='1.5'><t color='#e02124'><t align='center'><t font='TahomaB'><t underline='true'>FEDERAL RESERVE<br /><br/></t></t></t></t></t><t size ='1.2'>Someone has begun breaking into the federal reserve. EMS are to keep away until given the all clear, Stay safe</t>"] remoteExec ["life_fnc_broadcast", independent];
 } else {
     [0,"STR_ISTR_Bolt_AlertHouse",true,[profileName]] remoteExecCall ["life_fnc_broadcast",RCLIENT];
 };

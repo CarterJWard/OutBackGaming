@@ -21,7 +21,9 @@ if (typeOf _vault isEqualTo "Land_CargoBox_V1_F") then {
     if (!([false,"blastingcharge",1] call life_fnc_handleInv)) exitWith {}; //Error?
 
     _vault setVariable ["chargeplaced",true,true];
-    [0,"STR_ISTR_Blast_Placed"] remoteExecCall ["life_fnc_broadcast",west];
+    [3,"<t size='1.5'><t color='#e02124'><t align='center'><t font='TahomaB'><t underline='true'>FEDERAL RESERVE<br /><br/></t></t></t></t></t><t size ='1.2'>The blasting charge has been placed on the vault. All units need to respond NOW. The attackers are considered armed and dangerous and lethal force is authorised on all armed persons in and around the area. The government has authorised full escaltion as large amount of goverment funds is stored there.</t>"] remoteExec ["life_fnc_broadcast", west];
+    
+    [3,"<t size='1.5'><t color='#e02124'><t align='center'><t font='TahomaB'><t underline='true'>FEDERAL RESERVE<br /><br/></t></t></t></t></t><t size ='1.2'>Authorities have confirmed that armed rebels have broken into the federal reserve. All citizens are ordered to keep away from the situation as these robbery may be heavily armed and extremely dangerous, Stay safe everyone.</t>"] remoteExec ["life_fnc_broadcast", civilian];
     hint localize "STR_ISTR_Blast_KeepOff";
     _handle = [] spawn life_fnc_demoChargeTimer;
     [] remoteExec ["life_fnc_demoChargeTimer",west];
