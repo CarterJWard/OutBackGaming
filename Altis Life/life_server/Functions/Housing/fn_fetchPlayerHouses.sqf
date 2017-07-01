@@ -3,32 +3,41 @@
     File : fn_fetchPlayerHouses.sqf
     Author: Bryan "Tonic" Boardwine
     Modified : NiiRoZz
-
     Description:
     1. Fetches all the players houses and sets them up.
     2. Fetches all the players containers and sets them up.
 */
-private["_query","_containers","_containerss","_houses"];
+private ["_query","_containers","_containerss","_houses","_furnituress"];
 params [
     ["_uid","",[""]]
 ];
 if (_uid isEqualTo "") exitWith {};
 
-_query = format["SELECT pid, pos, classname, inventory, gear, dir, id FROM containers WHERE pid='%1' AND owned='1'",_uid];
+_query = format ["SELECT pid, pos, classname, inventory, gear, dir, id FROM containers WHERE pid='%1' AND owned='1'",_uid];
 _containers = [_query,2,true] call DB_fnc_asyncCall;
 
 _containerss = [];
+_furnituress = [];
 {
-    _position = call compile format["%1",_x select 1];
+    _position = call compile format ["%1",_x select 1];
     _house = nearestObject [_position, "House"];
-    _direction = call compile format["%1",_x select 5];
+    _direction = call compile format ["%1",_x select 5];
     _trunk = [_x select 3] call DB_fnc_mresToArray;
-    if (_trunk isEqualType "") then {_trunk = call compile format["%1", _trunk];};
+    if (_trunk isEqualType "") then {_trunk = call compile format ["%1", _trunk];};
     _gear = [_x select 4] call DB_fnc_mresToArray;
-    if (_gear isEqualType "") then {_gear = call compile format["%1", _gear];};
+    if (_gear isEqualType "") then {_gear = call compile format ["%1", _gear];};
+    //furniture and container split
+	_className = _x select 2;
+	_type = getText(missionConfigFile >> "CfgDonkeyPunchCustoms" >> _className);
+	_isFurniture = getNumber(missionConfigFile >> "VirtualItems" >> _type >> "furniture") isEqualTo 1;
     _container = createVehicle[_x select 2,[0,0,999],[],0,"NONE"];
     waitUntil {!isNil "_container" && {!isNull _container}};
-    _containerss pushBack _container;
+    if!(_isFurniture)then{
+		_containerss pushBack _container;
+	}else{
+		_furnituress pushBack _container;
+		_container enableSimulationGlobal false;
+	};
     _container allowDamage false;
     _container setPosATL _position;
     _container setVectorDirAndUp _direction;
@@ -42,9 +51,9 @@ _containerss = [];
     _fixZ = (_currentPos select 2) - _posZ;
     _container setPosATL [(_posX - _fixX), (_posY - _fixY), (_posZ - _fixZ)];
     _container setVectorDirAndUp _direction;
-    _container setVariable["Trunk",_trunk,true];
-    _container setVariable["container_owner",[_x select 0],true];
-    _container setVariable["container_id",_x select 6,true];
+    _container setVariable ["Trunk",_trunk,true];
+    _container setVariable ["container_owner",[_x select 0],true];
+    _container setVariable ["container_id",_x select 6,true];
     clearWeaponCargoGlobal _container;
     clearItemCargoGlobal _container;
     clearMagazineCargoGlobal _container;
@@ -67,18 +76,18 @@ _containerss = [];
             _container addBackpackCargoGlobal [((_backpacks select 0) select _i), ((_backpacks select 1) select _i)];
         };
     };
-    _house setVariable["containers",_containerss,true];
+    _house setVariable ["containers",_containerss,true];
 } forEach _containers;
 
-_query = format["SELECT pid, pos FROM houses WHERE pid='%1' AND owned='1'",_uid];
+_query = format ["SELECT pid, pos FROM houses WHERE pid='%1' AND owned='1'",_uid];
 _houses = [_query,2,true] call DB_fnc_asyncCall;
 
 _return = [];
 {
-    _pos = call compile format["%1",_x select 1];
+    _pos = call compile format ["%1",_x select 1];
     _house = nearestObject [_pos, "House"];
     _house allowDamage false;
     _return pushBack [_x select 1,_containerss];
 } forEach _houses;
 
-missionNamespace setVariable[format["houses_%1",_uid],_return];
+missionNamespace setVariable [format ["houses_%1",_uid],_return];
