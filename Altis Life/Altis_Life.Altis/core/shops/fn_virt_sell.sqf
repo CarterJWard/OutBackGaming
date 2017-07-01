@@ -6,10 +6,17 @@
     Description:
     Sell a virtual item to the store / shop
 */
-private["_type","_index","_price","_amount","_name"];
+private["_type","_index","_price","_amount","_name","_marketprice"];
 if ((lbCurSel 2402) isEqualTo -1) exitWith {};
 _type = lbData[2402,(lbCurSel 2402)];
 _price = M_CONFIG(getNumber,"VirtualItems",_type,"sellPrice");
+
+_marketprice = [_type] call life_fnc_marketGetSellPrice;
+if(_marketprice != -1) then
+{
+	_price = _marketprice;
+};
+
 if (_price isEqualTo -1) exitWith {};
 
 _amount = ctrlText 2405;
@@ -24,21 +31,31 @@ _name = M_CONFIG(getText,"VirtualItems",_type,"displayName");
 if ([false,_type,_amount] call life_fnc_handleInv) then {
     hint format[localize "STR_Shop_Virt_SellItem",_amount,(localize _name),[_price] call life_fnc_numberText];
     CASH = CASH + _price;
+	
+	if(_marketprice != -1) then 
+	{ 
+		[_type, _amount] spawn
+		{
+			sleep 120;
+			[_this select 0,_this select 1] call life_fnc_marketSell;
+		};
+	};
+	
     [] call life_fnc_virt_update;
 };
 
 if (life_shop_type isEqualTo "drugdealer") then {
     private["_array","_ind","_val"];
-    _array = life_shop_npc getVariable["sellers",[]];
+    _array = life_shop_npc getVariable ["sellers",[]];
     _ind = [getPlayerUID player,_array] call TON_fnc_index;
     if (!(_ind isEqualTo -1)) then {
         _val = ((_array select _ind) select 2);
         _val = _val + _price;
         _array set[_ind,[getPlayerUID player,profileName,_val]];
-        life_shop_npc setVariable["sellers",_array,true];
+        life_shop_npc setVariable ["sellers",_array,true];
     } else {
         _array pushBack [getPlayerUID player,profileName,_price];
-        life_shop_npc setVariable["sellers",_array,true];
+        life_shop_npc setVariable ["sellers",_array,true];
     };
 };
 

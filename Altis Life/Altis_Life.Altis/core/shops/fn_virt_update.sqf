@@ -6,7 +6,7 @@
     Description:
     Update and fill the virtual shop menu.
 */
-private["_item_list","_gear_list","_shopItems","_name","_price"];
+private["_item_list","_gear_list","_shopItems","_name","_price","_marketprice"];
 disableSerialization;
 
 //Setup control vars.
@@ -24,8 +24,15 @@ _shopItems = M_CONFIG(getArray,"VirtualShops",life_shop_type,"items");
 {
     _displayName = M_CONFIG(getText,"VirtualItems",_x,"displayName");
     _price = M_CONFIG(getNumber,"VirtualItems",_x,"buyPrice");
+	
+	_marketprice = [_x] call life_fnc_marketGetBuyPrice;
+	if(_marketprice != -1) then
+		{
+			_price = _marketprice;
+		};
+	
     if (!(_price isEqualTo -1)) then {
-        _item_list lbAdd format["%1  ($%2)",(localize _displayName),[_price] call life_fnc_numberText];
+        _item_list lbAdd format["%1  (%2$)",(localize _displayName),[_price] call life_fnc_numberText];
         _item_list lbSetData [(lbSize _item_list)-1,_x];
         _item_list lbSetValue [(lbSize _item_list)-1,_price];
         _icon = M_CONFIG(getText,"VirtualItems",_x,"icon");
@@ -48,3 +55,5 @@ _shopItems = M_CONFIG(getArray,"VirtualShops",life_shop_type,"items");
         };
     };
 } forEach _shopItems;
+
+[_shopItems] spawn life_fnc_marketShortView;

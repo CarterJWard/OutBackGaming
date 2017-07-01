@@ -34,3 +34,4 @@
 #include "copMsgAll.hpp" //Cop Menu Extended 
 #include "taxiMenu.hpp" //Taxi Menu
 #include "prof.hpp" //prof Menu
+#include "market.hpp" //Market

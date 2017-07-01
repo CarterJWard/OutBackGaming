@@ -375,7 +375,7 @@ class playerSettings {
 		 y = 0.7016 * safezoneH + safezoneY;
 		 w = 0.028875 * safezoneW;
 		 h = 0.0504 * safezoneH;
-		 onButtonClick = "createDialog ""life_dynmarket_prices"";";
+		 onButtonClick = "[] spawn life_fnc_openMarketView";
 		 tooltip = "Market"; //--- ToDo: Localize;
 		 colorBackground[] = {-1,-1,-1,-1};
 		 colorBackgroundFocused[] = {1,1,1,0.12};
