@@ -6,11 +6,11 @@
 // Map configuration
 class Maverick_IntroCam_Altis {
 	class Info {
-		secondsPerCam 	= 25;
+		secondsPerCam 	= 17;
 		selectRandom 	= 0;
 		music			= 1;
 		musicVolume		= 0.8;
-		musicName		= "cam_intro";
+		musicName		= "intro";
 	};
 	class Positions {
 		data[] = {

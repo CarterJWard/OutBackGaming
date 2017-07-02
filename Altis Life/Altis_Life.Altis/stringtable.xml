@@ -221,6 +221,9 @@
             <Portuguese>Equipamentos da Polícia</Portuguese>
             <Polish>Zbrojownia Policji</Polish>
         </Key>
+        <Key ID="STR_Shops_Furniture">
+            <Original>Furniture Shop</Original>
+        </Key>
         <Key ID="STR_Shops_Cement">
             <Original>Juan's Cement Laying</Original>
             <Czech>Juanovo Cement Pokládka</Czech>
@@ -3031,7 +3034,7 @@
             <Polish>Nie dostarczyłeś przesyłki z uwagi na to że zmarłeś.</Polish>
         </Key>
         <Key ID="STR_NOTF_HS_NoCash">
-            <Original>You do not have $%1 to be healed</Original>
+            <Original>You do not have $%1 to be recieve this transplant</Original>
             <Czech>Nemáte $%1, aby se léčil</Czech>
             <Spanish>No tienes $%1 para ser curado</Spanish>
             <Russian></Russian>
@@ -3054,14 +3057,9 @@
         </Key>
         <Key ID="STR_NOTF_HS_PopUp">
             <Original>Spend $%1 to be fully healed?</Original>
-            <Czech>Útrata $%1 musí být zcela vyléčit?</Czech>
-            <French>Donnez $%1 pour être complètement guéri?</French>
-            <Spanish>Gastar $%1 que se haya recuperado por completo?</Spanish>
-            <Italian>Spendere $%1 di essere completamente guarito?</Italian>
-            <Polish>Wydać $%1 w pełni uzdrowiony?</Polish>
-            <Portuguese>Gastar US $%1 para ser totalmente curado?</Portuguese>
-            <Russian>Потратит $%1, чтобы быть полностью зажила?</Russian>
-            <German>Spend $%1 vollständig geheilt zu werden?</German>
+        </Key>
+        <Key ID="STR_NOTF_HS_PopUpKidney">
+            <Original>Spend $%1 to recieve a kidney transplant?</Original>
         </Key>
         <Key ID="STR_NOTF_HS_TITLE">
             <Original>Doctor</Original>
@@ -3074,16 +3072,11 @@
             <Russian>Врач</Russian>
             <German>Arzt</German>
         </Key>
+        <Key ID="STR_NOTF_NTN">
+            <Original>You do not need a kidney transplant.</Original>
+        </Key>
         <Key ID="STR_NOTF_HS_Healing">
             <Original>Please stay still</Original>
-            <Czech>Prosím, zůstat v klidu</Czech>
-            <Spanish>Por favor, no te muevas</Spanish>
-            <Russian></Russian>
-            <German>Bitte bewege dich nicht</German>
-            <French>Ne bougez pas</French>
-            <Italian>Attendi pazientemente</Italian>
-            <Portuguese>Fique parado por favor</Portuguese>
-            <Polish>Proszę się nie ruszać</Polish>
         </Key>
         <Key ID="STR_NOTF_HS_ToFar">
             <Original>You need to be within 5m while the doctor is healing you</Original>
@@ -8989,6 +8982,9 @@
             <Portuguese>Peixaria</Portuguese>
             <Polish>Sklep rybny</Polish>
             <Italian>Pescivendolo</Italian>
+        </Key>
+        <Key ID="STR_MAR_Organ">
+            <Original>Organ Dealer</Original>
         </Key>
         <Key ID="STR_MAR_Hospital">
             <Original>Hospital</Original>

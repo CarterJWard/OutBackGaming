@@ -13,7 +13,7 @@ class VirtualShops {
         side = "civ";
         license = "";
         level[] = { "", "", -1, "" };
-        items[] = { "waterBottle", "rabbit", "apple", "redgull", "tbacon", "pickaxe", "toolkit", "pesticide", "fuelFull", "peach", "storagesmall", "storagebig", "rabbit_raw", "hen_raw", "rooster_raw", "sheep_raw", "goat_raw","furnituredesk", "furniturechair", "furniturebagshort", "furnitureopenlaptop", "furniturecampingtable", "furnituresleepingbag", "furnituresleepingbagblue", "furnituresleepingbagbrown", "furnituresunchair", "furnituresunchairgreen", "furnituretenta", "furnituremapaltis", "furniturepalletvert", "furnituremetalrack", "furniturewoodblue", "furniturefmradio", "furnitureportgen", "furnituretarget", "furniturewoodtable" };
+        items[] = { "waterBottle", "rabbit", "apple", "redgull", "tbacon", "pickaxe", "toolkit", "pesticide", "fuelFull", "peach", "rabbit_raw", "hen_raw", "rooster_raw", "sheep_raw", "goat_raw"};
     };
 
     class med_market {
@@ -145,11 +145,19 @@ class VirtualShops {
     };
 
     class furniture {
-        name = "string";
+        name = "STR_Shops_Furniture";
         side = "civ";
         license = "";
         level[] = {"", "", -1, ""};
-        items[] = {"furnituredesk", "furniturechair", "furniturebagshort", "furnitureopenlaptop", "furniturecampingtable", "furnituresleepingbag", "furnituresleepingbagblue", "furnituresleepingbagbrown", "furnituresunchair", "furnituresunchairgreen", "furnituretenta", "furnituremapaltis", "furniturepalletvert", "furnituremetalrack", "furniturewoodblue", "furniturefmradio", "furnitureportgen", "furnituretarget", "furniturewoodtable"};
+        items[] = {"storagesmall", "storagebig","furnituredesk", "furniturechair", "furniturebagshort", "furnitureopenlaptop", "furniturecampingtable", "furnituresleepingbag", "furnituresleepingbagblue", "furnituresleepingbagbrown", "furnituresunchair", "furnituresunchairgreen", "furnituretenta", "furnituremapaltis", "furniturepalletvert", "furnituremetalrack", "furniturewoodblue", "furniturefmradio", "furnitureportgen", "furnituretarget", "furniturewoodtable"};
+    };
+
+    class organ {
+        name = "STR_MAR_Organ";
+        side = "civ";
+        license = "";
+        level[] = {"","",-1,""};
+        items[] = {"kidney"} 
     };
 };
 
@@ -172,10 +180,10 @@ class VirtualItems {
         variable = "kidney";
         displayName = "STR_Item_Kidney";
         weight = 5;
-        buyPrice = 600;
+        buyPrice = 100000;
         sellPrice = 50000;
         illegal = true;
-        edible = 1;
+        edible = 100;
         icon = "icons\ico_kidney.paa";
     };
 
