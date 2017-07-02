@@ -157,7 +157,7 @@ class VirtualShops {
         side = "civ";
         license = "";
         level[] = {"","",-1,""};
-        items[] = {"kidney"} 
+        items[] = {"kidney"}; 
     };
 };
 
