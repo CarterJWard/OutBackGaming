@@ -312,6 +312,7 @@ class Life_Client_Core {
         class PlayerInBuilding {};
         class raidHouse {};
         class sellHouse {};
+        class buildFurniture {};
     };
 
     class Items    {
