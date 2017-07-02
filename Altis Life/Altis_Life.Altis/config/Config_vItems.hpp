@@ -13,7 +13,7 @@ class VirtualShops {
         side = "civ";
         license = "";
         level[] = { "", "", -1, "" };
-        items[] = { "waterBottle", "rabbit", "apple", "redgull", "tbacon", "pickaxe", "toolkit", "pesticide", "fuelFull", "peach", "storagesmall", "storagebig", "rabbit_raw", "hen_raw", "rooster_raw", "sheep_raw", "goat_raw" };
+        items[] = { "waterBottle", "rabbit", "apple", "redgull", "tbacon", "pickaxe", "toolkit", "pesticide", "fuelFull", "peach", "storagesmall", "storagebig", "rabbit_raw", "hen_raw", "rooster_raw", "sheep_raw", "goat_raw","furnituredesk", "furniturechair", "furniturebagshort", "furnitureopenlaptop", "furniturecampingtable", "furnituresleepingbag", "furnituresleepingbagblue", "furnituresleepingbagbrown", "furnituresunchair", "furnituresunchairgreen", "furnituretenta", "furnituremapaltis", "furniturepalletvert", "furnituremetalrack", "furniturewoodblue", "furniturefmradio", "furnitureportgen", "furnituretarget", "furniturewoodtable" };
     };
 
     class med_market {
@@ -353,28 +353,6 @@ class VirtualItems {
         illegal = true;
         edible = -1;
         icon = "icons\ico_defuseKit.paa";
-    };
-
-    class storagesmall {
-        variable = "storageSmall";
-        displayName = "STR_Item_StorageBS";
-        weight = 5;
-        buyPrice = 75000;
-        sellPrice = 50000;
-        illegal = false;
-        edible = -1;
-        icon = "icons\ico_storageSmall.paa";
-    };
-
-    class storagebig {
-        variable = "storageBig";
-        displayName = "STR_Item_StorageBL";
-        weight = 10;
-        buyPrice = 150000;
-        sellPrice = 125000;
-        illegal = false;
-        edible = -1;
-        icon = "icons\ico_storageBig.paa";
     };
 
     class pesticide {
