@@ -105,7 +105,7 @@ if (isPlayer _curObject && _curObject isKindOf "Man") then {
             [_curObject] call life_fnc_copInteractionMenu;
         };
         if ((!(_curObject getVariable ["restrained",false])) && !dialog && playerSide isEqualTo civilian) then {
-            [_curObject] call life_fnc_civInteractionMenu;
+            [_curObject] call life_fnc_copInteractionMenu;
         };
     };
 } else {

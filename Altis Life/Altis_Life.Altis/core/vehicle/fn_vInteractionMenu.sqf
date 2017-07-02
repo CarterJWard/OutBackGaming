@@ -113,20 +113,14 @@ if (playerSide isEqualTo west) then {
                     _Btn3 ctrlSetText localize "STR_FuelTank_Supply";
                     _Btn3 buttonSetAction "[life_vInact_curTarget] spawn life_fnc_fuelSupply";
                     _Btn3 ctrlShow true;
-                } else { 
-                    if (!(crew _curTarget isEqualTo [])) then {
-                    _Btn3 ctrlSetText localize "STR_vInAct_PullOut";
-                    _Btn3 buttonSetAction "[life_vInact_curTarget] spawn life_fnc_pulloutAction; closeDialog 0;";
-                    _Btn3 ctrlShow true;
-                    } else {
-                        {
-                        if (player distance (getMarkerPos _x) < 20) then {
+                }else{
+                    {
+                        if (player distance (getMarkerPos _x) < 20) exitWith {
                             _Btn3 ctrlSetText localize "STR_FuelTank_Store";
                             _Btn3 buttonSetAction "[life_vInact_curTarget] spawn life_fnc_fuelStore";
                             _Btn3 ctrlShow true;
-                            };
-                        } forEach ["fuel_storage_1","fuel_storage_2"];
-                    };
+                        };
+                    } forEach ["fuel_storage_1","fuel_storage_2"];
                 };
             };
         };

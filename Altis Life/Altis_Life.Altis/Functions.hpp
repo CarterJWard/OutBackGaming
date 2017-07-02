@@ -146,7 +146,6 @@ class Life_Client_Core {
         class tazed {};
         class jailBreakTimer {};
         class recieveKidney {};
-        class civInteractionMenu {};
     };
 
     class Config {

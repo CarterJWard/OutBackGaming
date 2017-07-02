@@ -6,7 +6,7 @@
 
 */
 if (playerSide isEqualTo west || (isNull objectParent player)) exitWith {};
-if (player getVariable "restrained" || player getVariable "tied") then {
+if (player getVariable "restrained") then {
     detach player;
     player setVariable["Escorting",false,true];
     player setVariable["transporting",false,true];
