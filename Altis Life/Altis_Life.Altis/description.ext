@@ -109,12 +109,15 @@ class CfgSounds {
         sound[] = {"\sounds\seatbelt.ogg",1.0, 1};
         titles[] = {};
     };
+};
 
-    class intro {
-        name = "intro";
-        sound[] = {"\sounds\intro.ogg",1.0, 1};
-        titles[] = {};
-    };
+class CfgMusic {
+	tracks[]={};
+
+	class Intro {
+		name = "intro";
+		sound[] = {"\sounds\intro.ogg", 1, 1.0};
+	};
 };
 
 class CfgDebriefing {
