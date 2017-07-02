@@ -90,3 +90,17 @@ _this select 0 setFlagTexture _flagTexture;
 [[0,1],"STR_GNOTF_CaptureSuccess",true,[name player,(group player) getVariable "gang_name"]] remoteExecCall ["life_fnc_broadcast",RCLIENT];
 _hideout setVariable ["inCapture",false,true];
 _hideout setVariable ["gangOwner",group player,true];
+
+//Markers
+deleteMarker "gangMarkerWT";
+deleteMarker "gangMarkerW";
+_marker = createMarker ["gangMarkerW", _hideout];
+_marker setMarkerColor "ColorRed";
+_marker setMarkerType "Empty";
+_marker	setMarkerShape "ELLIPSE";
+_marker setMarkerSize [75,75];
+_marker setMarkerBrush "DiagGrid";
+_markerText = createMarker ["gangMarkerWT", _hideout];
+_markerText setMarkerColor "ColorBlack";
+_markerText setMarkerText format ["Owned by %1", (group player) getVariable "gang_name" ];
+_markerText setMarkerType "mil_warning";

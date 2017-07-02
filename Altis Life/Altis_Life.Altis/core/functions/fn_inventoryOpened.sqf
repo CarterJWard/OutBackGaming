@@ -1,7 +1,7 @@
 #include "..\..\script_macros.hpp"
 /*
     File: fn_inventoryOpened.sqf
-    Author: Bryan "Tonic" Boardwine
+    Author: Bryan "Tonic" Boardwine 
 
     Description:
     For the mean time it blocks the player from opening another persons backpack
