@@ -28,6 +28,9 @@ mav_introcam_continue = false;
 
 // Display status bar
 9500 cutRsc["maverick_dialog_introcam_status","PLAIN"];
+{9501 cutRsc["maverick_dialog_introcam_logo","PLAIN"]; sleep 5; 9501 cutRsc ["Default","PLAIN"];}
+
+
 
 // In case the player enabled music
 if (getNumber(MissionconfigFile >> (format["Maverick_IntroCam_%1", worldName]) >> "Info" >> "music") == 1) then {

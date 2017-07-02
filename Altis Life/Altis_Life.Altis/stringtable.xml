@@ -3063,14 +3063,6 @@
         </Key>
         <Key ID="STR_NOTF_HS_TITLE">
             <Original>Doctor</Original>
-            <Czech>Doktor</Czech>
-            <French>Docteur</French>
-            <Spanish>Doctor</Spanish>
-            <Italian>Medico</Italian>
-            <Polish>Lekarz</Polish>
-            <Portuguese>Médico</Portuguese>
-            <Russian>Врач</Russian>
-            <German>Arzt</German>
         </Key>
         <Key ID="STR_NOTF_NTN">
             <Original>You do not need a kidney transplant.</Original>
@@ -9824,14 +9816,9 @@
         </Key>
         <Key ID="STR_MAR_Medical_Assistance">
             <Original>Medical Assistance</Original>
-            <Czech>lékařská pomoc</Czech>
-            <French>Assistance médicale</French>
-            <Spanish>Asistencia Médica</Spanish>
-            <Russian></Russian>
-            <German>Medizinischer Ersthelfer</German>
-            <Portuguese>Assistência Médica</Portuguese>
-            <Polish>Pomoc medyczna</Polish>
-            <Italian>Assistenza Medica</Italian>
+        </Key>
+        <Key ID="STR_MAR_Kidney_Transplant">
+            <Original>Kidney Transplant</Original>
         </Key>
         <Key ID="STR_MAR_Store_vehicle_in_Garage">
             <Original>Store vehicle in Garage</Original>

@@ -1,4 +1,4 @@
-disableChannels[]={0,1,2};
+disableChannels[] = {{0,true,true},{1,true,true},{2,true,true}};
 
 #include "Config_Spyglass.hpp"
 #include "CfgRemoteExec.hpp"

@@ -87,6 +87,7 @@ class Life_Client_Core {
         class jailBreak {};
         class takeKidney {};
         class robKidney {};
+        class kidneyTransplant {};
     };
 	
 	class CivTieing {

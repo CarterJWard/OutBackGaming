@@ -166,7 +166,7 @@ class Clothing {
         license = "swat";
         side = "cop";
         uniforms[] = {
-            { "U_I_CombatUniform", "Swat Uniform", 100, {"", "", -1} }
+            { "U_BG_Guerrilla_6_1", "Swat Uniform", 100, {"", "", -1} }
         }; 
         headgear[] = {
             { "NONE", "Remove Hat", 0, { "", "", -1 } }

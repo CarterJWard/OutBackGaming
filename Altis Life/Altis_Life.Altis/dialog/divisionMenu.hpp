@@ -1,9 +1,9 @@
-class life_cop_menu {
-    idd = 232920;
-    name= "life_cop_menu";
+class cop_divisionMenu {
+    idd = 3592;
+    name= "cop_divisionMenu";
     movingEnable = 0;
     enableSimulation = 1;
-    onLoad = "[] spawn life_fnc_copMenu;";
+    onLoad = "[] spawn life_fnc_adminMenu;"; 
 
     class controlsBackground {
         class MainBackground: Life_RscText {
@@ -17,8 +17,8 @@ class life_cop_menu {
 
         class Life_RscTitleBackground: Life_RscText {
             idc = -1;
-            colorBackground[] = {0.141,0.412,0.847,1};
-            text = "Cop Menu Extended";
+            colorBackground[] = {"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.3843])", "(profilenamespace getvariable ['GUI_BCG_RGB_G',0.7019])", "(profilenamespace getvariable ['GUI_BCG_RGB_B',0.8862])", "(profilenamespace getvariable ['GUI_BCG_RGB_A',0.7])"};
+            text = "$STR_Admin_Title";
             x = 0.314375 * safezoneW + safezoneX;
             y = 0.291 * safezoneH + safezoneY;
             w = 0.37125 * safezoneW;
@@ -39,9 +39,8 @@ class life_cop_menu {
 
         class RscButtonMenu_2402: Life_RscButtonMenu {
             idc = -1;
-            text = "Promote Cop";
-			tooltip = "Promote the selected cop";
-            onButtonClick = "[] call life_fnc_copPromote;";
+            text = "$STR_Admin_GetID";
+            onButtonClick = "[] call life_fnc_admingetID;";
             x = 0.396875 * safezoneW + safezoneX;
             y = 0.643 * safezoneH + safezoneY;
             w = 0.061875 * safezoneW;
@@ -49,10 +48,9 @@ class life_cop_menu {
         };
 
         class RscButtonMenu_2403: Life_RscButtonMenu {
-            idc = 232921;
-            text = "Demote Cop";
-			tooltip = "Demote the selected cop";
-            onButtonClick = "[] call life_fnc_copDemote;";
+            idc = 2904;
+            text = "$STR_Admin_Compensate";
+            onButtonClick = "createDialog ""Life_Admin_Compensate"";";
             x = 0.469062 * safezoneW + safezoneX;
             y = 0.643 * safezoneH + safezoneY;
             w = 0.061875 * safezoneW;
@@ -60,43 +58,19 @@ class life_cop_menu {
         };
 
         class RscButtonMenu_2404: Life_RscButtonMenu {
-            idc = 232922;
-            text = "Blacklist Cop";
-			tooltip = "Blacklist the selected cop"; 
-            onButtonClick = "[] call life_fnc_copBlacklist;";
+            idc = 2905;
+            text = "$STR_Admin_Spectate";
+            onButtonClick = "[] call life_fnc_adminSpectate;";
             x = 0.54125 * safezoneW + safezoneX;
             y = 0.643 * safezoneH + safezoneY;
             w = 0.061875 * safezoneW;
             h = 0.022 * safezoneH;
         };
 
-        class RscButtonMenu_2410: Life_RscButtonMenu {
-            idc = 232931;
-            text = "Train Swat";
-			tooltip = "Gives the officer access to swat gear"; 
-            onButtonClick = "[] call life_fnc_copSwatG;";
-            x = 0.54125 * safezoneW + safezoneX;
-            y = 0.676 * safezoneH + safezoneY;
-            w = 0.061875 * safezoneW;
-            h = 0.022 * safezoneH;
-        };
-
-        class RscButtonMenu_2411: Life_RscButtonMenu {
-            idc = 232932;
-            text = "Revoke Swat";
-			tooltip = "Takes away swat training"; 
-            onButtonClick = "[] call life_fnc_copSwatD;";
-            x = 0.613437 * safezoneW + safezoneX;
-            y = 0.676 * safezoneH + safezoneY;
-            w = 0.061875 * safezoneW;
-            h = 0.022 * safezoneH;
-        };
-
         class RscButtonMenu_2405: Life_RscButtonMenu {
-            idc = 232923;
-            text = "Marshall Law";
-			tooltip = "Call Marshall Law upon a city.";
-            onButtonClick = "[] call life_fnc_copMarshallLaw;";
+            idc = 2906;
+            text = "$STR_Admin_Teleport";
+            onButtonClick = "[] call life_fnc_adminTeleport; hint 'Select where you would like to teleport';";
             x = 0.613437 * safezoneW + safezoneX;
             y = 0.643 * safezoneH + safezoneY;
             w = 0.061875 * safezoneW;
@@ -104,10 +78,9 @@ class life_cop_menu {
         };
 
         class RscButtonMenu_2401: Life_RscButtonMenu {
-            idc = 232924;
-            text = "Msg All";
-			tooltip = "Public Service Announcment.";
-            onButtonClick = "[] call life_fnc_copMsgAllAction;";
+            idc = 2907;
+            text = "$STR_Admin_TpHere";
+            onButtonClick = "[] call life_fnc_adminTpHere;";
             x = 0.324687 * safezoneW + safezoneX;
             y = 0.676 * safezoneH + safezoneY;
             w = 0.061875 * safezoneW;
@@ -115,34 +88,50 @@ class life_cop_menu {
         };
 
         class RscButtonMenu_2406: Life_RscButtonMenu {
-            idc = 232925;
-            text = "OnDuty";
-			tooltip = "Return to active Duty.";
-            onButtonClick = "[] spawn life_fnc_copOnDuty;";
+            idc = 2908;
+            text = "$STR_Admin_God";
+            onButtonClick = "[] call life_fnc_adminGodMode;";
             x = 0.396875 * safezoneW + safezoneX;
             y = 0.676 * safezoneH + safezoneY;
             w = 0.061875 * safezoneW;
             h = 0.022 * safezoneH;
         };
 
-		
         class RscButtonMenu_2407: Life_RscButtonMenu {
-            idc = 232926;
-            text = "OffDuty";
-            onButtonClick = "[] call life_fnc_copOffDuty;";
-			tooltip = "Let your coworkers know you are away.";
+            idc = 2909;
+            text = "$STR_Admin_Freeze";
+            onButtonClick = "[] call life_fnc_adminFreeze;";
             x = 0.469062 * safezoneW + safezoneX;
             y = 0.676 * safezoneH + safezoneY;
             w = 0.061875 * safezoneW;
             h = 0.022 * safezoneH;
         };
 
+        class RscButtonMenu_2408: Life_RscButtonMenu {
+            idc = 2910;
+            text = "$STR_Admin_Markers";
+            onButtonClick = "[] spawn life_fnc_adminMarkers;closeDialog 0;";
+            x = 0.54125 * safezoneW + safezoneX;
+            y = 0.676 * safezoneH + safezoneY;
+            w = 0.061875 * safezoneW;
+            h = 0.022 * safezoneH;
+        };
+
+        class RscButtonMenu_2409: Life_RscButtonMenu {
+            idc = 2911;
+            text = "$STR_Admin_Suit";
+            onButtonClick = "[] call life_fnc_adminSuit; closeDialog 0;";
+            x = 0.613437 * safezoneW + safezoneX;
+            y = 0.676 * safezoneH + safezoneY;
+            w = 0.061875 * safezoneW;
+            h = 0.022 * safezoneH;
+        };
 
         class PlayerList_Admin: Life_RscListBox {
-            idc = 232929;
+            idc = 2902;
             text = "";
             sizeEx = 0.035;
-            //onLBSelChanged = "[_this] spawn life_fnc_adminQuery";
+            onLBSelChanged = "[_this] spawn life_fnc_adminQuery";
             x = 0.324687 * safezoneW + safezoneX;
             y = 0.335 * safezoneH + safezoneY;
             w = 0.159844 * safezoneW;
@@ -150,7 +139,7 @@ class life_cop_menu {
         };
 
         class PlayerBInfo: Life_RscStructuredText {
-            idc = 232930;
+            idc = 2903;
             text = "";
             x = 0.489687 * safezoneW + safezoneX;
             y = 0.335 * safezoneH + safezoneY;

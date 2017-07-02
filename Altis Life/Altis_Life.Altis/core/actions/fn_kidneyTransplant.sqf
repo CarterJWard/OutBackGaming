@@ -29,4 +29,4 @@ if (_action) then {
     life_action_inUse = false;
 };
 
-[] call life_fnc_hudUpdate;
+[] call life_fnc_custHudUpdate;
