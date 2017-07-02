@@ -20,14 +20,14 @@ keyDownEHId = (findDisplay 46) displayAddEventHandler ["KeyDown", {
 		
 	if!(_builtObj isEqualTo 0)	then {
 		switch(_dikCode)do{
-		hintSilent str _this;
+		hint str _this;
 			case 1: {
 				detach _builtObj;
 				deleteVehicle _builtObj;
 				life_container_activeObj = objNull;
 				BuildPosX = 0;BuildPosY = 2;BuildPosZ = 1;BuildVecYaw = 0;BuildVecPitch = 0;BuildVecRoll = 0;
 				(findDisplay 46) displayRemoveEventHandler ["KeyDown", keyDownEHId];
-				hintSilent format["You have stopped Attaching the %1",_itemClassName];
+				hint format["You have stopped Attaching the %1",_itemClassName];
 				_handled = true;				
 			};
 			case 71: {

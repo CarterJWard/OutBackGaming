@@ -42,9 +42,9 @@ if (isNil {uiNamespace getVariable "life_sql_id"}) then {
     uiNamespace setVariable ["life_sql_id",life_sql_id];
         try {
         _result = EXTDB format["9:ADD_DATABASE:%1",EXTDB_SETTING(getText,"DatabaseName")];
-        if (!(_result isEqualTo "[1]")) then {throw "extDB2: Error with Database Connection"};
-        _result = EXTDB format["9:ADD_DATABASE_PROTOCOL:%2:SQL_RAW_V2:%1:ADD_QUOTES",FETCH_CONST(life_sql_id),EXTDB_SETTING(getText,"DatabaseName")];
-        if (!(_result isEqualTo "[1]")) then {throw "extDB2: Error with Database Connection"};
+        if (!(_result isEqualTo "[1]")) then {throw "extDB3: Error with Database Connection"};
+        _result = EXTDB format["9:ADD_DATABASE_PROTOCOL:%2:SQL:%1:TEXT2",FETCH_CONST(life_sql_id),EXTDB_SETTING(getText,"DatabaseName")];
+        if (!(_result isEqualTo "[1]")) then {throw "extDB3: Error with Database Connection"};
     } catch {
         diag_log _exception;
         life_server_extDB_notLoaded = [true, _exception];

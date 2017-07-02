@@ -44,7 +44,7 @@ class Housing {
             garageSpawnDir = 0;
             garageBlacklists[] = {};
             lightPos[] = {0,-2,3.8};
-            furniture = 14;
+            furniture = 16;
         };
 
         class Land_i_House_Big_01_V2_F : Land_i_House_Big_01_V1_F{};
@@ -89,7 +89,7 @@ class Housing {
             garageSpawnDir = 0;
             garageBlacklists[] = {};
             lightPos[] = {-3.3,1,2.5};
-            furniture = 10;
+            furniture = 12;
         };
 
         class Land_i_House_Small_03_V3_F : Land_i_House_Small_03_V1_F{};
