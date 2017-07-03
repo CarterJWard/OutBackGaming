@@ -28,7 +28,7 @@ mav_introcam_continue = false;
 
 // Display status bar
 9500 cutRsc["maverick_dialog_introcam_status","PLAIN"];
-["<img image='\textures\sign\logo.paa'Test>",0.4375,0.42,5,2,2,9459] spawn bis_fnc_dynamicText;
+["<img image='textures\sign\logo.paa',>",0.4375,0.42,5,2,2,9459] spawn bis_fnc_dynamicText;
 
 
 

@@ -132,6 +132,19 @@ class CarShops {
             { "B_Boat_Armed_01_minigun_F", { "life_gigcoplevel25", "SCALAR", 3 } }
         };
     };
+    
+    class donor_3 {
+        side = "civ";
+        vehicles[] = {
+            { "C_SUV_01_F", {"life_donorLevel", "SCALAR", 3} },
+            { "C_Offroad_01_F",{"life_donorLevel", "SCALAR", 3} },
+            { "C_Truck_02_covered_F",{"life_donorLevel","SCALAR", 3} },
+            { "B_Heli_Light_01_F", { "life_donorLevel", "SCALAR", 3} },
+            { "I_Heli_Transport_02_F", { "life_donorLevel", "SCALAR", 3} },
+            { "O_Heli_Light_02_unarmed_F", { "life_donorLevel", "SCALAR", 3} },
+            { "B_Heli_Transport_03_unarmed_F", { "life_donorLevel", "SCALAR", 3} }
+        };
+    };
 };
 
 class LifeCfgVehicles {
@@ -363,7 +376,11 @@ class LifeCfgVehicles {
             },"" },
             { "Police", "cop", {
                 "#(ai,64,64,1)Fresnel(1.3,7)"
-            },"" }
+            },"" },
+            { "Camo", "civ", {
+                "textures\vehicles\donor3\offroad1.jpg"
+            }, "life_donorLevel >= 3"}
+            
         };
     };
 
@@ -456,7 +473,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
     class I_Truck_02_covered_F {
         vItemSpace = 350;
         licenses[] = { {"trucking"}, {""}, {""}, {""} };
-        price = 100000;
+        price = 150000;
         textures[] = {
             { "Orange", "civ", {
                 "\A3\Soft_F_Beta\Truck_02\data\truck_02_kab_co.paa",
@@ -471,7 +488,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
     class I_Truck_02_transport_F {
         vItemSpace = 300;
         licenses[] = { {"trucking"}, {""}, {""}, {""} };
-        price = 75000;
+        price = 100000;
         textures[] = {
             { "Orange", "civ", {
                 "\A3\Soft_F_Beta\Truck_02\data\truck_02_kab_co.paa",
@@ -544,7 +561,28 @@ will modify the virtual space and the price of the vehicle, but other informatio
             },"" }, 
             { "EMS", "med", {
                 "textures\medic\medicSuv.jpg"
-            },"" }
+            },"" },
+            { "Li Mafu", "civ", {
+                "textures\vehicles\donor3\suv1.jpg"
+            },"life_donorLevel >= 3" },
+            { "Doodle", "civ",{
+                "textures\vehicles\donor3\suv2.jpg"
+            }, "life_donorLevel >= 3 "},
+            { "Blocks", "civ", {
+                "textures\vehicles\donor3\suv3.jpg"
+            }, "life_donorLevel >= 3"},
+            { "Demons", "civ", {
+                "textures\vehicles\donor3\suv4.jpg"
+            }, "life_donorLevel >= 3"},
+            { "Leopard", "civ", {
+                "textures\vehicles\donor3\suv5.jpg"
+            }, "life_donorLevel >= 3"},
+            { "Tribal Warfare", "civ", {
+                "textures\vehicles\donor3\suv6.jpg"
+            }, "life_donorLevel >= 3"},
+            { "Voodoo", "civ", {
+                "textures\vehicles\donor3\suv7.jpg"
+            }, "life_donorLevel >= 3"}
         };
     };
 
@@ -634,9 +672,24 @@ will modify the virtual space and the price of the vehicle, but other informatio
             { "Digi Green", "reb", {
                 "\a3\air_f\Heli_Light_01\Data\heli_light_01_ext_indp_co.paa"
             },"" },
-            { "EMS White", "med", {
-                "#(argb,8,8,3)color(1,1,1,0.8)"
-            },"" }
+            { "EMS", "med", {
+                "textures\medic\medLittleBird.jpg"
+            },"" },
+            {"Sea Breeze", "civ"{
+                "textures\vehicles\donor3\hummin.jpg"
+            }, "life_donorLevel >= 3"},
+            {"Fire Tribal", "civ"{
+                "textures\vehicles\donor3\hummin3.jpg"
+            }, "life_donorLevel >= 3"},
+            {"Demon", "civ"{
+                "textures\vehicles\donor3\hummin4.jpg"
+            }, "life_donorLevel >= 3"},
+            {"Wolf Pack", "civ"{
+                "textures\vehicles\donor3\hummin5.jpg"
+            }, "life_donorLevel >= 3"},
+            {"Fire Flower", "civ"{
+                "textures\vehicles\donor3\hummin6.jpg"
+            }, "life_donorLevel >= 3"}
         };
     };
 
@@ -741,5 +794,17 @@ will modify the virtual space and the price of the vehicle, but other informatio
         licenses[] = {{"rebel"},{""},{""},{""}};
         price = 550000;
         textures[] = {};
+    };
+
+    class C_Truck_02_covered_F {
+        vItemSpace = 350;
+        vFuelSpace = 5000;
+        licenses[] = {{"trucking"},{""},{""},{""}};
+        price = 150000;
+        textures[] = {
+            {"Rusty Cab", "civ"{
+                "textures\vehicles\donor3\zamakf1.jpg"
+            }, "life_donorLevel >= 3"}
+        };
     };
 };

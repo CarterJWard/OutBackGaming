@@ -27,7 +27,11 @@ TEXT HERE<br/><br/>
         [
             "ArmaLife",
                 "
-ArmaLife is a GitHub project which aims to update and keep adding new features to the original 'Altis Life RPG' by Tonic.<br/><br/>
+Lead - Larry Lancelot<br/>
+Scripting - It's Jordan<br/>
+Scripting - Fresqo
+Textures - Franklin
+Map - CptFruitLoops
                 "
         ]
     ];

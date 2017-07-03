@@ -21,7 +21,7 @@ class Profs {
     class crepair {
         variable = "Repair";
         name = "STR_Prof_Repair";
-        tag = "Revive";
+        tag = "Repair";
         side = "civ";
     };
     
