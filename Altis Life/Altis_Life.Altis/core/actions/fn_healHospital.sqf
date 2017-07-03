@@ -14,7 +14,6 @@ if (life_action_inUse) exitWith {};
 if ((damage player) < 0.01) exitWith {hint localize "STR_NOTF_HS_FullHealth"};
 _healCost = LIFE_SETTINGS(getNumber,"hospital_heal_fee");
 if (CASH < _healCost) exitWith {hint format[localize "STR_NOTF_HS_NoCash",[_healCost] call life_fnc_numberText];};
-if (!life_hasKidney) exitWith {hint "You need to find a medic to give you a kidney transplant"};
 
 life_action_inUse = true;
 _action = [
@@ -38,5 +37,5 @@ if (_action) then {
     closeDialog 0;
     life_action_inUse = false;
 };
-
+life_hasKidney = true;
 [] call life_fnc_custHudUpdate;

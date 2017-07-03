@@ -117,6 +117,7 @@ class Clothing {
         uniforms[] = {
             { "NONE", "Remove Uniform", 0, { "", "", -1 } },
             { "U_Rangemaster", "Cop Uniform", 25, { "", "", -1 } },
+            { "U_B_Wetsuit", "Diving Suit", 1000, {"life_gigcoplevel25", "SCALAR", 4} }
         };
         headgear[] = {
             { "NONE", "Remove Hat", 0, { "", "", -1 } },
@@ -143,13 +144,15 @@ class Clothing {
             { "G_Aviator", "", 100, { "", "", -1 } },
             { "G_Lady_Mirror", "", 150, { "", "", -1 } },
             { "G_Lady_Dark", "", 150, { "", "", -1 } },
-            { "G_Lady_Blue", "", 150, { "", "", -1 } }
+            { "G_Lady_Blue", "", 150, { "", "", -1 } },
+            { "G_B_Diving", "", 500, {"life_gigcoplevel25", "SCALAR", 4 } }
         };
         vests[] = {
             { "NONE", "Remove Vest", 0, { "", "", -1 } },
             { "V_Rangemaster_belt", "", 800, { "", "", -1 } },
             { "V_TacVest_blk_POLICE", "", 1000, { "life_gigcoplevel25", "SCALAR", 2 } },
-            { "V_PlateCarrier1_blk", "", 2000, { "life_gigcoplevel25", "SCALAR", 5 } }
+            { "V_PlateCarrier1_blk", "", 2000, { "life_gigcoplevel25", "SCALAR", 5 } },
+            { "V_RebreatherB", "", 500, {"life_gigcoplevel25", "SCALAR", 4 } }
         };
         backpacks[] = {
             { "NONE", "Remove Backpack", 0, { "", "", -1 } },

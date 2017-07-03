@@ -564,7 +564,8 @@ class WeaponShops {
             { "1Rnd_Smoke_Grenade_shell", "Tear Gas Grenade", 2000, 100 },
             { "SmokeShell", "Tear Gas", 1000, 100 },
             { "HandGrenade_Stone", "Flashbang", 1000, 200 },
-            { "Rangefinder", "", 2000, 100 }
+            { "Rangefinder", "", 2000, 100 },
+            { "muzzle_snds_M", "", 5000, 100}
             };
         mags[] = {};
         accs[] = {};
