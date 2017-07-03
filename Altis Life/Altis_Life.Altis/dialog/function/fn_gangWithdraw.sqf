@@ -16,14 +16,6 @@ if (!([str(_value)] call TON_fnc_isnumber)) exitWith {hint localize "STR_ATM_not
 if (_value > _gFund) exitWith {hint localize "STR_ATM_NotEnoughFundsG"};
 if (_val < 100 && _gFund > 20000000) exitWith {hint localize "STR_ATM_WithdrawMin"}; //Temp fix for something.
 if ((time - life_gang_bank_time) < (6 + (round random 5))) exitWith {hint localize "STR_ATM_WithdrawInUseG"};
-//Duping Check
-_rand = random(10);
-_first = _gFund;
-hint "Transaction Pending";
-sleep (_rand + 10);
-_seccond = GANG_FUNDS;
-if (!(_first isEqualTo _seccond)) exitWith {hint "Transaction Failed: Another Gang member has withdrawn funds at the same time."}
-
 
 _gFund = _gFund - _value;
 CASH = CASH + _value;
