@@ -101,21 +101,6 @@ class maverick_dialog_introcam_transition
 	};
 };
 
-class maverick_dialog_introcam_logo {
-	idd = -1
-	movingEnable = true;
-	fadeout=2;
-	fadein=2;
-	class picture: RscPicture {
-		idc = 1200;
-		text = "textures\signs\logo.paa";
-		x = 0.323716 * safezoneW + safezoneX;
-		y = 0.264902 * safezoneH + safezoneY;
-		w = 0.352567 * safezoneW;
-		h = 0.470196 * safezoneH;
-	};
-};
-
 
 
 

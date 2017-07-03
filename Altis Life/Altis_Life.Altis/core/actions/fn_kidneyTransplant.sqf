@@ -1,3 +1,4 @@
+#include "..\..\script_macros.hpp"
 /*Author: Larry Lancelot*/
 private ["_healCost","_action"];
 if (life_action_inUse) exitWith {};
