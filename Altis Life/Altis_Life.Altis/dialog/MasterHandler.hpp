@@ -27,7 +27,6 @@
 #include "federalReserve.hpp"
 #include "compensate.hpp"
 #include "FuelStat.hpp"
-#include "AltisPhone.hpp"
 #include "jail_time.hpp" //Jail Timer
 #include "craft.hpp" //CraftingAction
 #include "cop_menu.hpp" //Cop Menu Extended 

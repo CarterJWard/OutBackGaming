@@ -10,7 +10,7 @@ class playerSettings {
 		 class HG: life_RscPicture
 		 {
 		 idc = -1;
-		 text = "icons\tablet\tablet.paa";
+		 text = "icons\tablet\tablet_old.paa";
 		 x = 0.258501 * safezoneW + safezoneX;
 		 y = 0.0716 * safezoneH + safezoneY;
 		 w = 0.485625 * safezoneW;
