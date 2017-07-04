@@ -74,7 +74,8 @@ _loop = true;
 while {_loop} do { "airDrop_marker" setMarkerPos getPos _drop;uiSleep 1; };
 
 //When the helo gets close to the marker start the box dropping
-waitUntil {_dropZone distance _vehMain < 120};
+_timePassed = time + 300;
+waitUntil {_dropZone distance _vehMain < 120 || time >= _timePassed};
 _loop = false;
 [3,"<t size='1.3'><t color='#FF0000'>Supply Drop</t></t><br/><br/><t size='1'>Supplies have been dropped. You have 20 minutes before the box explodes</t>"] remoteexec ["life_fnc_broadcast",RANY];
 deleteVehicle _firstBox;
