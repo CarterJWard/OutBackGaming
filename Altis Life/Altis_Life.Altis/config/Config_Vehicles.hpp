@@ -675,21 +675,21 @@ will modify the virtual space and the price of the vehicle, but other informatio
             { "EMS", "med", {
                 "textures\medic\medLittleBird.jpg"
             },"" },
-            {"Sea Breeze", "civ"{
+            {"Sea Breeze", "civ", {
                 "textures\vehicles\donor3\hummin.jpg"
             }, "life_donorLevel >= 3"},
-            {"Fire Tribal", "civ"{
+            {"Fire Tribal", "civ", {
                 "textures\vehicles\donor3\hummin3.jpg"
-            }, "life_donorLevel >= 3"},
-            {"Demon", "civ"{
+            }, "life_donorLevel >= 3" },
+            {"Demon", "civ", {
                 "textures\vehicles\donor3\hummin4.jpg"
-            }, "life_donorLevel >= 3"},
-            {"Wolf Pack", "civ"{
+            }, "life_donorLevel >= 3" },
+            { "Wolf Pack", "civ", {
                 "textures\vehicles\donor3\hummin5.jpg"
-            }, "life_donorLevel >= 3"},
-            {"Fire Flower", "civ"{
+            }, "life_donorLevel >= 3" },
+            { "Fire Flower", "civ", {
                 "textures\vehicles\donor3\hummin6.jpg"
-            }, "life_donorLevel >= 3"}
+            }, "life_donorLevel >= 3" }
         };
     };
 
@@ -802,7 +802,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
         licenses[] = {{"trucking"},{""},{""},{""}};
         price = 150000;
         textures[] = {
-            {"Rusty Cab", "civ"{
+            {"Rusty Cab", "civ", {
                 "textures\vehicles\donor3\zamakf1.jpg"
             }, "life_donorLevel >= 3"}
         };
