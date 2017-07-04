@@ -7,7 +7,7 @@
 */
 
 private["_handle","_timeStamp","_server_isReady","_extDB_notLoaded"];
-
+life_HC_isActive = false;
 if (life_HC_isActive) then {
     _server_isReady = life_HC_server_isReady;
     _extDB_notLoaded = life_HC_server_extDB_notLoaded;
