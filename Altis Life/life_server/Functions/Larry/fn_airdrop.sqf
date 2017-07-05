@@ -11,8 +11,8 @@ TODO:   Find a better way of waiting for the box to drop
 //Setup our variables
 diag_log "Started the airdrop";
 private ["_spawnPos","_mainVehicle","_wp","_main","_drop","_arrived"];
-//uiSleep (60*45);
-uiSleep random(30);
+uiSleep (60*45);
+uiSleep random(1300);
 //config
 _spawnPos = [6304.292,9650.939,99.1];
 _mainVehicle = "B_Heli_Transport_03_unarmed_F";
@@ -21,14 +21,14 @@ _dummyBox = "Land_Cargo20_blue_F";
 _main = "CargoNet_01_box_F";
 _endPos = [1082.097,1910.592, 0];
 _arrived = false;
-//_copsNeeded = 3;
-//_civsNeeded = 7;
+_copsNeeded = 3;
+_civsNeeded = 7;
 //Declare Vars
 _dropZone = _dropPoints call BIS_fnc_selectRandom;
 _loop = false;
 //Checks
-//if ({side _x isEqualTo west} count playableUnits < _copsNeeded) exitWith {[] execVM "\life_server\Functions\Larry\fn_airdrop.sqf";};
-//if ({side _x isEqualTo civilian} count playableUnits < _civsNeeded) exitWith {[] execVM "\life_server\Functions\Larry\fn_airdrop.sqf";};
+if ({side _x isEqualTo west} count playableUnits < _copsNeeded) exitWith {[] execVM "\life_server\Functions\Larry\fn_airdrop.sqf";};
+if ({side _x isEqualTo civilian} count playableUnits < _civsNeeded) exitWith {[] execVM "\life_server\Functions\Larry\fn_airdrop.sqf";};
 //Alert the peeps
 [3,"<t size='1.3'><t color='#FF0000'>Supply Drop</t></t><br/><br/><t size='1'>A supply drop is inbound in 20 minutes. You will be notified of the location soon</t>"] remoteexec ["life_fnc_broadcast",RANY];
 uiSleep (60*1);
@@ -66,7 +66,6 @@ _firstBox = createVehicle [_dummyBox ,_spawnPos, [], 0, "CAN_COLLIDE"];
 _firstBox attachTo [_vehMain,[0,0,-3.5]];
 _firstBox setDir 90;
 
-[_crew, 1] setWaypointStatements ["true", ""];
 //Tracking Marker
 createMarker ["airbox_marker", _dropZone];
 "airDrop_marker" setMarkerType "Mil_Destroy";
