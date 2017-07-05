@@ -34,7 +34,7 @@ class WeaponShops {
             { "30Rnd_9x21_Mag", "", 75 }
         };
         accs[] = {
-            { "optic_ACO_grn_smg", "", 2500 }
+            { "optic_ACO_grn_smg", "", 2500, -1 }
         };
     };
 
@@ -64,7 +64,8 @@ class WeaponShops {
             { "srifle_LRR_F", "", 1100000, 100000 },
             { "srifle_GM6_F", "", 1300000, 120000 },
             { "SatchelCharge_Remote_Mag", "Explosive Device", 150000, -1 },
-            { "NVGoggles", "", 5000, 100 }
+            { "NVGoggles", "", 5000, 100 },
+            { "FirstAidKit", "", 100, -1 },
         };
         mags[] = {
             { "11Rnd_45ACP_Mag", "", 150 },

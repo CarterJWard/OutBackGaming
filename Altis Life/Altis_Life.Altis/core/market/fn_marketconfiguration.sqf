@@ -14,7 +14,7 @@ life_market_resources = [
 	
 	// Default İsler
 	
-	["oil_processed", 3800, 0, 5100, 3, 1, 
+	["oil_processed", 3800, 0, 6900, 3, 1, 
 		[ 
 			["diamond_cut",1], 
 			["iron_refined",1],
@@ -24,7 +24,7 @@ life_market_resources = [
 		] 
 	],
 	
-	["diamond_cut", 3250, 0, 4950, 5, 2, 
+	["diamond_cut", 3250, 0, 6000, 5, 2, 
 		[ 
 			["oil_processed",1],
 			["iron_refined",1],
@@ -74,7 +74,7 @@ life_market_resources = [
 		] 
 	],
 	
-	["cement", 3750, 0, 5000, 2, 1, 
+	["cement", 3750, 0, 6000, 2, 1, 
 		[ 
 
 			["oil_processed",1],
@@ -84,21 +84,21 @@ life_market_resources = [
 		] 
 	],
 	
-	["marijuana", 4500, 0, 7500, 10, 7,   
+	["marijuana", 4000, 0, 7500, 10, 7,   
 		[ 
 			["cocaine_processed",1],
 			["heroin_processed",1]
 		] 
 	],
 
-	["cocaine_processed", 6000, 0, 7850, 15, 10,   
+	["cocaine_processed", 6000, 0, 8850, 15, 10,   
 		[ 
 			["marijuana",1], 
 			["heroin_processed",1]
 		] 
 	],
 		
-	["heroin_processed", 5200, 0, 7500, 15, 10,   
+	["heroin_processed", 5200, 0, 8000, 15, 10,   
 		[ 
 			["marijuana",1], 
 			["cocaine_processed",1]

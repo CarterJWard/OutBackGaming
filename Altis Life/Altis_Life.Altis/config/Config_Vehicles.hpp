@@ -373,16 +373,15 @@ class LifeCfgVehicles {
                 "\A3\soft_F\Offroad_01\Data\offroad_01_ext_BASE05_CO.paa",
                 "\A3\soft_F\Offroad_01\Data\offroad_01_ext_BASE05_CO.paa"
             },"" },
+            { "Camo", "civ", {
+                "textures\vehicles\donor3\offroad1.jpg"
+            }, "life_donorLevel >= 3"},
             { "Taxi", "civ", {
                 "#(argb,8,8,3)color(0.6,0.3,0.01,1)"
             },"" },
             { "Police", "cop", {
                 "textures\cop\copOffroad.jpg"
-            },"" },
-            { "Camo", "civ", {
-                "textures\vehicles\donor3\offroad1.jpg"
-            }, "life_donorLevel >= 3"}
-            
+            },"" }
         };
     };
 
@@ -555,18 +554,6 @@ will modify the virtual space and the price of the vehicle, but other informatio
             { "Orange", "civ", {
                 "\a3\soft_f_gamma\SUV_01\Data\suv_01_ext_04_co.paa"
             },"" },
-            { "Undercover", "cop", {
-                "\a3\soft_f_gamma\SUV_01\Data\suv_01_ext_04_co.paa"
-            },"life_gigcoplevel25 >= 4" },
-            { "Police", "cop", {
-                "textures\cop\cop_suv1.jpg"
-            },"" }, 
-            { "Highway Patrol", "cop", {
-                "textures\cop\highPatrolS.jpg"    
-            }, "" },
-            { "EMS", "med", {
-                "textures\medic\medicSuv.jpg"
-            },"" },
             { "Li Mafu", "civ", {
                 "textures\vehicles\donor3\suv1.jpg"
             },"life_donorLevel >= 3" },
@@ -587,7 +574,19 @@ will modify the virtual space and the price of the vehicle, but other informatio
             }, "life_donorLevel >= 3"},
             { "Voodoo", "civ", {
                 "textures\vehicles\donor3\suv7.jpg"
-            }, "life_donorLevel >= 3"}
+            }, "life_donorLevel >= 3"},
+            { "Undercover", "cop", {
+                "\a3\soft_f_gamma\SUV_01\Data\suv_01_ext_04_co.paa"
+            },"life_gigcoplevel25 >= 4" },
+            { "Police", "cop", {
+                "textures\cop\cop_suv1.jpg"
+            },"" }, 
+            { "Highway Patrol", "cop", {
+                "textures\cop\highPatrolS.jpg"    
+            }, "" },
+            { "EMS", "med", {
+                "textures\medic\medicSuv.jpg"
+            },"" }
         };
     };
 
@@ -671,15 +670,6 @@ will modify the virtual space and the price of the vehicle, but other informatio
             { "Waves Blue", "civ", {
                 "\a3\air_f\Heli_Light_01\Data\Skins\heli_light_01_ext_wave_co.paa"
             },"" },
-            { "Rebel Digital", "reb", {
-                "\a3\air_f\Heli_Light_01\Data\Skins\heli_light_01_ext_digital_co.paa"
-            },"" },
-            { "Digi Green", "reb", {
-                "\a3\air_f\Heli_Light_01\Data\heli_light_01_ext_indp_co.paa"
-            },"" },
-            { "EMS", "med", {
-                "textures\medic\medLittleBird.jpg"
-            },"" },
             {"Sea Breeze", "civ", {
                 "textures\vehicles\donor3\hummin.jpg"
             }, "life_donorLevel >= 3"},
@@ -694,7 +684,16 @@ will modify the virtual space and the price of the vehicle, but other informatio
             }, "life_donorLevel >= 3" },
             { "Fire Flower", "civ", {
                 "textures\vehicles\donor3\hummin6.jpg"
-            }, "life_donorLevel >= 3" }
+            }, "life_donorLevel >= 3" },
+            { "Rebel Digital", "reb", {
+                "\a3\air_f\Heli_Light_01\Data\Skins\heli_light_01_ext_digital_co.paa"
+            },"" },
+            { "Digi Green", "reb", {
+                "\a3\air_f\Heli_Light_01\Data\heli_light_01_ext_indp_co.paa"
+            },"" },
+            { "EMS", "med", {
+                "textures\medic\medLittleBird.jpg"
+            },"" }
         };
     };
 
@@ -852,14 +851,17 @@ will modify the virtual space and the price of the vehicle, but other informatio
         licenses[] = {{"rebel"},{""},{""},{""}};
         price = 700000;
         textures[] = {
+            {"Rebel", "civ", {
+                "\A3\air_f_epb\heli_light_03\Data\heli_light_03_base_co.paa"
+            }, ""},
             {"Black Camo", "civ", {
-                "texture\vehicles\donor3\hellcat.jpg"
+                "textures\vehicles\donor3\hellcat.jpg"
             }, "life_donorLevel >= 3" },
             {"Desert Camo", "civ", {
-                "texture\vehicles\donor3\hellcat1.jpg"
+                "textures\vehicles\donor3\hellcat1.jpg"
             }, "life_donorLevel >= 3" },
             {"Blue Camo", "civ", {
-                "texture\vehicles\donor3\hellcat2.jpg"
+                "textures\vehicles\donor3\hellcat2.jpg"
             }, "life_donorLevel >= 3" }
         };
     };

@@ -65,14 +65,16 @@ switch (_code) do {
         };
     };
 
-    //Surrender (Shift + B)
+    //Surrender (TAB)
     case 15: {
+        if (!_alt) then {
             if (player getVariable ["playerSurrender",false]) then {
                 player setVariable ["playerSurrender",false,true];
             } else {
                 [] spawn life_fnc_surrender;
             };
             _handled = true;
+        };
     };
 
     //Map Key

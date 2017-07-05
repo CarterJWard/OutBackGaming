@@ -3125,8 +3125,8 @@
             <Portuguese>Ação de apreender foi cancelada</Portuguese>
             <Polish>Przerwano usuwanie pojazdu</Polish>
         </Key>
-        <Key ID="STR_NOTF_Impounded">
-            <Original>You have impounded a %1\n\nYou have received $%2 for cleaning up the streets!</Original>
+        <Key ID="STR_NOTF_Impounded"> 
+            <Original>You have received $%2 for impounding a !%1\n\n</Original>
             <Czech>Jste zabaveno a%1 \ n \ n jste obdržel $%2 pro čištění ulic!</Czech>
             <Spanish>Has embargado un %1\n\nHas recibido $%2 por  limpiar las calles!</Spanish>
             <Russian></Russian>
@@ -4492,7 +4492,7 @@
             <Polish>Wybrałeś zły numer</Polish>
         </Key>
         <Key ID="STR_Cop_TicketOver100">
-            <Original>Tickets can not be more than $200,000!</Original>
+            <Original>Tickets can not be more than 1 Million!</Original>
             <Czech>Vstupenky nemůže být více než 200.000 $!</Czech>
             <Spanish>Los tiquetes no pueden ser mas de $200,000!</Spanish>
             <Russian></Russian>

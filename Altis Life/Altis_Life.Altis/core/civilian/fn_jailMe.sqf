@@ -34,7 +34,7 @@ while {true} do {
  hintSilent format["Time Remaining:\n %1\n",_countDown];
  };
  };
- if(player distance (getMarkerPos "jail_marker") > 60) exitWith {
+ if(player distance (getMarkerPos "jail_marker") > 80) exitWith {
  _esc = true;
  };
  if(life_bail_paid) exitWith {
@@ -55,7 +55,7 @@ switch (true) do {
  [5] call SOCK_fnc_updatePartial;
  };
  case (_esc): {
- life_is_arrested = false;
+ life_is_arrested = false; 
  hint localize "STR_Jail_EscapeSelf";
  [0,"STR_Jail_EscapeNOTF",true,[profileName]] remoteExecCall ["life_fnc_broadcast",RCLIENT];
  [getPlayerUID player,profileName,"901"] remoteExecCall ["life_fnc_wantedAdd",RSERV];

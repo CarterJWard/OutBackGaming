@@ -16,8 +16,9 @@ _amount = lbData [2407,lbCurSel 2407];
 _uid = getPlayerUID _unit;
 if (isNil "_unit") exitWith {};
 //if (side _unit isEqualTo west) exitWith {hint "What are ya trying to do, start a police war? Dickhead." };
-//if (_unit == player) exitWith {hint "You can't make yourself wanted, dipshit";};
+if (_unit == player) exitWith {hint "You can't make yourself wanted, dipshit";};
 if (isNull _unit) exitWith {};
+if (life_gigcoplevel25 < 1) exitWith;
 
 [1,"STR_Wanted_AddP",true,[_unit getVariable ["realname",name _unit],_amount,getPlayerUID _unit]] remoteExecCall ["life_fnc_broadcast",RCLIENT];
 
