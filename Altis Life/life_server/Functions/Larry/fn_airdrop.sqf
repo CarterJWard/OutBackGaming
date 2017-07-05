@@ -10,9 +10,9 @@ TODO:   Find a better way of waiting for the box to drop
 
 //Setup our variables
 diag_log "Started the airdrop";
-private ["_spawnPos","_mainVehicle","_wp","_main","_drop"];
-uiSleep (60*45);
-uiSleep random(1200);
+private ["_spawnPos","_mainVehicle","_wp","_main","_drop","_arrived"];
+//uiSleep (60*45);
+uiSleep random(30);
 //config
 _spawnPos = [6304.292,9650.939,99.1];
 _mainVehicle = "B_Heli_Transport_03_unarmed_F";
@@ -20,17 +20,18 @@ _dropPoints = [[5233.613,18424.145,2],[6651.447,12605.252,2],[12795.358,19671.49
 _dummyBox = "Land_Cargo20_blue_F";
 _main = "CargoNet_01_box_F";
 _endPos = [1082.097,1910.592, 0];
-_copsNeeded = 3;
-_civsNeeded = 7;
+_arrived = false;
+//_copsNeeded = 3;
+//_civsNeeded = 7;
 //Declare Vars
 _dropZone = _dropPoints call BIS_fnc_selectRandom;
 _loop = false;
 //Checks
-if ({side _x isEqualTo west} count playableUnits < _copsNeeded) exitWith {[] execVM "\life_server\Functions\Larry\fn_airdrop.sqf";};
-if ({side _x isEqualTo civilian} count playableUnits < _civsNeeded) exitWith {[] execVM "\life_server\Functions\Larry\fn_airdrop.sqf";};
+//if ({side _x isEqualTo west} count playableUnits < _copsNeeded) exitWith {[] execVM "\life_server\Functions\Larry\fn_airdrop.sqf";};
+//if ({side _x isEqualTo civilian} count playableUnits < _civsNeeded) exitWith {[] execVM "\life_server\Functions\Larry\fn_airdrop.sqf";};
 //Alert the peeps
 [3,"<t size='1.3'><t color='#FF0000'>Supply Drop</t></t><br/><br/><t size='1'>A supply drop is inbound in 20 minutes. You will be notified of the location soon</t>"] remoteexec ["life_fnc_broadcast",RANY];
-uiSleep (60*5);
+uiSleep (60*1);
 [3,"<t size='1.3'><t color='#FF0000'>Supply Drop</t></t><br/><br/><t size='1'>A supply drop is inbound in 15 minutes. Your map has been updated of the location</t>"] remoteexec ["life_fnc_broadcast",RANY];
 createMarker ["Airdrop",_dropZone];
 "Airdrop" setMarkerType "Mil_Dot";
@@ -51,8 +52,9 @@ uiSleep (60*5);
 uiSleep (60*4);
 [3,"<t size='1.3'><t color='#FF0000'>Supply Drop</t></t><br/><br/><t size='1'>A supply drop is inbound in 1 minutes. Check your map for the location</t>"] remoteexec ["life_fnc_broadcast",RANY];
 uiSleep(30);
-[3,"<t size='1.3'><t color='#FF0000'>Supply Drop</t></t><br/><br/><t size='1'>Supply Drop is on it's way. Remember the marker on the map is KOS so be ready for a fight</t>"] remoteexec ["life_fnc_broadcast",RANY];
-//Create stuffs
+[3,"<t size='1.3'><t color='#FF0000'>Supply Drop</t></t><br/><br/><t size='1'>Supply Drop is on it's way. Remember the marker on the map is KOS so be ready for a fight. The helicopter will hover over the drop site for a small section of time whilst the crew fill the container and realese the drop. Good luck everyone</t>"] remoteexec ["life_fnc_broadcast",RANY];
+
+//Let's Begin
 _vehMain = createVehicle [_mainVehicle, _spawnPos, [], 0, "FLY"];
 _crew = [_spawnPos, east, ["O_G_Soldier_SL_F"],[],[],[],[],[],0] call BIS_fnc_spawnGroup;
 {_x moveInDriver _vehMain} forEach units _crew;
@@ -64,20 +66,16 @@ _firstBox = createVehicle [_dummyBox ,_spawnPos, [], 0, "CAN_COLLIDE"];
 _firstBox attachTo [_vehMain,[0,0,-3.5]];
 _firstBox setDir 90;
 
-_time = time + (60*5);
+[_crew, 1] setWaypointStatements ["true", ""];
 //Tracking Marker
 createMarker ["airbox_marker", _dropZone];
 "airDrop_marker" setMarkerType "Mil_Destroy";
 "airDrop_marker" setMarkerColor "ColorBlue";
 "airDrop_marker" setMarkerText "Airdrop Box";
-_loop = true;
-while {_loop} do { "airDrop_marker" setMarkerPos getPos _drop;uiSleep 1; };
-
 //When the helo gets close to the marker start the box dropping
-_timePassed = time + 300;
-waitUntil {_dropZone distance _vehMain < 120 || time >= _timePassed};
-_loop = false;
+uiSleep (60*4);
 [3,"<t size='1.3'><t color='#FF0000'>Supply Drop</t></t><br/><br/><t size='1'>Supplies have been dropped. You have 20 minutes before the box explodes</t>"] remoteexec ["life_fnc_broadcast",RANY];
+
 deleteVehicle _firstBox;
 _drop = createVehicle [_dummyBox , _spawnPos, [], 0, "CAN_COLLIDE"];
 _para = createVehicle ["O_Parachute_02_F", [getPos _vehMain select 0, getPos _vehMain select 1, getPos _vehMain select 2], [], 0, ""];
@@ -163,3 +161,4 @@ deleteMarker "AirdropKos";
 
 uiSleep (60*120); //Time before it's run again aka cooldown
 [] execVM "\life_server\Functions\Larry\fn_airdrop.sqf";
+
