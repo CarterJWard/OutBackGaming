@@ -81,7 +81,8 @@ class CarShops {
             { "I_MRAP_03_F", {"", "", -1 } }, 
             { "B_Heli_Light_01_stripped_F", { "", "", -1 } },
             { "B_G_Offroad_01_armed_F", { "", "", -1 } },
-            { "O_Heli_Transport_04_F", { "", "", -1} }
+            { "O_Heli_Transport_04_F", { "", "", -1} },
+            { "I_Heli_light_03_unarmed_F", { "", "", -1} }
         };
     };
 
@@ -133,7 +134,7 @@ class CarShops {
         };
     };
     
-    class donor_3 {
+    class donor_vehicle {
         side = "civ";
         vehicles[] = {
             { "C_SUV_01_F", {"life_donorLevel", "SCALAR", 3} },
@@ -142,7 +143,8 @@ class CarShops {
             { "B_Heli_Light_01_F", { "life_donorLevel", "SCALAR", 3} },
             { "I_Heli_Transport_02_F", { "life_donorLevel", "SCALAR", 3} },
             { "O_Heli_Light_02_unarmed_F", { "life_donorLevel", "SCALAR", 3} },
-            { "B_Heli_Transport_03_unarmed_F", { "life_donorLevel", "SCALAR", 3} }
+            { "B_Heli_Transport_03_unarmed_F", { "life_donorLevel", "SCALAR", 3} },
+            { "I_Heli_light_03_unarmed_F", { "life_donorLevel", "SCALAR", 3} },
         };
     };
 };
@@ -375,7 +377,7 @@ class LifeCfgVehicles {
                 "#(argb,8,8,3)color(0.6,0.3,0.01,1)"
             },"" },
             { "Police", "cop", {
-                "#(ai,64,64,1)Fresnel(1.3,7)"
+                "textures\cop\copOffroad.jpg"
             },"" },
             { "Camo", "civ", {
                 "textures\vehicles\donor3\offroad1.jpg"
@@ -559,6 +561,9 @@ will modify the virtual space and the price of the vehicle, but other informatio
             { "Police", "cop", {
                 "textures\cop\cop_suv1.jpg"
             },"" }, 
+            { "Highway Patrol", "cop", {
+                "textures\cop\highPatrolS.jpg"    
+            }, "" },
             { "EMS", "med", {
                 "textures\medic\medicSuv.jpg"
             },"" },
@@ -705,7 +710,13 @@ will modify the virtual space and the price of the vehicle, but other informatio
         textures[] = {
             { "EMS", "med", {
                 "textures\medic\medOrca.jpg"
-            },"" }
+            },"" },
+            { "Rust Camo", "civ", {
+                "textures\vehicles\donor3\orca2.jpg"
+            }, "life_donorLevel >= 3" },
+            { "Pink Camo", "civ", {
+                "textures\vehicles\donor3\orca3.jpg"
+            }, "life_donorLevel >= 3" }
         };
     };
 
@@ -734,7 +745,16 @@ will modify the virtual space and the price of the vehicle, but other informatio
         vFuelSpace = 20000;
         licenses[] = { {""}, {""}, {""}, {""} };
         price = 1800000;
-        textures[] = {};
+        textures[] = {
+            {"Galaxy", "civ", {
+                "textures\vehicles\donor3\huronf1.jpg",
+                "textures\vehicles\donor3\huronb1.jpg"
+            }, "life_donorLevel >= 3" },
+            {"Red Camo", "civ", {
+                "textures\vehicles\donor3\huronf2.jpg",
+                "textures\vehicles\donor3\huronb2.jpg"
+            }, "life_donorLevel >= 3" }
+        };
     };
 
     class I_Heli_Transport_02_F {
@@ -752,7 +772,27 @@ will modify the virtual space and the price of the vehicle, but other informatio
                 "\A3\air_f_beta\heli_transport_02\data\skins\heli_transport_02_1_ion_co",
                 "\A3\air_f_beta\heli_transport_02\data\skins\heli_transport_02_2_ion_co",
                 "\A3\air_f_beta\heli_transport_02\data\skins\heli_transport_02_3_ion_co"
-            },"" }
+            },"" },
+            {"Leaves", "civ", {
+                "textures\vehicles\donor3\mohawkf1.jpg",
+                "textures\vehicles\donor3\mohawkm1.jpg",
+                "Textures\vehicles\donor3\mohawkb1.jpg"
+            }, "life_donorLevel >= 3" },
+            {"Tribal", "civ", {
+                "textures\vehicles\donor3\mohawkf2.jpg",
+                "textures\vehicles\donor3\mohawkm2.jpg",
+                "Textures\vehicles\donor3\mohawkb2.jpg"
+            }, "life_donorLevel >= 3" },
+            {"Green Leaves", "civ", {
+                "textures\vehicles\donor3\mohawkf3.jpg",
+                "textures\vehicles\donor3\mohawkm3.jpg",
+                "Textures\vehicles\donor3\mohawkb3.jpg"
+            }, "life_donorLevel >= 3" },
+            {"Sea", "civ", {
+                "textures\vehicles\donor3\mohawkf4.jpg",
+                "textures\vehicles\donor3\mohawkm4.jpg",
+                "Textures\vehicles\donor3\mohawkb4.jpg"
+            }, "life_donorLevel >= 3" }
         };
     };
 
@@ -805,6 +845,22 @@ will modify the virtual space and the price of the vehicle, but other informatio
             {"Rusty Cab", "civ", {
                 "textures\vehicles\donor3\zamakf1.jpg"
             }, "life_donorLevel >= 3"}
+        };
+    };
+    class I_Heli_light_03_unarmed_F {
+        vItemSpace = 100;
+        licenses[] = {{"rebel"},{""},{""},{""}};
+        price = 700000;
+        textures[] = {
+            {"Black Camo", "civ", {
+                "texture\vehicles\donor3\hellcat.jpg"
+            }, "life_donorLevel >= 3" },
+            {"Desert Camo", "civ", {
+                "texture\vehicles\donor3\hellcat1.jpg"
+            }, "life_donorLevel >= 3" },
+            {"Blue Camo", "civ", {
+                "texture\vehicles\donor3\hellcat2.jpg"
+            }, "life_donorLevel >= 3" }
         };
     };
 };

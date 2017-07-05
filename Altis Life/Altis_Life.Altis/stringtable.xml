@@ -9905,14 +9905,9 @@
         </Key>
         <Key ID="STR_MAR_W_E_Vehicle Shop">
             <Original>Vehicle Shop</Original>
-            <Czech>Shop Vehicle</Czech>
-            <French>Magasin de vehicules</French>
-            <Spanish>Tienda de Vehículos</Spanish>
-            <Italian>di veicoli</Italian>
-            <Russian></Russian>
-            <German>Autohändler</German>
-            <Portuguese>Loja de Carros</Portuguese>
-            <Polish>Pojazdy - sklep</Polish>
+        </Key>
+        <Key ID="STR_MAR_Donor_Vehicle">
+            <Original>Donator Shop</Original>
         </Key>
         <Key ID="STR_MAR_Process_Sand">
             <Original>Process Sand</Original>
