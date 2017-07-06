@@ -204,7 +204,7 @@ class Licenses {
         side = "cop";
     };
 
-    class detecive {
+    class detective {
         variable = "detective";
         displayName = "STR_License_detective";
         price = 100000;

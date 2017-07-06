@@ -46,6 +46,6 @@ switch (_state) do {
     };
     case 4: {missionNamespace setVariable [LICENSE_VARNAME("swat","cop"),true];};
     case 5: {missionNamespace setVariable [LICENSE_VARNAME("swat","cop"),false];};
-    case 6: {missionNamespace setVariable [LICENSE_VARNAME("detective","cop"),true];};
-    case 7: {missionNamespace setVariable [LICENSE_VARNAME("detective","cop"),false];};
+    case 6: {missionNamespace setVariable [LICENSE_VARNAME("detective","cop"),true]; diag_log "licenses added";};
+    case 7: {missionNamespace setVariable [LICENSE_VARNAME("detective","cop"),false]; diag_log "licenses added";};
 };

@@ -172,18 +172,21 @@ class Clothing {
             { "U_BG_Guerrilla_6_1", "Swat Uniform", 100, {"license_cop_swat", "BOOL", true} },
             { "U_BG_Guerrilla_6_1", "Swat Uniform", 100, {"license_cop_swatM", "BOOL", true} },
             { "U_NikosAgedBody", "Undercover clothing", 100, {"license_cop_detective","BOOL", true } },
-            { "U_NikosAgedBody", "Undercover clothing", 100, {"license_cop_detectiveL","BOOL", true } }
+            { "U_IG_Guerilla3_1", "Brown Jacket & Pants", 735, { "license_cop_detective","BOOL", true } },
+            { "U_OrestesBody", "Surfing On Land", 1100, { "license_cop_detective","BOOL", true} },
+            { "U_IG_Guerilla2_3", "The Outback Rangler", 1200, { "license_cop_detective","BOOL", true} }
         }; 
         headgear[] = {
-            { "NONE", "Remove Hat", 0, { "", "", -1 } }
+            { "NONE", "Remove Hat", 0, { "", "", -1 } },
+            { "H_Bandanna_sgg", "Sage Bandanna", 160, { "license_cop_detective","BOOL", true } }
         };
         goggles[] = {
             { "NONE", "Remove Glasses", 0, { "", "", -1 } }
         };
         vests[] = {
             { "NONE", "Remove Vest", 0, { "", "", -1 } },
-            { "V_PlateCarrierSpec_blk vest", "", 100, {"license_cop_swat", "BOOL", true} },
-            { "V_PlateCarrierSpec_blk vest", "", 100, {"license_cop_swatM", "BOOL", true} }  
+            { "V_PlateCarrierSpec_blk", "", 100, {"license_cop_swat", "BOOL", true} },
+            { "V_PlateCarrierSpec_blk", "", 100, {"license_cop_swatM", "BOOL", true} }  
         };
         backpacks[] = {
             { "NONE", "Remove Backpack", 0, { "", "", -1 } }
