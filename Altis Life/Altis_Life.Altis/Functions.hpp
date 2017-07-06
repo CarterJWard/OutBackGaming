@@ -280,6 +280,7 @@ class Life_Client_Core {
         class randomRound {};
         class loggedOut {};
         class preInit { preInit = 1;};
+        class introCam {};
     };
 
     class Gangs    {

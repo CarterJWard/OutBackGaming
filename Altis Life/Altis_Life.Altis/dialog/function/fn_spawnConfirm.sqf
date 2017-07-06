@@ -56,6 +56,7 @@ if (life_spawn_point isEqualTo []) then {
 
 if (life_firstSpawn) then {
     life_firstSpawn = false;
+    [] spawn life_fnc_introCam;
     [] spawn life_fnc_introText;
 };
 [] call life_fnc_playerSkins;
