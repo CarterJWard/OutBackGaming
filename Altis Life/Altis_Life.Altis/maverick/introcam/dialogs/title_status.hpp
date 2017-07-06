@@ -86,8 +86,8 @@ class maverick_dialog_introcam_transition
 	duration = 0.5;
 
 	class controlsBackground {
-		class Logo: Life_RscPicture {
-          idc = 1200;
+		class LogoBG: Life_RscPicture {
+          idc = -1;
           text = "textures\signs\logo.paa";
           x = 0.357136 * safezoneW + safezoneX;
           y = 0.225067 * safezoneH + safezoneY;

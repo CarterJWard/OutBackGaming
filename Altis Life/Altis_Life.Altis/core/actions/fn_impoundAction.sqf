@@ -76,7 +76,7 @@ if (count crew _vehicle isEqualTo 0) then {
 				["User Notifications", format [localize "STR_NOTF_OwnImpounded", [_value] call life_fnc_numberText, _type],nil,""] call life_fnc_showNotification;
                 BANK = BANK - _value;
                 [_prof, 5] call life_fnc_addExp;
-            } else {
+            } else { 
 				["User Notifications", format [localize "STR_NOTF_Impounded", [_value] call life_fnc_numberText, _type],nil,""] call life_fnc_showNotification;
                 BANK = BANK + _value;
                 [_prof, 10] call life_fnc_addExp;

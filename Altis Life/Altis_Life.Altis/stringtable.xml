@@ -3126,7 +3126,7 @@
             <Polish>Przerwano usuwanie pojazdu</Polish>
         </Key>
         <Key ID="STR_NOTF_Impounded"> 
-            <Original>You have received $%2 for impounding a !%1\n\n</Original>
+            <Original>You have received $%1 for impounding a %2</Original>
             <Czech>Jste zabaveno a%1 \ n \ n jste obdržel $%2 pro čištění ulic!</Czech>
             <Spanish>Has embargado un %1\n\nHas recibido $%2 por  limpiar las calles!</Spanish>
             <Russian></Russian>
