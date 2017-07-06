@@ -128,7 +128,7 @@ class Clothing {
             { "H_Beret_blk_POLICE", "", 50, { "life_gigcoplevel25", "SCALAR", 4 } },
             { "H_Beret_02", "", 200, {"life_gigcoplevel25", "SCALAR", 5} },
             { "H_PilotHelmetFighter_B", "Gas Mask",1000, {"life_gigcoplevel25", "SCALAR", 3} },
-            { "H_Watchcap_blk", "Tacticool Beanie", 300, { "life_gigcoplevel25", "SCALAR", 7 } }
+            { "H_Watchcap_blk", "Tacticool Beanie", 300, { "life_gigcoplevel25", "SCALAR", 5 } }
         };
         goggles[] = {
             { "NONE", "Remove Glasses", 0, { "", "", -1 } },

@@ -88,6 +88,7 @@ if (life_adminSuit) then {
     hint "Admin suit is now gone";
 } else {
         removeUniform player;
+        removeHeadgear player;
         player addUniform "U_C_Soldier_VR";
         [0,format ["%1 has entered admin mode",profileName]] remoteExecCall ["life_fnc_broadcast",RCLIENT];
         player setVariable ["adminSuit",true,true];
@@ -102,7 +103,8 @@ if (life_adminSuit) then {
         player assignItem "ItemCompass";
         player addItem "ItemWatch";
         player assignItem "ItemWatch";
-        player addVest "V_TacVestIR_blkt";
+        player addVest "V_TacVestIR_blk";
+        player addHeadgear "NVGoggles";
         player addBackpack "B_ViperHarness_blk_F";
         player addMagazine "30Rnd_65x39_caseless_green";
         player addWeapon "arifle_ARX_blk_F";
