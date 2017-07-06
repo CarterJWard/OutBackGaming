@@ -57,6 +57,11 @@ if (!license_cop_swatMaster) then {
     ctrlShow [232932,false];
 };
 
+if (!license_cop_detectiveL) then {
+    ctrlShow [232941,false];
+    ctrlShow [232942,false];
+};
+
 
 /*
 if (life_god) then {

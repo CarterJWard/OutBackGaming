@@ -6517,6 +6517,12 @@
         <Key ID="STR_License_swatM">
             <Original>Swat Commander</Original>
         </Key>
+        <Key ID="STR_License_detective">
+            <Original>Detective</Original>
+        </Key>
+        <Key ID="STR_License_detectiveL">
+            <Original>Detective Lead</Original>
+        </Key>
         <Key ID="STR_License_Driver">
             <Original>Driver License</Original>
         </Key>

@@ -166,10 +166,13 @@ class Clothing {
 
     class swat {
         title = "STR_Shops_Swat";
-        license = "swat";
+        license = "";
         side = "cop";
         uniforms[] = {
-            { "U_BG_Guerrilla_6_1", "Swat Uniform", 100, {"", "", -1} }
+            { "U_BG_Guerrilla_6_1", "Swat Uniform", 100, {"license_cop_swat", "BOOL", true} },
+            { "U_BG_Guerrilla_6_1", "Swat Uniform", 100, {"license_cop_swatM", "BOOL", true} },
+            { "U_NikosAgedBody", "Undercover clothing", 100, {"license_cop_detective","BOOL", true } },
+            { "U_NikosAgedBody", "Undercover clothing", 100, {"license_cop_detectiveL","BOOL", true } }
         }; 
         headgear[] = {
             { "NONE", "Remove Hat", 0, { "", "", -1 } }
@@ -179,7 +182,8 @@ class Clothing {
         };
         vests[] = {
             { "NONE", "Remove Vest", 0, { "", "", -1 } },
-            { "V_PlateCarrierSpec_blk vest", "", 100, {"","",-1} },
+            { "V_PlateCarrierSpec_blk vest", "", 100, {"license_cop_swat", "BOOL", true} },
+            { "V_PlateCarrierSpec_blk vest", "", 100, {"license_cop_swatM", "BOOL", true} }  
         };
         backpacks[] = {
             { "NONE", "Remove Backpack", 0, { "", "", -1 } }

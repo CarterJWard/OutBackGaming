@@ -70,28 +70,6 @@ class life_cop_menu {
             h = 0.022 * safezoneH;
         };
 
-        class RscButtonMenu_2410: Life_RscButtonMenu {
-            idc = 232931;
-            text = "Train Swat";
-			tooltip = "Gives the officer access to swat gear"; 
-            onButtonClick = "[] call life_fnc_copSwatG;";
-            x = 0.54125 * safezoneW + safezoneX;
-            y = 0.676 * safezoneH + safezoneY;
-            w = 0.061875 * safezoneW;
-            h = 0.022 * safezoneH;
-        };
-
-        class RscButtonMenu_2411: Life_RscButtonMenu {
-            idc = 232932;
-            text = "Revoke Swat";
-			tooltip = "Takes away swat training"; 
-            onButtonClick = "[] call life_fnc_copSwatD;";
-            x = 0.613437 * safezoneW + safezoneX;
-            y = 0.676 * safezoneH + safezoneY;
-            w = 0.061875 * safezoneW;
-            h = 0.022 * safezoneH;
-        };
-
         class RscButtonMenu_2405: Life_RscButtonMenu {
             idc = 232923;
             text = "Marshall Law";
@@ -157,6 +135,49 @@ class life_cop_menu {
             w = 0.185625 * safezoneW;
             h = 0.275 * safezoneH;
             colorBackground[] = {0,0,0,0.7};
+        };
+        
+        class RscButtonMenu_2410: Life_RscButtonMenu {
+            idc = 232931;
+            text = "Train Swat";
+			tooltip = "Gives the officer access to swat gear"; 
+            onButtonClick = "[] call life_fnc_copSwatG;";
+            x = 0.54125 * safezoneW + safezoneX;
+            y = 0.676 * safezoneH + safezoneY;
+            w = 0.061875 * safezoneW;
+            h = 0.022 * safezoneH;
+        };
+
+        class RscButtonMenu_2411: Life_RscButtonMenu {
+            idc = 232932;
+            text = "Revoke Swat";
+			tooltip = "Takes away swat training"; 
+            onButtonClick = "[] call life_fnc_copSwatD;";
+            x = 0.613437 * safezoneW + safezoneX;
+            y = 0.676 * safezoneH + safezoneY;
+            w = 0.061875 * safezoneW;
+            h = 0.022 * safezoneH;
+        };
+        class RscButtonMenu_detective: Life_RscButtonMenu {
+            idc = 232941;
+            text = "Train Swat";
+			tooltip = "Gives the officer access to swat gear"; 
+            onButtonClick = "[] call life_fnc_copSwatG;";
+            x = 0.54125 * safezoneW + safezoneX;
+            y = 0.676 * safezoneH + safezoneY;
+            w = 0.061875 * safezoneW;
+            h = 0.022 * safezoneH;
+        };
+
+        class RscButtonMenu_detective_take: Life_RscButtonMenu {
+            idc = 232942;
+            text = "Revoke Swat";
+			tooltip = "Takes away swat training"; 
+            onButtonClick = "[] call life_fnc_copSwatD;";
+            x = 0.613437 * safezoneW + safezoneX;
+            y = 0.676 * safezoneH + safezoneY;
+            w = 0.061875 * safezoneW;
+            h = 0.022 * safezoneH;
         };
     };
 };

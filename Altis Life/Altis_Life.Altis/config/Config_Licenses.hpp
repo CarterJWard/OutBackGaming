@@ -204,6 +204,21 @@ class Licenses {
         side = "cop";
     };
 
+    class detecive {
+        variable = "detective";
+        displayName = "STR_License_detective";
+        price = 100000;
+        illegal = false;
+        side = "cop";
+    };
+
+    class detectiveL {
+        variable = "detectiveL";
+        displayName = "STR_License_detectiveL";
+        price = 100000;
+        illegal = false;
+        side = "cop";
+    };
     //Medic Licenses
     class mAir {
         variable = "mAir";

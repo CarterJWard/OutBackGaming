@@ -575,15 +575,18 @@ will modify the virtual space and the price of the vehicle, but other informatio
             { "Voodoo", "civ", {
                 "textures\vehicles\donor3\suv7.jpg"
             }, "life_donorLevel >= 3"},
-            { "Undercover", "cop", {
-                "\a3\soft_f_gamma\SUV_01\Data\suv_01_ext_04_co.paa"
-            },"life_gigcoplevel25 >= 4" },
             { "Police", "cop", {
                 "textures\cop\cop_suv1.jpg"
             },"" }, 
             { "Highway Patrol", "cop", {
                 "textures\cop\highPatrolS.jpg"    
             }, "" },
+            { "Undercover Orange", "cop", {
+                "\a3\soft_f_gamma\SUV_01\Data\suv_01_ext_04_co.paa"
+            },"license_cop_detective" },
+            { "Undercover Silver", "cop", {
+                "\a3\soft_f_gamma\SUV_01\Data\suv_01_ext_03_co.paa"
+            },"license_cop_detective" },
             { "EMS", "med", {
                 "textures\medic\medicSuv.jpg"
             },"" }
