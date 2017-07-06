@@ -1,13 +1,13 @@
 /*Author, Killzone Kid*/
 if (hasInterface) then {
-    if (!isNumber (missionConfigFile >> "briefing")) exitWith {};
-    if (getNumber (missionConfigFile >> "briefing") == 1) exitWith {};
+    if (!isNumber (configFile >> "briefing")) exitWith {};
+    if (getNumber (configFile >> "briefing") == 1) exitWith {};
     0 = [] spawn {
         waitUntil {
             if (getClientState == "BRIEFING READ") exitWith {true};
-            if (!isNull findDisplay 53) exitWith {
-                ctrlActivate (findDisplay 53 displayCtrl 1);
-                findDisplay 53 closeDisplay 1;
+            if (!isNull findDisplay 52) exitWith {
+                ctrlActivate (findDisplay 52 displayCtrl 1);
+                findDisplay 52 closeDisplay 1;
                 true
             };
             false
