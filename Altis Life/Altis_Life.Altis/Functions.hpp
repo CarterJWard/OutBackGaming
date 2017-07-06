@@ -42,6 +42,8 @@ class Life_Client_Core {
 		class copOnduty {};
         class copSwatG {};
         class copSwatD {};
+        class copDetG {};
+        class copDetD {};
     };
 
     class Actions {
