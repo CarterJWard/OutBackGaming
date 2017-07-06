@@ -279,6 +279,7 @@ class Life_Client_Core {
         class grabSkills {};
         class randomRound {};
         class loggedOut {};
+        class preInit { preInit = 1;};
     };
 
     class Gangs    {
