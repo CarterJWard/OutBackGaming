@@ -42,6 +42,30 @@ if (!isNull _source) then {
                 _damage = false;
             };
         };
+        //Rubberbullets
+		if (currentMagazine _source in ["30Rnd_65x39_caseless_mag_Tracer"] && _projectile in ["B_65x39_Caseless"]) then { //attention I changed it to mag and projectile!!
+            if (side _source isEqualTo west && playerSide isEqualTo civilian) then {
+                _damage = 0;
+                if (alive player && !life_istazed && !life_isknocked && !(_unit getVariable ["restrained",false])) then {
+                    private ["_distance"];
+                    _distance = 300;
+                    if (_unit distance _source < _distance) then {
+                        if !(isNull objectParent player) then {
+                            if (typeOf (vehicle player) == "B_Quadbike_01_F") then {
+                                player action ["Eject",vehicle player];
+                                [_unit,_source] spawn life_fnc_rubberHit; //change this too
+                            };
+                        } else {
+                            [_unit,_source] spawn life_fnc_rubberHit; // here too
+                        };
+                    };
+                };
+            };
+            //Temp fix for super tasers on cops.
+            if (side _source isEqualTo west && (playerSide isEqualTo west || playerSide isEqualTo independent)) then {
+                _damage = false;
+            };
+        };
     };
 };
 //ANTI- VDM script

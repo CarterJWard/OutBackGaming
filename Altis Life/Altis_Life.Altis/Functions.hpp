@@ -147,6 +147,7 @@ class Life_Client_Core {
         class tazed {};
         class jailBreakTimer {};
         class recieveKidney {};
+        class rubberHit {};
     };
 
     class Config {
@@ -277,6 +278,7 @@ class Life_Client_Core {
         class profSetUp {};
         class grabSkills {};
         class randomRound {};
+        class loggedOut {};
     };
 
     class Gangs    {
