@@ -8,7 +8,6 @@ _toHide = [
     [hide10, ["HIDE"], 2],[hide11, ["HIDE"], 2],[hide12, [], 4],[hide13, ["HIDE"], 2],[hide14, ["HIDE"], 2],[hide15, ["HIDE"], 2],[hide16, ["HIDE"], 2],[hide17, ["HIDE"], 5],[hide18, ["HIDE"], 5],[hide19, ["HIDE"], 5],
     [hide20, ["HIDE"], 5],
     [hide21, [], 70],
-    [hide26, ["HIDE"], 5],
     [hide27, ["HOUSE"], 10],
     [hide28, ["HOUSE"], 10],
     [hide29, ["HOUSE"], 5],
