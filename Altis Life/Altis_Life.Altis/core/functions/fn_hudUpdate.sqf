@@ -5,13 +5,23 @@
 
     Description:
     Updates the HUD when it needs to.
-
+*/
 disableSerialization;
 
 if (isNull LIFEdisplay) then {[] call life_fnc_hudSetup;};
 LIFEctrl(2200) progressSetPosition (life_hunger / 100);
 LIFEctrl(2201) progressSetPosition (1 - (damage player));
 LIFEctrl(2202) progressSetPosition (life_thirst / 100);
-*/
 
-[] execVM "scripts\custHud.sqf";
+if(!isNil "life_seatbelt") then {
+    if ( vehicle player != player ) then {
+        if(life_seatbelt) then {
+            LIFEctrl(1105) ctrlSetText "icons\ico_seatlocked.paa";
+        } else {
+            LIFEctrl(1105) ctrlSetText "icons\ico_seatunlocked.paa";
+        };
+    } else {
+        LIFEctrl(1105) ctrlSetText "";
+    };
+};
+

@@ -30,5 +30,3 @@ if (LIFE_SETTINGS(getNumber,"restrict_medic_weapons") isEqualTo 1) then {
 waitUntil{!isNull (findDisplay 38500)}; //Wait for the spawn selection to be open.
 waitUntil{isNull (findDisplay 38500)}; //Wait for the spawn selection to be done.
 
-[] execVM "scripts\custHud.sqf";
-[] execVM "scripts\fn_custHudUpdate.sqf";

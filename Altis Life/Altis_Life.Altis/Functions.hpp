@@ -465,7 +465,6 @@ class Life_Client_Core {
     
     class Scripts {
         file = "scripts";
-        class custHudUpdate {};
         class introText {};
     };
 };

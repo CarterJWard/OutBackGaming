@@ -38,4 +38,4 @@ if (_action) then {
     life_action_inUse = false;
 };
 life_hasKidney = true;
-[] call life_fnc_custHudUpdate;
+[] call life_fnc_hudUpdate;

@@ -19,8 +19,7 @@ class CfgServer {
 class RscTitles {
     #include "dialog\progress.hpp"
     #include "dialog\hud_nameTags.hpp"
-    //#include "dialog\hud_stats.hpp"
-	#include "dialog\custHud.hpp"
+    #include "dialog\hud_stats.hpp"
 	#include "dialog\RscNotification.hpp"
     #include "maverick\introcam\dialogs\title_status.hpp"
 };
