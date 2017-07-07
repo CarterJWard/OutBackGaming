@@ -23,7 +23,6 @@ if (_action) then {
     CASH = CASH + _value;
     hint format [localize "STR_ANOTF_Success",[_value] call life_fnc_numberText];
     closeDialog 0;
-    advanced_log format["%1 has comped themselves %2",profilename,_value];
 } else {
     hint localize "STR_NOTF_ActionCancel";
     closeDialog 0;
