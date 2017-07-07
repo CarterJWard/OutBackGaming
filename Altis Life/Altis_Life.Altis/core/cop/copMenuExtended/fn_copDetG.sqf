@@ -15,5 +15,5 @@ if (!license_cop_detectiveL) exitWith {hint "You are not lead detevtive"};
 if (_copPlayerRank < 1) exitWith {hint "The player needs to be a higher rank"};
 
 [6] remoteExecCall ["life_fnc_removeLicenses",_copPlayer];
-[1,format["Congratulations! You have been promoted to %1 by %2",_copPlayerRankText,name player]] remoteExec ["life_fnc_broadcast",_copPlayer];
-hint format ["You have promoted %1 to SWAT",name _copPlayer];
+[1,format["Congratulations! You have been promoted to %1 by %2","Detective",name player]] remoteExec ["life_fnc_broadcast",_copPlayer];
+hint format ["You have promoted %1 to Detective",name _copPlayer];
