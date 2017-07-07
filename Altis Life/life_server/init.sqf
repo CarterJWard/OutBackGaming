@@ -166,8 +166,8 @@ CONST(JxMxE_PublishVehicle,"false");
 
 /* Setup radio channels for west/independent/civilian */
 life_radio_west = radioChannelCreate [[0, 0.95, 1, 0.8], "Police Channel", "%UNIT_NAME", []];
-life_radio_civ = radioChannelCreate [[0, 0.95, 1, 0.8], "Civilian Channel", "%UNIT_NAME", []];
-life_radio_indep = radioChannelCreate [[0, 0.95, 1, 0.8], "Medic Channel", "%UNIT_NAME", []];
+life_radio_civ = radioChannelCreate [[0.52,0.18,0.59,0.8], "Civilian Channel", "%UNIT_NAME", []];
+life_radio_indep = radioChannelCreate [[0,0.8,0.16,0.8], "Medic Channel", "%UNIT_NAME", []];
 
 /* Set the amount of gold in the federal reserve at mission start */
 fed_bank setVariable ["safe",count playableUnits,true];

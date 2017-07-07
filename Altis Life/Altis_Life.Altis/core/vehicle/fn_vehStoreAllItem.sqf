@@ -38,8 +38,6 @@ _itemWeight = ([_ctrl] call Life_fnc_itemWeight) * _num;
 _veh_data = Life_trunk_vehicle getVariable ["Trunk",[[],0]];
 _inv = _veh_data select 0;
 
-if(_ctrl == "goldbar" && {!(Life_trunk_vehicle isKindOf "LandVehicle" OR Life_trunk_vehicle isKindOf "House_F")}) exitWith {["Du kannst dieses Item nur in Landfahrzeuge einlagern.",true,"fast","orange","Error"]spawn Life_fnc_msg;};
-
 if(_ctrl == "money") then
 {
 	_index = [_ctrl,_inv] call TON_fnc_index;

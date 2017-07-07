@@ -10,6 +10,7 @@ StartProgress = false;
 
 [] execVM "briefing.sqf"; //Load Briefing
 [] execVM "KRON_Strings.sqf";
+[] execVM "scripts\removeFog.sqf";
 if(isDedicated && isNil("life_market_prices")) then
 {
 [] call life_fnc_marketconfiguration;
