@@ -5742,6 +5742,9 @@
             <German>Durst</German>
             <Portuguese>Água</Portuguese>
         </Key>
+        <Key ID="STR_HUD_XP">
+            <Original>XP</Original>
+        </Key>
     </Package>
     <Package name="Vehicle_Service">
         <Key ID="STR_Service_Chopper_NoAir">

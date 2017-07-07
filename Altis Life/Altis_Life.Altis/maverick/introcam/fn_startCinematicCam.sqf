@@ -28,10 +28,6 @@ mav_introcam_continue = false;
 
 // Display status bar
 9500 cutRsc["maverick_dialog_introcam_status","PLAIN"];
-["<img image='textures\sign\logo.paa'>",0.4375,0.42,5,2,0,9459] spawn bis_fnc_dynamicText;
-
-
-
 
 // In case the player enabled music
 if (getNumber(MissionconfigFile >> (format["Maverick_IntroCam_%1", worldName]) >> "Info" >> "music") == 1) then {

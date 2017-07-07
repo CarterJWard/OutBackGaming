@@ -15,7 +15,7 @@ class Life_Prof_Dialog{
                     class playermenutexture: life_RscPicture
                     {
                         idc = 9090909;
-                        text = "icons\tablet\tablet.paa";
+                        text = "icons\tablet\tablet_old.paa";
                         x = 0;
                         y = -0.12;
                         w = 1.05;
