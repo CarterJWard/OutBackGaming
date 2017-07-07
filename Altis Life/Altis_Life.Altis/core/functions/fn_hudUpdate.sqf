@@ -25,3 +25,19 @@ if(!isNil "life_seatbelt") then {
     };
 };
 
+private _side = PROF_SIDE(playerSide);
+private _prof = switch (playerSide) do {
+    case civilian: {"pCiv"};
+    case west: {"pCop"};
+    case independent: {"pMed"};
+    default {};
+};
+private _xpLevel = PROF_VALUE(_prof,_side) select 0;
+private _xpAt = PROF_VALUE(_prof,_side) select 1;
+private _nextLevel = _xpLevel * ( _xpLevel - 1) * 500; 
+if(_nextLevel < 1) then {_nextLevel = 500;};
+private _xpPercent = (_xpAt / _nextLevel);
+
+LIFEctrl(2203) progressSetPosition _xpPercent;
+LIFEctrl(1203) ctrlSetText format["Level:%1",_xpLevel];
+

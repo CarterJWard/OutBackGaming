@@ -10706,6 +10706,12 @@
 		</Key>
 	</Package>
     <Package Name="Skills">
+        <Key ID="STR_Prof_lvlUp">
+ 	        <Original>CONGRATULATIONS! YOU ARE NOW LVL: %1 IN %2</Original>
+ 	    </Key>
+ 	    <Key ID="STR_Prof_lvlUp2">
+ 	        <Original>CONGRATULATIONS! %1 IS NOW AT LVL: %2</Original>
+ 	    </Key>
         <Key ID="STR_Prof_Scav">
             <Original>Scavenger</Original>
         </Key>
