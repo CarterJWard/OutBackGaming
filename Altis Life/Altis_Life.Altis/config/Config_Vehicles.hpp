@@ -139,12 +139,13 @@ class CarShops {
         vehicles[] = {
             { "B_Quadbike_01_F", { "life_donorLevel", "SCALAR", 1 } },
             { "C_SUV_01_F", {"life_donorLevel", "SCALAR", 1} },
-            { "C_Offroad_01_F",{"life_donorLevel", "SCALAR", 3} },
-            { "C_Truck_02_covered_F",{"life_donorLevel","SCALAR", 3} },
-            { "B_Heli_Light_01_F", { "life_donorLevel", "SCALAR", 3} },
-            { "I_Heli_Transport_02_F", { "life_donorLevel", "SCALAR", 3} },
+            { "C_Offroad_01_F",{"life_donorLevel", "SCALAR", 1} },
+            { "B_Truck_01_box_F", { "life_donorLevel", "SCALAR", 1 } },
+            { "C_Truck_02_covered_F",{"life_donorLevel","SCALAR", 1} },
+            { "B_Heli_Light_01_F", { "life_donorLevel", "SCALAR", 1} },
+            { "B_Heli_Transport_03_unarmed_F", { "life_donorLevel", "SCALAR", 1} },
+            { "I_Heli_Transport_02_F", { "life_donorLevel", "SCALAR", 1} },
             { "O_Heli_Light_02_unarmed_F", { "life_donorLevel", "SCALAR", 3} },
-            { "B_Heli_Transport_03_unarmed_F", { "life_donorLevel", "SCALAR", 3} },
             { "I_Heli_light_03_unarmed_F", { "life_donorLevel", "SCALAR", 3} }
         };
     };
@@ -328,7 +329,74 @@ class LifeCfgVehicles {
         vItemSpace = 800;
         licenses[] = { {"trucking"}, {""}, {""}, {""} };
         price = 950000;
-        textures[] = { };
+        textures[] = { 
+            { "Aqua", "donor", {
+                "textures\vehicles\Donor1\aqua.jpg"
+            }, "call life_donorLevel >= 1" },
+            { "Baby Blue", "donor", {
+                "textures\vehicles\Donor1\babyBlue.jpg"
+            }, "call life_donorLevel >= 1" },
+            { "Aqua Gradient", "donor", {
+                "textures\vehicles\Donor1\blueGrad.jpg"
+            }, "call life_donorLevel >= 1" },
+            { "Brown", "donor", {
+                "textures\vehicles\Donor1\brown.jpg"
+            }, "call life_donorLevel >= 1" },
+            { "Dark Purple", "donor", {
+                "textures\vehicles\Donor1\dpurple.jpg"
+            }, "call life_donorLevel >= 1" },
+            { "Green", "donor", {
+                "textures\vehicles\Donor1\green.jpg"
+            }, "call life_donorLevel >= 1" },
+            { "Hot Pink", "donor", {
+                "textures\vehicles\Donor1\hotPink.jpg"
+            }, "call life_donorLevel >= 1" },
+            { "Lime", "donor", {
+                "textures\vehicles\Donor1\lime.jpg"
+            }, "call life_donorLevel >= 1" },
+            { "Magenta", "donor", {
+                "textures\vehicles\Donor1\magenta.jpg"
+            }, "call life_donorLevel >= 1" },
+            { "Orange", "donor", {
+                "textures\vehicles\Donor1\orange.jpg"
+            }, "call life_donorLevel >= 1" },
+            { "Pink Orange", "donor", {
+                "textures\vehicles\Donor1\pinkGrad.jpg"
+            }, "call life_donorLevel >= 1" },
+            { "Purple", "donor", {
+                "textures\vehicles\Donor1\purple.jpg"
+            }, "call life_donorLevel >= 1"},
+            { "Rose", "donor", {
+                "textures\vehicles\Donor1\rose.jpg"
+            }, "call life_donorLevel >= 1" },
+            { "Rose Gold", "donor", {
+                "textures\vehicles\Donor1\roseGold.jpg"
+            }, "call life_donorLevel >= 1" },
+            { "Turquoise", "donor", {
+                "textures\vehicles\Donor1\turquoise.jpg"
+            }, "call life_donorLevel >= 1" },
+            { "Granite", "donor", {
+                "textures\vehicles\Donor2\M1.jpg"
+            }, "call life_donorLevel >= 2" },
+            { "Deep Sea", "donor", {
+                "textures\vehicles\Donor2\M2.jpg"
+            }, "call life_donorLevel >= 2" },
+            { "Crystal", "donor", {
+                "textures\vehicles\Donor2\M3.jpg"
+            }, "call life_donorLevel >= 2" },
+            { "Bubbles", "donor", {
+                "textures\vehicles\Donor2\M4.jpg"
+            }, "call life_donorLevel >= 2" },
+            { "Feathers", "donor", {
+                "textures\vehicles\Donor2\M5.jpg"
+            }, "call life_donorLevel >= 2" },
+            { "Honey Comb", "donor", {
+                "textures\vehicles\Donor2\M6.jpg"
+            }, "call life_donorLevel >= 2" },
+            { "Deep Space", "donor", {
+                "textures\vehicles\Donor2\M7.jpg"
+            }, "call life_donorLevel >= 2" }
+        };
     };
 
     class B_Truck_01_transport_F {
@@ -374,6 +442,72 @@ class LifeCfgVehicles {
                 "\A3\soft_F\Offroad_01\Data\offroad_01_ext_BASE05_CO.paa",
                 "\A3\soft_F\Offroad_01\Data\offroad_01_ext_BASE05_CO.paa"
             },"" },
+            { "Aqua", "donor", {
+                "textures\vehicles\Donor1\aqua.jpg"
+            }, "call life_donorLevel >= 1" },
+            { "Baby Blue", "donor", {
+                "textures\vehicles\Donor1\babyBlue.jpg"
+            }, "call life_donorLevel >= 1" },
+            { "Aqua Gradient", "donor", {
+                "textures\vehicles\Donor1\blueGrad.jpg"
+            }, "call life_donorLevel >= 1" },
+            { "Brown", "donor", {
+                "textures\vehicles\Donor1\brown.jpg"
+            }, "call life_donorLevel >= 1" },
+            { "Dark Purple", "donor", {
+                "textures\vehicles\Donor1\dpurple.jpg"
+            }, "call life_donorLevel >= 1" },
+            { "Green", "donor", {
+                "textures\vehicles\Donor1\green.jpg"
+            }, "call life_donorLevel >= 1" },
+            { "Hot Pink", "donor", {
+                "textures\vehicles\Donor1\hotPink.jpg"
+            }, "call life_donorLevel >= 1" },
+            { "Lime", "donor", {
+                "textures\vehicles\Donor1\lime.jpg"
+            }, "call life_donorLevel >= 1" },
+            { "Magenta", "donor", {
+                "textures\vehicles\Donor1\magenta.jpg"
+            }, "call life_donorLevel >= 1" },
+            { "Orange", "donor", {
+                "textures\vehicles\Donor1\orange.jpg"
+            }, "call life_donorLevel >= 1" },
+            { "Pink Orange", "donor", {
+                "textures\vehicles\Donor1\pinkGrad.jpg"
+            }, "call life_donorLevel >= 1" },
+            { "Purple", "donor", {
+                "textures\vehicles\Donor1\purple.jpg"
+            }, "call life_donorLevel >= 1"},
+            { "Rose", "donor", {
+                "textures\vehicles\Donor1\rose.jpg"
+            }, "call life_donorLevel >= 1" },
+            { "Rose Gold", "donor", {
+                "textures\vehicles\Donor1\roseGold.jpg"
+            }, "call life_donorLevel >= 1" },
+            { "Turquoise", "donor", {
+                "textures\vehicles\Donor1\turquoise.jpg"
+            }, "call life_donorLevel >= 1" },
+            { "Granite", "donor", {
+                "textures\vehicles\Donor2\M1.jpg"
+            }, "call life_donorLevel >= 2" },
+            { "Deep Sea", "donor", {
+                "textures\vehicles\Donor2\M2.jpg"
+            }, "call life_donorLevel >= 2" },
+            { "Crystal", "donor", {
+                "textures\vehicles\Donor2\M3.jpg"
+            }, "call life_donorLevel >= 2" },
+            { "Bubbles", "donor", {
+                "textures\vehicles\Donor2\M4.jpg"
+            }, "call life_donorLevel >= 2" },
+            { "Feathers", "donor", {
+                "textures\vehicles\Donor2\M5.jpg"
+            }, "call life_donorLevel >= 2" },
+            { "Honey Comb", "donor", {
+                "textures\vehicles\Donor2\M6.jpg"
+            }, "call life_donorLevel >= 2" },
+            { "Deep Space", "donor", {
+                "textures\vehicles\Donor2\M7.jpg"
+            }, "call life_donorLevel >= 2" },
             { "Camo", "donor", {
                 "textures\vehicles\donor3\offroad1.jpg"
             }, "call life_donorLevel >= 3"},
@@ -513,7 +647,28 @@ will modify the virtual space and the price of the vehicle, but other informatio
             }, "call life_donorLevel >= 1" },
             { "Turquoise", "donor", {
                 "textures\vehicles\Donor1\turquoise.jpg"
-            }, "call life_donorLevel >= 1" }
+            }, "call life_donorLevel >= 1" },
+            { "Granite", "donor", {
+                "textures\vehicles\Donor2\M1.jpg"
+            }, "call life_donorLevel >= 2" },
+            { "Deep Sea", "donor", {
+                "textures\vehicles\Donor2\M2.jpg"
+            }, "call life_donorLevel >= 2" },
+            { "Crystal", "donor", {
+                "textures\vehicles\Donor2\M3.jpg"
+            }, "call life_donorLevel >= 2" },
+            { "Bubbles", "donor", {
+                "textures\vehicles\Donor2\M4.jpg"
+            }, "call life_donorLevel >= 2" },
+            { "Feathers", "donor", {
+                "textures\vehicles\Donor2\M5.jpg"
+            }, "call life_donorLevel >= 2" },
+            { "Honey Comb", "donor", {
+                "textures\vehicles\Donor2\M6.jpg"
+            }, "call life_donorLevel >= 2" },
+            { "Deep Space", "donor", {
+                "textures\vehicles\Donor2\M7.jpg"
+            }, "call life_donorLevel >= 2" }
         };
     };
 
@@ -582,7 +737,52 @@ will modify the virtual space and the price of the vehicle, but other informatio
             },"" },
             { "Black", "civ", {
                 "\a3\soft_f_gamma\Hatchback_01\data\hatchback_01_ext_base09_co.paa"
-            },"" }
+            },"" },
+             { "Aqua", "donor", {
+                "textures\vehicles\Donor1\aqua.jpg"
+            }, "call life_donorLevel >= 1" },
+            { "Baby Blue", "donor", {
+                "textures\vehicles\Donor1\babyBlue.jpg"
+            }, "call life_donorLevel >= 1" },
+            { "Aqua Gradient", "donor", {
+                "textures\vehicles\Donor1\blueGrad.jpg"
+            }, "call life_donorLevel >= 1" },
+            { "Brown", "donor", {
+                "textures\vehicles\Donor1\brown.jpg"
+            }, "call life_donorLevel >= 1" },
+            { "Dark Purple", "donor", {
+                "textures\vehicles\Donor1\dpurple.jpg"
+            }, "call life_donorLevel >= 1" },
+            { "Green", "donor", {
+                "textures\vehicles\Donor1\green.jpg"
+            }, "call life_donorLevel >= 1" },
+            { "Hot Pink", "donor", {
+                "textures\vehicles\Donor1\hotPink.jpg"
+            }, "call life_donorLevel >= 1" },
+            { "Lime", "donor", {
+                "textures\vehicles\Donor1\lime.jpg"
+            }, "call life_donorLevel >= 1" },
+            { "Magenta", "donor", {
+                "textures\vehicles\Donor1\magenta.jpg"
+            }, "call life_donorLevel >= 1" },
+            { "Orange", "donor", {
+                "textures\vehicles\Donor1\orange.jpg"
+            }, "call life_donorLevel >= 1" },
+            { "Pink Orange", "donor", {
+                "textures\vehicles\Donor1\pinkGrad.jpg"
+            }, "call life_donorLevel >= 1" },
+            { "Purple", "donor", {
+                "textures\vehicles\Donor1\purple.jpg"
+            }, "call life_donorLevel >= 1"},
+            { "Rose", "donor", {
+                "textures\vehicles\Donor1\rose.jpg"
+            }, "call life_donorLevel >= 1" },
+            { "Rose Gold", "donor", {
+                "textures\vehicles\Donor1\roseGold.jpg"
+            }, "call life_donorLevel >= 1" },
+            { "Turquoise", "donor", {
+                "textures\vehicles\Donor1\turquoise.jpg"
+            }, "call life_donorLevel >= 1" }
         };
     };
 
@@ -600,6 +800,72 @@ will modify the virtual space and the price of the vehicle, but other informatio
             { "Orange", "civ", {
                 "\a3\soft_f_gamma\SUV_01\Data\suv_01_ext_04_co.paa"
             },"" },
+             { "Aqua", "donor", {
+                "textures\vehicles\Donor1\aqua.jpg"
+            }, "call life_donorLevel >= 1" },
+            { "Baby Blue", "donor", {
+                "textures\vehicles\Donor1\babyBlue.jpg"
+            }, "call life_donorLevel >= 1" },
+            { "Aqua Gradient", "donor", {
+                "textures\vehicles\Donor1\blueGrad.jpg"
+            }, "call life_donorLevel >= 1" },
+            { "Brown", "donor", {
+                "textures\vehicles\Donor1\brown.jpg"
+            }, "call life_donorLevel >= 1" },
+            { "Dark Purple", "donor", {
+                "textures\vehicles\Donor1\dpurple.jpg"
+            }, "call life_donorLevel >= 1" },
+            { "Green", "donor", {
+                "textures\vehicles\Donor1\green.jpg"
+            }, "call life_donorLevel >= 1" },
+            { "Hot Pink", "donor", {
+                "textures\vehicles\Donor1\hotPink.jpg"
+            }, "call life_donorLevel >= 1" },
+            { "Lime", "donor", {
+                "textures\vehicles\Donor1\lime.jpg"
+            }, "call life_donorLevel >= 1" },
+            { "Magenta", "donor", {
+                "textures\vehicles\Donor1\magenta.jpg"
+            }, "call life_donorLevel >= 1" },
+            { "Orange", "donor", {
+                "textures\vehicles\Donor1\orange.jpg"
+            }, "call life_donorLevel >= 1" },
+            { "Pink Orange", "donor", {
+                "textures\vehicles\Donor1\pinkGrad.jpg"
+            }, "call life_donorLevel >= 1" },
+            { "Purple", "donor", {
+                "textures\vehicles\Donor1\purple.jpg"
+            }, "call life_donorLevel >= 1"},
+            { "Rose", "donor", {
+                "textures\vehicles\Donor1\rose.jpg"
+            }, "call life_donorLevel >= 1" },
+            { "Rose Gold", "donor", {
+                "textures\vehicles\Donor1\roseGold.jpg"
+            }, "call life_donorLevel >= 1" },
+            { "Turquoise", "donor", {
+                "textures\vehicles\Donor1\turquoise.jpg"
+            }, "call life_donorLevel >= 1" },
+            { "Granite", "donor", {
+                "textures\vehicles\Donor2\M1.jpg"
+            }, "call life_donorLevel >= 2" },
+            { "Deep Sea", "donor", {
+                "textures\vehicles\Donor2\M2.jpg"
+            }, "call life_donorLevel >= 2" },
+            { "Crystal", "donor", {
+                "textures\vehicles\Donor2\M3.jpg"
+            }, "call life_donorLevel >= 2" },
+            { "Bubbles", "donor", {
+                "textures\vehicles\Donor2\M4.jpg"
+            }, "call life_donorLevel >= 2" },
+            { "Feathers", "donor", {
+                "textures\vehicles\Donor2\M5.jpg"
+            }, "call life_donorLevel >= 2" },
+            { "Honey Comb", "donor", {
+                "textures\vehicles\Donor2\M6.jpg"
+            }, "call life_donorLevel >= 2" },
+            { "Deep Space", "donor", {
+                "textures\vehicles\Donor2\M7.jpg"
+            }, "call life_donorLevel >= 2" },
             { "Li Mafu", "donor", {
                 "textures\vehicles\donor3\suv1.jpg"
             },"call life_donorLevel >= 3" },
@@ -719,6 +985,72 @@ will modify the virtual space and the price of the vehicle, but other informatio
             { "Waves Blue", "civ", {
                 "\a3\air_f\Heli_Light_01\Data\Skins\heli_light_01_ext_wave_co.paa"
             },"" },
+             { "Aqua", "donor", {
+                "textures\vehicles\Donor1\aqua.jpg"
+            }, "call life_donorLevel >= 1" },
+            { "Baby Blue", "donor", {
+                "textures\vehicles\Donor1\babyBlue.jpg"
+            }, "call life_donorLevel >= 1" },
+            { "Aqua Gradient", "donor", {
+                "textures\vehicles\Donor1\blueGrad.jpg"
+            }, "call life_donorLevel >= 1" },
+            { "Brown", "donor", {
+                "textures\vehicles\Donor1\brown.jpg"
+            }, "call life_donorLevel >= 1" },
+            { "Dark Purple", "donor", {
+                "textures\vehicles\Donor1\dpurple.jpg"
+            }, "call life_donorLevel >= 1" },
+            { "Green", "donor", {
+                "textures\vehicles\Donor1\green.jpg"
+            }, "call life_donorLevel >= 1" },
+            { "Hot Pink", "donor", {
+                "textures\vehicles\Donor1\hotPink.jpg"
+            }, "call life_donorLevel >= 1" },
+            { "Lime", "donor", {
+                "textures\vehicles\Donor1\lime.jpg"
+            }, "call life_donorLevel >= 1" },
+            { "Magenta", "donor", {
+                "textures\vehicles\Donor1\magenta.jpg"
+            }, "call life_donorLevel >= 1" },
+            { "Orange", "donor", {
+                "textures\vehicles\Donor1\orange.jpg"
+            }, "call life_donorLevel >= 1" },
+            { "Pink Orange", "donor", {
+                "textures\vehicles\Donor1\pinkGrad.jpg"
+            }, "call life_donorLevel >= 1" },
+            { "Purple", "donor", {
+                "textures\vehicles\Donor1\purple.jpg"
+            }, "call life_donorLevel >= 1"},
+            { "Rose", "donor", {
+                "textures\vehicles\Donor1\rose.jpg"
+            }, "call life_donorLevel >= 1" },
+            { "Rose Gold", "donor", {
+                "textures\vehicles\Donor1\roseGold.jpg"
+            }, "call life_donorLevel >= 1" },
+            { "Turquoise", "donor", {
+                "textures\vehicles\Donor1\turquoise.jpg"
+            }, "call life_donorLevel >= 1" },
+            { "Granite", "donor", {
+                "textures\vehicles\Donor2\M1.jpg"
+            }, "call life_donorLevel >= 2" },
+            { "Deep Sea", "donor", {
+                "textures\vehicles\Donor2\M2.jpg"
+            }, "call life_donorLevel >= 2" },
+            { "Crystal", "donor", {
+                "textures\vehicles\Donor2\M3.jpg"
+            }, "call life_donorLevel >= 2" },
+            { "Bubbles", "donor", {
+                "textures\vehicles\Donor2\M4.jpg"
+            }, "call life_donorLevel >= 2" },
+            { "Feathers", "donor", {
+                "textures\vehicles\Donor2\M5.jpg"
+            }, "call life_donorLevel >= 2" },
+            { "Honey Comb", "donor", {
+                "textures\vehicles\Donor2\M6.jpg"
+            }, "call life_donorLevel >= 2" },
+            { "Deep Space", "donor", {
+                "textures\vehicles\Donor2\M7.jpg"
+            }, "call life_donorLevel >= 2" }
             {"Sea Breeze", "donor", {
                 "textures\vehicles\donor3\hummin.jpg"
             }, "call life_donorLevel >= 3"},
@@ -791,6 +1123,94 @@ will modify the virtual space and the price of the vehicle, but other informatio
         licenses[] = { {""}, {""}, {""}, {""} };
         price = 1800000;
         textures[] = {
+            { "Aqua", "donor", {
+                "textures\vehicles\Donor1\aqua.jpg",
+                "textures\vehicles\Donor1\aqua.jpg"
+            }, "call life_donorLevel >= 1" },
+            { "Baby Blue", "donor", {
+                "textures\vehicles\Donor1\babyBlue.jpg",
+                "textures\vehicles\Donor1\babyBlue.jpg"
+            }, "call life_donorLevel >= 1" },
+            { "Aqua Gradient", "donor", {
+                "textures\vehicles\Donor1\blueGrad.jpg",
+                "textures\vehicles\Donor1\blueGrad.jpg"
+            }, "call life_donorLevel >= 1" },
+            { "Brown", "donor", {
+                "textures\vehicles\Donor1\brown.jpg",
+                "textures\vehicles\Donor1\brown.jpg"
+            }, "call life_donorLevel >= 1" },
+            { "Dark Purple", "donor", {
+                "textures\vehicles\Donor1\dpurple.jpg",
+                "textures\vehicles\Donor1\dpurple.jpg"
+            }, "call life_donorLevel >= 1" },
+            { "Green", "donor", {
+                "textures\vehicles\Donor1\green.jpg",
+                "textures\vehicles\Donor1\green.jpg"
+            }, "call life_donorLevel >= 1" },
+            { "Hot Pink", "donor", {
+                "textures\vehicles\Donor1\hotPink.jpg",
+                "textures\vehicles\Donor1\hotPink.jpg"
+            }, "call life_donorLevel >= 1" },
+            { "Lime", "donor", {
+                "textures\vehicles\Donor1\lime.jpg",
+                "textures\vehicles\Donor1\lime.jpg"
+            }, "call life_donorLevel >= 1" },
+            { "Magenta", "donor", {
+                "textures\vehicles\Donor1\magenta.jpg",
+                "textures\vehicles\Donor1\magenta.jpg"
+            }, "call life_donorLevel >= 1" },
+            { "Orange", "donor", {
+                "textures\vehicles\Donor1\orange.jpg",
+                "textures\vehicles\Donor1\orange.jpg"
+            }, "call life_donorLevel >= 1" },
+            { "Pink Orange", "donor", {
+                "textures\vehicles\Donor1\pinkGrad.jpg",
+                "textures\vehicles\Donor1\pinkGrad.jpg"
+            }, "call life_donorLevel >= 1" },
+            { "Purple", "donor", {
+                "textures\vehicles\Donor1\purple.jpg",
+                "textures\vehicles\Donor1\purple.jpg"
+            }, "call life_donorLevel >= 1"},
+            { "Rose", "donor", {
+                "textures\vehicles\Donor1\rose.jpg",
+                "textures\vehicles\Donor1\rose.jpg"
+            }, "call life_donorLevel >= 1" },
+            { "Rose Gold", "donor", {
+                "textures\vehicles\Donor1\roseGold.jpg",
+                "textures\vehicles\Donor1\roseGold.jpg"
+            }, "call life_donorLevel >= 1" },
+            { "Turquoise", "donor", {
+                "textures\vehicles\Donor1\turquoise.jpg",
+                "textures\vehicles\Donor1\turquoise.jpg"
+            }, "call life_donorLevel >= 1" },
+            { "Granite", "donor", {
+                "textures\vehicles\Donor2\M1.jpg",
+                "textures\vehicles\Donor2\M1.jpg"
+            }, "call life_donorLevel >= 2" },
+            { "Deep Sea", "donor", {
+                "textures\vehicles\Donor2\M2.jpg",
+                "textures\vehicles\Donor2\M2.jpg"
+            }, "call life_donorLevel >= 2" },
+            { "Crystal", "donor", {
+                "textures\vehicles\Donor2\M3.jpg",
+                "textures\vehicles\Donor2\M3.jpg"
+            }, "call life_donorLevel >= 2" },
+            { "Bubbles", "donor", {
+                "textures\vehicles\Donor2\M4.jpg",
+                "textures\vehicles\Donor2\M4.jpg"
+            }, "call life_donorLevel >= 2" },
+            { "Feathers", "donor", {
+                "textures\vehicles\Donor2\M5.jpg",
+                "textures\vehicles\Donor2\M5.jpg"
+            }, "call life_donorLevel >= 2" },
+            { "Honey Comb", "donor", {
+                "textures\vehicles\Donor2\M6.jpg",
+                "textures\vehicles\Donor2\M6.jpg"
+            }, "call life_donorLevel >= 2" },
+            { "Deep Space", "donor", {
+                "textures\vehicles\Donor2\M7.jpg",
+                "textures\vehicles\Donor2\M7.jpg"
+            }, "call life_donorLevel >= 2" },            
             {"Galaxy", "donor", {
                 "textures\vehicles\donor3\huronf1.jpg",
                 "textures\vehicles\donor3\huronb1.jpg"
@@ -818,6 +1238,81 @@ will modify the virtual space and the price of the vehicle, but other informatio
                 "\A3\air_f_beta\heli_transport_02\data\skins\heli_transport_02_2_ion_co",
                 "\A3\air_f_beta\heli_transport_02\data\skins\heli_transport_02_3_ion_co"
             },"" },
+            { "Aqua", "donor", {
+                "textures\vehicles\Donor1\aqua.jpg",
+                "textures\vehicles\Donor1\aqua.jpg",
+                "textures\vehicles\Donor1\aqua.jpg"
+            }, "call life_donorLevel >= 1" },
+            { "Baby Blue", "donor", {
+                "textures\vehicles\Donor1\babyBlue.jpg",
+                "textures\vehicles\Donor1\babyBlue.jpg",
+                "textures\vehicles\Donor1\babyBlue.jpg"
+            }, "call life_donorLevel >= 1" },
+            { "Aqua Gradient", "donor", {
+                "textures\vehicles\Donor1\blueGrad.jpg",
+                "textures\vehicles\Donor1\blueGrad.jpg",
+                "textures\vehicles\Donor1\blueGrad.jpg"
+            }, "call life_donorLevel >= 1" },
+            { "Brown", "donor", {
+                "textures\vehicles\Donor1\brown.jpg",
+                "textures\vehicles\Donor1\brown.jpg",
+                "textures\vehicles\Donor1\brown.jpg"
+            }, "call life_donorLevel >= 1" },
+            { "Dark Purple", "donor", {
+                "textures\vehicles\Donor1\dpurple.jpg",
+                "textures\vehicles\Donor1\dpurple.jpg",
+                "textures\vehicles\Donor1\dpurple.jpg"
+            }, "call life_donorLevel >= 1" },
+            { "Green", "donor", {
+                "textures\vehicles\Donor1\green.jpg",
+                "textures\vehicles\Donor1\green.jpg",
+                "textures\vehicles\Donor1\green.jpg"
+            }, "call life_donorLevel >= 1" },
+            { "Hot Pink", "donor", {
+                "textures\vehicles\Donor1\hotPink.jpg",
+                "textures\vehicles\Donor1\hotPink.jpg",
+                "textures\vehicles\Donor1\hotPink.jpg"
+            }, "call life_donorLevel >= 1" },
+            { "Lime", "donor", {
+                "textures\vehicles\Donor1\lime.jpg",
+                "textures\vehicles\Donor1\lime.jpg",
+                "textures\vehicles\Donor1\lime.jpg"
+            }, "call life_donorLevel >= 1" },
+            { "Magenta", "donor", {
+                "textures\vehicles\Donor1\magenta.jpg",
+                "textures\vehicles\Donor1\magenta.jpg",
+                "textures\vehicles\Donor1\magenta.jpg"
+            }, "call life_donorLevel >= 1" },
+            { "Orange", "donor", {
+                "textures\vehicles\Donor1\orange.jpg",
+                "textures\vehicles\Donor1\orange.jpg",
+                "textures\vehicles\Donor1\orange.jpg"
+            }, "call life_donorLevel >= 1" },
+            { "Pink Orange", "donor", {
+                "textures\vehicles\Donor1\pinkGrad.jpg",
+                "textures\vehicles\Donor1\pinkGrad.jpg",
+                "textures\vehicles\Donor1\pinkGrad.jpg"
+            }, "call life_donorLevel >= 1" },
+            { "Purple", "donor", {
+                "textures\vehicles\Donor1\purple.jpg",
+                "textures\vehicles\Donor1\purple.jpg",
+                "textures\vehicles\Donor1\purple.jpg"
+            }, "call life_donorLevel >= 1"},
+            { "Rose", "donor", {
+                "textures\vehicles\Donor1\rose.jpg",
+                "textures\vehicles\Donor1\rose.jpg",
+                "textures\vehicles\Donor1\rose.jpg"
+            }, "call life_donorLevel >= 1" },
+            { "Rose Gold", "donor", {
+                "textures\vehicles\Donor1\roseGold.jpg",
+                "textures\vehicles\Donor1\roseGold.jpg",
+                "textures\vehicles\Donor1\roseGold.jpg"
+            }, "call life_donorLevel >= 1" },
+            { "Turquoise", "donor", {
+                "textures\vehicles\Donor1\turquoise.jpg",
+                "textures\vehicles\Donor1\turquoise.jpg",
+                "textures\vehicles\Donor1\turquoise.jpg"
+            }, "call life_donorLevel >= 1" },
             {"Leaves", "donor", {
                 "textures\vehicles\donor3\mohawkf1.jpg",
                 "textures\vehicles\donor3\mohawkm1.jpg",
@@ -887,9 +1382,54 @@ will modify the virtual space and the price of the vehicle, but other informatio
         licenses[] = {{"trucking"},{""},{""},{""}};
         price = 150000;
         textures[] = {
+            { "Aqua", "donor", {
+                "textures\vehicles\Donor1\aqua.jpg"
+            }, "call life_donorLevel >= 1" },
+            { "Baby Blue", "donor", {
+                "textures\vehicles\Donor1\babyBlue.jpg"
+            }, "call life_donorLevel >= 1" },
+            { "Aqua Gradient", "donor", {
+                "textures\vehicles\Donor1\blueGrad.jpg"
+            }, "call life_donorLevel >= 1" },
+            { "Brown", "donor", {
+                "textures\vehicles\Donor1\brown.jpg"
+            }, "call life_donorLevel >= 1" },
+            { "Dark Purple", "donor", {
+                "textures\vehicles\Donor1\dpurple.jpg"
+            }, "call life_donorLevel >= 1" },
+            { "Green", "donor", {
+                "textures\vehicles\Donor1\green.jpg"
+            }, "call life_donorLevel >= 1" },
+            { "Hot Pink", "donor", {
+                "textures\vehicles\Donor1\hotPink.jpg"
+            }, "call life_donorLevel >= 1" },
+            { "Lime", "donor", {
+                "textures\vehicles\Donor1\lime.jpg"
+            }, "call life_donorLevel >= 1" },
+            { "Magenta", "donor", {
+                "textures\vehicles\Donor1\magenta.jpg"
+            }, "call life_donorLevel >= 1" },
+            { "Orange", "donor", {
+                "textures\vehicles\Donor1\orange.jpg"
+            }, "call life_donorLevel >= 1" },
+            { "Pink Orange", "donor", {
+                "textures\vehicles\Donor1\pinkGrad.jpg"
+            }, "call life_donorLevel >= 1" },
+            { "Purple", "donor", {
+                "textures\vehicles\Donor1\purple.jpg"
+            }, "call life_donorLevel >= 1"},
+            { "Rose", "donor", {
+                "textures\vehicles\Donor1\rose.jpg"
+            }, "call life_donorLevel >= 1" },
+            { "Rose Gold", "donor", {
+                "textures\vehicles\Donor1\roseGold.jpg"
+            }, "call life_donorLevel >= 1" },
+            { "Turquoise", "donor", {
+                "textures\vehicles\Donor1\turquoise.jpg"
+            }, "call life_donorLevel >= 1" },
             {"Rusty Cab", "donor", {
                 "textures\vehicles\donor3\zamakf1.jpg"
-            }, "call life_donorLevel >= 3"}
+            }, "call life_donorLevel >= 3" }
         };
     };
     class I_Heli_light_03_unarmed_F {
