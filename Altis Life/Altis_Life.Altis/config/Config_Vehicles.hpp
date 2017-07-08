@@ -373,7 +373,7 @@ class LifeCfgVehicles {
                 "\A3\soft_F\Offroad_01\Data\offroad_01_ext_BASE05_CO.paa",
                 "\A3\soft_F\Offroad_01\Data\offroad_01_ext_BASE05_CO.paa"
             },"" },
-            { "Camo", "civ", {
+            { "Camo", "donor", {
                 "textures\vehicles\donor3\offroad1.jpg"
             }, "life_donorLevel >= 3"},
             { "Taxi", "civ", {
@@ -554,25 +554,25 @@ will modify the virtual space and the price of the vehicle, but other informatio
             { "Orange", "civ", {
                 "\a3\soft_f_gamma\SUV_01\Data\suv_01_ext_04_co.paa"
             },"" },
-            { "Li Mafu", "civ", {
+            { "Li Mafu", "donor", {
                 "textures\vehicles\donor3\suv1.jpg"
             },"life_donorLevel >= 3" },
-            { "Doodle", "civ",{
+            { "Doodle", "donor",{
                 "textures\vehicles\donor3\suv2.jpg"
             }, "life_donorLevel >= 3 "},
-            { "Blocks", "civ", {
+            { "Blocks", "donor", {
                 "textures\vehicles\donor3\suv3.jpg"
             }, "life_donorLevel >= 3"},
-            { "Demons", "civ", {
+            { "Demons", "donor", {
                 "textures\vehicles\donor3\suv4.jpg"
             }, "life_donorLevel >= 3"},
-            { "Leopard", "civ", {
+            { "Leopard", "donor", {
                 "textures\vehicles\donor3\suv5.jpg"
             }, "life_donorLevel >= 3"},
-            { "Tribal Warfare", "civ", {
+            { "Tribal Warfare", "donor", {
                 "textures\vehicles\donor3\suv6.jpg"
             }, "life_donorLevel >= 3"},
-            { "Voodoo", "civ", {
+            { "Voodoo", "donor", {
                 "textures\vehicles\donor3\suv7.jpg"
             }, "life_donorLevel >= 3"},
             { "Police", "cop", {
@@ -673,26 +673,23 @@ will modify the virtual space and the price of the vehicle, but other informatio
             { "Waves Blue", "civ", {
                 "\a3\air_f\Heli_Light_01\Data\Skins\heli_light_01_ext_wave_co.paa"
             },"" },
-            {"Sea Breeze", "civ", {
+            {"Sea Breeze", "donor", {
                 "textures\vehicles\donor3\hummin.jpg"
             }, "life_donorLevel >= 3"},
-            {"Fire Tribal", "civ", {
+            {"Fire Tribal", "donor", {
                 "textures\vehicles\donor3\hummin3.jpg"
             }, "life_donorLevel >= 3" },
-            {"Demon", "civ", {
+            {"Demon", "donor", {
                 "textures\vehicles\donor3\hummin4.jpg"
             }, "life_donorLevel >= 3" },
-            { "Wolf Pack", "civ", {
+            { "Wolf Pack", "donor", {
                 "textures\vehicles\donor3\hummin5.jpg"
             }, "life_donorLevel >= 3" },
-            { "Fire Flower", "civ", {
+            { "Fire Flower", "donor", {
                 "textures\vehicles\donor3\hummin6.jpg"
             }, "life_donorLevel >= 3" },
             { "Rebel Digital", "reb", {
                 "\a3\air_f\Heli_Light_01\Data\Skins\heli_light_01_ext_digital_co.paa"
-            },"" },
-            { "Digi Green", "reb", {
-                "\a3\air_f\Heli_Light_01\Data\heli_light_01_ext_indp_co.paa"
             },"" },
             { "EMS", "med", {
                 "textures\medic\medLittleBird.jpg"
@@ -713,10 +710,10 @@ will modify the virtual space and the price of the vehicle, but other informatio
             { "EMS", "med", {
                 "textures\medic\medOrca.jpg"
             },"" },
-            { "Rust Camo", "civ", {
+            { "Rust Camo", "donor", {
                 "textures\vehicles\donor3\orca2.jpg"
             }, "life_donorLevel >= 3" },
-            { "Pink Camo", "civ", {
+            { "Pink Camo", "donor", {
                 "textures\vehicles\donor3\orca3.jpg"
             }, "life_donorLevel >= 3" }
         };
@@ -748,11 +745,11 @@ will modify the virtual space and the price of the vehicle, but other informatio
         licenses[] = { {""}, {""}, {""}, {""} };
         price = 1800000;
         textures[] = {
-            {"Galaxy", "civ", {
+            {"Galaxy", "donor", {
                 "textures\vehicles\donor3\huronf1.jpg",
                 "textures\vehicles\donor3\huronb1.jpg"
             }, "life_donorLevel >= 3" },
-            {"Red Camo", "civ", {
+            {"Red Camo", "donor", {
                 "textures\vehicles\donor3\huronf2.jpg",
                 "textures\vehicles\donor3\huronb2.jpg"
             }, "life_donorLevel >= 3" }
@@ -775,22 +772,22 @@ will modify the virtual space and the price of the vehicle, but other informatio
                 "\A3\air_f_beta\heli_transport_02\data\skins\heli_transport_02_2_ion_co",
                 "\A3\air_f_beta\heli_transport_02\data\skins\heli_transport_02_3_ion_co"
             },"" },
-            {"Leaves", "civ", {
+            {"Leaves", "donor", {
                 "textures\vehicles\donor3\mohawkf1.jpg",
                 "textures\vehicles\donor3\mohawkm1.jpg",
                 "Textures\vehicles\donor3\mohawkb1.jpg"
             }, "life_donorLevel >= 3" },
-            {"Tribal", "civ", {
+            {"Tribal", "donor", {
                 "textures\vehicles\donor3\mohawkf2.jpg",
                 "textures\vehicles\donor3\mohawkm2.jpg",
                 "Textures\vehicles\donor3\mohawkb2.jpg"
             }, "life_donorLevel >= 3" },
-            {"Green Leaves", "civ", {
+            {"Green Leaves", "donor", {
                 "textures\vehicles\donor3\mohawkf3.jpg",
                 "textures\vehicles\donor3\mohawkm3.jpg",
                 "Textures\vehicles\donor3\mohawkb3.jpg"
             }, "life_donorLevel >= 3" },
-            {"Sea", "civ", {
+            {"Sea", "donor", {
                 "textures\vehicles\donor3\mohawkf4.jpg",
                 "textures\vehicles\donor3\mohawkm4.jpg",
                 "Textures\vehicles\donor3\mohawkb4.jpg"
@@ -844,7 +841,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
         licenses[] = {{"trucking"},{""},{""},{""}};
         price = 150000;
         textures[] = {
-            {"Rusty Cab", "civ", {
+            {"Rusty Cab", "donor", {
                 "textures\vehicles\donor3\zamakf1.jpg"
             }, "life_donorLevel >= 3"}
         };
@@ -857,13 +854,13 @@ will modify the virtual space and the price of the vehicle, but other informatio
             {"Rebel", "civ", {
                 "\A3\air_f_epb\heli_light_03\Data\heli_light_03_base_co.paa"
             }, ""},
-            {"Black Camo", "civ", {
+            {"Black Camo", "donor", {
                 "textures\vehicles\donor3\hellcat.jpg"
             }, "life_donorLevel >= 3" },
-            {"Desert Camo", "civ", {
+            {"Desert Camo", "donor", {
                 "textures\vehicles\donor3\hellcat1.jpg"
             }, "life_donorLevel >= 3" },
-            {"Blue Camo", "civ", {
+            {"Blue Camo", "donor", {
                 "textures\vehicles\donor3\hellcat2.jpg"
             }, "life_donorLevel >= 3" }
         };
