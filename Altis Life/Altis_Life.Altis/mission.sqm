@@ -314,24 +314,6 @@ class CustomAttributes
 		name="Multiplayer";
 		class Attribute0
 		{
-			property="RespawnTemplates";
-			expression="true";
-			class Value
-			{
-				class data
-				{
-					class type
-					{
-						type[]=
-						{
-							"ARRAY"
-						};
-					};
-				};
-			};
-		};
-		class Attribute1
-		{
 			property="RespawnButton";
 			expression="true";
 			class Value
@@ -346,6 +328,24 @@ class CustomAttributes
 						};
 					};
 					value=1;
+				};
+			};
+		};
+		class Attribute1
+		{
+			property="RespawnTemplates";
+			expression="true";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"ARRAY"
+						};
+					};
 				};
 			};
 		};
@@ -24805,7 +24805,6 @@ class Mission
 						angles[]={0,2.3131721,0};
 					};
 					side="Civilian";
-					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
@@ -24814,7 +24813,7 @@ class Mission
 					};
 					id=2703;
 					type="C_man_1";
-					atlOffset=0.00044250488;
+					atlOffset=0.50400543;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -51430,7 +51429,7 @@ class Mission
 			position[]={12269.802,123.46966,8908.5703};
 			name="reb_v_3";
 			type="Empty";
-			angle=1.7078053;
+			angle=1.7078052;
 			id=2881;
 		};
 		class Item1357
@@ -51599,12 +51598,12 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={50.189087,0.10253212,50.407104};
+				position[]={50.188999,0.10299683,50.407001};
 			};
 			name="CuratorGigallsmeh155Mk";
 			id=2886;
 			type="ModuleCurator_F";
-			atlOffset=186.07254;
+			atlOffset=186.073;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -51622,7 +51621,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="";
+							value="76561198111986051";
 						};
 					};
 				};

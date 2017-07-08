@@ -1050,7 +1050,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
             }, "call life_donorLevel >= 2" },
             { "Deep Space", "donor", {
                 "textures\vehicles\Donor2\M7.jpg"
-            }, "call life_donorLevel >= 2" }
+            }, "call life_donorLevel >= 2" },
             {"Sea Breeze", "donor", {
                 "textures\vehicles\donor3\hummin.jpg"
             }, "call life_donorLevel >= 3"},

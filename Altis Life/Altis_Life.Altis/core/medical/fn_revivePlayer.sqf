@@ -6,13 +6,18 @@
     Description:
     Starts the revive process on the player.
 */
-private["_target","_revivable","_targetName","_ui","_progressBar","_titleText","_cP","_title","_reviveCost","_prof","_level"];
+private["_target","_revivable","_targetName","_ui","_progressBar","_titleText","_cP","_title","_reviveCost","_prof","_level","_medicsOnline","_rev"];
 _target = param [0,ObjNull,[ObjNull]];
 if (isNull _target) exitWith {};
 _reviveCost = LIFE_SETTINGS(getNumber,"revive_fee");
 
 _revivable = _target getVariable ["Revive",FALSE];
 if (_revivable) exitWith {};
+if (playerSide isEqualTo west) then {
+_medicsOnline = {_x != player && {side _x isEqualTo independent} && {alive _x}} count playableUnits > 0;
+if (_medicsOnline) exitWith {_rev = false;};
+};
+if !(_rev) exitWith {Hint "There is already medics online"};
 if (_target getVariable ["Reviving",ObjNull] == player) exitWith {hint localize "STR_Medic_AlreadyReviving";};
 if (player distance _target > 5) exitWith {}; //Not close enough.
 
