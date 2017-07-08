@@ -137,14 +137,15 @@ class CarShops {
     class donor_vehicle {
         side = "civ";
         vehicles[] = {
-            { "C_SUV_01_F", {"life_donorLevel", "SCALAR", 3} },
+            { "B_Quadbike_01_F", { "life_donorLevel", "SCALAR", 1 } },
+            { "C_SUV_01_F", {"life_donorLevel", "SCALAR", 1} },
             { "C_Offroad_01_F",{"life_donorLevel", "SCALAR", 3} },
             { "C_Truck_02_covered_F",{"life_donorLevel","SCALAR", 3} },
             { "B_Heli_Light_01_F", { "life_donorLevel", "SCALAR", 3} },
             { "I_Heli_Transport_02_F", { "life_donorLevel", "SCALAR", 3} },
             { "O_Heli_Light_02_unarmed_F", { "life_donorLevel", "SCALAR", 3} },
             { "B_Heli_Transport_03_unarmed_F", { "life_donorLevel", "SCALAR", 3} },
-            { "I_Heli_light_03_unarmed_F", { "life_donorLevel", "SCALAR", 3} },
+            { "I_Heli_light_03_unarmed_F", { "life_donorLevel", "SCALAR", 3} }
         };
     };
 };
@@ -375,7 +376,7 @@ class LifeCfgVehicles {
             },"" },
             { "Camo", "donor", {
                 "textures\vehicles\donor3\offroad1.jpg"
-            }, "life_donorLevel >= 3"},
+            }, "call life_donorLevel >= 3"},
             { "Taxi", "civ", {
                 "#(argb,8,8,3)color(0.6,0.3,0.01,1)"
             },"" },
@@ -467,7 +468,52 @@ will modify the virtual space and the price of the vehicle, but other informatio
             },"" },
             { "Rebel Camo", "reb", {
                 "\a3\soft_f_gamma\Quadbike_01\data\quadbike_01_indp_hunter_co.paa"
-            },"" }
+            },"" },
+            { "Aqua", "donor", {
+                "textures\vehicles\Donor1\aqua.jpg"
+            }, "call life_donorLevel >= 1" },
+            { "Baby Blue", "donor", {
+                "textures\vehicles\Donor1\babyBlue.jpg"
+            }, "call life_donorLevel >= 1" },
+            { "Aqua Gradient", "donor", {
+                "textures\vehicles\Donor1\blueGrad.jpg"
+            }, "call life_donorLevel >= 1" },
+            { "Brown", "donor", {
+                "textures\vehicles\Donor1\brown.jpg"
+            }, "call life_donorLevel >= 1" },
+            { "Dark Purple", "donor", {
+                "textures\vehicles\Donor1\dpurple.jpg"
+            }, "call life_donorLevel >= 1" },
+            { "Green", "donor", {
+                "textures\vehicles\Donor1\green.jpg"
+            }, "call life_donorLevel >= 1" },
+            { "Hot Pink", "donor", {
+                "textures\vehicles\Donor1\hotPink.jpg"
+            }, "call life_donorLevel >= 1" },
+            { "Lime", "donor", {
+                "textures\vehicles\Donor1\lime.jpg"
+            }, "call life_donorLevel >= 1" },
+            { "Magenta", "donor", {
+                "textures\vehicles\Donor1\magenta.jpg"
+            }, "call life_donorLevel >= 1" },
+            { "Orange", "donor", {
+                "textures\vehicles\Donor1\orange.jpg"
+            }, "call life_donorLevel >= 1" },
+            { "Pink Orange", "donor", {
+                "textures\vehicles\Donor1\pinkGrad.jpg"
+            }, "call life_donorLevel >= 1" },
+            { "Purple", "donor", {
+                "textures\vehicles\Donor1\purple.jpg"
+            }, "call life_donorLevel >= 1"},
+            { "Rose", "donor", {
+                "textures\vehicles\Donor1\rose.jpg"
+            }, "call life_donorLevel >= 1" },
+            { "Rose Gold", "donor", {
+                "textures\vehicles\Donor1\roseGold.jpg"
+            }, "call life_donorLevel >= 1" },
+            { "Turquoise", "donor", {
+                "textures\vehicles\Donor1\turquoise.jpg"
+            }, "call life_donorLevel >= 1" }
         };
     };
 
@@ -556,25 +602,25 @@ will modify the virtual space and the price of the vehicle, but other informatio
             },"" },
             { "Li Mafu", "donor", {
                 "textures\vehicles\donor3\suv1.jpg"
-            },"life_donorLevel >= 3" },
+            },"call life_donorLevel >= 3" },
             { "Doodle", "donor",{
                 "textures\vehicles\donor3\suv2.jpg"
-            }, "life_donorLevel >= 3 "},
+            }, "call life_donorLevel >= 3 "},
             { "Blocks", "donor", {
                 "textures\vehicles\donor3\suv3.jpg"
-            }, "life_donorLevel >= 3"},
+            }, "call life_donorLevel >= 3"},
             { "Demons", "donor", {
                 "textures\vehicles\donor3\suv4.jpg"
-            }, "life_donorLevel >= 3"},
+            }, "call life_donorLevel >= 3"},
             { "Leopard", "donor", {
                 "textures\vehicles\donor3\suv5.jpg"
-            }, "life_donorLevel >= 3"},
+            }, "call life_donorLevel >= 3"},
             { "Tribal Warfare", "donor", {
                 "textures\vehicles\donor3\suv6.jpg"
-            }, "life_donorLevel >= 3"},
+            }, "call life_donorLevel >= 3"},
             { "Voodoo", "donor", {
                 "textures\vehicles\donor3\suv7.jpg"
-            }, "life_donorLevel >= 3"},
+            }, "call life_donorLevel >= 3"},
             { "Police", "cop", {
                 "textures\cop\cop_suv1.jpg"
             },"" }, 
@@ -675,19 +721,19 @@ will modify the virtual space and the price of the vehicle, but other informatio
             },"" },
             {"Sea Breeze", "donor", {
                 "textures\vehicles\donor3\hummin.jpg"
-            }, "life_donorLevel >= 3"},
+            }, "call life_donorLevel >= 3"},
             {"Fire Tribal", "donor", {
                 "textures\vehicles\donor3\hummin3.jpg"
-            }, "life_donorLevel >= 3" },
+            }, "call life_donorLevel >= 3" },
             {"Demon", "donor", {
                 "textures\vehicles\donor3\hummin4.jpg"
-            }, "life_donorLevel >= 3" },
+            }, "call life_donorLevel >= 3" },
             { "Wolf Pack", "donor", {
                 "textures\vehicles\donor3\hummin5.jpg"
-            }, "life_donorLevel >= 3" },
+            }, "call life_donorLevel >= 3" },
             { "Fire Flower", "donor", {
                 "textures\vehicles\donor3\hummin6.jpg"
-            }, "life_donorLevel >= 3" },
+            }, "call life_donorLevel >= 3" },
             { "Rebel Digital", "reb", {
                 "\a3\air_f\Heli_Light_01\Data\Skins\heli_light_01_ext_digital_co.paa"
             },"" },
@@ -712,10 +758,10 @@ will modify the virtual space and the price of the vehicle, but other informatio
             },"" },
             { "Rust Camo", "donor", {
                 "textures\vehicles\donor3\orca2.jpg"
-            }, "life_donorLevel >= 3" },
+            }, "call life_donorLevel >= 3" },
             { "Pink Camo", "donor", {
                 "textures\vehicles\donor3\orca3.jpg"
-            }, "life_donorLevel >= 3" }
+            }, "call life_donorLevel >= 3" }
         };
     };
 
@@ -748,11 +794,11 @@ will modify the virtual space and the price of the vehicle, but other informatio
             {"Galaxy", "donor", {
                 "textures\vehicles\donor3\huronf1.jpg",
                 "textures\vehicles\donor3\huronb1.jpg"
-            }, "life_donorLevel >= 3" },
+            }, "call life_donorLevel >= 3" },
             {"Red Camo", "donor", {
                 "textures\vehicles\donor3\huronf2.jpg",
                 "textures\vehicles\donor3\huronb2.jpg"
-            }, "life_donorLevel >= 3" }
+            }, "call life_donorLevel >= 3" }
         };
     };
 
@@ -776,22 +822,22 @@ will modify the virtual space and the price of the vehicle, but other informatio
                 "textures\vehicles\donor3\mohawkf1.jpg",
                 "textures\vehicles\donor3\mohawkm1.jpg",
                 "Textures\vehicles\donor3\mohawkb1.jpg"
-            }, "life_donorLevel >= 3" },
+            }, "call life_donorLevel >= 3" },
             {"Tribal", "donor", {
                 "textures\vehicles\donor3\mohawkf2.jpg",
                 "textures\vehicles\donor3\mohawkm2.jpg",
                 "Textures\vehicles\donor3\mohawkb2.jpg"
-            }, "life_donorLevel >= 3" },
+            }, "call life_donorLevel >= 3" },
             {"Green Leaves", "donor", {
                 "textures\vehicles\donor3\mohawkf3.jpg",
                 "textures\vehicles\donor3\mohawkm3.jpg",
                 "Textures\vehicles\donor3\mohawkb3.jpg"
-            }, "life_donorLevel >= 3" },
+            }, "call life_donorLevel >= 3" },
             {"Sea", "donor", {
                 "textures\vehicles\donor3\mohawkf4.jpg",
                 "textures\vehicles\donor3\mohawkm4.jpg",
                 "Textures\vehicles\donor3\mohawkb4.jpg"
-            }, "life_donorLevel >= 3" }
+            }, "call life_donorLevel >= 3" }
         };
     };
 
@@ -843,7 +889,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
         textures[] = {
             {"Rusty Cab", "donor", {
                 "textures\vehicles\donor3\zamakf1.jpg"
-            }, "life_donorLevel >= 3"}
+            }, "call life_donorLevel >= 3"}
         };
     };
     class I_Heli_light_03_unarmed_F {
@@ -856,13 +902,13 @@ will modify the virtual space and the price of the vehicle, but other informatio
             }, ""},
             {"Black Camo", "donor", {
                 "textures\vehicles\donor3\hellcat.jpg"
-            }, "life_donorLevel >= 3" },
+            }, "call life_donorLevel >= 3" },
             {"Desert Camo", "donor", {
                 "textures\vehicles\donor3\hellcat1.jpg"
-            }, "life_donorLevel >= 3" },
+            }, "call life_donorLevel >= 3" },
             {"Blue Camo", "donor", {
                 "textures\vehicles\donor3\hellcat2.jpg"
-            }, "life_donorLevel >= 3" }
+            }, "call life_donorLevel >= 3" }
         };
     };
 };
