@@ -314,6 +314,24 @@ class CustomAttributes
 		name="Multiplayer";
 		class Attribute0
 		{
+			property="RespawnTemplates";
+			expression="true";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"ARRAY"
+						};
+					};
+				};
+			};
+		};
+		class Attribute1
+		{
 			property="RespawnButton";
 			expression="true";
 			class Value
@@ -328,24 +346,6 @@ class CustomAttributes
 						};
 					};
 					value=1;
-				};
-			};
-		};
-		class Attribute1
-		{
-			property="RespawnTemplates";
-			expression="true";
-			class Value
-			{
-				class data
-				{
-					class type
-					{
-						type[]=
-						{
-							"ARRAY"
-						};
-					};
 				};
 			};
 		};
@@ -51422,11 +51422,7 @@ class Mission
 			position[]={12269.802,123.46966,8908.5703};
 			name="reb_v_3";
 			type="Empty";
-<<<<<<< HEAD
-			angle=1.7078052;
-=======
 			angle=1.7078049;
->>>>>>> origin/master
 			id=2881;
 		};
 		class Item1356
