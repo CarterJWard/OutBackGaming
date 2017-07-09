@@ -22,7 +22,7 @@ if (currentWeapon _robber == "") exitWith { hint "HaHa, you do not threaten me! 
 if (_kassa == 0) exitWith { hint "There is no cash in the register!" };
 
 _rip = true;
-_kassa = 120000 + round(random 60000);
+_kassa = 30000 + round(random 25000);
 _shop removeAction _action;
 _shop switchMove "AmovPercMstpSsurWnonDnon";
 ["Gas Station Holdup","A local gas station is being heldup please check your map for info",[204,0,0,1],""] remoteExecCall ["life_fnc_showNotification",west];
@@ -42,7 +42,7 @@ if(_rip) then
 {
 while{true} do
 {
-sleep 3;
+sleep 4.5;
 _cP = _cP + 0.01;
 _progress progressSetPosition _cP;
 _pgText ctrlSetText format["Robbery in Progress, stay close (10m) (%1%2)...",round(_cP * 100),"%"];
