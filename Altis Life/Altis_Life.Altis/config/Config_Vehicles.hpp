@@ -330,6 +330,9 @@ class LifeCfgVehicles {
         licenses[] = { {"trucking"}, {""}, {""}, {""} };
         price = 950000;
         textures[] = { 
+            { "Default", "civ", {
+                "\A3\soft_f_beta\truck_1\data\truck_01_ext_01_co.paa"
+            }, "" },
             { "Aqua", "donor", {
                 "textures\vehicles\Donor1\aqua.jpg"
             }, "call life_donorLevel >= 1" },
@@ -1123,6 +1126,10 @@ will modify the virtual space and the price of the vehicle, but other informatio
         licenses[] = { {""}, {""}, {""}, {""} };
         price = 1800000;
         textures[] = {
+            {"Default", "civ", {
+                "\A3\air_f_heli\heli_transport_03\data\heli_transport_03_ext01_black_co.paa",
+                "\A3\air_f_heli\heli_transport_03\data\heli_transport_03_ext02_black_co.paa"
+            }, ""},
             { "Aqua", "donor", {
                 "textures\vehicles\Donor1\aqua.jpg",
                 "textures\vehicles\Donor1\aqua.jpg"

@@ -254,8 +254,7 @@ class Clothing {
         };
         vests[] = {
             { "NONE", "Remove Vest", 0, { "", "", -1 } },
-            { "V_Rangemaster_belt", "", 1900, { "", "", -1 } },
-            { "V_HarnessOGL_gry", "Suicide Vest", 1000000, { "", "", -1} }
+            { "V_Rangemaster_belt", "", 1900, { "", "", -1 } }
         };
         backpacks[] = {
             { "NONE", "Remove Backpack", 0, { "", "", -1 } }
@@ -340,8 +339,7 @@ class Clothing {
             { "V_HarnessO_brn", "", 7500, { "", "", -1 } },
             { "V_TacVest_khk", "", 12500, { "", "", -1 } },
             { "V_PlateCarrierIA1_dgtl", "",20000, {"", "", -1} },
-            { "V_PlateCarrierIAGL_dgtl", "", 25000, {"", "", -1 } },
-            { "V_HarnessOGL_gry", "Suicide Vest", 1250000, { "", "", -1 } }
+            { "V_PlateCarrierIAGL_dgtl", "", 25000, {"", "", -1 } }
         };
         backpacks[] = {
             { "NONE", "Remove Backpack", 0, { "", "", -1 } },
