@@ -130,12 +130,12 @@ While{true} do {
  20 fadeSound 1; //fades the sound back to normal
 
  waituntil{
-    (((nearestObject [getpos player, "SmokeShell"]) distance player < 10)
+    (((nearestObject [getpos player, "SmokeShellYellow"]) distance player < 10)
     and
-    (getpos (nearestObject [getpos player, "SmokeShell"]) select 2 < 0.5)) ||
-    (((nearestObject [getpos player, "G_40mm_Smoke"]) distance player < 10)
+    (getpos (nearestObject [getpos player, "SmokeShellYellow"]) select 2 < 0.5)) ||
+    (((nearestObject [getpos player, "G_40mm_SmokeYellow"]) distance player < 10)
     and
-    (getpos (nearestObject [getpos player, "G_40mm_Smoke"]) select 2 < 0.5))
+    (getpos (nearestObject [getpos player, "G_40mm_SmokeYellow"]) select 2 < 0.5))
     };
 
 	if (!(headgear player in ["H_PilotHelmetFighter_B"])) then
