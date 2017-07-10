@@ -117,7 +117,13 @@ class Clothing {
         uniforms[] = {
             { "NONE", "Remove Uniform", 0, { "", "", -1 } },
             { "U_Rangemaster", "Cop Uniform", 25, { "", "", -1 } },
-            { "U_B_Wetsuit", "Diving Suit", 1000, {"life_gigcoplevel25", "SCALAR", 4} }
+            { "U_B_Wetsuit", "Diving Suit", 1000, {"life_gigcoplevel25", "SCALAR", 4} },
+            { "U_BG_Guerrilla_6_1", "Swat Uniform", 100, {"license_cop_swat", "BOOL", true} },
+            { "U_BG_Guerrilla_6_1", "Swat Uniform", 100, {"license_cop_swatM", "BOOL", true} },
+            { "U_NikosAgedBody", "Undercover clothing", 100, {"license_cop_detective","BOOL", true } },
+            { "U_IG_Guerilla3_1", "Brown Jacket & Pants", 735, { "license_cop_detective","BOOL", true } },
+            { "U_OrestesBody", "Surfing On Land", 1100, { "license_cop_detective","BOOL", true} },
+            { "U_IG_Guerilla2_3", "The Outback Rangler", 1200, { "license_cop_detective","BOOL", true} }
         };
         headgear[] = {
             { "NONE", "Remove Hat", 0, { "", "", -1 } },
@@ -152,7 +158,9 @@ class Clothing {
             { "V_Rangemaster_belt", "", 800, { "", "", -1 } },
             { "V_TacVest_blk_POLICE", "", 1000, { "life_gigcoplevel25", "SCALAR", 2 } },
             { "V_PlateCarrier1_blk", "", 2000, { "life_gigcoplevel25", "SCALAR", 5 } },
-            { "V_RebreatherB", "", 500, {"life_gigcoplevel25", "SCALAR", 4 } }
+            { "V_RebreatherB", "", 500, {"life_gigcoplevel25", "SCALAR", 4 } },
+            { "V_PlateCarrierSpec_blk", "", 1000, {"license_cop_swat", "BOOL", true} },
+            { "V_PlateCarrierSpec_blk", "", 1000, {"license_cop_swatM", "BOOL", true} }  
         };
         backpacks[] = {
             { "NONE", "Remove Backpack", 0, { "", "", -1 } },
@@ -164,35 +172,6 @@ class Clothing {
         };
     };
 
-    class swat {
-        title = "STR_Shops_Swat";
-        license = "";
-        side = "cop";
-        uniforms[] = {
-            { "U_BG_Guerrilla_6_1", "Swat Uniform", 100, {"license_cop_swat", "BOOL", true} },
-            { "U_BG_Guerrilla_6_1", "Swat Uniform", 100, {"license_cop_swatM", "BOOL", true} },
-            { "U_NikosAgedBody", "Undercover clothing", 100, {"license_cop_detective","BOOL", true } },
-            { "U_IG_Guerilla3_1", "Brown Jacket & Pants", 735, { "license_cop_detective","BOOL", true } },
-            { "U_OrestesBody", "Surfing On Land", 1100, { "license_cop_detective","BOOL", true} },
-            { "U_IG_Guerilla2_3", "The Outback Rangler", 1200, { "license_cop_detective","BOOL", true} }
-        }; 
-        headgear[] = {
-            { "NONE", "Remove Hat", 0, { "", "", -1 } },
-            { "H_Bandanna_sgg", "Sage Bandanna", 160, { "license_cop_detective","BOOL", true } }
-        };
-        goggles[] = {
-            { "NONE", "Remove Glasses", 0, { "", "", -1 } }
-        };
-        vests[] = {
-            { "NONE", "Remove Vest", 0, { "", "", -1 } },
-            { "V_PlateCarrierSpec_blk", "", 100, {"license_cop_swat", "BOOL", true} },
-            { "V_PlateCarrierSpec_blk", "", 100, {"license_cop_swatM", "BOOL", true} }  
-        };
-        backpacks[] = {
-            { "NONE", "Remove Backpack", 0, { "", "", -1 } }
-        };
-    };
-    
     class dive {
         title = "STR_Shops_C_Diving";
         license = "dive";
