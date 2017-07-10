@@ -277,7 +277,11 @@ class Clothing {
             { "U_IG_leader", "Guerilla Leader", 15340, { "", "", -1 } },
             { "U_O_PilotCoveralls", "", 15610, { "", "", -1 } },
             { "U_O_SpecopsUniform_ocamo", "", 17500, { "", "", -1 } },
-            { "U_O_GhillieSuit", "", 50000, { "", "", -1 } }
+            { "U_O_CombatUniform_ocamo", "", 10000, {"", "", -1} },
+            { "U_O_CombatUniform_oucamo", "", 10000, {"", "", -1 } },
+            { "U_O_GhillieSuit", "", 50000, { "", "", -1 } },
+            { "U_O_FullGhillie_ard", "", 75000, { "", "", -1 } },
+            { "U_O_FullGhillie_sard", "", 75000, { "", "", -1 } }
         };
         headgear[] = {
             { "NONE", "Remove Hat", 0, { "", "", -1 } },

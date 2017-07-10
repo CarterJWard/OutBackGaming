@@ -84,21 +84,21 @@ life_market_resources = [
 		] 
 	],
 	
-	["marijuana", 4000, 0, 7500, 10, 7,   
+	["marijuana", 3400, 0, 7500, 10, 7,   
 		[ 
 			["cocaine_processed",1],
 			["heroin_processed",1]
 		] 
 	],
 
-	["cocaine_processed", 6000, 0, 8850, 15, 10,   
+	["cocaine_processed", 5000, 0, 8850, 15, 10,   
 		[ 
 			["marijuana",1], 
 			["heroin_processed",1]
 		] 
 	],
 		
-	["heroin_processed", 5200, 0, 8000, 15, 10,   
+	["heroin_processed", 4100, 0, 8000, 15, 10,   
 		[ 
 			["marijuana",1], 
 			["cocaine_processed",1]
