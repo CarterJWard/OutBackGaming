@@ -43,6 +43,7 @@ _name = name player;
      0,
      8
  ] spawn BIS_fnc_dynamicText;
+ sleep 4;
  showChat true;
  disableUserInput false;
  ["",0,0.2,10,0,0,8] spawn BIS_fnc_dynamicText;

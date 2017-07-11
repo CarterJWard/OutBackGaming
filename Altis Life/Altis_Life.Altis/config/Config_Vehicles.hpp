@@ -331,7 +331,7 @@ class LifeCfgVehicles {
         price = 950000;
         textures[] = { 
             { "Default", "civ", {
-                "\A3\soft_f_beta\truck_1\data\truck_01_ext_01_co.paa"
+                "\A3\soft_f_beta\truck_01\data\truck_01_ext_01_co.paa"
             }, "" },
             { "Aqua", "donor", {
                 "textures\vehicles\Donor1\aqua.jpg"
