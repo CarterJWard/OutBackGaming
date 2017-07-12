@@ -4,7 +4,7 @@
  Author: EdgeKiller
  Description:
  Master configuration file for the crafting menu.
-*/
+*/ 
 private["_craft","_return"];
 _craft = [_this,0,"",[""]] call BIS_fnc_param;
 if(_craft == "") exitWith {closeDialog 0}; //Bad shop type passed.

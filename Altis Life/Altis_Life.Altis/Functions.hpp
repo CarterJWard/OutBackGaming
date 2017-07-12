@@ -150,6 +150,7 @@ class Life_Client_Core {
         class jailBreakTimer {};
         class recieveKidney {};
         class rubberHit {};
+        class skyDive {};
     };
 
     class Config {
@@ -322,7 +323,7 @@ class Life_Client_Core {
         class buildFurniture {};
     };
 
-    class Items    {
+    class Items {
         file = "core\items";
         class blastingCharge {};
         class boltcutter {};
@@ -335,6 +336,8 @@ class Life_Client_Core {
         class spikeStrip {};
         class storageBox {};
         class weed {};
+        class heroin {};
+        class cocaine {};
     };
 
     class Medical_System {

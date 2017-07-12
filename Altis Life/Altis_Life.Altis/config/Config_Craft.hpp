@@ -11,8 +11,7 @@
               ETC
 */
 
-class CraftingCfg 
-{
+class CraftingCfg {
   
   //WEAPONS
     class weapon 

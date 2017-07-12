@@ -2,7 +2,7 @@
 File fn_re
 */
 private ["_copMarkers","_civMarkers"];
-_copMarkers = ["Dealer_1_3","Dealer_1","Dealer_1_4","hunting_marker","hunter_zone"];
+_copMarkers = ["Dealer_1","Dealer_1_4","hunting_marker","hunter_zone"];
 _civMarkers = [];
 
 if (playerside isEqualTo west) then {

@@ -84,6 +84,20 @@ switch (true) do {
 		};
     };
 
+    case (_item isEqualTo "heroinProcessed"): {
+    if(([false,_item,1] call life_fnc_handleInv)) then
+	{
+        [] spawn life_fnc_heroin;
+		};
+    };
+
+    case (_item isEqualTo "cocaine_processed"): {
+    if(([false,_item,1] call life_fnc_handleInv)) then
+	{
+        [] spawn life_fnc_cocaine;
+		};
+    };
+
     case (_item isEqualTo "spraycan"): {
         [cursorObject] spawn life_fnc_spraycan;
         closeDialog 0;

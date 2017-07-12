@@ -84,9 +84,8 @@ _profType = [_mined] call life_fnc_profType;
 _flag = PROF_SIDE(playerside);
 _data = PROF_VALUE(_profType,_flag);
 _level = _data select 0;
-_amount = _maxGather + _level;
 
-_amount = round(random(_maxGather)) + 1;
+_amount = round(random(_maxGather)) + _level;
 _diff = [_mined, _amount, life_carryWeight, life_maxWeight] call life_fnc_calWeightDiff;
 if (_diff isEqualTo 0) exitWith {
 	["Error", format [localize "STR_NOTF_InvFull"],[1,0,0,1],""] call life_fnc_showNotification;
