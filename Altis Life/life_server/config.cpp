@@ -103,6 +103,8 @@ class CfgFunctions {
             class updateHouseTrunk {};
             class houseCleanup {};
             class deleteDBContainer {};
+            class addGas {};
+            class initGas {};
         };
 
         class Gangs {

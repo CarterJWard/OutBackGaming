@@ -80,6 +80,14 @@ class Licenses {
         side = "civ";
     };
 
+    class shopOwner {
+        variable = "shopOwner";
+        displayName = "STR_License_ShopOwner";
+        price = 1000000;
+        illegal = false;
+        side = "civ";
+    };
+
     //Processing Licenses
     class oil {
         variable = "oil";
