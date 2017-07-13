@@ -12,16 +12,16 @@ ________________________________________*/
 zlt_rope_ropes = [];
 zlt_mutexAction = false;
 
-zlt_rope_helis = ["O_Heli_Light_02_unarmed_F","O_Heli_Light_02_F","B_Heli_Transport_01_F","B_Heli_Transport_01_camo_F","O_Heli_Attack_02_F","O_Heli_Attack_02_black_F","I_Heli_Transport_02_F","B_Heli_Light_01_F"];
+zlt_rope_helis = ["OPTRE_UNSC_hornet_green_CAS","OPTRE_UNSC_hornet_green_CAP","OPTRE_UNSC_falcon_green"];
 zlt_rope_helidata = 
 [
 	[
-		["O_Heli_Light_02_unarmed_F", "O_Heli_Light_02_F"],
+		["OPTRE_UNSC_hornet_green_CAS", "O_Heli_Light_02_F"],
 		[1.35,1.35,-24.95],
 		[-1.45,1.35,-24.95]
 	],
 	[
-		["B_Heli_Transport_01_F", "B_Heli_Transport_01_camo_F"],
+		["OPTRE_UNSC_falcon_green"],
 		[-1.11,2.5,-24.7],
 		[1.11,2.5,-24.7]
 	],
