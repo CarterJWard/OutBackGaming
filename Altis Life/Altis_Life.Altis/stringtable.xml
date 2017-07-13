@@ -5446,49 +5446,29 @@
             <Portuguese>Você não tem um Registro Civil para comprar casas!</Portuguese>
             <Polish>Nie masz licencji zarządcy nieruchomości!</Polish>
         </Key>
+        <Key ID="STR_Shop_License">
+            <Original>You do not have a shop owners license!</Original>
+        </Key> 
         <Key ID="STR_House_Max_House">
             <Original>You can only own %1 houses at a time.</Original>
-            <Czech>Můžete vlastnit pouze%1 domy najednou.</Czech>
-            <Spanish>Solo puedes ser dueño de %1 casas a la vez.</Spanish>
-            <Russian></Russian>
-            <German>Du darfst nur %1 Häuser zugleich besitzen.</German>
-            <French>Vous ne pouvez posséder que %1 maisons à la fois.</French>
-            <Italian>Puoi possedere solo %1 case</Italian>
-            <Portuguese>Você só pode ter %1 casa(s)!</Portuguese>
-            <Polish>Możesz posiadać maksymalnie %1 domów.</Polish>
+        </Key>
+        <Key ID="STR_House_Max_Gas">
+            <Original>You can only own %1 gas stations at a time.</Original>
         </Key>
         <Key ID="STR_House_NotEnough">
             <Original>You do not have enough money!</Original>
-            <Czech>Nemáte dost peněz!</Czech>
-            <Spanish>No tienes suficiente dinero!</Spanish>
-            <Russian></Russian>
-            <German>Du hast nicht genug Geld!</German>
-            <French>Vous n'avez pas assez d'argent!</French>
-            <Italian>Non hai fondi a sufficienza!</Italian>
-            <Portuguese>Você não tem todo esse dinheiro!</Portuguese>
-            <Polish>Nie masz tyle pieniędzy!</Polish>
         </Key>
         <Key ID="STR_House_BuyMSG">
             <Original>This house is available for &lt;t color='#8cff9b'&gt;$%1&lt;/t&gt;&lt;br/&gt;It supports up to %2 storage containers</Original>
-            <Czech>Tento dům je k dispozici pro & lt; k color = "# 8cff9b '& gt; $%1 & lt; / t & gt; & lt; br / & gt; Podporuje až %2 skladovací kontejnery</Czech>
-            <Spanish>Esta casa esta disponible por &lt;t color='#8cff9b'&gt;$%1&lt;/t&gt;&lt;br/&gt;Soporta hasta %2 contenedores</Spanish>
-            <Russian></Russian>
-            <German>Dieses Haus gibt es für &lt;t color='#8cff9b'&gt;$%1&lt;/t&gt;&lt;br/&gt; Es unterstützt %2 Lagerbox(en)</German>
-            <French>Cette maison est disponible pour &lt;t color='#8cff9b'&gt;$%1&lt;/t&gt;&lt;br/&gt; Il prend en charge jusqu'à %2 conteneurs de stockage</French>
-            <Italian>Questa casa è disponibile per &lt;t color='#8cff9b'&gt;$%1&lt;/t&gt;&lt;br/&gt;Può supportare fino a %2 contenitori</Italian>
-            <Portuguese>Essa casa está disponível por &lt;t color='#8cff9b'&gt;R$%1&lt;/t&gt;&lt;br/&gt;Ela suporta até %2 caixa(s)</Portuguese>
-            <Polish>Ten dom jest dostępny za &lt;t color='#8cff9b'&gt;$%1&lt;/t&gt;&lt;br/&gt;Ma %2 miejsca na pojemniki do przechowywania wyposażenia</Polish>
+        </Key>
+        <Key ID="STR_Gas_BuyMSG">
+            <Original>This gas station is available for &lt;t color='#8cff9b'&gt;$%1&lt</Original>
         </Key>
         <Key ID="STR_House_Purchase">
             <Original>Purchase House</Original>
-            <Czech>nákup domu</Czech>
-            <Spanish>Comprar Casa</Spanish>
-            <Russian></Russian>
-            <German>Haus kaufen</German>
-            <French>Acheter la Maison</French>
-            <Italian>Compra Casa</Italian>
-            <Portuguese>Comprar Casa</Portuguese>
-            <Polish>Kup dom!</Polish>
+        </Key>
+        <Key ID="STR_Gas_Purchase">
+            <Original>Purchase Station</Original>
         </Key>
         <Key ID="STR_House_Raid_NoOwner">
             <Original>This house doesn't belong to anyone.</Original>
@@ -6588,6 +6568,9 @@
     <Package name="Life_License">
         <Key ID="STR_License_Logs">
             <Original>Logging License</Original>
+        </Key>
+        <Key ID="STR_License_ShopOwner">
+            <Original>Shop Owner</Original>
         </Key>
         <Key ID="STR_Process_Logs">
             <Original>Processing Logs</Original>

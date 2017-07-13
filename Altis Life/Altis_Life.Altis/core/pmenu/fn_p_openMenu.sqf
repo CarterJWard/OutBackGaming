@@ -22,11 +22,13 @@ switch (playerSide) do {
 		ctrlShow[54321,false];
 		ctrlShow[8891,false];		
 		ctrlShow[8892,false];
+		if(_rank <= 1) then {
+			ctrlShow[1210,false];
+			ctrlShow[2008,false]
+		};
 		if(_rank <= 2) then {
 			ctrlShow[654321,false];
 			ctrlShow[9821,false]; 
-			ctrlShow[1210, false];
-			ctrlShow[2008,false]
 		};
     };
 

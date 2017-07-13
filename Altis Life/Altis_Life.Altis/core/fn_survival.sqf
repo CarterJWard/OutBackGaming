@@ -76,7 +76,7 @@ _fnc_water = {
 //Dynamic Paychecks
 [] spawn
 {
-	private["_worked","_uid","_taxable","_tax","_htax","_taxAmount","_houses","_taxTime"];
+	private["_worked","_uid","_taxable"];
 	while {true} do
 	{
 		sleep 300;
