@@ -324,6 +324,7 @@ class Life_Client_Core {
         class buildFurniture {};
         class gasBuy {};
         class buyGas {};
+        class initGas {};
     };
 
     class Items {
