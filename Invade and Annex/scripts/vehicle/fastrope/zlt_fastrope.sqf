@@ -16,7 +16,7 @@ zlt_rope_helis = ["OPTRE_UNSC_hornet_green_CAS","OPTRE_UNSC_hornet_green_CAP","O
 zlt_rope_helidata = 
 [
 	[
-		["OPTRE_UNSC_hornet_green_CAS", "O_Heli_Light_02_F"],
+		["OPTRE_UNSC_hornet_green_CAS", "OPTRE_UNSC_hornet_green_CAP"],
 		[1.35,1.35,-24.95],
 		[-1.45,1.35,-24.95]
 	],

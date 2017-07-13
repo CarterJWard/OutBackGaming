@@ -21,7 +21,7 @@ if (PARAMS_Fatigue == 0) then {player enableFatigue FALSE;};
 
 //=========================== PILOTS ONLY
 
-_pilots = ["B_Pilot_F","B_helipilot_F"];
+_pilots = ["OPTRE_UNSC_Marine_Pilot"];
 _iampilot = ({typeOf player == _x} count _pilots) > 0;
 if (_iampilot) then {
 	//===== FAST ROPE
@@ -43,7 +43,7 @@ if (_iampilot) then {
 
 //============================= UAV
 
-_uavop = ["B_soldier_UAV_F"];
+_uavop = ["OPTRE_UNSC_Army_Soldier_UAV_Op_TRO","OPTRE_UNSC_Army_Soldier_SquadLead_TRO"];
 _iamuavop = ({typeOf player == _x} count _uavop) > 0;
 
 if (_iamuavop) then {
