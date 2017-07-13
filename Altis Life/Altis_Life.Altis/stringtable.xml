@@ -5804,6 +5804,15 @@
         </Key>
     </Package>
     <Package name="Life_Items">
+        <Key ID="STR_Item_Planks">
+            <Original>Wood Planks</Original>
+        </Key>
+        <Key ID="STR_Item_Logs">
+            <Original>Wood Logs</Original>
+        </Key>
+        <Key ID="STR_Item_Chainsaw">
+            <Original>Chainsaw</Original>
+        </Key>
         <Key ID="STR_Item_Handcuffs">
             <Original>Handcuffs</Original>
         </Key>

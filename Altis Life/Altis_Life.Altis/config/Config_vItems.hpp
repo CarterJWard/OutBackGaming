@@ -370,13 +370,44 @@ class VirtualItems {
         buyPrice = 500;
         sellPrice = -1;
         illegal = false;
-	    savable = true;
-        prof = "";
         edible = -1;
         icon = "icons\ico_pesticide.paa";
     };
 
+    class chainsaw {
+        variable = "chainsaw";
+        displayName = "STR_Item_Chainsaw";
+        weight = 10;
+        buyPrice = 2000;
+        sellPrice = -1;
+        illegal = false;
+        edible = -1;
+        icon = "icons\chainsaw.paa";
+    };
+
     //Mined Items
+    class logs {
+        variable = "logs";
+        displayName = "STR_Item_Logs";
+        weight = 5;
+        buyPrice = -1;
+        sellPrice = -1;
+        illegal = false;
+        edible = -1;
+        icon = "icons\timber.paa";
+    };   
+    
+    class planks {
+        variable = "planks";
+        displayName = "STR_Item_Planks";
+        weight = 3;
+        buyPrice = -1;
+        sellPrice = 3000;
+        illegal = false;
+        edible = -1;
+        icon = "icons\timber.paa";
+    };
+
     class oil_unprocessed {
         variable = "oilUnprocessed";
         displayName = "STR_Item_OilU";

@@ -30,6 +30,13 @@ class CfgGather {
             zones[] = { "weed_1" };
             item = "";
         };
+        
+        class logs {
+            amount = 3;
+            item = "chainsaw";
+            zones[] = { "logging_zone" };
+            zoneSize = 300;
+        };
     };
 
 /*

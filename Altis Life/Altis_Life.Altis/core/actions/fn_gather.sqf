@@ -39,6 +39,11 @@ for "_i" from 0 to count(_resourceCfg)-1 do {
 
 if (_zone isEqualTo "") exitWith {life_action_inUse = false;};
 
+if (_resource isEqualTo "logs" && str cursorObject find ": t_" > 0 && player distance cursorObject < 10 && !isNull cursorObject) then 
+    {
+        _tree = cursorObject;
+    };
+
 if (_requiredItem != "") then {
     _valItem = missionNamespace getVariable "life_inv_" + _requiredItem;
 
