@@ -303,6 +303,9 @@
             <Portuguese>Comprador de Ouro</Portuguese>
             <Polish>Skup złota</Polish>
         </Key>
+        <Key ID="STR_Shops_Planks">
+            <Original>Saw Mill</Original>
+        </Key>
         <Key ID="STR_Shops_Diamond">
             <Original>Diamond Dealer</Original>
             <Czech>Diamond Dealer</Czech>
@@ -6583,6 +6586,12 @@
         </Key>
     </Package>
     <Package name="Life_License">
+        <Key ID="STR_License_Logs">
+            <Original>Logging License</Original>
+        </Key>
+        <Key ID="STR_Process_Logs">
+            <Original>Processing Logs</Original>
+        </Key>
         <Key ID="STR_License_swatM">
             <Original>Swat Commander</Original>
         </Key>
@@ -9119,6 +9128,9 @@
             <Polish>Warzelnia soli</Polish>
             <Italian>Processo del sale</Italian>
         </Key>
+        <Key ID="STR_MAR_plank_Trader">
+            <Original>Plank Trader</Original>
+        </Key>
         <Key ID="STR_MAR_Altis_Corrections">
             <Original>Altis Corrections</Original>
             <Czech>Altis Opravy</Czech>
@@ -10726,6 +10738,9 @@
  	    </Key>
         <Key ID="STR_Prof_Scav">
             <Original>Scavenger</Original>
+        </Key>
+        <Key ID="STR_Prof_Logs">
+            <Original>Logging Skill</Original>
         </Key>
         <Key ID="STR_Prof_Civ">
             <Original>Civilian Level</Original>

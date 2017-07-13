@@ -19,8 +19,8 @@ if (player getVariable "playerSurrender") exitWith {
 life_action_inUse = true;
 _zone = "";
 _requiredItem = "";
-_zoneSize = (getNumber(missionConfigFile >> "CfgGather" >> "zoneSize"));
 _exit = false;
+private _tree = objNull;
 
 _resourceCfg = missionConfigFile >> "CfgGather" >> "Resources";
 for "_i" from 0 to count(_resourceCfg)-1 do {
@@ -28,6 +28,7 @@ for "_i" from 0 to count(_resourceCfg)-1 do {
     _curConfig = _resourceCfg select _i;
     _resource = configName _curConfig;
     _maxGather = getNumber(_curConfig >> "amount");
+    _zoneSize = getNumber(_curConfig >> "zoneSize");
     _resourceZones = getArray(_curConfig >> "zones");
     _requiredItem = getText(_curConfig >> "item");
     {
@@ -37,12 +38,12 @@ for "_i" from 0 to count(_resourceCfg)-1 do {
     if (_zone != "") exitWith {};
 };
 
-if (_zone isEqualTo "") exitWith {life_action_inUse = false;};
-
-if (_resource isEqualTo "logs" && str cursorObject find ": t_" > 0 && player distance cursorObject < 10 && !isNull cursorObject) then 
-    {
+if (_resource isEqualTo "logs" && str cursorObject find ": t_" > 0 && player distance cursorObject < 10 && !isNull cursorObject) then {
         _tree = cursorObject;
+        hint "logs passed"
     };
+
+if (_zone isEqualTo "") exitWith {life_action_inUse = false;};
 
 if (_requiredItem != "") then {
     _valItem = missionNamespace getVariable "life_inv_" + _requiredItem;
@@ -74,6 +75,7 @@ if (_diff isEqualTo 0) exitWith {
 
 switch (_requiredItem) do {
     case "pickaxe": {player say3D "mining";};
+    case "chainsaw": {player say3D "chainsaw";};
     default {player say3D "harvest";};
 };
 
@@ -86,6 +88,7 @@ for "_i" from 0 to 4 do {
 if ([true,_resource,_diff] call life_fnc_handleInv) then {
     _itemName = M_CONFIG(getText,"VirtualItems",_resource,"displayName");
     titleText[format[localize "STR_NOTF_Gather_Success",(localize _itemName),_diff],"PLAIN"];
+    if (!isNull _tree) then {_tree setDamage 1;};
 };
 
 //Add XP

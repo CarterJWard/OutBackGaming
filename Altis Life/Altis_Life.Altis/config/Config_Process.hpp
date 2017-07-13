@@ -96,4 +96,12 @@ class ProcessAction {
         //ScrollText = "Mix Cement";
         NoLicenseCost = 350;
     };
+    
+    class logs {
+        MaterialsReq[] = {{"logs",1}};
+        MaterialsGive[] = {{"planks",1}};
+        Text = "STR_Process_Logs";
+        //ScrollText = "Mix Cement";
+        NoLicenseCost = 100000;       
+    };
 };

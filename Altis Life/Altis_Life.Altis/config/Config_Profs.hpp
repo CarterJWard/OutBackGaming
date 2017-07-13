@@ -32,6 +32,13 @@ class Profs {
         side = "civ";
     };
     
+    class Logs_Prof {
+        variable = "Logs_Prof";
+        name = "STR_Prof_Logs";
+        tag = "Logging";
+        side = "civ";
+    };
+    
     class Cocaine_Prof {
         variable = "Cocaine_Prof";
         name = "STR_Prof_Cocaine";

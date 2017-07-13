@@ -20,7 +20,8 @@ life_market_resources = [
 			["iron_refined",1],
 			["copper_refined",1],
 			["cement",1],
-			["glass",1] 
+			["glass",1],
+			["planks",1] 
 		] 
 	],
 	
@@ -31,11 +32,23 @@ life_market_resources = [
 			["copper_refined",1],
 			["salt_refined",1],
 			["cement",1],
-			["glass",1] 
+			["glass",1],
+			["planks",1]  
 		] 
 	],
 	
 	["copper_refined", 1700, 0, 3500, 2, 1, 
+		[ 
+			["diamond_cut",1], 
+			["oil_processed",1],
+			["iron_refined",1],
+			["cement",1],
+			["glass",1],
+			["planks",1]  
+		] 
+	],
+
+	["planks", 2500, 0, 5500, 3, 1, 
 		[ 
 			["diamond_cut",1], 
 			["oil_processed",1],
@@ -52,7 +65,8 @@ life_market_resources = [
 			["copper_refined",1],
 			["salt_refined",1],
 			["cement",1],
-			["glass",1] 
+			["glass",1],
+			["planks",1]  
 		]  
 	],
 	

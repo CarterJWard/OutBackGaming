@@ -19,5 +19,6 @@ switch (_type) do {
     case "rock": {"Rock_Prof"};
     case "oil_unprocessed": {"Oil_Prof"};
     case "salt_unrefined": {"Salt_Prof"};
+    case "logs": {"Logs_Prof"};
     default {""};
 };

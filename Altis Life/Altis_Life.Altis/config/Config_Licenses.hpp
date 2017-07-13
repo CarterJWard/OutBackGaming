@@ -88,6 +88,14 @@ class Licenses {
         illegal = false;
         side = "civ";
     };
+    
+    class logs {
+        variable = "logs";
+        displayName = "STR_License_Logs";
+        price = 10000;
+        illegal = false;
+        side = "civ";
+    };
 
     class diamond {
         variable = "diamond";

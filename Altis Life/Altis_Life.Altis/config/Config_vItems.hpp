@@ -136,6 +136,14 @@ class VirtualShops {
         items[] = { "goldbar" };
     };
 
+    class logs {
+        name = "STR_Shops_Planks";
+        side = "civ";
+        license = "";
+        level[] = { "","",-1,"" };
+        items[] = { "planks" };
+    };
+
     class cop {
         name = "STR_Shops_Cop";
         side = "cop";
@@ -377,7 +385,7 @@ class VirtualItems {
     class chainsaw {
         variable = "chainsaw";
         displayName = "STR_Item_Chainsaw";
-        weight = 10;
+        weight = 7;
         buyPrice = 2000;
         sellPrice = -1;
         illegal = false;
