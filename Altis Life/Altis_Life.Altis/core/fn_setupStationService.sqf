@@ -68,3 +68,9 @@ _pumpClass = "Land_fs_feed_F";
     _pump setFuelCargo 0;
     _pump addAction [localize "STR_Action_Pump", life_fnc_fuelStatOpen, 1, 3, true, true, "", ' _this distance _target < 5 && cursorObject == _target '];
 } forEach _NiiRoZz_Station_Essence;
+{
+    _pump2 = (nearestObject [_x, _pumpClass]);
+    if (_pump2 getVariable "house_owned") then {
+        _pump2 addAction ["Buy Gas Station", life_fnc_gasBuy,1,4,true,true,"",' _this distance _target < 5 && cursorObject == _target ']
+        };
+} forEach _NiiRoZz_Station_Essence;
