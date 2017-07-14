@@ -160,7 +160,6 @@ class Life_Client_Core {
         class vehicleAnimate {};
         class vehicleWeightCfg {};
 		class craftCfg {}; //CraftingAction
-        class gasCfg {};
     };
 
     class Cop {
@@ -322,8 +321,6 @@ class Life_Client_Core {
         class raidHouse {};
         class sellHouse {};
         class buildFurniture {};
-        class gasBuy {};
-        class buyGas {};
     };
 
     class Items {
