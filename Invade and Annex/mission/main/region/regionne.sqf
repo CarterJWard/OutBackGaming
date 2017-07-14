@@ -21,7 +21,7 @@ eastSide = createCenter east;
 
 //---------------------------------------------- AO location marker array
 
-_targets = ["Ipota","Blue_Pearl_industrial_Port","Nasau","La_Rochelle_Aerodome","La_Rochelle","Penelo","Mount_Tanoa","Dr_Venkman_Observatory","Abandoned_Mine","Red_Spring","Vagalala","Tanouka","Tanouka_Sugar_Company","Tiger_Jungle"];
+_targets = ["Sainte_Marie","Chapoi","Saint_Louis","Lolisse","Le_Port","Cancon","Vigny","Moray","La_Trinite","Dourdan","Houdan","Arudy","Larche","goisse"];
 
 //----------------------------------------------- SELECT A FEW RANDOM AOs
 

@@ -11,7 +11,7 @@
 |	Coded for AhoyWorld.
 */
 { deleteVehicle _x } forEach [depotTruck];
-depotTruck = "B_Truck_01_Repair_F" createVehicle getMarkerPos "FOB_Depot";
+depotTruck = "OPTRE_m1087_stallion_unsc_repair" createVehicle getMarkerPos "FOB_Depot";
 _truckDir1 = (markerDir "FOB_Depot");
 depotTruck setDir _truckDir1;
 depotTruck enableRopeAttach False;

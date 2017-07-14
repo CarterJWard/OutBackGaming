@@ -21,24 +21,9 @@ zlt_rope_helidata =
 		[-1.45,1.35,-24.95]
 	],
 	[
-		["OPTRE_UNSC_falcon_green"],
+		["OPTRE_UNSC_falcon_green"]
 		[-1.11,2.5,-24.7],
 		[1.11,2.5,-24.7]
-	],
-	[
-		["O_Heli_Attack_02_F", "O_Heli_Attack_02_black_F"],
-		[1.3,1.3,-25],
-		[-1.3,1.3,-25]
-	],
-	[
-		["I_Heli_Transport_02_F"],
-		[0,-5,-26],
-		[]
-	],	
-	[
-		["B_Heli_Light_01_F"],
-		[0.6,0.5,-25.9],
-		[-0.8,0.5,-25.9]
 	]
 ];
 
@@ -48,7 +33,7 @@ zlt_fnc_tossropes = {
 	_heli = _this;
 	_ropes = [];
 	_oropes = _heli getvariable ["zlt_ropes",[]];
-	if (count _oropes != 0 ) exitwith {};
+	if (count _oropes != 0 ) exitwith {};`
 	_i = 0;
 	{
 		if ((typeof _heli) in (_x select 0)) exitwith {
