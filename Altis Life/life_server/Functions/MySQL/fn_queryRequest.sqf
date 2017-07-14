@@ -131,17 +131,9 @@ switch (_side) do {
 	if(typeName _new == "STRING") then {_new = call compile format["%1", _new];};
 	_queryResult set [15,_new];
         _queryResult set [13,(missionNamespace getVariable [format ["houses_%1",_uid],[]])];
-        
         _gangData = _uid spawn TON_fnc_queryPlayerGang;
         waitUntil{scriptDone _gangData};
         _queryResult set [14,(missionNamespace getVariable [format ["gang_%1",_uid],[]])];
-        
-        _gasData = _uid spawn TON_fnc_fetchPlayerGas;
-        waitUntil {scriptDone _gasData};
-	    _new = [(_queryResult select 14)] call DB_fnc_mresToArray;
-	    if(typeName _new == "STRING") then {_new = call compile format["%1", _new];};
-	    _queryResult set [15,_new];
-        _queryResult set [15,(missionNamespace getVariable [format ["gas_%1",_uid],[]])];
         
 
     };
