@@ -10,12 +10,18 @@ private["_shop","_sideCheck","_spawnPoints","_shopFlag","_disableBuy","_fuelCost
 
 disableSerialization;
 //Long boring series of checks
+private _owned = false;
 if (life_action_inUse) exitWith {};
 if (dialog) exitWith {};
 if (life_is_processing) exitWith {};
 life_action_inUse = true;
 _fuelstations = nearestObjects [player, ["Land_fs_feed_F"],10];
 if (_fuelstations isEqualTo []) exitWith {life_action_inUse = false;};
+if (_fuelstations getVariable ["house_owned",false]) then {
+    life_fuelStationOwned = true; 
+    life_fuelStationOwner = (_house getVariable "house_owner") select 0;
+    } else {
+    life_fuelStationOwned = false};
 _vehicleList = nearestObjects [player, ["Car","air"], 10];
 if (count _vehicleList < 1) exitWith {hint localize "STR_NOTF_VehicleNear";life_action_inUse = false;};
 if (!createDialog "Life_FuelStat") exitWith {};

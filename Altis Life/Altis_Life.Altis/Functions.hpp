@@ -284,6 +284,8 @@ class Life_Client_Core {
         class loggedOut {};
         class preInit { preInit = 1;};
         class introCam {};
+        class insertGas {};
+        class gasRecieve {};
     };
 
     class Gangs    {

@@ -57,6 +57,7 @@ life_isSuiciding = false;
 life_adminSuit = false;
 life_hasKidney = true;
 life_request_timer = false;
+life_fuelStationOwned = false;
 
 //Settings
 life_settings_enableSidechannel = profileNamespace getVariable["life_enableSidechannel",false];

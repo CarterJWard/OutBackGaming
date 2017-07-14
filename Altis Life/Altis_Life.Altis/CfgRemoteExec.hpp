@@ -78,6 +78,7 @@ class CfgRemoteExec {
 		F(life_fnc_copLevelChangeClient, CLIENT) //CopMenuExtended
         F(life_fnc_robKidney,CLIENT)
         F(life_fnc_recieveKidney,CLIENT)
+        F(life_fnc_gasRecieve,CLIENT)
 
         /* Server only functions */
         F(BIS_fnc_execVM,SERVER)

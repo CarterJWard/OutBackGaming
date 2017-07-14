@@ -71,9 +71,10 @@ if (playerSide isEqualTo civilian) then {
     {
       _pos = call compile format["%1",(_x select 0)];
       _house = nearestObject [_pos, "House"];
-      _houseName = getText(configFile >> "CfgVehicles" >> (typeOf _house) >> "displayName");
-
-      _return pushBack [format["house_%1",_house getVariable "uid"],_houseName,"\a3\ui_f\data\map\MapControl\lighthouse_ca.paa"];
+      if !(typeOf _house isEqualto "Land_fs_feed_F") then {
+        _houseName = getText(configFile >> "CfgVehicles" >> (typeOf _house) >> "displayName");
+        _return pushBack [format["house_%1",_house getVariable "uid"],_houseName,"\a3\ui_f\data\map\MapControl\lighthouse_ca.paa"];
+      };
     } forEach life_houses;
   };
 };

@@ -75,6 +75,9 @@ if ((BANK - (_fueltoput * life_fuelPrices))> 0)then {
     } else {
         life_is_processing = false;
         [0] call SOCK_fnc_updatePartial;
+        if (life_fuelStationOwned) then {
+            [life_fuelStationOwner,_totalcost] call life_fnc_insertGas;
+        };
     };
 } else {
     hint localize "STR_NOTF_NotEnoughMoney";
