@@ -2,8 +2,8 @@
 // Since then been tweaked by many hands!
 // Notable contributors: chucky [allFPS], Quiksilver.
 
-_pilots = ["B_Helipilot_F","B_pilot_F"];
-_aircraft_nocopilot = ["B_T_VTOL_01_armed_F","B_T_VTOL_01_vehicle_F","B_CTRG_Heli_Transport_01_sand_F","B_CTRG_Heli_Transport_01_tropic_F","B_Heli_Transport_01_camo_F","O_Heli_Transport_04_covered_F","O_Heli_Transport_04_F","B_Heli_Transport_01_F", "I_Heli_Transport_02_F","O_Heli_Light_02_F","O_Heli_Light_02_unarmed_F","B_Heli_Light_01_armed_F","B_Heli_Transport_03_F"];
+_pilots = ["OPTRE_UNSC_Marine_Pilot"];
+_aircraft_nocopilot ="OPTRE_Longsword_Bomb" ["OPTRE_UNSC_hornet_green_CAS","OPTRE_UNSC_hornet_green_CAP","OPTRE_UNSC_falcon_green","OPTRE_Pelican_armed_green","OPTRE_Pelican_unarmed_green"];
 
 waitUntil {player == player};
 
@@ -38,7 +38,7 @@ while { true } do {
 			if(!_iampilot) then {
 				_forbidden = [driver _veh];
 				if (player in _forbidden) then {
-					systemChat "You must be a pilot to fly this aircraft";
+					systemChat "You must be a pilot to fly this aircraft, you also must be on teamspeak";
 					player action ["getOut", _veh];
 				};
 			};

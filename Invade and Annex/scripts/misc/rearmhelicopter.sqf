@@ -27,21 +27,21 @@ _veh vehicleChat "Repairing ... almost there!";
 
 sleep 10;
 
-_veh vehicleChat "Refueling ... just a bit of Urine in the gas tank";
+_veh vehicleChat "Refueling ... just a bit of hydrogen in the gas tank";
 
 //---------- FINISHED
 
 sleep 10;
 
 _veh setDamage 0;
-_veh vehicleChat "patched up (100%).";
+_veh vehicleChat "Fully Fixed, mate!  (100%).";
 
 _veh setVehicleAmmo 1;
 _veh vehicleChat "Loaded.";
 
 _veh setFuel 1;
-_veh vehicleChat "and the tank is full of pee";
+_veh vehicleChat "and the tank is full of hydrogen";
 
 sleep 2;
 
-_veh vehicleChat "Good Luck.";
+_veh vehicleChat "Don't die!.";

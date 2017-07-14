@@ -18,27 +18,27 @@ private ["_opticsAllowed","_specialisedOptics","_optics","_basePos","_firstRun",
 #define MRK_MSG "Only Marksman and Spotters may use this weapon system. Rifle removed."
 
 //===== UAV TERMINAL
-_uavOperator = ["B_soldier_UAV_F","B_officer_F"];
+_uavOperator = ["OPTRE_UNSC_Army_Soldier_UAV_Op_TRO","OPTRE_UNSC_Army_Soldier_SquadLead_TRO"];
 _uavRestricted = ["B_UavTerminal","O_UavTerminal","I_UavTerminal"];
 //===== AT / MISSILE LAUNCHERS (excl RPG)
-_missileSoldiers = ["B_soldier_LAT_F","B_soldier_AA_F","B_soldier_AT_F","B_officer_F","B_recon_LAT_F"];
+_missileSoldiers = ["OPTRE_UNSC_ODST_Soldier_Scout_AT","OPTRE_UNSC_Army_Soldier_Rifleman_AT_TRO","OPTRE_UNSC_Army_Soldier_SquadLead_TRO"];
 _missileSpecialised = [];
 //===== SNIPER RIFLES
-_snipers = ["B_sniper_F","B_officer_F"];
+_snipers = ["OPTRE_UNSC_Army_Soldier_Sniper_TRO","OPTRE_UNSC_Army_Soldier_SquadLead_TRO","OPTRE_UNSC_ODST_Soldier_Scout_Sniper"];
 _sniperSpecialised = [];
 //===== THERMAL OPTICS
-_opticsAllowed = ["B_Soldier_SL_F"];
+_opticsAllowed = ["OPTRE_UNSC_Army_Soldier_Sniper_TRO","OPTRE_UNSC_ODST_Soldier_Scout_Sniper"];
 _specialisedOptics = [];
 //===== BACKPACKS
 _backpackRestricted = [];
 //===== LMG
-_autoRiflemen = ["B_soldier_AR_F","B_officer_F"];
+_autoRiflemen = ["OPTRE_UNSC_Army_Soldier_Autorifleman_TRO","OPTRE_UNSC_Army_Soldier_SquadLead_TRO"];
 _autoSpecialised = [];
 //===== SNIPER OPTICS
-_sniperTeam = ["B_sniper_F","B_spotter_F"];
+_sniperTeam = ["OPTRE_UNSC_Army_Soldier_Sniper_TRO","OPTRE_UNSC_Army_Soldier_ForwardObserver_TRO"];
 _sniperOpt = [];
 //===== MARKSMAN
-_marksman = ["B_soldier_M_F","B_spotter_F","B_recon_M_F"];
+_marksman = ["OPTRE_UNSC_Army_Soldier_Marksman_TRO","OPTRE_UNSC_Army_Soldier_ForwardObserver_TRO","OPTRE_UNSC_ODST_Soldier_Marksman"];
 _marksmanGun = [];
 //==========claws
 _backpackRestricteds = ["Respawn_TentDome_F", "B_Respawn_TentDome_F", "Respawn_TentA_F", "B_Respawn_TentA_F", "Respawn_Sleeping_bag_F", "Respawn_Sleeping_bag_blue_F", "B_Respawn_Sleeping_bag_blue_F", "Respawn_Sleeping_bag_brown_F", "B_Respawn_Sleeping_bag_brown_F", "B_Respawn_Sleeping_bag_F"];
