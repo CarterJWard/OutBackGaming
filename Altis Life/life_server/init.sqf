@@ -203,7 +203,6 @@ cleanupFSM = [] execFSM "\life_server\FSM\cleanup.fsm";
 };
 
 [] spawn TON_fnc_initHouses;
-[] spawn TON_fnc_initGas;
 cleanup = [] spawn TON_fnc_cleanup;
 
 TON_fnc_playtime_values = [];

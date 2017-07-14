@@ -78,7 +78,7 @@ if ((_type in _lifeContainers) && {player distance _curObject < 3} ) exitWith {
     };
 };
 
-if (_curObject isKindOf "House_F" && {player distance _curObject < 12} || ((nearestObject [[16019.5,16952.9,0],"Land_Dome_Big_F"]) == _curObject || (nearestObject [[16019.5,16952.9,0],"Land_Research_house_V1_F"]) == _curObject)) exitWith {
+if (_curObject isKindOf "House_F" && {player distance _curObject < 12} || ((nearestObject [[16019.5,16952.9,0],"Land_Dome_Big_F"]) == _curObject || (nearestObject [[16019.5,16952.9,0],"Land_Research_house_V1_F"]) == _curObject) || ((nearestObject [getPosATL player,"Land_fs_feed_F"]) == _curObject)) exitWith {
     [_curObject] call life_fnc_houseMenu;
 };
 

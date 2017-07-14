@@ -127,6 +127,7 @@ class Garages {
 
     };
 };
+
 class Gas {
 
     class Altis {

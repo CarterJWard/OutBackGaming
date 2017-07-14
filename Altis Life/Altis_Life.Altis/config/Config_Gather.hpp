@@ -22,14 +22,14 @@ class CfgGather {
         };
 
         class cocaine_unprocessed {
-            amount = 2;
+            amount = 1;
             zones[] = { "cocaine_1" };
             item = "";
             zoneSize = 30;
         };
 
         class cannabis {
-            amount = 3;
+            amount = 1;
             zones[] = { "weed_1" };
             item = "";
             zoneSize = 30;
