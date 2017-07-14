@@ -40,7 +40,6 @@ for "_i" from 0 to count(_resourceCfg)-1 do {
 
 if (_resource isEqualTo "logs" && str cursorObject find ": t_" > 0 && player distance cursorObject < 10 && !isNull cursorObject) then {
         _tree = cursorObject;
-        hint "logs passed"
     };
 
 if (_zone isEqualTo "") exitWith {life_action_inUse = false;};

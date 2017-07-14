@@ -38,7 +38,7 @@ _progress progressSetPosition 0.01;
 _cP = 0.01;
 
 for "_i" from 0 to 1 step 0 do {
-    sleep 1;
+    sleep 0.8;
     _cP = _cP + (0.01 * _level);
     _progress progressSetPosition _cP;
     _pgText ctrlSetText format["%3 (%1%2)...",round(_cP * 100),"%",_upp];
@@ -75,11 +75,11 @@ if (count crew _vehicle isEqualTo 0) then {
             if (_vehicle in life_vehicles) then {
 				["User Notifications", format [localize "STR_NOTF_OwnImpounded", [_value] call life_fnc_numberText, _type],nil,""] call life_fnc_showNotification;
                 BANK = BANK - _value;
-                [_prof, 5] call life_fnc_addExp;
+                [_prof, 10] call life_fnc_addExp;
             } else { 
 				["User Notifications", format [localize "STR_NOTF_Impounded", [_value] call life_fnc_numberText, _type],nil,""] call life_fnc_showNotification;
                 BANK = BANK + _value;
-                [_prof, 10] call life_fnc_addExp;
+                [_prof, 15] call life_fnc_addExp;
             };
             if (BANK < 0) then {BANK = 0;};
             [1] call SOCK_fnc_updatePartial;
