@@ -519,7 +519,10 @@ class LifeCfgVehicles {
             },"" },
             { "Police", "cop", {
                 "textures\cop\copOffroad.jpg"
-            },"" }
+            },"" },
+            { "Medical", "med", {
+                "textures\medic\medicOffroad.jpg"
+            }, "" }
         };
     };
 
@@ -568,6 +571,12 @@ will modify the virtual space and the price of the vehicle, but other informatio
             { "Police", "cop", {
                 "textures\cop\copHatch.jpg"
             },"" },
+            { "Highway Black", "cop", {
+                "textures\cop\blackvic.jpg"    
+            }, "" },
+            { "Highway White", "cop", {
+                "textures\cop\whiteVic.jpg"    
+            }, "" },
             { "EMS", "med", {
                 "textures\medic\medHatch.jpg"
             },"" }
@@ -893,8 +902,11 @@ will modify the virtual space and the price of the vehicle, but other informatio
             { "Police", "cop", {
                 "textures\cop\cop_suv1.jpg"
             },"" }, 
-            { "Highway Patrol", "cop", {
+            { "Highway Orange", "cop", {
                 "textures\cop\highPatrolS.jpg"    
+            }, "" },
+            { "Highway Blue", "cop", {
+                "textures\cop\High1.jpg"    
             }, "" },
             { "Undercover Orange", "cop", {
                 "\a3\soft_f_gamma\SUV_01\Data\suv_01_ext_04_co.paa"

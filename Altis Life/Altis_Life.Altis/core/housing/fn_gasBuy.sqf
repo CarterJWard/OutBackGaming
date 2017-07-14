@@ -15,12 +15,15 @@
 #define Btn7 37456
 #define Btn8 37457
 #define Title 37401
-
+hint "interaction called";
+diag_log "gas 1";
 private["_display","_curTarget","_Btn1","_Btn2","_Btn3","_Btn4","_Btn5","_Btn6","_Btn7","_Btn8"];
 disableSerialization;
 _curTarget = param [0,ObjNull,[ObjNull]];
 if (isNull _curTarget) exitWith {}; //Bad target
-if !(_curTarget isEqualTo "Land_fs_feed_F") exitWith {}; //Not a pump
+if !(_curTarget isEqualTo "Land_fs_feed_F") exitWith {hint "not a pump";}; //Not a pump
+
+diag_log "gas 2";
 
 if (!dialog) then {
     createDialog "pInteraction_Menu";

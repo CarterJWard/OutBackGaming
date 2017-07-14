@@ -105,6 +105,7 @@ class CfgFunctions {
             class deleteDBContainer {};
             class addGas {};
             class initGas {};
+            class fetchPlayerGas {};
         };
 
         class Gangs {

@@ -213,8 +213,9 @@ TON_fnc_playtime_values_request = [];
 publicVariable "TON_fnc_playtime_values";
 publicVariable "TON_fnc_playtime_values_request";
 
-/*Start Missions*/
+/*Start Missions and events*/
 [] execVM "\life_server\Functions\Systems\fn_asylumSeekers.sqf";
+[] execVM "\life_server\Functions\Larry\fn_events.sqf";
 [] execVM "\life_server\Functions\Larry\fn_airdrop.sqf";
 /* Setup the federal reserve building(s) */
 _dome = nearestObject [[16019.5,16952.9,0],"Land_Dome_Big_F"];

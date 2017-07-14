@@ -67,6 +67,7 @@ switch (playerSide) do {
         CONST(life_gigcoplevel25, 0);
         CONST(life_gigmed61, 0);
         life_houses = _this select 13;
+        life_gasStations = _this select 15;
         if (LIFE_SETTINGS(getNumber,"save_playerStats") isEqualTo 1) then {
             life_hunger = ((_this select 9) select 0);
             life_thirst = ((_this select 9) select 1);
@@ -93,6 +94,7 @@ switch (playerSide) do {
             [] spawn life_fnc_initGang;
         };
         [] spawn life_fnc_initHouses;
+        [] spawn life_fnc_initGas;
         
         if(count (SEL(_this,15)) > 0) then {
 		    {SVAR_MNS [SEL(_x,0),[SEL(SEL(_x,1),0),SEL(SEL(_x,1),1)]]} forEach (SEL(_this,15));

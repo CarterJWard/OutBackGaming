@@ -225,5 +225,4 @@ class Life_Settings {
 #include "Config_Loot.hpp"
 #include "Config_Profs.hpp"
 #include "Config_Housing.hpp"
-#include "Config_Garages.hpp"
 #include "Config_Furniture.hpp"
