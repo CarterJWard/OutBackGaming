@@ -7,7 +7,7 @@
     Description:
     Sells the house and delete all container near house.
 */
-private["_house","_uid","_action","_houseCfg"];
+private["_house","_uid","_action","_houseCfg","_furnitures"];
 _house = param [0,ObjNull,[ObjNull]];
 _uid = getPlayerUID player;
 
@@ -65,6 +65,7 @@ if (_action) then {
         _house setVariable [format["bis_disabled_Door_%1",_i],0,true];
     };
     _containers = _house getVariable ["containers",[]];
+    _furnitures = _house getVariable ["furnitures",[]];
     if (count _containers > 0) then {
         {
             _x setVariable ["Trunk",nil,true];
@@ -77,5 +78,20 @@ if (_action) then {
 
         } forEach _containers;
     };
+    
     _house setVariable ["containers",nil,true];
+
+    if (count _furnitures > 0) then {
+        {
+            _x setVariable ["Trunk",nil,true];
+
+            if (life_HC_isActive) then {
+                [_x] remoteExecCall ["HC_fnc_sellHouseContainer",HC_Life];
+            } else {
+                [_x] remoteExecCall ["TON_fnc_sellHouseContainer",RSERV];
+            };
+
+        } forEach _furnitures;
+    };
+    _house setVariable ["furnitures",nil,true];
 };

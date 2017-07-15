@@ -22,7 +22,7 @@ if (_action) then {
     private ["_box","_diff"];
     private ["_box","_diff"];
 	_box = "";
-	_box = getText(missionConfigFile >> "CfgDonkeyPunchCustoms" >> _containerType);
+	_box = getText(missionConfigFile >> "CfgDonkeyPunchCustoms" >> _containerType); 
     if (_box == "None") exitWith {};
 
     _diff = [_box,1,life_carryWeight,life_maxWeight] call life_fnc_calWeightDiff;

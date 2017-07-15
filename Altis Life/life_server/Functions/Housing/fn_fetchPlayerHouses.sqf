@@ -31,13 +31,16 @@ _furnituress = [];
 	_type = getText(missionConfigFile >> "CfgDonkeyPunchCustoms" >> _className);
 	_isFurniture = getNumber(missionConfigFile >> "VirtualItems" >> _type >> "furniture") isEqualTo 1;
     _container = createVehicle[_x select 2,[0,0,999],[],0,"NONE"];
+    _furniture = createVehicle[_x select 2,[0,0,999],[],0,"NONE"];
     waitUntil {!isNil "_container" && {!isNull _container}};
+    waitUntil {!isNil "_furniture" && {!isNull _furniture}};
     if!(_isFurniture)then{
 		_containerss pushBack _container;
 	}else{
-		_furnituress pushBack _container;
-		_container enableSimulationGlobal false;
+		_furnituress pushBack _furniture;
+		_furniture enableSimulationGlobal false;
 	};
+    if !(_isFurniture)then {
     _container allowDamage false;
     _container setPosATL _position;
     _container setVectorDirAndUp _direction;
@@ -76,7 +79,26 @@ _furnituress = [];
             _container addBackpackCargoGlobal [((_backpacks select 0) select _i), ((_backpacks select 1) select _i)];
         };
     };
+    } else {
+        _furniture allowDamage false;
+    _furniture setPosATL _position;
+    _furniture setVectorDirAndUp _direction;
+    //Fix position for more accurate positioning
+    _posX = _position select 0;
+    _posY = _position select 1;
+    _posZ = _position select 2;
+    _currentPos = getPosATL _container;
+    _fixX = (_currentPos select 0) - _posX;
+    _fixY = (_currentPos select 1) - _posY;
+    _fixZ = (_currentPos select 2) - _posZ;
+    _furniture setPosATL [(_posX - _fixX), (_posY - _fixY), (_posZ - _fixZ)];
+    _furniture setVectorDirAndUp _direction;
+    _furniture setVariable ["Trunk",_trunk,true];
+    _furniture setVariable ["container_owner",[_x select 0],true];
+    _furniture setVariable ["container_id",_x select 6,true]; 
+    };
     _house setVariable ["containers",_containerss,true];
+    _house setVariable ["furnitures",_furnituress,true];
 } forEach _containers;
 
 _query = format ["SELECT pid, pos FROM houses WHERE pid='%1' AND owned='1'",_uid];
@@ -88,6 +110,7 @@ _return = [];
     _house = nearestObject [_pos, "House"];
     _house allowDamage false;
     _return pushBack [_x select 1,_containerss];
+    _return pushBack [_x select 1,_furnituress];
 } forEach _houses;
 
 missionNamespace setVariable [format ["houses_%1",_uid],_return];
