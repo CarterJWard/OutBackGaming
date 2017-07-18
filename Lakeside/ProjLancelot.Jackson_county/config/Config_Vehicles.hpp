@@ -12,15 +12,20 @@ class CarShops {
     *   Independent Vehicle classnames can be found here: https://community.bistudio.com/wiki/Arma_3_CfgVehicles_GUER
     *   Civilian Vehicle classnames can be found here: https://community.bistudio.com/wiki/Arma_3_CfgVehicles_CIV
     */
-    class civ_car {
+    class car_basic {
         side = "civ";
         vehicles[] = {
-            { "B_Quadbike_01_F", { "", "", -1 } },
-            { "C_Hatchback_01_F", { "", "", -1 } },
-            { "C_Offroad_01_F", { "", "", -1 } },
-            { "C_SUV_01_F", { "", "", -1 } },
-            { "C_Hatchback_01_sport_F", { "", "", -1 } },
-            { "C_Van_01_transport_F", { "", "", -1 } }
+            { "A3L_VolvoS60RBlack", { "", "", -1 } },
+            { "RDS_Golf4_civ_01", { "", "", -1 } }
+        };
+    };
+    class car_top {
+        side = "civ";
+        vehicles[] = {
+            {"A3L_Ferrari458black",{"", "", -1 } },
+            {"A3L_Ferrari458white",{"", "", -1 } },
+            {"A3L_Ferrari458red",{"", "", -1 } },
+            {"A3L_Ferrari458blue",{"", "", -1 } },
         };
     };
 
@@ -366,68 +371,18 @@ will modify the virtual space and the price of the vehicle, but other informatio
     class C_Kart_01_Red_F  : C_Kart_01_Blu_F{};
     class C_Kart_01_Vrana_F : C_Kart_01_Blu_F{};
 
-    class C_Hatchback_01_sport_F {
-        vItemSpace = 45;
+    class RDS_Golf4_civ_01 {
+        vItemSpace = 35;
         licenses[] = { {"driver"}, {""}, {""}, {""} };
-        price = 40000;
-        textures[] = {
-            { "Red", "civ", {
-                "\a3\soft_f_gamma\Hatchback_01\data\hatchback_01_ext_sport01_co.paa"
-            } },
-            { "Dark Blue", "civ", {
-                "\a3\soft_f_gamma\Hatchback_01\data\hatchback_01_ext_sport02_co.paa"
-            } },
-            { "Orange", "civ", {
-                "\a3\soft_f_gamma\Hatchback_01\data\hatchback_01_ext_sport03_co.paa"
-            } },
-            { "Black / White", "civ", {
-                "\a3\soft_f_gamma\Hatchback_01\data\hatchback_01_ext_sport04_co.paa"
-            } },
-            { "Beige", "civ", {
-                "\a3\soft_f_gamma\Hatchback_01\data\hatchback_01_ext_sport05_co.paa"
-            } },
-            { "Green", "civ", {
-                "\a3\soft_f_gamma\Hatchback_01\data\hatchback_01_ext_sport06_co.paa"
-            } },
-            { "Police", "cop", {
-                "#(ai,64,64,1)Fresnel(1.3,7)"
-            } }
-        };
+        price = 25000;
+        textures[] = {};
     };
 
-    class B_Quadbike_01_F {
-        vItemSpace = 25;
+    class A3L_VolvoS60RBlack {
+        vItemSpace = 30;
         licenses[] = { {"driver"}, {""}, {""}, {""} };
-        price = 2500;
-        textures[] = {
-            { "Brown", "cop", {
-                "\A3\Soft_F\Quadbike_01\Data\Quadbike_01_co.paa"
-            } },
-            { "Digi Desert", "reb", {
-                "\A3\Soft_F\Quadbike_01\Data\quadbike_01_opfor_co.paa"
-            } },
-            { "Black", "civ", {
-                "\A3\Soft_F_beta\Quadbike_01\Data\quadbike_01_civ_black_co.paa"
-            } },
-            { "Blue", "civ", {
-                "\A3\Soft_F_beta\Quadbike_01\Data\quadbike_01_civ_blue_co.paa"
-            } },
-            { "Red", "civ", {
-                "\A3\Soft_F_beta\Quadbike_01\Data\quadbike_01_civ_red_co.paa"
-            } },
-            { "White", "civ", {
-                "\A3\Soft_F_beta\Quadbike_01\Data\quadbike_01_civ_white_co.paa"
-            } },
-            { "Digi Green", "civ", {
-                "\A3\Soft_F_beta\Quadbike_01\Data\quadbike_01_indp_co.paa"
-            } },
-            { "Hunter Camo", "civ", {
-                "\a3\soft_f_gamma\Quadbike_01\data\quadbike_01_indp_hunter_co.paa"
-            } },
-            { "Rebel Camo", "reb", {
-                "\a3\soft_f_gamma\Quadbike_01\data\quadbike_01_indp_hunter_co.paa"
-            } }
-        };
+        price = 20000;
+        textures[] = {};
     };
 
     class I_Truck_02_covered_F {
