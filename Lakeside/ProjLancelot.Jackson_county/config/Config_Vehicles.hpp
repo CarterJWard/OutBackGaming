@@ -12,14 +12,14 @@ class CarShops {
     *   Independent Vehicle classnames can be found here: https://community.bistudio.com/wiki/Arma_3_CfgVehicles_GUER
     *   Civilian Vehicle classnames can be found here: https://community.bistudio.com/wiki/Arma_3_CfgVehicles_CIV
     */
-    class car_basic {
+    class civ_basic {
         side = "civ";
         vehicles[] = {
             { "A3L_VolvoS60RBlack", { "", "", -1 } },
             { "RDS_Golf4_civ_01", { "", "", -1 } }
         };
     };
-    class car_top {
+    class civ_top {
         side = "civ";
         vehicles[] = {
             {"A3L_Ferrari458black",{"", "", -1 } },
@@ -106,7 +106,7 @@ class CarShops {
     class cop_car {
         side = "cop";
         vehicles[] = {
-            { "EvoX", { "", "", -1 } }
+            { "EvoXSo1", { "", "", -1 } }
         };
     };
 
@@ -161,6 +161,13 @@ class LifeCfgVehicles {
         vItemSpace = -1;
         licenses[] = { {""}, {""}, {""}, {""} };
         price = -1;
+        textures[] = {};
+    };
+
+    class EvoXSo1 {
+        vItemSpace = 10;
+        licenses[] = { {""}, {""}, {""}, {""} };
+        price = 150000;
         textures[] = {};
     };
 
@@ -366,7 +373,16 @@ will modify the virtual space and the price of the vehicle, but other informatio
     class C_Kart_01_Fuel_F : C_Kart_01_Blu_F{}; // Get all information of C_Kart_01_Blu_F
     class C_Kart_01_Red_F  : C_Kart_01_Blu_F{};
     class C_Kart_01_Vrana_F : C_Kart_01_Blu_F{};
-
+    class A3L_Ferrari458black {
+        vItemSpace = 20;
+        licenses[] = { {"driver"}, {""}, {""}, {""} };
+        price = 870000;
+        textures[] = {};
+    };
+    class A3L_Ferrari458white : A3L_Ferrari458black{};
+    class A3L_Ferrari458red : A3L_Ferrari458black{};
+    class A3L_Ferrari458blue : A3L_Ferrari458black{};
+    
     class RDS_Golf4_civ_01 {
         vItemSpace = 35;
         licenses[] = { {"driver"}, {""}, {""}, {""} };
