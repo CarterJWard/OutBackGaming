@@ -1,0 +1,5 @@
+///'a3l_client2.pbo' from Mikero's dos tools, dll version 5.66///
+prefix=a3l_client2
+Pbo Type is: Arma Addon
+Sha: '055510E5652238BE945DDF92E974DEB32090E3E7'
+//////</HEADER>//////
