@@ -1,0 +1,5 @@
+///'A3L_VestPD.pbo' from Mikero's dos tools, dll version 5.66///
+prefix=A3L_VestPD
+Pbo Type is: Arma Addon
+Sha: '031551E9AF933B011CAA1195A105A019EB49F6D4'
+//////</HEADER>//////

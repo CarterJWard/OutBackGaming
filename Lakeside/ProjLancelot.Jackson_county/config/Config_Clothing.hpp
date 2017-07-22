@@ -19,20 +19,7 @@ class Clothing {
         side = "civ";
         uniforms[] = {
             { "NONE", "Remove Uniform", 0, { "", "", -1 } },
-            { "U_C_Poloshirt_stripped", "Poloshirt stripped", 125, { "", "", -1 } },
-            { "U_C_Poloshirt_redwhite", "Poloshirt Red/White", 150, { "", "", -1 } },
-            { "U_C_Poloshirt_salmon", "Poloshirt Salmon", 175, { "", "", -1 } },
-            { "U_C_Poloshirt_blue", "Poloshirt Blue", 250, { "", "", -1 } },
-            { "U_C_Poor_2", "Rag tagged clothes", 250, { "", "", -1 } },
-            { "U_C_Poloshirt_burgundy", "Poloshirt Burgundy", 275, { "", "", -1 } },
-            { "U_C_Poloshirt_tricolour", "Poloshirt Tricolor", 350, { "", "", -1 } },
-            { "U_IG_Guerilla2_2", "Green stripped shirt & Pants", 650, { "", "", -1 } },
-            { "U_IG_Guerilla3_1", "Brown Jacket & Pants", 735, { "", "", -1 } },
-            { "U_OrestesBody", "Surfing On Land", 1100, { "", "", -1 } },
-            { "U_IG_Guerilla2_3", "The Outback Rangler", 1200, { "", "", -1 } },
-            { "U_C_HunterBody_grn", "The Hunters Look", 1500, { "", "", -1 } },
-            { "U_C_WorkerCoveralls", "Mechanic Coveralls", 2500, { "", "", -1 } },
-            { "U_NikosAgedBody", "Casual Wears", 5000, { "", "", -1 } }
+            { "A3L_Suit_Uniform", "Suit", 10000, {"", "", -1 } }
         };
         headgear[] = {
             { "NONE", "Remove Hat", 0, { "", "", -1 } },
@@ -127,9 +114,7 @@ class Clothing {
         };
         vests[] = {
             { "NONE", "Remove Vest", 0, { "", "", -1 } },
-            { "V_Rangemaster_belt", "", 800, { "", "", -1 } },
-            { "V_TacVest_blk_POLICE", "", 1000, { "life_coplevel", "SCALAR", 1 } },
-            { "V_PlateCarrier2_rgr", "", 1500, { "life_coplevel", "SCALAR", 2 } }
+            { "A3L_pdride", "Ride Along Vest", 500, { "", "", -1} }
         };
         backpacks[] = {
             { "NONE", "Remove Backpack", 0, { "", "", -1 } },
@@ -226,7 +211,8 @@ class Clothing {
             { "G_Shades_Blue", "", 10, { "", "", -1 } }
         };
         vests[] = {
-            { "NONE", "Remove Vest", 0, { "", "", -1 } }
+            { "NONE", "Remove Vest", 0, { "", "", -1 } }, 
+            { "A3L_emsftovest2", "FTO Vest Red", 750, { "", "", -1 } } 
         };
         backpacks[] = {
             { "NONE", "Remove Backpack", 0, { "", "", -1 } },
@@ -314,48 +300,6 @@ class Clothing {
             { "B_Carryall_oli", "", 7500, { "", "", -1 } },
             { "B_Carryall_khk", "", 7500, { "", "", -1 } },
             { "B_Carryall_cbr", "", 7500, { "", "", -1 } }
-        };
-    };
-
-    class kart {
-        title = "STR_Shops_C_Kart";
-        license = "";
-        side = "civ";
-        uniforms[] = {
-            { "NONE", "Remove Uniform", 0, { "", "", -1 } },
-            { "U_C_Driver_1_black", "", 1500, { "", "", -1 } },
-            { "U_C_Driver_1_blue", "", 1500, { "", "", -1 } },
-            { "U_C_Driver_1_red", "", 1500, { "", "", -1 } },
-            { "U_C_Driver_1_orange", "", 1500, { "", "", -1 } },
-            { "U_C_Driver_1_green", "", 1500, { "", "", -1 } },
-            { "U_C_Driver_1_white", "", 1500, { "", "", -1 } },
-            { "U_C_Driver_1_yellow", "", 1500, { "", "", -1 } },
-            { "U_C_Driver_2", "", 3500, { "", "", -1 } },
-            { "U_C_Driver_1", "", 3600, { "", "", -1 } },
-            { "U_C_Driver_3", "", 3700, { "", "", -1 } },
-            { "U_C_Driver_4", "", 3700, { "", "", -1 } }
-        };
-        headgear[] = {
-            { "NONE", "Remove Hat", 0, { "", "", -1 } },
-            { "H_RacingHelmet_1_black_F", "", 1000, { "", "", -1 } },
-            { "H_RacingHelmet_1_red_F", "", 1000, { "", "", -1 } },
-            { "H_RacingHelmet_1_white_F", "", 1000, { "", "", -1 } },
-            { "H_RacingHelmet_1_blue_F", "", 1000, { "", "", -1 } },
-            { "H_RacingHelmet_1_yellow_F", "", 1000, { "", "", -1 } },
-            { "H_RacingHelmet_1_green_F", "", 1000, { "", "", -1 } },
-            { "H_RacingHelmet_1_F", "", 2500, { "", "", -1 } },
-            { "H_RacingHelmet_2_F", "", 2500, { "", "", -1 } },
-            { "H_RacingHelmet_3_F", "", 2500, { "", "", -1 } },
-            { "H_RacingHelmet_4_F", "", 2500, { "", "", -1 } }
-        };
-        goggles[] = {
-            { "NONE", "Remove Glasses", 0, { "", "", -1 } }
-        };
-        vests[] = {
-            { "NONE", "Remove Vest", 0, { "", "", -1 } }
-        };
-        backpacks[] = {
-            { "NONE", "Remove Backpack", 0, { "", "", -1 } }
         };
     };
 };

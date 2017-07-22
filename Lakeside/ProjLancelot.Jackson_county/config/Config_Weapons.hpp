@@ -137,18 +137,10 @@ class WeaponShops {
         license = "";
         level[] = { "", "", -1, "" };
         items[] = {
-            { "arifle_sdar_F", "Taser Rifle", 20000, 7500 },
-            { "hgun_P07_snds_F", "Stun Pistol", 2000, 650 },
-            { "hgun_P07_F", "", 7500, 1500 },
-            { "HandGrenade_Stone", "Flashbang", 1700, -1 },
-            { "Binocular", "", 150, -1 },
-            { "ItemGPS", "", 100, 45 },
-            { "FirstAidKit", "", 150, 65 },
-            { "NVGoggles", "", 2000, 980 }
+            {"CSW_M26C", "Taeer", 500 }
         };
         mags[] = {
-            { "16Rnd_9x21_Mag", "", 25 },
-            { "20Rnd_556x45_UW_mag", "Taser Rifle Magazine", 45 }
+            { "CSW_Taser_Probe_Mag", "Taser", 100 }
         };
         accs[] = {
             { "muzzle_snds_L", "", 650 }

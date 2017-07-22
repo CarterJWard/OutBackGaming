@@ -1,0 +1,5 @@
+///'a3l_sert.pbo' from Mikero's dos tools, dll version 5.66///
+prefix=a3l_sert
+Pbo Type is: Arma Addon
+Sha: 'B86392A3F9DC20A1D28771F525F85CA1F81DFAF6'
+//////</HEADER>//////
