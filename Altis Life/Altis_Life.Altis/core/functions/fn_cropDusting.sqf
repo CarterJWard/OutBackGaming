@@ -66,7 +66,7 @@ titleText ["Crop dusting mission started! Get to the first location before the t
 
 {
     private _dist = _unit distance getMarkerPos _x;
-    curPos = getMarkerPos _x;
+    currPos = getMarkerPos _x;
 	private _avgSpeed = 150;
 	{
 	    if (typeOf veh1 isEqualTo (_x select 0)) exitWith 
@@ -90,7 +90,7 @@ titleText ["Crop dusting mission started! Get to the first location before the t
     
     _multi = _multi + 1;
     
-    _marker = createMarkerLocal ["cropDust_marker",curPos];
+    _marker = createMarkerLocal ["cropDust_marker",currPos];
     _marker setMarkerColorLocal "ColorRed";
     _marker setMarkerTypeLocal "Mil_dot";
     _marker setMarkerTextLocal "CROP DUSTING ZONE";  
@@ -109,9 +109,9 @@ titleText ["Crop dusting mission started! Get to the first location before the t
 	    cropDist = 400;
  
      addMissionEventHandler ["Draw3D", {
-	    if (isNull veh1 || isNull unit1 || !alive veh1 || !alive unit1 || (timeOut) || (arrived) || unit1 distance curPos < cropDist) exitWith {removeAllMissionEventHandlers "Draw3D";};
-	    private _disto = (unit1 distance curPos);
-	    drawIcon3D ["", [1,0,0,0.5], curPos, 0, 0, 0, format["%1m",_disto], 1, 0.05, "PuristaMedium"];
+	    if (isNull veh1 || isNull unit1 || !alive veh1 || !alive unit1 || (timeOut) || (arrived) || unit1 distance currPos < cropDist) exitWith {removeAllMissionEventHandlers "Draw3D";};
+	    private _disto = (unit1 distance currPos);
+	    drawIcon3D ["", [1,0,0,0.5], currPos, 0, 0, 0, format["%1m",_disto], 1, 0.05, "PuristaMedium"];
      }];
             
 	    while {true} do 
@@ -132,11 +132,11 @@ titleText ["Crop dusting mission started! Get to the first location before the t
 	    6 cutText["","PLAIN"];
     };
     
-    waitUntil {!alive unit1 || unit1 distance curPos < cropDist || isNull unit1 || isNull veh1 || !alive veh1 || (timeOut) || vehicle unit1 isEqualTo unit1};
+    waitUntil {!alive unit1 || unit1 distance currPos < cropDist || isNull unit1 || isNull veh1 || !alive veh1 || (timeOut) || vehicle unit1 isEqualTo unit1};
         if (!alive veh1 || !alive unit1 || isNull veh1 || isNull unit1) exitWith {diag_log "CROP DUSTING: dead or null units";arrived = true;};
         if (timeOut) exitWith {titleText ["You didn't make it to the marker in time!", "PLAIN", 3];};
         if (vehicle unit1 isEqualTo unit1) exitWith {timeOut = true;};
-        if (unit1 distance curPos < (cropDist + 50) && !isNull unit1 && alive unit1 && alive veh1 && !isNull veh1) then 
+        if (unit1 distance currPos < (cropDist + 50) && !isNull unit1 && alive unit1 && alive veh1 && !isNull veh1) then 
             {
                 arrived = true;
                 titleText [format["Press ACTION key now to dust crops! Stay within %1(m) and below 100(m) to get paid!",cropDist], "PLAIN", 3];
