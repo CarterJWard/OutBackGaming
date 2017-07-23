@@ -38,6 +38,16 @@ class Business
 	radiusB=204.93;
 	angle=0.000;
 };
+class PoliceHQ
+{
+	name="Jackson County Police HQ";
+	position[]={8718.81,7205.67};
+	type="StrongpointArea";
+	
+	radiusA=165.59;
+	radiusB=174.74;
+	angle=0.000;
+};
 class Raceway
 {
 	name="Lakeside Circuit";
@@ -47,6 +57,16 @@ class Raceway
 	radiusA=488.89;
 	radiusB=657.56;
 	angle=290.000;
+};
+class Stadium
+{
+	name="Lakeside Stadium";
+	position[]={8460.36,6234.09};
+	type="NameLocal";
+	
+	radiusA=133.97;
+	radiusB=168.16;
+	angle=0.000;
 };
 class PaloHeights
 {
@@ -97,6 +117,16 @@ class projects
 	radiusA=117.81;
 	radiusB=87.24;
 	angle=310.000;
+};
+class centralpark
+{
+	name="Caiden Park";
+	position[]={8621.56,6760.42};
+	type="VegetationBroadleaf";
+	
+	radiusA=72.23;
+	radiusB=117.82;
+	angle=0.000;
 };
 class Rufuspark
 {
@@ -218,6 +248,16 @@ class Morrison
 	radiusB=432.75;
 	angle=0.000;
 };
+class morrisoncp
+{
+	name="Morrison Border Checkpoint";
+	position[]={4329.44,2190.38};
+	type="BorderCrossing";
+	
+	radiusA=119.92;
+	radiusB=73.07;
+	angle=0.000;
+};
 class puesto1
 {
 	name="Puesto de Control de Santa Maria";
@@ -326,6 +366,16 @@ class hospital2
 	
 	radiusA=76.81;
 	radiusB=71.67;
+	angle=0.000;
+};
+class hospital1
+{
+	name="Lakeside Hospital";
+	position[]={8481.18,6447.86};
+	type="NameLocal";
+	
+	radiusA=81.98;
+	radiusB=93.68;
 	angle=0.000;
 };
 class ranch
@@ -696,6 +746,26 @@ class NewHaven
 	
 	radiusA=524.69;
 	radiusB=318.85;
+	angle=0.000;
+};
+class Skate
+{
+	name="Hem's Skatepark";
+	position[]={8577.75,6901.54};
+	type="ViewPoint";
+	
+	radiusA=63.27;
+	radiusB=42.69;
+	angle=0.000;
+};
+class pb
+{
+	name="Paintball Arena";
+	position[]={8797.94,6704.21};
+	type="NameLocal";
+	
+	radiusA=63.13;
+	radiusB=66.63;
 	angle=0.000;
 };
 class heli
