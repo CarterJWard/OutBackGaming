@@ -39,7 +39,10 @@ class CarShops {
         side = "civ";
         vehicles[] = {
             { "Jonzie_Box_Truck", { "", "", -1 } },
-            { "A3L_Dumptruck", { "", "", -1} }
+            { "A3L_Dumptruck", { "", "", -1} },
+            { "Jonzie_Western", { "", "", -1 } },
+            { "Jonzie_Curtain", { "", "", -1 } },
+            { "A3L_TowTruck", { "", "", -1 } }
         };
     };
 
@@ -75,10 +78,7 @@ class CarShops {
     class med_shop {
         side = "med";
         vehicles[] = {
-            { "C_Offroad_01_F", { "", "", -1 } },
-            { "I_Truck_02_medical_F", { "", "", -1 } },
-            { "O_Truck_03_medical_F", { "", "", -1 } },
-            { "B_Truck_01_medical_F", { "", "", -1 } }
+            { "A3L_AmberLamps", { "", "", -1 } }
         };
     };
 
@@ -155,6 +155,22 @@ class LifeCfgVehicles {
         price = -1;
         textures[] = {};
     };
+    class Jonzie_Curtain {
+        vItemSpace = 500;
+        licenses[] = { {"trucking"}, {""}, {""}, {""} };
+        price = 400000;
+        textures[] = {};
+    };
+    class Jonzie_Curtain_Roadtrain : Jonzie_Curtain {
+        vItemSpace = 350;
+        price = 300000;
+    };
+    class Jonzie_Western {
+        vItemSpace = 100;
+        licenses[] = { {"trucking"}, {""}, {""}, {""} };
+        price = 450000;
+        textures[] = {};
+    };
     class A3L_Suburban {
         vItemSpace = 30;
         licenses[] = { {""}, {""}, {""}, {""} };
@@ -193,6 +209,13 @@ class LifeCfgVehicles {
         textures[] = {};
     };
 
+    class A3L_AmberLamps {
+        vItemSpace = 30;
+        licenses[] = { {""}, {""}, {""}, {""} };
+        price = 60000;
+        textures[] = {};
+    };
+
     class C_Rubberboat {
         vItemSpace = 45;
         licenses[] = { {"boat"}, {""}, {""}, {""} };
@@ -205,20 +228,6 @@ class LifeCfgVehicles {
         licenses[] = { {""}, {"cAir"}, {""}, {""} };
         price = 200000;
         textures[] = {};
-    };
-
-    class B_Boat_Transport_01_F {
-        vItemSpace = 45;
-        licenses[] = { {""}, {"cg"}, {""}, {""} };
-        price = 3000;
-        textures[] = { };
-    };
-
-    class O_Truck_03_transport_F {
-        vItemSpace = 285;
-        licenses[] = { {"trucking"}, {""}, {""}, {""} };
-        price = 200000;
-        textures[] = { };
     };
 
     class O_Truck_03_device_F {
