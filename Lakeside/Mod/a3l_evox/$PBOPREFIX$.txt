@@ -1,0 +1,5 @@
+///'a3l_evox.pbo' from Mikero's dos tools, dll version 5.66///
+prefix=a3l_evox
+Pbo Type is: Arma Addon
+Sha: 'B9CA5EB747818B0992A9EB320218445108E4BC4D'
+//////</HEADER>//////

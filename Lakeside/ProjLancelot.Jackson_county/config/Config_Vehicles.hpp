@@ -98,7 +98,9 @@ class CarShops {
             { "EvoXSo3", { "", "", -1 } },
             { "EvoXSo4", { "", "", -1 } },
             { "A3L_Suburban", { "", "", -1 } },
-            { "A3L_SuburbanCSO", { "", "", -1 } }
+            { "A3L_SuburbanCSO", { "", "", -1 } },
+            { "A3L_Jailbus", { "", "", -1 } },
+            { "A3L_SuburbanDoc", { "", "", -1} },
         };
     };
 
@@ -155,6 +157,12 @@ class LifeCfgVehicles {
         price = -1;
         textures[] = {};
     };
+    class A3L_Jailbus {
+        vItemSpace = 20;
+        licenses[] = { {""}, {""}, {""}, {""} };
+        price = 100000;
+        textures[] = {};
+    };
     class Jonzie_Curtain {
         vItemSpace = 500;
         licenses[] = { {"trucking"}, {""}, {""}, {""} };
@@ -177,7 +185,8 @@ class LifeCfgVehicles {
         price = 100000;
         textures[] = {};
     };
-    class A3L_SuburbanCSO
+    class A3L_SuburbanCSO : A3L_Suburban{};
+    class A3L_SuburbanDoc : A3L_Suburban{};
     class EvoXSo1 {
         vItemSpace = 10;
         licenses[] = { {""}, {""}, {""}, {""} };
