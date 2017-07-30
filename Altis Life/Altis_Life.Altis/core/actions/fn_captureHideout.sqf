@@ -98,7 +98,7 @@ _marker = createMarker ["gangMarkerW", _hideout];
 _marker setMarkerColor "ColorRed";
 _marker setMarkerType "Empty";
 _marker	setMarkerShape "ELLIPSE";
-_marker setMarkerSize [75,75];
+_marker setMarkerSize [150,150];
 _marker setMarkerBrush "DiagGrid";
 _markerText = createMarker ["gangMarkerWT", _hideout];
 _markerText setMarkerColor "ColorBlack";
