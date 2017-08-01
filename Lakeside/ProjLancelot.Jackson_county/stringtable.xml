@@ -9136,16 +9136,8 @@
             <Portuguese>Mina de Cobre</Portuguese>
             <Polish>Kopalnia miedzi</Polish>
         </Key>
-        <Key ID="STR_MAR_ATM">
+        <Key ID="STR_NOTF_ATM">
             <Original>ATM</Original>
-            <Czech>bankomat</Czech>
-            <French>ATM</French>
-            <Spanish>ATM</Spanish>
-            <Italian>ATM</Italian>
-            <Russian></Russian>
-            <German>Geldautomat</German>
-            <Portuguese>Caixa Eletrônico</Portuguese>
-            <Polish>Bankomat</Polish>
         </Key>
         <Key ID="STR_MAR_Local_Bank">
             <Original>Local Bank</Original>
