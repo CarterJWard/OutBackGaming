@@ -17,9 +17,148 @@ class CarShops {
         vehicles[] = {
             { "A3L_VolvoS60RBlack", { "", "", -1 } },
             { "RDS_Golf4_civ_01", { "", "", -1 } },
-            { "Jonzie_Raptor", { "", "", -1} },
             { "Jonzie_Mini_Cooper", { "", "", -1 } },
-            { "Jonzie_Mini_Cooper_R_spec", { "", "", -1 } }
+            { "Jonzie_Mini_Cooper_R_spec", { "", "", -1 } },
+            { "red_beetle_66_bahamablue", {"", "", -1} },
+            { "red_beetle_66_black", {"", "", -1} },
+            { "red_beetle_66_javagreen", {"", "", -1} },
+            { "red_beetle_66_pearlwhite", {"", "", -1} },
+            { "red_beetle_66_rubyred", {"", "", -1} },   
+            { "red_beetle_66_seasand", {"", "", -1} },
+            { "red_beetle_66_seablue", {"", "", -1} }
+        };
+    };
+    class civ_dodge {
+        side = "civ";
+        vehicles[] = {
+            { "red_ram_06_aqua", {"", "", -1} },
+            { "red_ram_06_black", {"", "", -1} },
+            { "red_ram_06_darkblue", {"", "", -1} },
+            { "red_ram_06_darkgreen", {"", "", -1} },
+            { "red_ram_06_darkred", {"", "", -1} },
+            { "red_ram_06_red", {"", "", -1} },
+            { "red_ram_06_purple", {"", "", -1} },
+            { "red_ram_06_pink", {"", "", -1} },
+            { "red_ram_06_orange", {"", "", -1} },
+            { "red_ram_06_green", {"", "", -1} },
+            { "red_ram_06_yellow", {"", "", -1} },
+            { "red_ram_06_white", {"", "", -1} },
+            { "red_charger_12_yellow", {"",""-1} },
+            { "red_charger_12_green", {"",""-1} },
+            { "red_charger_12_orange", {"",""-1} },
+            { "red_charger_12_black", {"",""-1} },
+            { "red_charger_12_aqua", {"",""-1} },
+            { "red_charger_12_red", {"",""-1} },
+            { "red_charger_12_white", {"",""-1} },
+            { "red_charger_12_purple", {"",""-1} },
+            { "red_charger_12_pink", {"",""-1} },
+            { "red_charger_12_darkred", {"",""-1} },
+            { "red_charger_12_darkblue", {"",""-1} },
+            { "red_charger_15_red", {"","",-1} },
+            { "red_charger_15_purple", {"","",-1} },
+            { "red_charger_15_pink", {"","",-1} },
+            { "red_charger_15_orange", {"","",-1} },
+            { "red_charger_15_green", {"","",-1} },
+            { "red_charger_15_yellow", {"","",-1} },
+            { "red_charger_15_aqua", {"","",-1} },
+            { "red_charger_15_black", {"","",-1} },
+            { "red_charger_15_white", {"","",-1} },
+            { "red_charger_15_darkred", {"","",-1} },
+            { "red_charger_15_darkgreen", {"","",-1} },
+            { "red_charger_15_darkblue", {"","",-1} },
+        };
+    };
+    class civ_chevy {
+        side = "civ";
+        vehicles[] = {
+            {"red_camaro_12_aqua", {"", "", -1} },
+            {"red_camaro_12_black", {"", "", -1} },
+            {"red_camaro_12_blue", {"", "", -1} },
+            {"red_camaro_12_darkblue", {"", "", -1} },
+            {"red_camaro_12_darkgreen", {"", "", -1} },
+            {"red_camaro_12_white", {"", "", -1} },
+            {"red_camaro_12_yellow", {"", "", -1} },
+            {"red_camaro_12_red", {"", "", -1} },
+            {"red_camaro_12_darkred", {"", "", -1} },
+            {"red_camaro_12_green", {"", "", -1} },
+            {"red_camaro_12_orange", {"", "", -1} },
+            {"red_camaro_12_pink", {"", "", -1} },
+            {"red_camaro_12_purple", {"", "", -1} },
+            {"red_corvette_14_red", {"", "", -1} },
+            {"red_corvette_14_white", {"", "", -1} },
+            {"red_corvette_14_yellow", {"", "", -1} },
+            {"red_corvette_14_purple", {"", "", -1} },
+            {"red_corvette_14_pink", {"", "", -1} },
+            {"red_corvette_14_orange", {"", "", -1} },
+            {"red_corvette_14_green", {"", "", -1} },
+            {"red_corvette_14_aqua", {"", "", -1} },
+            {"red_corvette_14_black", {"", "", -1} },
+            {"red_corvette_14_darkgreen", {"", "", -1} },
+            {"red_corvette_14_darkblue", {"", "", -1} },
+            {"red_corvette_14_darkred", {"", "", -1} },
+            {"red_suburban_15_purple", {"","",-1} },
+            {"red_suburban_15_white", {"","",-1} },
+            {"red_suburban_15_black", {"","",-1} },
+            {"red_suburban_15_blue", {"","",-1} },
+            {"red_suburban_15_darkblue", {"","",-1} },
+            {"red_suburban_15_darkred", {"","",-1} },
+            {"red_suburban_15_darkgreen", {"","",-1} }
+        };
+    };
+    class civ_ford {
+        side = "civ";
+        vehicles[] = {
+            { "Jonzie_Raptor", { "", "", -1} },
+            { "Urbanized_67Mustang_orange", { "", "", -1} },
+            { "Urbanized_67Mustang_white", { "", "", -1} },
+            { "Urbanized_67Mustang_black", { "", "", -1} },
+            { "Urbanized_67Mustang_darkred", { "", "", -1} },
+            { "Urbanized_67Mustang_blue", { "", "", -1} },
+            { "red_fusion_10_red", {"", "", -1 } },
+            { "red_fusion_10_purple", {"", "", -1 } },
+            { "red_fusion_10_darkred", {"", "", -1 } },
+            { "red_fusion_10_orange", {"", "", -1 } },
+            { "red_fusion_10_pink", {"", "", -1 } },
+            { "red_fusion_10_darkgreen", {"", "", -1 } },
+            { "red_fusion_10_white", {"", "", -1 } },
+            { "red_fusion_10_aqua", {"", "", -1 } },
+            { "red_fusion_10_black", {"", "", -1 } },
+            { "red_fusion_10_blue", {"", "", -1 } },
+            { "red_fusion_10_darkblue", {"", "", -1 } },
+            { "red_taurus_10_white", {"", "", -1} },
+            { "red_taurus_10_red", {"", "", -1} },
+            { "red_taurus_10_purple", {"", "", -1} },
+            { "red_taurus_10_pink", {"", "", -1} },
+            { "red_taurus_10_orange", {"", "", -1} },
+            { "red_taurus_10_darkred", {"", "", -1} },
+            { "red_taurus_10_yellow", {"", "", -1} },
+            { "red_taurus_10_darkgreen", {"", "", -1} },
+            { "red_taurus_10_darkblue", {"", "", -1} },
+            { "red_taurus_10_blue", {"", "", -1} },
+            { "red_taurus_10_black", {"", "", -1} },
+            { "red_taurus_10_aqua", {"", "", -1} },
+            { "red_cvpi_06_red", {"", "", -1} },
+            { "red_cvpi_06_white", {"", "", -1} },
+            { "red_cvpi_06_purple", {"", "", -1} },
+            { "red_cvpi_06_pink", {"", "", -1} },
+            { "red_cvpi_06_orange", {"", "", -1} },
+            { "red_cvpi_06_darkred", {"", "", -1} },
+            { "red_cvpi_06_yellow", {"", "", -1} },
+            { "red_cvpi_06_darkgreen", {"", "", -1} },
+            { "red_cvpi_06_darkblue", {"", "", -1} },
+            { "red_cvpi_06_blue", {"", "", -1} },
+            { "red_cvpi_06_black", {"", "", -1} },
+            { "red_explorer_16_yellow", {"","",-1} },
+            { "red_explorer_16_pink", {"","",-1} },
+            { "red_explorer_16_purple", {"","",-1} },
+            { "red_explorer_16_white", {"","",-1} },
+            { "red_explorer_16_red", {"","",-1} },
+            { "red_explorer_16_aqua", {"","",-1} },
+            { "red_explorer_16_black", {"","",-1} },
+            { "red_explorer_16_blue", {"","",-1} },
+            { "red_explorer_16_darkred", {"","",-1} },
+            { "red_explorer_16_darkblue", {"","",-1} },
+            { "red_explorer_16_darkgreen", {"","",-1} }
         };
     };
     class civ_top {
@@ -31,18 +170,115 @@ class CarShops {
             { "A3L_Ferrari458blue",{"", "", -1 } },
             { "S_PorscheRS_Black", { "", "", -1} },
             { "S_PorscheRS_White", { "", "", -1} },
-            { "S_PorscheRS_Yellow", { "", "", -1} }
+            { "S_PorscheRS_Yellow", { "", "", -1} },
+            { "red_panmera_10_white", {"", "", -1 } },
+            { "red_panmera_10_red", {"", "", -1 } },
+            { "red_panmera_10_purple", {"", "", -1 } },
+            { "red_panmera_10_pink", {"", "", -1 } },
+            { "red_panmera_10_green", {"", "", -1 } },
+            { "red_panmera_10_aqua", {"", "", -1 } },
+            { "red_panmera_10_black", {"", "", -1 } },
+            { "red_panmera_10_darkblue", {"", "", -1 } },
+            { "red_panmera_10_darkgreen", {"", "", -1 } },
+            { "red_panmera_10_darkred", {"", "", -1 } },
+            { "red_panmera_10_orange", {"", "", -1 } },
+            { "red_xkrs_12_orange", {"","",-1} },
+            { "red_xkrs_12_purple", {"","",-1} },
+            { "red_xkrs_12_red", {"","",-1} },
+            { "red_xkrs_12_pink", {"","",-1} },
+            { "red_xkrs_12_aqua", {"","",-1} },
+            { "red_xkrs_12_black", {"","",-1} },
+            { "red_xkrs_12_darkgreen", {"","",-1} },
+            { "red_xkrs_12_darkred", {"","",-1} },
+            { "red_xkrs_12_darkblue", {"","",-1} },
+            { "red_s65_12_red", {"","",-1 } },
+            { "red_s65_12_white", {"","",-1 } },
+            { "red_s65_12_purple", {"","",-1 } },
+            { "red_s65_12_pink", {"","",-1 } },
+            { "red_s65_12_orange", {"","",-1 } },
+            { "red_s65_12_black", {"","",-1 } },
+            { "red_s65_12_darkblue", {"","",-1 } },
+            { "red_s65_12_darkgreen", {"","",-1 } },
+            { "red_s65_12_darkred", {"","",-1 } },
+            { "red_vanquish_12_yellow", {"","",-1} },
+            { "red_vanquish_12_aqua", {"","",-1} },
+            { "red_vanquish_12_green", {"","",-1} },
+            { "red_vanquish_12_orange", {"","",-1} },
+            { "red_vanquish_12_pink", {"","",-1} },
+            { "red_vanquish_12_purple", {"","",-1} },
+            { "red_vanquish_12_red", {"","",-1} },
+            { "red_vanquish_12_white", {"","",-1} },
+            { "red_vanquish_12_blue", {"","",-1} },
+            { "red_vanquish_12_black", {"","",-1} },
+            { "red_vanquish_12_darkred", {"","",-1} },
+            { "red_vanquish_12_darkblue", {"","",-1} },
+            { "red_vanquish_12_darkgreen", {"","",-1} },
+            { "red_gs350_13_yellow", {"","",-1} },
+            { "red_gs350_13_white", {"","",-1} },
+            { "red_gs350_13_red", {"","",-1} },
+            { "red_gs350_13_purple", {"","",-1} },
+            { "red_gs350_13_pink", {"","",-1} },
+            { "red_gs350_13_orange", {"","",-1} },
+            { "red_gs350_13_black", {"","",-1} },
+            { "red_gs350_13_darkgreen", {"","",-1} },
+            { "red_gs350_13_darkred", {"","",-1} },
+            { "red_gs350_13_darkblue", {"","",-1} }
         };
     };
-
+    class civ_porsche {
+        side = "civ";
+        vehicles[] = {
+            { "red_porsche_12_green", {"","",-1} },
+            { "red_porsche_12_aqua", {"","",-1} }, 
+            { "red_porsche_12_orange", {"","",-1} }, 
+            { "red_porsche_12_pink", {"","",-1} }, 
+            { "red_porsche_12_purple", {"","",-1} }, 
+            { "red_porsche_12_red", {"","",-1} }, 
+            { "red_porsche_12_white", {"","",-1} }, 
+            { "red_porsche_12_yellow", {"","",-1} }, 
+            { "red_porsche_12_blue", {"","",-1} }, 
+            { "red_porsche_12_darkblue", {"","",-1} }, 
+            { "red_porsche_12_darkgreen", {"","",-1} }, 
+            { "red_porsche_12_darkred", {"","",-1} }, 
+            { "red_porsche_12_black", {"","",-1} }
+        };
+    };
+    class civ_exo {
+        side = "civ";
+        vehicles[] = {
+            {"Urbanized_427_black", {"", "", -1} },
+            {"Urbanized_427_blue", {"", "", -1} },
+            {"Urbanized_427_orange", {"", "", -1} },
+            {"Urbanized_427_pink", {"", "", -1} },
+            {"Urbanized_427_red", {"", "", -1} },
+            {"Urbanized_427_wed", {"", "", -1} },
+            {"Urbanized_427_white", {"", "", -1} },
+            {"Urbanized_427_yellow", {"", "", -1} },
+            {"red_venomgt_11_yellow", {"", "", -1} },
+            {"red_venomgt_11_pink", {"", "", -1} },
+            {"red_venomgt_11_purple", {"", "", -1} },
+            {"red_venomgt_11_red", {"", "", -1} },
+            {"red_venomgt_11_white", {"", "", -1} },
+            {"red_venomgt_11_aqua", {"", "", -1} },
+            {"red_venomgt_11_black", {"", "", -1} },
+            {"red_venomgt_11_darkgreen", {"", "", -1} },
+            {"red_venomgt_11_darkblue", {"", "", -1} },
+            {"red_venomgt_11_green", {"", "", -1} },
+            {"red_venomgt_11_darkred", {"", "", -1} },
+            {"red_venomgt_11_orange", {"", "", -1} }
+        };
+    };
     class civ_truck {
         side = "civ";
         vehicles[] = {
             { "Jonzie_Box_Truck", { "", "", -1 } },
             { "A3L_Dumptruck", { "", "", -1} },
             { "Jonzie_Western", { "", "", -1 } },
+            { "Jonzie_Superliner", {"", "", -1} },
             { "Jonzie_Curtain", { "", "", -1 } },
-            { "A3L_TowTruck", { "", "", -1 } }
+            { "A3L_TowTruck", { "", "", -1 } },
+            { "red_towtruck_08_tow1", {"", "", -1} },
+            { "red_towtruck_08_tow2", {"", "", -1} }
         };
     };
 
@@ -97,13 +333,15 @@ class CarShops {
             { "EvoXSo2", { "", "", -1 } },
             { "EvoXSo3", { "", "", -1 } },
             { "EvoXSo4", { "", "", -1 } },
-            { "A3L_Suburban", { "", "", -1 } },
-            { "A3L_SuburbanCSO", { "", "", -1 } },
-            { "A3L_Jailbus", { "", "", -1 } },
-            { "A3L_SuburbanDoc", { "", "", -1} },
+            { "A3L_Jailbus", { "", "", -1 } }
         };
     };
-
+    class cop_SO {
+        side = "cop";
+        vehicles[] = {
+            { "red_f350_08_p_Patrol", {"", "", -1} }
+        };
+    };
     class cop_air {
         side = "cop";
         vehicles[] = {
@@ -157,6 +395,329 @@ class LifeCfgVehicles {
         price = -1;
         textures[] = {};
     };
+    class red_explorer_16_yellow {
+        vItemSpace = 50;
+        licenses[] = { {""}, {""}, {""}, {""} };
+        price = 230000;
+        textures[] = {};
+    };
+    class red_explorer_16_pink : red_explorer_16_yellow{};
+    class red_explorer_16_purple : red_explorer_16_yellow{};
+    class red_explorer_16_white : red_explorer_16_yellow{};
+    class red_explorer_16_red : red_explorer_16_yellow{};
+    class red_explorer_16_aqua : red_explorer_16_yellow{};
+    class red_explorer_16_blue : red_explorer_16_yellow{};
+    class red_explorer_16_black : red_explorer_16_yellow{};
+    class red_explorer_16_darkred : red_explorer_16_yellow{};
+    class red_explorer_16_darkblue : red_explorer_16_yellow{};
+    class red_explorer_16_darkgreen : red_explorer_16_yellow{};
+    
+    class red_charger_15_red {
+        vItemSpace = -1;
+        licenses[] = { {""}, {""}, {""}, {""} };
+        price = 525000;
+        textures[] = {};
+    };
+    class red_charger_15_purple : red_charger_15_red{};
+    class red_charger_15_pink : red_charger_15_red{};
+    class red_charger_15_orange : red_charger_15_red{};
+    class red_charger_15_green : red_charger_15_red{};
+    class red_charger_15_yellow : red_charger_15_red{};
+    class red_charger_15_aqua : red_charger_15_red{};
+    class red_charger_15_black : red_charger_15_red{};
+    class red_charger_15_white : red_charger_15_red{};
+    class red_charger_15_darkgreen : red_charger_15_red{};
+    class red_charger_15_darkblue : red_charger_15_red{};
+    class red_charger_15_darkred : red_charger_15_red{};
+    
+    class red_charger_12_yellow {
+        vItemSpace = 20;
+        licenses[] = { {""}, {""}, {""}, {""} };
+        price = 475000;
+        textures[] = {};
+    };
+    class red_charger_12_green : red_charger_12_yellow{};
+    class red_charger_12_black : red_charger_12_yellow{};
+    class red_charger_12_aqua : red_charger_12_yellow{};
+    class red_charger_12_darkred : red_charger_12_yellow{};
+    class red_charger_12_darkblue : red_charger_12_yellow{};
+    class red_charger_12_white : red_charger_12_yellow{};
+    class red_charger_12_pink : red_charger_12_yellow{};
+    class red_charger_12_orange : red_charger_12_yellow{};
+    class red_charger_12_purple : red_charger_12_yellow{};
+    class red_charger_12_red : red_charger_12_yellow{};
+    class red_suburban_15_purple {
+        vItemSpace = 60;
+        licenses[] = { {"driver"}, {""}, {""}, {""} };
+        price = 400000;
+        textures[] = {};
+    };
+    class red_suburban_15_white : red_suburban_15_purple{};
+    class red_suburban_15_black : red_suburban_15_purple{};
+    class red_suburban_15_blue : red_suburban_15_purple{};
+    class red_suburban_15_darkred : red_suburban_15_purple{};
+    class red_suburban_15_darkgreen : red_suburban_15_purple{};
+    class red_suburban_15_darkblue : red_suburban_15_purple{};
+    class red_corvette_14_red {
+        vItemSpace = -1;
+        licenses[] = { {"driver"}, {""}, {""}, {""} };
+        price = 720000;
+        textures[] = {};
+    };
+    class red_corvette_14_white : red_corvette_14_red{};
+    class red_corvette_14_yellow : red_corvette_14_red{};
+    class red_corvette_14_purple : red_corvette_14_red{};
+    class red_corvette_14_pink : red_corvette_14_red{};
+    class red_corvette_14_aqua : red_corvette_14_red{};
+    class red_corvette_14_green : red_corvette_14_red{};
+    class red_corvette_14_orange : red_corvette_14_red{};
+    class red_corvette_14_black : red_corvette_14_red{};
+    class red_corvette_14_darkgreen : red_corvette_14_red{};
+    class red_corvette_14_darkred : red_corvette_14_red{};
+    class red_corvette_14_darkblue : red_corvette_14_red{};
+    class red_gs350_13_yellow {
+        vItemSpace = -1;
+        licenses[] = { {"driver"}, {""}, {""}, {""} };
+        price = 535000;
+        textures[] = {};
+    };
+    class red_gs350_13_white : red_gs350_13_yellow{};
+    class red_gs350_13_red : red_gs350_13_yellow{};
+    class red_gs350_13_purple : red_gs350_13_yellow{};
+    class red_gs350_13_white : red_gs350_13_yellow{};
+    class red_gs350_13_orange : red_gs350_13_yellow{};
+    class red_gs350_13_black : red_gs350_13_yellow{};
+    class red_gs350_13_darkred : red_gs350_13_yellow{};
+    class red_gs350_13_darkgreen : red_gs350_13_yellow{};
+    class red_gs350_13_darkblue : red_gs350_13_yellow{};
+    
+    class red_vanquish_12_yellow {
+        vItemSpace = -1;
+        licenses[] = { {""}, {""}, {""}, {""} };
+        price = 480000;
+        textures[] = {};
+    };
+    class red_vanquish_12_aqua : red_vanquish_12_yellow{};
+    class red_vanquish_12_green : red_vanquish_12_yellow{};
+    class red_vanquish_12_orange : red_vanquish_12_yellow{};
+    class red_vanquish_12_pink : red_vanquish_12_yellow{};
+    class red_vanquish_12_purple : red_vanquish_12_yellow{};
+    class red_vanquish_12_red : red_vanquish_12_yellow{};
+    class red_vanquish_12_white : red_vanquish_12_yellow{};
+    class red_vanquish_12_blue : red_vanquish_12_yellow{};
+    class red_vanquish_12_black : red_vanquish_12_yellow{};
+    class red_vanquish_12_darkred : red_vanquish_12_yellow{};
+    class red_vanquish_12_darkblue : red_vanquish_12_yellow{};
+    class red_vanquish_12_darkgreen : red_vanquish_12_yellow{};
+    
+    class red_porsche_12_green {
+        vItemSpace = -1;
+        licenses[] = { {"driver"}, {""}, {""}, {""} };
+        price = 850000;
+        textures[] = {};
+    };
+    class red_porsche_12_aqua : red_porsche_12_green{};
+    class red_porsche_12_black : red_porsche_12_green{};
+    class red_porsche_12_orange : red_porsche_12_green{};
+    class red_porsche_12_pink : red_porsche_12_green{};
+    class red_porsche_12_purple : red_porsche_12_green{};
+    class red_porsche_12_red : red_porsche_12_green{};
+    class red_porsche_12_white : red_porsche_12_green{};
+    class red_porsche_12_yellow : red_porsche_12_green{};
+    class red_porsche_12_blue : red_porsche_12_green{};
+    class red_porsche_12_darkblue : red_porsche_12_green{};
+    class red_porsche_12_darkred : red_porsche_12_green{};
+    class red_porsche_12_darkgreen : red_porsche_12_green{};
+
+    class red_s65_12_red {
+        vItemSpace = 5;
+        licenses[] = { {"driver"}, {""}, {""}, {""} };
+        price = 850000;
+        textures[] = {};
+    };
+    class red_s65_12_white : red_s65_12_red{};
+    class red_s65_12_purple : red_s65_12_red{};
+    class red_s65_12_pink : red_s65_12_red{};
+    class red_s65_12_orange : red_s65_12_red{};
+    class red_s65_12_black : red_s65_12_red{};
+    class red_s65_12_darkred : red_s65_12_red{};
+    class red_s65_12_darkblue : red_s65_12_red{};
+    class red_s65_12_darkgreen : red_s65_12_red{};
+    
+    class red_xkrs_12_orange {
+        vItemSpace = 20;
+        licenses[] = { {""}, {""}, {""}, {""} };
+        price = 700000;
+        textures[] = {};
+    };
+    class red_xkrs_12_purple : red_xkrs_12_orange{};
+    class red_xkrs_12_red : red_xkrs_12_orange{};
+    class red_xkrs_12_pink : red_xkrs_12_orange{};
+    class red_xkrs_12_aqua : red_xkrs_12_orange{};
+    class red_xkrs_12_black : red_xkrs_12_orange{};
+    class red_xkrs_12_darkgreen : red_xkrs_12_orange{};
+    class red_xkrs_12_darkblue : red_xkrs_12_orange{};
+    class red_xkrs_12_darkred : red_xkrs_12_orange{};
+
+    class red_camaro_12_aqua {
+        vItemSpace = 20;
+        licenses[] = { {"driver"}, {""}, {""}, {""} };
+        price = 390000;
+        textures[] = {};
+    };
+    class red_camaro_12_black : red_camaro_12_aqua{};
+    class red_camaro_12_blue : red_camaro_12_aqua{};
+    class red_camaro_12_darkblue : red_camaro_12_aqua{};
+    class red_camaro_12_darkgreen : red_camaro_12_aqua{};
+    class red_camaro_12_white : red_camaro_12_aqua{};
+    class red_camaro_12_yellow : red_camaro_12_aqua{};
+    class red_camaro_12_red : red_camaro_12_aqua{};
+    class red_camaro_12_darkred : red_camaro_12_aqua{};
+    class red_camaro_12_green : red_camaro_12_aqua{};
+    class red_camaro_12_orange : red_camaro_12_aqua{};
+    class red_camaro_12_pink : red_camaro_12_aqua{};
+    class red_camaro_12_purple : red_camaro_12_aqua{};
+
+    class red_panmera_10_white {
+        vItemSpace = 10;
+        licenses[] = { {"driver"}, {""}, {""}, {""} };
+        price = 900000;
+        textures[] = {};
+    };
+    class red_panmera_10_red : red_panmera_10_white{};
+    class red_panmera_10_purple : red_panmera_10_white{};
+    class red_panmera_10_pink : red_panmera_10_white{};
+    class red_panmera_10_green : red_panmera_10_white{};
+    class red_panmera_10_aqua : red_panmera_10_white{};
+    class red_panmera_10_black : red_panmera_10_white{};
+    class red_panmera_10_darkblue : red_panmera_10_white{};
+    class red_panmera_10_darkgreen : red_panmera_10_white{};
+    class red_panmera_10_darkred : red_panmera_10_white{};
+    class red_panmera_10_orange : red_panmera_10_white{};
+
+    class red_taurus_10_white {
+        vItemSpace = 45;
+        licenses[] = { {"driver"}, {""}, {""}, {""} };
+        price = 115000;
+        textures[] = {};
+    };
+    class red_taurus_10_red : red_taurus_10_white{};
+    class red_taurus_10_purple : red_taurus_10_white{};
+    class red_taurus_10_pink : red_taurus_10_white{};
+    class red_taurus_10_orange : red_taurus_10_white{};
+    class red_taurus_10_darkred : red_taurus_10_white{};
+    class red_taurus_10_yellow : red_taurus_10_white{};
+    class red_taurus_10_darkgreen : red_taurus_10_white{};
+    class red_taurus_10_darkblue : red_taurus_10_white{};
+    class red_taurus_10_blue : red_taurus_10_white{};
+    class red_taurus_10_black : red_taurus_10_white{};
+    class red_taurus_10_aqua : red_taurus_10_white{};
+
+    class red_fusion_10_red {
+        vItemSpace = 40;
+        licenses[] = { {"driver"}, {""}, {""}, {""} };
+        price = 85000;
+        textures[] = {};
+    };
+    class red_fusion_10_purple : red_fusion_10_red{};
+    class red_fusion_10_darkred : red_fusion_10_red{};
+    class red_fusion_10_orange : red_fusion_10_red{};
+    class red_fusion_10_pink : red_fusion_10_red{};
+    class red_fusion_10_darkgreen : red_fusion_10_red{};
+    class red_fusion_10_white : red_fusion_10_red{};
+    class red_fusion_10_aqua : red_fusion_10_red{};
+    class red_fusion_10_black : red_fusion_10_red{};
+    class red_fusion_10_blue : red_fusion_10_red{};
+    class red_fusion_10_darkblue : red_fusion_10_red{};
+
+    class red_venomgt_11_yellow {
+        vItemSpace = 10;
+        licenses[] = { {"driver"}, {""}, {""}, {""} };
+        price = 2100000;
+        textures[] = {};
+    };
+    class red_venomgt_11_pink : red_venomgt_11_yellow{};
+    class red_venomgt_11_purple : red_venomgt_11_yellow{};
+    class red_venomgt_11_red : red_venomgt_11_yellow{};
+    class red_venomgt_11_white : red_venomgt_11_yellow{};
+    class red_venomgt_11_aqua : red_venomgt_11_yellow{};
+    class red_venomgt_11_black : red_venomgt_11_yellow{};
+    class red_venomgt_11_darkgreen : red_venomgt_11_yellow{};
+    class red_venomgt_11_darkblue : red_venomgt_11_yellow{};
+    class red_venomgt_11_green : red_venomgt_11_yellow{};
+    class red_venomgt_11_darkred : red_venomgt_11_yellow{};
+    class red_venomgt_11_orange : red_venomgt_11_yellow{};
+    class red_towtruck_08_tow1 {
+        vItemSpace = 35;
+        licenses[] = { {"trucking"}, {""}, {""}, {""} };
+        price = 340000;
+        textures[] = {};
+    };
+    class red_towtruck_08_tow2 : red_towtruck_08_tow1{};
+    class red_f350_08_p_Patrol {
+        vItemSpace = 100;
+        licenses[] = {{""}, {""}, {""}, {""} };
+        price = 150000;
+        textures[] = {};
+    }
+    class red_cvpi_06_red {
+        vItemSpace = 35;
+        licenses[] = { {"driver"},{""},{""},{""} };
+        price = 225000;
+        textures[] = {};  
+    };
+    class red_cvpi_06_white : red_cvpi_06_red{};
+    class red_cvpi_06_purple : red_cvpi_06_red{};
+    class red_cvpi_06_pink : red_cvpi_06_red{};
+    class red_cvpi_06_orange : red_cvpi_06_red{};
+    class red_cvpi_06_darkred : red_cvpi_06_red{};
+    class red_cvpi_06_yellow : red_cvpi_06_red{};
+    class red_cvpi_06_darkgreen : red_cvpi_06_red{};
+    class red_cvpi_06_darkblue : red_cvpi_06_red{};
+    class red_cvpi_06_blue : red_cvpi_06_red{};
+    class red_cvpi_06_black : red_cvpi_06_red{};
+    class Urbanized_67Mustang_orange {
+        vItemSpace = 20;
+        licenses[] = { {"driver"},{""},{""},{""} };
+        price = 600000;
+        textures[] = {};
+    };
+        class Urbanized_67Mustang_white :  Urbanized_67Mustang_orange{};
+        class Urbanized_67Mustang_black :  Urbanized_67Mustang_orange{};
+        class Urbanized_67Mustang_darkred :  Urbanized_67Mustang_orange{};
+        class Urbanized_67Mustang_blue :  Urbanized_67Mustang_orange{};
+    class red_ram_06_aqua {
+        vItemSpace = 135;
+        licenses[] = { {"driver"},{""},{""},{""} };
+        price = 320000;
+        textures[] = {};
+    };
+        class red_ram_06_black : class red_ram_06_aqua {};
+        class red_ram_06_darkblue : class red_ram_06_aqua {};
+        class red_ram_06_darkgreen : class red_ram_06_aqua {};
+        class red_ram_06_darkred : class red_ram_06_aqua {};
+        class red_ram_06_red : class red_ram_06_aqua {};
+        class red_ram_06_purple : class red_ram_06_aqua {};
+        class red_ram_06_pink : class red_ram_06_aqua {};
+        class red_ram_06_orange : class red_ram_06_aqua {};
+        class red_ram_06_green : class red_ram_06_aqua {};
+        class red_ram_06_yellow : class red_ram_06_aqua {};
+        class red_ram_06_white : class red_ram_06_aqua {};
+    class Urbanized_427_black {
+        vItemSpace = 15;
+        licenses[] = { {"driver"},{""},{""},{""} };
+        price = 565000;
+        textures[] = {};
+    };
+    class Urbanized_427_blue : Urbanized_427_black{};
+    class Urbanized_427_orange : Urbanized_427_black{};
+    class Urbanized_427_pink : Urbanized_427_black{};
+    class Urbanized_427_red : Urbanized_427_black{};
+    class Urbanized_427_wed : Urbanized_427_black {
+        price = 710000;
+    };
+    class Urbanized_427_white : Urbanized_427_black{};
+    class Urbanized_427_yellow : Urbanized_427_black{};
     class A3L_Jailbus {
         vItemSpace = 20;
         licenses[] = { {""}, {""}, {""}, {""} };
@@ -179,14 +740,12 @@ class LifeCfgVehicles {
         price = 450000;
         textures[] = {};
     };
-    class A3L_Suburban {
-        vItemSpace = 30;
-        licenses[] = { {""}, {""}, {""}, {""} };
-        price = 100000;
+    class Jonzie_Superliner {
+        vItemSpace = 200;
+        licenses[] = { {"trucking"}, {""}, {""}, {""} };
+        price = 750000;
         textures[] = {};
     };
-    class A3L_SuburbanCSO : A3L_Suburban{};
-    class A3L_SuburbanDoc : A3L_Suburban{};
     class EvoXSo1 {
         vItemSpace = 10;
         licenses[] = { {""}, {""}, {""}, {""} };
@@ -225,27 +784,6 @@ class LifeCfgVehicles {
         textures[] = {};
     };
 
-    class C_Rubberboat {
-        vItemSpace = 45;
-        licenses[] = { {"boat"}, {""}, {""}, {""} };
-        price = 5000;
-        textures[] = { };
-    };
-
-    class B_Heli_Transport_01_F {
-        vItemSpace = 200;
-        licenses[] = { {""}, {"cAir"}, {""}, {""} };
-        price = 200000;
-        textures[] = {};
-    };
-
-    class O_Truck_03_device_F {
-        vItemSpace = 350;
-        licenses[] = { {"trucking"}, {""}, {""}, {""} };
-        price = 450000;
-        textures[] = { };
-    };
-
     class Land_CargoBox_V1_F {
         vItemSpace = 5000;
         licenses[] = { {""}, {""}, {""}, {""} };
@@ -267,13 +805,6 @@ class LifeCfgVehicles {
         textures[] = {};
     };
 
-    class O_MRAP_02_F {
-        vItemSpace = 60;
-        licenses[] = { {"driver"}, {""}, {""}, {""} };
-        price = 150000;
-        textures[] = { };
-    };
-
     class Jonzie_Raptor {
         vItemSpace = 115;
         licenses[] = { {"driver"}, {""}, {""}, {""} };
@@ -281,24 +812,6 @@ class LifeCfgVehicles {
         textures[] = {};
     }
 
-    class C_Kart_01_Blu_F {
-        vItemSpace = 20;
-        licenses[] = { {"driver"}, {""}, {""}, {""} };
-        price = 15000;
-        textures[] = {};
-    };
-/*
-To edit another information in this classes you can use this exemple.
-class C_Kart_01_Fuel_F : C_Kart_01_Blu_F{
-    vItemSpace = 40;
-    price = ;
-};
-
-will modify the virtual space and the price of the vehicle, but other information such as license and textures will pick up the vehicle declare at : Vehicle {};
-*/
-    class C_Kart_01_Fuel_F : C_Kart_01_Blu_F{}; // Get all information of C_Kart_01_Blu_F
-    class C_Kart_01_Red_F  : C_Kart_01_Blu_F{};
-    class C_Kart_01_Vrana_F : C_Kart_01_Blu_F{};
     class A3L_Ferrari458black {
         vItemSpace = 20;
         licenses[] = { {"driver"}, {""}, {""}, {""} };
@@ -321,75 +834,6 @@ will modify the virtual space and the price of the vehicle, but other informatio
         licenses[] = { {"driver"}, {""}, {""}, {""} };
         price = 20000;
         textures[] = {};
-    };
-
-    class I_Truck_02_covered_F {
-        vItemSpace = 250;
-        licenses[] = { {"trucking"}, {""}, {""}, {""} };
-        price = 100000;
-        textures[] = {
-            { "Orange", "civ", {
-                "\A3\Soft_F_Beta\Truck_02\data\truck_02_kab_co.paa",
-                "\a3\soft_f_beta\Truck_02\data\truck_02_kuz_co.paa"
-            } },
-            { "Black", "cop", {
-                "#(argb,8,8,3)color(0.05,0.05,0.05,1)"
-            } }
-        };
-    };
-
-    class I_Truck_02_transport_F {
-        vItemSpace = 200;
-        licenses[] = { {"trucking"}, {""}, {""}, {""} };
-        price = 75000;
-        textures[] = {
-            { "Orange", "civ", {
-                "\A3\Soft_F_Beta\Truck_02\data\truck_02_kab_co.paa",
-                "\a3\soft_f_beta\Truck_02\data\truck_02_kuz_co.paa"
-            } },
-            { "Black", "cop", {
-                "#(argb,8,8,3)color(0.05,0.05,0.05,1)"
-            } }
-        };
-    };
-
-    class O_Truck_03_covered_F {
-        vItemSpace = 300;
-        licenses[] = { {"trucking"}, {""}, {""}, {""} };
-        price = 250000;
-        textures[] = {};
-    };
-
-    class C_Hatchback_01_F {
-        vItemSpace = 40;
-        licenses[] = { {"driver"}, {""}, {""}, {""} };
-        price = 9500;
-        textures[] = {
-            { "Beige", "civ", {
-                "\a3\soft_f_gamma\Hatchback_01\data\hatchback_01_ext_base01_co.paa"
-            } },
-            { "Green", "civ", {
-                "\a3\soft_f_gamma\Hatchback_01\data\hatchback_01_ext_base02_co.paa"
-            } },
-            { "Blue", "civ", {
-                "\a3\soft_f_gamma\Hatchback_01\data\hatchback_01_ext_base03_co.paa"
-            } },
-            { "Dark Blue", "civ", {
-                "\a3\soft_f_gamma\Hatchback_01\data\hatchback_01_ext_base04_co.paa"
-            } },
-            { "Yellow", "civ", {
-                "\a3\soft_f_gamma\Hatchback_01\data\hatchback_01_ext_base06_co.paa"
-            } },
-            { "White", "civ", {
-                "\a3\soft_f_gamma\Hatchback_01\data\hatchback_01_ext_base07_co.paa"
-            } },
-            { "Grey", "civ", {
-                "\a3\soft_f_gamma\Hatchback_01\data\hatchback_01_ext_base08_co.paa"
-            } },
-            { "Black", "civ", {
-                "\a3\soft_f_gamma\Hatchback_01\data\hatchback_01_ext_base09_co.paa"
-            } }
-        };
     };
 
      class B_Heli_Light_01_stripped_F {
@@ -451,11 +895,6 @@ will modify the virtual space and the price of the vehicle, but other informatio
                 "#(argb,8,8,3)color(1,1,1,0.8)"
             } }
         };
-    };
-
-    class C_Heli_Light_01_civil_F : B_Heli_Light_01_F {
-        vItemSpace = 75;
-        price = 245000;
     };
 
     class Jonzie_Box_Truck {
