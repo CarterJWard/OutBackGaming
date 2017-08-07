@@ -25,7 +25,28 @@ class CarShops {
             { "red_beetle_66_pearlwhite", {"", "", -1} },
             { "red_beetle_66_rubyred", {"", "", -1} },   
             { "red_beetle_66_seasand", {"", "", -1} },
-            { "red_beetle_66_seablue", {"", "", -1} }
+            { "red_beetle_66_seablue", {"", "", -1} },
+            { "red_genesis_16_yellow", {"","",-1 } },
+            { "red_genesis_16_aqua", {"","",-1 } },
+            { "red_genesis_16_white", {"","",-1 } },
+            { "red_genesis_16_red", {"","",-1 } },
+            { "red_genesis_16_green", {"","",-1 } },
+            { "red_genesis_16_orange", {"","",-1 } },
+            { "red_genesis_16_pink", {"","",-1 } },
+            { "red_genesis_16_black", {"","",-1 } },
+            { "red_genesis_16_purple", {"","",-1 } },
+            { "red_genesis_16_darkred", {"","",-1 } },
+            { "red_genesis_16_darkblue", {"","",-1 } },
+            { "red_genesis_16_darkgreen", {"","",-1 } },
+            { "A3L_BMW_M6_pink", {"","",-1 } }, 
+            { "A3L_BMW_M6_orange", {"","",-1 } }, 
+            { "A3L_BMW_M6_grey", {"","",-1 } }, 
+            { "A3L_BMW_M6_black", {"","",-1 } }, 
+            { "A3L_BMW_M6_darkblue", {"","",-1 } }, 
+            { "A3L_BMW_M6_purple", {"","",-1 } }, 
+            { "A3L_BMW_M6_yellow", {"","",-1 } }, 
+            { "A3L_BMW_M6_white", {"","",-1 } }, 
+            { "A3L_BMW_M6_red", {"","",-1 } }
         };
     };
     class civ_dodge {
@@ -102,7 +123,17 @@ class CarShops {
             {"red_suburban_15_blue", {"","",-1} },
             {"red_suburban_15_darkblue", {"","",-1} },
             {"red_suburban_15_darkred", {"","",-1} },
-            {"red_suburban_15_darkgreen", {"","",-1} }
+            {"red_suburban_15_darkgreen", {"","",-1} },
+            {"shounka_avalanche_grise", {"","",-1 } },
+            {"shounka_avalanche_orange", {"","",-1 } },
+            {"shounka_avalanche_rouge", {"","",-1 } },
+            {"shounka_avalanche_rose", {"","",-1 } },
+            {"shounka_avalanche_violet", {"","",-1 } },
+            {"shounka_avalanche_jaune", {"","",-1 } },
+            {"shounka_avalanche_bleufonce", {"","",-1 } },
+            {"shounka_avalanche_noir", {"","",-1 } },
+            {"shounka_avalanche", {"","",-1 } },
+            {"shounka_avalanche_pussywagon", {"","",-1 } }
         };
     };
     class civ_ford {
@@ -168,20 +199,6 @@ class CarShops {
             { "A3L_Ferrari458white",{"", "", -1 } },
             { "A3L_Ferrari458red",{"", "", -1 } },
             { "A3L_Ferrari458blue",{"", "", -1 } },
-            { "S_PorscheRS_Black", { "", "", -1} },
-            { "S_PorscheRS_White", { "", "", -1} },
-            { "S_PorscheRS_Yellow", { "", "", -1} },
-            { "red_panmera_10_white", {"", "", -1 } },
-            { "red_panmera_10_red", {"", "", -1 } },
-            { "red_panmera_10_purple", {"", "", -1 } },
-            { "red_panmera_10_pink", {"", "", -1 } },
-            { "red_panmera_10_green", {"", "", -1 } },
-            { "red_panmera_10_aqua", {"", "", -1 } },
-            { "red_panmera_10_black", {"", "", -1 } },
-            { "red_panmera_10_darkblue", {"", "", -1 } },
-            { "red_panmera_10_darkgreen", {"", "", -1 } },
-            { "red_panmera_10_darkred", {"", "", -1 } },
-            { "red_panmera_10_orange", {"", "", -1 } },
             { "red_xkrs_12_orange", {"","",-1} },
             { "red_xkrs_12_purple", {"","",-1} },
             { "red_xkrs_12_red", {"","",-1} },
@@ -222,12 +239,44 @@ class CarShops {
             { "red_gs350_13_black", {"","",-1} },
             { "red_gs350_13_darkgreen", {"","",-1} },
             { "red_gs350_13_darkred", {"","",-1} },
-            { "red_gs350_13_darkblue", {"","",-1} }
+            { "red_gs350_13_darkblue", {"","",-1} },
+            { "Mrshounka_agera_p_rose",{"","",-1 } },
+            { "Mrshounka_agera_p_jaune",{"","",-1 } },
+            { "Mrshounka_agera_p_violet",{"","",-1 } },
+            { "Mrshounka_agera_p_noir",{"","",-1 } },
+            { "Mrshounka_agera_p_bleu",{"","",-1 } },
+            { "Mrshounka_agera_p_grise",{"","",-1 } },
+            { "Mrshounka_agera_p_orange",{"","",-1 } },
+            { "Mrshounka_agera_p",{"","",-1 } },
+            { "Urbanized_CTSV_black", {"","",-1 } },
+            { "Urbanized_CTSV_blue", {"","",-1 } },
+            { "Urbanized_CTSV_chrome", {"","",-1 } },
+            { "Urbanized_CTSV_lime", {"","",-1 } },
+            { "Urbanized_CTSV_orange", {"","",-1 } },
+            { "Urbanized_CTSV_pink", {"","",-1 } },
+            { "Urbanized_CTSV_purple", {"","",-1 } },
+            { "Urbanized_CTSV_yellow", {"","",-1 } },
+            { "Urbanized_CTSV_white", {"","",-1 } },
+            { "Urbanized_CTSV_red", {"","",-1 } }
         };
     };
     class civ_porsche {
         side = "civ";
         vehicles[] = {
+            { "S_PorscheRS_Black", { "", "", -1} },
+            { "S_PorscheRS_White", { "", "", -1} },
+            { "S_PorscheRS_Yellow", { "", "", -1} },
+            { "red_panmera_10_white", {"", "", -1 } },
+            { "red_panmera_10_red", {"", "", -1 } },
+            { "red_panmera_10_purple", {"", "", -1 } },
+            { "red_panmera_10_pink", {"", "", -1 } },
+            { "red_panmera_10_green", {"", "", -1 } },
+            { "red_panmera_10_aqua", {"", "", -1 } },
+            { "red_panmera_10_black", {"", "", -1 } },
+            { "red_panmera_10_darkblue", {"", "", -1 } },
+            { "red_panmera_10_darkgreen", {"", "", -1 } },
+            { "red_panmera_10_darkred", {"", "", -1 } },
+            { "red_panmera_10_orange", {"", "", -1 } },
             { "red_porsche_12_green", {"","",-1} },
             { "red_porsche_12_aqua", {"","",-1} }, 
             { "red_porsche_12_orange", {"","",-1} }, 
@@ -265,7 +314,14 @@ class CarShops {
             {"red_venomgt_11_darkblue", {"", "", -1} },
             {"red_venomgt_11_green", {"", "", -1} },
             {"red_venomgt_11_darkred", {"", "", -1} },
-            {"red_venomgt_11_orange", {"", "", -1} }
+            {"red_venomgt_11_orange", {"", "", -1} },
+            {"quiet_bugatti_blanche_f", {"", "",-1} },
+            {"A3L_Veyron", {"","",-1 } },
+            {"A3L_Veyron_Orange", {"","",-1 } },
+            {"A3L_Veyron_Black", {"","",-1 } }, 
+            {"A3L_Veyron_white", {"","",-1 } },
+            {"A3L_Veyron_purple", {"","",-1 } },
+            {"A3L_Veyron_red", {"","",-1 } }
         };
     };
     class civ_truck {
@@ -395,9 +451,102 @@ class LifeCfgVehicles {
         price = -1;
         textures[] = {};
     };
+    class shounka_avalanche {
+        vItemSpace = 100;
+        licenses[] = { {"driver"}, {""}, {""}, {""} };
+        price = 90000;
+        textures[] = {};
+    };
+    class shounka_avalanche_noir : shounka_avalanche{};
+    class shounka_avalanche_pussywagon : shounka_avalanche{};
+    class shounka_avalanche_bleufonce : shounka_avalanche{};
+    class shounka_avalanche_jaune : shounka_avalanche{};
+    class shounka_avalanche_violet : shounka_avalanche{};
+    class shounka_avalanche_rose : shounka_avalanche{};
+    class shounka_avalanche_rouge : shounka_avalanche{};
+    class shounka_avalanche_orange : shounka_avalanche{};
+    class shounka_avalanche_grise : shounka_avalanche{};
+    class Urbanized_CTSV_black {
+        vItemSpace = 20;
+        licenses[] = { {"driver"}, {""}, {""}, {""} };
+        price = 560000;
+        textures[] = {};
+    };
+    class Urbanized_CTSV_blue : Urbanized_CTSV_black{};
+    class Urbanized_CTSV_chrome : Urbanized_CTSV_black{};
+    class Urbanized_CTSV_lime : Urbanized_CTSV_black{};
+    class Urbanized_CTSV_orange : Urbanized_CTSV_black{};
+    class Urbanized_CTSV_pink : Urbanized_CTSV_black{};
+    class Urbanized_CTSV_purple : Urbanized_CTSV_black{};
+    class Urbanized_CTSV_yellow : Urbanized_CTSV_black{};
+    class Urbanized_CTSV_white : Urbanized_CTSV_black{};
+    class Urbanized_CTSV_red : Urbanized_CTSV_black{};
+    
+    class A3L_Veyron {
+        vItemSpace = -1;
+        licenses[] = { {"driver"}, {""}, {""}, {""} };
+        price = 3500000;
+        textures[] = {};
+    };
+    class A3L_Veyron_orange : A3L_Veyron {};
+    class A3L_Veyron_black : A3L_Veyron {};
+    class A3L_Veyron_white : A3L_Veyron {};
+    class A3L_Veyron_purple : A3L_Veyron {};
+    class A3L_Veyron_red : A3L_Veyron {};
+    class quiet_bugatti_blanche_f {
+        vItemSpace = -1;
+        licenses[] = { {"driver"}, {""}, {""}, {""} };
+        price = 4100000;
+        textures[] = {};
+    };
+    class A3L_BMW_M6_pink {
+        vItemSpace = 15;
+        licenses[] = { {"driver"}, {""}, {""}, {""} };
+        price = 470000;
+        textures[] = {};
+    };
+    class A3L_BMW_M6_orange : A3L_BMW_M6_pink{};
+    class A3L_BMW_M6_grey : A3L_BMW_M6_pink{};
+    class A3L_BMW_M6_black : A3L_BMW_M6_pink{};
+    class A3L_BMW_M6_darkblue : A3L_BMW_M6_pink{};
+    class A3L_BMW_M6_purple : A3L_BMW_M6_pink{};
+    class A3L_BMW_M6_yellow : A3L_BMW_M6_pink{};
+    class A3L_BMW_M6_white : A3L_BMW_M6_pink{};
+    class A3L_BMW_M6_red : A3L_BMW_M6_pink{};
+    class Mrshounka_agera_p {
+        vItemSpace = -1;
+        licenses[] = { {"driver"}, {""}, {""}, {""} };
+        price = 580000;
+        textures[] = {};
+    };
+    class Mrshounka_agera_p_jaune : Mrshounka_agera_p{};
+    class Mrshounka_agera_p_violet : Mrshounka_agera_p{};
+    class Mrshounka_agera_p_rose : Mrshounka_agera_p{};
+    class Mrshounka_agera_p_noir : Mrshounka_agera_p{};
+    class Mrshounka_agera_p_bleu : Mrshounka_agera_p{};
+    class Mrshounka_agera_p_grise : Mrshounka_agera_p{};
+    class Mrshounka_agera_p_orange : Mrshounka_agera_p{};
+    class red_genesis_16_yellow {
+        vItemSpace = 15;
+        licenses[] = { {"driver"}, {""}, {""}, {""} };
+        price = 75000;
+        textures[] = {};
+    };
+    class red_genesis_16_aqua : red_genesis_16_yellow{};
+    class red_genesis_16_white : red_genesis_16_yellow{};
+    class red_genesis_16_red : red_genesis_16_yellow{};
+    class red_genesis_16_green : red_genesis_16_yellow{};
+    class red_genesis_16_orange : red_genesis_16_yellow{};
+    class red_genesis_16_pink : red_genesis_16_yellow{};
+    class red_genesis_16_black : red_genesis_16_yellow{};
+    class red_genesis_16_purple : red_genesis_16_yellow{};
+    class red_genesis_16_darkred : red_genesis_16_yellow{};
+    class red_genesis_16_darkgreen : red_genesis_16_yellow{};
+    class red_genesis_16_darkblue : red_genesis_16_yellow{};
+    
     class red_explorer_16_yellow {
         vItemSpace = 50;
-        licenses[] = { {""}, {""}, {""}, {""} };
+        licenses[] = { {"driver"}, {""}, {""}, {""} };
         price = 230000;
         textures[] = {};
     };
@@ -414,7 +563,7 @@ class LifeCfgVehicles {
     
     class red_charger_15_red {
         vItemSpace = -1;
-        licenses[] = { {""}, {""}, {""}, {""} };
+        licenses[] = { {"driver"}, {""}, {""}, {""} };
         price = 525000;
         textures[] = {};
     };
@@ -432,7 +581,7 @@ class LifeCfgVehicles {
     
     class red_charger_12_yellow {
         vItemSpace = 20;
-        licenses[] = { {""}, {""}, {""}, {""} };
+        licenses[] = { {"driver"}, {""}, {""}, {""} };
         price = 475000;
         textures[] = {};
     };
