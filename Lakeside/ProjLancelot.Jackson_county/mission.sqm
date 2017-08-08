@@ -8,18 +8,18 @@ class EditorData
 	toggles=522;
 	class ItemIDProvider
 	{
-		nextID=1676;
+		nextID=1773;
 	};
 	class MarkerIDProvider
 	{
-		nextID=238;
+		nextID=249;
 	};
 	class Camera
 	{
-		pos[]={8517.0195,40.633656,6509.063};
-		dir[]={0.60284501,-0.45520431,0.65530753};
-		up[]={0.30820403,0.89037287,0.33502683};
-		aside[]={0.73597258,-5.3364784e-007,-0.6770516};
+		pos[]={8916.3545,22.300049,7542.8096};
+		dir[]={-0.1520365,-0.88507873,-0.4399097};
+		up[]={-0.28911388,0.46544135,-0.83652705};
+		aside[]={-0.94514441,-1.3560057e-006,0.32665262};
 	};
 };
 binarizationWanted=0;
@@ -40,13 +40,19 @@ addons[]=
 	"MainSection",
 	"A3L_PrisonWall",
 	"A3L_PoliceHQ",
-	"A3_Structures_F_Civ_Garbage"
+	"A3_Structures_F_Civ_Garbage",
+	"A3L_Nightclub",
+	"red_s65_12",
+	"red_vanquish_13",
+	"Urbanized_CTSV",
+	"red_xkrs_12",
+	"Mrshounka_agera"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=13;
+		items=19;
 		class Item0
 		{
 			className="A3_Characters_F";
@@ -123,6 +129,36 @@ class AddonsMetaData
 		{
 			className="A3L_PoliceHQ";
 			name="A3L_PoliceHQ";
+		};
+		class Item13
+		{
+			className="A3L_Nightclub";
+			name="A3L_Nightclub";
+		};
+		class Item14
+		{
+			className="red_s65_12";
+			name="red_s65_12";
+		};
+		class Item15
+		{
+			className="red_vanquish_13";
+			name="red_vanquish_13";
+		};
+		class Item16
+		{
+			className="Urbanized_CTSV";
+			name="Urbanized_CTSV";
+		};
+		class Item17
+		{
+			className="red_xkrs_12";
+			name="red_xkrs_12";
+		};
+		class Item18
+		{
+			className="Mrshounka_agera";
+			name="Mrshounka_agera";
 		};
 	};
 };
@@ -247,7 +283,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=149;
+		items=174;
 		class Item0
 		{
 			dataType="Group";
@@ -5038,7 +5074,7 @@ class Mission
 			side="Civilian";
 			class Entities
 			{
-				items=105;
+				items=100;
 				class Item0
 				{
 					dataType="Object";
@@ -5109,7 +5145,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={10645.252,155.48364,5487.2842};
+						position[]={10645.252,155.48364,5487.2837};
 						angles[]={0,2.7592087,0};
 					};
 					side="Civilian";
@@ -5117,11 +5153,12 @@ class Mission
 					{
 						skill=0.60000002;
 						init="this enableSimulation false; this allowDamage false; this addAction[localize""STR_Process_Oil"",life_fnc_processAction,""oil"",0,false,false,"""",' life_inv_oilUnprocessed > 0 && !life_is_processing && !life_action_inUse']; this addAction[format [""%1 ($%2)"",localize (getText(missionConfigFile >> ""Licenses"" >> ""oil"" >> ""displayName"")), [(getNumber(missionConfigFile >> ""Licenses"" >> ""oil"" >> ""price""))] call life_fnc_numberText],life_fnc_buyLicense,""oil"",0,false,false,"""",' !license_civ_oil && playerSide isEqualTo civilian '];";
+						name="oilProc";
 						disableSimulation=1;
 					};
 					id=953;
 					type="C_man_1";
-					atlOffset=89.525055;
+					atlOffset=89.525009;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -5143,7 +5180,45 @@ class Mission
 								};
 							};
 						};
-						nAttributes=1;
+						class Attribute1
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male05GRE";
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.98000002;
+								};
+							};
+						};
+						nAttributes=3;
 					};
 				};
 				class Item2
@@ -5571,48 +5646,6 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={11766.697,264.43735,4181.3779};
-						angles[]={0,2.5509436,0};
-					};
-					side="Civilian";
-					class Attributes
-					{
-						skill=0.60000002;
-						init="this enableSimulation false; this allowDamage false; this addAction[localize ""STR_MAR_Car_shop"",life_fnc_vehicleShopMenu,[""civ_car"",civilian,""civ_car_2"",""civ"",""Bruce's New & Used Auto's""]];";
-						disableSimulation=1;
-					};
-					id=981;
-					type="C_man_p_beggar_F_afro";
-					atlOffset=193.10538;
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="allowDamage";
-							expression="_this allowdamage _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=0;
-								};
-							};
-						};
-						nAttributes=1;
-					};
-				};
-				class Item12
-				{
-					dataType="Object";
-					class PositionInfo
-					{
 						position[]={11170.485,470.92383,5404.3945};
 						angles[]={0,5.2196856,0};
 					};
@@ -5650,7 +5683,7 @@ class Mission
 						nAttributes=1;
 					};
 				};
-				class Item13
+				class Item12
 				{
 					dataType="Object";
 					class PositionInfo
@@ -5692,7 +5725,7 @@ class Mission
 						nAttributes=1;
 					};
 				};
-				class Item14
+				class Item13
 				{
 					dataType="Object";
 					class PositionInfo
@@ -5734,7 +5767,7 @@ class Mission
 						nAttributes=1;
 					};
 				};
-				class Item15
+				class Item14
 				{
 					dataType="Object";
 					class PositionInfo
@@ -5776,7 +5809,7 @@ class Mission
 						nAttributes=1;
 					};
 				};
-				class Item16
+				class Item15
 				{
 					dataType="Object";
 					class PositionInfo
@@ -5819,50 +5852,7 @@ class Mission
 						nAttributes=1;
 					};
 				};
-				class Item17
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={11434.584,463.25946,5618.7568};
-						angles[]={0,4.8546982,0};
-					};
-					side="Civilian";
-					class Attributes
-					{
-						skill=0.60000002;
-						init="this enableSimulation false; this allowDamage false; this addAction[localize ""STR_MAR_Car_shop"",life_fnc_vehicleShopMenu,[""civ_car"",civilian,[""civ_car_1"",""civ_car_1_1""],""civ"",""Bruce's New & Used Auto's""]]; this setVariable [""realname"", ""Car Shop""];";
-						name="carshop1";
-						disableSimulation=1;
-					};
-					id=989;
-					type="C_man_p_beggar_F_afro";
-					atlOffset=389.45648;
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="allowDamage";
-							expression="_this allowdamage _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=0;
-								};
-							};
-						};
-						nAttributes=1;
-					};
-				};
-				class Item18
+				class Item16
 				{
 					dataType="Object";
 					class PositionInfo
@@ -5905,12 +5895,12 @@ class Mission
 						nAttributes=1;
 					};
 				};
-				class Item19
+				class Item17
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={11192.502,497.10794,5243.1211};
+						position[]={11192.502,497.10757,5243.1206};
 						angles[]={0,4.502007,0};
 					};
 					side="Civilian";
@@ -5918,11 +5908,12 @@ class Mission
 					{
 						skill=0.60000002;
 						init="this allowDamage false; removeallWeapons this; this enableSimulation false; this addAction[localize""STR_MAR_Diving_Shop"",life_fnc_clothingMenu,""dive""]; this addAction[format [""%1 ($%2)"",localize (getText(missionConfigFile >> ""Licenses"" >> ""dive"" >> ""displayName"")),[(getNumber(missionConfigFile >> ""Licenses"" >> ""dive"" >> ""price""))] call life_fnc_numberText],life_fnc_buyLicense,""dive"",0,false,false,"""",' !license_civ_dive && playerSide isEqualTo civilian '];";
+						name="diving";
 						disableSimulation=1;
 					};
 					id=991;
 					type="B_diver_F";
-					atlOffset=470.14337;
+					atlOffset=470.14301;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -5944,10 +5935,48 @@ class Mission
 								};
 							};
 						};
-						nAttributes=1;
+						class Attribute1
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male02ENG";
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1.01;
+								};
+							};
+						};
+						nAttributes=3;
 					};
 				};
-				class Item20
+				class Item18
 				{
 					dataType="Object";
 					class PositionInfo
@@ -5989,7 +6018,7 @@ class Mission
 						nAttributes=1;
 					};
 				};
-				class Item21
+				class Item19
 				{
 					dataType="Object";
 					class PositionInfo
@@ -6031,7 +6060,7 @@ class Mission
 						nAttributes=1;
 					};
 				};
-				class Item22
+				class Item20
 				{
 					dataType="Object";
 					class PositionInfo
@@ -6073,7 +6102,7 @@ class Mission
 						nAttributes=1;
 					};
 				};
-				class Item23
+				class Item21
 				{
 					dataType="Object";
 					class PositionInfo
@@ -6116,7 +6145,7 @@ class Mission
 						nAttributes=1;
 					};
 				};
-				class Item24
+				class Item22
 				{
 					dataType="Object";
 					class PositionInfo
@@ -6158,50 +6187,7 @@ class Mission
 						nAttributes=1;
 					};
 				};
-				class Item25
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={11759.894,252.19125,7555.4912};
-						angles[]={0,4.8546982,0};
-					};
-					side="Civilian";
-					class Attributes
-					{
-						skill=0.60000002;
-						init="this enableSimulation false; this allowDamage false; this addAction[localize ""STR_MAR_Car_shop"",life_fnc_vehicleShopMenu,[""civ_car"",civilian,""civ_car_4"",""civ"",""Bruce's New & Used Auto's""]];";
-						name="carshop4";
-						disableSimulation=1;
-					};
-					id=997;
-					type="C_man_p_beggar_F_afro";
-					atlOffset=157.96735;
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="allowDamage";
-							expression="_this allowdamage _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=0;
-								};
-							};
-						};
-						nAttributes=1;
-					};
-				};
-				class Item26
+				class Item23
 				{
 					dataType="Object";
 					class PositionInfo
@@ -6243,7 +6229,7 @@ class Mission
 						nAttributes=1;
 					};
 				};
-				class Item27
+				class Item24
 				{
 					dataType="Object";
 					class PositionInfo
@@ -6285,7 +6271,7 @@ class Mission
 						nAttributes=1;
 					};
 				};
-				class Item28
+				class Item25
 				{
 					dataType="Object";
 					class PositionInfo
@@ -6327,7 +6313,7 @@ class Mission
 						nAttributes=1;
 					};
 				};
-				class Item29
+				class Item26
 				{
 					dataType="Object";
 					class PositionInfo
@@ -6370,7 +6356,7 @@ class Mission
 						nAttributes=1;
 					};
 				};
-				class Item30
+				class Item27
 				{
 					dataType="Object";
 					class PositionInfo
@@ -6413,7 +6399,7 @@ class Mission
 						nAttributes=1;
 					};
 				};
-				class Item31
+				class Item28
 				{
 					dataType="Object";
 					class PositionInfo
@@ -6455,7 +6441,7 @@ class Mission
 						nAttributes=1;
 					};
 				};
-				class Item32
+				class Item29
 				{
 					dataType="Object";
 					class PositionInfo
@@ -6498,7 +6484,7 @@ class Mission
 						nAttributes=1;
 					};
 				};
-				class Item33
+				class Item30
 				{
 					dataType="Object";
 					class PositionInfo
@@ -6540,7 +6526,7 @@ class Mission
 						nAttributes=1;
 					};
 				};
-				class Item34
+				class Item31
 				{
 					dataType="Object";
 					class PositionInfo
@@ -6621,7 +6607,7 @@ class Mission
 						nAttributes=3;
 					};
 				};
-				class Item35
+				class Item32
 				{
 					dataType="Object";
 					class PositionInfo
@@ -6702,88 +6688,7 @@ class Mission
 						nAttributes=3;
 					};
 				};
-				class Item36
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={11345.046,321.62549,4869.2002};
-						angles[]={0,4.4478316,0};
-					};
-					side="Civilian";
-					class Attributes
-					{
-						skill=0.60000002;
-						init="this allowDamage false; this enableSimulation false; this addAction[localize""STR_MAR_Glass_Trader"",life_fnc_virt_menu,""glass""];";
-						name="glassTrader";
-						disableSimulation=1;
-					};
-					id=1011;
-					type="C_man_1";
-					atlOffset=298.52444;
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="allowDamage";
-							expression="_this allowdamage _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=0;
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="speaker";
-							expression="_this setspeaker _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="Male03GRE";
-								};
-							};
-						};
-						class Attribute2
-						{
-							property="pitch";
-							expression="_this setpitch _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=1.03;
-								};
-							};
-						};
-						nAttributes=3;
-					};
-				};
-				class Item37
+				class Item33
 				{
 					dataType="Object";
 					class PositionInfo
@@ -6825,7 +6730,7 @@ class Mission
 						nAttributes=1;
 					};
 				};
-				class Item38
+				class Item34
 				{
 					dataType="Object";
 					class PositionInfo
@@ -6867,7 +6772,7 @@ class Mission
 						nAttributes=1;
 					};
 				};
-				class Item39
+				class Item35
 				{
 					dataType="Object";
 					class PositionInfo
@@ -6909,7 +6814,7 @@ class Mission
 						nAttributes=1;
 					};
 				};
-				class Item40
+				class Item36
 				{
 					dataType="Object";
 					class PositionInfo
@@ -6952,7 +6857,7 @@ class Mission
 						nAttributes=1;
 					};
 				};
-				class Item41
+				class Item37
 				{
 					dataType="Object";
 					class PositionInfo
@@ -6995,7 +6900,7 @@ class Mission
 						nAttributes=1;
 					};
 				};
-				class Item42
+				class Item38
 				{
 					dataType="Object";
 					class PositionInfo
@@ -7037,7 +6942,7 @@ class Mission
 						nAttributes=1;
 					};
 				};
-				class Item43
+				class Item39
 				{
 					dataType="Object";
 					class PositionInfo
@@ -7079,7 +6984,7 @@ class Mission
 						nAttributes=1;
 					};
 				};
-				class Item44
+				class Item40
 				{
 					dataType="Object";
 					class PositionInfo
@@ -7121,7 +7026,7 @@ class Mission
 						nAttributes=1;
 					};
 				};
-				class Item45
+				class Item41
 				{
 					dataType="Object";
 					class PositionInfo
@@ -7221,7 +7126,7 @@ class Mission
 						nAttributes=4;
 					};
 				};
-				class Item46
+				class Item42
 				{
 					dataType="Object";
 					class PositionInfo
@@ -7264,7 +7169,7 @@ class Mission
 						nAttributes=1;
 					};
 				};
-				class Item47
+				class Item43
 				{
 					dataType="Object";
 					class PositionInfo
@@ -7307,7 +7212,7 @@ class Mission
 						nAttributes=1;
 					};
 				};
-				class Item48
+				class Item44
 				{
 					dataType="Object";
 					class PositionInfo
@@ -7349,7 +7254,7 @@ class Mission
 						nAttributes=1;
 					};
 				};
-				class Item49
+				class Item45
 				{
 					dataType="Object";
 					class PositionInfo
@@ -7391,7 +7296,7 @@ class Mission
 						nAttributes=1;
 					};
 				};
-				class Item50
+				class Item46
 				{
 					dataType="Object";
 					class PositionInfo
@@ -7433,7 +7338,7 @@ class Mission
 						nAttributes=1;
 					};
 				};
-				class Item51
+				class Item47
 				{
 					dataType="Object";
 					class PositionInfo
@@ -7475,7 +7380,7 @@ class Mission
 						nAttributes=1;
 					};
 				};
-				class Item52
+				class Item48
 				{
 					dataType="Object";
 					class PositionInfo
@@ -7517,7 +7422,7 @@ class Mission
 						nAttributes=1;
 					};
 				};
-				class Item53
+				class Item49
 				{
 					dataType="Object";
 					class PositionInfo
@@ -7560,7 +7465,7 @@ class Mission
 						nAttributes=1;
 					};
 				};
-				class Item54
+				class Item50
 				{
 					dataType="Object";
 					class PositionInfo
@@ -7602,7 +7507,7 @@ class Mission
 						nAttributes=1;
 					};
 				};
-				class Item55
+				class Item51
 				{
 					dataType="Object";
 					class PositionInfo
@@ -7644,7 +7549,7 @@ class Mission
 						nAttributes=1;
 					};
 				};
-				class Item56
+				class Item52
 				{
 					dataType="Object";
 					class PositionInfo
@@ -7686,7 +7591,7 @@ class Mission
 						nAttributes=1;
 					};
 				};
-				class Item57
+				class Item53
 				{
 					dataType="Object";
 					class PositionInfo
@@ -7728,24 +7633,25 @@ class Mission
 						nAttributes=1;
 					};
 				};
-				class Item58
+				class Item54
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={11769.746,378.14655,5722.2334};
-						angles[]={0,5.5949535,0};
+						position[]={11769.746,378.14627,5722.2339};
+						angles[]={0,5.5949492,0};
 					};
 					side="Civilian";
 					class Attributes
 					{
 						skill=0.60000002;
 						init="this allowDamage false; removeallWeapons this; this enableSimulation false; this addAction[localize""STR_MAR_Diving_Shop"",life_fnc_clothingMenu,""dive""]; this addAction[format [""%1 ($%2)"",localize (getText(missionConfigFile >> ""Licenses"" >> ""dive"" >> ""displayName"")),[(getNumber(missionConfigFile >> ""Licenses"" >> ""dive"" >> ""price""))] call life_fnc_numberText],life_fnc_buyLicense,""dive"",0,false,false,"""",' !license_civ_dive && playerSide isEqualTo civilian '];";
+						name="diving1";
 						disableSimulation=1;
 					};
 					id=1036;
 					type="B_diver_F";
-					atlOffset=271.67935;
+					atlOffset=271.67899;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -7767,10 +7673,48 @@ class Mission
 								};
 							};
 						};
-						nAttributes=1;
+						class Attribute1
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male01ENG";
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1.01;
+								};
+							};
+						};
+						nAttributes=3;
 					};
 				};
-				class Item59
+				class Item55
 				{
 					dataType="Object";
 					class PositionInfo
@@ -7812,7 +7756,7 @@ class Mission
 						nAttributes=1;
 					};
 				};
-				class Item60
+				class Item56
 				{
 					dataType="Object";
 					class PositionInfo
@@ -7854,7 +7798,7 @@ class Mission
 						nAttributes=1;
 					};
 				};
-				class Item61
+				class Item57
 				{
 					dataType="Object";
 					class PositionInfo
@@ -7916,7 +7860,7 @@ class Mission
 						nAttributes=2;
 					};
 				};
-				class Item62
+				class Item58
 				{
 					dataType="Object";
 					class PositionInfo
@@ -7958,7 +7902,7 @@ class Mission
 						nAttributes=1;
 					};
 				};
-				class Item63
+				class Item59
 				{
 					dataType="Object";
 					class PositionInfo
@@ -8000,7 +7944,7 @@ class Mission
 						nAttributes=1;
 					};
 				};
-				class Item64
+				class Item60
 				{
 					dataType="Object";
 					class PositionInfo
@@ -8081,7 +8025,7 @@ class Mission
 						nAttributes=3;
 					};
 				};
-				class Item65
+				class Item61
 				{
 					dataType="Object";
 					class PositionInfo
@@ -8162,7 +8106,7 @@ class Mission
 						nAttributes=3;
 					};
 				};
-				class Item66
+				class Item62
 				{
 					dataType="Object";
 					class PositionInfo
@@ -8203,7 +8147,7 @@ class Mission
 						nAttributes=1;
 					};
 				};
-				class Item67
+				class Item63
 				{
 					dataType="Object";
 					class PositionInfo
@@ -8245,7 +8189,7 @@ class Mission
 						nAttributes=1;
 					};
 				};
-				class Item68
+				class Item64
 				{
 					dataType="Object";
 					class PositionInfo
@@ -8287,7 +8231,7 @@ class Mission
 						nAttributes=1;
 					};
 				};
-				class Item69
+				class Item65
 				{
 					dataType="Object";
 					class PositionInfo
@@ -8330,7 +8274,7 @@ class Mission
 						nAttributes=1;
 					};
 				};
-				class Item70
+				class Item66
 				{
 					dataType="Object";
 					class PositionInfo
@@ -8373,7 +8317,7 @@ class Mission
 						nAttributes=1;
 					};
 				};
-				class Item71
+				class Item67
 				{
 					dataType="Object";
 					class PositionInfo
@@ -8415,7 +8359,7 @@ class Mission
 						nAttributes=1;
 					};
 				};
-				class Item72
+				class Item68
 				{
 					dataType="Object";
 					class PositionInfo
@@ -8457,7 +8401,7 @@ class Mission
 						nAttributes=1;
 					};
 				};
-				class Item73
+				class Item69
 				{
 					dataType="Object";
 					class PositionInfo
@@ -8499,7 +8443,7 @@ class Mission
 						nAttributes=1;
 					};
 				};
-				class Item74
+				class Item70
 				{
 					dataType="Object";
 					class PositionInfo
@@ -8541,7 +8485,7 @@ class Mission
 						nAttributes=1;
 					};
 				};
-				class Item75
+				class Item71
 				{
 					dataType="Object";
 					class PositionInfo
@@ -8583,7 +8527,7 @@ class Mission
 						nAttributes=1;
 					};
 				};
-				class Item76
+				class Item72
 				{
 					dataType="Object";
 					class PositionInfo
@@ -8625,7 +8569,7 @@ class Mission
 						nAttributes=1;
 					};
 				};
-				class Item77
+				class Item73
 				{
 					dataType="Object";
 					class PositionInfo
@@ -8667,7 +8611,7 @@ class Mission
 						nAttributes=1;
 					};
 				};
-				class Item78
+				class Item74
 				{
 					dataType="Object";
 					class PositionInfo
@@ -8709,7 +8653,7 @@ class Mission
 						nAttributes=1;
 					};
 				};
-				class Item79
+				class Item75
 				{
 					dataType="Object";
 					class PositionInfo
@@ -8751,7 +8695,7 @@ class Mission
 						nAttributes=1;
 					};
 				};
-				class Item80
+				class Item76
 				{
 					dataType="Object";
 					class PositionInfo
@@ -8793,7 +8737,7 @@ class Mission
 						nAttributes=1;
 					};
 				};
-				class Item81
+				class Item77
 				{
 					dataType="Object";
 					class PositionInfo
@@ -8835,7 +8779,7 @@ class Mission
 						nAttributes=1;
 					};
 				};
-				class Item82
+				class Item78
 				{
 					dataType="Object";
 					class PositionInfo
@@ -8877,7 +8821,7 @@ class Mission
 						nAttributes=1;
 					};
 				};
-				class Item83
+				class Item79
 				{
 					dataType="Object";
 					class PositionInfo
@@ -8920,7 +8864,7 @@ class Mission
 						nAttributes=1;
 					};
 				};
-				class Item84
+				class Item80
 				{
 					dataType="Object";
 					class PositionInfo
@@ -8962,7 +8906,7 @@ class Mission
 						nAttributes=1;
 					};
 				};
-				class Item85
+				class Item81
 				{
 					dataType="Object";
 					class PositionInfo
@@ -9004,7 +8948,7 @@ class Mission
 						nAttributes=1;
 					};
 				};
-				class Item86
+				class Item82
 				{
 					dataType="Object";
 					class PositionInfo
@@ -9046,7 +8990,7 @@ class Mission
 						nAttributes=1;
 					};
 				};
-				class Item87
+				class Item83
 				{
 					dataType="Object";
 					class PositionInfo
@@ -9088,7 +9032,7 @@ class Mission
 						nAttributes=1;
 					};
 				};
-				class Item88
+				class Item84
 				{
 					dataType="Object";
 					class PositionInfo
@@ -9130,7 +9074,7 @@ class Mission
 						nAttributes=1;
 					};
 				};
-				class Item89
+				class Item85
 				{
 					dataType="Object";
 					class PositionInfo
@@ -9172,7 +9116,7 @@ class Mission
 						nAttributes=1;
 					};
 				};
-				class Item90
+				class Item86
 				{
 					dataType="Object";
 					class PositionInfo
@@ -9214,7 +9158,7 @@ class Mission
 						nAttributes=1;
 					};
 				};
-				class Item91
+				class Item87
 				{
 					dataType="Object";
 					class PositionInfo
@@ -9256,7 +9200,7 @@ class Mission
 						nAttributes=1;
 					};
 				};
-				class Item92
+				class Item88
 				{
 					dataType="Object";
 					class PositionInfo
@@ -9298,7 +9242,7 @@ class Mission
 						nAttributes=1;
 					};
 				};
-				class Item93
+				class Item89
 				{
 					dataType="Object";
 					class PositionInfo
@@ -9340,7 +9284,7 @@ class Mission
 						nAttributes=1;
 					};
 				};
-				class Item94
+				class Item90
 				{
 					dataType="Object";
 					class PositionInfo
@@ -9382,7 +9326,7 @@ class Mission
 						nAttributes=1;
 					};
 				};
-				class Item95
+				class Item91
 				{
 					dataType="Object";
 					class PositionInfo
@@ -9424,7 +9368,7 @@ class Mission
 						nAttributes=1;
 					};
 				};
-				class Item96
+				class Item92
 				{
 					dataType="Object";
 					class PositionInfo
@@ -9466,7 +9410,7 @@ class Mission
 						nAttributes=1;
 					};
 				};
-				class Item97
+				class Item93
 				{
 					dataType="Object";
 					class PositionInfo
@@ -9508,7 +9452,7 @@ class Mission
 						nAttributes=1;
 					};
 				};
-				class Item98
+				class Item94
 				{
 					dataType="Object";
 					class PositionInfo
@@ -9550,7 +9494,7 @@ class Mission
 						nAttributes=1;
 					};
 				};
-				class Item99
+				class Item95
 				{
 					dataType="Object";
 					class PositionInfo
@@ -9592,7 +9536,7 @@ class Mission
 						nAttributes=1;
 					};
 				};
-				class Item100
+				class Item96
 				{
 					dataType="Object";
 					class PositionInfo
@@ -9634,49 +9578,7 @@ class Mission
 						nAttributes=1;
 					};
 				};
-				class Item101
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={10239.076,275.85278,5988.9287};
-						angles[]={0,2.2652106,0};
-					};
-					side="Civilian";
-					class Attributes
-					{
-						skill=0.60000002;
-						init="this enableSimulation false; this allowDamage false; this addAction[localize ""STR_MAR_Car_shop"",life_fnc_vehicleShopMenu,[""civ_car"",civilian,""civ_car_3"",""civ"",""Bruce's New & Used Auto's""]];";
-						disableSimulation=1;
-					};
-					id=941;
-					type="C_man_p_beggar_F_afro";
-					atlOffset=166.95596;
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="allowDamage";
-							expression="_this allowdamage _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=0;
-								};
-							};
-						};
-						nAttributes=1;
-					};
-				};
-				class Item102
+				class Item97
 				{
 					dataType="Object";
 					class PositionInfo
@@ -9718,7 +9620,7 @@ class Mission
 						nAttributes=1;
 					};
 				};
-				class Item103
+				class Item98
 				{
 					dataType="Object";
 					class PositionInfo
@@ -9760,7 +9662,7 @@ class Mission
 						nAttributes=1;
 					};
 				};
-				class Item104
+				class Item99
 				{
 					dataType="Object";
 					class PositionInfo
@@ -11738,7 +11640,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={8613.2158,11.079725,6809.1626};
+				position[]={8613.2158,11.079364,6809.1631};
 				angles[]={0,1.7482963,0};
 			};
 			side="Empty";
@@ -11746,10 +11648,11 @@ class Mission
 			class Attributes
 			{
 				init="call{this allowDamage false; this enableSimulation false; this addAction[format [""%1 ($%2)"",localize (getText(missionConfigFile >> ""Licenses"" >> ""driver"" >> ""displayName"")), [(getNumber(missionConfigFile >> ""Licenses"" >> ""driver"" >> ""price""))] call life_fnc_numberText],life_fnc_buyLicense,""driver"",0,false,false,"""",' !license_civ_driver && playerSide isEqualTo civilian ']; this addAction[format [""%1 ($%2)"",localize (getText(missionConfigFile >> ""Licenses"" >> ""boat"" >> ""displayName"")), [(getNumber(missionConfigFile >> ""Licenses"" >> ""boat"" >> ""price""))] call life_fnc_numberText],life_fnc_buyLicense,""boat"",0,false,false,"""",' !license_civ_boat && playerSide isEqualTo civilian ']; this addAction[format [""%1 ($%2)"",localize (getText(missionConfigFile >> ""Licenses"" >> ""pilot"" >> ""displayName"")), [(getNumber(missionConfigFile >> ""Licenses"" >> ""pilot"" >> ""price""))] call life_fnc_numberText],life_fnc_buyLicense,""pilot"",0,false,false,"""",' !license_civ_pilot && playerSide isEqualTo civilian ']; this addAction[format [""%1 ($%2)"",localize (getText(missionConfigFile >> ""Licenses"" >> ""trucking"" >> ""displayName"")), [(getNumber(missionConfigFile >> ""Licenses"" >> ""trucking"" >> ""price""))] call life_fnc_numberText],life_fnc_buyLicense,""trucking"",0,false,false,"""",' !license_civ_trucking && playerSide isEqualTo civilian ']; this addAction[format [""%1 ($%2)"",localize (getText(missionConfigFile >> ""Licenses"" >> ""home"" >> ""displayName"")), [(getNumber(missionConfigFile >> ""Licenses"" >> ""home"" >> ""price""))] call life_fnc_numberText],life_fnc_buyLicense,""home"",0,false,false,"""",' !license_civ_home && playerSide isEqualTo civilian ']; this setVariable [""realname"",""License Shop""];}";
+				name="DMV";
 			};
 			id=1558;
 			type="Land_InfoStand_V1_F";
-			atlOffset=0.044361115;
+			atlOffset=0.043999672;
 		};
 		class Item136
 		{
@@ -11768,17 +11671,18 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={8561.7256,11.236186,6797.6841};
-				angles[]={0,3.9735911,0};
+				position[]={8552.5029,11.236186,6799.1533};
+				angles[]={0,3.3795002,0};
 			};
 			side="Empty";
 			class Attributes
 			{
 				init="call{this addAction[localize ""STR_MAR_Car_shop"",life_fnc_vehicleShopMenu,[""civ_top"",civilian,""civ_car_2"",""civ"",""Hyper Performance Vehicles""]];}";
+				name="top_line";
 			};
 			id=1560;
 			type="Land_InfoStand_V1_F";
-			atlOffset=6.8369999;
+			atlOffset=8.2208214;
 		};
 		class Item138
 		{
@@ -11938,7 +11842,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={8472.0732,12.430699,6289.2007};
+				position[]={8472.0732,12.592494,6289.2007};
 				angles[]={6.2740369,0.15319122,0.0095086824};
 			};
 			side="Empty";
@@ -11948,7 +11852,7 @@ class Mission
 			};
 			id=1627;
 			type="A3L_PoliceHQ";
-			atlOffset=-4.7683716e-005;
+			atlOffset=0.16174698;
 		};
 		class Item148
 		{
@@ -11989,6 +11893,588 @@ class Mission
 				};
 				nAttributes=1;
 			};
+		};
+		class Item149
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={2884.417,104.90536,7744.646};
+				angles[]={0,5.6416717,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="call{this allowDamage false; this enableSimulation false; this addAction[localize""STR_MAR_Glass_Trader"",life_fnc_virt_menu,""glass""];}";
+				name="glassTrader";
+			};
+			id=1680;
+			type="Land_InfoStand_V1_F";
+			atlOffset=-7.6293945e-006;
+		};
+		class Item150
+		{
+			dataType="Marker";
+			position[]={2884.4177,0,7744.6841};
+			name="marker_238";
+			text="Sand Trader";
+			type="mil_box";
+			colorName="ColorOrange";
+			id=1681;
+			atlOffset=-104.33;
+		};
+		class Item151
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={8740.0117,23.963762,6754.8994};
+				angles[]={0,3.325057,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=1689;
+			type="Land_A3L_Nightclub";
+			atlOffset=0.24717331;
+		};
+		class Item152
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={8280.459,11.105474,6529.124};
+				angles[]={0,5.2733727,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="call{this addAction[localize ""STR_MAR_Car_shop"",life_fnc_vehicleShopMenu,[""civ_truck"",civilian,""truck_spawn"",""civ"",""Truck Shop""]];}";
+				name="civ_truck";
+			};
+			id=1701;
+			type="Land_InfoStand_V1_F";
+			atlOffset=0.00015163422;
+		};
+		class Item153
+		{
+			dataType="Marker";
+			position[]={8297.0518,0,6519.793};
+			name="truck_spawn";
+			type="Empty";
+			angle=114.08393;
+			id=1702;
+			atlOffset=-10.505897;
+		};
+		class Item154
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={8325.9541,11.432102,6319.7158};
+				angles[]={0,2.2485342,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="call{this addAction[localize ""STR_NOTF_ATM"",life_fnc_atmMenu,"""",0,false,false,"""",' isNull objectParent player && player distance _target < 4 '];}";
+			};
+			id=1703;
+			type="Land_Mattaust_ATM";
+			atlOffset=9.5367432e-007;
+		};
+		class Item155
+		{
+			dataType="Marker";
+			position[]={8278.7236,-3.6073138e-031,6532.3149};
+			name="marker_240";
+			text="Truck Dealership";
+			type="A3L_Car_Icon";
+			colorName="ColorBlack";
+			id=1704;
+			atlOffset=-10.521779;
+		};
+		class Item156
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={8603.4121,11.085364,6601.127};
+				angles[]={0,4.8458366,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="call{this addAction[localize ""STR_MAR_Car_shop"",life_fnc_vehicleShopMenu,[""civ_dodge"",civilian,""dodge_spawn"",""civ"",""Dodge Dealership""]];}";
+				name="dodge";
+			};
+			id=1709;
+			type="Land_InfoStand_V1_F";
+		};
+		class Item157
+		{
+			dataType="Marker";
+			position[]={8603.7461,-1.3836189e-030,6590.979};
+			name="dodge_spawn";
+			type="Empty";
+			angle=280.52994;
+			id=1710;
+			atlOffset=-10.51;
+		};
+		class Item158
+		{
+			dataType="Marker";
+			position[]={8607.3447,-2.4732419e-029,6605.5132};
+			name="dodgeM";
+			text="Dodge Dealership";
+			type="A3L_Car_Icon";
+			colorName="ColorBlue";
+			id=1711;
+			atlOffset=-10.51;
+		};
+		class Item159
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={8669.4648,11.035364,6676.2339};
+				angles[]={0,1.7387494,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="call{this addAction[localize ""STR_MAR_Car_shop"",life_fnc_vehicleShopMenu,[""civ_chevy"",civilian,""chevy_spawn"",""civ"",""Chevrolet Dealership""]];}";
+				name="chevy";
+			};
+			id=1719;
+			type="Land_InfoStand_V1_F";
+		};
+		class Item160
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={8568.2588,12.268043,6810.0713};
+				angles[]={0,5.8909402,0};
+			};
+			side="Empty";
+			class Attributes
+			{
+				createAsSimpleObject=1;
+				disableSimulation=1;
+			};
+			id=1728;
+			type="red_s65_12_orange";
+			atlOffset=0.27261829;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[[[[],[]],[[],[]],[[],[]],[[],[]]],false]";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="allowDamage";
+					expression="_this allowdamage _value;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=2;
+			};
+		};
+		class Item161
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={8550.7998,10.839323,6815.4048};
+				angles[]={0,0.93650877,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				createAsSimpleObject=1;
+				disableSimulation=1;
+			};
+			id=1737;
+			type="red_vanquish_13urple";
+			atlOffset=0.0002784729;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[[[[],[]],[[],[]],[[],[]],[[],[]]],false]";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="allowDamage";
+					expression="_this allowdamage _value;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=2;
+			};
+		};
+		class Item162
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={8539.7656,10.639029,6817.9644};
+				angles[]={0,5.6935258,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				createAsSimpleObject=1;
+				disableSimulation=1;
+			};
+			id=1739;
+			type="Urbanized_CTSV_black";
+			atlOffset=0.079358101;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[[[[],[]],[[],[]],[[],[]],[[],[]]],true]";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="allowDamage";
+					expression="_this allowdamage _value;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=2;
+			};
+		};
+		class Item163
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={8570.7617,11.869925,6802.4287};
+				angles[]={0,0.97894013,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				createAsSimpleObject=1;
+				disableSimulation=1;
+			};
+			id=1740;
+			type="red_xkrs_12_white";
+			atlOffset=0.048731804;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[[[[],[]],[[],[]],[[],[]],[[],[]]],false]";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="allowDamage";
+					expression="_this allowdamage _value;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=2;
+			};
+		};
+		class Item164
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={8538.4814,10.801085,6809.0527};
+				angles[]={0,0.60486126,0};
+			};
+			side="Empty";
+			class Attributes
+			{
+				createAsSimpleObject=1;
+				disableSimulation=1;
+			};
+			id=1743;
+			type="Mrshounka_agera_p_noir";
+			atlOffset=8.2209988;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[[[[],[]],[[],[]],[[],[]],[[],[]]],false]";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="allowDamage";
+					expression="_this allowdamage _value;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=2;
+			};
+		};
+		class Item165
+		{
+			dataType="Marker";
+			position[]={8667.1992,-6.4524803e-037,6684.001};
+			name="chevy_spawn";
+			type="Empty";
+			angle=97.618988;
+			id=1744;
+			atlOffset=-10.46;
+		};
+		class Item166
+		{
+			dataType="Marker";
+			position[]={8668.6641,-2.7630335e-028,6675.0508};
+			name="marker_244";
+			text="Chevrolet Dealership";
+			type="A3L_Car_Icon";
+			colorName="ColorBlue";
+			id=1745;
+			atlOffset=-10.46;
+		};
+		class Item167
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={8602.6855,11.035364,6711.54};
+				angles[]={0,0.044348814,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="call{this addAction[localize ""STR_MAR_Car_shop"",life_fnc_vehicleShopMenu,[""civ_ford"",civilian,""ford_spawn"",""civ"",""Ford Dealership""]];}";
+				name="fordshop";
+			};
+			id=1746;
+			type="Land_InfoStand_V1_F";
+		};
+		class Item168
+		{
+			dataType="Marker";
+			position[]={8601.8857,-7.1215073e-028,6706.7578};
+			name="ford_spawn";
+			type="Empty";
+			angle=98.367966;
+			id=1747;
+			atlOffset=-10.46;
+		};
+		class Item169
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={8806.1396,11.035364,6746.687};
+				angles[]={0,0.26696554,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="call{this addAction[localize ""STR_MAR_Car_shop"",life_fnc_vehicleShopMenu,[""civ_porsche"",civilian,""por_spawn"",""civ"",""Porsche Dealership""]];}";
+				name="Porsche";
+			};
+			id=1755;
+			type="Land_InfoStand_V1_F";
+		};
+		class Item170
+		{
+			dataType="Marker";
+			position[]={8801.6865,-1.0392525e-024,6723.0371};
+			name="por_spawn";
+			type="Empty";
+			angle=187.88092;
+			id=1756;
+			atlOffset=-10.46;
+		};
+		class Item171
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={8688.4932,11.035364,6838.6519};
+				angles[]={0,1.7179973,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="call{this addAction[localize ""STR_MAR_Car_shop"",life_fnc_vehicleShopMenu,[""civ_truck"",civilian,""exo_spawn"",""civ"",""Exotic Motors""]];}";
+				name="exo";
+			};
+			id=1757;
+			type="Land_InfoStand_V1_F";
+		};
+		class Item172
+		{
+			dataType="Marker";
+			position[]={8687.0703,0,6835.3154};
+			name="marker_247";
+			text="Exotic Motors";
+			type="A3L_Car_Icon";
+			colorName="ColorBlack";
+			id=1758;
+			atlOffset=-10.46;
+		};
+		class Item173
+		{
+			dataType="Marker";
+			position[]={8805.9092,0,6746.6147};
+			name="marker_248";
+			text="Porsche Dealership";
+			type="A3L_Car_Icon";
+			colorName="ColorBlue";
+			id=1759;
+			atlOffset=-10.46;
 		};
 	};
 };
